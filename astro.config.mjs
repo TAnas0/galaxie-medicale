@@ -8,7 +8,7 @@ import alpinejs from '@astrojs/alpinejs';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://tanas0.github.io',
-  base: 'galaxiemedicale',
+  base: 'galaxie-medicale',
   vite: {
       plugins: [tailwindcss()],
   },
