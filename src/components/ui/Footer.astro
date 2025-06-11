@@ -1,0 +1,91 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<footer class="bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Infos société -->
+      <div class="md:col-span-2">
+        <h3 class="text-xl font-bold mb-4">Galaxie Medicale</h3>
+        <p class="text-gray-300 mb-4">
+          Votre partenaire de confiance pour des équipements médicaux certifiés.
+          Au service des professionnels de santé avec qualité et fiabilité.
+        </p>
+        <div class="space-y-2">
+          <div class="flex items-center">
+            <!-- <Phone class="h-4 w-4 mr-2 text-blue-400" /> -->
+            <Icon name="heroicons:phone" />
+
+            <span class="text-gray-300">+212 522 12 34 56</span>
+          </div>
+          <div class="flex items-center">
+            <!-- <Mail class="h-4 w-4 mr-2 text-blue-400" /> -->
+            <span class="text-gray-300">info@galaxiemedicale.ma</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Liens rapides -->
+      <div>
+        <h4 class="font-semibold mb-4">Liens rapides</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li>
+            <a href="#" class="hover:text-blue-400 transition-colors"
+              >Catalogue produits</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-400 transition-colors"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-400 transition-colors">Contact</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-400 transition-colors">Support</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mentions légales -->
+      <div>
+        <h4 class="font-semibold mb-4">Mentions légales</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li>
+            <a href="#" class="hover:text-blue-400 transition-colors"
+              >Politique de confidentialité</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-400 transition-colors"
+              >Conditions d’utilisation</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-400 transition-colors"
+              >Certifications</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-400 transition-colors"
+              >Conformité</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-8 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          © 2025 Galaxie Medicale Solutions. Tous droits réservés.
+        </p>
+        <div class="text-gray-400 text-sm mt-2 md:mt-0">Casablanca, Maroc</div>
+      </div>
+    </div>
+  </div>
+</footer>

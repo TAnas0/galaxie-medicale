@@ -1,0 +1,16 @@
+---
+const { href = "#", class: className = "", size = "md", children } = Astro.props;
+
+const sizeClasses = {
+  sm: "px-4 py-2 text-sm",
+  md: "px-6 py-2.5 text-base",
+  lg: "px-8 py-3 text-lg",
+};
+---
+
+<a
+  href={href}
+  class={`inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg ${sizeClasses[size] ?? sizeClasses.md} bg-blue-600 hover:bg-blue-700 text-white ${className}`}
+>
+  {children}
+</a>

@@ -9,8 +9,21 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/alpinejs": "^0.4.8",
+    "@fontsource/inter": "^5.2.5",
     "@tailwindcss/vite": "^4.1.8",
+    "@types/alpinejs": "^3.13.11",
+    "alpinejs": "^3.14.9",
     "astro": "^5.8.2",
+    "free-astro-components": "^1.2.0"
+  },
+  "devDependencies": {
+    "@iconify-json/heroicons": "^1.2.2",
+    "@tailwindcss/postcss": "^4.1.8",
+    "astro-icon": "^1.1.5",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "sass-embedded": "^1.89.1",
     "tailwindcss": "^4.1.8"
   }
 }

@@ -1,0 +1,105 @@
+---
+// import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+// import { Button } from "./ui/button";
+// import { ArrowRight } from "lucide-react";
+import Card from "./ui/Card.astro";
+import CardHeader from "./ui/CardHeader.astro";
+import CardTitle from "./ui/CardTitle.astro";
+import CardDescription from "./ui/CardDescription.astro";
+import CardContent from "./ui/CardContent.astro";
+
+const categories = [
+  {
+    title: "Appareils de Diagnostic",
+    description: "Équipements avancés pour l’imagerie et le diagnostic médical de précision.",
+    icon: "🔬",
+  },
+  {
+    title: "Équipements de Laboratoire",
+    description: "Instruments de haute précision pour l’analyse et la recherche en laboratoire.",
+    icon: "⚗️",
+  },
+  {
+    title: "Surveillance des Patients",
+    description: "Systèmes de monitoring en temps réel pour un suivi médical optimal.",
+    icon: "📊",
+  },
+  {
+    title: "Instruments Chirurgicaux",
+    description: "Outils et équipements chirurgicaux de qualité supérieure pour interventions sûres et efficaces.",
+    icon: "🏥",
+  },
+  {
+    title: "Équipements d’Urgence",
+    description: "Matériel critique pour les soins intensifs et les interventions d’urgence.",
+    icon: "🚑",
+  },
+  // {
+  //   title: "Dispositifs de Rééducation",
+  //   description: "Appareils pour la thérapie physique et la récupération fonctionnelle des patients.",
+  //   icon: "♿",
+  // },
+  {
+    title: "Matériel de Stérilisation",
+    description: "Solutions et équipements pour la stérilisation et l’hygiène en milieu médical.",
+    icon: "🧼",
+  },
+  {
+    title: "Mobilier Médical",
+    description: "Meubles ergonomiques et fonctionnels pour cliniques, hôpitaux et laboratoires.",
+    icon: "🛏️",
+  },
+  {
+    title: "Dispositifs de Thérapie",
+    description: "Équipements médicaux pour divers traitements thérapeutiques spécialisés.",
+    icon: "💊",
+  },
+  {
+    title: "Accessoires Médicaux",
+    description: "Compléments et accessoires essentiels pour accompagner les équipements médicaux.",
+    icon: "🩺",
+  },
+];
+
+---
+
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        Nos Catégories
+      </h2>
+      <p class="text-lg text-gray-600">
+        Découvrez notre large gamme complète d’équipements médicaux
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {categories.map((category, index) => (
+        <Card 
+          key={index} 
+          class="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-0 shadow-md"
+        >
+          <CardHeader className="text-center pb-4">
+            <div class="text-4xl mb-3">{category.icon}</div>
+            <CardTitle className="text-xl font-semibold text-gray-900">
+              {category.title}
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-center">
+            <CardDescription className="text-gray-600 mb-4">
+              {category.description}
+            </CardDescription>
+            {/* <Button 
+              variant="ghost" 
+              class="text-blue-600 hover:text-blue-700 hover:bg-blue-50 transition-colors duration-300"
+            > */}
+              Voir Produits
+              {/* <ArrowRight class="ml-2 h-4 w-4" /> */}
+            {/* </Button> */}
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>

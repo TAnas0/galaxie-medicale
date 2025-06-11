@@ -1,0 +1,71 @@
+---
+// import Button from './ui/Button.astro';
+import { Button } from 'free-astro-components';
+import { Icon } from 'astro-icon/components'
+// import ArrowRight from '@iconify-icons/heroicons-outline/arrow-right'; // or use any icon source
+// import { Icon } from '@iconify-icon/astro'; // use if you're using Iconify
+---
+<section
+  class="relative bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-4 pt-32 sm:px-6 lg:px-8"
+>
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center">
+      <h1
+        class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+      >
+        Équipements Médicaux Fiables pour Cliniques, Laboratoires et
+        Professionnels de Santé
+      </h1>
+
+      <p
+        class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed"
+      >
+        Nous fournissons aux professionnels de santé des dispositifs médicaux
+        certifiés CE, alliant performance et fiabilité. Idéal pour les besoins
+        en diagnostic, traitement et analyses de laboratoire.
+    </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <Button
+          href="/catalog"
+          size="lg"
+          label="Voir le catalogue"
+          icon='arrow-right' iconPosition='right'
+          class="bg-red-600 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          Voir le catalogue
+        </Button>
+
+        <!-- <Button
+          variant="outline"
+          size="lg"
+          label="Contact Us"
+          class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300"
+        >
+          Contact Us
+        </Button> -->
+      </div>
+    </div>
+
+    <div class="mt-16 relative">
+      <div
+        class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200 max-w-4xl mx-auto"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div>
+            <div class="text-3xl font-bold text-blue-600 mb-2">+10</div>
+            <div class="text-gray-600">ans d’expérience</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-blue-600 mb-2">100+</div>
+            <div class="text-gray-600">Partenaires Médicaux</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
+            <div class="text-gray-600">Produits Médicaux</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

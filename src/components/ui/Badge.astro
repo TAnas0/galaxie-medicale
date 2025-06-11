@@ -1,0 +1,11 @@
+---
+export interface Props {
+  class?: string
+  children: any
+}
+---
+
+<span class={`inline-flex items-center rounded-full bg-red-600 text-white text-xs font-semibold px-3 py-1 ${Astro.props.class || ''}`}>
+  {Astro.props.children}
+</span>
+  

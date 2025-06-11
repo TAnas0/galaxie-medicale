@@ -1,0 +1,320 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<header
+  class="w-full fixed top-0 z-50 bg-opacity-95 backdrop-blur-sm shadow-md border-b"
+>
+  {/* Top Bar */}
+  <div
+    class="bg-primary text-primary-foreground backdrop-blur-sm shadow-md border-b"
+  >
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-10">
+        {/* Logo */}
+        <div class="flex items-center">
+          <!-- <a href="/" class="flex-shrink-0">
+            <img
+              src="/public/img/galaxie-medicale.jpg"
+              alt="Galaxie Medicale Logo"
+              class="h-12"
+            />
+          </a> -->
+        </div>
+
+        <div class="flex space-x-8">
+          {/* Phone Number */}
+          <a
+            href="tel:+212522456789"
+            class="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            aria-label="Appelez-nous au +212 5 22 45 67 89"
+          >
+            <!-- <Phone size={16} /> -->
+            <Icon name="heroicons:phone" />
+            <span class="text-sm font-medium">+212 5 22 45 67 89</span>
+          </a>
+          {/* Email */}
+          <a
+            href="mail:contact@galaxiemedicale.ma"
+            class="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            aria-label="Email contact@galaxiemedicale.ma"
+          >
+            <!-- <Phone size={16} /> -->
+            <Icon name="heroicons:envelope" />
+            <span class="text-sm font-medium">context@galaxiemedicale.ma</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Main Navigation */}
+  <div class="bg-background border-b">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        {/* Desktop Navigation */}
+        <nav
+          class="hidden lg:flex items-center space-x-8"
+          role="navigation"
+          aria-label="Navigation principale"
+        >
+          {/* Logo */}
+              <img
+                src="/public/img/galaxie-medicale-stretched.jpg"
+                alt="Galaxie Medicale Logo"
+                class="h-14"
+              />
+          {/* Accueil */}
+          <a
+            href="/"
+            class="text-foreground hover:text-primary transition-colors font-medium"
+          >
+            Accueil
+          </a>
+
+          {/* Catalog Dropdown */}
+          <div class="relative group">
+            <a
+              class="text-foreground hover:text-primary transition-colors font-medium"
+              href="/catalog"
+            >
+              Catalogue
+            </a>
+
+            {/* Mega Menu */}
+            <!-- <div
+              class="absolute top-full left-0 w-96 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+            >
+              <div class="p-6">
+                <div class="grid grid-cols-2 gap-6">
+                  <div>
+                    <h3 class="font-semibold text-card-foreground mb-3">
+                      Catégorie 1
+                    </h3>
+                    <ul class="space-y-2">
+                      <li>
+                        <a
+                          href="#"
+                          class="text-sm text-muted-foreground hover:text-primary transition-colors"
+                          >Produit A</a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-sm text-muted-foreground hover:text-primary transition-colors"
+                          >Produit B</a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-sm text-muted-foreground hover:text-primary transition-colors"
+                          >Produit C</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-card-foreground mb-3">
+                      Catégorie 2
+                    </h3>
+                    <ul class="space-y-2">
+                      <li>
+                        <a
+                          href="#"
+                          class="text-sm text-muted-foreground hover:text-primary transition-colors"
+                          >Produit D</a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-sm text-muted-foreground hover:text-primary transition-colors"
+                          >Produit E</a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-sm text-muted-foreground hover:text-primary transition-colors"
+                          >Produit F</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          {/* Qui sommes nous */}
+          <a
+            href="/about"
+            class="text-foreground hover:text-primary transition-colors font-medium"
+          >
+            Qui sommes nous
+          </a>
+        </nav>
+
+        {/* Search Bar */}
+        <div class="flex-1 max-w-md mx-8 hidden md:block">
+          <div class="relative">
+            <input
+              type="search"
+              placeholder="Quel produit recherchez-vous ?"
+              class="w-full px-4 py-2 border border-input rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
+              aria-label="Rechercher un produit"
+            />
+            <div class="absolute right-3 top-1/2 transform -translate-y-1/2">
+              <svg
+                class="w-4 h-4 text-muted-foreground"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          class="lg:hidden p-2 hover:bg-accent rounded-lg transition-colors"
+          aria-label="Ouvrir le menu de navigation"
+          aria-expanded="false"
+        >
+          <Icon name="heroicons:bars-4" />
+          <!-- <Menu size={24} /> -->
+        </button>
+      </div>
+
+      {/* Mobile Search Bar */}
+      <div class="md:hidden pb-4">
+        <div class="relative">
+          <input
+            type="search"
+            placeholder="Quel produit recherchez-vous ?"
+            class="w-full px-4 py-2 border border-input rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
+            aria-label="Rechercher un produit"
+          />
+          <div class="absolute right-3 top-1/2 transform -translate-y-1/2">
+            <svg
+              class="w-4 h-4 text-muted-foreground"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Mobile Slide-in Menu (Static Layout) */}
+  <div
+    class="lg:hidden fixed inset-y-0 left-0 w-80 bg-card border-r border-border shadow-lg transform -translate-x-full transition-transform duration-300 z-50 opacity-0 invisible"
+  >
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-lg font-bold text-card-foreground">Menu</h2>
+        <button
+          class="p-2 hover:bg-accent rounded-lg transition-colors"
+          aria-label="Fermer le menu"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width={2}
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="space-y-6" role="navigation" aria-label="Navigation mobile">
+        <a
+          href="/"
+          class="block text-card-foreground hover:text-primary transition-colors font-medium text-lg"
+        >
+          Accueil
+        </a>
+
+        <div>
+          <div class="text-card-foreground font-medium text-lg mb-3">
+            Catalogue
+          </div>
+          <div class="ml-4 space-y-3">
+            <div>
+              <div class="font-medium text-card-foreground mb-2">
+                Catégorie 1
+              </div>
+              <div class="ml-4 space-y-1">
+                <a
+                  href="#"
+                  class="block text-muted-foreground hover:text-primary transition-colors"
+                  >Produit A</a
+                >
+                <a
+                  href="#"
+                  class="block text-muted-foreground hover:text-primary transition-colors"
+                  >Produit B</a
+                >
+                <a
+                  href="#"
+                  class="block text-muted-foreground hover:text-primary transition-colors"
+                  >Produit C</a
+                >
+              </div>
+            </div>
+            <div>
+              <div class="font-medium text-card-foreground mb-2">
+                Catégorie 2
+              </div>
+              <div class="ml-4 space-y-1">
+                <a
+                  href="#"
+                  class="block text-muted-foreground hover:text-primary transition-colors"
+                  >Produit D</a
+                >
+                <a
+                  href="#"
+                  class="block text-muted-foreground hover:text-primary transition-colors"
+                  >Produit E</a
+                >
+                <a
+                  href="#"
+                  class="block text-muted-foreground hover:text-primary transition-colors"
+                  >Produit F</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="/about"
+          class="block text-card-foreground hover:text-primary transition-colors font-medium text-lg"
+        >
+          Qui sommes nous
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  {/* Mobile Menu Overlay */}
+  <div
+    class="lg:hidden fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-opacity duration-300 z-40"
+  >
+  </div>
+</header>
