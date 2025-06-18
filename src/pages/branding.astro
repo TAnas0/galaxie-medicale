@@ -1,0 +1,179 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+import Card from "../components/ui/Card.astro";
+import LogoIcon from "../components/logo/Logo.astro";
+---
+
+<Layout>
+  <!-- Header -->
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-6 pt-2">
+      <LogoIcon size={50} withText={true} variant="inline" />
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <!-- Hero Section -->
+    <section class="text-center mb-16">
+      <h1 class="text-5xl font-bold text-[#1B2B34] mb-4">Branding</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Visual Identity
+      </p>
+    </section>
+
+    <section class="mb-16">
+      <div class="p-12 bg-white shadow rounded">
+        <div class="text-center space-y-8">
+          <h3 class="text-2xl font-semibold text-[#1B2B34] mb-8">Primary (Inline)</h3>
+          <div class="flex justify-center items-center gap-16">
+            <LogoIcon size={80} withText={true} variant="inline" />
+            <LogoIcon size={60} withText={true} variant="inline" />
+            <LogoIcon size={40} withText={true} variant="inline" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <div class="p-12 bg-white shadow rounded">
+        <div class="text-center space-y-8">
+          <h3 class="text-2xl font-semibold text-[#1B2B34] mb-8">
+            Symbol Only
+          </h3>
+          <div class="flex justify-center items-center gap-16">
+            <LogoIcon size={80} withText={false} />
+            <LogoIcon size={60} withText={false} />
+            <LogoIcon size={40} withText={false} />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <div class="p-12 bg-white shadow rounded">
+        <div class="text-center space-y-8">
+          <h3 class="text-2xl font-semibold text-[#1B2B34] mb-8">Stacked</h3>
+          <div class="flex justify-center items-center gap-16">
+            <LogoIcon size={80} withText={true} variant="stacked" />
+            <LogoIcon size={60} withText={true} variant="stacked" />
+            <LogoIcon size={40} withText={true} variant="stacked" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <div class="p-12 bg-white shadow rounded">
+        <div class="text-center space-y-8">
+          <h3 class="text-2xl font-semibold text-[#1B2B34] mb-8">Stacked 2</h3>
+          <div class="flex justify-center items-center gap-16">
+            <LogoIcon size={80} withText={true} />
+            <LogoIcon size={60} withText={true} />
+            <LogoIcon size={40} withText={true} />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Card -->
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      <Card className="p-8">
+        <h3 class="text-xl font-semibold text-[#1B2B34] mb-6">Business Card</h3>
+        <div class="bg-white border-2 p-6 rounded-lg shadow-lg max-w-sm">
+          <LogoIcon size={40} withText={true} variant="inline" />
+          <div class="mt-4 text-sm">
+            <div class="font-semibold text-[#1B2B34]">Dr. Marie Dubois</div>
+            <div class="text-gray-600">Directrice Commerciale</div>
+            <div class="mt-2 text-xs text-gray-500">
+              contact@galaxie-medicale.fr<br />
+              +33 1 42 86 99 99
+            </div>
+          </div>
+        </div>
+      </Card>
+
+      <Card className="p-8">
+        <h3 class="text-xl font-semibold text-[#1B2B34] mb-6">Letterhead</h3>
+        <div class="bg-white border p-6 rounded-lg shadow-lg">
+          <div
+            class="flex justify-between items-center mb-6 pb-3 border-b border-[#E8F6F6]"
+          >
+            <LogoIcon size={40} withText={true} variant="inline" />
+            <div class="text-xs text-gray-500 text-right">
+              Équipements médicaux<br />
+              Import & Distribution
+            </div>
+          </div>
+          <div class="space-y-2 text-xs text-gray-400">
+            <div class="h-2 bg-gray-100 rounded w-full"></div>
+            <div class="h-2 bg-gray-100 rounded w-3/4"></div>
+            <div class="h-2 bg-gray-100 rounded w-1/2"></div>
+          </div>
+        </div>
+      </Card>
+      <!-- Letterhead -->
+    </div>
+    <!-- Email Signature -->
+
+    <!-- Typography -->
+    <Card className="p-8 mb-16">
+      <h3 class="text-2xl font-semibold text-[#1B2B34] mb-6">Typography Option A</h3>
+      <div class="space-y-6">
+        <div>
+          <div class="text-4xl font-semibold text-[#1B2B34] mb-2 font-manrope">
+            Galaxie Médicale
+          </div>
+          <p class="text-sm text-gray-600 font-inter">
+            Primary Wordmark - Sans-serif, Semi-bold
+          </p>
+        </div>
+        <div>
+          <div class="text-2xl font-medium text-[#1995D1] mb-2">
+            Équipements médicaux de qualité
+          </div>
+          <p class="text-sm text-gray-600">Subheading - Medium weight</p>
+        </div>
+        <div>
+          <div class="text-base text-gray-700 mb-2">
+            Spécialisé dans l'import et la distribution d'équipements médicaux
+            pour cliniques, médecins et laboratoires.
+          </div>
+          <p class="text-sm text-gray-600">Body text - Regular weight</p>
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold text-[#1B2B34] mb-6 pt-12">Typography Option B</h3>
+      <div class="space-y-6">
+        <div>
+          <div class="text-4xl font-semibold text-[#1B2B34] mb-2 font-ibm">
+            Galaxie Médicale
+          </div>
+          <p class="text-sm text-gray-600 font-jakarta">
+            Primary Wordmark - Sans-serif, Semi-bold
+          </p>
+        </div>
+        <div>
+          <div class="text-2xl font-medium text-[#1995D1] mb-2 font-jakarta">
+            Équipements médicaux de qualité
+          </div>
+          <p class="text-sm text-gray-600 font-jakarta">Subheading - Medium weight</p>
+        </div>
+        <div>
+          <div class="text-base text-gray-700 mb-2 font-jakarta">
+            Spécialisé dans l'import et la distribution d'équipements médicaux
+            pour cliniques, médecins et laboratoires.
+          </div>
+          <p class="text-sm text-gray-600 font-jakarta">Body text - Regular weight</p>
+        </div>
+      </div>
+    </Card>
+
+
+    <!-- TODO Email signature -->
+    <!-- TODO Flyer/Brochure sample -->
+    <!-- TODO LOGO version black&white -->
+    <!-- TODO LOGO version dark -->
+
+    <!-- TODO Add color palettes -->
+  </main>
+</Layout>

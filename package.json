@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.8",
+    "@fontsource-variable/manrope": "^5.2.6",
     "@fontsource/inter": "^5.2.5",
     "@tailwindcss/vite": "^4.1.8",
     "@types/alpinejs": "^3.13.11",
@@ -18,8 +19,11 @@
     "free-astro-components": "^1.2.0"
   },
   "devDependencies": {
+    "@fontsource/ibm-plex-sans": "^5.2.6",
+    "@fontsource/plus-jakarta-sans": "^5.2.6",
     "@iconify-json/heroicons": "^1.2.2",
     "@tailwindcss/postcss": "^4.1.8",
+    "astro-font": "^1.1.0",
     "astro-icon": "^1.1.5",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.4",

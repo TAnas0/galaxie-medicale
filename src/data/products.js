@@ -1,7 +1,7 @@
 export default [
     {
         "name": "Autoclave Phoenix Blu Plus⁺ 18 L",
-        "category": "hospital_equipment",
+        "category": "sterilization",
         "image": "/galaxie-medicale/catalog/img/phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
         "description": "Autoclave de classe B 18 L, rapide et conforme aux normes médicales, pour une stérilisation sûre et efficace en cabinet",
         "availability": "In Stock"

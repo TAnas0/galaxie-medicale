@@ -1,0 +1,67 @@
+---
+const { size = 40, withText = false, variant = "primary" } = Astro.props;
+---
+
+<div
+  class:list={[
+    "inline-flex",
+    withText && variant === "stacked" ? "flex-col items-center gap-1" : "",
+    withText && variant === "primary" ? "items-center gap-2" : "",
+    withText && variant === 'inline' ? 'items-center gap-1 whitespace-nowrap' : '',
+  ]}
+  style={`font-size: ${size/2}px`}
+>
+  <!-- Icon -->
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 40 40"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <g transform="translate(20, 20)">
+      <circle
+        cx="0"
+        cy="0"
+        r="18"
+        fill="none"
+        stroke="#1995D1"
+        stroke-width="1.5"
+        opacity="0.4"
+        stroke-dasharray="8 4"></circle>
+      <circle
+        cx="0"
+        cy="0"
+        r="12"
+        fill="none"
+        stroke="#1995D1"
+        stroke-width="2"
+        opacity="0.6"></circle>
+      <circle cx="0" cy="0" r="4" fill="#1B2B34"></circle>
+      <circle cx="12" cy="0" r="2" fill="#1995D1" opacity="0.8"></circle>
+      <circle cx="-8" cy="9" r="1.5" fill="#00A6A6" opacity="0.7"></circle>
+      <circle cx="6" cy="-10" r="1.5" fill="#1995D1" opacity="0.6"></circle>
+    </g>
+  </svg>
+
+  {
+    withText && (
+      <div
+        class:list={[
+          "font-sans leading-tight",
+          variant === "primary" ? "" : "text-center",
+        ]}
+      >
+        {variant != "inline" ? (
+            <div class="text-[#1B2B34] font-semibold">Galaxie</div>
+            <div class="text-[#1995D1] font-medium -mt-1">Médicale</div>
+        ) : (
+            <div class="text-[#1B2B34] font-semibold">
+                Galaxie <span class="text-[#1995D1] font-medium">Médicale</span>
+            </div>
+        )}
+      </div>
+    )
+  }
+</div>
