@@ -1,17 +1,46 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import "../styles/global.css";
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
 
 import { Icon } from "astro-icon/components";
 import { Button } from "free-astro-components";
 
-import Card from "../components/ui/Card.astro";
-import CardHeader from "../components/ui/CardHeader.astro";
-import CardTitle from "../components/ui/CardTitle.astro";
-import CardContent from "../components/ui/CardContent.astro";
-import Badge from "../components/ui/Badge.astro";
-import Footer from "../components/ui/Footer.astro";
-import Header1 from "../components/Header1.astro";
+import Card from "../../components/ui/Card.astro";
+import CardHeader from "../../components/ui/CardHeader.astro";
+import CardTitle from "../../components/ui/CardTitle.astro";
+import CardContent from "../../components/ui/CardContent.astro";
+import Badge from "../../components/ui/Badge.astro";
+import Footer from "../../components/ui/Footer.astro";
+import Header1 from "../../components/Header1.astro";
+
+import { getCollection } from 'astro:content';
+
+console.log("HELLOOOOOOOOOOOOOOO")
+// Generate all paths at build time
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  // return [
+  //   {params: {id: 1}},
+  //   {params: {id: 2}},
+  // ]
+  return products.map(product => ({
+    params: { id: product.id }
+  }));
+}
+
+const { params } = Astro;
+const products = await getCollection('products');
+console.log(products)
+console.log(params)
+const product = products.find(p => p.id === params.id);
+
+
+
+if (!product) {
+  console.log(params)
+  console.log(products)
+  throw new Error(`Product not found: ${params.id}`);
+}
 
 let currentImageIndex = 0;
 const productImages = [
@@ -77,7 +106,10 @@ const certifications = [
   "EN 14971 – Gestion des risques",
 ];
 
-const relatedProducts = [
+const relatedProducts = products.filter(p => (p.data.category == product.data.category)).slice(0,3)
+console.log("relatedProducts")
+console.log(relatedProducts)
+const relatedProducts2 = [
   {
     name: "Advanced Monitor Pro",
     image: "/galaxie-medicale/catalog/img/phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
@@ -188,10 +220,10 @@ const prevImage = () => {
               <Badge class="bg-green-100 text-green-700">In Stock</Badge>
             </div>
             <h1 class="text-3xl font-bold text-gray-900 mb-2">
-              Autoclave Phoenix Blu Plus⁺ 18 L
+              {product.data.name}
             </h1>
             <p class="text-xl text-gray-600">
-              Autoclave de classe B 18 L, rapide et conforme aux normes médicales, pour une stérilisation sûre et efficace en cabinet
+              {product.data.description}
             </p>
           </div>
 
@@ -206,8 +238,25 @@ const prevImage = () => {
             </div> -->
 
             <p class="text-gray-700 leading-relaxed">
-              Le Phoenix Blu Plus⁺ 18 L est un autoclave de classe B haute performance, conçu pour répondre aux exigences de stérilisation dans les cabinets dentaires, médicaux et laboratoires. Il combine un système de vide fractionné en 3 phases, un générateur de vapeur ultra-rapide et un écran LCD intuitif multilingue. Compatible avec les cycles prion, Bowie-Dick et Helix, il garantit une traçabilité complète grâce à sa connectivité USB et ses options d’impression. Sa chambre en acier inoxydable de 18 L offre une capacité optimale tout en assurant un séchage performant et une gestion intelligente de l’eau. Fiable, rapide et ergonomique, il est pensé pour les professionnels exigeants.
+              {product.data.description}
             </p>
+
+            <div class="text-2xl text-red-600">Include here highlighted specs, key fonctionalities and Selling points</div>
+
+            <p class="text-gray-700 leading-relaxed">
+              <!-- {product.data.technical_specs} -->
+              <ul>
+                {
+                  product.data.technical_specs
+                    .split('\\n')
+                    .map(item => item.replace(/^•\s*/, ''))  // Remove bullet symbols
+                    .filter(Boolean) // Remove any empty strings
+                    .map(spec => <li>{spec}</li>)
+                }
+              </ul>
+            </p>
+
+
 
             <!-- <div class="flex flex-col sm:flex-row gap-3">
               <Button
@@ -237,7 +286,7 @@ const prevImage = () => {
                 </div>
                 <div>
                   <h3 class="font-semibold text-gray-900">
-                    Guarisco Medical Sterilizer
+                    {product.data.brand}
                   </h3>
                   <p class="text-sm text-gray-600">
                     GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL
@@ -274,6 +323,49 @@ const prevImage = () => {
                 </div>
               ))
             }
+          </CardContent>
+        </Card>
+
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-gray-900">
+              Specifications Electriques
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div>
+              <h4 class="font-medium text-gray-900 mb-2">
+                Applications principales
+              </h4>
+              <ul class="space-y-1 text-sm text-gray-700">
+                <li>• Cabinets dentaires et médicaux</li>
+                <li>• Laboratoires et cliniques vétérinaires</li>
+                <li>• Centres de chirurgie ambulatoire</li>
+                <li>• Instituts de beauté et studios de tatouage</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-gray-900">
+              Dimensions physiques
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div>
+              <h4 class="font-medium text-gray-900 mb-2">
+                Applications principales
+              </h4>
+              <ul class="space-y-1 text-sm text-gray-700">
+                <li>Hauteur</li>
+                <li>Largeur</li>
+                <li>Longueur</li>
+                <li>Poids</li>
+              </ul>
+            </div>
           </CardContent>
         </Card>
 
@@ -331,10 +423,11 @@ const prevImage = () => {
             </div>
           </CardContent>
         </Card>
+
       </div>
 
       {/* Downloads Section */}
-      <Card class="mb-12">
+      <!-- <Card class="mb-12">
         <CardHeader>
           <CardTitle className="flex items-center text-gray-900">
             <Icon name="heroicons:arrow-down-tray" />
@@ -377,7 +470,7 @@ const prevImage = () => {
             </Button>
           </div>
         </CardContent>
-      </Card>
+      </Card> -->
 
       {/* Related Products */}
       <div>
@@ -390,22 +483,16 @@ const prevImage = () => {
               <Card key={index} class="hover:shadow-lg transition-shadow">
                 <div class="aspect-[3/2] bg-gray-100 rounded-t-lg overflow-hidden">
                   <img
-                    src={product.image}
-                    alt={product.name}
+                    src={product.data.image}
+                    alt={product.data.name}
                     class="w-full h-full object-cover"
                   />
                 </div>
                 <CardContent className="p-4">
                   <h3 class="font-semibold text-gray-900 mb-2">
-                    {product.name}
+                    {product.data.name}
                   </h3>
-                  <p class="text-sm text-gray-600 mb-3">
-                    Professional medical equipment for advanced care
-                  </p>
-                  <div class="flex items-center justify-between">
-                    <span class="font-medium text-medical-red">
-                      {product.price}
-                    </span>
+                  {/* <div class="flex items-center justify-between">
                     <Button
                       size="sm"
                       variant="outline"
@@ -413,7 +500,7 @@ const prevImage = () => {
                     >
                       View Details
                     </Button>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             ))
