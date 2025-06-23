@@ -7,14 +7,14 @@ const products = defineCollection({
         id: z.number(),
         name: z.string(),
         category: z.string(),
-        sub_category: z.string(),
+        sub_category: z.string().optional(),
         // category: z.enum(['A', 'B', 'C']),
         image: z.string(),
         description: z.string(),
         availability: z.string(),
-        brand: z.string(),
+        brand: z.string().optional(),
         // tags: z.array(z.string()),
-        technical_specs: z.string(),
+        technical_specs: z.string().optional(),
     })
 });
 // const brands = defineCollection({ /* ... */ });
