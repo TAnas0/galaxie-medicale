@@ -4,7 +4,7 @@ import { glob, file } from 'astro/loaders';
 const products = defineCollection({
     loader: file("src/data/products.json"),
     schema: z.object({
-        id: z.string(),
+        id: z.number(),
         name: z.string(),
         category: z.string(),
         sub_category: z.string(),
