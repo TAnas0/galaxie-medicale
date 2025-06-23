@@ -8,7 +8,13 @@
         "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 18 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
         "availability": "In Stock",
         "brand": "Guarisco Medical Sterilizer",
-        "technical_specs": ""
+        "technical_specs": "",
+        "images": [
+            "/galaxie-medicale/catalog/img/phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+            "/galaxie-medicale/catalog/img/phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
+            "/galaxie-medicale/catalog/img/phoenix-blu-18-l/Phoenix-Blu-LCD-PRINTER-18.jpg",
+            "/galaxie-medicale/catalog/img/phoenix-blu-18-l/Phoenix-Blu-LED-18.jpg"
+        ]
     },
     {
         "id": 2,
