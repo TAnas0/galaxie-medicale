@@ -31,8 +31,6 @@ if (!product) {
   throw new Error(`Product not found: ${params.id}`);
 }
 
-let currentImageIndex = 0;
-
 const specifications = [
   { label: "Modèle", value: "Phoenix Blu Plus⁺ 18 L" },
   { label: "Classe", value: "Classe B – conforme EN 13060" },
@@ -86,15 +84,6 @@ const certifications = [
 
 // TODO 
 const relatedProducts = products.filter(p => (p.data.category == product.data.category)).slice(0,3)
-
-const nextImage = () => {
-  currentImageIndex = (currentImageIndex + 1) % productImages.length;
-};
-
-const prevImage = () => {
-  currentImageIndex =
-    (currentImageIndex - 1 + productImages.length) % productImages.length;
-};
 ---
 
 <Layout>
@@ -201,30 +190,6 @@ const prevImage = () => {
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center text-gray-900">
-              <Icon name="heroicons:document" />
-              Technical Specifications
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            {
-              specifications.map((spec, index) => (
-                <div
-                  key={index}
-                  class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0"
-                >
-                  <span class="text-sm text-gray-600">{spec.label}</span>
-                  <span class="text-sm font-medium text-gray-900">
-                    {spec.value}
-                  </span>
-                </div>
-              ))
-            }
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
             <CardTitle className="text-gray-900">
               Specifications Electriques
             </CardTitle>
@@ -265,6 +230,30 @@ const prevImage = () => {
           </CardContent>
         </Card>
 
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center text-gray-900">
+              <Icon name="heroicons:document" />
+              Technical Specifications
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            {
+              specifications.map((spec, index) => (
+                <div
+                  key={index}
+                  class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0"
+                >
+                  <span class="text-sm text-gray-600">{spec.label}</span>
+                  <span class="text-sm font-medium text-gray-900">
+                    {spec.value}
+                  </span>
+                </div>
+              ))
+            }
+          </CardContent>
+        </Card>
+        
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center text-gray-900">
