@@ -6,6 +6,7 @@ import { Icon } from "astro-icon/components";
 import { Button } from "free-astro-components";
 
 import Card from "../../components/ui/Card.astro";
+import Carousel from "../../components/ui/Carousel.astro";
 import CardHeader from "../../components/ui/CardHeader.astro";
 import CardTitle from "../../components/ui/CardTitle.astro";
 import CardContent from "../../components/ui/CardContent.astro";
@@ -105,77 +106,16 @@ const prevImage = () => {
       {/* Product Hero Section */}
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
         {/* Image Carousel */}
-        <div class="space-y-4">
-          <div
-            class="relative aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden"
-          >
-            <img
-              src={product.data.images ? product.data.images[currentImageIndex] : ""}
-              alt="Product Image"
-              class="w-full h-full object-cover"
-            />
-            <button
-              onclick="prevImage"
-              class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all"
-            >
-              <Icon name="heroicons:arrow-left" />
-            </button>
-            <button
-              onclick="nextImage"
-              class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all"
-            >
-              <Icon name="heroicons:arrow-right" />
-            </button>
-            <div
-              class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2"
-            >
-              {
-                product.data.images ? product.data.images.map((_, index) => (
-                  <button
-                    key={index}
-                    onclick="setCurrentImageIndex"
-                    class={`w-2 h-2 rounded-full transition-all ${
-                      index === currentImageIndex
-                        ? "bg-medical-red"
-                        : "bg-white/60"
-                    }`}
-                  />
-                )) : ""
-              }
-            </div>
-          </div>
-          <div class="grid grid-cols-4 gap-2">
-            {
-              product.data.images ? product.data.images.map((image, index) => (
-                <button
-                  key={index}
-                  onclick={() => setCurrentImageIndex(index)}
-                  class={`aspect-square bg-gray-100 rounded overflow-hidden border-2 transition-all ${
-                    index === currentImageIndex
-                      ? "border-medical-red"
-                      : "border-transparent"
-                  }`}
-                >
-                  <img
-                    src={image}
-                    alt={`Thumbnail ${index + 1}`}
-                    class="w-full h-full object-cover"
-                  />
-                </button>
-              )) : ""
-            }
-          </div>
-        </div>
-
+        <Carousel images={JSON.stringify(product.data.images)} />
         {/* Product Information */}
         <div class="space-y-6">
           <div>
-            <div class="flex items-center space-x-2 mb-2">
+            <!-- <div class="flex items-center space-x-2 mb-2">
               <Badge class="bg-medical-gray text-gray-700"
                 >Professional Grade</Badge
               >
               <Badge class="bg-green-100 text-green-700">In Stock</Badge>
-            </div>
+            </div> -->
             <h1 class="text-3xl font-bold text-gray-900 mb-2">
               {product.data.name}
             </h1>
@@ -282,7 +222,6 @@ const prevImage = () => {
             }
           </CardContent>
         </Card>
-
 
         <Card>
           <CardHeader>
