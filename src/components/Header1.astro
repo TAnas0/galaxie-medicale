@@ -3,11 +3,11 @@ import { Icon } from "astro-icon/components";
 ---
 
 <header
-  class="w-full fixed top-0 z-50 bg-opacity-95 backdrop-blur-sm shadow-md border-b"
+  class="w-full fixed top-0 z-50 bg-white shadow-md"
 >
   {/* Top Bar */}
   <div
-    class="bg-primary text-primary-foreground backdrop-blur-sm shadow-md border-b"
+    class="bg-primary text-primary-foreground backdrop-blur-sm shadow-md"
   >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-10">
@@ -49,7 +49,7 @@ import { Icon } from "astro-icon/components";
   </div>
 
   {/* Main Navigation */}
-  <div class="bg-background border-b">
+  <div class="bg-background">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         {/* Desktop Navigation */}
@@ -156,7 +156,7 @@ import { Icon } from "astro-icon/components";
           <div class="relative">
             <input
               type="search"
-              placeholder="Quel produit recherchez-vous ?"
+              placeholder="Quel produit recherchez-vous?"
               class="w-full px-4 py-2 border border-input rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
               aria-label="Rechercher un produit"
             />

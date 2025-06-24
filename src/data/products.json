@@ -101,8 +101,8 @@
         "id": 10,
         "name": "Lampe opératoire HELIOS 160\n",
         "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.Lampe LED chirurgicale de haut rendement avec coupole simple ou double.\n",
-        "category": "Salle d'opération",
-        "sub_category": "Éclairage opératoire",
+        "category": "surgery",
+        "sub_category": "surgery_lighting",
         "brand": "FAMED",
         "technical_specs": "• Intensité lumineuse : jusqu’à 160 000 lux\\n • Température de couleur : 3 800 – 4 800 K (réglable)\\n • CRI ≥ 96 / R9 ≥ 96\\n • Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n • Profondeur d’éclairage : 1 200 mm\\n • Nombre de LED : 70\\n • Durée de vie : 60 000 h\\n • Consommation : 80 W\\n • Contrôle : poignée stérile, mur tactile, bras\\n • Options : caméra intégrée, écran mural, double coupole"
     },
@@ -110,8 +110,8 @@
         "id": 11,
         "name": "Lampe opératoire IGNIS 160",
         "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.",
-        "category": "Salle d'opération",
-        "sub_category": "Éclairage opératoire",
+        "category": "surgery",
+        "sub_category": "surgery_lighting",
         "brand": "FAMED",
         "technical_specs": "• Intensité lumineuse : jusqu’à 160 000 lux\\n • Température de couleur : 3 800 – 4 800 K (réglable)\\n • CRI ≥ 96 / R9 ≥ 96\\n • Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n • Profondeur d’éclairage : 1 200 mm\\n • Nombre de LED : 70\\n • Durée de vie : 60 000 h\\n • Consommation : 80 W\\n • Commandes : poignée stérile, mur tactile, bras\\n • Options : double coupole, caméra, écran mural"
     },
@@ -119,8 +119,8 @@
         "id": 12,
         "name": "Lampe chirurgicale SOLIS 130",
         "description": "Lampe chirurgicale LED fiable et performante, adaptée aux blocs opératoires polyvalents. Elle combine une forte intensité lumineuse à un excellent rendu des couleurs, et offre une grande profondeur d’éclairage. Disponible en version simple ou double coupole, elle assure un confort optimal pour les équipes médicales.\"",
-        "category": "Salle d'opération",
-        "sub_category": "Éclairage opératoire",
+        "category": "surgery",
+        "sub_category": "surgery_lighting",
         "brand": "FAMED",
         "technical_specs": "• Intensité lumineuse : jusqu’à 130 000 lux\\n• Température de couleur : 3 800 – 4 800 K (réglable)\\n• CRI ≥ 96 / R9 ≥ 96\\n• Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n• Profondeur d’éclairage : 1 200 mm\\n• Nombre de LED : 66\\n• Durée de vie : 60 000 h\\n• Consommation : 70 W\\n• Contrôle : poignée stérile, panneau mural, bras\\n• Options : double coupole, caméra, écran"
     }
