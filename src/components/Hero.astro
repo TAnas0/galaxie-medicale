@@ -8,46 +8,43 @@ import { Icon } from 'astro-icon/components'
 <section
   class="relative bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-4 pt-32 sm:px-6 lg:px-8"
 >
-  <div class="max-w-7xl mx-auto">
+  <!-- <div id="gradient"></div> -->
+  <div class="pattern-layer"></div>
+  <div class="gradient-layer"></div>
+  
+  <!-- Floating circular images -->
+  <div class="absolute inset-0 z-10 pointer-events-none opacity-70">
+    <img src="img/xray1.png" class="absolute max-w-sm max-h-sm md:block rounded-full object-cover top-[30%] left-10 sm:top-[28%] sm:left-14 md:top-[26%] md:left-20" alt="Medical equipment">
+    <img src="img/surgery1.png" class="absolute max-w-12 max-h-12 md:max-w-72 md:max-h-72 md:block rounded-full object-cover top-1/2 left-32 sm:left-36 md:left-44" alt="Medical equipment">
+    <img src="img/nurse1.png" class="absolute max-w-64 max-h-64 md:block rounded-full object-cover top-[65%] right-8 sm:right-12 md:right-20" alt="Medical equipment">
+    <!-- <img src="img/medical-room.png" class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover top-[62%] right-28 sm:right-32 md:right-40" alt="Medical equipment"> -->
+    <!-- <img src="img/microscope.png" class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover top-[10%] right-[60%] sm:right-48 md:right-[56%]" alt="Medical equipment"> -->
+    <!-- <img src="img/nurse-patient-2.png" class="absolute max-w-32 max-h-32 hidden md:block rounded-full object-cover top-[55%] left-25 sm:right-8 md:right-12" alt="Medical equipment"> -->
+    <img src="img/nurse-patient.png" class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover bottom-10 right-20 sm:bottom-12 sm:right-12 md:bottom-40 md:right-60" alt="Medical equipment">
+    <img src="img/pills.png" class="absolute max-w-24 max-h-24 rounded-full object-cover top-[15%] right-16 sm:right-[50%] md:right-[35%]" alt="Medical equipment">
+    <!-- <img src="img/surgery1.png" class="absolute max-w-sm max-h-sm rounded-full object-cover top-[20%] right-6 sm:right-0 md:right-12" alt="Medical equipment"> -->
+
+  </div>
+
+  <div id="hero-content" class="max-w-7xl mx-auto z-10 relative">
     <div class="text-center">
-      <h1
-        class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+      <!-- <h1
+        class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight"
       >
-        Équipements Médicaux Fiables pour Cliniques, Laboratoires et
-        Professionnels de Santé
-      </h1>
+        Galaxie Médicale
+      </h1> -->
 
       <p
-        class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed"
+        class="text-4xl sm:text-2xl text-gray-600 mb-16 max-w-4xl mx-auto leading-relaxed mt-32 bg-white/70 text-black px-4 py-2 rounded"
       >
-        Nous fournissons aux professionnels de santé des dispositifs médicaux
-        certifiés CE, alliant performance et fiabilité. Idéal pour les besoins
-        en diagnostic, traitement et analyses de laboratoire.
-    </p>
+        Dispositifs médicaux performants pour les professionnels de santé.
+        <br>
+        Fiables, précis, adaptés au diagnostic, au traitement et à l’analyse.
+      </p>
 
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <Button
-          href="/galaxie-medicale/catalog"
-          size="lg"
-          label="Voir le catalogue"
-          icon='arrow-right' iconPosition='right'
-          class="bg-red-600 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-        >
-          Voir le catalogue
-        </Button>
 
-        <!-- <Button
-          variant="outline"
-          size="lg"
-          label="Contact Us"
-          class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300"
-        >
-          Contact Us
-        </Button> -->
-      </div>
-    </div>
 
-    <div class="mt-16 relative">
+    <div class="mt-8 relative">
       <div
         class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200 max-w-4xl mx-auto"
       >
@@ -57,15 +54,63 @@ import { Icon } from 'astro-icon/components'
             <div class="text-gray-600">ans d’expérience</div>
           </div>
           <div>
-            <div class="text-3xl font-bold text-blue-600 mb-2">100+</div>
+            <div class="text-3xl font-bold text-blue-600 mb-2">+100</div>
             <div class="text-gray-600">Partenaires Médicaux</div>
           </div>
           <div>
-            <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
+            <div class="text-3xl font-bold text-blue-600 mb-2">+500</div>
             <div class="text-gray-600">Produits Médicaux</div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
+      <Button
+        href="/galaxie-medicale/catalog"
+        size="lg"
+        label="Voir le catalogue"
+        icon='arrow-right' iconPosition='right'
+        class="bg-red-600 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+      >
+        Voir le catalogue
+      </Button>
+
+      <!-- <Button
+        variant="outline"
+        size="lg"
+        label="Contact Us"
+        class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300"
+      >
+        Contact Us
+      </Button> -->
+    </div>
+  </div>
   </div>
 </section>
+
+
+<style>
+
+/* The pattern layer (top layer) */
+.pattern-layer {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.03) 25%, rgba(0,0,0,0.03) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.03) 75%, rgba(0,0,0,0.03) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(0,0,0,0.03) 25%, rgba(0,0,0,0.03) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.03) 75%, rgba(0,0,0,0.03) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+  background-repeat: repeat;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* The gradient layer (bottom layer) */
+.gradient-layer {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(at top left, #e0f7fa, #ffffff 60%);
+  z-index: 1;
+}
+
+</style>
