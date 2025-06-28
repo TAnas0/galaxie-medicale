@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 const products = await getCollection('products');
 ---
 <div
-  class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-4 ptablet:gap-x-4 gap-y-6 pt-1"
+  class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-4 ptablet:gap-x-4 gap-y-6 pt-1 mr-2 ml-2 md:ml-0 md:mr-0"
 >
   {
     products.map((product) => (
@@ -14,19 +14,12 @@ const products = await getCollection('products');
       >
         <a href={`/galaxie-medicale/products/${product.id}`} class="block hover:opacity-90 transition-opacity h-full">
           <Card class="`h-full p-1`">
-            <div class="relative w-full h-40 rounded-lg">
+            <div class="relative w-full min-h-62 rounded-lg">
               <img
-                class="absolute aspect-[16/9] inset-x-0 mx-auto w-full rounded-lg"
+                class="absolute aspect-[16/9] inset-x-0 mx-auto w-full rounded-lg h-full"
                 src={product.data.image}
                 alt={product.data.name}
               />
-            </div>
-            <div class="font-sans mt-3">
-              <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-                {product.data.name}
-              </h4>
-              <p class="text-sm text-muted-400">{product.data.category}</p>
-              <p class="text-sm text-muted-400">{product.data.brand}</p>
             </div>
             {/* <div class="mt-2">
               <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
@@ -36,6 +29,13 @@ const products = await getCollection('products');
             {/* <div class="flex items-center justify-end gap-2">
               <button>See details</button>
             </div> */}
+          <div class="font-sans mt-3">
+              <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+                {product.data.name}
+              </h4>
+              <p class="text-sm text-muted-400">{product.data.category}</p>
+              <p class="text-sm text-muted-400">{product.data.brand}</p>
+            </div>
           </Card>
         </a>
       </div>

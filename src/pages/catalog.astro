@@ -12,18 +12,18 @@ import Grid from "../components/catalog/Grid.astro";
   <Header1 />
 
   <div class="w-full max-w-7xl mx-auto">
-    <div id="catalog" x-data="catalogUIState()" x-intersect="activeStep = 'spy-1'">
+    <div id="catalog" x-data="catalogUIState()">
       <Toolbar />
 
       <!--Grid wrapper-->
       <div class="py-10">
         <div class="grid grid-cols-12 md:gap-12 pb-20">
           <!--Filters-->
-          <div class="hidden lg:block col-span-12 lg:col-span-3">
+          <div class="lg:block col-span-4 lg:col-span-3">
             <Filters />
           </div>
           <!--Content-->
-          <div class="col-span-12 lg:col-span-9">
+          <div class="col-span-8 lg:col-span-9">
             <!--Subgrid-->
             <Grid />
           </div>
