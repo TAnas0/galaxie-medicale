@@ -7,7 +7,8 @@ import { Icon } from "astro-icon/components";
 >
   {/* Top Bar */}
   <div
-    class="bg-primary text-primary-foreground backdrop-blur-sm shadow-md"
+    id="infobar" 
+    class="transition-all duration-500 ease-in-out overflow-hidden bg-primary text-primary-foreground backdrop-blur-sm shadow-md"
   >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-10">
@@ -318,3 +319,28 @@ import { Icon } from "astro-icon/components";
   >
   </div>
 </header>
+
+
+
+<script is:browser>
+  let lastScrollY = window.scrollY;
+  const topbar = document.getElementById("infobar");
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 250) {
+      // Scrolling down
+      // topbar.classList.add("hidden");
+      topbar.classList.add("max-h-0", "opacity-0");
+      topbar.classList.remove("max-h-20", "opacity-100");
+    } else {
+      // Scrolling up
+      topbar.classList.remove("max-h-0", "opacity-0");
+      topbar.classList.add("max-h-20", "opacity-100");
+      // topbar.classList.remove("hidden");
+    }
+
+    // lastScrollY = currentScrollY;
+  });
+</script>

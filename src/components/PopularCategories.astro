@@ -7,37 +7,43 @@ import CardHeader from "./ui/CardHeader.astro";
 import CardTitle from "./ui/CardTitle.astro";
 import CardDescription from "./ui/CardDescription.astro";
 import CardContent from "./ui/CardContent.astro";
+import { Icon } from "astro-icon/components";
 
 const categories = [
   {
     title: "Appareils de Diagnostic",
-    description: "Équipements avancés pour l’imagerie et le diagnostic médical de précision.",
+    description:
+      "Équipements avancés pour l’imagerie et le diagnostic médical de précision.",
     icon: "🔬",
-    image: "img/categories/surgery2.jpg"
+    image: "img/categories/surgery2.jpg",
   },
   {
     title: "Équipements de Laboratoire",
-    description: "Instruments de haute précision pour l’analyse et la recherche en laboratoire.",
+    description:
+      "Instruments de haute précision pour l’analyse et la recherche en laboratoire.",
     icon: "⚗️",
-    image: "img/categories/lab1.jpg"
+    image: "img/categories/lab1.jpg",
   },
   {
     title: "Surveillance des Patients",
-    description: "Systèmes de monitoring en temps réel pour un suivi médical optimal.",
+    description:
+      "Systèmes de monitoring en temps réel pour un suivi médical optimal.",
     icon: "📊",
-    image: "img/categories/monitoring1.jpg"
+    image: "img/categories/monitoring1.jpg",
   },
   {
     title: "Instruments Chirurgicaux",
-    description: "Outils et équipements chirurgicaux de qualité supérieure pour interventions sûres et efficaces.",
+    description:
+      "Outils et équipements chirurgicaux de qualité supérieure pour interventions sûres et efficaces.",
     icon: "🏥",
-    image: "img/categories/surgery2.jpg"
+    image: "img/categories/surgery2.jpg",
   },
   {
     title: "Équipements d’Urgence",
-    description: "Matériel critique pour les soins intensifs et les interventions d’urgence.",
+    description:
+      "Matériel critique pour les soins intensifs et les interventions d’urgence.",
     icon: "🚑",
-    image: "img/categories/emergency1.jpg"
+    image: "img/categories/emergency1.jpg",
   },
   // {
   //   title: "Dispositifs de Rééducation",
@@ -46,34 +52,38 @@ const categories = [
   // },
   {
     title: "Matériel de Stérilisation",
-    description: "Solutions et équipements pour la stérilisation et l’hygiène en milieu médical.",
+    description:
+      "Solutions et équipements pour la stérilisation et l’hygiène en milieu médical.",
     icon: "🧼",
-    image: "img/categories/monitoring1.jpg"
+    image: "img/categories/monitoring1.jpg",
   },
   {
     title: "Mobilier Médical",
-    description: "Meubles ergonomiques et fonctionnels pour cliniques, hôpitaux et laboratoires.",
+    description:
+      "Meubles ergonomiques et fonctionnels pour cliniques, hôpitaux et laboratoires.",
     icon: "🛏️",
   },
   {
     title: "Dispositifs de Thérapie",
-    description: "Équipements médicaux pour divers traitements thérapeutiques spécialisés.",
+    description:
+      "Équipements médicaux pour divers traitements thérapeutiques spécialisés.",
     icon: "💊",
   },
   {
     title: "Accessoires Médicaux",
-    description: "Compléments et accessoires essentiels pour accompagner les équipements médicaux.",
+    description:
+      "Compléments et accessoires essentiels pour accompagner les équipements médicaux.",
     icon: "🩺",
   },
 ];
-
 ---
 
 <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12">
       <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-        Nos Catégories
+        <!-- Nos Catégories -->
+        ...ou explorez par catégorie
       </h2>
       <!-- <p class="text-lg text-gray-600">
         Découvrez notre large gamme complète d’équipements médicaux
@@ -81,33 +91,45 @@ const categories = [
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {categories.map((category, index) => (
-        <Card 
-          key={index} 
-          class="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-0 shadow-md  bg-cover bg-center bg-no-repeat min-h-124"
-          style={`background-image: url('${category.image}');`}
-        >
-          {/* <img src="img/categories/surgery1.jpg" alt=""> */}
-          <CardHeader className="text-center pb-4 bg-white">
-            {/* <div class="text-4xl mb-3">{category.icon}</div> */}
-            <CardTitle className="text-xl font-semibold text-gray-900">
-              {category.title}
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="text-center">
-            <CardDescription className="text-gray-600 mb-4">
-              {category.description}
-            </CardDescription>
-            {/* <Button 
+      {
+        categories.map((category, index) => (
+          <a href={`/category/${1}`}>
+            <Card
+              key={index}
+              class="group transition-shadow hover:shadow-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 border-0 shadow-md bg-cover bg-center bg-no-repeat min-h-96 md:min-h-124"
+              style={`background-image: url('${category.image}');`}
+            >
+              {/* <img src="img/categories/surgery1.jpg" alt=""> */}
+              <CardHeader className="text-center pb-2 bg-white opacity-90">
+                {/* <div class="text-4xl mb-3">{category.icon}</div> */}
+                <CardTitle className="text-xl font-semibold text-gray-900">
+                  {category.title}
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  {category.description}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="justify-between text-center">
+                {/* <Button 
               variant="ghost" 
               class="text-blue-600 hover:text-blue-700 hover:bg-blue-50 transition-colors duration-300"
             > */}
-              Voir Produits
-              {/* <ArrowRight class="ml-2 h-4 w-4" /> */}
-            {/* </Button> */}
-          </CardContent>
-        </Card>
-      ))}
+                {/* <div class="flex justify-center items-center gap-2 text-blue-600 hover:underline cursor-pointer">
+                <p>
+                  Voir Produits
+                </p>
+                <Icon name="heroicons:arrow-right" />
+              </div> */}
+                {/* </Button> */}
+                <div class="flex items-center gap-1 absolute bottom-4 right-4 bg-white/80 text-blue-600 font-medium px-3 py-1 rounded-md backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Voir Produits
+                  <Icon name="heroicons:arrow-right" />
+                </div>
+              </CardContent>
+            </Card>
+          </a>
+        ))
+      }
     </div>
   </div>
 </section>
