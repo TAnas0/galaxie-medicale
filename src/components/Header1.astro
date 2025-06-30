@@ -50,7 +50,7 @@ import { Icon } from "astro-icon/components";
   </div>
 
   {/* Main Navigation */}
-  <div class="bg-background">
+  <div id="navbar" class="bg-background transition-all duration-500 ease-in-out">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         {/* Desktop Navigation */}
@@ -67,7 +67,7 @@ import { Icon } from "astro-icon/components";
           />
           {/* Accueil */}
           <a
-            href="/galaxie-medicale"
+            href="/"
             class="text-foreground hover:text-primary transition-colors font-medium"
           >
             Accueil
@@ -77,7 +77,7 @@ import { Icon } from "astro-icon/components";
           <div class="relative group">
             <a
               class="text-foreground hover:text-primary transition-colors font-medium"
-              href="/galaxie-medicale/catalog"
+              href="catalog"
             >
               Catalogue
             </a>
@@ -324,7 +324,8 @@ import { Icon } from "astro-icon/components";
 
 <script is:browser>
   let lastScrollY = window.scrollY;
-  const topbar = document.getElementById("infobar");
+  const infobar = document.getElementById("infobar");
+  const navbar = document.getElementById("navbar");
 
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
@@ -332,12 +333,14 @@ import { Icon } from "astro-icon/components";
     if (currentScrollY > 250) {
       // Scrolling down
       // topbar.classList.add("hidden");
-      topbar.classList.add("max-h-0", "opacity-0");
-      topbar.classList.remove("max-h-20", "opacity-100");
+      infobar.classList.add("max-h-0", "opacity-0");
+      infobar.classList.remove("max-h-20", "opacity-100");
+      navbar.classList.add("bg-primary");
     } else {
       // Scrolling up
-      topbar.classList.remove("max-h-0", "opacity-0");
-      topbar.classList.add("max-h-20", "opacity-100");
+      infobar.classList.remove("max-h-0", "opacity-0");
+      infobar.classList.add("max-h-20", "opacity-100");
+      navbar.classList.remove("bg-primary");
       // topbar.classList.remove("hidden");
     }
 
