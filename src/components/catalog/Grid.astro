@@ -12,7 +12,7 @@ const products = await getCollection('products');
         x-show={`activeCategory === 'all' || activeCategory === '${product.data.category}'`}
         class="h-full"
       >
-        <a href={`/galaxie-medicale/products/${product.id}`} class="block hover:opacity-90 transition-opacity h-full">
+        <a href={`products/${product.id}`} class="block hover:opacity-90 transition-opacity h-full">
           <Card class="`h-full p-1`">
             <div class="relative w-full min-h-62 rounded-lg">
               <img

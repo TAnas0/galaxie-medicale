@@ -35,9 +35,28 @@ import Grid from "../components/catalog/Grid.astro";
 </Layout>
 
 <script type="module">
-  function catalogUIState() {
+  const validCategories = [
+    "all",
+    "general",
+    "diagnostic_equipment",
+    "surgery",
+    "laboratory_equipment",
+    "sterilization",
+    "hospital_equipment"
+  ];
+
+  // Get the query param from the URL
+  const params = new URLSearchParams(window.location.search);
+  const categoryFromURL = params.get("category");
+
+  // Default to 'all' if the value is invalid or missing
+  const initialCategory = validCategories.includes(categoryFromURL)
+    ? categoryFromURL
+    : "all";
+  
+    function catalogUIState() {
     return {
-      activeCategory: "all",
+      activeCategory: initialCategory,
       resetScroll() {
         window.scrollTo({ top: 350, behavior: "smooth" });
         return false;
