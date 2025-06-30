@@ -61,13 +61,13 @@ import { Icon } from "astro-icon/components";
         >
           {/* Logo */}
           <img
-            src="/galaxie-medicale/img/galaxie-medicale-stretched.jpg"
+            src={Astro.site + "logo.png"}
             alt="Galaxie Medicale Logo"
             class="h-14"
           />
           {/* Accueil */}
           <a
-            href="/"
+            href={Astro.site}
             class="text-foreground hover:text-primary transition-colors font-medium"
           >
             Accueil
@@ -77,7 +77,7 @@ import { Icon } from "astro-icon/components";
           <div class="relative group">
             <a
               class="text-foreground hover:text-primary transition-colors font-medium"
-              href="catalog"
+              href={Astro.site + "catalog"}
             >
               Catalogue
             </a>
@@ -245,7 +245,7 @@ import { Icon } from "astro-icon/components";
 
       <nav class="space-y-6" role="navigation" aria-label="Navigation mobile">
         <a
-          href="/"
+          href={Astro.site}
           class="block text-card-foreground hover:text-primary transition-colors font-medium text-lg"
         >
           Accueil

@@ -383,7 +383,7 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
               <Card key={index} class="hover:shadow-lg transition-shadow">
                 <div class="aspect-[3/2] bg-gray-100 rounded-t-lg overflow-hidden">
                   <img
-                    src={product.data.image}
+                    src={Astro.site + product.data.image}
                     alt={product.data.name}
                     class="w-full h-full object-cover"
                   />

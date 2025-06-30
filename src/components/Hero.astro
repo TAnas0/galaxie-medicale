@@ -14,16 +14,15 @@ import { Icon } from 'astro-icon/components'
   
   <!-- Floating circular images -->
   <div class="absolute inset-0 z-10 pointer-events-none opacity-70">
-    <img src="img/xray1.webp" class="absolute max-w-24 max-h-24 md:block rounded-full object-cover top-[30%] left-[30%] sm:top-[28%] sm:left-14 md:top-[26%] md:left-[50%] !border-1 border-blue-500" alt="Medical equipment">
-    <img src="img/surgery1.webp" class="absolute max-w-12 max-h-12 md:max-w-72 md:max-h-72 md:block rounded-full object-cover top-1/2 left-32 sm:left-36 md:left-44 !border-1 border-blue-500 z-12" alt="Medical equipment">
-    <img src="img/nurse1.webp" class="absolute max-w-64 max-h-64 md:block rounded-full object-cover top-[65%] right-8 sm:right-12 md:right-20 !border-1 border-blue-500" alt="Medical equipment">
-    <img src="img/medical-room.webp" class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover top-[12%] left-18 sm:left-22 md:left-32 !border-1 border-blue-500" alt="Medical equipment">
-    <!-- <img src="img/microscope.webp" class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover top-[10%] right-[60%] sm:right-48 md:right-[56%]" alt="Medical equipment"> -->
-    <!-- <img src="img/nurse-patient-2.webp" class="absolute max-w-32 max-h-32 hidden md:block rounded-full object-cover top-[55%] left-25 sm:right-8 md:right-12" alt="Medical equipment"> -->
-    <img src="img/nurse-patient.webp" class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover bottom-10 right-20 sm:bottom-12 sm:right-12 md:bottom-40 md:right-60 !border-1 border-blue-500" alt="Medical equipment">
-    <img src="img/pills.webp" class="absolute max-w-24 max-h-24 rounded-full object-cover top-[15%] right-16 sm:right-[50%] md:right-[35%] !border-1 border-blue-500" alt="Medical equipment">
-    <!-- <img src="img/surgery1.webp" class="absolute max-w-sm max-h-sm rounded-full object-cover top-[20%] right-6 sm:right-0 md:right-12" alt="Medical equipment"> -->
-
+    <img src={Astro.site + "img/xray1.webp"} class="absolute max-w-24 max-h-24 md:block rounded-full object-cover top-[30%] left-[30%] sm:top-[28%] sm:left-14 md:top-[26%] md:left-[50%] !border-1 border-blue-500" alt="Medical equipment">
+    <img src={Astro.site + "img/surgery1.webp"} class="absolute max-w-12 max-h-12 md:max-w-72 md:max-h-72 md:block rounded-full object-cover top-1/2 left-32 sm:left-36 md:left-44 !border-1 border-blue-500 z-12" alt="Medical equipment">
+    <img src={Astro.site + "img/nurse1.webp"} class="absolute max-w-64 max-h-64 md:block rounded-full object-cover top-[65%] right-8 sm:right-12 md:right-20 !border-1 border-blue-500" alt="Medical equipment">
+    <img src={Astro.site + "img/medical-room.webp"} class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover top-[12%] left-18 sm:left-22 md:left-32 !border-1 border-blue-500" alt="Medical equipment">
+    <!-- <img src={Astro.site + "img/microscope.webp"} class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover top-[10%] right-[60%] sm:right-48 md:right-[56%]" alt="Medical equipment"> -->
+    <!-- <img src={Astro.site + "img/nurse-patient-2.webp"} class="absolute max-w-32 max-h-32 hidden md:block rounded-full object-cover top-[55%] left-25 sm:right-8 md:right-12" alt="Medical equipment"> -->
+    <img src={Astro.site + "img/nurse-patient.webp"} class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover bottom-10 right-20 sm:bottom-12 sm:right-12 md:bottom-40 md:right-60 !border-1 border-blue-500" alt="Medical equipment">
+    <img src={Astro.site + "img/pills.webp"} class="absolute max-w-24 max-h-24 rounded-full object-cover top-[15%] right-16 sm:right-[50%] md:right-[35%] !border-1 border-blue-500" alt="Medical equipment">
+    <!-- <img src={Astro.site + "img/surgery1.webp"} class="absolute max-w-sm max-h-sm rounded-full object-cover top-[20%] right-6 sm:right-0 md:right-12" alt="Medical equipment"> -->
   </div>
 
   <div id="hero-content" class="max-w-7xl mx-auto z-10 relative">
@@ -67,7 +66,7 @@ import { Icon } from 'astro-icon/components'
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
       <Button
-        href="catalog"
+        href={Astro.site + "catalog"}
         size="lg"
         label="Voir le catalogue"
         icon='arrow-right' iconPosition='right'
