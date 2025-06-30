@@ -9,7 +9,7 @@ import alpinejs from '@astrojs/alpinejs';
 export default defineConfig({
   site: 'https://tanas0.github.io',
   // site: 'http://localhost:4321',
-  base: 'galaxie-medicale',
+  base: '/galaxie-medicale',
   vite: {
       plugins: [tailwindcss()],
   },
