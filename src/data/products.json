@@ -4,15 +4,18 @@
         "name": "Autoclave Phoenix Blu Plus⁺ 18 L",
         "category": "sterilization",
         "sub_category": "",
-        "image": "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
+        "image": "catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
         "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 18 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
         "availability": "In Stock",
-        "brand": "Guarisco Medical Sterilizer",
+        "brand": {
+            "name":"Guarisco Medical Sterilizer",
+            "description": ""
+        },
         "technical_specs": "",
         "images": [
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-plus-18-l/2.jpg",
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-plus-18-l/3.jpg"
+            "/catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
+            "/catalog/img/autoclave-phoenix-blu-plus-18-l/2.jpg",
+            "/catalog/img/autoclave-phoenix-blu-plus-18-l/3.jpg"
         ]
     },
     {
@@ -21,17 +24,20 @@
         "description": "L’autoclave Phoenix Blu 18 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.",
         "category": "sterilization",
         "sub_category": "Autoclave de table",
-        "image": "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
-        "brand": "Guarisco Medical Sterilizer ",
+        "image": "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+        "brand": {
+            "name":"Guarisco Medical Sterilizer",
+            "description": ""
+        },
         "technical_specs": "Capacité de la chambre: 18 litres\\nDimensions externes: 462 x 445 x 600 mm (L x H x P)\\nDimensions chambre: Ø 255 x 360 mm\\nDimensions plateau: 285 x 190 mm\\nConsommation électrique: 1800 W\\nRéservoir d’eau distillée: 4,6 litres\\nRéservoir eaux usées: 5 litres\\nPoids net / brut: 54 kg / 56 kg\\nTemps de cycle classe B: Entre 19 minutes et 38 minutes\\nVersions disponibles: Standard LCD / Standard LED / LCD imprimante / LED imprimante / LCD AWF / LED AWF",
         "images": [
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-PRINTER-18.jpg",
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-18.jpg",
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-AWF-18.jpg",
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-PRINTER-18.jpg",
-            "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-PRINTER-18.png"
+            "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+            "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
+            "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-PRINTER-18.jpg",
+            "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-18.jpg",
+            "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-AWF-18.jpg",
+            "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-PRINTER-18.jpg",
+            "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-PRINTER-18.png"
         ]
     },
     {
@@ -40,7 +46,10 @@
         "description": "L’autoclave Phoenix Blu 12 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.",
         "category": "sterilization",
         "sub_category": "Autoclave de table",
-        "brand": "Guarisco Medical Sterilizer ",
+        "brand": {
+            "name":"Guarisco Medical Sterilizer",
+            "description": ""
+        },
         "technical_specs": "Capacité de la chambre\t12 litres\\nDimensions externes\t407 x 410 x 570 mm (L x H x P)\\nDimensions chambre\tØ 210 x 360 mm\\nDimensions plateau\t310 x 160 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t3 litres\\nRéservoir eaux usées\t4 litres\\nPoids net / brut\t42 kg / 44 kg\\nTemps de cycle classe B\t15 minutes\\nVersions disponibles\tStandard / USB / USB + Imprimante\\n"
     },
     {
@@ -49,7 +58,10 @@
         "description": "Performance et Fiabilité pour une Stérilisation Médicale Optimale\nL’autoclave Phoenix Blu 24 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Disponible en versions 12 L et 18 L, il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.\n",
         "category": "sterilization",
         "sub_category": "Autoclave de table",
-        "brand": "Guarisco Medical Sterilizer ",
+        "brand": {
+            "name":"Guarisco Medical Sterilizer",
+            "description": ""
+        },
         "technical_specs": "Capacité de la chambre\t24 litres\\nDimensions externes\t462 x 445 x 600 mm (L x H x P)\\nDimensions chambre\tØ 255 x 460 mm\\nDimensions plateau\t385 x 190 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t4,6 litres\\nRéservoir eaux usées\t5 litres\\nPoids net / brut\t56 kg / 59 kg\\nTemps de cycle classe B\tEntre 19 minutes et 38 minutes\\nVersions disponibles\tStandard LCD / Standard LED/ LCD imprimante / LED imprimante / LCD AWF / LED AWF\\n"
     },
     {
@@ -58,7 +70,10 @@
         "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 18 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
         "category": "Stérilisation",
         "sub_category": "Autoclave de table",
-        "brand": "Guarisco Medical Sterilizer ",
+        "brand": {
+            "name":"Guarisco Medical Sterilizer",
+            "description": ""
+        },
         "technical_specs": "Capacité de la chambre\t18 litres\\nDimensions externes\t462 x 445 x 600 mm (L x H x P)\\nDimensions chambre\tØ 255 x 360 mm\\nDimensions plateau\t285 x 190 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t4,6 litres\\nRéservoir eaux usées\t5 litres\\nPoids net / brut\t54 kg / 56 kg\\nTemps de cycle classe B\t15 minutes (approx.)\\nSystème d’osmose\tIntégré – raccordement direct au robinet\\nVersions disponibles\tPlus+ (latéral) / TOP (au-dessus)\\n"
     },
     {
@@ -67,7 +82,10 @@
         "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 24 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
         "category": "Stérilisation",
         "sub_category": "Autoclave de table",
-        "brand": "Guarisco Medical Sterilizer ",
+        "brand": {
+            "name":"Guarisco Medical Sterilizer",
+            "description": ""
+        },
         "technical_specs": "Capacité de la chambre\t24 litres\\nDimensions externes\t462 x 445 x 600 mm (L x H x P)\\nDimensions chambre\tØ 255 x 460 mm\\nDimensions plateau\t285 x 190 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t4,6 litres\\nRéservoir eaux usées\t5 litres\\nPoids net / brut\t56 kg / 59 kg\\nTemps de cycle classe B\t15 minutes (approx.)\\nSystème d’osmose\tIntégré – raccordement direct au robinet\\nVersions disponibles\tPlus+ (latéral) / TOP (au-dessus)\\n"
     },
     {
@@ -76,7 +94,10 @@
         "description": "Autoclave compact (100L ou 150L) idéal pour les petites salles de stérilisation et les blocs opératoires.",
         "category": "Stérilisation",
         "sub_category": "Autoclave vertical",
-        "brand": "SMS ",
+        "brand": {
+            "name":"SMS",
+            "description": ""
+        },
         "technical_specs": "• Capacité : 103L ou 150L\\n• Porte simple ou double\\n• Portes coulissantes verticales automatiques\\n• Générateur de vapeur intégré\\n• Système d’économie d’eau de refroidissement\\n• Écran tactile couleur LCD 7”\\n• 19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)\\n• Chambre et portes en acier inoxydable AISI 316L\\n• Imprimante intégrée, contrôle d'accès par mot de passe\\n• Contrôle et surveillance à distance"
     },
     {
@@ -85,7 +106,10 @@
         "description": "Autoclave à grande capacité (300–900L) compatible avec le standard STU pour les grandes unités de stérilisation (CSSD).",
         "category": "Stérilisation",
         "sub_category": "Autoclave vertical",
-        "brand": "SMS ",
+        "brand": {
+            "name":"SMS",
+            "description": ""
+        },
         "technical_specs": "• Capacité : de 334L à 897L (4 à 12 STU)\\n• Versions à porte simple ou double\\n• Portes coulissantes verticales automatiques\\n• Générateur de vapeur intégré\\n• Écran tactile couleur LCD 7”\\n• 19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)\\n• Chambre et portes en acier inoxydable AISI 316L\\n• Imprimante intégrée, contrôle d'accès par mot de passe\\n• Contrôle et surveillance à distance"
     },
     {
@@ -94,7 +118,10 @@
         "description": "Autoclave compact idéal pour les petites cliniques et laboratoires, avec station de traitement d'eau et compresseur intégrés.",
         "category": "Stérilisation",
         "sub_category": "Autoclave vertical",
-        "brand": "SMS ",
+        "brand": {
+            "name":"SMS",
+            "description": ""
+        },
         "technical_specs": "• Capacité : 100 Litre / 1 STU\\n• Porte à ouverture manuelle\\n• Générateur de vapeur intégré\\n• Chambre et porte en acier inoxydable AISI 316L\\n• Écran tactile couleur LCD 7”\\n• 15 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)\\n• Armoire mobile en acier inox pour station d’eau et compresseur (option)\\n• Imprimante intégrée, contrôle d'accès par mot de passe"
     },
     {
@@ -103,7 +130,10 @@
         "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.Lampe LED chirurgicale de haut rendement avec coupole simple ou double.\n",
         "category": "surgery",
         "sub_category": "surgery_lighting",
-        "brand": "FAMED",
+        "brand": {
+            "name":"FAMED",
+            "description": ""
+        },
         "technical_specs": "• Intensité lumineuse : jusqu’à 160 000 lux\\n • Température de couleur : 3 800 – 4 800 K (réglable)\\n • CRI ≥ 96 / R9 ≥ 96\\n • Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n • Profondeur d’éclairage : 1 200 mm\\n • Nombre de LED : 70\\n • Durée de vie : 60 000 h\\n • Consommation : 80 W\\n • Contrôle : poignée stérile, mur tactile, bras\\n • Options : caméra intégrée, écran mural, double coupole"
     },
     {
@@ -112,7 +142,10 @@
         "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.",
         "category": "surgery",
         "sub_category": "surgery_lighting",
-        "brand": "FAMED",
+        "brand": {
+            "name":"FAMED",
+            "description": ""
+        },
         "technical_specs": "• Intensité lumineuse : jusqu’à 160 000 lux\\n • Température de couleur : 3 800 – 4 800 K (réglable)\\n • CRI ≥ 96 / R9 ≥ 96\\n • Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n • Profondeur d’éclairage : 1 200 mm\\n • Nombre de LED : 70\\n • Durée de vie : 60 000 h\\n • Consommation : 80 W\\n • Commandes : poignée stérile, mur tactile, bras\\n • Options : double coupole, caméra, écran mural"
     },
     {
@@ -121,7 +154,17 @@
         "description": "Lampe chirurgicale LED fiable et performante, adaptée aux blocs opératoires polyvalents. Elle combine une forte intensité lumineuse à un excellent rendu des couleurs, et offre une grande profondeur d’éclairage. Disponible en version simple ou double coupole, elle assure un confort optimal pour les équipes médicales.\"",
         "category": "surgery",
         "sub_category": "surgery_lighting",
-        "brand": "FAMED",
-        "technical_specs": "• Intensité lumineuse : jusqu’à 130 000 lux\\n• Température de couleur : 3 800 – 4 800 K (réglable)\\n• CRI ≥ 96 / R9 ≥ 96\\n• Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n• Profondeur d’éclairage : 1 200 mm\\n• Nombre de LED : 66\\n• Durée de vie : 60 000 h\\n• Consommation : 70 W\\n• Contrôle : poignée stérile, panneau mural, bras\\n• Options : double coupole, caméra, écran"
+        "image": "https://famed.pl/media/14dhgjo2/_l9b3760.jpg",
+        "brand": {
+            "name":"FAMED",
+            "description": ""
+        },
+        "technical_specs": "• Intensité lumineuse : jusqu’à 130 000 lux\\n• Température de couleur : 3 800 – 4 800 K (réglable)\\n• CRI ≥ 96 / R9 ≥ 96\\n• Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n• Profondeur d’éclairage : 1 200 mm\\n• Nombre de LED : 66\\n• Durée de vie : 60 000 h\\n• Consommation : 70 W\\n• Contrôle : poignée stérile, panneau mural, bras\\n• Options : double coupole, caméra, écran",
+        "images": [
+            "https://famed.pl/media/14dhgjo2/_l9b3760.jpg",
+            "https://famed.pl/media/xwnbbaqh/_l9b3728.jpg?width=400",
+            "https://famed.pl/media/lodo14c0/_l9b3369.jpg?width=400",
+            "https://famed.pl/media/ovoem2d3/_l9b3409.jpg?width=400"
+        ]
     }
 ]

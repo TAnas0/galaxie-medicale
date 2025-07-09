@@ -13,7 +13,10 @@ const products = defineCollection({
         images: z.array(z.string()).optional(),
         description: z.string().optional(),
         availability: z.string().optional(),
-        brand: z.string().optional(),
+        brand: z.object({
+            name: z.string().optional(),
+            description: z.string().optional(),
+        }).optional(),
         // tags: z.array(z.string()),
         technical_specs: z.string().optional(),
     })
