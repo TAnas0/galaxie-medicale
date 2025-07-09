@@ -14,10 +14,12 @@ import pillsImage from "../assets/hero/pills.webp";
 // import { Icon } from '@iconify-icon/astro'; // use if you're using Iconify
 ---
 <section
-  class="relative px-4 pt-32 sm:px-6 lg:px-8"
-> 
+  class="relative px-4 pt-32 pb-10 sm:px-6 lg:px-8"
+>
+  <div class="pattern-layer"></div>
+
   <!-- Floating circular images -->
-  <div class="absolute inset-0 z-10 pointer-events-none opacity-70">
+  <div class="inset-0 z-10 pointer-events-none opacity-90">
     <div>
       <Image src={nurse1Image} class="absolute max-w-64 max-h-64 md:block rounded-full object-cover top-[65%] right-8 sm:right-12 md:right-20 shadow-2xl" alt="Medical equipment">
     </div>
@@ -25,14 +27,14 @@ import pillsImage from "../assets/hero/pills.webp";
       <Image src={medicalImage} class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover top-[12%] left-18 sm:left-22 md:left-32 shadow-2xl z-2" alt="Medical equipment">
     </div>
     <div>
-      <Image src={microscopeImage} class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover top-[50%] left-[10%] sm:right-48 md:right-[56%] shadow-2xl z-1" alt="Medical equipment">
+      <Image src={microscopeImage} class="absolute max-w-64 max-h-64 hidden md:block rounded-full object-cover top-[55%] left-[10%] sm:right-48 md:right-[56%] shadow-2xl z-3" alt="Medical equipment">
     </div>
     <div>
       <Image src={nurseImage} class="absolute max-w-32 max-h-32 hidden md:block rounded-full object-cover top-[55%] left-25 sm:right-8 md:right-12 shadow-2xl z-3" alt="Medical equipment">
     </div>
-    <div>
+    <!-- <div>
       <Image src={pillsImage} class="absolute max-w-24 max-h-24 rounded-full object-cover top-[25%] right-16 sm:right-[50%] md:right-[20%] shadow-2xl z-3" alt="Medical equipment">
-    </div>
+    </div> -->
     <div>
       <Image src={surgery1Image} class="absolute max-w-sm max-h-sm rounded-full object-cover top-[20%] right-6 sm:right-0 md:right-12 shadow-2xl" alt="Medical equipment">
     </div>
@@ -103,5 +105,15 @@ import pillsImage from "../assets/hero/pills.webp";
 
 
 <style>
-
+  .pattern-layer {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.03) 25%, rgba(0,0,0,0.03) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.03) 75%, rgba(0,0,0,0.03) 76%, transparent 77%, transparent),
+      linear-gradient(90deg, transparent 24%, rgba(0,0,0,0.03) 25%, rgba(0,0,0,0.03) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.03) 75%, rgba(0,0,0,0.03) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    z-index: -1;
+    pointer-events: none;
+  }
 </style>

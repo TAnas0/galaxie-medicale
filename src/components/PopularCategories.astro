@@ -2,12 +2,18 @@
 // import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 // import { Button } from "./ui/button";
 // import { ArrowRight } from "lucide-react";
+import { getImage } from 'astro:assets';
 import Card from "./ui/Card.astro";
 import CardHeader from "./ui/CardHeader.astro";
 import CardTitle from "./ui/CardTitle.astro";
 import CardDescription from "./ui/CardDescription.astro";
 import CardContent from "./ui/CardContent.astro";
 import { Icon } from "astro-icon/components";
+import surgeryImage from "../assets/categories/surgery2.webp";
+import lab1Image from "../assets/categories/lab1.webp";
+import monitoring1Image from "../assets/categories/monitoring1.webp";
+import surgery2Image from "../assets/categories/surgery2.webp";
+import emergency1Image from "../assets/categories/emergency1.webp";
 
 const categories = [
   {
@@ -15,60 +21,63 @@ const categories = [
     title: "Appareils de Diagnostic",
     description: "Imagerie et outils de diagnostic pour une détection précise des pathologies",
     icon: "🔬",
-    image:"/galaxie-medicale/img/categories/surgery2.webp",
+    image: await getImage({src: surgeryImage, format: "webp"}),
   },
   {
     category: "laboratory_equipment",
     title: "Équipements de Laboratoire",
     description: "Instruments pour analyses biologiques, chimiques et cliniques en laboratoire",
     icon: "⚗️",
-    image:"/galaxie-medicale/img/categories/lab1.webp",
+    image: await getImage({src: lab1Image, format: "webp"}),
   },
   {
     category: "patient_monitoring",
     title: "Surveillance des Patients",
     description: "Dispositifs de suivi en temps réel des signes vitaux et états cliniques",
     icon: "📊",
-    image:"/galaxie-medicale/img/categories/monitoring1.webp",
+    image: await getImage({src: monitoring1Image, format: "webp"}),
   },
   {
     category: "surgery",
     title: "Instruments Chirurgicaux",
     description: "Outils de chirurgie stérilisables pour interventions générales ou spécialisées",
     icon: "🏥",
-    image:"/galaxie-medicale/img/categories/surgery2.webp",
+    image: await getImage({src: surgery2Image, format: "webp"}),
   },
   {
     category: "emergency",
     title: "Équipements d’Urgence",
     description: "Matériel indispensable pour les soins intensifs et interventions rapides",
     icon: "🚑",
-    image:"/galaxie-medicale/img/categories/emergency1.webp",
+    image: await getImage({src: emergency1Image, format: "webp"}),
   },
   {
     category: "sterilization",
     title: "Matériel de Stérilisation",
     description: "Autoclaves, laveurs et consommables pour l’asepsie médicale",
     icon: "🧼",
-    image:"/galaxie-medicale/img/categories/monitoring1.webp",
+    image: await getImage({src: monitoring1Image, format: "webp"}),
   },
   {
     category: "medical_furniture",
     title: "Mobilier Médical",
     description: "Lits, chariots, et postes de travail adaptés aux environnements cliniques",
     icon: "🛏️",
+    image: await getImage({src: monitoring1Image, format: "webp"}),
   },
   {
     category: "therapy_equipment",
     title: "Dispositifs de Thérapie",
     description: "Appareils pour traitements respiratoires, physiques et autres thérapies",
     icon: "💊",
+    image: await getImage({src: monitoring1Image, format: "webp"}),
   },
   {
     category: "medical_accessories",
     title: "Accessoires Médicaux",
     description: "Éléments complémentaires pour l’usage quotidien du matériel médical",
     icon: "🩺",
+    image: await getImage({src: monitoring1Image, format: "webp"})
   },
 ];
 ---
@@ -92,9 +101,8 @@ const categories = [
             <Card
               key={index}
               class="group transition-shadow hover:shadow-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 border-0 shadow-md bg-cover bg-center bg-no-repeat min-h-96 md:min-h-124"
-              style={`background-image: url('${category.image}');`}
+              style={`background-image: url('${category.image.src}');`}
             >
-              {/* <img src="img/categories/surgery1.webp" alt=""> */}
               <CardHeader className="text-center pb-2 bg-white opacity-90">
                 {/* <div class="text-4xl mb-3">{category.icon}</div> */}
                 <CardTitle className="text-xl font-semibold text-gray-900">
