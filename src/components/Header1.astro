@@ -50,7 +50,7 @@ import { Icon } from "astro-icon/components";
   </div>
 
   {/* Main Navigation */}
-  <div id="navbar" class="bg-background transition-all duration-500 ease-in-out">
+  <div id="navbar" class="bg-background transition-all duration-500 ease-in-out text-gray-900 opacity-90">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         {/* Desktop Navigation */}
@@ -68,7 +68,7 @@ import { Icon } from "astro-icon/components";
           {/* Accueil */}
           <a
             href="/galaxie-medicale"
-            class="text-foreground hover:text-primary transition-colors font-medium"
+            class="hover:text-gray-900 hover:underline transition-colors text-lg"
           >
             Accueil
           </a>
@@ -76,7 +76,7 @@ import { Icon } from "astro-icon/components";
           {/* Catalog Dropdown */}
           <div class="relative group">
             <a
-              class="text-foreground hover:text-primary transition-colors font-medium"
+              class="hover:text-gray-900 hover:underline transition-colors text-lg"
               href="/galaxie-medicale/catalog"
             >
               Catalogue
@@ -332,18 +332,16 @@ import { Icon } from "astro-icon/components";
 
     if (currentScrollY > 250) {
       // Scrolling down
-      // topbar.classList.add("hidden");
       infobar.classList.add("max-h-0", "opacity-0");
       infobar.classList.remove("max-h-20", "opacity-100");
-      navbar.classList.add("bg-primary");
+      navbar.classList.add("bg-primary", "text-gray-200");
+      navbar.classList.remove("text-gray-900");
     } else {
       // Scrolling up
       infobar.classList.remove("max-h-0", "opacity-0");
       infobar.classList.add("max-h-20", "opacity-100");
-      navbar.classList.remove("bg-primary");
-      // topbar.classList.remove("hidden");
+      navbar.classList.remove("bg-primary", "text-gray-200");
+      navbar.classList.add("text-gray-900");
     }
-
-    // lastScrollY = currentScrollY;
   });
 </script>
