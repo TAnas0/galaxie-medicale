@@ -5,6 +5,7 @@
         "category": "sterilization",
         "sub_category": "",
         "image": "catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
+        "image2": "../assets/products/autoclave-phoenix-blu-plus-18-l/1.jpg",
         "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 18 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
         "availability": "In Stock",
         "brand": {
@@ -25,6 +26,7 @@
         "category": "sterilization",
         "sub_category": "Autoclave de table",
         "image": "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+        "image2": "../assets/products/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
         "brand": {
             "name":"Guarisco Medical Sterilizer",
             "description": ""
@@ -43,6 +45,7 @@
     {
         "id": 3,
         "name": "Autoclave Phoenix Blu 12 ",
+        "image2": "../assets/products/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
         "description": "L’autoclave Phoenix Blu 12 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.",
         "category": "sterilization",
         "sub_category": "Autoclave de table",
@@ -56,6 +59,7 @@
         "id": 4,
         "name": "Autoclave Phoenix Blu 24",
         "description": "Performance et Fiabilité pour une Stérilisation Médicale Optimale\nL’autoclave Phoenix Blu 24 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Disponible en versions 12 L et 18 L, il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.\n",
+        "image2": "../assets/products/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
         "category": "sterilization",
         "sub_category": "Autoclave de table",
         "brand": {
@@ -65,21 +69,10 @@
         "technical_specs": "Capacité de la chambre\t24 litres\\nDimensions externes\t462 x 445 x 600 mm (L x H x P)\\nDimensions chambre\tØ 255 x 460 mm\\nDimensions plateau\t385 x 190 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t4,6 litres\\nRéservoir eaux usées\t5 litres\\nPoids net / brut\t56 kg / 59 kg\\nTemps de cycle classe B\tEntre 19 minutes et 38 minutes\\nVersions disponibles\tStandard LCD / Standard LED/ LCD imprimante / LED imprimante / LCD AWF / LED AWF\\n"
     },
     {
-        "id": 5,
-        "name": "Autoclave Phoenix Blu Plus+ 18",
-        "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 18 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
-        "category": "Stérilisation",
-        "sub_category": "Autoclave de table",
-        "brand": {
-            "name":"Guarisco Medical Sterilizer",
-            "description": ""
-        },
-        "technical_specs": "Capacité de la chambre\t18 litres\\nDimensions externes\t462 x 445 x 600 mm (L x H x P)\\nDimensions chambre\tØ 255 x 360 mm\\nDimensions plateau\t285 x 190 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t4,6 litres\\nRéservoir eaux usées\t5 litres\\nPoids net / brut\t54 kg / 56 kg\\nTemps de cycle classe B\t15 minutes (approx.)\\nSystème d’osmose\tIntégré – raccordement direct au robinet\\nVersions disponibles\tPlus+ (latéral) / TOP (au-dessus)\\n"
-    },
-    {
         "id": 6,
         "name": "Autoclave Phoenix Blu Plus+ 24",
         "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 24 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
+        "image2": "../assets/products/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
         "category": "Stérilisation",
         "sub_category": "Autoclave de table",
         "brand": {
@@ -91,6 +84,7 @@
     {
         "id": 7,
         "name": "Autoclave à vapeur AS44",
+        "image2": "../assets/placeholder-image.png",
         "description": "Autoclave compact (100L ou 150L) idéal pour les petites salles de stérilisation et les blocs opératoires.",
         "category": "Stérilisation",
         "sub_category": "Autoclave vertical",
@@ -103,6 +97,7 @@
     {
         "id": 8,
         "name": "Autoclave à vapeur AS66",
+        "image2": "../assets/placeholder-image.png",
         "description": "Autoclave à grande capacité (300–900L) compatible avec le standard STU pour les grandes unités de stérilisation (CSSD).",
         "category": "Stérilisation",
         "sub_category": "Autoclave vertical",
@@ -116,6 +111,7 @@
         "id": 9,
         "name": "Autoclave à vapeur SMS 100",
         "description": "Autoclave compact idéal pour les petites cliniques et laboratoires, avec station de traitement d'eau et compresseur intégrés.",
+        "image2": "../assets/placeholder-image.png",
         "category": "Stérilisation",
         "sub_category": "Autoclave vertical",
         "brand": {
@@ -128,6 +124,7 @@
         "id": 10,
         "name": "Lampe opératoire HELIOS 160\n",
         "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.Lampe LED chirurgicale de haut rendement avec coupole simple ou double.\n",
+        "image2": "../assets/placeholder-image.png",
         "category": "surgery",
         "sub_category": "surgery_lighting",
         "brand": {
@@ -140,6 +137,7 @@
         "id": 11,
         "name": "Lampe opératoire IGNIS 160",
         "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.",
+        "image2": "../assets/placeholder-image.png",
         "category": "surgery",
         "sub_category": "surgery_lighting",
         "brand": {
@@ -147,24 +145,5 @@
             "description": ""
         },
         "technical_specs": "• Intensité lumineuse : jusqu’à 160 000 lux\\n • Température de couleur : 3 800 – 4 800 K (réglable)\\n • CRI ≥ 96 / R9 ≥ 96\\n • Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n • Profondeur d’éclairage : 1 200 mm\\n • Nombre de LED : 70\\n • Durée de vie : 60 000 h\\n • Consommation : 80 W\\n • Commandes : poignée stérile, mur tactile, bras\\n • Options : double coupole, caméra, écran mural"
-    },
-    {
-        "id": 12,
-        "name": "Lampe chirurgicale SOLIS 130",
-        "description": "Lampe chirurgicale LED fiable et performante, adaptée aux blocs opératoires polyvalents. Elle combine une forte intensité lumineuse à un excellent rendu des couleurs, et offre une grande profondeur d’éclairage. Disponible en version simple ou double coupole, elle assure un confort optimal pour les équipes médicales.\"",
-        "category": "surgery",
-        "sub_category": "surgery_lighting",
-        "image": "https://famed.pl/media/14dhgjo2/_l9b3760.jpg",
-        "brand": {
-            "name":"FAMED",
-            "description": ""
-        },
-        "technical_specs": "• Intensité lumineuse : jusqu’à 130 000 lux\\n• Température de couleur : 3 800 – 4 800 K (réglable)\\n• CRI ≥ 96 / R9 ≥ 96\\n• Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n• Profondeur d’éclairage : 1 200 mm\\n• Nombre de LED : 66\\n• Durée de vie : 60 000 h\\n• Consommation : 70 W\\n• Contrôle : poignée stérile, panneau mural, bras\\n• Options : double coupole, caméra, écran",
-        "images": [
-            "https://famed.pl/media/14dhgjo2/_l9b3760.jpg",
-            "https://famed.pl/media/xwnbbaqh/_l9b3728.jpg?width=400",
-            "https://famed.pl/media/lodo14c0/_l9b3369.jpg?width=400",
-            "https://famed.pl/media/ovoem2d3/_l9b3409.jpg?width=400"
-        ]
     }
 ]

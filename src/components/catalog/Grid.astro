@@ -1,6 +1,8 @@
 ---
 import Card from "../ui/Card.astro";
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
 const products = await getCollection('products');
 ---
 <div
@@ -13,13 +15,18 @@ const products = await getCollection('products');
         class="h-full"
       >
         <a href={`/galaxie-medicale/products/${product.id}`} class="block hover:opacity-90 transition-opacity h-full">
-          <Card class="`h-full p-1`">
+          <Card class="h-full p-1 flex flex-col">
             <div class="relative w-full min-h-62 rounded-lg">
-              <img
+              <Image
+                src={product.data.image2}
+                alt={product.data.name}
+                class="p-1"
+              />
+              {/* <img
                 class="absolute aspect-[16/9] inset-x-0 mx-auto w-full rounded-lg h-full"
                 src={product.data.image}
                 alt={product.data.name}
-              />
+              /> */}
             </div>
             {/* <div class="mt-2">
               <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
@@ -29,12 +36,12 @@ const products = await getCollection('products');
             {/* <div class="flex items-center justify-end gap-2">
               <button>See details</button>
             </div> */}
-          <div class="font-sans mt-3">
+          <div class="font-sans mt-auto">
               <h4 class="font-semibold text-muted-800 dark:text-muted-100">
                 {product.data.name}
               </h4>
               <p class="text-sm text-muted-400">{product.data.category}</p>
-              <p class="text-sm text-muted-400">{product.data.brand}</p>
+              <p class="text-sm text-muted-400">{product.data.brand.name}</p>
             </div>
           </Card>
         </a>

@@ -3,13 +3,14 @@ import { glob, file } from 'astro/loaders';
 
 const products = defineCollection({
     loader: file("src/data/products.json"),
-    schema: z.object({
+    schema: ({ image }) => z.object({
         id: z.number(),
         name: z.string(),
         category: z.string(),
         sub_category: z.string().optional(),
         // category: z.enum(['A', 'B', 'C']),
         image: z.string().optional(),
+        image2: image().optional(),
         images: z.array(z.string()).optional(),
         description: z.string().optional(),
         availability: z.string().optional(),
