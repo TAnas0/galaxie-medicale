@@ -4,6 +4,12 @@ import '@fontsource-variable/manrope';
 import '@fontsource/ibm-plex-sans';
 import '@fontsource/plus-jakarta-sans';
 import { AstroFont } from "astro-font";
+
+import surgery1Image from "../assets/hero/surgery1.webp";
+import nurse1Image from "../assets/hero/nurse1.webp";
+import medicalImage from "../assets/hero/medical-room.webp";
+import microscopeImage from "../assets/hero/microscope.webp";
+import nurseImage from "../assets/hero/nurse-patient.webp";
 ---
 
 <!doctype html>
@@ -66,6 +72,11 @@ import { AstroFont } from "astro-font";
     />
     <meta name="generator" content={Astro.generator} />
     <title>Galaxie Medicale</title>
+    <link rel="preload" as="image" href={surgery1Image.src} />
+    <link rel="preload" as="image" href={nurse1Image.src} />
+    <link rel="preload" as="image" href={medicalImage.src} />
+    <link rel="preload" as="image" href={microscopeImage.src} />
+    <link rel="preload" as="image" href={nurseImage.src} />
   </head>
   <body>
     <div class="gradient-layer"></div>

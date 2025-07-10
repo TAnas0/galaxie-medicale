@@ -127,7 +127,7 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
               {product.data.description}
             </p>
 
-            <div class="text-2xl text-red-600">Include here highlighted specs, key fonctionalities and Selling points</div>
+            <!-- <div class="text-2xl text-red-600">Include here highlighted specs, key fonctionalities and Selling points</div> -->
 
             <p class="text-gray-700 leading-relaxed">
               <!-- {product.data.technical_specs} -->
@@ -163,10 +163,10 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
 
           {/* Brand Info */}
           <Card class="bg-medical-gray">
-            <CardContent className="p-4">
-              <div class="flex items-center space-x-3">
+            <CardContent className="!p-2">
+              <div class="flex items-center space-x-4">
                 <div
-                  class="w-12 h-12 bg-white rounded-lg flex items-center justify-center"
+                  class="w-18 h-12 bg-white rounded-lg flex items-center justify-center"
                 >
                   <span class="font-bold text-medical-red">MC</span>
                 </div>
@@ -176,9 +176,6 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
                   </h3>
                   <p class="text-sm text-gray-600">
                     {product.data.brand.description}
-                    GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL
-                    TRADING, boasts a 60-year history as a premier manufacturer
-                    of medical sterilization devices.
                   </p>
                 </div>
               </div>

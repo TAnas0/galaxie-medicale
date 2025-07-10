@@ -19,24 +19,24 @@ import pillsImage from "../assets/hero/pills.webp";
   <div class="pattern-layer"></div>
 
   <!-- Floating circular images -->
-  <div class="inset-0 z-10 pointer-events-none opacity-90">
-    <div>
-      <Image src={nurse1Image} class="absolute max-w-64 max-h-64 md:block rounded-full object-cover top-[65%] right-8 sm:right-12 md:right-20 shadow-2xl" alt="Medical equipment">
+  <div id="floating-images" class="inset-0 z-10 pointer-events-none opacity-90">
+    <div class="fade-in absolute top-[65%] right-8 sm:right-12 md:right-20">
+      <Image src={nurse1Image} class="fade-in max-w-64 max-h-64 rounded-full object-cover shadow-2xl" alt="Medical equipment">
     </div>
-    <div>
-      <Image src={medicalImage} class="absolute max-w-sm max-h-sm hidden md:block rounded-full object-cover top-[12%] left-18 sm:left-22 md:left-32 shadow-2xl z-2" alt="Medical equipment">
+    <div class="fade-in absolute top-[12%] left-18 sm:left-22 md:left-32">
+      <Image src={medicalImage} class="opacity-0 fade-in max-w-sm max-h-sm rounded-full object-cover shadow-2xl z-2 bg-blue-100" alt="Medical equipment">
     </div>
-    <div>
-      <Image src={microscopeImage} class="absolute max-w-64 max-h-64 hidden md:block rounded-full object-cover top-[55%] left-[10%] sm:right-48 md:right-[56%] shadow-2xl z-3" alt="Medical equipment">
+    <div class="fade-in absolute top-[55%] left-[10%] sm:right-48 md:right-[56%]">
+      <Image src={microscopeImage} class="opacity-0 fade-in max-w-64 max-h-64 rounded-full object-cover shadow-2xl z-3 bg-blue-100" alt="Medical equipment">
     </div>
-    <div>
-      <Image src={nurseImage} class="absolute max-w-32 max-h-32 hidden md:block rounded-full object-cover top-[55%] left-25 sm:right-8 md:right-12 shadow-2xl z-3" alt="Medical equipment">
+    <div class="fade-in absolute top-[55%] left-25 sm:right-8 md:right-12">
+      <Image src={nurseImage} class="opacity-0 fade-in max-w-32 max-h-32 rounded-full object-cover shadow-2xl z-3 bg-blue-100" alt="Medical equipment">
     </div>
     <!-- <div>
-      <Image src={pillsImage} class="absolute max-w-24 max-h-24 rounded-full object-cover top-[25%] right-16 sm:right-[50%] md:right-[20%] shadow-2xl z-3" alt="Medical equipment">
+      <Image src={pillsImage} class="opacity-0 fade-in absolute max-w-24 max-h-24 rounded-full object-cover top-[25%] right-16 sm:right-[50%] md:right-[20%] shadow-2xl z-3" alt="Medical equipment">
     </div> -->
-    <div>
-      <Image src={surgery1Image} class="absolute max-w-sm max-h-sm rounded-full object-cover top-[20%] right-6 sm:right-0 md:right-12 shadow-2xl" alt="Medical equipment">
+    <div class="fade-in absolute top-[20%] right-6 sm:right-0 md:right-96">
+      <Image src={surgery1Image} class="opacity-0 fade-in absolute max-w-sm max-h-sm rounded-full object-cover shadow-2xl bg-blue-100" alt="Medical equipment">
     </div>
   </div>
 
@@ -60,7 +60,7 @@ import pillsImage from "../assets/hero/pills.webp";
 
     <div class="mt-8 relative">
       <div
-        class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200 max-w-4xl mx-auto"
+        class="bg-testpink backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200 max-w-4xl mx-auto"
       >
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
@@ -85,7 +85,7 @@ import pillsImage from "../assets/hero/pills.webp";
         size="lg"
         label="Consultez notre catalogue..."
         icon='arrow-right' iconPosition='right'
-        class="text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+        class="text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-500 transform hover:scale-105 shadow-lg"
       >
         Voir le catalogue
       </Button>
@@ -94,7 +94,7 @@ import pillsImage from "../assets/hero/pills.webp";
         variant="outline"
         size="lg"
         label="Contact Us"
-        class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300"
+        class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-500"
       >
         Contact Us
       </Button> -->
@@ -116,4 +116,39 @@ import pillsImage from "../assets/hero/pills.webp";
     z-index: -1;
     pointer-events: none;
   }
+    
+  .fade-in {
+    animation: fade-in 4s ease-out forwards;
+  }
+
+  img {
+    color: transparent; /* Makes alt text invisible if shown */
+    text-indent: 100%;  /* Pushes text off-screen */
+    white-space: nowrap;
+    overflow: hidden;
+  }
 </style>
+
+<script is:client>
+  window.addEventListener('load', () => {
+    document.querySelectorAll('#floating-images img').forEach(img => {
+      console.log("Found image");
+      console.log(img.complete);
+      if (img.complete && img.naturalHeight !== 0) {
+        console.log("Image ready");
+        img.parentElement.classList.remove('hidden');
+        img.parentElement.classList.add('block');
+      } else {
+        img.addEventListener('load', () => {
+          console.log("Image load event fired", img);
+          img.parentElement.classList.remove('hidden');
+          img.parentElement.classList.add('block');
+        });
+        img.addEventListener('error', () => {
+          console.log("Image failed to load", img);
+        });
+      }
+    });
+  });
+  </script>
+  
