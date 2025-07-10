@@ -1,0 +1,98 @@
+---
+import { Icon } from "astro-icon/components";
+import { getImage } from 'astro:assets';
+import installationImg from "../assets/services/placeholder-image.png"
+import maintenanceImg from "../assets/services/placeholder-image.png"
+import trainingImg from "../assets/services/placeholder-image.png"
+import importImg from "../assets/services/placeholder-image.png"
+
+const services = [
+  {
+    title: "Installation de Produits",
+    description: "Installation professionnelle et configuration des équipements médicaux par des techniciens certifiés, garantissant des performances optimales et le respect des normes de sécurité.",
+    image: await getImage({src: installationImg, format: "webp"}),
+    bgClass: "bg-gradient-to-br from-medical-blue to-blue-50",
+    textColor: "text-medical-blue-foreground"
+  },
+  {
+    title: "Maintenance et Réparations",
+    description: "Programmes de maintenance complets et services de réparation rapides pour garantir le bon fonctionnement de vos équipements médicaux avec un minimum d'interruptions.",
+    image: await getImage({src: maintenanceImg, format: "webp"}),
+    bgClass: "bg-gradient-to-br from-medical-green to-green-50",
+    textColor: "text-medical-green-foreground"
+  },
+  {
+    title: "Formation & Intégration",
+    description: "Programmes de formation spécialisés pour les professionnels de santé afin d’optimiser l’utilisation des équipements et garantir une manipulation sûre et efficace.",
+    image: await getImage({src: trainingImg, format: "webp"}),
+    bgClass: "bg-gradient-to-br from-medical-purple to-purple-50",
+    textColor: "text-medical-purple-foreground"
+  },
+  {
+    title: "Importation d'Équipements Médicaux",
+    description: "Solutions d’importation clés en main, incluant la conformité réglementaire, le dédouanement et la gestion logistique pour l’approvisionnement international en équipements médicaux.",
+    image: await getImage({src: importImg, format: "webp"}),
+    bgClass: "bg-gradient-to-br from-medical-orange to-orange-50",
+    textColor: "text-medical-orange-foreground"
+  }
+];
+---
+
+<section class="py-20 bg-background">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-foreground mb-4">Nos Services</h2>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+        Des services d’accompagnement complets pour maximiser la valeur et les performances de vos investissements en équipements médicaux.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {
+        services.map((service, index) => {
+          const IconComponent = service.icon;
+          return (
+            <div
+              key={index}
+              class={`${service.bgClass} rounded-2xl p-8 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] group`}
+            >
+              <div class="flex flex-col lg:flex-row items-center gap-6">
+                <div class="flex-shrink-0">
+                  <div class="relative">
+                    <img
+                      src={service.image.src}
+                      alt={service.title}
+                      class="w-48 h-36 object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300"
+                    />
+                    <div
+                      class={`absolute -top-3 -right-3 ${service.bgClass} p-3 rounded-full shadow-lg border-4 border-white`}
+                    >
+                        <Icon name="heroicons:wrench-screwdriver" />
+
+                      {/* <IconComponent
+                        class={`w-6 h-6 ${service.textColor}`}
+                      /> */}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-1 text-center lg:text-left">
+                  <h3
+                    class={`text-2xl font-bold ${service.textColor} mb-3`}
+                  >
+                    {service.title}
+                  </h3>
+                  <p
+                    class={`${service.textColor} leading-relaxed opacity-90`}
+                  >
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

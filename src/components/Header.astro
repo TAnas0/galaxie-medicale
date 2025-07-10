@@ -1,7 +1,8 @@
 ---
 import { Icon } from "astro-icon/components";
 
-import logo from "../assets/logo.png";
+import logoImage from "../assets/logo.png";
+const logo = await getImage({ src: logoImage });
 ---
 <header class="bg-white shadow-md">
   <div class="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -22,9 +23,11 @@ import logo from "../assets/logo.png";
     </button>
 
     <!-- Logo -->
-    <a href="/galaxie-medicale" class="flex-shrink-0">
-      <Image
-        src={logo}
+    <a href="/galaxie-medicale" aria-label="Homepage">
+      <img
+        src={logo.src}
+        width={logo.width}
+        height={logo.height}
         alt="Galaxie Medicale Logo"
         class="h-12"
       />
