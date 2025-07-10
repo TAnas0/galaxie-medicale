@@ -25,6 +25,17 @@
     --radius: 0.5rem;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(5px); /* optional: slight rise */
+  }
+  to {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
 /*
 @theme static {
     --background: 0 0% 100%;
