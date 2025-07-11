@@ -36,12 +36,12 @@ const words = [
       <!-- Left side -->
       <div class="pt-32 pb-10 md:pl-20 pl-6 pr-6">
         <h1
-          class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 leading-tight"
+          class="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-2 leading-tight"
         >
           Équipements médicaux fiables
         </h1>
         <div
-          class="flex text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight"
+          class="flex text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-4 leading-tight"
         >
           <div class="h-18 flex items-center pr-3">pour</div>
           <div
@@ -72,16 +72,16 @@ const words = [
           <!-- Dispositifs médicaux performants pour les professionnels de santé.
           <br />
           Fiables, précis, adaptés au diagnostic, au traitement et à l’analyse. -->
-          <ul class="mt-1 ml-12 space-y-2 text-gray-700 text-xl">
+          <ul class="ml-12 text-gray-700 text-xl" style="line-height: 50px;">
             <li>
-              <span class="text-primary/80">✔</span> Assistance technique & démonstration
+              <span class="text-primary/80 mr-2">✔</span> Assistance technique & démonstration
             </li>
             <li>
-              <span class="text-primary/80">✔</span> Livraison & installation
+              <span class="text-primary/80 mr-2">✔</span> Livraison & installation
             </li>
-            <li><span class="text-primary/80">✔</span> Formation</li>
+            <li><span class="text-primary/80 mr-2">✔</span> Formation</li>
             <li>
-              <span class="text-primary/80">✔</span> Service après-vente & garantie
+              <span class="text-primary/80 mr-2">✔</span> Service après-vente & garantie
             </li>
           </ul>
         </div>
@@ -127,7 +127,7 @@ const words = [
         class="hidden md:block bg-blue-100/40 h-full w-full bg-center bg-cover bg-contain"
         style="background-image: url('/galaxie-medicale/collage.png');"
       >
-        Hello
+        H
       </div>
     </div>
   </div>
@@ -140,32 +140,8 @@ const words = [
     left: 0;
     right: 0;
     bottom: 0;
-    background-image:
-      linear-gradient(
-        0deg,
-        transparent 24%,
-        rgba(0, 0, 0, 0.03) 25%,
-        rgba(0, 0, 0, 0.03) 26%,
-        transparent 27%,
-        transparent 74%,
-        rgba(0, 0, 0, 0.03) 75%,
-        rgba(0, 0, 0, 0.03) 76%,
-        transparent 77%,
-        transparent
-      ),
-      linear-gradient(
-        90deg,
-        transparent 24%,
-        rgba(0, 0, 0, 0.03) 25%,
-        rgba(0, 0, 0, 0.03) 26%,
-        transparent 27%,
-        transparent 74%,
-        rgba(0, 0, 0, 0.03) 75%,
-        rgba(0, 0, 0, 0.03) 76%,
-        transparent 77%,
-        transparent
-      );
-    background-size: 50px 50px;
+    background-image: url('data:image/svg+xml;utf8,\ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25">\ <rect x="0" y="0" width="25" height="25" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="1"/>\ <line x1="12.5" y1="0" x2="12.5" y2="25" stroke="rgba(0,0,0,0.02)" stroke-width="0.5"/>\ <line x1="0" y1="12.5" x2="25" y2="12.5" stroke="rgba(0,0,0,0.02)" stroke-width="0.5"/>\ </svg>');
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25'%3E%3Crect x='0' y='0' width='25' height='25' fill='none' stroke='rgba(0,0,0,0.06)' stroke-width='1'/%3E%3Cline x1='12.5' y1='0' x2='12.5' y2='25' stroke='rgba(0,0,0,0.06)' stroke-width='1'/%3E%3Cline x1='0' y1='12.5' x2='25' y2='12.5' stroke='rgba(0,0,0,0.06)' stroke-width='1'/%3E%3C/svg%3E");    background-size: 25px 25px; */
     background-repeat: repeat;
     z-index: -1;
     pointer-events: none;
