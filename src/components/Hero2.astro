@@ -1,0 +1,223 @@
+---
+// import Button from './ui/Button.astro';
+import { Button } from "free-astro-components";
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+const words = ["Cliniques et Hôpitaux", "Cabinets", "Laboratoires", "Urgences et Secours"];
+---
+
+<section class="relative pt-12 pb-6">
+  <div class="pattern-layer"></div>
+
+  <div id="hero-content" class="mx-auto z-10 relative">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Left side -->
+      <div class="pt-32 pb-10 md:pl-20 pl-6 pr-6">
+        <h1
+          class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 leading-tight"
+        >
+          Équipements médicaux fiables
+        </h1>
+        <div
+          class="flex text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight"
+        >
+          <div class="h-18 flex items-center pr-3">pour</div>
+          <div
+            class="relative overflow-hidden w-132 bg-primary/10 rounded ring ring-primary/15 shadow-[0_0_10px_#cbd5e1]"
+          >
+            <div
+              class="roller absolute h-18 top-0 left-0 w-full text-primary text-shadow p-1 pt-0 justify-center"
+            >
+              {
+                words.map((word) => (
+                  <div class="h-18 flex items-center justify-center">{word}</div>
+                ))
+              }
+            </div>
+            <!-- <span class="absolute bottom-0 left-0 w-full h-[2px] bg-primary/50"></span> -->
+            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-primary/90 to-primary/20 rounded-full"></span>
+          </div>
+        </div>
+
+        <div
+          class="text-xl sm:text-2xl text-gray-600 mb-2 max-w-4xl mx-auto leading-relaxed text-black py-2 rounded"
+        >
+          <!-- Dispositifs médicaux performants pour les professionnels de santé.
+          <br />
+          Fiables, précis, adaptés au diagnostic, au traitement et à l’analyse. -->
+          <ul class="mt-1 ml-12 space-y-2 text-gray-700 text-xl">
+            <li><span class="text-primary/80">✔</span> Assistance technique & démonstration</li>
+            <li><span class="text-primary/80">✔</span> Livraison & installation</li>
+            <li><span class="text-primary/80">✔</span> Formation</li>
+            <li><span class="text-primary/80">✔</span> Service après-vente & garantie</li>
+          </ul>
+          
+        </div>
+
+        <div class="mt-8 relative">
+          <div
+            class="bg-testpink backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200 max-w-4xl mx-auto"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div>
+                <div class="text-3xl font-bold text-blue-600 mb-2">+10</div>
+                <div class="text-gray-600">ans d’expérience</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-blue-600 mb-2">+100</div>
+                <div class="text-gray-600">Partenaires Médicaux</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-blue-600 mb-2">+500</div>
+                <div class="text-gray-600">Produits Médicaux</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12"
+        >
+          <Button
+            href="/galaxie-medicale/catalog"
+            size="lg"
+            label="Consultez notre catalogue..."
+            icon="arrow-right"
+            iconPosition="right"
+            class="text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-500 transform hover:scale-105 shadow-lg"
+          >
+            Voir le catalogue
+          </Button>
+        </div>
+      </div>
+      <!-- Right side -->
+      <div
+        class="hidden md:block bg-blue-100/40 h-full w-full bg-center bg-cover bg-contain"
+        style="background-image: url('/galaxie-medicale/collage.png');"
+      >
+        Hello
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .pattern-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      linear-gradient(
+        0deg,
+        transparent 24%,
+        rgba(0, 0, 0, 0.03) 25%,
+        rgba(0, 0, 0, 0.03) 26%,
+        transparent 27%,
+        transparent 74%,
+        rgba(0, 0, 0, 0.03) 75%,
+        rgba(0, 0, 0, 0.03) 76%,
+        transparent 77%,
+        transparent
+      ),
+      linear-gradient(
+        90deg,
+        transparent 24%,
+        rgba(0, 0, 0, 0.03) 25%,
+        rgba(0, 0, 0, 0.03) 26%,
+        transparent 27%,
+        transparent 74%,
+        rgba(0, 0, 0, 0.03) 75%,
+        rgba(0, 0, 0, 0.03) 76%,
+        transparent 77%,
+        transparent
+      );
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .fade-in {
+    animation: fade-in 4s ease-out forwards;
+  }
+
+  img {
+    color: transparent; /* Makes alt text invisible if shown */
+    text-indent: 100%; /* Pushes text off-screen */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  @keyframes roll-up {
+    0%,
+    20% {
+      transform: translateY(0);
+    }
+    25%,
+    45% {
+      transform: translateY(-100%);
+    }
+    50%,
+    70% {
+      transform: translateY(-200%);
+    }
+    75%,
+    99% {
+      transform: translateY(-300%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .roller {
+    animation: roll-up 8s linear infinite;
+  }
+</style>
+
+<script is:client>
+  window.addEventListener("load", () => {
+    document.querySelectorAll("#floating-images img").forEach((img) => {
+      console.log("Found image");
+      console.log(img.complete);
+      if (img.complete && img.naturalHeight !== 0) {
+        console.log("Image ready");
+        img.parentElement.classList.remove("hidden");
+        img.parentElement.classList.add("block");
+      } else {
+        img.addEventListener("load", () => {
+          console.log("Image load event fired", img);
+          img.parentElement.classList.remove("hidden");
+          img.parentElement.classList.add("block");
+        });
+        img.addEventListener("error", () => {
+          console.log("Image failed to load", img);
+        });
+      }
+    });
+  });
+
+  const words = ["Cliniques et Hôpitaux", "Cabinets", "Laboratoires", "Vous"];
+  const el = document.getElementById("animated-word");
+  let index = 0;
+
+  function showWord() {
+    el.classList.add("opacity-0", "transition-opacity", "duration-500");
+    setTimeout(() => {
+      el.textContent = words[index];
+      el.classList.remove("opacity-0");
+      el.classList.add("opacity-100");
+      index = (index + 1) % words.length;
+    }, 500);
+  }
+
+  showWord();
+  setInterval(showWord, 3000);
+</script>
