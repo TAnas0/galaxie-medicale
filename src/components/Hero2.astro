@@ -4,7 +4,28 @@ import { Button } from "free-astro-components";
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 
-const words = ["Cliniques et Hôpitaux", "Cabinets", "Laboratoires", "Urgences et Secours"];
+const words = [
+  "Cliniques et Hôpitaux",
+  "Cabinets",
+  "Laboratoires",
+  "Urgences et Secours",
+  "Cliniques et Hôpitaux",
+  "Cabinets",
+  "Laboratoires",
+  "Urgences et Secours",
+  "Cliniques et Hôpitaux",
+  "Cabinets",
+  "Laboratoires",
+  "Urgences et Secours",
+  "Cliniques et Hôpitaux",
+  "Cabinets",
+  "Laboratoires",
+  "Urgences et Secours",
+  "Cliniques et Hôpitaux",
+  "Cabinets",
+  "Laboratoires",
+  "Urgences et Secours",
+];
 ---
 
 <section class="relative pt-12 pb-6">
@@ -24,19 +45,24 @@ const words = ["Cliniques et Hôpitaux", "Cabinets", "Laboratoires", "Urgences e
         >
           <div class="h-18 flex items-center pr-3">pour</div>
           <div
-            class="relative overflow-hidden w-132 bg-primary/10 rounded ring ring-primary/15 shadow-[0_0_10px_#cbd5e1]"
+            class="relative overflow-hidden w-132 rounded shadow-[0_0_30px_10px_rgba(203,213,225,0.3)]"
           >
+            <div class="absolute inset-0 rounded blur-md bg-primary/10"></div>
             <div
               class="roller absolute h-18 top-0 left-0 w-full text-primary text-shadow p-1 pt-0 justify-center"
             >
               {
                 words.map((word) => (
-                  <div class="h-18 flex items-center justify-center">{word}</div>
+                  <div class="h-18 flex items-center justify-center">
+                    {word}
+                  </div>
                 ))
               }
             </div>
             <!-- <span class="absolute bottom-0 left-0 w-full h-[2px] bg-primary/50"></span> -->
-            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-primary/90 to-primary/20 rounded-full"></span>
+            <span
+              class="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-primary/90 to-primary/20 rounded-full"
+            ></span>
           </div>
         </div>
 
@@ -47,12 +73,17 @@ const words = ["Cliniques et Hôpitaux", "Cabinets", "Laboratoires", "Urgences e
           <br />
           Fiables, précis, adaptés au diagnostic, au traitement et à l’analyse. -->
           <ul class="mt-1 ml-12 space-y-2 text-gray-700 text-xl">
-            <li><span class="text-primary/80">✔</span> Assistance technique & démonstration</li>
-            <li><span class="text-primary/80">✔</span> Livraison & installation</li>
+            <li>
+              <span class="text-primary/80">✔</span> Assistance technique & démonstration
+            </li>
+            <li>
+              <span class="text-primary/80">✔</span> Livraison & installation
+            </li>
             <li><span class="text-primary/80">✔</span> Formation</li>
-            <li><span class="text-primary/80">✔</span> Service après-vente & garantie</li>
+            <li>
+              <span class="text-primary/80">✔</span> Service après-vente & garantie
+            </li>
           </ul>
-          
         </div>
 
         <div class="mt-8 relative">
@@ -157,28 +188,92 @@ const words = ["Cliniques et Hôpitaux", "Cabinets", "Laboratoires", "Urgences e
 
   @keyframes roll-up {
     0%,
-    20% {
-      transform: translateY(0);
+    4% {
+      transform: translateY(0%);
     }
-    25%,
-    45% {
+    5%,
+    9% {
       transform: translateY(-100%);
     }
-    50%,
-    70% {
+    10%,
+    14% {
       transform: translateY(-200%);
     }
-    75%,
-    99% {
+    15%,
+    19% {
       transform: translateY(-300%);
     }
+    20%,
+    24% {
+      transform: translateY(-400%);
+    }
+    25%,
+    29% {
+      transform: translateY(-500%);
+    }
+    30%,
+    34% {
+      transform: translateY(-600%);
+    }
+    35%,
+    39% {
+      transform: translateY(-700%);
+    }
+    40%,
+    44% {
+      transform: translateY(-800%);
+    }
+    45%,
+    49% {
+      transform: translateY(-900%);
+    }
+    50%,
+    54% {
+      transform: translateY(-1000%);
+    }
+    55%,
+    59% {
+      transform: translateY(-1100%);
+    }
+    60%,
+    64% {
+      transform: translateY(-1200%);
+    }
+    65%,
+    69% {
+      transform: translateY(-1300%);
+    }
+    70%,
+    74% {
+      transform: translateY(-1400%);
+    }
+    75%,
+    79% {
+      transform: translateY(-1500%);
+    }
+    80%,
+    84% {
+      transform: translateY(-1600%);
+    }
+    85%,
+    89% {
+      transform: translateY(-1700%);
+    }
+    90%,
+    94% {
+      transform: translateY(-1800%);
+    }
+    95%,
+    99% {
+      transform: translateY(-1900%);
+    }
     100% {
-      transform: translateY(0);
+      transform: translateY(0%);
     }
   }
 
   .roller {
-    animation: roll-up 8s linear infinite;
+    animation: roll-up 40s linear infinite;
   }
 </style>
 
