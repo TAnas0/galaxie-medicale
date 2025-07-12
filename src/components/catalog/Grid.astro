@@ -14,37 +14,33 @@ const products = await getCollection('products');
         x-show={`activeCategory === 'all' || activeCategory === '${product.data.category}'`}
         class="h-full"
       >
-        <a href={`/galaxie-medicale/products/${product.id}`} class="block hover:opacity-90 transition-opacity h-full">
-          <Card class="h-full p-1 flex flex-col">
-            <div class="relative w-full min-h-62 rounded-lg">
-              <Image
-                src={product.data.image2}
-                alt={product.data.name}
-                class="p-1"
-              />
-              {/* <img
-                class="absolute aspect-[16/9] inset-x-0 mx-auto w-full rounded-lg h-full"
-                src={product.data.image}
-                alt={product.data.name}
-              /> */}
-            </div>
-            {/* <div class="mt-2">
-              <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-                {product.data.description}
-              </p>
-            </div> */}
-            {/* <div class="flex items-center justify-end gap-2">
-              <button>See details</button>
-            </div> */}
-          <div class="font-sans mt-auto">
-              <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-                {product.data.name}
-              </h4>
-              <p class="text-sm text-muted-400">{product.data.category}</p>
-              <p class="text-sm text-muted-400">{product.data.brand.name}</p>
-            </div>
-          </Card>
-        </a>
+        <a href={`/galaxie-medicale/products/${product.id}`} class="block h-full group transition-all duration-300 hover:scale-[1.015]">
+  <Card class="h-full flex flex-col rounded-xl border border-muted-200 dark:border-muted-700 bg-white dark:bg-muted-900 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+    
+    <!-- Product Image -->
+    <div class="relative w-full aspect-[4/3] bg-muted-100 dark:bg-muted-800">
+      <Image
+        src={product.data.image2}
+        alt={product.data.name}
+        class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+      />
+    </div>
+
+    <!-- Product Info -->
+    <div class="flex flex-col p-3 gap-1 mt-auto">
+      <h4 class="text-base font-semibold text-muted-800 dark:text-muted-100 truncate">
+        {product.data.name}
+      </h4>
+      <p class="text-sm text-muted-500 dark:text-muted-400 truncate">
+        {product.data.category}
+      </p>
+      <p class="text-sm text-muted-500 dark:text-muted-400 truncate">
+        {product.data.brand.name}
+      </p>
+    </div>
+  </Card>
+</a>
+
       </div>
     ))
   }

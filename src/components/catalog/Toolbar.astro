@@ -2,11 +2,11 @@
 import { Icon } from 'astro-icon/components'
 ---
 <div
-  class="mt-28 sticky top-28 md:top-28 w-full flex bg-white dark:bg-muted-800 border border-muted-200 dark:border-muted-700 rounded divide-x divide-muted-200 dark:divide-muted-700 shadow-xl shadow-muted-300/30 dark:shadow-muted-900/30 overflow-x-auto z-30"
+  class="mt-27 sticky top-27 md:top-27 w-full flex bg-white dark:bg-muted-800 border border-muted-200 dark:border-muted-700 rounded divide-x divide-muted-200 dark:divide-muted-700 shadow-xl shadow-muted-300/30 dark:shadow-muted-900/30 overflow-x-auto z-30"
 >
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'all' ? 'bg-blue-300' : ''"
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'all' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'all'"
   >
     <span
@@ -22,8 +22,8 @@ import { Icon } from 'astro-icon/components'
   </button>
 
   <!-- <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'general' ? 'bg-blue-300' : ''"
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'general' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'general'"
   >
     <span
@@ -36,8 +36,8 @@ import { Icon } from 'astro-icon/components'
   </button> -->
 
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'diagnostic_equipment' ? 'bg-blue-300' : ''"
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'diagnostic_equipment' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'diagnostic_equipment'"
   >
     <span
@@ -54,8 +54,8 @@ import { Icon } from 'astro-icon/components'
   </button>
 
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'surgery' ? 'bg-blue-300' : ''"
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'surgery' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'surgery'"
   >
     <span
@@ -70,8 +70,8 @@ import { Icon } from 'astro-icon/components'
   </button>
 
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'laboratory_equipment' ? 'bg-blue-300' : ''"
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'laboratory_equipment' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'laboratory_equipment'"
   >
     <span
@@ -86,8 +86,8 @@ import { Icon } from 'astro-icon/components'
   </button>
 
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'sterilization' ? 'bg-blue-300' : ''"
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'sterilization' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'sterilization'"
   >
     <span
@@ -102,8 +102,8 @@ import { Icon } from 'astro-icon/components'
   </button>
 
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'hospital_equipment' ? 'bg-blue-300' : ''"
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'hospital_equipment' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'hospital_equipment'"
   >
     <span

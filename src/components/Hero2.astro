@@ -92,15 +92,15 @@ const words = [
           >
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div class="text-3xl font-bold text-blue-600 mb-2">+10</div>
+                <div class="text-3xl font-bold text-blue-700 mb-2">+10</div>
                 <div class="text-gray-600">ans d’expérience</div>
               </div>
               <div>
-                <div class="text-3xl font-bold text-blue-600 mb-2">+100</div>
+                <div class="text-3xl font-bold text-blue-700 mb-2">+100</div>
                 <div class="text-gray-600">Partenaires Médicaux</div>
               </div>
               <div>
-                <div class="text-3xl font-bold text-blue-600 mb-2">+500</div>
+                <div class="text-3xl font-bold text-blue-700 mb-2">+500</div>
                 <div class="text-gray-600">Produits Médicaux</div>
               </div>
             </div>
@@ -116,10 +116,8 @@ const words = [
             label="Consultez notre catalogue..."
             icon="arrow-right"
             iconPosition="right"
-            class="text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-500 transform hover:scale-105 shadow-lg"
-          >
-            Voir le catalogue
-          </Button>
+            class="text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-500 transform hover:scale-105 hover:bg-primary shadow-lg"
+          ></Button>
         </div>
       </div>
       <!-- Right side -->
@@ -254,26 +252,26 @@ const words = [
 </style>
 
 <script is:client>
-  window.addEventListener("load", () => {
-    document.querySelectorAll("#floating-images img").forEach((img) => {
-      console.log("Found image");
-      console.log(img.complete);
-      if (img.complete && img.naturalHeight !== 0) {
-        console.log("Image ready");
-        img.parentElement.classList.remove("hidden");
-        img.parentElement.classList.add("block");
-      } else {
-        img.addEventListener("load", () => {
-          console.log("Image load event fired", img);
-          img.parentElement.classList.remove("hidden");
-          img.parentElement.classList.add("block");
-        });
-        img.addEventListener("error", () => {
-          console.log("Image failed to load", img);
-        });
-      }
-    });
-  });
+  // window.addEventListener("load", () => {
+  //   document.querySelectorAll("#floating-images img").forEach((img) => {
+  //     console.log("Found image");
+  //     console.log(img.complete);
+  //     if (img.complete && img.naturalHeight !== 0) {
+  //       console.log("Image ready");
+  //       img.parentElement.classList.remove("hidden");
+  //       img.parentElement.classList.add("block");
+  //     } else {
+  //       img.addEventListener("load", () => {
+  //         console.log("Image load event fired", img);
+  //         img.parentElement.classList.remove("hidden");
+  //         img.parentElement.classList.add("block");
+  //       });
+  //       img.addEventListener("error", () => {
+  //         console.log("Image failed to load", img);
+  //       });
+  //     }
+  //   });
+  // });
 
   const words = ["Cliniques et Hôpitaux", "Cabinets", "Laboratoires", "Vous"];
   const el = document.getElementById("animated-word");

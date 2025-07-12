@@ -1,28 +1,22 @@
 @import "tailwindcss";
-/* @reference "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities; */
 
-@theme static {
-    --color-primary: var(--color-blue-500);
-    --color-secondary: var(--color-blue-900);
-
-    /* UI colors */
-    --color-background: 0 0% 100%;
-    --color-foreground: 222.2 84% 4.9%;
-    --color-border: 214.3 31.8% 91.4%;
-    --color-muted: 210 40% 96.1%;
-    --color-accent: 210 40% 96.1%;
-    --color-ring: 222.2 84% 4.9%;
-    /* States */
-    --color-success: 142.1 70.6% 45.3%;
-    --color-warning: 38 92% 50%;
-    --color-error: 0 84.2% 60.2%;
-
-    /* Radius */
-    --radius: 0.5rem;
+@theme {
+    --color-primary: #0066cc;      /* True Blue */
+    --color-secondary: #004c99;    /* Polynesian Blue */
+    --color-blue-50: #E6F0FA;      /* Icy Blue */
+    --color-blue-100: #D9E9F9;
+    --color-blue-500: #0066cc;
+    --color-blue-700: #005BB5;
+    --color-blue-900: #004C99;
+  
+    --color-gray-50: #F8F9FA;      /* Background */
+    --color-gray-100: #DDE1E6;
+    --color-gray-900: #333333;
+  
+    --color-success: #28A745;
+    --color-warning: #FFC107;
+    --color-error:   #DC3545;
 }
 
 @keyframes fade-in {
@@ -96,21 +90,6 @@
     text-align: center;
 }
 
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 @keyframes logo-spin {
     from {
         transform: rotate(0deg);
@@ -127,13 +106,7 @@
     }
 }
 
-.card {
-    padding: 2em;
-}
-
-.read-the-docs {
-    color: #888;
-}
+/* Fonts */
 
 .font-inter {
     font-family: "Inter"

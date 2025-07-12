@@ -5,10 +5,12 @@ import { Icon } from "astro-icon/components";
 <header
   class="w-full fixed top-0 z-50 bg-white shadow-md"
 >
+  <div id="gradient-divider" class="fixed top-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-900 to-primary opacity-50 z-40 hidden"></div>
+
   {/* Top Bar */}
   <div
-    id="infobar" 
-    class="transition-all duration-500 ease-in-out overflow-hidden bg-primary text-primary-foreground backdrop-blur-sm shadow-md"
+    id="infobar"
+    class="transition-all duration-500 ease-in-out overflow-hidden bg-primary text-primary-foreground backdrop-blur-sm shadow-md font-semibold"
   >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-10">
@@ -23,26 +25,26 @@ import { Icon } from "astro-icon/components";
           </a> -->
         </div>
 
-        <div class="flex space-x-8">
+        <div class="flex space-x-8 text-xl text-gray-100">
           {/* Phone Number */}
           <a
             href="tel:+212522456789"
-            class="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            class="flex items-center gap-2 hover:opacity-80 transition-opacity font-semibold"
             aria-label="Appelez-nous au +212 5 22 45 67 89"
           >
             <!-- <Phone size={16} /> -->
             <Icon name="heroicons:phone" />
-            <span class="text-sm font-medium">+212 5 22 45 67 89</span>
+            <span class="text-sm">+212 5 22 45 67 89</span>
           </a>
           {/* Email */}
           <a
             href="mail:contact@galaxiemedicale.ma"
-            class="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            class="flex items-center gap-2 hover:opacity-80 transition-opacity font-semibold"
             aria-label="Email contact@galaxiemedicale.ma"
           >
             <!-- <Phone size={16} /> -->
             <Icon name="heroicons:envelope" />
-            <span class="text-sm font-medium">contact@galaxiemedicale.ma</span>
+            <span class="text-sm">contact@galaxiemedicale.ma</span>
           </a>
         </div>
       </div>
@@ -50,7 +52,7 @@ import { Icon } from "astro-icon/components";
   </div>
 
   {/* Main Navigation */}
-  <div id="navbar" class="bg-background transition-all duration-500 ease-in-out text-gray-900 opacity-90">
+  <div id="navbar" class="bg-gray-50 transition-all duration-500 ease-in-out text-gray-900 opacity-90">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         {/* Desktop Navigation */}
@@ -326,6 +328,7 @@ import { Icon } from "astro-icon/components";
   let lastScrollY = window.scrollY;
   const infobar = document.getElementById("infobar");
   const navbar = document.getElementById("navbar");
+  const gradientDivider = document.getElementById("gradient-divider");
 
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
@@ -334,14 +337,16 @@ import { Icon } from "astro-icon/components";
       // Scrolling down
       infobar.classList.add("max-h-0", "opacity-0");
       infobar.classList.remove("max-h-20", "opacity-100");
-      navbar.classList.add("bg-primary", "text-gray-200");
-      navbar.classList.remove("text-gray-900");
+      navbar.classList.add("bg-primary", "text-white");
+      navbar.classList.remove("bg-gray-50", "text-gray-900");
+      gradientDivider.classList.remove("hidden")
     } else {
       // Scrolling up
       infobar.classList.remove("max-h-0", "opacity-0");
       infobar.classList.add("max-h-20", "opacity-100");
-      navbar.classList.remove("bg-primary", "text-gray-200");
-      navbar.classList.add("text-gray-900");
+      navbar.classList.remove("bg-primary", "text-white");
+      navbar.classList.add("bg-gray-50", "text-gray-900");
+      gradientDivider.classList.add("hidden")
     }
   });
 </script>
