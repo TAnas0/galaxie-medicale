@@ -3,8 +3,10 @@ import Card from "../ui/Card.astro";
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 
-const products = await getCollection('products');
+let products = await getCollection('products');
+products = [...products, ...products, ...products]
 ---
+
 <div
   class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-4 ptablet:gap-x-4 gap-y-6 pt-1 mr-2 ml-2 md:ml-0 md:mr-0"
 >
