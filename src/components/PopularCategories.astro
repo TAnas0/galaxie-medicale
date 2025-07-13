@@ -14,6 +14,9 @@ import lab1Image from "../assets/categories/lab1.webp";
 import monitoring1Image from "../assets/categories/monitoring1.webp";
 import surgery2Image from "../assets/categories/surgery2.webp";
 import emergency1Image from "../assets/categories/emergency1.webp";
+import sterilizationImage from "../assets/categories/sterilization.webp";
+import accessoriesImage from "../assets/categories/accessories.webp";
+import medicalFurnitureImage from "../assets/categories/medical-furniture.webp";
 
 const categories = [
   {
@@ -56,14 +59,14 @@ const categories = [
     title: "Matériel de Stérilisation",
     description: "Autoclaves, laveurs et consommables pour l’asepsie médicale",
     icon: "🧼",
-    image: await getImage({src: monitoring1Image, format: "webp"}),
+    image: await getImage({src: sterilizationImage, format: "webp"}),
   },
   {
     category: "medical_furniture",
     title: "Mobilier Médical",
     description: "Lits, chariots, et postes de travail adaptés aux environnements cliniques",
     icon: "🛏️",
-    image: await getImage({src: monitoring1Image, format: "webp"}),
+    image: await getImage({src: medicalFurnitureImage, format: "webp"}),
   },
   {
     category: "therapy_equipment",
@@ -77,7 +80,7 @@ const categories = [
     title: "Accessoires Médicaux",
     description: "Éléments complémentaires pour l’usage quotidien du matériel médical",
     icon: "🩺",
-    image: await getImage({src: monitoring1Image, format: "webp"})
+    image: await getImage({src: accessoriesImage, format: "webp"})
   },
 ];
 ---
