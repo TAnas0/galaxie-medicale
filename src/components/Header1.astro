@@ -13,37 +13,26 @@ import { Icon } from "astro-icon/components";
     class="transition-all duration-500 ease-in-out overflow-hidden bg-primary text-primary-foreground backdrop-blur-sm shadow-md font-semibold"
   >
     <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between h-10">
-        {/* Logo */}
-        <div class="flex items-center">
-          <!-- <a href="/" class="flex-shrink-0">
-            <img
-              src="/public/img/galaxie-medicale.jpg"
-              alt="Galaxie Medicale Logo"
-              class="h-12"
-            />
-          </a> -->
-        </div>
-
-        <div class="flex space-x-8 text-xl text-gray-100">
+      <div class="flex items-center justify-end h-10">
+        <div class="flex space-x-2 text-xl text-gray-100">
           {/* Phone Number */}
           <a
             href="tel:+212522456789"
-            class="flex items-center gap-2 hover:opacity-80 transition-opacity font-semibold"
+            class="flex items-center hover:opacity-80 transition-opacity font-semibold !border-1 border-white/50 py-1 px-2 gap-x-2 rounded-3xl"
             aria-label="Appelez-nous au +212 5 22 45 67 89"
           >
             <!-- <Phone size={16} /> -->
-            <Icon name="heroicons:phone" />
+            <Icon name="heroicons:phone" class="text-xl"/>
             <span class="text-sm">+212 5 22 45 67 89</span>
           </a>
           {/* Email */}
           <a
             href="mail:contact@galaxiemedicale.ma"
-            class="flex items-center gap-2 hover:opacity-80 transition-opacity font-semibold"
+            class="flex items-center text-sm hover:opacity-80 transition-opacity font-semibold !border-1 border-white/50 py-1 px-2 gap-x-2 rounded-3xl"
             aria-label="Email contact@galaxiemedicale.ma"
           >
             <!-- <Phone size={16} /> -->
-            <Icon name="heroicons:envelope" />
+            <Icon name="heroicons:envelope" class="text-xl"/>
             <span class="text-sm">contact@galaxiemedicale.ma</span>
           </a>
         </div>
@@ -325,7 +314,6 @@ import { Icon } from "astro-icon/components";
 
 
 <script is:browser>
-  let lastScrollY = window.scrollY;
   const infobar = document.getElementById("infobar");
   const navbar = document.getElementById("navbar");
   const gradientDivider = document.getElementById("gradient-divider");
