@@ -12,31 +12,41 @@ import { Icon } from "astro-icon/components";
   {/* Top Bar */}
   <div
     id="infobar"
-    class="transition-all duration-500 ease-in-out overflow-hidden bg-primary/95 text-primary-foreground backdrop-blur-sm shadow-md font-semibold"
+    class="transition-all duration-500 ease-in-out overflow-hidden bg-primary/95 text-primary-foreground backdrop-blur-sm shadow-md"
   >
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-end h-10">
-        <div class="flex space-x-2 text-xl text-gray-100">
-          {/* Phone Number */}
-          <a
-            href="tel:+212522456789"
-            class="flex items-center hover:opacity-80 transition-opacity font-semibold !border-1 border-white/50 py-1 px-2 gap-x-2 rounded-3xl"
-            aria-label="Appelez-nous au +212 5 22 45 67 89"
-          >
-            <!-- <Phone size={16} /> -->
-            <Icon name="heroicons:phone" class="text-xl" />
-            <span class="text-sm">+212 5 22 45 67 89</span>
-          </a>
-          {/* Email */}
-          <a
-            href="mail:contact@galaxiemedicale.ma"
-            class="flex items-center text-sm hover:opacity-80 transition-opacity font-semibold !border-1 border-white/50 py-1 px-2 gap-x-2 rounded-3xl"
-            aria-label="Email contact@galaxiemedicale.ma"
-          >
-            <!-- <Phone size={16} /> -->
-            <Icon name="heroicons:envelope" class="text-xl" />
-            <span class="text-sm">contact@galaxiemedicale.ma</span>
-          </a>
+    <div class="container mx-auto px-4 w-full text-xs font-semibold">
+      <div class="flex items-center justify-between h-10">
+        <div
+          class="flex items-center hover:opacity-80 transition-opacity !border-1 border-white/25 py-1 px-2 gap-x-1 rounded-3xl space-x-2 text-gray-100"
+        >
+          <Icon name="heroicons:building-office" class="text-lg" />
+          <span class="">
+            207, Boulevard de la Résistance, 7ᵉ étage, N°14 (C/O C.A.R), Casablanca, Maroc
+          </span>
+        </div>
+        <div class="flex space-x-2 text-gray-100">
+          <div class="flex gap-x-2">
+            {/* Phone Number */}
+            <a
+              href="tel:+212522456789"
+              class="flex items-center hover:opacity-80 transition-opacity !border-1 border-white/25 py-1 px-2 gap-x-1 rounded-3xl"
+              aria-label="Appelez-nous au +212 5 22 45 67 89"
+            >
+              <!-- <Phone size={16} /> -->
+              <Icon name="heroicons:phone" class="text-lg" />
+              <span class="">+212 5 22 45 67 89</span>
+            </a>
+            {/* Email */}
+            <a
+              href="mail:contact@galaxiemedicale.ma"
+              class="flex items-center hover:opacity-80 transition-opacity !border-1 border-white/25 py-1 px-2 gap-x-1 rounded-3xl"
+              aria-label="Email contact@galaxiemedicale.ma"
+            >
+              <!-- <Phone size={16} /> -->
+              <Icon name="heroicons:envelope" class="text-lg" />
+              <span class="pb-[2px]">contact@galaxiemedicale.ma</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
