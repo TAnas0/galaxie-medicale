@@ -8,33 +8,42 @@ import importImg from "../assets/services/placeholder-image.png"
 
 const services = [
   {
-    title: "Installation de Produits",
-    description: "Installation professionnelle et configuration des équipements médicaux par des techniciens certifiés, garantissant des performances optimales et le respect des normes de sécurité.",
+    title: "Installation et intégration",
+    description: "Mise en service sur site et intégration fluide dans vos processus cliniques — prêts à l’emploi dès le premier jour.",
+    // description: "Installation professionnelle et configuration des équipements médicaux par des techniciens certifiés, garantissant des performances optimales et le respect des normes de sécurité.",
     image: await getImage({src: installationImg, format: "webp"}),
     bgClass: "bg-gradient-to-br from-medical-blue to-blue-50",
     textColor: "text-medical-blue-foreground"
   },
   {
-    title: "Maintenance et Réparations",
-    description: "Programmes de maintenance complets et services de réparation rapides pour garantir le bon fonctionnement de vos équipements médicaux avec un minimum d'interruptions.",
+    title: "Maintenance et support technique",
+    description: "Contrats de maintenance préventive, interventions programmées et assistance technique rapide — sous ou hors garantie.",
     image: await getImage({src: maintenanceImg, format: "webp"}),
     bgClass: "bg-gradient-to-br from-medical-green to-green-50",
     textColor: "text-medical-green-foreground"
   },
   {
-    title: "Formation & Intégration",
-    description: "Programmes de formation spécialisés pour les professionnels de santé afin d’optimiser l’utilisation des équipements et garantir une manipulation sûre et efficace.",
+    title: "Formation et accompagnement",
+    description: "Formation des utilisateurs pour une prise en main efficace et une utilisation en toute sécurité des équipements.",
+    // description: "Programmes de formation spécialisés pour les professionnels de santé afin d’optimiser l’utilisation des équipements et garantir une manipulation sûre et efficace.",
     image: await getImage({src: trainingImg, format: "webp"}),
     bgClass: "bg-gradient-to-br from-medical-purple to-purple-50",
     textColor: "text-medical-purple-foreground"
   },
   {
-    title: "Importation d'Équipements Médicaux",
-    description: "Solutions d’importation clés en main, incluant la conformité réglementaire, le dédouanement et la gestion logistique pour l’approvisionnement international en équipements médicaux.",
+    title: "Démonstration, tests et garantie",
+    description: "Démonstrations, tests de performance et garanties claires pour valider la conformité et la fiabilité de chaque équipement.",
     image: await getImage({src: importImg, format: "webp"}),
     bgClass: "bg-gradient-to-br from-medical-orange to-orange-50",
     textColor: "text-medical-orange-foreground"
-  }
+  },
+  // {
+  //   title: "Importation d'Équipements Médicaux",
+  //   description: "Solutions d’importation clés en main, incluant la conformité réglementaire, le dédouanement et la gestion logistique pour l’approvisionnement international en équipements médicaux.",
+  //   image: await getImage({src: importImg, format: "webp"}),
+  //   bgClass: "bg-gradient-to-br from-medical-orange to-orange-50",
+  //   textColor: "text-medical-orange-foreground"
+  // }
 ];
 ---
 
@@ -42,8 +51,13 @@ const services = [
   <div class="container mx-auto px-4">
     <div class="text-center mb-16">
       <h2 class="text-4xl font-bold text-foreground mb-4">Nos Services</h2>
-      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
-        Des services d’accompagnement complets pour maximiser la valeur et les performances de vos investissements en équipements médicaux.
+      <p class="text-xl text-muted-foreground max-w-6xl mx-auto">
+        De l'installation à la maintenance, nos services garantissent la performance optimale de vos équipements médicaux.
+        <br>
+        Plus qu’un fournisseur : un partenaire technique et opérationnel de confiance.
+        <!-- Comprehensive Support at Every Stage
+        From setup to long-term care, our services ensure your medical equipment performs at its best — safely, reliably, and without disruption. We’re more than a supplier — we’re your technical and operational partner.
+        Des services d’accompagnement complets pour maximiser la valeur et les performances de vos investissements en équipements médicaux. -->
       </p>
     </div>
 
