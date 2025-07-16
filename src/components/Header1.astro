@@ -2,15 +2,17 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<header
-  class="w-full fixed top-0 z-50 bg-white shadow-md"
->
-  <div id="gradient-divider" class="fixed top-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-900 to-primary opacity-50 z-40 hidden"></div>
+<header class="w-full fixed top-0 z-50 bg-white shadow-md">
+  <div
+    id="gradient-divider"
+    class="fixed top-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-900 to-primary opacity-50 z-40 hidden"
+  >
+  </div>
 
   {/* Top Bar */}
   <div
     id="infobar"
-    class="transition-all duration-500 ease-in-out overflow-hidden bg-primary text-primary-foreground backdrop-blur-sm shadow-md font-semibold"
+    class="transition-all duration-500 ease-in-out overflow-hidden bg-primary/95 text-primary-foreground backdrop-blur-sm shadow-md font-semibold"
   >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-end h-10">
@@ -22,7 +24,7 @@ import { Icon } from "astro-icon/components";
             aria-label="Appelez-nous au +212 5 22 45 67 89"
           >
             <!-- <Phone size={16} /> -->
-            <Icon name="heroicons:phone" class="text-xl"/>
+            <Icon name="heroicons:phone" class="text-xl" />
             <span class="text-sm">+212 5 22 45 67 89</span>
           </a>
           {/* Email */}
@@ -32,7 +34,7 @@ import { Icon } from "astro-icon/components";
             aria-label="Email contact@galaxiemedicale.ma"
           >
             <!-- <Phone size={16} /> -->
-            <Icon name="heroicons:envelope" class="text-xl"/>
+            <Icon name="heroicons:envelope" class="text-xl" />
             <span class="text-sm">contact@galaxiemedicale.ma</span>
           </a>
         </div>
@@ -41,7 +43,10 @@ import { Icon } from "astro-icon/components";
   </div>
 
   {/* Main Navigation */}
-  <div id="navbar" class="bg-gray-50 transition-all duration-500 ease-in-out text-gray-900 opacity-90">
+  <div
+    id="navbar"
+    class="bg-gray-50 transition-all duration-500 ease-in-out text-gray-900 opacity-90"
+  >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         {/* Desktop Navigation */}
@@ -62,6 +67,14 @@ import { Icon } from "astro-icon/components";
             class="hover:text-gray-900 hover:underline transition-colors text-lg"
           >
             Accueil
+          </a>
+
+          {/* Nos Services */}
+          <a
+            href="/galaxie-medicale#services"
+            class="hover:text-gray-900 hover:underline transition-colors text-lg"
+          >
+            Nos Services
           </a>
 
           {/* Catalog Dropdown */}
@@ -311,8 +324,6 @@ import { Icon } from "astro-icon/components";
   </div>
 </header>
 
-
-
 <script is:browser>
   const infobar = document.getElementById("infobar");
   const navbar = document.getElementById("navbar");
@@ -325,16 +336,16 @@ import { Icon } from "astro-icon/components";
       // Scrolling down
       infobar.classList.add("max-h-0", "opacity-0");
       infobar.classList.remove("max-h-20", "opacity-100");
-      navbar.classList.add("bg-primary", "text-white");
+      navbar.classList.add("bg-primary/95", "text-white");
       navbar.classList.remove("bg-gray-50", "text-gray-900");
-      gradientDivider.classList.remove("hidden")
+      gradientDivider.classList.remove("hidden");
     } else {
       // Scrolling up
       infobar.classList.remove("max-h-0", "opacity-0");
       infobar.classList.add("max-h-20", "opacity-100");
-      navbar.classList.remove("bg-primary", "text-white");
+      navbar.classList.remove("bg-primary/95", "text-white");
       navbar.classList.add("bg-gray-50", "text-gray-900");
-      gradientDivider.classList.add("hidden")
+      gradientDivider.classList.add("hidden");
     }
   });
 </script>
