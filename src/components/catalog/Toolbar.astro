@@ -1,119 +1,121 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 ---
+
 <div
-  class="mt-27 sticky top-27 md:top-27 w-full flex bg-white dark:bg-muted-800 border border-muted-200 dark:border-muted-700 rounded divide-x divide-muted-200 dark:divide-muted-700 shadow-xl shadow-muted-300/30 dark:shadow-muted-900/30 overflow-x-auto z-30"
+  class="flex bg-white dark:bg-muted-800 border border-gray-500 dark:border-muted-700 rounded divide-x divide-gray-500 dark:divide-muted-700 shadow-xl shadow-blue-200/50 dark:shadow-gray-900/30 overflow-x-auto"
 >
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
     :class="activeCategory === 'all' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'all'"
   >
-    <span
+    <!-- <span
       class="flex items-center justify-center h-10 w-10"
       :class="activeCategory === 'all' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    >
+    > -->
       <!-- <iconify-icon
         class="iconify w-6 h-6 text-2xl"
         icon="ph:app-window-duotone"></iconify-icon> -->
-      <Icon name="heroicons:window" />
-    </span>
+      <!-- <Icon name="heroicons:window" /> -->
+    <!-- </span> -->
     <span>Tous</span>
   </button>
 
-  <!-- <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'general' ? 'bg-blue-100' : ''"
-    @click="activeCategory = 'general'"
+  <button
+    class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'medical_furniture' ? 'bg-blue-100' : ''"
+    @click="activeCategory = 'medical_furniture'"
   >
-    <span
+    <!-- <span
       class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'general' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    >
-      <Icon name="heroicons:user-circle" />
-    </span>
-    <span>General</span>
-  </button> -->
+      :class="activeCategory === 'medical_furniture' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
+    > -->
+      <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:test-tube-duotone"
+    ></iconify-icon> -->
+      <!-- <Icon name="heroicons:beaker" /> -->
+    <!-- </span> -->
+    <span>Mobilier Médical</span>
+  </button>
 
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
     :class="activeCategory === 'diagnostic_equipment' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'diagnostic_equipment'"
   >
-    <span
+    <!-- <span
       class="flex items-center justify-center h-10 w-10"
       :class="activeCategory === 'diagnostic_equipment' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    >
+    > -->
       <!-- <iconify-icon
         class="iconify w-6 h-6 text-2xl"
         icon="ph:stethoscope-duotone"></iconify-icon> -->
-      <Icon name="heroicons:heart" />
-
-    </span>
+      <!-- <Icon name="heroicons:heart" /> -->
+    <!-- </span> -->
     <span>Diagnostique</span>
   </button>
 
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'emergency' ? 'bg-blue-100' : ''"
+    @click="activeCategory = 'emergency'"
+  >
+    <!-- <span
+      class="flex items-center justify-center h-10 w-10"
+      :class="activeCategory === 'emergency' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
+    > -->
+      <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:hospital-duotone"
+    ></iconify-icon> -->
+      <!-- <Icon name="heroicons:building-office" /> -->
+    <!-- </span> -->
+    <span>Urgence</span>
+  </button>
+
+  <button
+    class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
     :class="activeCategory === 'surgery' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'surgery'"
   >
-    <span
+    <!-- <span
       class="flex items-center justify-center h-10 w-10"
       :class="activeCategory === 'surgery' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    >
+    > -->
       <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:scissors-duotone"
       ></iconify-icon> -->
-      <Icon name="heroicons:scissors" />
-    </span>
+      <!-- <Icon name="healthicons:general-surgery-outline" /> -->
+    <!-- </span> -->
     <span>Chirurgie</span>
   </button>
 
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'laboratory_equipment' ? 'bg-blue-100' : ''"
-    @click="activeCategory = 'laboratory_equipment'"
-  >
-    <span
-      class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'laboratory_equipment' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    >
-      <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:test-tube-duotone"
-      ></iconify-icon> -->
-      <Icon name="heroicons:beaker" />
-    </span>
-    <span>Laboratoire</span>
-  </button>
-
-  <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
     :class="activeCategory === 'Stérilisation' ? 'bg-blue-100' : ''"
     @click="activeCategory = 'Stérilisation'"
   >
-    <span
+    <!-- <span
       class="flex items-center justify-center h-10 w-10"
       :class="activeCategory === 'sterilization' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    >
+    > -->
       <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:syringe-duotone"
       ></iconify-icon> -->
-      <Icon name="heroicons:briefcase" />
-    </span>
+      <!-- <Icon name="heroicons:briefcase" /> -->
+    <!-- </span> -->
     <span>Stérilisation</span>
   </button>
 
   <button
-    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'hospital_equipment' ? 'bg-blue-100' : ''"
-    @click="activeCategory = 'hospital_equipment'"
+    class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
+    :class="activeCategory === 'medical_accessories' ? 'bg-blue-100' : ''"
+    @click="activeCategory = 'medical_accessories'"
   >
-    <span
+    <!-- <span
       class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'hospital_equipment' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    >
+      :class="activeCategory === 'medical_accessories' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
+    > -->
       <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:hospital-duotone"
-      ></iconify-icon> -->
-      <Icon name="heroicons:building-office" />
-    </span>
-    <span>Hôpital</span>
+    ></iconify-icon> -->
+      <!-- <Icon name="heroicons:building-office" /> -->
+    <!-- </span> -->
+    <span>Accessoires/Consommables</span>
   </button>
 </div>
