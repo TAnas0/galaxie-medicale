@@ -13,13 +13,15 @@ import Grid from "../components/catalog/Grid.astro";
 
   <div class="w-full max-w-7xl mx-auto">
     <div id="catalog" x-data="catalogUIState()">
-      <Toolbar />
+      <div id="categories-toolbar" class="mt-27 sticky top-27 md:top-27 w-full z-50 transition-transform duration-1000 ease-in-out translate-y-0">
+        <Toolbar />
+      </div>
 
       <!--Grid wrapper-->
-      <div class="py-10">
+      <div class="py-6">
         <div class="flex grid grid-cols-12 md:gap-12 pb-20">
           <!--Filters-->
-          <div class="sticky self-start top-56 lg:block col-span-4 lg:col-span-3">
+          <div id="filters" class="sticky self-start top-40 lg:block col-span-4 lg:col-span-3 transition-transform duration-1000 ease-in-out">
             <Filters />
           </div>
           <!--Content-->
@@ -64,4 +66,25 @@ import Grid from "../components/catalog/Grid.astro";
     };
   }
   window.catalogUIState = catalogUIState;
+</script>
+
+<script is:browser>
+  const toolbar = document.getElementById("categories-toolbar");
+  const filters = document.getElementById("filters");
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 250) {
+      toolbar.classList.add("-translate-y-10");
+      toolbar.classList.remove("translate-y-0");
+      filters.classList.add("-translate-y-10");
+      filters.classList.remove("translate-y-0");
+    } else {
+      toolbar.classList.remove("-translate-y-10");
+      toolbar.classList.add("translate-y-0");
+      filters.classList.remove("-translate-y-10");
+      filters.classList.add("translate-y-0");
+    }
+  });
 </script>
