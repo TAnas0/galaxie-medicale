@@ -94,8 +94,6 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
     <main class="container mx-auto px-4 py-8">
       {/* Product Hero Section */}
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
-        {/* Image Carousel */}
-        <Carousel images={JSON.stringify(product.data.images)} />
         {/* Product Information */}
         <div class="space-y-6">
           <div>
@@ -182,12 +180,41 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
             </CardContent>
           </Card>
         </div>
+        {/* Image Carousel */}
+        <Carousel images={JSON.stringify(product.data.images)} />
       </div>
 
-      {/* Technical Specifications */}
+      {/* Specifications */}
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mb-12">
-        <div class="grid grid-cols-1 gap-2 self-start">
+        <div class="border border-gray-300 rounded-lg bg-white">
           <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center text-gray-900">
+                <div class="pr-1 pl-2">
+                  <Icon name="heroicons:document" />
+                </div>
+                Technical Specifications
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {
+                specifications.map((spec, index) => (
+                  <div
+                    key={index}
+                    class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0"
+                  >
+                    <span class="text-sm text-gray-600">{spec.label}</span>
+                    <span class="text-sm font-medium text-gray-900">
+                      {spec.value}
+                    </span>
+                  </div>
+                ))
+              }
+            </CardContent>
+          </Card>          
+        </div>
+        <div class="grid grid-cols-1 gap-2 self-start">
+          <Card class="border border-gray-300 rounded-lg bg-white">
             <CardHeader>
               <CardTitle className="flex items-center text-gray-900">
                 <div class="pr-1 pl-2">
@@ -204,14 +231,14 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
                 <ul class="list-disc list-inside space-y-1 text-sm text-gray-700">
                   <li>Cabinets dentaires et médicaux</li>
                   <li>Laboratoires et cliniques vétérinaires</li>
-                  <li>Centres de chirurgie ambulatoire</li>
-                  <li>Instituts de beauté et studios de tatouage</li>
+                  <!-- <li>Centres de chirurgie ambulatoire</li> -->
+                  <!-- <li>Instituts de beauté et studios de tatouage</li> -->
                 </ul>
               </div>
             </CardContent>
           </Card>
   
-          <Card>
+          <Card class="border border-gray-300 rounded-lg bg-white">
             <CardHeader>
               <CardTitle className="flex items-center text-gray-900">
                 <div class="pr-1 pl-2">
@@ -235,7 +262,7 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
             </CardContent>
           </Card>
   
-          <Card>
+          <Card class="border border-gray-300 rounded-lg bg-white">
             <CardHeader>
               <CardTitle className="flex items-center text-gray-900">
                 <div class="pr-1 pl-2">
@@ -292,36 +319,6 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
           </Card>
    -->
         </div>
-        <div>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center text-gray-900">
-                <div class="pr-1 pl-2">
-                  <Icon name="heroicons:document" />
-                </div>
-                Technical Specifications
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              {
-                specifications.map((spec, index) => (
-                  <div
-                    key={index}
-                    class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0"
-                  >
-                    <span class="text-sm text-gray-600">{spec.label}</span>
-                    <span class="text-sm font-medium text-gray-900">
-                      {spec.value}
-                    </span>
-                  </div>
-                ))
-              }
-            </CardContent>
-          </Card>
-          
-        </div>
-
       </div>
 
       {/* Downloads Section */}
