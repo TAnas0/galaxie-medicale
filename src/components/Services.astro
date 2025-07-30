@@ -1,112 +1,75 @@
 ---
 import { Icon } from "astro-icon/components";
-import { getImage } from 'astro:assets';
-import installationImg from "../assets/services/placeholder-image.png"
-import maintenanceImg from "../assets/services/placeholder-image.png"
-import trainingImg from "../assets/services/placeholder-image.png"
-import importImg from "../assets/services/placeholder-image.png"
-
-const services = [
-  {
-    title: "Installation et intégration",
-    description: "Mise en service sur site et intégration fluide dans vos processus cliniques — prêts à l’emploi dès le premier jour.",
-    // description: "Installation professionnelle et configuration des équipements médicaux par des techniciens certifiés, garantissant des performances optimales et le respect des normes de sécurité.",
-    image: await getImage({src: installationImg, format: "webp"}),
-    bgClass: "bg-gradient-to-br from-medical-blue to-blue-50",
-    textColor: "text-medical-blue-foreground"
-  },
-  {
-    title: "Maintenance et support technique",
-    description: "Contrats de maintenance préventive, interventions programmées et assistance technique rapide — sous ou hors garantie.",
-    image: await getImage({src: maintenanceImg, format: "webp"}),
-    bgClass: "bg-gradient-to-br from-medical-green to-green-50",
-    textColor: "text-medical-green-foreground"
-  },
-  {
-    title: "Formation et accompagnement",
-    description: "Formation des utilisateurs pour une prise en main efficace et une utilisation en toute sécurité des équipements.",
-    // description: "Programmes de formation spécialisés pour les professionnels de santé afin d’optimiser l’utilisation des équipements et garantir une manipulation sûre et efficace.",
-    image: await getImage({src: trainingImg, format: "webp"}),
-    bgClass: "bg-gradient-to-br from-medical-purple to-purple-50",
-    textColor: "text-medical-purple-foreground"
-  },
-  {
-    title: "Démonstration, tests et garantie",
-    description: "Démonstrations, tests de performance et garanties claires pour valider la conformité et la fiabilité de chaque équipement.",
-    image: await getImage({src: importImg, format: "webp"}),
-    bgClass: "bg-gradient-to-br from-medical-orange to-orange-50",
-    textColor: "text-medical-orange-foreground"
-  },
-  // {
-  //   title: "Importation d'Équipements Médicaux",
-  //   description: "Solutions d’importation clés en main, incluant la conformité réglementaire, le dédouanement et la gestion logistique pour l’approvisionnement international en équipements médicaux.",
-  //   image: await getImage({src: importImg, format: "webp"}),
-  //   bgClass: "bg-gradient-to-br from-medical-orange to-orange-50",
-  //   textColor: "text-medical-orange-foreground"
-  // }
-];
+import Card from "./ui/Card.astro";
+import CardContent from "./ui/CardContent.astro";
 ---
 
-<section class="py-20 bg-background">
+<section class="py-10 bg-background">
   <div class="container mx-auto px-4">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-foreground mb-4">Nos Services</h2>
+    <div class="text-center mb-4">
+      <h2 class="text-4xl font-bold text-foreground mb-1">Plus qu’un fournisseur...</h2>
       <p class="text-xl text-muted-foreground max-w-6xl mx-auto">
-        De l'installation à la maintenance, nos services garantissent la performance optimale de vos équipements médicaux.
-        <br>
-        Plus qu’un fournisseur : un partenaire technique et opérationnel de confiance.
-        <!-- Comprehensive Support at Every Stage
-        From setup to long-term care, our services ensure your medical equipment performs at its best — safely, reliably, and without disruption. We’re more than a supplier — we’re your technical and operational partner.
-        Des services d’accompagnement complets pour maximiser la valeur et les performances de vos investissements en équipements médicaux. -->
+        Un partenaire technique et opérationnel de confiance.
       </p>
     </div>
-
-    <div class="grid md:grid-cols-2 gap-8">
-      {
-        services.map((service, index) => {
-          const IconComponent = service.icon;
-          return (
-            <div
-              key={index}
-              class={`${service.bgClass} rounded-2xl p-8 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] group`}
-            >
-              <div class="flex flex-col lg:flex-row items-center gap-6">
-                <div class="flex-shrink-0">
-                  <div class="relative">
-                    <img
-                      src={service.image.src}
-                      alt={service.title}
-                      class="w-48 h-36 object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300"
-                    />
-                    <div
-                      class={`absolute -top-3 -right-3 ${service.bgClass} p-3 rounded-full shadow-lg border-4 border-white`}
-                    >
-                        <Icon name="heroicons:wrench-screwdriver" />
-
-                      {/* <IconComponent
-                        class={`w-6 h-6 ${service.textColor}`}
-                      /> */}
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex-1 text-center lg:text-left">
-                  <h3
-                    class={`text-2xl font-bold ${service.textColor} mb-3`}
-                  >
-                    {service.title}
-                  </h3>
-                  <p
-                    class={`${service.textColor} leading-relaxed opacity-90`}
-                  >
-                    {service.description}
-                  </p>
-                </div>
-              </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="flex">
+        <Card
+          key="1"
+          class="group transition-shadow transition-all duration-300 transform shadow-md"
+        >
+          <CardContent className="justify-between text-center">
+            <div class="text-lg font-semibold mb-6 mt-2 flex items-center gap-4 text-primary">
+              <Icon name="heroicons:wrench-screwdriver" class="min-w-12 min-h-12"/>
+              Installation & Support Technique
             </div>
-          );
-        })
-      }
+            <div class="leading-relaxed text-gray-900">
+              <span class="font-semibold">Installation sur site</span> et <span class="font-semibold">configuration complète</span> par notre équipe technique, pour une mise en service professionelle.
+              <br>
+              <br>
+              Accompagnement fiable pour la <span class="font-semibold">maintenance</span>, les <span class="font-semibold">réparations</span> et tout <span class="font-semibold">conseil technique</span> dont vous pourriez avoir besoin.
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+      <div class="flex">
+        <Card
+          key="1"
+          class="group transition-shadow transition-all duration-300 transform shadow-md"
+        >
+          <CardContent className="justify-between text-center">
+            <div class="text-lg font-semibold mb-6 mt-2 flex items-center gap-4">
+              <Icon name="heroicons:user-group" class="min-w-12 min-h-12"/>
+              Démonstrations & Tests des Équipements
+            </div>
+            <div class="leading-relaxed text-gray-900">
+              <span class="font-semibold">Démonstrations et tests guidés</span> pour vous permettre d’observer l’équipement en action.
+              <br>
+              <br>
+              Vos équipes choisissent en toute sérénité la solution la mieux <span class="font-semibold">adaptée à vos besoins</span> techniques et opérationnels.
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+      <div class="flex">
+        <Card
+          key="1"
+          class="group transition-shadow transition-all duration-300 transform shadow-md"
+        >
+          <CardContent className="justify-between text-center">
+            <div class="text-lg font-semibold mb-6 mt-2 flex items-center gap-4">
+              <Icon name="heroicons:academic-cap" class="min-w-12 min-h-12"/>
+              Formation & Transfert de Compétences
+            </div>
+            <div class="leading-relaxed text-gray-900">
+              <span class="font-semibold">Formations pratiques et adaptées</span>, pour maximiser l’efficacité et la maîtrise de vos équipements.
+              <br>
+              <br>
+              Nous accompagnons le transfert des compétences afin d’assurer une <span class="font-semibold">utilisation sûre et fluide</span> en contexte clinique.
+            </div>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   </div>
 </section>
