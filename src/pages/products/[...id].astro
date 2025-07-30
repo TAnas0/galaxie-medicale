@@ -31,7 +31,7 @@ if (!product) {
   throw new Error(`Product not found: ${params.id}`);
 }
 
-const specifications = [
+let specifications = [
   { label: "Modèle", value: "Phoenix Blu Plus⁺ 18 L" },
   { label: "Classe", value: "Classe B – conforme EN 13060" },
   { label: "Volume de la chambre", value: "18 L (Ø 255 × 360 mm)" },
@@ -84,6 +84,19 @@ const certifications = [
 
 // TODO 
 const relatedProducts = products.filter(p => (p.data.category == product.data.category)).slice(0,3)
+
+specifications = product.data.technical_specs
+  .split('\\n')
+  .map(line => line.trim())
+  .filter(line => line) // remove empty lines
+  .map(line => {
+    const [label, ...rest] = line.split(':');
+    const value = rest.join(':').trim(); // handles any extra colons in value
+    return {
+      label: label.trim(),
+      value: value || '', // in case there's no colon
+    };
+  });
 ---
 
 <Layout>
@@ -111,54 +124,6 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
             </p>
           </div>
 
-          <div class="space-y-4">
-            <!-- <div class="flex items-center space-x-4">
-              <span class="text-2xl font-bold text-gray-900"
-                >Contact for Quote</span
-              >
-              <span class="text-sm text-gray-500"
-                >Volume discounts available</span
-              >
-            </div> -->
-
-            <p class="text-gray-700 leading-relaxed">
-              {product.data.description}
-            </p>
-
-            <!-- <div class="text-2xl text-red-600">Include here highlighted specs, key fonctionalities and Selling points</div> -->
-
-            <p class="text-gray-700 leading-relaxed">
-              <!-- {product.data.technical_specs} -->
-              <ul>
-                {
-                  product.data.technical_specs
-                    .split('\\n')
-                    .map(item => item.replace(/^•\s*/, ''))  // Remove bullet symbols
-                    .filter(Boolean) // Remove any empty strings
-                    .map(spec => <li>{spec}</li>)
-                }
-              </ul>
-            </p>
-
-
-
-            <!-- <div class="flex flex-col sm:flex-row gap-3">
-              <Button
-                class="bg-medical-red hover:bg-medical-red-dark text-white flex items-center"
-              >
-                <Icon name="heroicons:phone" />
-                Request Quote
-              </Button>
-              <Button
-                variant="outline"
-                class="border-medical-red text-medical-red hover:bg-medical-red hover:text-white"
-              >
-                <Icon name="heroicons:mail" />
-                Contact Sales
-              </Button>
-            </div> -->
-          </div>
-
           {/* Brand Info */}
           <Card class="bg-white">
             <CardContent className="!p-2">
@@ -166,12 +131,12 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
                 <div
                   class="w-18 h-12 bg-white rounded-lg flex items-center justify-center"
                 >
-                  <span class="font-bold text-medical-red">MC</span>
+                  <span class="font-bold">{product.data.brand.name}</span>
                 </div>
                 <div>
-                  <h3 class="font-semibold text-gray-900">
+                  <!-- <h3 class="font-semibold text-gray-900">
                     {product.data.brand.name}
-                  </h3>
+                  </h3> -->
                   <p class="text-sm text-gray-600">
                     {product.data.brand.description}
                   </p>
