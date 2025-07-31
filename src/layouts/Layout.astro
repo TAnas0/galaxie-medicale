@@ -4,16 +4,10 @@ import '@fontsource-variable/manrope';
 import '@fontsource/ibm-plex-sans';
 import '@fontsource/plus-jakarta-sans';
 import { AstroFont } from "astro-font";
-
-import surgery1Image from "../assets/hero/surgery1.webp";
-import nurse1Image from "../assets/hero/nurse1.webp";
-import medicalImage from "../assets/hero/medical-room.webp";
-import microscopeImage from "../assets/hero/microscope.webp";
-import nurseImage from "../assets/hero/nurse-patient.webp";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -74,15 +68,11 @@ import nurseImage from "../assets/hero/nurse-patient.webp";
     <meta name="robots" content="noindex, nofollow" /> <!-- TODO Remove in production -->
     <meta name="google-site-verification" content="Oadv58J_LLtPTwp4JkTBuxKKHzTaRfg_PeHF8N3WoGg" />
     <title>Galaxie Medicale</title>
-    <link rel="preload" as="image" href={surgery1Image.src} />
-    <link rel="preload" as="image" href={nurse1Image.src} />
-    <link rel="preload" as="image" href={medicalImage.src} />
-    <link rel="preload" as="image" href={microscopeImage.src} />
-    <link rel="preload" as="image" href={nurseImage.src} />
   </head>
   <body class="bg-gray-50">
     <div class="gradient-layer"></div>
     <slot />
+    <script src="../js/main.js"></script>
   </body>
 </html>
 
