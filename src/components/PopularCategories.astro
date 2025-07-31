@@ -102,7 +102,7 @@ const categories = [
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {
         categories.map((category, index) => (
-          <a href={`/galaxie-medicale/catalog?category=${category.category}`}>
+          <a href={`/galaxie-medicale/catalog?category=${category.category}`} data-aos="fade-up" data-aos-duration="1000">
             <Card
               key={index}
               class="group transition-shadow hover:shadow-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 border-0 shadow-md bg-cover bg-center bg-no-repeat min-h-96 md:min-h-124"

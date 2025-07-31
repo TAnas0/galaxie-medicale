@@ -2,7 +2,7 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<header class="w-full fixed top-0 z-50 bg-white shadow-md">
+<header class="w-full fixed top-0 z-50 bg-white shadow-md" data-aos="fade" data-aos-duration="100">
   <div
     id="gradient-divider"
     class="fixed top-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-900 to-primary opacity-50 z-40 hidden"
@@ -13,6 +13,7 @@ import { Icon } from "astro-icon/components";
   <div
     id="infobar"
     class="transition-all duration-500 ease-in-out overflow-hidden bg-primary/95 text-primary-foreground backdrop-blur-sm shadow-md"
+    data-aos="fade" data-aos-duration="500"
   >
     <div class="container mx-auto px-4 w-full text-xs font-semibold">
       <div class="flex items-center justify-between h-10">
@@ -56,6 +57,7 @@ import { Icon } from "astro-icon/components";
   <div
     id="navbar"
     class="bg-gray-50 transition-all duration-500 ease-in-out text-gray-900 opacity-90"
+    data-aos="fade" data-aos-duration="500"
   >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
