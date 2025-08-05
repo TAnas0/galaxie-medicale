@@ -5,7 +5,7 @@
     "category": "Stérilisation",
     "sub_category": "",
     "image": "catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
-    "image2": "../assets/products/autoclave-phoenix-blu-plus-18-l/1.jpg",
+    "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
     "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 18 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
     "availability": "in_stock",
     "brand": {
@@ -26,8 +26,8 @@
     "availability": "out_of_stock",
     "category": "Stérilisation",
     "sub_category": "Autoclave de table",
-    "image": "/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
-    "image2": "../assets/products/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+    "image": "/catalog/img/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+    "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
     "brand": {
       "name": "Guarisco Medical Sterilizer",
       "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
@@ -46,7 +46,7 @@
   {
     "id": 3,
     "name": "Autoclave Phoenix Blu 12 ",
-    "image2": "../assets/products/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
+    "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
     "availability": "in_stock",
     "description": "L’autoclave Phoenix Blu 12 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.",
     "category": "Stérilisation",
@@ -62,7 +62,7 @@
     "name": "Autoclave Phoenix Blu 24",
     "availability": "in_stock",
     "description": "Performance et Fiabilité pour une Stérilisation Médicale Optimale\nL’autoclave Phoenix Blu 24 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Disponible en versions 12 L et 18 L, il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.\n",
-    "image2": "../assets/products/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
+    "image2": "../assets/products/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
     "category": "Stérilisation",
     "sub_category": "Autoclave de table",
     "brand": {
@@ -76,7 +76,7 @@
     "name": "Autoclave Phoenix Blu Plus+ 24",
     "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 24 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
     "availability": "out_of_stock",
-    "image2": "../assets/products/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
+    "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
     "category": "Stérilisation",
     "sub_category": "Autoclave de table",
     "brand": {
@@ -88,7 +88,7 @@
   {
     "id": 7,
     "name": "Autoclave à vapeur AS44",
-    "image2": "../assets/placeholder-image.png",
+
     "description": "Autoclave compact (100L ou 150L) idéal pour les petites salles de stérilisation et les blocs opératoires.",
     "category": "Stérilisation",
     "sub_category": "Autoclave vertical",
@@ -101,7 +101,7 @@
   {
     "id": 8,
     "name": "Autoclave à vapeur AS66",
-    "image2": "../assets/placeholder-image.png",
+
     "availability": "in_stock",
     "description": "Autoclave à grande capacité (300–900L) compatible avec le standard STU pour les grandes unités de stérilisation (CSSD).",
     "category": "Stérilisation",
@@ -117,7 +117,7 @@
     "name": "Autoclave à vapeur SMS 100",
     "availability": "in_stock",
     "description": "Autoclave compact idéal pour les petites cliniques et laboratoires, avec station de traitement d'eau et compresseur intégrés.",
-    "image2": "../assets/placeholder-image.png",
+
     "category": "Stérilisation",
     "sub_category": "Autoclave vertical",
     "brand": {
@@ -131,7 +131,7 @@
     "name": "Lampe opératoire HELIOS 160\n",
     "availability": "in_stock",
     "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.Lampe LED chirurgicale de haut rendement avec coupole simple ou double.\n",
-    "image2": "../assets/placeholder-image.png",
+
     "category": "surgery",
     "sub_category": "surgery_lighting",
     "brand": {
@@ -145,7 +145,7 @@
     "name": "Lampe opératoire IGNIS 160",
     "availability": "in_stock",
     "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.",
-    "image2": "../assets/placeholder-image.png",
+
     "category": "surgery",
     "sub_category": "surgery_lighting",
     "brand": {
