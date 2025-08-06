@@ -39,12 +39,13 @@ import Grid from "../components/catalog/Grid.astro";
 <script type="module">
   const validCategories = [
     "all",
-    "general",
+    "medical_furniture",
     "diagnostic_equipment",
+    "emergency",
     "surgery",
-    "laboratory_equipment",
     "sterilization",
-    "hospital_equipment"
+    "medical_accessories",
+    // "hospital_equipment"
   ];
 
   // Get the query param from the URL
@@ -57,14 +58,14 @@ import Grid from "../components/catalog/Grid.astro";
     : "all";
   
     function catalogUIState() {
-    return {
-      activeCategory: initialCategory,
-      resetScroll() {
-        window.scrollTo({ top: 350, behavior: "smooth" });
-        return false;
-      },
-    };
-  }
+      return {
+        activeCategory: initialCategory,
+        resetScroll() {
+          window.scrollTo({ top: 350, behavior: "smooth" });
+          return false;
+        },
+      };
+    }
   window.catalogUIState = catalogUIState;
 </script>
 
