@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Guarisco Medical Sterilizer",
+        "display_name": "GSM",
+        "description": "GSM, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices",
+        "logo": ""
+    },
+    {
+        "id": 2,
+        "name": "SMS",
+        "display_name": "SMS",
+        "description": "",
+        "logo": ""
+    },
+    {
+        "id": 3,
+        "name": "Yonker",
+        "display_name": "Yonker",
+        "description": "",
+        "logo": ""
+    }
+]

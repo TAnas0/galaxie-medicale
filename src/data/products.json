@@ -4,8 +4,7 @@
     "name": "Autoclave Phoenix Blu Plus⁺ 18 L",
     "category": "sterilization",
     "sub_category": "",
-    "image": "catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
-    "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
     "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 18 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
     "availability": "in_stock",
     "brand": {
@@ -26,8 +25,7 @@
     "availability": "out_of_stock",
     "category": "sterilization",
     "sub_category": "autoclave",
-    "image": "/catalog/img/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
-    "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
     "brand": {
       "name": "Guarisco Medical Sterilizer",
       "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
@@ -46,7 +44,7 @@
   {
     "id": 3,
     "name": "Autoclave Phoenix Blu 12 ",
-    "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
     "availability": "in_stock",
     "description": "L’autoclave Phoenix Blu 12 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.",
     "category": "sterilization",
@@ -55,28 +53,48 @@
       "name": "Guarisco Medical Sterilizer",
       "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
     },
-    "technical_specs": "Capacité de la chambre\t12 litres\\nDimensions externes\t407 x 410 x 570 mm (L x H x P)\\nDimensions chambre\tØ 210 x 360 mm\\nDimensions plateau\t310 x 160 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t3 litres\\nRéservoir eaux usées\t4 litres\\nPoids net / brut\t42 kg / 44 kg\\nTemps de cycle classe B\t15 minutes\\nVersions disponibles\tStandard / USB / USB + Imprimante\\n"
+    "technical_specs": "Capacité de la chambre\t12 litres\\nDimensions externes\t407 x 410 x 570 mm (L x H x P)\\nDimensions chambre\tØ 210 x 360 mm\\nDimensions plateau\t310 x 160 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t3 litres\\nRéservoir eaux usées\t4 litres\\nPoids net / brut\t42 kg / 44 kg\\nTemps de cycle classe B\t15 minutes\\nVersions disponibles\tStandard / USB / USB + Imprimante\\n",
+    "images": [
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-PRINTER-18.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-18.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-AWF-18.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-PRINTER-18.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-PRINTER-18.png"
+    ]
   },
   {
     "id": 4,
     "name": "Autoclave Phoenix Blu 24",
     "availability": "in_stock",
     "description": "Performance et Fiabilité pour une Stérilisation Médicale Optimale\nL’autoclave Phoenix Blu 24 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Disponible en versions 12 L et 18 L, il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.\n",
-    "image2": "../assets/products/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
+    "image": "../assets/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
     "category": "sterilization",
     "sub_category": "autoclave",
     "brand": {
       "name": "Guarisco Medical Sterilizer",
       "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
     },
-    "technical_specs": "Capacité de la chambre\t24 litres\\nDimensions externes\t462 x 445 x 600 mm (L x H x P)\\nDimensions chambre\tØ 255 x 460 mm\\nDimensions plateau\t385 x 190 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t4,6 litres\\nRéservoir eaux usées\t5 litres\\nPoids net / brut\t56 kg / 59 kg\\nTemps de cycle classe B\tEntre 19 minutes et 38 minutes\\nVersions disponibles\tStandard LCD / Standard LED/ LCD imprimante / LED imprimante / LCD AWF / LED AWF\\n"
+    "technical_specs": "Capacité de la chambre\t24 litres\\nDimensions externes\t462 x 445 x 600 mm (L x H x P)\\nDimensions chambre\tØ 255 x 460 mm\\nDimensions plateau\t385 x 190 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t4,6 litres\\nRéservoir eaux usées\t5 litres\\nPoids net / brut\t56 kg / 59 kg\\nTemps de cycle classe B\tEntre 19 minutes et 38 minutes\\nVersions disponibles\tStandard LCD / Standard LED/ LCD imprimante / LED imprimante / LCD AWF / LED AWF\\n",
+    "images": [
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LCD-24.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LCD-AWF-24.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LCD-PRINTER-24.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LED-24.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LED-AWF-24.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LED-PRINTER-24-FRONT.jpg",
+      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LED-PRINTER-24.jpg"
+    ]
   },
   {
     "id": 6,
     "name": "Autoclave Phoenix Blu Plus+ 24",
     "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 24 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
     "availability": "out_of_stock",
-    "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
     "category": "sterilization",
     "sub_category": "autoclave",
     "brand": {
@@ -157,7 +175,7 @@
     "name": "Moniteur multipamétrique E8",
     "availability": "in_stock",
     "description": "Moniteur compact pour la surveillance continue des signes vitaux. Il mesure des paramètres essentiels comme l’ECG, la SpO2, la NIBP, la température corporelle et la respiration. Convient aux soins ambulatoires ou hospitaliers de faible à moyenne complexité.",
-    "image2": "",
+    "image": "",
     "category": "diagnostic",
     "sub_category": "patient_monitoring",
     "brand": {
@@ -171,7 +189,7 @@
     "name": "Moniteur multipamétrique E10",
     "availability": "in_stock",
     "description": "Dispositif de surveillance multiparamétrique avec écran 10,4 pouces, adapté à un usage hospitalier général. Permet la mesure de l’ECG, SpO2, pression non invasive, température, respiration et pouls. Prise en charge de l’alarme auditive et visuelle.",
-    "image2": "",
+    "image": "",
     "category": "diagnostic",
     "sub_category": "patient_monitoring",
     "brand": {
@@ -185,7 +203,7 @@
     "name": "Moniteur multipamétrique E12",
     "availability": "in_stock",
     "description": "Moniteur avancé avec écran de 12,1 pouces offrant une visualisation claire des paramètres vitaux. Inclut la surveillance ECG 5 dérivations, SpO2, NIBP, TEMP et RESP. Convient aux unités de soins intensifs et post-opératoires.",
-    "image2": "",
+    "image": "",
     "category": "diagnostic",
     "sub_category": "patient_monitoring",
     "brand": {
@@ -199,7 +217,7 @@
     "name": "Moniteur multipamétrique E15",
     "availability": "in_stock",
     "description": "Moniteur haut de gamme équipé d’un grand écran couleur 15 pouces. Compatible avec la surveillance avancée incluant la CO₂ et la pression artérielle invasive (IBP). Idéal pour les services de réanimation ou blocs opératoires.",
-    "image2": "",
+    "image": "",
     "category": "diagnostic",
     "sub_category": "patient_monitoring",
     "brand": {
@@ -213,7 +231,7 @@
     "name": "Moniteur multipamétrique YK-8000A",
     "availability": "in_stock",
     "description": "Moniteur portable et léger pour surveillance de base. Il mesure la saturation en oxygène, la pression artérielle non invasive et la température corporelle. Utilisé en ambulances, cliniques mobiles ou consultations externes.",
-    "image2": "",
+    "image": "",
     "category": "diagnostic",
     "sub_category": "patient_monitoring",
     "brand": {
@@ -227,7 +245,7 @@
     "name": "Moniteur multipamétrique YK-8000B",
     "availability": "in_stock",
     "description": "Moniteur compact avec écran clair de 8,4 pouces adapté aux environnements hospitaliers. Il permet de surveiller plusieurs paramètres simultanément et inclut des alarmes de sécurité. Utilisé dans les services standards ou intermédiaires.",
-    "image2": "",
+    "image": "",
     "category": "diagnostic",
     "sub_category": "patient_monitoring",
     "brand": {
@@ -241,7 +259,7 @@
     "name": "Moniteur multipamétrique YK-8000C",
     "availability": "in_stock",
     "description": "Dispositif de surveillance avancée avec écran 12,1 pouces et capacité de mesure de CO₂ en plus des paramètres vitaux classiques. Convient aux unités de soins critiques avec besoin de précision accrue. Supporte les connexions réseau pour supervision centralisée.",
-    "image2": "",
+    "image": "",
     "category": "diagnostic",
     "sub_category": "patient_monitoring",
     "brand": {
@@ -255,7 +273,7 @@
     "name": "Abaisse langue adulte",
     "availability": "in_stock",
     "description": "",
-    "image2": "",
+    "image": "",
     "category": "consummable",
     "sub_category": "consummable",
     "brand": {
@@ -269,7 +287,7 @@
     "name": "Abaisse langue enfant",
     "availability": "in_stock",
     "description": "",
-    "image2": "",
+    "image": "",
     "category": "consummable",
     "sub_category": "consummable",
     "brand": {
@@ -283,7 +301,7 @@
     "name": "Berceau D-2",
     "availability": "in_stock",
     "description": "Berceau hospitalier mobile conçu pour les soins néonataux en maternité. Sa structure légère et stable permet un accès aisé au nouveau-né. Utilisé principalement pour les chambres post-partum.",
-    "image2": "",
+    "image": "",
     "category": "medical_furniture",
     "sub_category": "medical_furniture",
     "brand": {
@@ -297,7 +315,7 @@
     "name": "Berceau D-3",
     "availability": "in_stock",
     "description": "Berceau néonatal avec réglage de la hauteur pour s’adapter au lit de la mère. Conçu pour optimiser le contact mère-enfant en toute sécurité. Convient aux établissements promouvant le co-sommeil supervisé.",
-    "image2": "",
+    "image": "",
     "category": "medical_furniture",
     "sub_category": "berceau_neonatal",
     "brand": {
@@ -326,7 +344,7 @@
     "description": "Cette table de chirurgie électrique offre une flexibilité complète avec réglage électrique de la hauteur, des plaques dorsale, tête et jambes, ainsi qu’un déplacement horizontal pour faciliter l’imagerie C-arm. Conçue en acier inoxydable 304 résistant à la corrosion, elle assure sécurité et confort pour une large gamme d’interventions chirurgicales.",
     "category": "surgery",
     "sub_category": "operating_table",
-    "image2": "../assets/products/saikang/A100-4.jpg",
+    "image": "../assets/products/saikang/A100-4.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -339,7 +357,7 @@
     "description": "Ce modèle est une évolution avec un cadre en acier inoxydable anti-corrosion et un système de freinage à pédale. Sa batterie longue durée et son contrôleur manuel garantissent un fonctionnement fiable et sécurisé, adapté aux interventions orthopédiques et multi-spécialités.",
     "category": "surgery",
     "sub_category": "operating_table",
-    "image2": "../assets/products/saikang/A100-4A.jpg",
+    "image": "../assets/products/saikang/A100-4A.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -352,7 +370,7 @@
     "description": "Cette table combine la puissance hydraulique et l’électronique pour des réglages précis et fluides. Sa conception modulaire avec plateau translucide compatible rayons X, son système intelligent avec contrôle LCD et sa forte capacité de charge (360 kg) en font une table polyvalente pour divers actes chirurgicaux.",
     "category": "surgery",
     "sub_category": "operating_table",
-    "image2": "../assets/products/saikang/A106-5.jpg",
+    "image": "../assets/products/saikang/A106-5.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -365,7 +383,7 @@
     "description": "Cette table propose un cadre robuste en acier inoxydable 304 avec une surface de table résistante compatible rayons X. Elle offre des réglages électriques précis avec un double contrôle manuel et sur colonne, idéale pour la chirurgie générale et orthopédique.",
     "category": "surgery",
     "sub_category": "operating_table",
-    "image2": "../assets/products/saikang/A301.jpg",
+    "image": "../assets/products/saikang/A301.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -378,7 +396,7 @@
     "description": "Cette table offre des fonctionnalités avancées avec ajustement en hauteur de la plaque tête, glissement horizontal étendu et surface résistante en résine phénolique compatible imagerie médicale. Sa structure robuste garantit stabilité et facilité d’utilisation pour divers types d’interventions.",
     "category": "surgery",
     "sub_category": "operating_table",
-    "image2": "../assets/products/saikang/A302.jpg",
+    "image": "../assets/products/saikang/A302.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -391,7 +409,7 @@
     "description": "Cette table électrique hydraulique est conçue pour une large gamme de chirurgies avec un système de contrôle flexible, surface modulaire compatible rayons X et batterie rechargeable. Son design robuste en acier inoxydable assure durabilité et facilité d’entretien.",
     "category": "surgery",
     "sub_category": "operating_table",
-    "image2": "../assets/products/saikang/A307.png",
+    "image": "../assets/products/saikang/A307.png",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -404,7 +422,7 @@
     "description": "Cette table propose un système hydraulique performant avec rotation horizontale 180°, commande double, batterie de secours intégrée et surface résistante. Adaptée aux interventions exigeantes, elle assure confort et sécurité grâce à son cadre en acier inoxydable et ses multiples réglages.",
     "category": "surgery",
     "sub_category": "operating_table",
-    "image2": "../assets/products/saikang/A501.jpg",
+    "image": "../assets/products/saikang/A501.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -417,7 +435,7 @@
     "description": "Cette table électrique compacte conçue pour une utilisation polyvalente avec un cadre solide en acier inoxydable, une charge maximale de 150 kg, et un matelas amovible. Idéale pour les interventions ne nécessitant pas de compatibilité C-arm",
     "category": "surgery",
     "sub_category": "operating_table",
-    "image2": "../assets/products/saikang/A2000.jpg",
+    "image": "../assets/products/saikang/A2000.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -442,7 +460,7 @@
     "description": "Brancard patient robuste avec structure en acier inoxydable poli, matelas ignifugé de 4 cm d’épaisseur, dossier réglable, roulettes silencieuses avec frein universel et porte-bouteille d’oxygène.",
     "category": "medical_furniture",
     "sub_category": "stretcher",
-    "image2": "../assets/products/saikang/patient_trolley/SKB037(A).jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB037(A).jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -455,7 +473,7 @@
     "description": "Chariot brancard robuste avec structure en acier inoxydable poli miroir, matelas épais ignifugé et dossier réglable jusqu’à 75°. Équipé de roulettes silencieuses avec frein universel, porte-bouteille d’oxygène, porte-seringues réglable et panier à déchets. Conçu pour un transport patient sûr et confortable.",
     "category": "medical_furniture",
     "sub_category": "stretcher",
-    "image2": "../assets/products/saikang/patient_trolley/SKB037(B).jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB037(B).jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -468,7 +486,7 @@
     "description": "Brancard patient avec réglages manuels multiples grâce à trois manivelles, dossier réglable à 75° et repose-genoux à 35°. Equipé de roulettes silencieuses avec frein central, barrières latérales rabattables et matelas confortable. Structure en acier inoxydable haute qualité.",
     "category": "medical_furniture",
     "sub_category": "stretcher",
-    "image2": "../assets/products/saikang/patient_trolley/SKB037(C).jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB037(C).jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -481,7 +499,7 @@
     "description": "Chariot patient avec système de manivelle, dossier à ressort pneumatique réglable, barrières latérales en plastique et roulettes 5\" avec frein. Hauteur ajustable entre 620 et 900 mm pour un confort ergonomique lors du transport.",
     "category": "medical_furniture",
     "sub_category": "stretcher",
-    "image2": "../assets/products/saikang/patient_trolley/SKB038-2.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB038-2.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -494,7 +512,7 @@
     "description": "Chariot de transport patient hydraulique avec double pompe pour réglage de la hauteur et inclinaison, dossier ajustable à 75° et barre latérale en ABS. Equipé de roulettes 8\" avec frein centralisé et directionnel, porte-seringues et porte-bouteille d’oxygène.",
     "category": "medical_furniture",
     "sub_category": "stretcher",
-    "image2": "../assets/products/saikang/patient_trolley/SKB041-2.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-2.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -507,7 +525,7 @@
     "description": "Chariot hydraulique avec pompe américaine pour réglage de hauteur, dossier à ressort pneumatique, barrières latérales en acier inoxydable, et matelas imperméable de 60 mm d’épaisseur. Equipé d’accessoires complets pour un transport patient sûr.",
     "category": "medical_furniture",
     "sub_category": "stretcher",
-    "image2": "../assets/products/saikang/patient_trolley/SKB041-3S.png",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-3S.png",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -520,7 +538,7 @@
     "description": "Chariot patient avec système de manivelle, dossier à ressort pneumatique, barrières latérales plastiques, roulettes 6\" avec verrouillage central et directionnel. Hauteur ajustable entre 510 et 850 mm pour un usage polyvalent.",
     "category": "medical_furniture",
     "sub_category": "stretcher",
-    "image2": "../assets/products/saikang/patient_trolley/SKB041-6.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-6.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -533,7 +551,7 @@
     "description": "Chariot multi-fonctions ergonomique adapté au transport et imagerie corps entier avec support cassette rayons X intégré. Dossier réglable à 85°, repose-jambes à 50°, et inclinaisons Trendelenburg et reverse jusqu’à 15°. Equipé de roulettes 8\" avec frein central et verrouillage directionnel.",
     "category": "medical_furniture",
     "sub_category": "stretcher",
-    "image2": "../assets/products/saikang/patient_trolley/SKB041-7.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-7.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -546,7 +564,7 @@
     "description": "Chariot de transport patient avec système de manivelle, dossier réglable à 75°, repose-genoux à 40°, et inclinaisons Trendelenburg jusqu’à 18°. Roulettes 8\" avec verrouillage central, pompe hydraulique américaine double et accessoires complets.",
     "category": "medical_furniture",
     "sub_category": "stretcher",
-    "image2": "../assets/products/saikang/patient_trolley/SKB041-10.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-10.jpg",
     "brand": {
       "name": "Saikang",
       "description": ""

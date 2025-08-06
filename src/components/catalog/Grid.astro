@@ -31,7 +31,7 @@ let products = await getCollection('products');
           if (img.complete && img.naturalWidth > 0) loaded = true;
         })"
       >
-        <div class="loader"></div>
+        <div class="loader absolute top-0 left-0"></div>
         <!-- Optional Spinner -->
         {/* <svg class="w-6 h-6 text-muted-500 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
           <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
@@ -40,7 +40,7 @@ let products = await getCollection('products');
       </div>
       <Image
         x-ref="img"
-        src={product.data.image2 || "https://placehold.co/400x600"}
+        src={product.data.image || "https://placehold.co/400x600"}
         inferSize={true}
         alt={product.data.name}
         loading="lazy"
@@ -85,7 +85,7 @@ let products = await getCollection('products');
 <style>
   /* HTML: <div class="loader"></div> */
   .loader {
-    width: 50px;
+    width: 25px;
     --b: 8px; 
     aspect-ratio: 1;
     border-radius: 50%;
