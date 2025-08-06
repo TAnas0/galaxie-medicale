@@ -3,11 +3,11 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="flex bg-white dark:bg-muted-800 border border-gray-500 dark:border-muted-700 rounded divide-x divide-gray-500 dark:divide-muted-700 shadow-xl shadow-blue-200/50 dark:shadow-gray-900/30 overflow-x-auto"
+  class="flex bg-white dark:bg-muted-800 border border-gray-500 dark:border-muted-700 rounded divide-x divide-gray-500 dark:divide-muted-700 shadow-md shadow-primary/10 overflow-x-auto"
 >
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'all' ? 'bg-blue-100' : ''"
+    :class="activeCategory === 'all' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'all'"
   >
     <!-- <span
@@ -24,7 +24,7 @@ import { Icon } from "astro-icon/components";
 
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'medical_furniture' ? 'bg-blue-100' : ''"
+    :class="activeCategory === 'medical_furniture' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'medical_furniture'"
   >
     <!-- <span
@@ -40,7 +40,7 @@ import { Icon } from "astro-icon/components";
 
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'diagnostic_equipment' ? 'bg-blue-100' : ''"
+    :class="activeCategory === 'diagnostic_equipment' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'diagnostic_equipment'"
   >
     <!-- <span
@@ -57,7 +57,7 @@ import { Icon } from "astro-icon/components";
 
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'emergency' ? 'bg-blue-100' : ''"
+    :class="activeCategory === 'emergency' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'emergency'"
   >
     <!-- <span
@@ -73,7 +73,7 @@ import { Icon } from "astro-icon/components";
 
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'surgery' ? 'bg-blue-100' : ''"
+    :class="activeCategory === 'surgery' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'surgery'"
   >
     <!-- <span
@@ -89,7 +89,7 @@ import { Icon } from "astro-icon/components";
 
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'Stérilisation' ? 'bg-blue-100' : ''"
+    :class="activeCategory === 'Stérilisation' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'Stérilisation'"
   >
     <!-- <span
@@ -105,7 +105,7 @@ import { Icon } from "astro-icon/components";
 
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'medical_accessories' ? 'bg-blue-100' : ''"
+    :class="activeCategory === 'medical_accessories' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'medical_accessories'"
   >
     <!-- <span
