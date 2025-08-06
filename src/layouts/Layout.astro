@@ -70,7 +70,8 @@ import { AstroFont } from "astro-font";
     <title>Galaxie Medicale</title>
   </head>
   <body class="bg-gray-50">
-    <div class="gradient-layer"></div>
+    <div class="gradient-layer" data-aos="fade" data-aos-duration="1500" data-aos-delay="2000"></div>
+    <div class="gradient-layer-2" data-aos="fade" data-aos-duration="1500" data-aos-delay="2000"></div>
     <slot />
     <script src="../js/main.js"></script>
     <script src="../js/countup.js"></script>
@@ -88,9 +89,24 @@ import { AstroFont } from "astro-font";
 
   .gradient-layer {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(at top left, oklch(54.6% 0.245 262.881), #ffffff 25%);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background: radial-gradient(at top left, oklch(54.6% 0.245 262.881 / 0.2), transparent 50%); */
+    background: radial-gradient(at top left, oklch(54.6% 0.245 262.881 / 0.25), #ffffff 30%);
     z-index: -1;
-    opacity: 30%;
+    pointer-events: none;
   }
+
+  .gradient-layer-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100vh;
+  background: linear-gradient(to right, oklch(54.6% 0.245 262.881 / 0.15), transparent 100%);
+  z-index: -1;
+  pointer-events: none;
+}
 </style>
