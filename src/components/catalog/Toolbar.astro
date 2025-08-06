@@ -1,5 +1,4 @@
 ---
-import { Icon } from "astro-icon/components";
 ---
 
 <div
@@ -10,15 +9,6 @@ import { Icon } from "astro-icon/components";
     :class="activeCategory === 'all' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'all'"
   >
-    <!-- <span
-      class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'all' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    > -->
-      <!-- <iconify-icon
-        class="iconify w-6 h-6 text-2xl"
-        icon="ph:app-window-duotone"></iconify-icon> -->
-      <!-- <Icon name="heroicons:window" /> -->
-    <!-- </span> -->
     <span>Tous</span>
   </button>
 
@@ -27,14 +17,6 @@ import { Icon } from "astro-icon/components";
     :class="activeCategory === 'medical_furniture' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'medical_furniture'"
   >
-    <!-- <span
-      class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'medical_furniture' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    > -->
-      <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:test-tube-duotone"
-    ></iconify-icon> -->
-      <!-- <Icon name="heroicons:beaker" /> -->
-    <!-- </span> -->
     <span>Mobilier Médical</span>
   </button>
 
@@ -43,15 +25,6 @@ import { Icon } from "astro-icon/components";
     :class="activeCategory === 'diagnostic_equipment' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'diagnostic_equipment'"
   >
-    <!-- <span
-      class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'diagnostic_equipment' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    > -->
-      <!-- <iconify-icon
-        class="iconify w-6 h-6 text-2xl"
-        icon="ph:stethoscope-duotone"></iconify-icon> -->
-      <!-- <Icon name="heroicons:heart" /> -->
-    <!-- </span> -->
     <span>Diagnostique</span>
   </button>
 
@@ -60,14 +33,6 @@ import { Icon } from "astro-icon/components";
     :class="activeCategory === 'emergency' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'emergency'"
   >
-    <!-- <span
-      class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'emergency' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    > -->
-      <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:hospital-duotone"
-    ></iconify-icon> -->
-      <!-- <Icon name="heroicons:building-office" /> -->
-    <!-- </span> -->
     <span>Urgence</span>
   </button>
 
@@ -76,30 +41,14 @@ import { Icon } from "astro-icon/components";
     :class="activeCategory === 'surgery' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'surgery'"
   >
-    <!-- <span
-      class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'surgery' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    > -->
-      <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:scissors-duotone"
-      ></iconify-icon> -->
-      <!-- <Icon name="healthicons:general-surgery-outline" /> -->
-    <!-- </span> -->
     <span>Chirurgie</span>
   </button>
 
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'Stérilisation' ? 'bg-primary/50 font-semibold' : ''"
-    @click="activeCategory = 'Stérilisation'"
+    :class="activeCategory === 'sterilization' ? 'bg-primary/50 font-semibold' : ''"
+    @click="activeCategory = 'sterilization'"
   >
-    <!-- <span
-      class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'sterilization' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    > -->
-      <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:syringe-duotone"
-      ></iconify-icon> -->
-      <!-- <Icon name="heroicons:briefcase" /> -->
-    <!-- </span> -->
     <span>Stérilisation</span>
   </button>
 
@@ -108,14 +57,6 @@ import { Icon } from "astro-icon/components";
     :class="activeCategory === 'medical_accessories' ? 'bg-primary/50 font-semibold' : ''"
     @click="activeCategory = 'medical_accessories'"
   >
-    <!-- <span
-      class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'medical_accessories' ? 'text-muted-400' : 'text-muted-400 group-hover:text-primary-500'"
-    > -->
-      <!-- <iconify-icon class="iconify w-6 h-6 text-2xl" icon="ph:hospital-duotone"
-    ></iconify-icon> -->
-      <!-- <Icon name="heroicons:building-office" /> -->
-    <!-- </span> -->
     <span>Accessoires/Consommables</span>
   </button>
 </div>

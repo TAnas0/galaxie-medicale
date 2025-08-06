@@ -1,52 +1,90 @@
 <div class="px-2 sticky h-full self-start top-28">
-  <!--Filter group-->
-{/** <div class="pb-10 border-b border-muted-200 dark:border-muted-800">
-    <h3
-      class="font-sans font-light text-lg mb-6 text-muted-800 dark:text-muted-100"
-    >
-      Availability
-    </h3>
-    <!--Select-->
-    <div class="relative max-w-[210px]">
-      <div class="relative group">
-        <select
-          title="select"
-          class="appearance-none px-3 py-2 h-10 text-sm leading-5 font-sans w-full border border-muted-300 bg-white text-muted-600 placeholder-muted-300 focus-visible:border-muted-300 focus-visible:shadow-lg dark:placeholder-muted-600 dark:bg-muted-700 dark:text-muted-200 dark:border-muted-600 dark:focus-visible:border-muted-600 focus-visible:ring-0 outline-transparent focus-visible:outline-2 focus-visible:outline-dashed focus-visible:outline-muted-300 dark:focus-visible:outline-muted-600 focus-visible:outline-offset-2 transition-all duration-300"
-        >
-          <option>24/24</option>
-          <option>Day only</option>
-          <option>Night only</option>
-        </select>
-        <div
-          class="absolute top-0 right-0 h-10 w-10 flex justify-center items-center text-muted-400 transition-transform duration-300 group-focus-within:-rotate-180"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="h-4 w-4"
-            ><polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>  */}
-  <!--Filter group-->
-  <div class="pt-2 pb-4 border-b border-muted-200 dark:border-muted-800">
+  <!-- Disponibilité -->
+  <div class="pt-2 pb-4 ">
     <h3
       class="font-sans font-light text-lg mb-2 text-muted-800 dark:text-muted-100"
     >
-      Marque
+      Disponibilité
     </h3>
-    <!--Radio options-->
     <div class="space-y-4">
-      <!--Radio Option-->
+      <div class="flex items-center gap-3 cursor-pointer">
+        <div
+          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
+        >
+          <input
+            id="radio-6"
+            type="radio"
+            name="radio_experience"
+            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 focus:outline-none border rounded-full border-muted-400 absolute cursor-pointer w-full h-full checked:border-none"
+            checked
+          />
+          <div
+            class="border-2 peer-checked:border-primary-600 rounded-full w-full h-full"
+          >
+          </div>
+        </div>
+        <label
+          for="radio-6"
+          class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
+        >
+          En stock immédiat
+        </label>
+      </div>
+      <div class="flex items-center gap-3 cursor-pointer">
+        <div
+          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
+        >
+          <input
+            id="radio-7"
+            type="radio"
+            name="radio_experience"
+            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 focus:outline-none border rounded-full border-muted-400 absolute cursor-pointer w-full h-full checked:border-none"
+          />
+          <div
+            class="border-2 peer-checked:border-primary-600 rounded-full w-full h-full"
+          >
+          </div>
+        </div>
+        <label
+          for="radio-7"
+          class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
+        >
+          Sur commande
+        </label>
+      </div>
+      <div class="flex items-center gap-3 cursor-pointer">
+        <div
+          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
+        >
+          <input
+            id="radio-8"
+            type="radio"
+            name="radio_experience"
+            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 focus:outline-none border rounded-full border-muted-400 absolute cursor-pointer w-full h-full checked:border-none"
+          />
+          <div
+            class="border-2 peer-checked:border-primary-600 rounded-full w-full h-full"
+          >
+          </div>
+        </div>
+        <label
+          for="radio-8"
+          class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
+        >
+          Rupture de Stock
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prix -->
+  <div class="pt-2 pb-4 ">
+    <h3
+      class="font-sans font-light text-lg mb-2 text-muted-800 dark:text-muted-100"
+    >
+      Prix
+    </h3>
+    <div class="space-y-4">
       <div class="flex items-center gap-3 cursor-pointer">
         <div
           class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
@@ -67,10 +105,9 @@
           for="radio-0"
           class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
         >
-          Medtronic
+          $
         </label>
       </div>
-      <!--Radio Option-->
       <div class="flex items-center gap-3 cursor-pointer">
         <div
           class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
@@ -90,30 +127,7 @@
           for="radio-1"
           class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
         >
-          Philips Healthcare
-        </label>
-      </div>
-      <!--Radio Option-->
-      <div class="flex items-center gap-3 cursor-pointer">
-        <div
-          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
-        >
-          <input
-            id="radio-2"
-            type="radio"
-            name="radio_location"
-            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 focus:outline-none border rounded-full border-muted-400 absolute cursor-pointer w-full h-full checked:border-none"
-          />
-          <div
-            class="border-2 peer-checked:border-primary-600 rounded-full w-full h-full"
-          >
-          </div>
-        </div>
-        <label
-          for="radio-2"
-          class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
-        >
-          GE Healthcare
+          $$
         </label>
       </div>
       <div class="flex items-center gap-3 cursor-pointer">
@@ -135,44 +149,20 @@
           for="radio-2"
           class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
         >
-          Siemens Healthineers
-        </label>
-      </div>
-      <!--Radio Option-->
-      <div class="flex items-center gap-3 cursor-pointer">
-        <div
-          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
-        >
-          <input
-            id="radio-3"
-            type="radio"
-            name="radio_location"
-            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 focus:outline-none border rounded-full border-muted-400 absolute cursor-pointer w-full h-full checked:border-none"
-          />
-          <div
-            class="border-2 peer-checked:border-primary-600 rounded-full w-full h-full"
-          >
-          </div>
-        </div>
-        <label
-          for="radio-3"
-          class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
-        >
-          Others
+          $$$+
         </label>
       </div>
     </div>
   </div>
-  <!--Filter group-->
-  <div class="pt-2 pb-4 border-b border-muted-200 dark:border-muted-800">
+
+  <!-- Professions
+  <div class="pt-2 pb-4 ">
     <h3
       class="font-sans font-light text-lg mb-2 text-muted-800 dark:text-muted-100"
     >
-      Certifications
+      Profession
     </h3>
-    <!--Radio options-->
     <div class="space-y-4">
-      <!--Radio Option-->
       <div class="flex items-center gap-3 cursor-pointer">
         <div
           class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
@@ -196,7 +186,6 @@
           FDA
         </label>
       </div>
-      <!--Radio Option-->
       <div class="flex items-center gap-3 cursor-pointer">
         <div
           class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
@@ -220,86 +209,5 @@
         </label>
       </div>
     </div>
-  </div>
-  <!--Filter group-->
-  <div class="pt-2 pb-4 border-b border-muted-200 dark:border-muted-800">
-    <h3
-      class="font-sans font-light text-lg mb-2 text-muted-800 dark:text-muted-100"
-    >
-      Disponibilité
-    </h3>
-    <!--Radio options-->
-    <div class="space-y-4">
-      <!--Radio Option-->
-      <div class="flex items-center gap-3 cursor-pointer">
-        <div
-          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
-        >
-          <input
-            id="radio-6"
-            type="radio"
-            name="radio_experience"
-            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 focus:outline-none border rounded-full border-muted-400 absolute cursor-pointer w-full h-full checked:border-none"
-            checked
-          />
-          <div
-            class="border-2 peer-checked:border-primary-600 rounded-full w-full h-full"
-          >
-          </div>
-        </div>
-        <label
-          for="radio-6"
-          class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
-        >
-          In Stock
-        </label>
-      </div>
-      <!--Radio Option-->
-      <div class="flex items-center gap-3 cursor-pointer">
-        <div
-          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
-        >
-          <input
-            id="radio-7"
-            type="radio"
-            name="radio_experience"
-            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 focus:outline-none border rounded-full border-muted-400 absolute cursor-pointer w-full h-full checked:border-none"
-          />
-          <div
-            class="border-2 peer-checked:border-primary-600 rounded-full w-full h-full"
-          >
-          </div>
-        </div>
-        <label
-          for="radio-7"
-          class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
-        >
-          Pre-order
-        </label>
-      </div>
-      <!--Radio Option-->
-      <div class="flex items-center gap-3 cursor-pointer">
-        <div
-          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
-        >
-          <input
-            id="radio-8"
-            type="radio"
-            name="radio_experience"
-            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 focus:opacity-100 focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 focus:outline-none border rounded-full border-muted-400 absolute cursor-pointer w-full h-full checked:border-none"
-          />
-          <div
-            class="border-2 peer-checked:border-primary-600 rounded-full w-full h-full"
-          >
-          </div>
-        </div>
-        <label
-          for="radio-8"
-          class="ml-2 text-sm leading-4 font-normal text-muted-800 dark:text-muted-400"
-        >
-          Backordered
-        </label>
-      </div>
-    </div>
-  </div>
+  </div> -->
 </div>
