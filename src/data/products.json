@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Autoclave Phoenix Blu Plus⁺ 18 L",
-    "category": "Stérilisation",
+    "category": "sterilization",
     "sub_category": "",
     "image": "catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
     "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
@@ -24,8 +24,8 @@
     "name": "Autoclave Phoenix Blu 18",
     "description": "L’autoclave Phoenix Blu 18 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.",
     "availability": "out_of_stock",
-    "category": "Stérilisation",
-    "sub_category": "Autoclave de table",
+    "category": "sterilization",
+    "sub_category": "autoclave",
     "image": "/catalog/img/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
     "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
     "brand": {
@@ -49,8 +49,8 @@
     "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
     "availability": "in_stock",
     "description": "L’autoclave Phoenix Blu 12 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.",
-    "category": "Stérilisation",
-    "sub_category": "Autoclave de table",
+    "category": "sterilization",
+    "sub_category": "autoclave",
     "brand": {
       "name": "Guarisco Medical Sterilizer",
       "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
@@ -63,8 +63,8 @@
     "availability": "in_stock",
     "description": "Performance et Fiabilité pour une Stérilisation Médicale Optimale\nL’autoclave Phoenix Blu 24 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Disponible en versions 12 L et 18 L, il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.\n",
     "image2": "../assets/products/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
-    "category": "Stérilisation",
-    "sub_category": "Autoclave de table",
+    "category": "sterilization",
+    "sub_category": "autoclave",
     "brand": {
       "name": "Guarisco Medical Sterilizer",
       "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
@@ -77,8 +77,8 @@
     "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 24 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
     "availability": "out_of_stock",
     "image2": "../assets/products/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
-    "category": "Stérilisation",
-    "sub_category": "Autoclave de table",
+    "category": "sterilization",
+    "sub_category": "autoclave",
     "brand": {
       "name": "Guarisco Medical Sterilizer",
       "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
@@ -90,8 +90,8 @@
     "name": "Autoclave à vapeur AS44",
 
     "description": "Autoclave compact (100L ou 150L) idéal pour les petites salles de stérilisation et les blocs opératoires.",
-    "category": "Stérilisation",
-    "sub_category": "Autoclave vertical",
+    "category": "sterilization",
+    "sub_category": "autoclave",
     "brand": {
       "name": "SMS",
       "description": ""
@@ -104,8 +104,8 @@
 
     "availability": "in_stock",
     "description": "Autoclave à grande capacité (300–900L) compatible avec le standard STU pour les grandes unités de stérilisation (CSSD).",
-    "category": "Stérilisation",
-    "sub_category": "Autoclave vertical",
+    "category": "sterilization",
+    "sub_category": "autoclave",
     "brand": {
       "name": "SMS",
       "description": ""
@@ -118,8 +118,8 @@
     "availability": "in_stock",
     "description": "Autoclave compact idéal pour les petites cliniques et laboratoires, avec station de traitement d'eau et compresseur intégrés.",
 
-    "category": "Stérilisation",
-    "sub_category": "Autoclave vertical",
+    "category": "sterilization",
+    "sub_category": "autoclave",
     "brand": {
       "name": "SMS",
       "description": ""
@@ -131,7 +131,6 @@
     "name": "Lampe opératoire HELIOS 160\n",
     "availability": "in_stock",
     "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.Lampe LED chirurgicale de haut rendement avec coupole simple ou double.\n",
-
     "category": "surgery",
     "sub_category": "surgery_lighting",
     "brand": {
@@ -145,7 +144,6 @@
     "name": "Lampe opératoire IGNIS 160",
     "availability": "in_stock",
     "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.",
-
     "category": "surgery",
     "sub_category": "surgery_lighting",
     "brand": {
@@ -286,8 +284,8 @@
     "availability": "in_stock",
     "description": "Berceau hospitalier mobile conçu pour les soins néonataux en maternité. Sa structure légère et stable permet un accès aisé au nouveau-né. Utilisé principalement pour les chambres post-partum.",
     "image2": "",
-    "category": "mobilier_medical",
-    "sub_category": "mobilier_medical",
+    "category": "medical_furniture",
+    "sub_category": "medical_furniture",
     "brand": {
       "name": "VANRY",
       "description": ""
@@ -300,7 +298,7 @@
     "availability": "in_stock",
     "description": "Berceau néonatal avec réglage de la hauteur pour s’adapter au lit de la mère. Conçu pour optimiser le contact mère-enfant en toute sécurité. Convient aux établissements promouvant le co-sommeil supervisé.",
     "image2": "",
-    "category": "mobilier_medical",
+    "category": "medical_furniture",
     "sub_category": "berceau_neonatal",
     "brand": {
       "name": "VANRY",
@@ -313,7 +311,7 @@
     "name": "Berceau D-4",
     "availability": "in_stock",
     "description": "Berceau haut de gamme pour soins intensifs néonatals ou suites de naissance VIP. Offre un réglage complet de la hauteur, de l’inclinaison et un grand confort pour le personnel soignant. Équipé d’un espace de rangement inférieur.",
-    "category": "mobilier_medical",
+    "category": "medical_furniture",
     "sub_category": "berceau_neonatal",
     "brand": {
       "name": "VANRY",
@@ -327,7 +325,7 @@
     "availability": "in_stock",
     "description": "Cette table de chirurgie électrique offre une flexibilité complète avec réglage électrique de la hauteur, des plaques dorsale, tête et jambes, ainsi qu’un déplacement horizontal pour faciliter l’imagerie C-arm. Conçue en acier inoxydable 304 résistant à la corrosion, elle assure sécurité et confort pour une large gamme d’interventions chirurgicales.",
     "category": "surgery",
-    "sub_category": "table de chirurgie",
+    "sub_category": "operating_table",
     "image2": "../assets/products/saikang/A100-4.jpg",
     "brand": {
       "name": "Saikang",
@@ -339,8 +337,8 @@
     "id": 23,
     "name": "Table de chirurgie A100-4A",
     "description": "Ce modèle est une évolution avec un cadre en acier inoxydable anti-corrosion et un système de freinage à pédale. Sa batterie longue durée et son contrôleur manuel garantissent un fonctionnement fiable et sécurisé, adapté aux interventions orthopédiques et multi-spécialités.",
-    "category": "Salle d'opération",
-    "sub_category": "table de chirurgie",
+    "category": "surgery",
+    "sub_category": "operating_table",
     "image2": "../assets/products/saikang/A100-4A.jpg",
     "brand": {
       "name": "Saikang",
@@ -352,8 +350,8 @@
     "id": 24,
     "name": "Table de chirurgie A106-5",
     "description": "Cette table combine la puissance hydraulique et l’électronique pour des réglages précis et fluides. Sa conception modulaire avec plateau translucide compatible rayons X, son système intelligent avec contrôle LCD et sa forte capacité de charge (360 kg) en font une table polyvalente pour divers actes chirurgicaux.",
-    "category": "Salle d'opération",
-    "sub_category": "table de chirurgie",
+    "category": "surgery",
+    "sub_category": "operating_table",
     "image2": "../assets/products/saikang/A106-5.jpg",
     "brand": {
       "name": "Saikang",
@@ -365,8 +363,8 @@
     "id": 25,
     "name": "Table de chirurgie A301",
     "description": "Cette table propose un cadre robuste en acier inoxydable 304 avec une surface de table résistante compatible rayons X. Elle offre des réglages électriques précis avec un double contrôle manuel et sur colonne, idéale pour la chirurgie générale et orthopédique.",
-    "category": "Salle d'opération",
-    "sub_category": "table de chirurgie",
+    "category": "surgery",
+    "sub_category": "operating_table",
     "image2": "../assets/products/saikang/A301.jpg",
     "brand": {
       "name": "Saikang",
@@ -378,8 +376,8 @@
     "id": 26,
     "name": "Table de chirurgie A302",
     "description": "Cette table offre des fonctionnalités avancées avec ajustement en hauteur de la plaque tête, glissement horizontal étendu et surface résistante en résine phénolique compatible imagerie médicale. Sa structure robuste garantit stabilité et facilité d’utilisation pour divers types d’interventions.",
-    "category": "Salle d'opération",
-    "sub_category": "table de chirurgie",
+    "category": "surgery",
+    "sub_category": "operating_table",
     "image2": "../assets/products/saikang/A302.jpg",
     "brand": {
       "name": "Saikang",
@@ -391,8 +389,8 @@
     "id": 27,
     "name": "Table de chirurgie A307",
     "description": "Cette table électrique hydraulique est conçue pour une large gamme de chirurgies avec un système de contrôle flexible, surface modulaire compatible rayons X et batterie rechargeable. Son design robuste en acier inoxydable assure durabilité et facilité d’entretien.",
-    "category": "Salle d'opération",
-    "sub_category": "table de chirurgie",
+    "category": "surgery",
+    "sub_category": "operating_table",
     "image2": "../assets/products/saikang/A307.png",
     "brand": {
       "name": "Saikang",
@@ -404,8 +402,8 @@
     "id": 28,
     "name": "Table de chirurgie A501",
     "description": "Cette table propose un système hydraulique performant avec rotation horizontale 180°, commande double, batterie de secours intégrée et surface résistante. Adaptée aux interventions exigeantes, elle assure confort et sécurité grâce à son cadre en acier inoxydable et ses multiples réglages.",
-    "category": "Salle d'opération",
-    "sub_category": "table de chirurgie",
+    "category": "surgery",
+    "sub_category": "operating_table",
     "image2": "../assets/products/saikang/A501.jpg",
     "brand": {
       "name": "Saikang",
@@ -417,8 +415,8 @@
     "id": 29,
     "name": "Table de chirurgie A2000",
     "description": "Cette table électrique compacte conçue pour une utilisation polyvalente avec un cadre solide en acier inoxydable, une charge maximale de 150 kg, et un matelas amovible. Idéale pour les interventions ne nécessitant pas de compatibilité C-arm",
-    "category": "Salle d'opération",
-    "sub_category": "table de chirurgie",
+    "category": "surgery",
+    "sub_category": "operating_table",
     "image2": "../assets/products/saikang/A2000.jpg",
     "brand": {
       "name": "Saikang",
@@ -430,8 +428,8 @@
     "id": 30,
     "name": "Table de chirurgie A100",
     "description": "Cette table offre les fonctionnalités essentielles d’une table de chirurgie électrique avec réglages manuels et électriques basiques, adaptée aux besoins généraux en bloc opératoire.",
-    "category": "Salle d'opération",
-    "sub_category": "table de chirurgie",
+    "category": "surgery",
+    "sub_category": "operating_table",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -442,8 +440,8 @@
     "id": 31,
     "name": "Chariot brancard SKB037(A)",
     "description": "Brancard patient robuste avec structure en acier inoxydable poli, matelas ignifugé de 4 cm d’épaisseur, dossier réglable, roulettes silencieuses avec frein universel et porte-bouteille d’oxygène.",
-    "category": "mobilier_medical",
-    "sub_category": "Brancardage",
+    "category": "medical_furniture",
+    "sub_category": "stretcher",
     "image2": "../assets/products/saikang/patient_trolley/SKB037(A).jpg",
     "brand": {
       "name": "Saikang",
@@ -455,8 +453,8 @@
     "id": 32,
     "name": "Chariot brancard SKB037(B)",
     "description": "Chariot brancard robuste avec structure en acier inoxydable poli miroir, matelas épais ignifugé et dossier réglable jusqu’à 75°. Équipé de roulettes silencieuses avec frein universel, porte-bouteille d’oxygène, porte-seringues réglable et panier à déchets. Conçu pour un transport patient sûr et confortable.",
-    "category": "mobilier_medical",
-    "sub_category": "Brancardage",
+    "category": "medical_furniture",
+    "sub_category": "stretcher",
     "image2": "../assets/products/saikang/patient_trolley/SKB037(B).jpg",
     "brand": {
       "name": "Saikang",
@@ -468,8 +466,8 @@
     "id": 33,
     "name": "Chariot brancard SKB037(C)",
     "description": "Brancard patient avec réglages manuels multiples grâce à trois manivelles, dossier réglable à 75° et repose-genoux à 35°. Equipé de roulettes silencieuses avec frein central, barrières latérales rabattables et matelas confortable. Structure en acier inoxydable haute qualité.",
-    "category": "mobilier_medical",
-    "sub_category": "Brancardage",
+    "category": "medical_furniture",
+    "sub_category": "stretcher",
     "image2": "../assets/products/saikang/patient_trolley/SKB037(C).jpg",
     "brand": {
       "name": "Saikang",
@@ -481,8 +479,8 @@
     "id": 34,
     "name": "Chariot brancard SKB038-2",
     "description": "Chariot patient avec système de manivelle, dossier à ressort pneumatique réglable, barrières latérales en plastique et roulettes 5\" avec frein. Hauteur ajustable entre 620 et 900 mm pour un confort ergonomique lors du transport.",
-    "category": "mobilier_medical",
-    "sub_category": "Brancardage",
+    "category": "medical_furniture",
+    "sub_category": "stretcher",
     "image2": "../assets/products/saikang/patient_trolley/SKB038-2.jpg",
     "brand": {
       "name": "Saikang",
@@ -494,8 +492,8 @@
     "id": 35,
     "name": "Chariot brancard SKB041-2",
     "description": "Chariot de transport patient hydraulique avec double pompe pour réglage de la hauteur et inclinaison, dossier ajustable à 75° et barre latérale en ABS. Equipé de roulettes 8\" avec frein centralisé et directionnel, porte-seringues et porte-bouteille d’oxygène.",
-    "category": "mobilier_medical",
-    "sub_category": "Brancardage",
+    "category": "medical_furniture",
+    "sub_category": "stretcher",
     "image2": "../assets/products/saikang/patient_trolley/SKB041-2.jpg",
     "brand": {
       "name": "Saikang",
@@ -507,8 +505,8 @@
     "id": 36,
     "name": "Chariot brancard SKB041-3S",
     "description": "Chariot hydraulique avec pompe américaine pour réglage de hauteur, dossier à ressort pneumatique, barrières latérales en acier inoxydable, et matelas imperméable de 60 mm d’épaisseur. Equipé d’accessoires complets pour un transport patient sûr.",
-    "category": "mobilier_medical",
-    "sub_category": "Brancardage",
+    "category": "medical_furniture",
+    "sub_category": "stretcher",
     "image2": "../assets/products/saikang/patient_trolley/SKB041-3S.png",
     "brand": {
       "name": "Saikang",
@@ -520,8 +518,8 @@
     "id": 37,
     "name": "Chariot brancard SKB041-6",
     "description": "Chariot patient avec système de manivelle, dossier à ressort pneumatique, barrières latérales plastiques, roulettes 6\" avec verrouillage central et directionnel. Hauteur ajustable entre 510 et 850 mm pour un usage polyvalent.",
-    "category": "mobilier_medical",
-    "sub_category": "Brancardage",
+    "category": "medical_furniture",
+    "sub_category": "stretcher",
     "image2": "../assets/products/saikang/patient_trolley/SKB041-6.jpg",
     "brand": {
       "name": "Saikang",
@@ -533,8 +531,8 @@
     "id": 38,
     "name": "Chariot brancard SKB041-7",
     "description": "Chariot multi-fonctions ergonomique adapté au transport et imagerie corps entier avec support cassette rayons X intégré. Dossier réglable à 85°, repose-jambes à 50°, et inclinaisons Trendelenburg et reverse jusqu’à 15°. Equipé de roulettes 8\" avec frein central et verrouillage directionnel.",
-    "category": "mobilier_medical",
-    "sub_category": "Brancardage",
+    "category": "medical_furniture",
+    "sub_category": "stretcher",
     "image2": "../assets/products/saikang/patient_trolley/SKB041-7.jpg",
     "brand": {
       "name": "Saikang",
@@ -546,8 +544,8 @@
     "id": 39,
     "name": "Chariot brancard SKB041-10",
     "description": "Chariot de transport patient avec système de manivelle, dossier réglable à 75°, repose-genoux à 40°, et inclinaisons Trendelenburg jusqu’à 18°. Roulettes 8\" avec verrouillage central, pompe hydraulique américaine double et accessoires complets.",
-    "category": "mobilier_medical",
-    "sub_category": "Brancardage",
+    "category": "medical_furniture",
+    "sub_category": "stretcher",
     "image2": "../assets/products/saikang/patient_trolley/SKB041-10.jpg",
     "brand": {
       "name": "Saikang",
@@ -559,8 +557,8 @@
     "id": 40,
     "name": "Lit manuel 1 fonction",
     "description": "Lit manuel robuste avec structure en acier inoxydable, doté d’un dossier réglable jusqu’à 75°, matelas confortable et roulettes 5” silencieuses. Equipé de barrières latérales pliables, porte-perfusion et crochets de drainage pour un usage polyvalent en milieu hospitalier.",
-    "category": "mobilier_medical",
-    "sub_category": "Literie",
+    "category": "medical_furniture",
+    "sub_category": "bedding",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -571,8 +569,8 @@
     "id": 41,
     "name": "Lit obstétrique électrique",
     "description": "Lit obstétrique électrique avec réglages multiples incluant hauteur, dossier, siège et repose-jambes. Equipé d’un système de contrôle à pédale et main, matelas étanche et accessoires spécifiques pour accouchement.",
-    "category": "mobilier_medical",
-    "sub_category": "Neonatolgie",
+    "category": "medical_furniture",
+    "sub_category": "obstetric_beds",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -583,8 +581,8 @@
     "id": 42,
     "name": "Guéridon",
     "description": "Chariot médical en acier inoxydable robuste avec surfaces faciles à nettoyer, roulettes multidirectionnelles silencieuses, et plusieurs plateaux pour rangement d’instruments.",
-    "category": "mobilier_medical",
-    "sub_category": "Chariot",
+    "category": "medical_furniture",
+    "sub_category": "medical_cart",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -595,8 +593,8 @@
     "id": 43,
     "name": "Paravent",
     "description": "Paravent médical en acier inoxydable avec cadre robuste, monté sur roulettes silencieuses de 2 pouces pour un déplacement aisé et sans bruit.",
-    "category": "mobilier_medical",
-    "sub_category": "salle d'examen",
+    "category": "medical_furniture",
+    "sub_category": "exam_room",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -607,8 +605,8 @@
     "id": 44,
     "name": "Matelas",
     "description": "Matelas hospitalier en mousse polyuréthane haute densité avec housse en TPU imperméable et respirante, facile à retirer et nettoyer. Disponible en plusieurs épaisseurs et sections.",
-    "category": "mobilier_medical",
-    "sub_category": "Literie",
+    "category": "medical_furniture",
+    "sub_category": "bedding",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -619,8 +617,8 @@
     "id": 45,
     "name": "Chariot à pansement",
     "description": "Chariot médical multifonction en ABS et acier inoxydable, compact avec tiroir à rails silencieux, plateau avec rebords inox, et roulettes médicales à frein.",
-    "category": "mobilier_medical",
-    "sub_category": "Chariot",
+    "category": "medical_furniture",
+    "sub_category": "medical_cart",
     "brand": {
       "name": "Saikang",
       "description": ""
@@ -631,8 +629,8 @@
     "id": 46,
     "name": "Divan d'examen",
     "description": "Table d’examen robuste avec réglage dossier jusqu’à 65°, matelas anti-feu épais et cadre en acier peint résistant. Conçue pour un usage polyvalent en consultation et diagnostic.",
-    "category": "mobilier_medical",
-    "sub_category": "salle d'examen",
+    "category": "medical_furniture",
+    "sub_category": "exam_room",
     "brand": {
       "name": "Saikang",
       "description": ""
