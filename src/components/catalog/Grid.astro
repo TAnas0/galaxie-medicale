@@ -14,12 +14,12 @@ let products = await getCollection('products');
     products.map((product) => (
       <div
         x-show={`activeCategory === 'all' || activeCategory === '${product.data.category}'`}
-        class="h-full"
+        class=""
       >
-        <a href={`/galaxie-medicale/products/${product.id}`} class="block h-full group transition-all duration-300 hover:scale-[1.015]">
-          <Card class="group h-full flex flex-col rounded-md border border-gray-300 shadow-xl hover:shadow-3xl transition-all duration-300 ease-in-out overflow-hidden hover:scale-[1.01]">
+        <a href={`/galaxie-medicale/products/${product.id}`} class="block group transition-all duration-300 hover:scale-[1.015] h-full">
+          <Card class="group flex flex-col rounded-md border border-gray-300 shadow-xl hover:shadow-3xl transition-all duration-300 ease-in-out overflow-hidden hover:scale-[1.01]">
             <!-- Product Image -->
-            <div class="relative w-full aspect-[4/3] bg-muted-100 dark:bg-muted-800" x-data="{ loaded: false }">
+            <div class="relative w-full aspect-[4/3] bg-muted-100 dark:bg-muted-800 h-full" x-data="{ loaded: false }">
               <!-- Loading indicator -->
               <div
                 class="absolute inset-0 flex items-center justify-center animate-pulse bg-muted-300 dark:bg-muted-700"
@@ -38,18 +38,18 @@ let products = await getCollection('products');
               </div>
               <Image
                 x-ref="img"
-                src={product.data.image || "https://placehold.co/400x600"}
+                src={product.data.image || "https://placehold.co/400x400"}
                 inferSize={true}
                 alt={product.data.name}
                 loading="lazy"
-                class="object-contain w-full h-full transition-opacity duration-700 ease-in-out"
+                class="object-fit w-full h-full transition-opacity duration-700 ease-in-out"
                 x-bind:class="loaded ? 'opacity-100 font-normal' : 'opacity-0 font-[0] leading-[0]'"
                 x-on:load="loaded = true"
               />
             </div>
           
             <!-- Product Info -->
-            <div class="flex flex-col gap-1 mt-auto">
+            <div class="flex flex-col gap-1">
               {(product.data.availability == "out_of_stock") && (
                 <div class="absolute top-2 right-2 bg-red-600/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
                   Rupture de stock
