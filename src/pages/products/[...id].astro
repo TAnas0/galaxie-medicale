@@ -108,7 +108,7 @@ specifications = product.data.technical_specs
       {/* Product Hero Section */}
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
         {/* Product Information */}
-        <div class="space-y-6">
+        <div class="space-y-6 flex flex-col">
           <div>
             <!-- <div class="flex items-center space-x-2 mb-2">
               <Badge class="bg-medical-gray text-gray-700"
@@ -125,7 +125,7 @@ specifications = product.data.technical_specs
           </div>
 
           {/* Brand Info */}
-          <Card class="bg-white">
+          <Card class="bg-white !h-auto border-1 border-gray-500 mt-auto">
             <CardContent className="!p-2">
               <div class="flex items-center space-x-4">
                 <div
@@ -342,11 +342,11 @@ specifications = product.data.technical_specs
             relatedProducts.map((product, index) => (
               <Card key={index} class="hover:shadow-lg transition-shadow">
                 <div class="aspect-[3/2] bg-gray-100 rounded-t-lg overflow-hidden">
-                  <img
+                  {/* <img
                     src={Astro.site + product.data.image}
                     alt={product.data.name}
                     class="w-full h-full object-cover"
-                  />
+                  /> */}
                 </div>
                 <CardContent className="p-4">
                   <h3 class="font-semibold text-gray-900 mb-2">
