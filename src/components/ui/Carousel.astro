@@ -10,10 +10,10 @@ const { images = [] } = Astro.props;
   class="space-y-4"
 >
   <!-- Main Image -->
-  <div class="relative aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden shadow-sm">
+  <div class="relative aspect-[4/3] rounded-lg overflow-hidden shadow-sm">
     <img
       :src="images[currentImageIndex]"
-      alt="Product Image"
+      alt=""
       class="w-full h-full object-contain"
     />
 
@@ -47,7 +47,7 @@ const { images = [] } = Astro.props;
           'border-blue-800 scale-105': index === currentImageIndex,
           'border-transparent': index !== currentImageIndex
         }"
-        class="aspect-square bg-gray-100 rounded overflow-hidden border-2 transform transition-all duration-400 ease-in-out
+        class="aspect-square rounded overflow-hidden border-2 transform transition-all duration-400 ease-in-out
              hover:scale-105"
       >
         <img
