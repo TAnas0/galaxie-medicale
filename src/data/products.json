@@ -1,17 +1,29 @@
 [
   {
-    "id": 1,
-    "name": "Autoclave Phoenix Blu Plus⁺ 18 L",
-    "category": "sterilization",
-    "sub_category": "",
-    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
-    "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 18 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
-    "availability": "in_stock",
+    "name": "Autoclave Phoenix Blu 18",
+    "short_description": "Autoclave de table compact 18L, classe B, affichage LCD/LED, conçu pour une stérilisation efficace en milieu médical et dentaire.",
+    "full_description": "L'autoclave Phoenix Blu 18 est un stérilisateur de table de classe B destiné aux cliniques, cabinets dentaires et petits laboratoires. Il assure une stérilisation fiable des instruments chirurgicaux, dentaires et de laboratoire grâce à des cycles avancés de vapeur et de vide. Il dispose d'un design compact, d'un affichage LCD ou LED, d'une exportation de données via USB, d'un séchage ajustable et d'un système à double vide pour un retrait complet de l'air.",
+    "category": "Stérilisation",
+    "subcategory": "Autoclave de table",
     "brand": {
-      "name": "Guarisco Medical Sterilizer",
-      "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
+      "name": "Guarisco Medical Sterilizer ",
+      "description": ""
     },
-    "technical_specs": "",
+    "technical_specs": {
+      "Capacité de la chambre": "18 litres",
+      "Dimensions externes": "462 x 445 x 600 mm (L x H x P)",
+      "Dimensions chambre": "Ø 255 x 360 mm",
+      "Dimensions plateau": "285 x 190 mm",
+      "Consommation électrique": "1800 W",
+      "Réservoir d’eau distillée": "4,6 litres",
+      "Réservoir eaux usées": "5 litres",
+      "Poids net / brut": "54 kg / 56 kg",
+      "Temps de cycle classe B": "Entre 19 minutes et 38 minutes",
+      "Versions disponibles": "Standard LCD / Standard LED / LCD imprimante / LED imprimante / LCD AWF / LED AWF",
+      "other": []
+    },
+    "id": 1,
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
     "images": [
       "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
       "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-plus-18-l/2.jpg",
@@ -19,18 +31,30 @@
     ]
   },
   {
-    "id": 2,
-    "name": "Autoclave Phoenix Blu 18",
-    "description": "L’autoclave Phoenix Blu 18 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.",
-    "availability": "out_of_stock",
-    "category": "sterilization",
-    "sub_category": "autoclave",
-    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+    "name": "Autoclave Phoenix Blu 12",
+    "short_description": "Autoclave de table compact 12L, classe B, affichage LCD/LED, conçu pour une stérilisation efficace en milieu médical et dentaire.",
+    "full_description": "L'autoclave Phoenix Blu 12 est un stérilisateur de table de classe B destiné aux cliniques, cabinets dentaires et petits laboratoires. Il assure une stérilisation fiable des instruments chirurgicaux, dentaires et de laboratoire grâce à des cycles avancés de vapeur et de vide. Il dispose d'un design compact, d'un affichage LCD ou LED, d'une exportation de données via USB, d'un séchage ajustable et d'un système à double vide pour un retrait complet de l'air.",
+    "category": "Stérilisation",
+    "subcategory": "Autoclave de table",
     "brand": {
-      "name": "Guarisco Medical Sterilizer",
-      "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
+      "name": "Guarisco Medical Sterilizer ",
+      "description": ""
     },
-    "technical_specs": "Capacité de la chambre: 18 litres\nDimensions externes: 462 x 445 x 600 mm (L x H x P)\nDimensions chambre: Ø 255 x 360 mm\nDimensions plateau: 285 x 190 mm\nConsommation électrique: 1800 W\nRéservoir d’eau distillée: 4,6 litres\nRéservoir eaux usées: 5 litres\nPoids net / brut: 54 kg / 56 kg\nTemps de cycle classe B: Entre 19 minutes et 38 minutes\nVersions disponibles: Standard LCD / Standard LED / LCD imprimante / LED imprimante / LCD AWF / LED AWF",
+    "technical_specs": {
+      "Capacité de la chambre": "12 litres",
+      "Dimensions externes": "407 x 410 x 570 mm (L x H x P)",
+      "Dimensions chambre": "Ø 210 x 360 mm",
+      "Dimensions plateau": "310 x 160 mm",
+      "Consommation électrique": "1800 W",
+      "Réservoir d’eau distillée": "3 litres",
+      "Réservoir eaux usées": "4 litres",
+      "Poids net / brut": "42 kg / 44 kg",
+      "Temps de cycle classe B": "15 minutes",
+      "Versions disponibles": "Standard / USB / USB + Imprimante",
+      "other": []
+    },
+    "id": 2,
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
     "images": [
       "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
       "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
@@ -42,18 +66,30 @@
     ]
   },
   {
-    "id": 3,
-    "name": "Autoclave Phoenix Blu 12 ",
-    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
-    "availability": "in_stock",
-    "description": "L’autoclave Phoenix Blu 12 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.",
-    "category": "sterilization",
-    "sub_category": "autoclave",
+    "name": "Autoclave Phoenix Blu 24",
+    "short_description": "Autoclave de table 24L, classe B, affichage LCD/LED, pour stérilisation fiable des instruments médicaux et dentaires.",
+    "full_description": "L'autoclave Phoenix Blu 24 est un stérilisateur de table de classe B destiné aux cliniques, cabinets dentaires et petits laboratoires. Il offre une capacité de 24L pour des instruments chirurgicaux, dentaires et de laboratoire, avec des cycles avancés de vapeur et de vide. Il comprend un design compact, affichage LCD ou LED, exportation de données USB, séchage ajustable et système à double vide pour un retrait complet de l'air.",
+    "category": "Stérilisation",
+    "subcategory": "Autoclave de table",
     "brand": {
-      "name": "Guarisco Medical Sterilizer",
-      "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
+      "name": "Guarisco Medical Sterilizer ",
+      "description": ""
     },
-    "technical_specs": "Capacité de la chambre\t12 litres\\nDimensions externes\t407 x 410 x 570 mm (L x H x P)\\nDimensions chambre\tØ 210 x 360 mm\\nDimensions plateau\t310 x 160 mm\\nConsommation électrique\t1800 W\\nRéservoir d’eau distillée\t3 litres\\nRéservoir eaux usées\t4 litres\\nPoids net / brut\t42 kg / 44 kg\\nTemps de cycle classe B\t15 minutes\\nVersions disponibles\tStandard / USB / USB + Imprimante\\n",
+    "technical_specs": {
+      "Capacité de la chambre": "24 litres",
+      "Dimensions externes": "462 x 445 x 600 mm (L x H x P)",
+      "Dimensions chambre": "Ø 255 x 460 mm",
+      "Dimensions plateau": "385 x 190 mm",
+      "Consommation électrique": "1800 W",
+      "Réservoir d’eau distillée": "4,6 litres",
+      "Réservoir eaux usées": "5 litres",
+      "Poids net / brut": "56 kg / 59 kg",
+      "Temps de cycle classe B": "Entre 19 minutes et 38 minutes",
+      "Versions disponibles": "Standard LCD / Standard LED/ LCD imprimante / LED imprimante / LCD AWF / LED AWF",
+      "other": []
+    },
+    "id": 3,
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
     "images": [
       "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
       "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
@@ -65,18 +101,31 @@
     ]
   },
   {
-    "id": 4,
-    "name": "Autoclave Phoenix Blu 24",
-    "availability": "in_stock",
-    "description": "Performance et Fiabilité pour une Stérilisation Médicale Optimale\nL’autoclave Phoenix Blu 24 est conçu pour répondre aux exigences élevées des professionnels de santé en matière de stérilisation. Disponible en versions 12 L et 18 L, il associe technologie avancée, matériaux de qualité et design compact pour une intégration facile dans tout environnement médical.\n",
-    "image": "../assets/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
-    "category": "sterilization",
-    "sub_category": "autoclave",
+    "name": "Autoclave Phoenix Blu Plus+ 18",
+    "short_description": "Autoclave de table automatique 18L, classe B, système d'osmose intégré, affichage LCD/LED pour stérilisation clinique avancée.",
+    "full_description": "L'autoclave Phoenix Blu Plus+ 18 est un stérilisateur de table de classe B automatique destiné aux cliniques, cabinets dentaires et laboratoires. Il combine cycles avancés de vapeur et vide avec un système d'osmose inverse intégré pour garantir une stérilisation efficace et sûre. Il dispose d'un affichage LCD ou LED, exportation USB, séchage ajustable et système à double vide.",
+    "category": "Stérilisation",
+    "subcategory": "Autoclave de table",
     "brand": {
-      "name": "Guarisco Medical Sterilizer",
-      "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
+      "name": "Guarisco Medical Sterilizer ",
+      "description": ""
     },
-    "technical_specs": "Capacité de la chambre: 24 litres\nDimensions externes: 462 x 445 x 600 mm (L x H x P)\nDimensions chambre: Ø 255 x 460 mm\nDimensions plateau: 385 x 190 mm\nConsommation électrique: 1800 W\nRéservoir d’eau distillée: 4,6 litres\nRéservoir eaux usées: 5 litres\nPoids net / brut: 56 kg / 59 kg\nTemps de cycle classe B: Entre 19 minutes et 38 minutes\nVersions disponibles: Standard LCD / Standard LED/ LCD imprimante / LED imprimante / LCD AWF / LED AWF",
+    "technical_specs": {
+      "Capacité de la chambre": "18 litres",
+      "Dimensions externes": "462 x 445 x 600 mm (L x H x P)",
+      "Dimensions chambre": "Ø 255 x 360 mm",
+      "Dimensions plateau": "285 x 190 mm",
+      "Consommation électrique": "1800 W",
+      "Réservoir d’eau distillée": "4,6 litres",
+      "Réservoir eaux usées": "5 litres",
+      "Poids net / brut": "54 kg / 56 kg",
+      "Temps de cycle classe B": "15 minutes (approx.)",
+      "Système d’osmose": "Intégré – raccordement direct au robinet",
+      "Versions disponibles": "Plus+ (latéral) / TOP (au-dessus)",
+      "other": []
+    },
+    "id": 4,
+    "image": "../assets/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
     "images": [
       "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
       "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24.jpg",
@@ -90,566 +139,1409 @@
     ]
   },
   {
-    "id": 6,
     "name": "Autoclave Phoenix Blu Plus+ 24",
-    "description": "Autoclave Automatique avec Système d’Osmose Intégré\nL’autoclave Phoenix Blu Plus+ 24 offre une stérilisation efficace et automatisée, avec un système intégré de purification d’eau par osmose inverse. Il convient parfaitement aux environnements médicaux, dentaires et vétérinaires modernes.\n",
-    "availability": "out_of_stock",
-    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
-    "category": "sterilization",
-    "sub_category": "autoclave",
+    "short_description": "Autoclave de table automatique 24L, classe B, système d'osmose intégré, affichage LCD/LED pour stérilisation fiable des instruments médicaux.",
+    "full_description": "L'autoclave Phoenix Blu Plus+ 24 est un stérilisateur de table de classe B automatique destiné aux cliniques, cabinets dentaires et laboratoires. Avec une capacité de 24L, il garantit une stérilisation efficace des instruments chirurgicaux, dentaires et de laboratoire grâce à ses cycles avancés et son système d'osmose inverse intégré. Il inclut affichage LCD/LED, exportation USB, séchage ajustable et double vide.",
+    "category": "Stérilisation",
+    "subcategory": "Autoclave de table",
     "brand": {
-      "name": "Guarisco Medical Sterilizer",
-      "description": "GUARISCO MEDICAL STERILIZER s.r.l, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices."
+      "name": "Guarisco Medical Sterilizer ",
+      "description": ""
     },
-    "technical_specs": "Capacité de la chambre: 24 litres\nDimensions externes: 462 x 445 x 600 mm (L x H x P)\nDimensions chambre: Ø 255 x 460 mm\nDimensions plateau: 285 x 190 mm\nConsommation électrique: 1800 W\nRéservoir d’eau distillée: 4,6 litres\nRéservoir eaux usées: 5 litres\nPoids net / brut: 56 kg / 59 kg\nTemps de cycle classe B: 15 minutes (approx.)\nSystème d’osmose: Intégré – raccordement direct au robinet\nVersions disponibles: Plus+ (latéral) / TOP (au-dessus)"
+    "technical_specs": {
+      "Capacité de la chambre": "24 litres",
+      "Dimensions externes": "462 x 445 x 600 mm (L x H x P)",
+      "Dimensions chambre": "Ø 255 x 460 mm",
+      "Dimensions plateau": "285 x 190 mm",
+      "Consommation électrique": "1800 W",
+      "Réservoir d’eau distillée": "4,6 litres",
+      "Réservoir eaux usées": "5 litres",
+      "Poids net / brut": "56 kg / 59 kg",
+      "Temps de cycle classe B": "15 minutes (approx.)",
+      "Système d’osmose": "Intégré – raccordement direct au robinet",
+      "Versions disponibles": "Plus+ (latéral) / TOP (au-dessus)",
+      "other": []
+    },
+    "id": 5
   },
   {
-    "id": 7,
     "name": "Autoclave à vapeur AS44",
-    "description": "Autoclave compact (100L ou 150L) idéal pour les petites salles de stérilisation et les blocs opératoires.",
-    "category": "sterilization",
-    "sub_category": "autoclave",
+    "short_description": "Autoclave vertical compact 100L ou 150L, conçu pour petites salles de stérilisation et blocs opératoires.",
+    "full_description": "L'autoclave à vapeur AS44 est un stérilisateur vertical destiné aux petites salles de stérilisation et blocs opératoires.  \nIl permet une stérilisation fiable des instruments chirurgicaux et médicaux grâce à ses cycles de vapeur à haute température.  \nDisponible en capacité 100L ou 150L, il combine compacité, facilité d'utilisation et efficacité pour les environnements cliniques restreints.",
+    "category": "Stérilisation",
+    "subcategory": "Autoclave vertical",
     "brand": {
-      "name": "SMS",
+      "name": "SMS ",
       "description": ""
     },
-    "technical_specs": "Capacité: 103L ou 150L\nPorte simple ou double\nPortes coulissantes verticales automatiques\nGénérateur de vapeur intégré\nSystème d’économie d’eau de refroidissement\nÉcran tactile couleur LCD 7”\n19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)\nChambre et portes en acier inoxydable AISI 316L\nImprimante intégrée, contrôle d'accès par mot de passe\nContrôle et surveillance à distance"
+    "technical_specs": {
+      "Capacité": "103L ou 150L",
+      "other": [
+        "Porte simple ou double",
+        "Portes coulissantes verticales automatiques",
+        "Générateur de vapeur intégré",
+        "Système d’économie d’eau de refroidissement",
+        "Écran tactile couleur LCD 7”",
+        "19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)",
+        "Chambre et portes en acier inoxydable AISI 316L",
+        "Imprimante intégrée, contrôle d'accès par mot de passe",
+        "Contrôle et surveillance à distance"
+      ]
+    },
+    "id": 6,
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg"
   },
   {
-    "id": 8,
     "name": "Autoclave à vapeur AS66",
-    "availability": "in_stock",
-    "description": "Autoclave à grande capacité (300–900L) compatible avec le standard STU pour les grandes unités de stérilisation (CSSD).",
-    "category": "sterilization",
-    "sub_category": "autoclave",
+    "short_description": "Autoclave vertical grande capacité 300–900L, compatible standard STU pour grandes unités de stérilisation.",
+    "full_description": "L'autoclave à vapeur AS66 est un stérilisateur vertical conçu pour les grandes unités de stérilisation (CSSD) et compatible avec le standard STU.  \nSa capacité de 300 à 900L permet de stériliser un volume important d'instruments chirurgicaux et médicaux.  \nIl est adapté aux hôpitaux et cliniques de grande taille, offrant fiabilité, robustesse et conformité aux normes de stérilisation professionnelles.\n",
+    "category": "Stérilisation",
+    "subcategory": "Autoclave vertical",
     "brand": {
-      "name": "SMS",
+      "name": "SMS ",
       "description": ""
     },
-    "technical_specs": "Capacité: de 334L à 897L (4 à 12 STU)\nVersions à porte simple ou double\nPortes coulissantes verticales automatiques\nGénérateur de vapeur intégré\nÉcran tactile couleur LCD 7”\n19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)\nChambre et portes en acier inoxydable AISI 316L\nImprimante intégrée, contrôle d'accès par mot de passe\nContrôle et surveillance à distance"
+    "technical_specs": {
+      "Capacité": "de 334L à 897L (4 à 12 STU)",
+      "other": [
+        "Versions à porte simple ou double",
+        "Portes coulissantes verticales automatiques",
+        "Générateur de vapeur intégré",
+        "Écran tactile couleur LCD 7”",
+        "19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)",
+        "Chambre et portes en acier inoxydable AISI 316L",
+        "Imprimante intégrée, contrôle d'accès par mot de passe",
+        "Contrôle et surveillance à distance"
+      ]
+    },
+    "id": 7
   },
   {
-    "id": 9,
     "name": "Autoclave à vapeur SMS 100",
-    "availability": "in_stock",
-    "description": "Autoclave compact idéal pour les petites cliniques et laboratoires, avec station de traitement d'eau et compresseur intégrés.",
-    "category": "sterilization",
-    "sub_category": "autoclave",
+    "short_description": "Autoclave vertical compact pour petites cliniques et laboratoires, avec station de traitement d'eau et compresseur intégrés.",
+    "full_description": "L'autoclave à vapeur SMS 100 est un stérilisateur vertical compact, idéal pour les petites cliniques et laboratoires.  \nIl intègre une station de traitement de l'eau et un compresseur pour garantir une stérilisation efficace et sécurisée des instruments médicaux et chirurgicaux.  \nSa conception compacte et ses fonctions intégrées facilitent l'utilisation et l'entretien dans les environnements cliniques restreints.\n",
+    "category": "Stérilisation",
+    "subcategory": "Autoclave vertical",
     "brand": {
-      "name": "SMS",
+      "name": "SMS ",
       "description": ""
     },
-    "technical_specs": "Capacité: 100 Litre / 1 STU\nPorte à ouverture manuelle\nGénérateur de vapeur intégré\nChambre et porte en acier inoxydable AISI 316L\nÉcran tactile couleur LCD 7”\n15 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)\nArmoire mobile en acier inox pour station d’eau et compresseur (option)\nImprimante intégrée, contrôle d'accès par mot de passe"
+    "technical_specs": {
+      "Capacité": "100 Litre / 1 STU",
+      "other": [
+        "Porte à ouverture manuelle",
+        "Générateur de vapeur intégré",
+        "Chambre et porte en acier inoxydable AISI 316L",
+        "Écran tactile couleur LCD 7”",
+        "15 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)",
+        "Armoire mobile en acier inox pour station d’eau et compresseur (option)",
+        "Imprimante intégrée, contrôle d'accès par mot de passe"
+      ]
+    },
+    "id": 8
   },
   {
-    "id": 10,
     "name": "Lampe opératoire HELIOS 160\n",
-    "availability": "in_stock",
-    "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.Lampe LED chirurgicale de haut rendement avec coupole simple ou double.\n",
-    "category": "surgery",
-    "sub_category": "surgery_lighting",
+    "short_description": "Lampe opératoire LED haut de gamme avec coupole simple ou double, offrant un éclairage optimal pour interventions chirurgicales.",
+    "full_description": "La lampe opératoire HELIOS 160 est une lampe LED chirurgicale conçue pour fournir un éclairage optimal lors d'interventions complexes.  \nDisponible en version simple ou double coupole, elle garantit une excellente visibilité et un confort visuel maximal.  \nSon intensité lumineuse réglable et son rendu des couleurs précis assurent une précision accrue lors des procédures médicales et chirurgicales.",
+    "category": "Salle d'opération",
+    "subcategory": "Éclairage opératoire",
     "brand": {
       "name": "FAMED",
       "description": ""
     },
-    "technical_specs": "Intensité lumineuse : jusqu’à 160 000 lux\\n Température de couleur : 3 800 – 4 800 K (réglable)\\n CRI ≥ 96 / R9 ≥ 96\\n Diamètre champ lumineux (d10) : 200 mm ± 60 mm\\n Profondeur d’éclairage : 1 200 mm\\n Nombre de LED : 70\\n Durée de vie : 60 000 h\\n Consommation : 80 W\\n Contrôle : poignée stérile, mur tactile, bras\\n Options : caméra intégrée, écran mural, double coupole"
+    "technical_specs": {
+      "Intensité lumineuse": "jusqu’à 160 000 lux",
+      "Température de couleur": "3 800 – 4 800 K (réglable)",
+      "Diamètre champ lumineux (d10)": "200 mm ± 60 mm",
+      "Profondeur d’éclairage": "1 200 mm",
+      "Nombre de LED": "70",
+      "Durée de vie": "60 000 h",
+      "Consommation": "80 W",
+      "Contrôle": "poignée stérile, mur tactile, bras",
+      "Options": "caméra intégrée, écran mural, double coupole",
+      "other": [
+        "CRI ≥ 96 / R9 ≥ 96"
+      ]
+    },
+    "id": 9
   },
   {
-    "id": 11,
     "name": "Lampe opératoire IGNIS 160",
-    "availability": "in_stock",
-    "description": "Lampe opératoire LED haut de gamme conçue pour offrir un éclairage optimal lors d’interventions chirurgicales complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité, un confort visuel maximal et une précision accrue grâce à son intensité lumineuse réglable et son excellent rendu des couleurs.",
-    "category": "surgery",
-    "sub_category": "surgery_lighting",
+    "short_description": "Lampe opératoire LED haut de gamme avec coupole simple ou double, offrant un éclairage optimal pour interventions chirurgicales complexes.",
+    "full_description": "La lampe opératoire IGNIS 160 est conçue pour fournir un éclairage chirurgical de haute précision.  \nDisponible en version simple ou double coupole, elle assure une excellente visibilité et un confort visuel maximal.  \nSon intensité lumineuse réglable et son rendu des couleurs précis permettent une précision accrue lors des procédures médicales et chirurgicales.\n",
+    "category": "Salle d'opération",
+    "subcategory": "Éclairage opératoire",
     "brand": {
       "name": "FAMED",
-      "description": "FAMED Żywiec is a Polish medical equipment manufacturer based in Żywiec, Poland, producing hospital beds, operating tables, delivery systems, surgical lighting, and treatment chairs in its own factory—serving over 120 countries with over 75 years of experience."
-    },
-    "technical_specs": "Intensité lumineuse: jusqu’à 160 000 lux\nTempérature de couleur: 3 800 – 4 800 K (réglable)\nCRI ≥ 96 / R9 ≥ 96\nDiamètre champ lumineux (d10): 200 mm ± 60 mm\nProfondeur d’éclairage: 1 200 mm\nNombre de LED: 70\nDurée de vie: 60 000 h\nConsommation: 80 W\nCommandes: poignée stérile, mur tactile, bras\nOptions: double coupole, caméra, écran mural"
-  },
-  {
-    "id": 12,
-    "name": "Moniteur multipamétrique E8",
-    "availability": "in_stock",
-    "description": "Moniteur compact pour la surveillance continue des signes vitaux. Il mesure des paramètres essentiels comme l’ECG, la SpO2, la NIBP, la température corporelle et la respiration. Convient aux soins ambulatoires ou hospitaliers de faible à moyenne complexité.",
-    "image": "",
-    "category": "diagnostic",
-    "sub_category": "patient_monitoring",
-    "brand": {
-      "name": "Yonker",
       "description": ""
     },
-    "technical_specs": "Taille de l'écran: 8,4 pouces TFT couleur\nParamètres surveillés: ECG, SpO₂, NIBP, TEMP, RESP, PR\nAlarmes: Sonores et visuelles réglables\nAutonomie sur batterie: Environ 2 heures\nPoids: 2,5 kg\nInterface: USB, port LAN\nAffichage des courbes: Jusqu’à 4 tracés simultanés"
+    "technical_specs": {
+      "Intensité lumineuse": "jusqu’à 160 000 lux",
+      "Température de couleur": "3 800 – 4 800 K (réglable)",
+      "Diamètre champ lumineux (d10)": "200 mm ± 60 mm",
+      "Profondeur d’éclairage": "1 200 mm",
+      "Nombre de LED": "70",
+      "Durée de vie": "60 000 h",
+      "Consommation": "80 W",
+      "Commandes": "poignée stérile, mur tactile, bras",
+      "Options": "double coupole, caméra, écran mural",
+      "other": [
+        "CRI ≥ 96 / R9 ≥ 96"
+      ]
+    },
+    "id": 10
   },
   {
-    "id": 13,
-    "name": "Moniteur multipamétrique E10",
-    "availability": "in_stock",
-    "description": "Dispositif de surveillance multiparamétrique avec écran 10,4 pouces, adapté à un usage hospitalier général. Permet la mesure de l’ECG, SpO2, pression non invasive, température, respiration et pouls. Prise en charge de l’alarme auditive et visuelle.",
-    "image": "",
-    "category": "diagnostic",
-    "sub_category": "patient_monitoring",
+    "name": "Lampe chirurgicale SOLIS 130",
+    "short_description": "Lampe chirurgicale LED fiable avec coupole simple ou double, offrant forte intensité lumineuse et excellente profondeur d’éclairage.",
+    "full_description": "La lampe chirurgicale SOLIS 130 est adaptée aux blocs opératoires polyvalents.  \nElle combine une forte intensité lumineuse à un rendu des couleurs précis et assure une grande profondeur d’éclairage.  \nDisponible en version simple ou double coupole, elle garantit un confort optimal pour les équipes médicales durant les interventions.",
+    "category": "Salle d'opération",
+    "subcategory": "Éclairage opératoire",
     "brand": {
-      "name": "Yonker",
+      "name": "FAMED",
       "description": ""
     },
-    "technical_specs": "Taille de l'écran: 10,4 pouces LCD\nParamètres surveillés: ECG (3/5 dérivations), SpO₂, NIBP, TEMP, RESP\nConnectivité: USB, port série, LAN\nBatterie: Lithium-ion intégrée (autonomie 3 heures)\nPoids: 3,5 kg\nImpression des données: Option imprimante thermique intégrée\nAlarmes: 3 niveaux (technique, physiologique, critique)"
+    "technical_specs": {
+      "Intensité lumineuse": "jusqu’à 130 000 lux",
+      "Température de couleur": "3 800 – 4 800 K (réglable)",
+      "Diamètre champ lumineux (d10)": "200 mm ± 60 mm",
+      "Profondeur d’éclairage": "1 200 mm",
+      "Nombre de LED": "66",
+      "Durée de vie": "60 000 h",
+      "Consommation": "70 W",
+      "Contrôle": "poignée stérile, panneau mural, bras",
+      "Options": "double coupole, caméra, écran",
+      "other": [
+        "CRI ≥ 96 / R9 ≥ 96"
+      ]
+    },
+    "id": 11
   },
   {
-    "id": 14,
-    "name": "Moniteur multipamétrique E12",
-    "availability": "in_stock",
-    "description": "Moniteur avancé avec écran de 12,1 pouces offrant une visualisation claire des paramètres vitaux. Inclut la surveillance ECG 5 dérivations, SpO2, NIBP, TEMP et RESP. Convient aux unités de soins intensifs et post-opératoires.",
-    "image": "",
-    "category": "diagnostic",
-    "sub_category": "patient_monitoring",
+    "name": "Moniteur multiparamétrique E8",
+    "short_description": "Moniteur compact pour surveillance continue des signes vitaux, adapté aux soins ambulatoires et hospitaliers légers à modérés.",
+    "full_description": "Le moniteur multiparamétrique E8 permet de surveiller en continu les paramètres vitaux essentiels : ECG, SpO2, NIBP, température et respiration.  \nCompact et facile à utiliser, il convient aux soins ambulatoires, cliniques ou unités hospitalières de faible à moyenne complexité.\n",
+    "category": "Diagnostic",
+    "subcategory": "Monitorage",
     "brand": {
-      "name": "Yonker",
+      "name": "YONKER",
       "description": ""
     },
-    "technical_specs": "Taille de l'écran: 12,1 pouces TFT haute résolution\nParamètres surveillés: ECG, SpO₂, NIBP, TEMP, RESP, PR\nMémoire interne: Jusqu’à 96 heures de tendance graphique\nInterfaces: LAN, USB, HDMI (sur certaines versions)\nAlimentation: AC 100–240 V, 50/60 Hz\nDimensions: 300 × 220 × 260 mm\nModes patient: Adulte / Pédiatrique / Néonatal"
+    "technical_specs": {
+      "Taille de l'écran": "8,4 pouces TFT couleur",
+      "Paramètres surveillés": "ECG, SpO₂, NIBP, TEMP, RESP, PR",
+      "Alarmes": "Sonores et visuelles réglables",
+      "Autonomie sur batterie": "Environ 2 heures",
+      "Poids": "2,5 kg",
+      "Interface": "USB, port LAN",
+      "Affichage des courbes": "Jusqu’à 4 tracés simultanés",
+      "other": []
+    },
+    "id": 12
   },
   {
-    "id": 15,
-    "name": "Moniteur multipamétrique E15",
-    "availability": "in_stock",
-    "description": "Moniteur haut de gamme équipé d’un grand écran couleur 15 pouces. Compatible avec la surveillance avancée incluant la CO₂ et la pression artérielle invasive (IBP). Idéal pour les services de réanimation ou blocs opératoires.",
-    "image": "",
-    "category": "diagnostic",
-    "sub_category": "patient_monitoring",
+    "name": "Moniteur multiparamétrique E10",
+    "short_description": "Moniteur multiparamétrique avec écran 10,4 pouces pour usage hospitalier général, intégrant alarme auditive et visuelle.",
+    "full_description": "Le moniteur E10 offre la surveillance simultanée de l’ECG, SpO2, pression non invasive, température, respiration et pouls.  \nIl dispose d’un écran 10,4 pouces pour une lecture claire et d’alarmes visuelles et sonores pour la sécurité des patients.  \nIdéal pour les services hospitaliers généraux.",
+    "category": "Diagnostic",
+    "subcategory": "Monitorage",
     "brand": {
-      "name": "Yonker",
+      "name": "YONKER",
       "description": ""
     },
-    "technical_specs": "Taille de l'écran: 15 pouces tactile couleur\nParamètres standards: ECG, SpO₂, NIBP, TEMP, RESP, PR\nModules optionnels: IBP, EtCO₂, 2 TEMP supplémentaires\nCapacité de stockage: Revue de tendances sur 240 heures\nInterfaces: USB, LAN, VGA, HDMI\nPoids: 6,8 kg\nBatterie: Autonomie de 4 heures (Li-ion remplaçable)"
+    "technical_specs": {
+      "Taille de l'écran": "10,4 pouces LCD",
+      "Paramètres surveillés": "ECG (3/5 dérivations), SpO₂, NIBP, TEMP, RESP",
+      "Connectivité": "USB, port série, LAN",
+      "Batterie": "Lithium-ion intégrée (autonomie 3 heures)",
+      "Poids": "3,5 kg",
+      "Impression des données": "Option imprimante thermique intégrée",
+      "Alarmes": "3 niveaux (technique, physiologique, critique)",
+      "other": []
+    },
+    "id": 13
   },
   {
-    "id": 15,
+    "name": "Moniteur multiparamétrique E12",
+    "short_description": "Moniteur avancé 12,1 pouces pour unité de soins intensifs, surveillance complète des paramètres vitaux.",
+    "full_description": "Le moniteur E12 dispose d’un écran 12,1 pouces offrant une visualisation claire des paramètres vitaux.  \nIl inclut la surveillance ECG 5 dérivations, SpO2, NIBP, TEMP et RESP.  \nConvient aux unités de soins intensifs et post-opératoires nécessitant une surveillance précise et continue.\n",
+    "category": "Diagnostic",
+    "subcategory": "Monitorage",
+    "brand": {
+      "name": "YONKER",
+      "description": ""
+    },
+    "technical_specs": {
+      "Taille de l'écran": "12,1 pouces TFT haute résolution",
+      "Paramètres surveillés": "ECG, SpO₂, NIBP, TEMP, RESP, PR",
+      "Mémoire interne": "Jusqu’à 96 heures de tendance graphique",
+      "Interfaces": "LAN, USB, HDMI (sur certaines versions)",
+      "Alimentation": "AC 100–240 V, 50/60 Hz",
+      "Dimensions": "300 × 220 × 260 mm",
+      "Modes patient": "Adulte / Pédiatrique / Néonatal",
+      "other": []
+    },
+    "id": 14
+  },
+  {
+    "name": "Moniteur multiparamétrique E15",
+    "short_description": "Moniteur haut de gamme 15 pouces pour surveillance avancée incluant CO₂ et pression artérielle invasive (IBP).",
+    "full_description": "Le moniteur E15 est conçu pour les services de réanimation et les blocs opératoires.  \nIl offre un grand écran couleur de 15 pouces et prend en charge la surveillance avancée incluant CO₂ et pression artérielle invasive.  \nIl est idéal pour les environnements critiques nécessitant une précision maximale et un suivi complet des patients.",
+    "category": "Diagnostic",
+    "subcategory": "Monitorage",
+    "brand": {
+      "name": "YONKER",
+      "description": ""
+    },
+    "technical_specs": {
+      "Taille de l'écran": "15 pouces tactile couleur",
+      "Paramètres standards": "ECG, SpO₂, NIBP, TEMP, RESP, PR",
+      "Modules optionnels": "IBP, EtCO₂, 2 TEMP supplémentaires",
+      "Capacité de stockage": "Revue de tendances sur 240 heures",
+      "Interfaces": "USB, LAN, VGA, HDMI",
+      "Poids": "6,8 kg",
+      "Batterie": "Autonomie de 4 heures (Li-ion remplaçable)",
+      "other": []
+    },
+    "id": 15
+  },
+  {
     "name": "Moniteur multipamétrique YK-8000A",
-    "availability": "in_stock",
-    "description": "Moniteur portable et léger pour surveillance de base. Il mesure la saturation en oxygène, la pression artérielle non invasive et la température corporelle. Utilisé en ambulances, cliniques mobiles ou consultations externes.",
-    "image": "",
-    "category": "diagnostic",
-    "sub_category": "patient_monitoring",
+    "short_description": "Moniteur portable léger pour surveillance de base, adapté aux ambulances et consultations externes.",
+    "full_description": "Le YK-8000A permet de mesurer la saturation en oxygène, la pression artérielle non invasive et la température corporelle.  \nSa portabilité et sa simplicité en font un outil idéal pour les ambulances, cliniques mobiles et consultations externes.\n",
+    "category": "Diagnostic",
+    "subcategory": "Monitorage",
     "brand": {
-      "name": "Yonker",
+      "name": "YONKER",
       "description": ""
     },
-    "technical_specs": "Taille de l'écran: 7 pouces LCD couleur\nParamètres surveillés: SpO₂, NIBP, TEMP\nBatterie: 2200 mAh (autonomie 2 à 3 heures)\nAlarmes: Oui, visuelle et sonore\nInterface: USB pour transfert des données\nDimensions: 200 × 140 × 180 mm\nPoids: 1,8 kg"
+    "technical_specs": {
+      "Taille de l'écran": "7 pouces LCD couleur",
+      "Paramètres surveillés": "SpO₂, NIBP, TEMP",
+      "Batterie": "2200 mAh (autonomie 2 à 3 heures)",
+      "Alarmes": "Oui, visuelle et sonore",
+      "Interface": "USB pour transfert des données",
+      "Dimensions": "200 × 140 × 180 mm",
+      "Poids": "1,8 kg",
+      "other": []
+    },
+    "id": 16
   },
   {
-    "id": 16,
     "name": "Moniteur multipamétrique YK-8000B",
-    "availability": "in_stock",
-    "description": "Moniteur compact avec écran clair de 8,4 pouces adapté aux environnements hospitaliers. Il permet de surveiller plusieurs paramètres simultanément et inclut des alarmes de sécurité. Utilisé dans les services standards ou intermédiaires.",
-    "image": "",
-    "category": "diagnostic",
-    "sub_category": "patient_monitoring",
+    "short_description": "Moniteur compact 8,4 pouces pour environnements hospitaliers, avec surveillance de plusieurs paramètres et alarmes intégrées.",
+    "full_description": "Le YK-8000B offre une surveillance simultanée de plusieurs paramètres vitaux sur un écran clair de 8,4 pouces.  \nIl inclut des alarmes de sécurité et est adapté aux services hospitaliers standards ou intermédiaires.",
+    "category": "Diagnostic",
+    "subcategory": "Monitorage",
     "brand": {
-      "name": "Yonker",
+      "name": "YONKER",
       "description": ""
     },
-    "technical_specs": "Taille de l'écran: 8,4 pouces TFT couleur\nParamètres surveillés: ECG, SpO₂, NIBP, TEMP, RESP\nAlimentation: 100–240 V / batterie rechargeable\nModes d’alarme: Personnalisables par patient\nInterface: RS232, USB, LAN\nPoids: 2,9 kg\nMémoire: 120 heures de tendance graphique"
+    "technical_specs": {
+      "Taille de l'écran": "8,4 pouces TFT couleur",
+      "Paramètres surveillés": "ECG, SpO₂, NIBP, TEMP, RESP",
+      "Alimentation": "100–240 V / batterie rechargeable",
+      "Modes d’alarme": "Personnalisables par patient",
+      "Interface": "RS232, USB, LAN",
+      "Poids": "2,9 kg",
+      "Mémoire": "120 heures de tendance graphique",
+      "other": []
+    },
+    "id": 17
   },
   {
-    "id": 16,
     "name": "Moniteur multipamétrique YK-8000C",
-    "availability": "in_stock",
-    "description": "Dispositif de surveillance avancée avec écran 12,1 pouces et capacité de mesure de CO₂ en plus des paramètres vitaux classiques. Convient aux unités de soins critiques avec besoin de précision accrue. Supporte les connexions réseau pour supervision centralisée.",
-    "image": "",
-    "category": "diagnostic",
-    "sub_category": "patient_monitoring",
+    "short_description": "Moniteur avancé 12,1 pouces avec mesure de CO₂ et connectivité réseau pour supervision centralisée en unités critiques.",
+    "full_description": "Le YK-8000C est un dispositif de surveillance avancé pour unités de soins critiques.  \nIl dispose d’un écran 12,1 pouces et mesure CO₂ en plus des paramètres vitaux classiques.  \nIl supporte les connexions réseau pour une supervision centralisée et offre une précision accrue pour le suivi des patients critiques.\n",
+    "category": "Diagnostic",
+    "subcategory": "Monitorage",
     "brand": {
-      "name": "Yonker",
+      "name": "YONKER",
       "description": ""
     },
-    "technical_specs": "Taille de l'écran: 12,1 pouces couleur haute résolution\nParamètres: ECG, SpO₂, NIBP, TEMP, RESP, EtCO₂\nMémoire: 240 heures de stockage de données patients\nConnectivité: LAN, USB, HDMI\nPoids: 5,9 kg\nBatterie: Autonomie de 4 à 6 heures\nAccessoires: Support mural / roulettes en option"
+    "technical_specs": {
+      "Taille de l'écran": "12,1 pouces couleur haute résolution",
+      "Paramètres": "ECG, SpO₂, NIBP, TEMP, RESP, EtCO₂",
+      "Mémoire": "240 heures de stockage de données patients",
+      "Connectivité": "LAN, USB, HDMI",
+      "Poids": "5,9 kg",
+      "Batterie": "Autonomie de 4 à 6 heures",
+      "Accessoires": "Support mural / roulettes en option",
+      "other": []
+    },
+    "id": 18
   },
   {
-    "id": 17,
     "name": "Abaisse langue adulte",
-    "availability": "in_stock",
-    "description": "",
-    "image": "",
-    "category": "consummable",
-    "sub_category": "consummable",
+    "short_description": "",
+    "full_description": "https://www.weilong-wood.com/pr.jsp?_reqArgs=%257B%2522args%2522%253A%257B%2522_jcp%2522%253A%25223_5%2522%257D%252C%2522type%2522%253A34%252C%2522anchor%2522%253A%2522_pp%253D109_0%2522%257D",
+    "category": "Consommable",
+    "subcategory": "Consommable",
     "brand": {
-      "name": "Weilong",
+      "name": "WEILONG",
       "description": ""
     },
-    "technical_specs": ""
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 19
   },
   {
-    "id": 18,
     "name": "Abaisse langue enfant",
-    "availability": "in_stock",
-    "description": "",
-    "image": "",
-    "category": "consummable",
-    "sub_category": "consummable",
+    "short_description": "",
+    "full_description": "https://www.weilong-wood.com/pr.jsp?_reqArgs=%257B%2522args%2522%253A%257B%2522_jcp%2522%253A%25223_5%2522%257D%252C%2522type%2522%253A34%252C%2522anchor%2522%253A%2522_pp%253D109_0%2522%257D",
+    "category": "Consommable",
+    "subcategory": "Consommable",
     "brand": {
-      "name": "Weilong",
+      "name": "WEILONG",
       "description": ""
     },
-    "technical_specs": ""
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 20
   },
   {
-    "id": 19,
     "name": "Berceau D-2",
-    "availability": "in_stock",
-    "description": "Berceau hospitalier mobile conçu pour les soins néonataux en maternité. Sa structure légère et stable permet un accès aisé au nouveau-né. Utilisé principalement pour les chambres post-partum.",
-    "image": "",
-    "category": "medical_furniture",
-    "sub_category": "medical_furniture",
+    "short_description": "Berceau hospitalier mobile pour soins néonataux, léger et stable, idéal pour chambres post-partum.",
+    "full_description": "Le berceau D-2 est conçu pour les soins néonataux en maternité.  \nSa structure légère et stable permet un accès facile au nouveau-né pour le personnel soignant.  \nUtilisé principalement dans les chambres post-partum, il facilite la manipulation sécurisée et confortable des nouveau-nés.\n",
+    "category": "Mobilier medical",
+    "subcategory": "Berceau néonatal",
     "brand": {
       "name": "VANRY",
       "description": ""
     },
-    "technical_specs": "Structure: Acier inoxydable peint ou anodisé\nDimensions extérieures: 870 × 510 × 880 mm (L × P × H)\nHauteur réglable: Non\nBassin: Transparent, inclinable manuellement (jusqu’à 12°)\nType de roulettes: 4 roulettes pivotantes Ø 75 mm avec frein\nMatelas: Mousse polyuréthane, housse imperméable\nAccessoires: Porte-étiquette d'identification\nPoids net: 15 kg"
+    "technical_specs": {
+      "Structure": "Acier inoxydable peint ou anodisé",
+      "Dimensions extérieures": "870 × 510 × 880 mm (L × P × H)",
+      "Hauteur réglable": "Non",
+      "Bassin": "Transparent, inclinable manuellement (jusqu’à 12°)",
+      "Type de roulettes": "4 roulettes pivotantes Ø 75 mm avec frein",
+      "Matelas": "Mousse polyuréthane, housse imperméable",
+      "Accessoires": "Porte-étiquette d'identification",
+      "Poids net": "15 kg",
+      "other": []
+    },
+    "id": 21
   },
   {
-    "id": 20,
     "name": "Berceau D-3",
-    "availability": "in_stock",
-    "description": "Berceau néonatal avec réglage de la hauteur pour s’adapter au lit de la mère. Conçu pour optimiser le contact mère-enfant en toute sécurité. Convient aux établissements promouvant le co-sommeil supervisé.",
-    "image": "",
-    "category": "medical_furniture",
-    "sub_category": "berceau_neonatal",
+    "short_description": "Berceau néonatal avec réglage de la hauteur pour optimiser le contact mère-enfant en toute sécurité.",
+    "full_description": "Le berceau D-3 permet un réglage précis de la hauteur pour s’adapter au lit de la mère.  \nIl est conçu pour favoriser le co-sommeil supervisé tout en assurant la sécurité du nourrisson.  \nConvient aux établissements promouvant un contact étroit et sécurisé entre la mère et l’enfant.",
+    "category": "Mobilier medical",
+    "subcategory": "Berceau néonatal",
     "brand": {
       "name": "VANRY",
       "description": ""
     },
-    "technical_specs": "Structure: Châssis en acier epoxy, finition antibactérienne\nDimensions: 900 × 520 × 930 mm (max. hauteur)\nRéglage en hauteur: Manuel (690 à 930 mm)\nBassin: Polycarbonate transparent, inclinable\nType de roulettes: 4 roulettes Ø 100 mm dont 2 avec frein\nMatelas: Densité 25 kg/m³, housse PU soudée\nDispositif de verrouillage: Verrouillage double pour inclinaison et hauteur\nPoids net: 18 kg"
-  },
-  {
-    "id": 21,
-    "name": "Berceau D-4",
-    "availability": "in_stock",
-    "description": "Berceau haut de gamme pour soins intensifs néonatals ou suites de naissance VIP. Offre un réglage complet de la hauteur, de l’inclinaison et un grand confort pour le personnel soignant. Équipé d’un espace de rangement inférieur.",
-    "category": "medical_furniture",
-    "sub_category": "berceau_neonatal",
-    "brand": {
-      "name": "VANRY",
-      "description": ""
+    "technical_specs": {
+      "Structure": "Châssis en acier epoxy, finition antibactérienne",
+      "Dimensions": "900 × 520 × 930 mm (max. hauteur)",
+      "Réglage en hauteur": "Manuel (690 à 930 mm)",
+      "Bassin": "Polycarbonate transparent, inclinable",
+      "Type de roulettes": "4 roulettes Ø 100 mm dont 2 avec frein",
+      "Matelas": "Densité 25 kg/m³, housse PU soudée",
+      "Dispositif de verrouillage": "Verrouillage double pour inclinaison et hauteur",
+      "Poids net": "18 kg",
+      "other": []
     },
-    "technical_specs": "Structure: Acier inox avec finition peinture époxy\nDimensions: 930 × 550 × 950 mm (L × P × H max.)\nRéglage en hauteur: Système hydraulique (710 à 950 mm)\nBassin: Transparent, amovible, avec inclinaison ajustable\nPanier de rangement: Oui, en ABS renforcé\nRoulettes: 4 roulettes Ø 125 mm à frein centralisé\nMatelas: Respirant, housse imperméable, épaisseur 40 mm\nAccessoires: Système de freinage centralisé, porte-accessoires\nPoids net: 22 kg"
-  },
-  {
     "id": 22,
-    "name": "Table de chirurgie A100-4",
-    "availability": "in_stock",
-    "description": "Cette table de chirurgie électrique offre une flexibilité complète avec réglage électrique de la hauteur, des plaques dorsale, tête et jambes, ainsi qu’un déplacement horizontal pour faciliter l’imagerie C-arm. Conçue en acier inoxydable 304 résistant à la corrosion, elle assure sécurité et confort pour une large gamme d’interventions chirurgicales.",
-    "category": "surgery",
-    "sub_category": "operating_table",
-    "image": "../assets/products/saikang/A100-4.jpg",
-    "brand": {
-      "name": "Saikang",
-      "description": ""
-    },
-    "technical_specs": "Dimensions: 2070 x 550 x 700-1000 mm\nRéglages électriques: hauteur, plaques dos, tête, jambes\nInclinaison Trendelenburg / Reverse: 25°/25°\nInclinaison latérale gauche/droite: 15°/15°\nGlissement horizontal: 300 mm, compatible C-arm\nBatterie interne pour 50-80 opérations\nMatelas en mousse polyuréthane, démontable\nAccessoires: écran anesthésie, supports coussinés pour bras, jambes, épaules, corps, pieds"
+    "image": "../assets/products/saikang/A100-4.jpg"
   },
   {
+    "name": "Berceau D-4",
+    "short_description": "Berceau haut de gamme pour soins intensifs néonatals, avec réglages complets et espace de rangement inférieur.",
+    "full_description": "Le berceau D-4 est destiné aux soins intensifs néonatals ou suites de naissance VIP.  \nIl offre un réglage complet de la hauteur et de l’inclinaison pour un confort optimal du personnel et du nouveau-né.  \nÉquipé d’un espace de rangement inférieur, il combine praticité, sécurité et ergonomie pour les soins spécialisés.\n",
+    "category": "Mobilier medical",
+    "subcategory": "Berceau néonatal",
+    "brand": {
+      "name": "VANRY",
+      "description": ""
+    },
+    "technical_specs": {
+      "Structure": "Acier inox avec finition peinture époxy",
+      "Dimensions": "930 × 550 × 950 mm (L × P × H max.)",
+      "Réglage en hauteur": "Système hydraulique (710 à 950 mm)",
+      "Bassin": "Transparent, amovible, avec inclinaison ajustable",
+      "Panier de rangement": "Oui, en ABS renforcé",
+      "Roulettes": "4 roulettes Ø 125 mm à frein centralisé",
+      "Matelas": "Respirant, housse imperméable, épaisseur 40 mm",
+      "Accessoires": "Système de freinage centralisé, porte-accessoires",
+      "Poids net": "22 kg",
+      "other": []
+    },
     "id": 23,
-    "name": "Table de chirurgie A100-4A",
-    "description": "Ce modèle est une évolution avec un cadre en acier inoxydable anti-corrosion et un système de freinage à pédale. Sa batterie longue durée et son contrôleur manuel garantissent un fonctionnement fiable et sécurisé, adapté aux interventions orthopédiques et multi-spécialités.",
-    "category": "surgery",
-    "sub_category": "operating_table",
-    "image": "../assets/products/saikang/A100-4A.jpg",
+    "image": "../assets/products/saikang/A100-4A.jpg"
+  },
+  {
+    "name": "Table de chirurgie A100-4",
+    "short_description": "Table de chirurgie électrique en acier inoxydable 304, réglages complets et compatibilité C-arm.",
+    "full_description": "La table de chirurgie A100-4 offre un réglage électrique de la hauteur, des plaques dorsale, tête et jambes, ainsi qu’un déplacement horizontal pour faciliter l’imagerie C-arm.  \nSa construction en acier inoxydable 304 résistant à la corrosion assure sécurité et durabilité.  \nElle est adaptée à une large gamme d’interventions chirurgicales, offrant confort et stabilité pour le patient et le personnel.",
+    "category": "Salle d'opération",
+    "subcategory": "table de chirurgie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2100 x 550 x 710-1010 mm\nRéglages électriques: hauteur, plaques dos, tête, jambes\nInclinaison Trendelenburg / Reverse: 25°/25°\nInclinaison latérale gauche/droite: 15°/15°\nGlissement horizontal: 350 mm, compatible C-arm\nBatterie standby: 80h\nFrein à pédale, roulettes 6\" silencieuses\nMatelas, écran anesthésie, supports coussinés inclus"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "2070 x 550 x 700-1000 mm",
+      "Réglages électriques": "hauteur, plaques dos, tête, jambes",
+      "Inclinaison Trendelenburg / Reverse": "25°/25°",
+      "Inclinaison latérale gauche/droite": "15°/15°",
+      "Glissement horizontal": "300 mm, compatible C-arm",
+      "Accessoires": "écran anesthésie, supports coussinés pour bras, jambes, épaules, corps, pieds",
+      "other": [
+        "Batterie interne pour 50-80 opérations",
+        "Matelas en mousse polyuréthane, démontable"
+      ]
+    },
     "id": 24,
-    "name": "Table de chirurgie A106-5",
-    "description": "Cette table combine la puissance hydraulique et l’électronique pour des réglages précis et fluides. Sa conception modulaire avec plateau translucide compatible rayons X, son système intelligent avec contrôle LCD et sa forte capacité de charge (360 kg) en font une table polyvalente pour divers actes chirurgicaux.",
-    "category": "surgery",
-    "sub_category": "operating_table",
-    "image": "../assets/products/saikang/A106-5.jpg",
+    "image": "../assets/products/saikang/A106-5.jpg"
+  },
+  {
+    "name": "Table de chirurgie A100-4A",
+    "short_description": "Évolution de la A100-4 avec cadre anti-corrosion, freinage à pédale et batterie longue durée.",
+    "full_description": "La table A100-4A combine un cadre en acier inoxydable anti-corrosion et un système de freinage à pédale pour une sécurité optimale.  \nElle dispose d’une batterie longue durée et d’un contrôleur manuel garantissant un fonctionnement fiable.  \nAdaptée aux interventions orthopédiques et multi-spécialités, elle offre confort, stabilité et flexibilité d’utilisation.\n",
+    "category": "Salle d'opération",
+    "subcategory": "table de chirurgie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2160 x 550 x 600-1150 mm\nInclinaisons: Trendelenburg / Reverse 36°, latérales 22°\nRéglages plaque tête, dos, jambes, mollets\nGlissement horizontal: 300 mm\nPoids supporté: 360 kg\nContrôle via écran LCD, modes filaire et Bluetooth (optionnel)\nBatterie intégrée, autonomie longue durée\nMatelas mousse mémoire de forme, étanche\nAccessoires: supports bras, épaules, jambes, écran anesthésie, fixateurs"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "2100 x 550 x 710-1010 mm",
+      "Réglages électriques": "hauteur, plaques dos, tête, jambes",
+      "Inclinaison Trendelenburg / Reverse": "25°/25°",
+      "Inclinaison latérale gauche/droite": "15°/15°",
+      "Glissement horizontal": "350 mm, compatible C-arm",
+      "Batterie standby": "80h",
+      "other": [
+        "Frein à pédale, roulettes 6\" silencieuses",
+        "Matelas, écran anesthésie, supports coussinés inclus",
+        ""
+      ]
+    },
     "id": 25,
-    "name": "Table de chirurgie A301",
-    "description": "Cette table propose un cadre robuste en acier inoxydable 304 avec une surface de table résistante compatible rayons X. Elle offre des réglages électriques précis avec un double contrôle manuel et sur colonne, idéale pour la chirurgie générale et orthopédique.",
-    "category": "surgery",
-    "sub_category": "operating_table",
-    "image": "../assets/products/saikang/A301.jpg",
+    "image": "../assets/products/saikang/A301.jpg"
+  },
+  {
+    "name": "Table de chirurgie A106-5",
+    "short_description": "Table hydraulique et électronique modulable avec plateau translucide compatible rayons X, charge 360 kg.",
+    "full_description": "La table A106-5 combine puissance hydraulique et électronique pour des réglages précis et fluides.  \nSa conception modulaire avec plateau translucide compatible rayons X et système intelligent avec contrôle LCD permet un usage polyvalent.  \nCapacité de charge élevée (360 kg), idéale pour divers actes chirurgicaux nécessitant stabilité et flexibilité.",
+    "category": "Salle d'opération",
+    "subcategory": "table de chirurgie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2150 x 555 x 750-1000 mm\nRéglages plaques dos (70°/15°), tête (30°/90°), jambes\nInclinaisons Trendelenburg / Reverse: 25°\nInclinaisons latérales: 15°\nGlissement horizontal: 350 mm, compatible C-arm\nCharge maximale: 275 kg\nBatterie intégrée, autonomie 80-120 opérations\nContrôle double (manette et panneau colonne)\nAccessoires complets et matelas"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "2160 x 550 x 600-1150 mm",
+      "Inclinaisons": "Trendelenburg / Reverse 36°, latérales 22°",
+      "Glissement horizontal": "300 mm",
+      "Poids supporté": "360 kg",
+      "Accessoires": "supports bras, épaules, jambes, écran anesthésie, fixateurs",
+      "other": [
+        "Réglages plaque tête, dos, jambes, mollets",
+        "Contrôle via écran LCD, modes filaire et Bluetooth (optionnel)",
+        "Batterie intégrée, autonomie longue durée",
+        "Matelas mousse mémoire de forme, étanche"
+      ]
+    },
     "id": 26,
-    "name": "Table de chirurgie A302",
-    "description": "Cette table offre des fonctionnalités avancées avec ajustement en hauteur de la plaque tête, glissement horizontal étendu et surface résistante en résine phénolique compatible imagerie médicale. Sa structure robuste garantit stabilité et facilité d’utilisation pour divers types d’interventions.",
-    "category": "surgery",
-    "sub_category": "operating_table",
-    "image": "../assets/products/saikang/A302.jpg",
+    "image": "../assets/products/saikang/A302.jpg"
+  },
+  {
+    "name": "Table de chirurgie A301",
+    "short_description": "Table robuste en acier inoxydable 304 avec réglages électriques précis et surface compatible rayons X.",
+    "full_description": "La table A301 propose un cadre solide en acier inoxydable 304 et une surface résistante compatible rayons X.  \nElle offre des réglages électriques précis avec double contrôle manuel et sur colonne.  \nConvient à la chirurgie générale et orthopédique, alliant durabilité et facilité d’entretien.\n",
+    "category": "Salle d'opération",
+    "subcategory": "table de chirurgie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2150 x 555 x 700-1000 mm\nRéglages plaques dos, tête (avec réglage hauteur 70mm), jambes\nInclinaisons Trendelenburg / Reverse: 25°\nInclinaisons latérales: 25°\nGlissement horizontal: 350 mm\nCharge maximale: 275 kg\nMatelas mousse polyuréthane, étanche\nRoulettes silencieuses, frein pédale\nContrôle double manette et panneau"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "2150 x 555 x 750-1000 mm",
+      "Inclinaisons Trendelenburg / Reverse": "25°",
+      "Inclinaisons latérales": "15°",
+      "Glissement horizontal": "350 mm, compatible C-arm",
+      "Charge maximale": "275 kg",
+      "other": [
+        "Réglages plaques dos (70°/15°), tête (30°/90°), jambes",
+        "Batterie intégrée, autonomie 80-120 opérations",
+        "Contrôle double (manette et panneau colonne)",
+        "Accessoires complets et matelas",
+        ""
+      ]
+    },
     "id": 27,
-    "name": "Table de chirurgie A307",
-    "description": "Cette table électrique hydraulique est conçue pour une large gamme de chirurgies avec un système de contrôle flexible, surface modulaire compatible rayons X et batterie rechargeable. Son design robuste en acier inoxydable assure durabilité et facilité d’entretien.",
-    "category": "surgery",
-    "sub_category": "operating_table",
-    "image": "../assets/products/saikang/A307.png",
+    "image": "../assets/products/saikang/A307.png"
+  },
+  {
+    "name": "Table de chirurgie A302",
+    "short_description": "Table avancée avec ajustement tête, glissement horizontal étendu et surface résine phénolique compatible imagerie.",
+    "full_description": "La table A302 permet un réglage précis en hauteur de la plaque tête et un glissement horizontal étendu.  \nSa surface en résine phénolique est compatible avec l’imagerie médicale.  \nSa structure robuste garantit stabilité et facilité d’utilisation pour divers types d’interventions chirurgicales.",
+    "category": "Salle d'opération",
+    "subcategory": "table de chirurgie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2140 x 550 x 550-1050 mm\nInclinaisons Trendelenburg / Reverse: 30°\nInclinaisons latérales: 25°\nRéglages plaques tête, dos, jambes multi-positions\nGlissement horizontal: 300 mm\nCharge maximale: 360 kg\nMatelas mousse mémoire 75 mm, étanche et anti-statique\nBatterie rechargeable pour 50+ opérations\nContrôle filaire avec bouton d’arrêt d’urgence\nAccessoires: supports bras, épaules, jambes, écran anesthésie"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "2150 x 555 x 700-1000 mm",
+      "Inclinaisons Trendelenburg / Reverse": "25°",
+      "Inclinaisons latérales": "25°",
+      "Glissement horizontal": "350 mm",
+      "Charge maximale": "275 kg",
+      "other": [
+        "Réglages plaques dos, tête (avec réglage hauteur 70mm), jambes",
+        "Matelas mousse polyuréthane, étanche",
+        "Roulettes silencieuses, frein pédale",
+        "Contrôle double manette et panneau"
+      ]
+    },
     "id": 28,
-    "name": "Table de chirurgie A501",
-    "description": "Cette table propose un système hydraulique performant avec rotation horizontale 180°, commande double, batterie de secours intégrée et surface résistante. Adaptée aux interventions exigeantes, elle assure confort et sécurité grâce à son cadre en acier inoxydable et ses multiples réglages.",
-    "category": "surgery",
-    "sub_category": "operating_table",
-    "image": "../assets/products/saikang/A501.jpg",
+    "image": "../assets/products/saikang/A501.jpg"
+  },
+  {
+    "name": "Table de chirurgie A307",
+    "short_description": "Table électrique hydraulique polyvalente avec surface modulaire compatible rayons X et batterie rechargeable.",
+    "full_description": "La table A307 est conçue pour une large gamme de chirurgies, avec contrôle flexible et surface modulaire compatible rayons X.  \nÉquipée d’une batterie rechargeable et d’un cadre robuste en acier inoxydable, elle offre durabilité, facilité d’entretien et sécurité pour le personnel et le patient.",
+    "category": "Salle d'opération",
+    "subcategory": "table de chirurgie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2125 x 550 x 600-950 mm\nInclinaisons Trendelenburg / Reverse: 15-20°\nInclinaisons latérales: 15°\nRéglages plaques dos (89°/35°), tête (55°/90°), jambes\nGlissement horizontal: 320 mm\nRotation horizontale: 180°\nBatterie secours intégrée\nAccessoires complets, matelas"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "2140 x 550 x 550-1050 mm",
+      "Inclinaisons Trendelenburg / Reverse": "30°",
+      "Inclinaisons latérales": "25°",
+      "Glissement horizontal": "300 mm",
+      "Charge maximale": "360 kg",
+      "Accessoires": "supports bras, épaules, jambes, écran anesthésie",
+      "other": [
+        "Réglages plaques tête, dos, jambes multi-positions",
+        "Matelas mousse mémoire 75 mm, étanche et anti-statique",
+        "Batterie rechargeable pour 50+ opérations",
+        "Contrôle filaire avec bouton d’arrêt d’urgence"
+      ]
+    },
     "id": 29,
+    "image": "../assets/products/saikang/A2000.jpg"
+  },
+  {
+    "name": "Table de chirurgie A501",
+    "short_description": "Table hydraulique avec rotation 180° et commande double",
+    "full_description": "Cette table A501 propose un système hydraulique performant avec rotation horizontale 180°, commande double, batterie de secours intégrée et surface résistante.\nAdaptée aux interventions exigeantes, elle assure confort et sécurité grâce à son cadre en acier inoxydable et ses multiples réglages.",
+    "category": "Salle d'opération",
+    "subcategory": "table de chirurgie",
+    "brand": {
+      "name": "Saikang",
+      "description": ""
+    },
+    "technical_specs": {
+      "Dimensions": "2125 x 550 x 600-950 mm",
+      "Inclinaisons Trendelenburg / Reverse": "15-20°",
+      "Inclinaisons latérales": "15°",
+      "Glissement horizontal": "320 mm",
+      "Rotation horizontale": "180°",
+      "other": [
+        "Réglages plaques dos (89°/35°), tête (55°/90°), jambes",
+        "Batterie secours intégrée",
+        "Accessoires complets, matelas"
+      ]
+    },
+    "id": 30
+  },
+  {
     "name": "Table de chirurgie A2000",
-    "description": "Cette table électrique compacte conçue pour une utilisation polyvalente avec un cadre solide en acier inoxydable, une charge maximale de 150 kg, et un matelas amovible. Idéale pour les interventions ne nécessitant pas de compatibilité C-arm",
-    "category": "surgery",
-    "sub_category": "operating_table",
-    "image": "../assets/products/saikang/A2000.jpg",
+    "short_description": "Table électrique compacte pour usage polyvalent",
+    "full_description": "Cette table A2000 est conçue pour une utilisation polyvalente avec un cadre solide en acier inoxydable, charge maximale de 150 kg et matelas amovible.\nIdéale pour les interventions ne nécessitant pas de compatibilité C-arm.",
+    "category": "Salle d'opération",
+    "subcategory": "table de chirurgie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2000 x 480 x 680-930 mm\nInclinaisons Trendelenburg / Reverse: 18-20°\nInclinaisons latérales: 15°\nRéglages plaques dos (45°/15°), tête (45°/90°), jambes\nCharge maximale: 150 kg\nPas compatible rayons X ni C-arm\nBatterie intégrée pour 50-80 cycles"
-  },
-  {
-    "id": 30,
-    "name": "Table de chirurgie A100",
-    "description": "Cette table offre les fonctionnalités essentielles d’une table de chirurgie électrique avec réglages manuels et électriques basiques, adaptée aux besoins généraux en bloc opératoire.",
-    "category": "surgery",
-    "sub_category": "operating_table",
-    "brand": {
-      "name": "Saikang",
-      "description": ""
+    "technical_specs": {
+      "Dimensions": "2000 x 480 x 680-930 mm",
+      "Inclinaisons Trendelenburg / Reverse": "18-20°",
+      "Inclinaisons latérales": "15°",
+      "Charge maximale": "150 kg",
+      "other": [
+        "Réglages plaques dos (45°/15°), tête (45°/90°), jambes",
+        "Pas compatible rayons X ni C-arm",
+        "Batterie intégrée pour 50-80 cycles"
+      ]
     },
-    "technical_specs": "Dimensions: 2070 x 550 x 700-1000 mm\nRéglages plaque dos (70°/15°), tête (30°/90°), jambes\nInclinaisons Trendelenburg / Reverse: 25° / 25°\nInclinaisons latérales: 15° gauche/droite\nGlissement horizontal: 300 mm (compatible C-arm)\nMatelas mousse polyuréthane démontable\nCharge maximale: environ 250-300 kg\nCadre inox 304,"
-  },
-  {
     "id": 31,
-    "name": "Chariot brancard SKB037(A)",
-    "description": "Brancard patient robuste avec structure en acier inoxydable poli, matelas ignifugé de 4 cm d’épaisseur, dossier réglable, roulettes silencieuses avec frein universel et porte-bouteille d’oxygène.",
-    "category": "medical_furniture",
-    "sub_category": "stretcher",
-    "image": "../assets/products/saikang/patient_trolley/SKB037(A).jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB037(A).jpg"
+  },
+  {
+    "name": "Table de chirurgie A100",
+    "short_description": "Table de chirurgie électrique avec réglages manuels et électriques basiques",
+    "full_description": "Cette table A100 offre les fonctionnalités essentielles d’une table de chirurgie électrique avec réglages manuels et électriques basiques.\nAdaptée aux besoins généraux en bloc opératoire.",
+    "category": "Salle d'opération",
+    "subcategory": "table de chirurgie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1960 x 600 x 810 mm\nMatelas mousse ignifugée 4 cm\nRoulettes 5\" silencieuses avec frein\nCharge maximale: 200 kg\nDossier réglable (détails selon version)\nPorte-bouteille oxygène"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "2070 x 550 x 700-1000 mm",
+      "Inclinaisons Trendelenburg / Reverse": "25° / 25°",
+      "Inclinaisons latérales": "15° gauche/droite",
+      "Glissement horizontal": "300 mm (compatible C-arm)",
+      "Charge maximale": "environ 250-300 kg",
+      "other": [
+        "Réglages plaque dos (70°/15°), tête (30°/90°), jambes",
+        "Matelas mousse polyuréthane démontable",
+        "Cadre inox 304,"
+      ]
+    },
     "id": 32,
-    "name": "Chariot brancard SKB037(B)",
-    "description": "Chariot brancard robuste avec structure en acier inoxydable poli miroir, matelas épais ignifugé et dossier réglable jusqu’à 75°. Équipé de roulettes silencieuses avec frein universel, porte-bouteille d’oxygène, porte-seringues réglable et panier à déchets. Conçu pour un transport patient sûr et confortable.",
-    "category": "medical_furniture",
-    "sub_category": "stretcher",
-    "image": "../assets/products/saikang/patient_trolley/SKB037(B).jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB037(B).jpg"
+  },
+  {
+    "name": "Chariot brancard SKB037(A)",
+    "short_description": "Brancard patient robuste avec matelas ignifugé",
+    "full_description": "Brancard patient robuste avec structure en acier inoxydable poli, matelas ignifugé de 4 cm, dossier réglable, roulettes silencieuses avec frein universel et porte-bouteille d’oxygène.",
+    "category": "Mobilier medical",
+    "subcategory": "Brancardage",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1960 x 600 x 750 mm\nDossier ajustable: 0-75°\nMatelas mousse haute densité 4 cm, ignifugé\nRoulettes 5\" silencieuses avec frein\nCharge maximale: 200 kg\nPorte-seringues, porte-bouteille d’oxygène, panier à déchets inclus"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "1960 x 600 x 810 mm",
+      "Charge maximale": "200 kg",
+      "other": [
+        "Matelas mousse ignifugée 4 cm",
+        "Roulettes 5\" silencieuses avec frein",
+        "Dossier réglable (détails selon version)",
+        "Porte-bouteille oxygène"
+      ]
+    },
     "id": 33,
-    "name": "Chariot brancard SKB037(C)",
-    "description": "Brancard patient avec réglages manuels multiples grâce à trois manivelles, dossier réglable à 75° et repose-genoux à 35°. Equipé de roulettes silencieuses avec frein central, barrières latérales rabattables et matelas confortable. Structure en acier inoxydable haute qualité.",
-    "category": "medical_furniture",
-    "sub_category": "stretcher",
-    "image": "../assets/products/saikang/patient_trolley/SKB037(C).jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB037(C).jpg"
+  },
+  {
+    "name": "Chariot brancard SKB037(B)",
+    "short_description": "Chariot brancard robuste avec matelas épais et dossier réglable",
+    "full_description": "Chariot brancard robuste avec structure en acier inoxydable poli miroir, matelas épais ignifugé et dossier réglable jusqu’à 75°.\nÉquipé de roulettes silencieuses, porte-bouteille d’oxygène, porte-seringues réglable et panier à déchets.\nConçu pour un transport patient sûr et confortable.",
+    "category": "Mobilier medical",
+    "subcategory": "Brancardage",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1970 x 760 x 620-900 mm\nDossier réglable: 0-75°\nRepose-genoux: 0-35°\nCharge maximale: 200 kg\nRoulettes 5\" silencieuses avec frein central\nBarrières latérales en alliage d’aluminium rabattables\nPorte-bouteille oxygène"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "1960 x 600 x 750 mm",
+      "Dossier ajustable": "0-75°",
+      "Charge maximale": "200 kg",
+      "other": [
+        "Matelas mousse haute densité 4 cm, ignifugé",
+        "Roulettes 5\" silencieuses avec frein",
+        "Porte-seringues, porte-bouteille d’oxygène, panier à déchets inclus"
+      ]
+    },
     "id": 34,
-    "name": "Chariot brancard SKB038-2",
-    "description": "Chariot patient avec système de manivelle, dossier à ressort pneumatique réglable, barrières latérales en plastique et roulettes 5\" avec frein. Hauteur ajustable entre 620 et 900 mm pour un confort ergonomique lors du transport.",
-    "category": "medical_furniture",
-    "sub_category": "stretcher",
-    "image": "../assets/products/saikang/patient_trolley/SKB038-2.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB038-2.jpg"
+  },
+  {
+    "name": "Chariot brancard SKB037(C)",
+    "short_description": "Brancard patient avec réglages manuels multiples",
+    "full_description": "Brancard patient avec trois manivelles, dossier réglable à 75° et repose-genoux à 35°.\nEquipé de roulettes silencieuses avec frein central, barrières latérales rabattables et matelas confortable.\nStructure en acier inoxydable haute qualité.",
+    "category": "Mobilier medical",
+    "subcategory": "Brancardage",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1900 x 700 mm\nHauteur ajustable: 620-900 mm\nDossier réglable: 0-75°\nBarrières latérales en plastique\nRoulettes 5\" avec frein\nMatelas inclus"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "1970 x 760 x 620-900 mm",
+      "Dossier réglable": "0-75°",
+      "Repose-genoux": "0-35°",
+      "Charge maximale": "200 kg",
+      "other": [
+        "Roulettes 5\" silencieuses avec frein central",
+        "Barrières latérales en alliage d’aluminium rabattables",
+        "Porte-bouteille oxygène"
+      ]
+    },
     "id": 35,
-    "name": "Chariot brancard SKB041-2",
-    "description": "Chariot de transport patient hydraulique avec double pompe pour réglage de la hauteur et inclinaison, dossier ajustable à 75° et barre latérale en ABS. Equipé de roulettes 8\" avec frein centralisé et directionnel, porte-seringues et porte-bouteille d’oxygène.",
-    "category": "medical_furniture",
-    "sub_category": "stretcher",
-    "image": "../assets/products/saikang/patient_trolley/SKB041-2.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-2.jpg"
+  },
+  {
+    "name": "Chariot brancard SKB038-2",
+    "short_description": "Chariot patient avec dossier pneumatique et barrières latérales",
+    "full_description": "Chariot patient avec système de manivelle, dossier à ressort pneumatique réglable, barrières latérales en plastique et roulettes 5\\ avec frein.\nHauteur ajustable entre 620 et 900 mm pour un confort ergonomique lors du transport.",
+    "category": "Mobilier medical",
+    "subcategory": "Brancardage",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1910 x 640 mm\nHauteur ajustable: 650-960 mm (plateforme)\nDossier réglable: 0-75° ±10°\nTrendelenburg et Reverse: 0-15°\nRoulettes 8\" avec frein central et directionnel\nCharge maximale: 200 kg\nBarres latérales ABS rabattables\nPorte-seringues, porte-bouteille oxygène inclus"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "1900 x 700 mm",
+      "Hauteur ajustable": "620-900 mm",
+      "Dossier réglable": "0-75°",
+      "other": [
+        "Barrières latérales en plastique",
+        "Roulettes 5\" avec frein",
+        "Matelas inclus"
+      ]
+    },
     "id": 36,
-    "name": "Chariot brancard SKB041-3S",
-    "description": "Chariot hydraulique avec pompe américaine pour réglage de hauteur, dossier à ressort pneumatique, barrières latérales en acier inoxydable, et matelas imperméable de 60 mm d’épaisseur. Equipé d’accessoires complets pour un transport patient sûr.",
-    "category": "medical_furniture",
-    "sub_category": "stretcher",
-    "image": "../assets/products/saikang/patient_trolley/SKB041-3S.png",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-3S.png"
+  },
+  {
+    "name": "Chariot brancard SKB041-2",
+    "short_description": "Chariot hydraulique avec double pompe pour réglage de hauteur",
+    "full_description": "Chariot de transport patient hydraulique avec double pompe pour réglage de la hauteur et inclinaison, dossier ajustable à 75° et barre latérale en ABS.\nEquipé de roulettes 8\\ avec frein centralisé et directionnel",
+    "category": "Mobilier medical",
+    "subcategory": "Brancardage",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2150 x 790 mm\nHauteur ajustable: 635-895 mm\nDossier réglable: 0-60° ±10°\nRoulettes 5\" avec frein\nCharge maximale: non spécifiée\nMatelas imperméable 60 mm\nBarrières inox rabattables\nPompe hydraulique, porte-bouteille oxygène, bassine inox"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "1910 x 640 mm",
+      "Hauteur ajustable": "650-960 mm (plateforme)",
+      "Dossier réglable": "0-75° ±10°",
+      "Trendelenburg et Reverse": "0-15°",
+      "Charge maximale": "200 kg",
+      "other": [
+        "Roulettes 8\" avec frein central et directionnel",
+        "Barres latérales ABS rabattables",
+        "Porte-seringues, porte-bouteille oxygène inclus"
+      ]
+    },
     "id": 37,
-    "name": "Chariot brancard SKB041-6",
-    "description": "Chariot patient avec système de manivelle, dossier à ressort pneumatique, barrières latérales plastiques, roulettes 6\" avec verrouillage central et directionnel. Hauteur ajustable entre 510 et 850 mm pour un usage polyvalent.",
-    "category": "medical_furniture",
-    "sub_category": "stretcher",
-    "image": "../assets/products/saikang/patient_trolley/SKB041-6.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-6.jpg"
+  },
+  {
+    "name": "Chariot brancard SKB041-3S",
+    "short_description": "Chariot hydraulique avec matelas épais et accessoires complets",
+    "full_description": "Chariot hydraulique avec pompe américaine pour réglage de hauteur, dossier à ressort pneumatique, barrières latérales en acier inoxydable et matelas imperméable de 60 mm.\nEquipé d’accessoires complets pour un transport patient sûr.",
+    "category": "Mobilier medical",
+    "subcategory": "Brancardage",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1930 x 660 mm\nHauteur ajustable: 510-850 mm\nDossier réglable: 0-70°\nRoulettes 6\" avec frein central\nCharge maximale: non spécifiée\nBarrières latérales plastiques\nPorte-seringues, porte-bouteille oxygène,"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "2150 x 790 mm",
+      "Hauteur ajustable": "635-895 mm",
+      "Dossier réglable": "0-60° ±10°",
+      "Charge maximale": "non spécifiée",
+      "other": [
+        "Roulettes 5\" avec frein",
+        "Matelas imperméable 60 mm",
+        "Barrières inox rabattables",
+        "Pompe hydraulique, porte-bouteille oxygène, bassine inox"
+      ]
+    },
     "id": 38,
-    "name": "Chariot brancard SKB041-7",
-    "description": "Chariot multi-fonctions ergonomique adapté au transport et imagerie corps entier avec support cassette rayons X intégré. Dossier réglable à 85°, repose-jambes à 50°, et inclinaisons Trendelenburg et reverse jusqu’à 15°. Equipé de roulettes 8\" avec frein central et verrouillage directionnel.",
-    "category": "medical_furniture",
-    "sub_category": "stretcher",
-    "image": "../assets/products/saikang/patient_trolley/SKB041-7.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-7.jpg"
+  },
+  {
+    "name": "Chariot brancard SKB041-6",
+    "short_description": "Chariot patient polyvalent avec barrières et roulettes verrouillables",
+    "full_description": "Chariot patient avec système de manivelle, dossier à ressort pneumatique, barrières latérales plastiques, roulettes 6\\ avec verrouillage central et directionnel.\nHauteur ajustable entre 510 et 850 mm pour un usage polyvalent.",
+    "category": "Mobilier medical",
+    "subcategory": "Brancardage",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2200 x 770 mm\nHauteur ajustable: 600-910 mm\nDossier réglable: 0-85°\nRepose-jambes: 0-50°\nTrendelenburg / Reverse: 0-15°\nCharge statique: 250 kg\nMatelas PU 80 mm imperméable\nRoulettes 8\" avec frein central et verrouillage directionnel\nSupport cassette rayons X, barrières rabattables\nAccessoires: porte-oxygène, porte-papier, porte-moniteur (optionnels)"
-  },
-  {
+    "technical_specs": {
+      "Dimensions": "1930 x 660 mm",
+      "Hauteur ajustable": "510-850 mm",
+      "Dossier réglable": "0-70°",
+      "Charge maximale": "non spécifiée",
+      "other": [
+        "Roulettes 6\" avec frein central",
+        "Barrières latérales plastiques",
+        "Porte-seringues, porte-bouteille oxygène,"
+      ]
+    },
     "id": 39,
+    "image": "../assets/products/saikang/patient_trolley/SKB041-10.jpg"
+  },
+  {
+    "name": "Chariot brancard SKB041-7",
+    "short_description": "Chariot multi-fonctions ergonomique pour transport et imagerie",
+    "full_description": "Chariot multi-fonctions ergonomique adapté au transport et imagerie corps entier avec support cassette rayons X intégré.\nDossier réglable à 85°, repose-jambes à 50° et inclinaisons Trendelenburg et reverse jusqu’à 15°.\nRoulettes 8\\ avec frein central et verrouillage directionnel.",
+    "category": "Mobilier medical",
+    "subcategory": "Brancardage",
+    "brand": {
+      "name": "Saikang",
+      "description": ""
+    },
+    "technical_specs": {
+      "Dimensions": "2200 x 770 mm",
+      "Hauteur ajustable": "600-910 mm",
+      "Dossier réglable": "0-85°",
+      "Repose-jambes": "0-50°",
+      "Trendelenburg / Reverse": "0-15°",
+      "Charge statique": "250 kg",
+      "Accessoires": "porte-oxygène, porte-papier, porte-moniteur (optionnels)",
+      "other": [
+        "Matelas PU 80 mm imperméable",
+        "Roulettes 8\" avec frein central et verrouillage directionnel",
+        "Support cassette rayons X, barrières rabattables"
+      ]
+    },
+    "id": 40
+  },
+  {
     "name": "Chariot brancard SKB041-10",
-    "description": "Chariot de transport patient avec système de manivelle, dossier réglable à 75°, repose-genoux à 40°, et inclinaisons Trendelenburg jusqu’à 18°. Roulettes 8\" avec verrouillage central, pompe hydraulique américaine double et accessoires complets.",
-    "category": "medical_furniture",
-    "sub_category": "stretcher",
-    "image": "../assets/products/saikang/patient_trolley/SKB041-10.jpg",
+    "short_description": "Chariot patient avec système de manivelle et inclinaisons Trendelenburg",
+    "full_description": "Chariot de transport patient avec système de manivelle, dossier réglable à 75°, repose-genoux à 40° et inclinaisons Trendelenburg jusqu’à 18°.\nRoulettes 8\\ avec verrouillage central",
+    "category": "Mobilier medical",
+    "subcategory": "Brancardage",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 2150 x 830 mm\nHauteur ajustable: 560-890 mm\nDossier réglable: 0-75°\nRepose-genoux: 0-40°\nTrendelenburg / Reverse: 0-18°\nCharge maximale: non spécifiée\nMatelas imperméable, barrières latérales plastiques\nRoulettes 8\" avec frein central\nPompe hydraulique double, porte-oxygène"
+    "technical_specs": {
+      "Dimensions": "2150 x 830 mm",
+      "Hauteur ajustable": "560-890 mm",
+      "Dossier réglable": "0-75°",
+      "Repose-genoux": "0-40°",
+      "Trendelenburg / Reverse": "0-18°",
+      "Charge maximale": "non spécifiée",
+      "other": [
+        "Matelas imperméable, barrières latérales plastiques",
+        "Roulettes 8\" avec frein central",
+        "Pompe hydraulique double, porte-oxygène"
+      ]
+    },
+    "id": 41
   },
   {
-    "id": 40,
     "name": "Lit manuel 1 fonction",
-    "description": "Lit manuel robuste avec structure en acier inoxydable, doté d’un dossier réglable jusqu’à 75°, matelas confortable et roulettes 5” silencieuses. Equipé de barrières latérales pliables, porte-perfusion et crochets de drainage pour un usage polyvalent en milieu hospitalier.",
-    "category": "medical_furniture",
-    "sub_category": "bedding",
+    "short_description": "Lit manuel avec dossier réglable et barrières pliables",
+    "full_description": "Lit manuel robuste avec structure en acier inoxydable, dossier réglable jusqu’à 75°, matelas confortable et roulettes 5” silencieuses.\nEquipé de barrières latérales pliables, porte-perfusion et crochets de drainage pour usage polyvalent en milieu hospitalier.",
+    "category": "Mobilier medical",
+    "subcategory": "Literie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions extérieures: 2110 x 960 x 500 mm\nPlateforme matelas: 1890 x 830 mm\nCharge maximale: 200 kg\nDossier réglable: 0-75° (±10°)\nAccessoires: manivelle manuelle, barrières latérales aluminium pliables, porte-perfusion, crochets drainage"
+    "technical_specs": {
+      "Dimensions extérieures": "2110 x 960 x 500 mm",
+      "Plateforme matelas": "1890 x 830 mm",
+      "Charge maximale": "200 kg",
+      "Dossier réglable": "0-75° (±10°)",
+      "Accessoires": "manivelle manuelle, barrières latérales aluminium pliables, porte-perfusion, crochets drainage",
+      "other": []
+    },
+    "id": 42
   },
   {
-    "id": 41,
     "name": "Lit obstétrique électrique",
-    "description": "Lit obstétrique électrique avec réglages multiples incluant hauteur, dossier, siège et repose-jambes. Equipé d’un système de contrôle à pédale et main, matelas étanche et accessoires spécifiques pour accouchement.",
-    "category": "medical_furniture",
-    "sub_category": "obstetric_beds",
+    "short_description": "Lit obstétrique électrique avec réglages multiples et accessoires",
+    "full_description": "Lit obstétrique électrique avec réglages multiples incluant hauteur, dossier, siège et repose-jambes.\nEquipé d’un système de contrôle à pédale et main, matelas étanche et accessoires spécifiques pour accouchement.",
+    "category": "Mobilier medical",
+    "subcategory": "Neonatolgie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1950 x 660 mm\nHauteur réglable: 680-940 mm\nRéglages siège: 0-20° (haut), 0-9° (bas)\nDossier réglable: 0-45° (haut), 0-10° (bas)\nRepose-jambes: abduction 0-90°\nCharge maximale: ≤300 kg\nAccessoires: supports bras, étriers, table auxiliaire, bassin inox"
+    "technical_specs": {
+      "Dimensions": "1950 x 660 mm",
+      "Hauteur réglable": "680-940 mm",
+      "Réglages siège": "0-20° (haut), 0-9° (bas)",
+      "Dossier réglable": "0-45° (haut), 0-10° (bas)",
+      "Repose-jambes": "abduction 0-90°",
+      "Charge maximale": "≤300 kg",
+      "Accessoires": "supports bras, étriers, table auxiliaire, bassin inox",
+      "other": []
+    },
+    "id": 43
   },
   {
-    "id": 42,
     "name": "Guéridon",
-    "description": "Chariot médical en acier inoxydable robuste avec surfaces faciles à nettoyer, roulettes multidirectionnelles silencieuses, et plusieurs plateaux pour rangement d’instruments.",
-    "category": "medical_furniture",
-    "sub_category": "medical_cart",
+    "short_description": "Chariot médical en acier inoxydable avec plateaux de rangement",
+    "full_description": "Chariot médical en acier inoxydable robuste avec surfaces faciles à nettoyer, roulettes multidirectionnelles silencieuses et plusieurs plateaux pour rangement d’instruments.",
+    "category": "Mobilier medical",
+    "subcategory": "Chariot",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Structure acier inoxydable\nRoulettes multidirectionnelles silencieuses\nPlusieurs plateaux de rangement\nUtilisation polyvalente en bloc opératoire et salle de soins"
+    "technical_specs": {
+      "other": [
+        "Structure acier inoxydable",
+        "Roulettes multidirectionnelles silencieuses",
+        "Plusieurs plateaux de rangement",
+        "Utilisation polyvalente en bloc opératoire et salle de soins"
+      ]
+    },
+    "id": 44
   },
   {
-    "id": 43,
     "name": "Paravent",
-    "description": "Paravent médical en acier inoxydable avec cadre robuste, monté sur roulettes silencieuses de 2 pouces pour un déplacement aisé et sans bruit.",
-    "category": "medical_furniture",
-    "sub_category": "exam_room",
+    "short_description": "Paravent médical mobile sur roulettes silencieuses",
+    "full_description": "Paravent médical en acier inoxydable avec cadre robuste, monté sur roulettes silencieuses de 2 pouces pour un déplacement aisé et sans bruit.",
+    "category": "Mobilier medical",
+    "subcategory": "salle d'examen",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1000 x 1870 mm\nCadre en acier inoxydable\nRoulettes silencieuses Ø2 pouces"
+    "technical_specs": {
+      "Dimensions": "1000 x 1870 mm",
+      "other": [
+        "Cadre en acier inoxydable",
+        "Roulettes silencieuses Ø2 pouces"
+      ]
+    },
+    "id": 45
   },
   {
-    "id": 44,
     "name": "Matelas",
-    "description": "Matelas hospitalier en mousse polyuréthane haute densité avec housse en TPU imperméable et respirante, facile à retirer et nettoyer. Disponible en plusieurs épaisseurs et sections.",
-    "category": "medical_furniture",
-    "sub_category": "bedding",
+    "short_description": "Matelas hospitalier en mousse haute densité avec housse imperméable",
+    "full_description": "Matelas hospitalier en mousse polyuréthane haute densité avec housse en TPU imperméable et respirante, facile à retirer et nettoyer.\nDisponible en plusieurs épaisseurs et sections.",
+    "category": "Mobilier medical",
+    "subcategory": "Literie",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1925 x 900 mm\nEpaisseur ajustable 8-20 cm\nMousse polyuréthane densité 28 kg/m³\nHousse TPU imperméable, respirante, lavable\nDisponible en 1, 2 ou 4 sections"
+    "technical_specs": {
+      "Dimensions": "1925 x 900 mm",
+      "other": [
+        "Epaisseur ajustable 8-20 cm",
+        "Mousse polyuréthane densité 28 kg/m³",
+        "Housse TPU imperméable, respirante, lavable",
+        "Disponible en 1, 2 ou 4 sections"
+      ]
+    },
+    "id": 46
   },
   {
-    "id": 45,
     "name": "Chariot à pansement",
-    "description": "Chariot médical multifonction en ABS et acier inoxydable, compact avec tiroir à rails silencieux, plateau avec rebords inox, et roulettes médicales à frein.",
-    "category": "medical_furniture",
-    "sub_category": "medical_cart",
+    "short_description": "Chariot médical multifonction compact avec tiroirs",
+    "full_description": "Chariot médical multifonction en ABS et acier inoxydable, compact avec tiroir à rails silencieux, plateau avec rebords inox et roulettes médicales à frein.",
+    "category": "Mobilier medical",
+    "subcategory": "Chariot",
     "brand": {
       "name": "Saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 730 x 480 x 900 mm\nRoulettes 3” avec frein (4 pcs)\nTiroir avec séparateurs plastique\nPlateau ABS avec rebords inox\nBassin inox et seau plastique inclus"
+    "technical_specs": {
+      "Dimensions": "730 x 480 x 900 mm",
+      "other": [
+        "Roulettes 3” avec frein (4 pcs)",
+        "Tiroir avec séparateurs plastique",
+        "Plateau ABS avec rebords inox",
+        "Bassin inox et seau plastique inclus"
+      ]
+    },
+    "id": 47
   },
   {
-    "id": 46,
     "name": "Divan d'examen",
-    "description": "Table d’examen robuste avec réglage dossier jusqu’à 65°, matelas anti-feu épais et cadre en acier peint résistant. Conçue pour un usage polyvalent en consultation et diagnostic.",
-    "category": "medical_furniture",
-    "sub_category": "exam_room",
+    "short_description": "Table d’examen robuste avec réglage du dossier",
+    "full_description": "Table d’examen robuste avec réglage du dossier jusqu’à 65°, matelas anti-feu épais et cadre en acier peint résistant.\nConçue pour un usage polyvalent en consultation et diagnostic.",
+    "category": "Mobilier medical",
+    "subcategory": "salle d'examen",
     "brand": {
-      "name": "Saikang",
+      "name": "saikang",
       "description": ""
     },
-    "technical_specs": "Dimensions: 1900 x 600 x 680 mm\nDossier réglable: 0-65° (±10°)\nCapacité de charge: 175 kg\nMousse anti-feu 6 cm, densité 30 kg/m³\nCadre acier peint, résistant et durable"
+    "technical_specs": {
+      "Dimensions": "1900 x 600 x 680 mm",
+      "Dossier réglable": "0-65° (±10°)",
+      "Capacité de charge": "175 kg",
+      "other": [
+        "Mousse anti-feu 6 cm, densité 30 kg/m³",
+        "Cadre acier peint, résistant et durable"
+      ]
+    },
+    "id": 48
+  },
+  {
+    "name": "",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 49
+  },
+  {
+    "name": "",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 50
+  },
+  {
+    "name": "",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 51
+  },
+  {
+    "name": "Table de chirurgie A501",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 52
+  },
+  {
+    "name": "Table de chirurgie A2000",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 53
+  },
+  {
+    "name": "Table de chirurgie A100",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 54
+  },
+  {
+    "name": "Chariot brancard SKB037(A)",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 55
+  },
+  {
+    "name": "Chariot brancard SKB037(B)",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 56
+  },
+  {
+    "name": "Chariot brancard SKB037(C)",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 57
+  },
+  {
+    "name": "Chariot brancard SKB038-2",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 58
+  },
+  {
+    "name": "Chariot brancard SKB041-2",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 59
+  },
+  {
+    "name": "Chariot brancard SKB041-3S",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 60
+  },
+  {
+    "name": "Chariot brancard SKB041-6",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 61
+  },
+  {
+    "name": "Chariot brancard SKB041-7",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 62
+  },
+  {
+    "name": "Chariot brancard SKB041-10",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 63
+  },
+  {
+    "name": "Lit manuel 1 fonction",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 64
+  },
+  {
+    "name": "Lit obstétrique électrique",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 65
+  },
+  {
+    "name": "Guéridon",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 66
+  },
+  {
+    "name": "Paravent",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 67
+  },
+  {
+    "name": "Matelas",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 68
+  },
+  {
+    "name": "Chariot à pansement",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 69
+  },
+  {
+    "name": "Divan d'examen",
+    "short_description": "",
+    "full_description": "",
+    "category": "",
+    "subcategory": "",
+    "brand": {
+      "name": "",
+      "description": ""
+    },
+    "technical_specs": {
+      "other": [
+        ""
+      ]
+    },
+    "id": 70
   }
 ]

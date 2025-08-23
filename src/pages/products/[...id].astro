@@ -31,46 +31,46 @@ if (!product) {
   throw new Error(`Product not found: ${params.id}`);
 }
 
-let specifications = [
-  { label: "Modèle", value: "Phoenix Blu Plus⁺ 18 L" },
-  { label: "Classe", value: "Classe B – conforme EN 13060" },
-  { label: "Volume de la chambre", value: "18 L (Ø 255 × 360 mm)" },
-  { label: "Dimensions externes", value: "462 × 445 × 600 mm (L × H × P)" },
-  { label: "Poids net", value: "54 kg" },
-  { label: "Alimentation", value: "220–230 V AC, 50/60 Hz" },
-  { label: "Consommation électrique", value: "1800 W" },
-  { label: "Plage de température de stérilisation", value: "121 °C / 134 °C" },
-  { label: "Pression max. de service", value: "2.5 bar" },
-  { label: "Pompe à vide", value: "Double tête, vide fractionné (3 phases)" },
-  {
-    label: "Générateur de vapeur",
-    value: "Externe, ultra-rapide, anti-calcaire",
-  },
-  { label: "Réservoir eau distillée", value: "4.6 L" },
-  { label: "Réservoir eaux usées", value: "5.0 L" },
-  { label: "Consommation d’eau par cycle", value: "0.3 – 0.6 L" },
-  { label: "Affichage", value: "Écran LCD graphique multilingue" },
-  {
-    label: "Connectivité",
-    value: "USB (clé incluse), imprimante thermique (option)",
-  },
-  {
-    label: "Cycles",
-    value: "Universel, Prion, S (non emballé), Test Vide, Bowie-Dick, Helix",
-  },
-  { label: "Durée du cycle le plus rapide", value: "18 minutes (Classe B)" },
-  {
-    label: "Capacité de charge",
-    value: "Jusqu'à 5 kg non emballé / 2.5 kg emballé",
-  },
-  { label: "Matériau de la chambre", value: "Acier inoxydable" },
-  {
-    label: "Système de filtration",
-    value: "Filtre bactérien + séparateur air/eau",
-  },
-  { label: "Mode veille", value: "Chambre maintenue chaude entre les cycles" },
-  { label: "Capteur de conductivité", value: "Alarme si >15 µS" },
-];
+// let specifications = [
+//   { label: "Modèle", value: "Phoenix Blu Plus⁺ 18 L" },
+//   { label: "Classe", value: "Classe B – conforme EN 13060" },
+//   { label: "Volume de la chambre", value: "18 L (Ø 255 × 360 mm)" },
+//   { label: "Dimensions externes", value: "462 × 445 × 600 mm (L × H × P)" },
+//   { label: "Poids net", value: "54 kg" },
+//   { label: "Alimentation", value: "220–230 V AC, 50/60 Hz" },
+//   { label: "Consommation électrique", value: "1800 W" },
+//   { label: "Plage de température de stérilisation", value: "121 °C / 134 °C" },
+//   { label: "Pression max. de service", value: "2.5 bar" },
+//   { label: "Pompe à vide", value: "Double tête, vide fractionné (3 phases)" },
+//   {
+//     label: "Générateur de vapeur",
+//     value: "Externe, ultra-rapide, anti-calcaire",
+//   },
+//   { label: "Réservoir eau distillée", value: "4.6 L" },
+//   { label: "Réservoir eaux usées", value: "5.0 L" },
+//   { label: "Consommation d’eau par cycle", value: "0.3 – 0.6 L" },
+//   { label: "Affichage", value: "Écran LCD graphique multilingue" },
+//   {
+//     label: "Connectivité",
+//     value: "USB (clé incluse), imprimante thermique (option)",
+//   },
+//   {
+//     label: "Cycles",
+//     value: "Universel, Prion, S (non emballé), Test Vide, Bowie-Dick, Helix",
+//   },
+//   { label: "Durée du cycle le plus rapide", value: "18 minutes (Classe B)" },
+//   {
+//     label: "Capacité de charge",
+//     value: "Jusqu'à 5 kg non emballé / 2.5 kg emballé",
+//   },
+//   { label: "Matériau de la chambre", value: "Acier inoxydable" },
+//   {
+//     label: "Système de filtration",
+//     value: "Filtre bactérien + séparateur air/eau",
+//   },
+//   { label: "Mode veille", value: "Chambre maintenue chaude entre les cycles" },
+//   { label: "Capteur de conductivité", value: "Alarme si >15 µS" },
+// ];
 
 const certifications = [
   "CE 93/42/EEC (Dispositif médical)",
@@ -84,45 +84,6 @@ const certifications = [
 
 // TODO 
 const relatedProducts = products.filter(p => (p.data.category == product.data.category)).slice(0,3)
-
-specifications = product.data.technical_specs
-  .split('\n')
-  .map(line => line.trim())
-  .filter(line => line) // remove empty lines
-  .map(line => {
-    if (line.includes(":")) {
-      const [label, ...rest] = line.split(':');
-      // const value = rest.join(':').trim(); // handles any extra colons in value
-      return {
-        label: label.trim(),
-        value: rest[0].trim(),
-      };
-    } else {
-      return {
-        label: "Autres fonctionalités",
-        value: line
-      }
-    }
-  });
-
-console.log(specifications);
-specifications = (() => {
-  const features = specifications
-    .filter(item => item.label === 'Autres fonctionalités')
-    .map(item => item.value)
-    .join('\n'); // join with newline
-
-  if (features) {
-    return [
-      ...specifications.filter(item => item.label !== 'Autres fonctionalités'),
-      { label: 'Autres fonctionalités', value: features }
-    ];
-  } else {
-    return specifications
-  }
-})();
-// specifications.sort((a, b) => b.label.localeCompare(a.label));
-
 ---
 
 <Layout>
@@ -145,8 +106,11 @@ specifications = (() => {
             <h1 class="text-3xl font-bold text-gray-900 mb-2">
               {product.data.name}
             </h1>
-            <p class="text-xl text-gray-600">
-              {product.data.description}
+            <p class="text-xl text-gray-600 whitespace-pre-line">
+              {product.data.full_description}
+              <br>
+              <br>
+              {product.data.technical_specs["other"] ? product.data.technical_specs["other"].join("\n") : ""}
             </p>
           </div>
 
@@ -184,11 +148,21 @@ specifications = (() => {
                 <div class="pr-1 pl-2">
                   <Icon name="heroicons:document" />
                 </div>
-                Technical Specifications
+                Specifications techniques
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
-              {
+              {Object.entries(product.data.technical_specs).map(([label, value], index) => (
+                <div
+                  class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0"
+                >
+                  <span class="text-sm text-gray-600">{label}</span>
+                  <span class="text-sm font-medium text-gray-900 whitespace-pre-line">
+                    {Array.isArray(value) ? value.join("\n") : value}
+                  </span>
+                </div>
+              ))}
+              <!-- {
                 specifications.map((spec, index) => (
                   <div
                     key={index}
@@ -200,7 +174,7 @@ specifications = (() => {
                     </span>
                   </div>
                 ))
-              }
+              } -->
             </CardContent>
           </Card>          
         </div>

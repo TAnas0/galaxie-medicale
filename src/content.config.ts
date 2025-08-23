@@ -13,13 +13,15 @@ const products = defineCollection({
         image: image().optional(),
         images: z.array(z.string()).optional(),
         description: z.string().optional(),
+        short_description: z.string().optional(),
+        full_description: z.string().optional(),
         availability: z.string().optional(),
         brand: z.object({
             name: z.string().optional(),
             description: z.string().optional(),
         }).optional(),
         // tags: z.array(z.string()),
-        technical_specs: z.string().optional(),
+        technical_specs: z.record(z.union([z.string(), z.array(z.string())])).optional(),
     })
 });
 // const brands = defineCollection({ /* ... */ });
