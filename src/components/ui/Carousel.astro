@@ -4,8 +4,6 @@ const { images = [] } = Astro.props;
 ---
 
 <div
-  x-data="carouselComponent"
-  x-init="init"
   :data-images={JSON.stringify(images)}
   class="space-y-4"
 >
@@ -40,7 +38,7 @@ const { images = [] } = Astro.props;
 
   <!-- Thumbnails -->
   <div class="grid grid-cols-4 gap-2">
-    <template x-for="(image, index) in images" :key="index">
+    <template :key="index">
       <button
         @click="setImage(index)"
         :class="{

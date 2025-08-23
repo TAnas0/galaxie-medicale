@@ -13,42 +13,33 @@ let products = await getCollection('products');
   {
     products.map((product) => (
       <div
-        x-show={`activeCategory === 'all' || activeCategory === '${product.data.category}'`}
         class=""
       >
         <a href={`/galaxie-medicale/products/${product.id}`} class="block group transition-all duration-300 hover:scale-[1.015] h-full">
           <Card class="group flex flex-col rounded-md border border-gray-300 shadow-xl hover:shadow-3xl transition-all duration-300 ease-in-out overflow-hidden hover:scale-[1.01]">
-            <!-- Product Image -->
-            <div class="relative w-full aspect-[4/3] bg-muted-100 dark:bg-muted-800 h-full flex-3" x-data="{ loaded: false }">
-              <!-- Loading indicator -->
+            {/* Product Image */}
+            <div class="relative w-full aspect-[4/3] bg-muted-100 dark:bg-muted-800 h-full flex-3">
+              {/* Loading indicator */}
               <div
                 class="absolute inset-0 flex items-center justify-center animate-pulse bg-muted-300 dark:bg-muted-700"
-                x-show="!loaded"
-                x-init="$nextTick(() => {
-                  const img = $refs.img;
-                  if (img.complete && img.naturalWidth > 0) loaded = true;
-                })"
               >
                 <div class="loader absolute top-0 left-0"></div>
-                <!-- Optional Spinner -->
+                {/* Optional Spinner */}
                 {/* <svg class="w-6 h-6 text-muted-500 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
                 </svg> */}
               </div>
               <Image
-                x-ref="img"
                 src={product.data.image || "https://placehold.co/400x400"}
                 inferSize={true}
                 alt={product.data.name}
                 loading="lazy"
                 class="object-fit w-full h-full transition-opacity duration-700 ease-in-out"
-                x-bind:class="loaded ? 'opacity-100 font-normal' : 'opacity-0 font-[0] leading-[0]'"
-                x-on:load="loaded = true"
               />
             </div>
           
-            <!-- Product Info -->
+            {/* Product Info */}
             <div class="h-full flex-2">
               {(product.data.availability == "out_of_stock") && (
                 <div class="absolute top-2 right-2 bg-red-600/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
@@ -56,7 +47,7 @@ let products = await getCollection('products');
                 </div>
               )}
 
-              <!-- Overlay Info -->
+              {/* Overlay Info */}
               <div class="bottom-0 w-full bg-primary/80 backdrop-blur-sm text-white p-2 transition-opacity duration-300 group-hover:bg-primary h-full flex flex-col">
                 <h4 class="text-lg font-semibold pb-2">{product.data.name}</h4>
                 <p class="text-sm text-muted-600 dark:text-muted-400 line-clamp-3">

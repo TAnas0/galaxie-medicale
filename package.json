@@ -9,17 +9,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.4.8",
+    "@astrojs/react": "^4.3.0",
     "@fontsource-variable/manrope": "^5.2.6",
     "@fontsource/inter": "^5.2.5",
     "@sentry/astro": "^9.38.0",
     "@spotlightjs/astro": "^3.2.5",
     "@tailwindcss/vite": "^4.1.11",
-    "@types/alpinejs": "^3.13.11",
-    "alpinejs": "^3.14.9",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.7",
     "aos": "^2.3.4",
     "astro": "^5.8.2",
-    "free-astro-components": "^1.2.0"
+    "free-astro-components": "^1.2.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@fontsource/ibm-plex-sans": "^5.2.6",

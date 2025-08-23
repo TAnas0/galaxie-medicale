@@ -1,5 +1,4 @@
 <div class="px-2 sticky h-full self-start top-28">
-  <!-- Disponibilité -->
   <div class="pt-2 pb-4 ">
     <h3
       class="font-sans font-light text-lg mb-2 text-muted-800 dark:text-muted-100"
@@ -16,7 +15,6 @@
             type="radio"
             name="radio_availability"
             value="in_stock"
-            x-model="$parent.selectedAvailability"
             class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 border rounded-full absolute cursor-pointer w-full h-full checked:border-none"
           />
           <div
@@ -40,7 +38,6 @@
             type="radio"
             name="radio_availability"
             value="on_order"
-            x-model="$parent.selectedAvailability"
             class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 border rounded-full absolute cursor-pointer w-full h-full checked:border-none"
           />
           <div
@@ -64,7 +61,6 @@
             type="radio"
             name="radio_availability"
             value="out_of_stock"
-            x-model="$parent.selectedAvailability"
             class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 border rounded-full absolute cursor-pointer w-full h-full checked:border-none"
           />
           <div
@@ -82,7 +78,6 @@
     </div>
   </div>
 
-  <!-- Prix -->
   <div class="pt-2 pb-4 ">
     <h3
       class="font-sans font-light text-lg mb-2 text-muted-800 dark:text-muted-100"
@@ -158,60 +153,4 @@
       </div>
     </div>
   </div>
-
-  <!-- Professions
-  <div class="pt-2 pb-4 ">
-    <h3
-      class="font-sans font-light text-lg mb-2 text-muted-800 dark:text-muted-100"
-    >
-      Profession
-    </h3>
-    <div class="space-y-4">
-      <div class="flex items-center gap-3 cursor-pointer">
-        <div
-          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
-        >
-          <input
-            id="radio-4"
-            type="radio"
-            name="radio_type"
-            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 border rounded-full absolute cursor-pointer w-full h-full checked:border-none"
-            checked
-          />
-          <div
-            class="border-2 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none"
-          >
-          </div>
-        </div>
-        <label
-          for="radio-4"
-          class="ml-2 text-sm leading-4"
-        >
-          FDA
-        </label>
-      </div>
-      <div class="flex items-center gap-3 cursor-pointer">
-        <div
-          class="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative"
-        >
-          <input
-            id="radio-5"
-            type="radio"
-            name="radio_type"
-            class="peer appearance-none ring-offset-white dark:ring-offset-muted-900 border rounded-full absolute cursor-pointer w-full h-full checked:border-none"
-          />
-          <div
-            class="border-2 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none"
-          >
-          </div>
-        </div>
-        <label
-          for="radio-5"
-          class="ml-2 text-sm leading-4"
-        >
-          ISO
-        </label>
-      </div>
-    </div>
-  </div> -->
 </div>

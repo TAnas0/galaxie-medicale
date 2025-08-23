@@ -3,71 +3,36 @@ import Layout from "../layouts/Layout.astro";
 import Header1 from "../components/Header1.astro";
 import Footer from "../components/ui/Footer.astro";
 import "../styles/global.css";
-import Filters from "../components/catalog/Filters.astro";
-import Toolbar from "../components/catalog/Toolbar.astro";
-import Grid from "../components/catalog/Grid.astro";
+import ProductCatalog from "../components/catalog/ProductCatalog.jsx"
+import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
+
+let products = await getCollection('products');
+
+products = await Promise.all(
+  products.map(async (product) => {
+    if ("image" in product.data) {
+      const image = await getImage({
+        src: product.data.image,
+        width: 600,           // thumbnail width
+        format: 'webp',       // optimize to WebP
+      });
+      product.data.image = image
+      return product
+    }
+    else return product
+  })
+);
 ---
 
 <Layout>
   <Header1 />
 
   <div class="w-full max-w-7xl mx-auto" data-aos="fade" data-aos-duration="300">
-    <div id="catalog" x-data="catalogUIState()">
-      <div id="categories-toolbar" class="mt-27 sticky top-27 md:top-27 w-full z-50 transition-transform duration-1000 ease-in-out translate-y-0">
-        <Toolbar />
-      </div>
-
-      <!--Grid wrapper-->
-      <div class="py-6">
-        <div class="flex grid grid-cols-12 md:gap-12 pb-20">
-          <!--Filters-->
-          <div id="filters" class="sticky self-start top-40 lg:block col-span-4 lg:col-span-3 transition-transform duration-1000 ease-in-out">
-            <Filters />
-          </div>
-          <!--Content-->
-          <div class="col-span-8 lg:col-span-9">
-            <!--Subgrid-->
-            <Grid />
-          </div>
-        </div>
-      </div>
-    </div>
+    <ProductCatalog products={products} client:load />
   </div>
   <Footer />
 </Layout>
-
-<script type="module">
-  const validCategories = [
-    "all",
-    "medical_furniture",
-    "diagnostic_equipment",
-    "emergency",
-    "surgery",
-    "sterilization",
-    "medical_accessories",
-    // "hospital_equipment"
-  ];
-
-  // Get the query param from the URL
-  const params = new URLSearchParams(window.location.search);
-  const categoryFromURL = params.get("category");
-
-  // Default to 'all' if the value is invalid or missing
-  const initialCategory = validCategories.includes(categoryFromURL)
-    ? categoryFromURL
-    : "all";
-  
-    function catalogUIState() {
-      return {
-        activeCategory: initialCategory,
-        resetScroll() {
-          window.scrollTo({ top: 350, behavior: "smooth" });
-          return false;
-        },
-      };
-    }
-  window.catalogUIState = catalogUIState;
-</script>
 
 <script is:browser>
   const toolbar = document.getElementById("categories-toolbar");
