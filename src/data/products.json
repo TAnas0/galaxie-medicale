@@ -23,11 +23,15 @@
       "other": []
     },
     "id": 1,
-    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
     "images": [
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-plus-18-l/1.jpg",
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-plus-18-l/2.jpg",
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-plus-18-l/3.jpg"
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-PRINTER-18.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-18.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-AWF-18.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-PRINTER-18.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-PRINTER-18.png"
     ],
     "availability": "out_of_stock"
   },
@@ -55,15 +59,14 @@
       "other": []
     },
     "id": 2,
-    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12.jpg",
     "images": [
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-PRINTER-18.jpg",
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-18.jpg",
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-AWF-18.jpg",
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-PRINTER-18.jpg",
-      "/galaxie-medicale/catalog/img/autoclave-phoenix-blu-18-l/Phoenix-Blu-PRINTER-18.png"
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB (Aperta).jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12 (Aperta).jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12.jpg"
     ],
     "availability": "out_of_stock"
   },
@@ -91,15 +94,18 @@
       "other": []
     },
     "id": 3,
-    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-24.jpg",
     "images": [
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-PRINTER-18.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-18.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-AWF-18.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-PRINTER-18.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-PRINTER-18.png"
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-24--FRONT.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-24.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-24.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-AWF-24.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-PRINTER-24.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-24.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-AWF-24.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-PRINTER-24-FRONT.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-PRINTER-24.jpg"
+
     ],
     "availability": "in_stock"
   },
@@ -128,17 +134,11 @@
       "other": []
     },
     "id": 4,
-    "image": "../assets/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
     "images": [
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24--FRONT.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-24.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LCD-24.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LCD-AWF-24.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LCD-PRINTER-24.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LED-24.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LED-AWF-24.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LED-PRINTER-24-FRONT.jpg",
-      "/galaxie-medicale/catalog/products/sterilization/autoclaves/phoenix-blue-24-l/Phoenix-Blu-LED-PRINTER-24.jpg"
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/2.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/3.jpg"
     ],
     "availability": "in_stock"
   },
@@ -167,7 +167,14 @@
       "other": []
     },
     "id": 5,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
+    "images": [
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LED-Plus+-24.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LED-TOP-24.jpg"
+    ]
   },
   {
     "name": "Autoclave à vapeur AS44",
@@ -194,7 +201,7 @@
       ]
     },
     "id": 6,
-    "image": "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-as44/",
     "availability": "in_stock"
   },
   {

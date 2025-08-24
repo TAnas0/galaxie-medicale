@@ -11,7 +11,7 @@ const products = defineCollection({
         // category: z.enum(['A', 'B', 'C']),
         // image: z.string().optional(),
         image: image().optional(),
-        images: z.array(z.string()).optional(),
+        images: z.array(image()).optional(),
         description: z.string().optional(),
         short_description: z.string().optional(),
         full_description: z.string().optional(),

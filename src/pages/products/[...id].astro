@@ -3,29 +3,27 @@ import Layout from "../../layouts/Layout.astro";
 import "../../styles/global.css";
 
 import { Icon } from "astro-icon/components";
-import { Button } from "free-astro-components";
 
 import Card from "../../components/ui/Card.astro";
-import Carousel from "../../components/ui/Carousel.astro";
+import Carousel from "../../components/ui/Carousel.jsx";
 import CardHeader from "../../components/ui/CardHeader.astro";
 import CardTitle from "../../components/ui/CardTitle.astro";
 import CardContent from "../../components/ui/CardContent.astro";
-import Badge from "../../components/ui/Badge.astro";
 import Footer from "../../components/ui/Footer.astro";
 import Header1 from "../../components/Header1.astro";
 
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const products = await getCollection('products');
-  return products.map(product => ({
-    params: { id: product.id }
+  const products = await getCollection("products");
+  return products.map((product) => ({
+    params: { id: product.id },
   }));
 }
 
 const { params } = Astro;
-const products = await getCollection('products');
-const product = products.find(p => p.id === params.id);
+const products = await getCollection("products");
+let product = products.find((p) => p.id === params.id);
 
 if (!product) {
   throw new Error(`Product not found: ${params.id}`);
@@ -82,8 +80,10 @@ const certifications = [
   "EN 14971 – Gestion des risques",
 ];
 
-// TODO 
-const relatedProducts = products.filter(p => (p.data.category == product.data.category)).slice(0,3)
+// TODO
+const relatedProducts = products
+  .filter((p) => p.data.category == product.data.category)
+  .slice(0, 3);
 ---
 
 <Layout>
@@ -108,9 +108,13 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
             </h1>
             <p class="text-xl text-gray-600 whitespace-pre-line">
               {product.data.full_description}
-              <br>
-              <br>
-              {product.data.technical_specs["other"] ? product.data.technical_specs["other"].join("\n") : ""}
+              <br />
+              <br />
+              {
+                product.data.technical_specs["other"]
+                  ? product.data.technical_specs["other"].join("\n")
+                  : ""
+              }
             </p>
           </div>
 
@@ -136,7 +140,7 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
           </Card>
         </div>
         {/* Image Carousel */}
-        <Carousel images={JSON.stringify(product.data.images)} />
+        {product.data.images?.length ? <Carousel images={product.data.images} client:load /> : null}
       </div>
 
       {/* Specifications */}
@@ -152,16 +156,18 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
-              {Object.entries(product.data.technical_specs).map(([label, value], index) => (
-                <div
-                  class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0"
-                >
-                  <span class="text-sm text-gray-600">{label}</span>
-                  <span class="text-sm font-medium text-gray-900 whitespace-pre-line">
-                    {Array.isArray(value) ? value.join("\n") : value}
-                  </span>
-                </div>
-              ))}
+              {
+                Object.entries(product.data.technical_specs).map(
+                  ([label, value], index) => (
+                    <div class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0">
+                      <span class="text-sm text-gray-600">{label}</span>
+                      <span class="text-sm font-medium text-gray-900 whitespace-pre-line">
+                        {Array.isArray(value) ? value.join("\n") : value}
+                      </span>
+                    </div>
+                  )
+                )
+              }
               <!-- {
                 specifications.map((spec, index) => (
                   <div
@@ -176,7 +182,7 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
                 ))
               } -->
             </CardContent>
-          </Card>          
+          </Card>
         </div>
         <div class="grid grid-cols-1 gap-2 self-start">
           <Card class="border border-gray-300 rounded-lg bg-white">
@@ -193,7 +199,9 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
                 <!-- <h4 class="font-medium text-gray-900 mb-2">
                   Applications principales
                 </h4> -->
-                <ul class="list-disc list-inside space-y-1 text-sm text-gray-700">
+                <ul
+                  class="list-disc list-inside space-y-1 text-sm text-gray-700"
+                >
                   <li>1</li>
                   <li>2</li>
                   <!-- <li>Centres de chirurgie ambulatoire</li> -->
@@ -202,7 +210,7 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
               </div>
             </CardContent>
           </Card>
-  
+
           <!-- <Card class="border border-gray-300 rounded-lg bg-white">
             <CardHeader>
               <CardTitle className="flex items-center text-gray-900">
@@ -223,7 +231,7 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
               </div>
             </CardContent>
           </Card> -->
-  
+
           <Card class="border border-gray-300 rounded-lg bg-white">
             <CardHeader>
               <CardTitle className="flex items-center text-gray-900">
@@ -243,7 +251,7 @@ const relatedProducts = products.filter(p => (p.data.category == product.data.ca
               }
             </CardContent>
           </Card>
-<!--   
+          <!--   
           <Card>
             <CardHeader>
               <CardTitle className="text-gray-900">

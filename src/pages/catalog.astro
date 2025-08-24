@@ -9,20 +9,6 @@ import { getImage } from 'astro:assets';
 
 let products = await getCollection('products');
 
-products = await Promise.all(
-  products.map(async (product) => {
-    if ("image" in product.data) {
-      const image = await getImage({
-        src: product.data.image,
-        width: 600,           // thumbnail width
-        format: 'webp',       // optimize to WebP
-      });
-      product.data.image = image
-      return product
-    }
-    else return product
-  })
-);
 ---
 
 <Layout>
