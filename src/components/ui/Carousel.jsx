@@ -10,7 +10,7 @@ export default function ProductCarousel({ images }) {
         <img
           src={images[index].src}
           alt={images[index].alt || `Slide ${index + 1}`}
-          className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl border-1 border-gray-300"
+          className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl border-1 border-gray-300 p-8"
         />
 
         {/* Arrows left and right */}

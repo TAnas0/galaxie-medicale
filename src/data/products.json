@@ -276,7 +276,7 @@
 
   },
   {
-    "name": "Lampe opératoire HELIOS 160\n",
+    "name": "Lampe opératoire HELIOS 160",
     "short_description": "Lampe opératoire LED haut de gamme avec coupole simple ou double, offrant un éclairage optimal pour interventions chirurgicales.",
     "full_description": "La lampe opératoire HELIOS 160 est une lampe LED chirurgicale conçue pour fournir un éclairage optimal lors d'interventions complexes.  \nDisponible en version simple ou double coupole, elle garantit une excellente visibilité et un confort visuel maximal.  \nSon intensité lumineuse réglable et son rendu des couleurs précis assurent une précision accrue lors des procédures médicales et chirurgicales.",
     "category": "surgery",
@@ -300,8 +300,14 @@
       ]
     },
     "id": 9,
-    "availability": "in_stock"
-
+    "availability": "in_stock",
+    "image": "../assets/products/surgery/lights/famed-helios-160/helios-160.png",
+    "images": [
+      "../assets/products/surgery/lights/famed-helios-160/helios-160.png",
+      "../assets/products/surgery/lights/famed-helios-160/helios-160-1.png",
+      "../assets/products/surgery/lights/famed-helios-160/helios-160-2.png",
+      "../assets/products/surgery/lights/famed-helios-160/helios-160-3.png"
+    ]
   },
   {
     "name": "Lampe opératoire IGNIS 160",
@@ -328,8 +334,14 @@
       ]
     },
     "id": 10,
-    "availability": "in_stock"
-
+    "availability": "in_stock",
+    "image": "../assets/products/surgery/lights/famed-ignis-160/ignis-160-1.png",
+    "images": [
+      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-1.png",
+      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-2.png",
+      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-3.png",
+      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-4.png"
+    ]
   },
   {
     "name": "Lampe chirurgicale SOLIS 130",
