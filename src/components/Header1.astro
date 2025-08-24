@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import Logo from "./logo/Logo.astro"
 ---
 
 <header class="w-full fixed top-0 z-50 bg-white shadow-md" data-aos="fade" data-aos-duration="100">
@@ -16,11 +17,11 @@ import { Icon } from "astro-icon/components";
     data-aos="fade" data-aos-duration="300"
   >
     <div class="container mx-auto px-4 w-full text-xs font-semibold">
-      <div class="flex items-center justify-between h-10">
+      <div class="flex items-center justify-center lg:justify-between h-10">
         <div
-          class="flex items-center !border-1 border-white/25 py-1 px-2 gap-x-1 rounded-3xl space-x-2 text-gray-100"
+          class="hidden lg:flex items-center !border-1 border-white/25 py-1 px-2 gap-x-1 rounded-3xl space-x-2 text-gray-100"
         >
-          <Icon name="heroicons:building-office" class="text-lg" />
+          <Icon name="heroicons:map-pin" class="text-lg" />
           <span class="">
             207, Boulevard de la Résistance, 7ᵉ étage, N°14 (C/O C.A.R), Casablanca, Maroc
           </span>
@@ -68,11 +69,12 @@ import { Icon } from "astro-icon/components";
           aria-label="Navigation principale"
         >
           {/* Logo */}
-          <img
+          <Logo withText={true} variant="inline"/>
+          <!-- <img
             src="/galaxie-medicale/logo.png"
             alt="Galaxie Medicale Logo"
             class="h-14"
-          />
+          /> -->
           {/* Accueil */}
           <a
             href="/galaxie-medicale"

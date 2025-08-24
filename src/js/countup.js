@@ -1,4 +1,4 @@
-function animateCount(el, target, duration = 1500) {
+function animateCount(el, target, duration = 3000) {
   const startTime = performance.now();
 
   function update(currentTime) {
@@ -18,7 +18,6 @@ function animateCount(el, target, duration = 1500) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".countup");
-  console.log(counters)
 
   const observer = new IntersectionObserver(
     (entries, obs) => {
