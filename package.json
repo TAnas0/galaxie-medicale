@@ -12,6 +12,7 @@
     "@astrojs/react": "^4.3.0",
     "@fontsource-variable/manrope": "^5.2.6",
     "@fontsource/inter": "^5.2.5",
+    "@heroicons/react": "^2.2.0",
     "@sentry/astro": "^9.38.0",
     "@spotlightjs/astro": "^3.2.5",
     "@tailwindcss/vite": "^4.1.11",

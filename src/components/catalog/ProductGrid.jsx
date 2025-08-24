@@ -57,7 +57,7 @@ export default function ProductGrid({ products, activeCategory, filters }) {
 
                                     {/* Overlay Info */}
                                     <div class="bottom-0 w-full bg-primary/80 backdrop-blur-sm text-white p-2 transition-opacity duration-300 group-hover:bg-primary h-full flex flex-col">
-                                        <h4 class="text-lg font-semibold pb-2">{product.data.name}</h4>
+                                        <h4 class="text-lg font-semibold pb-2 underline">{product.data.name}</h4>
                                         <p class="text-sm text-muted-600 dark:text-muted-400 line-clamp-3">
                                             {product.data.short_description}
                                         </p>

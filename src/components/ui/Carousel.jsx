@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 
 export default function ProductCarousel({ images }) {
   const [index, setIndex] = useState(0);
@@ -9,20 +10,36 @@ export default function ProductCarousel({ images }) {
         <img
           src={images[index].src}
           alt={images[index].alt || `Slide ${index + 1}`}
-          className="absolute top-0 left-0 w-full h-full rounded-lg"
+          className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl border-1 border-gray-300"
         />
-        <button onClick={() => setIndex((index - 1 + images.length) % images.length)}
-                className="absolute left-2 top-1/2">‹</button>
-        <button onClick={() => setIndex((index + 1) % images.length)}
-                className="absolute right-2 top-1/2">›</button>
+
+        {/* Arrows left and right */}
+        <div className="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white/70 border border-gray-500 rounded-full flex items-center justify-center shadow-lg hover:bg-white/90 cursor-pointer transition">
+          <button
+            onClick={() => setIndex((index - 1 + images.length) % images.length)}
+            className="w-full h-full flex items-center justify-center text-xl md:text-2xl lg:text-3xl select-none cursor-pointer"
+          >
+            <ChevronLeftIcon className="w-5 h-5 lg:w-6 lg:h-6 text-gray-700" />
+          </button>
+        </div>
+
+        <div className="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white/70 border border-gray-500 rounded-full flex items-center justify-center shadow-lg hover:bg-white/90 cursor-pointer transition">
+          <button
+            onClick={() => setIndex((index + 1) % images.length)}
+            className="w-full h-full flex items-center justify-center text-xl md:text-2xl lg:text-3xl select-none cursor-pointer"
+          >
+            <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6 text-gray-700" />
+          </button>
+        </div>
+
       </div>
-      <div className="flex gap-2 mt-2">
+      <div className="flex gap-2 mt-2 justify-center">
         {images.map((img, idx) => (
           <img
             key={idx}
             src={img.src}
             alt={img.alt || `Thumb ${idx + 1}`}
-            className={`w-16 h-16 object-cover cursor-pointer rounded-lg ${idx === index ? 'border-2 border-primary' : ''}`}
+            className={`w-16 h-16 object-cover cursor-pointer rounded-lg shadow-lg ${idx === index ? 'border-2 border-primary' : ''}`}
             onClick={() => setIndex(idx)}
           />
         ))}

@@ -201,8 +201,14 @@
       ]
     },
     "id": 6,
-    "image": "../assets/products/sterilization/autoclaves/autoclave-as44/",
-    "availability": "in_stock"
+    "image": "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-1.jpg",
+    "images": [
+      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-1.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-2.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-3.jpg"
+    ],
+    "availability": "in_stock",
+    "catalog_link": "https://sms.com.pl/wp-content/uploads/2025/01/SMS_Product-catalogue_A5_design-2.pdf"
   },
   {
     "name": "Autoclave à vapeur AS66",
@@ -228,7 +234,11 @@
       ]
     },
     "id": 7,
-    "availability": "on_order"
+    "availability": "on_order",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-as-66/as66-blue.jpg",
+    "images": [
+      "../assets/products/sterilization/autoclaves/autoclave-as-66/as66-blue.jpg"
+    ]
   },
   {
     "name": "Autoclave à vapeur SMS 100",
@@ -253,7 +263,16 @@
       ]
     },
     "id": 8,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-1.jpg",
+    "images": [
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-1.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-2.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-3.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-4.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-5.jpg",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-6.jpg"
+    ]
 
   },
   {
