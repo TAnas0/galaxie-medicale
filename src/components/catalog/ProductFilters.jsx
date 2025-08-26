@@ -1,4 +1,4 @@
-export default function Filters({filters, setFilters}) {
+export default function Filters({ filters, setFilters }) {
 
     return (
         <div className="px-2 sticky h-full self-start top-28">
@@ -7,7 +7,7 @@ export default function Filters({filters, setFilters}) {
                     Disponibilité
                 </h3>
                 <div className="space-y-4">
-                <div className="flex items-center gap-3 cursor-pointer">
+                    <div className="flex items-center gap-3 cursor-pointer">
                         <div className="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
                             <input
                                 type="radio"
@@ -90,7 +90,7 @@ export default function Filters({filters, setFilters}) {
                     Prix
                 </h3>
                 <div className="space-y-4">
-                <div className="flex items-center gap-3 cursor-pointer">
+                    <div className="flex items-center gap-3 cursor-pointer">
                         <div className="bg-white dark:bg-muted-900 rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
                             <input
                                 type="radio"

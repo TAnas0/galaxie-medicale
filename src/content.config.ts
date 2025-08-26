@@ -7,7 +7,7 @@ const products = defineCollection({
         id: z.number(),
         name: z.string(),
         category: z.string(),
-        sub_category: z.string().optional(),
+        subcategory: z.string().optional(),
         // category: z.enum(['A', 'B', 'C']),
         // image: z.string().optional(),
         image: image().optional(),

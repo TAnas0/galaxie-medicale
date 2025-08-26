@@ -7,17 +7,19 @@ export default function ProductCarousel({ images }) {
   return (
     <div>
       <div className="relative aspect-[4/3]">
-        <img
-          src={images[index].src}
-          alt={images[index].alt || `Slide ${index + 1}`}
-          className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl border-1 border-gray-300 p-8"
-        />
+        <div className="absolute inset-0 flex items-center justify-center rounded-lg shadow-xl border border-gray-300 p-2">
+          <img
+            src={images[index].src}
+            alt={images[index].alt || `Slide ${index + 1}`}
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
 
         {/* Arrows left and right */}
         <div className="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white/70 border border-gray-500 rounded-full flex items-center justify-center shadow-lg hover:bg-white/90 cursor-pointer transition">
           <button
             onClick={() => setIndex((index - 1 + images.length) % images.length)}
-            className="w-full h-full flex items-center justify-center text-xl md:text-2xl lg:text-3xl select-none cursor-pointer"
+            className="text-xl md:text-2xl lg:text-3xl select-none cursor-pointer"
           >
             <ChevronLeftIcon className="w-5 h-5 lg:w-6 lg:h-6 text-gray-700" />
           </button>
@@ -26,7 +28,7 @@ export default function ProductCarousel({ images }) {
         <div className="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white/70 border border-gray-500 rounded-full flex items-center justify-center shadow-lg hover:bg-white/90 cursor-pointer transition">
           <button
             onClick={() => setIndex((index + 1) % images.length)}
-            className="w-full h-full flex items-center justify-center text-xl md:text-2xl lg:text-3xl select-none cursor-pointer"
+            className="text-xl md:text-2xl lg:text-3xl select-none cursor-pointer"
           >
             <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6 text-gray-700" />
           </button>
