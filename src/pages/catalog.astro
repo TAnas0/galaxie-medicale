@@ -30,13 +30,9 @@ let products = await getCollection('products');
     if (currentScrollY > 250) {
       toolbar.classList.add("-translate-y-11");
       toolbar.classList.remove("translate-y-0");
-      filters.classList.add("-translate-y-10");
-      filters.classList.remove("translate-y-0");
     } else {
       toolbar.classList.remove("-translate-y-11");
       toolbar.classList.add("translate-y-0");
-      filters.classList.remove("-translate-y-10");
-      filters.classList.add("translate-y-0");
     }
   });
 </script>

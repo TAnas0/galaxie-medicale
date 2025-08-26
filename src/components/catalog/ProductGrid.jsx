@@ -1,18 +1,10 @@
 import Card from "../ui/Card.jsx";
 
-export default function ProductGrid({ products, filters }) {
-    const filteredProducts = products.filter((p) => {
-        if (filters.category !== "all" && p.data.category !== filters.category) return false;
-        if (filters.availability !== 'all' && p.data.availability !== filters.availability) return false;
-        return true;
-    });
-
+export default function ProductGrid({ products }) {
     return (
         <div>
-            <div className="text-base font-medium text-gray-700 mb-2">{filteredProducts.length} produits</div>
-
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-4 gap-y-6 p-2">
-                {filteredProducts.map((product) => (
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-x-4 gap-y-6 p-2">
+                {products.map((product) => (
                     <div key={product.id} className="border-1 border-gray-300 rounded-lg shadow-lg overflow-hidden">
                         <a
                             href={`/galaxie-medicale/products/${product.id}`}
