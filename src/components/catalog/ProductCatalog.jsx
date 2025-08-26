@@ -8,7 +8,6 @@ export default function Catalog({ products }) {
         category: "all",
         availability: 'all', // 'in_stock', 'on_order', 'out_of_stock'
         price: 'all',        // '$', '$$', '$$$+'
-        category: 'all',     // optional, for your category toolbar
     });
 
     return (

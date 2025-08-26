@@ -368,7 +368,14 @@
       ]
     },
     "id": 11,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/surgery/lights/famed-solis-130/solis-130.jpg",
+    "images": [
+      "../assets/products/surgery/lights/famed-solis-130/solis-130.jpg",
+      "../assets/products/surgery/lights/famed-solis-130/solis-130-2.jpg",
+      "../assets/products/surgery/lights/famed-solis-130/solis-130-3.jpg",
+      "../assets/products/surgery/lights/famed-solis-130/solis-130-4.jpg"
+    ]
 
   },
   {
@@ -392,7 +399,16 @@
       "other": []
     },
     "id": 12,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/diagnostic/monitors/e8/10b125d5611ae8bf0c6c0bcc55d71e4e.jpg",
+    "images": [
+      "../assets/products/diagnostic/monitors/e8/10b125d5611ae8bf0c6c0bcc55d71e4e.jpg",
+      "../assets/products/diagnostic/monitors/e8/6a978aa74ec7010d4e89bb248afcc1fb.webp",
+      "../assets/products/diagnostic/monitors/e8/8002.webp",
+      "../assets/products/diagnostic/monitors/e8/8021.jpg",
+      "../assets/products/diagnostic/monitors/e8/E8-accessories-cables.png",
+      "../assets/products/diagnostic/monitors/e8/f2b3f5d603fb36eef59ab7d93a957640.jpg"
+    ]
   },
   {
     "name": "Moniteur multiparamétrique E10",
@@ -415,7 +431,13 @@
       "other": []
     },
     "id": 13,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/diagnostic/monitors/e10/E10-2.jpg",
+    "images": [
+      "../assets/products/diagnostic/monitors/e10/E10-2.jpg",
+      "../assets/products/diagnostic/monitors/e10/E10-3.jpg",
+      "../assets/products/diagnostic/monitors/e10/E10-5.jpg"
+    ]
   },
   {
     "name": "Moniteur multiparamétrique E12",
@@ -438,7 +460,16 @@
       "other": []
     },
     "id": 14,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/diagnostic/monitors/e12/E12-front.jpg",
+    "images": [
+      "../assets/products/diagnostic/monitors/e12/E12-front.jpg",
+      "../assets/products/diagnostic/monitors/e12/E12-front-2.jpg",
+      "../assets/products/diagnostic/monitors/e12/E12-front-3.jpg",
+      "../assets/products/diagnostic/monitors/e12/E12-back.jpg",
+      "../assets/products/diagnostic/monitors/e12/E12-side-2.jpg",
+      "../assets/products/diagnostic/monitors/e12/E12-side.jpg"
+    ]
   },
   {
     "name": "Moniteur multiparamétrique E15",
@@ -461,7 +492,16 @@
       "other": []
     },
     "id": 15,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/diagnostic/monitors/e15/E15.jpg",
+    "images": [
+      "../assets/products/diagnostic/monitors/e15/E15.jpg",
+      "../assets/products/diagnostic/monitors/e15/E15-2.jpg",
+      "../assets/products/diagnostic/monitors/e15/E15-side.jpg",
+      "../assets/products/diagnostic/monitors/e15/E15-side-2.jpg",
+      "../assets/products/diagnostic/monitors/e15/E15-back.jpg",
+      "../assets/products/diagnostic/monitors/e15/E15-full-specs.png"
+    ]
   },
   {
     "name": "Moniteur multipamétrique YK-8000A",
