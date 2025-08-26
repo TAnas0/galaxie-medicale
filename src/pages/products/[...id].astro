@@ -106,6 +106,23 @@ const relatedProducts = products
             <h1 class="text-3xl font-bold text-gray-900 mb-2">
               {product.data.name}
             </h1>
+            <div class="flex flex-cols gap-2">
+              {(product.data.availability == "out_of_stock") && (
+                <div class="w-fit bg-red-600/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
+                  Rupture de stock
+                </div>
+              )}
+              {(product.data.category) && (
+                <div class="w-fit bg-primary/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
+                  {product.data.category}
+                </div>
+              )}
+              {(product.data.subcategory) && (
+                <div class="w-fit bg-primary/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
+                  {product.data.subcategory}
+                </div>
+              )}
+            </div>
             <p class="text-xl text-gray-600 whitespace-pre-line">
               {product.data.full_description}
               <br />
