@@ -2,56 +2,6 @@
 // import Button from './ui/Button.astro';
 import { Button } from "free-astro-components";
 import GalaxieSVG from "./logo/logo.svg";
-
-const patternA = [
-  { src: '/galaxie-medicale/collage/1.jpg' },
-  { empty: true },
-  { src: '/galaxie-medicale/collage/2.jpg' },
-  // { src: '/galaxie-medicale/collage/3.jpg' },
-  { empty: true },
-
-  { src: '/galaxie-medicale/collage/3.jpg' },
-  { src: '/galaxie-medicale/collage/4.jpg' },
-  { empty: true },
-  { src: '/galaxie-medicale/collage/5.jpg' },
-  
-  { empty: true },
-  { src: '/galaxie-medicale/collage/6.jpg' },
-  { src: '/galaxie-medicale/collage/7.jpg' },
-  { src: '/galaxie-medicale/collage/8.jpg' },
-  
-  { src: '/galaxie-medicale/collage/9.jpg' },
-  // { src: '/galaxie-medicale/collage/11.jpg' },
-  { empty: true },
-  { src: '/galaxie-medicale/collage/10.jpg' },
-  { empty: true },
-  // { src: '/galaxie-medicale/collage/13.jpg' },
-];
-
-const patternB = [
-  { empty: true },
-  { src: '/galaxie-medicale/collage/10.jpg' },
-  { empty: true },
-  { src: '/galaxie-medicale/collage/8.jpg' },
-
-  { src: '/galaxie-medicale/collage/5.jpg' },
-  { empty: true },
-  { src: '/galaxie-medicale/collage/4.jpg' },
-  { src: '/galaxie-medicale/collage/3.jpg' },
-  
-  { src: '/galaxie-medicale/collage/1.jpg' },
-  { empty: true },
-  { src: '/galaxie-medicale/collage/2.jpg' },
-  { empty: true },
-  // { src: '/galaxie-medicale/collage/7.jpg' },
-  
-  { empty: true },
-  { src: '/galaxie-medicale/collage/11.jpg' },
-  // { empty: true },
-  { src: '/galaxie-medicale/collage/7.jpg' },
-  // { src: '/galaxie-medicale/collage/12.jpg' },
-  { src: '/galaxie-medicale/collage/13.jpg' },
-];
 ---
 
 <section class="relative pt-26">
@@ -132,26 +82,24 @@ const patternB = [
       </div>
 
       <!-- Right side -->
-      <div class="relative w-full h-full bg-primary/20">
-        <!-- Grid A -->
-        <div id="gridA"
-          class="absolute inset-0 grid grid-cols-4 gap-[2px] w-full h-full transition-opacity duration-1000 opacity-100"
-        >
-          {patternA.map((item) => (
-            <div class="overflow-hidden">{!item.empty && <img src={item.src} class="w-full h-full object-cover" />}</div>
-          ))}
-        </div>
-      
-        <!-- Grid B -->
-        <div id="gridB"
-          class="absolute inset-0 grid grid-cols-4 gap-[2px] w-full h-full transition-opacity duration-1000 opacity-0 pointer-events-none"
-        >
-          {patternB.map((item) => (
-            <div class="overflow-hidden">{!item.empty && <img src={item.src} class="w-full h-full object-cover" />}</div>
-          ))}
-        </div>
+      <div class="hidden lg:grid grid-cols-4 gap-[2px] w-full bg-cover h-full bg-primary/25" style="grid-auto-rows: 1fr;">
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="100" class="overflow-hidden"><img src="/galaxie-medicale/collage/1.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="100" class=""></div> <!-- empty square -->
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="100" class="overflow-hidden"><img src="/galaxie-medicale/collage/2.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="250" class="overflow-hidden"><img src="/galaxie-medicale/collage/3.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="3500" class="overflow-hidden"><img src="/galaxie-medicale/collage/4.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="100" class="overflow-hidden"><img src="/galaxie-medicale/collage/5.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="500" class=""></div> <!-- empty square -->
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="200" class="overflow-hidden"><img src="/galaxie-medicale/collage/6.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="400" class="overflow-hidden"><img src="/galaxie-medicale/collage/7.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="100" class=""></div> <!-- empty square -->
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="700" class="overflow-hidden"><img src="/galaxie-medicale/collage/8.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="500" class="overflow-hidden"><img src="/galaxie-medicale/collage/9.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="600" class="overflow-hidden"><img src="/galaxie-medicale/collage/10.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="1000" class="overflow-hidden"><img src="/galaxie-medicale/collage/11.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="1100" class="overflow-hidden"><img src="/galaxie-medicale/collage/12.jpg" class="w-full h-full object-cover"></div>
+        <div data-aos="fade" data-aos-duration="2500" data-aos-delay="700" class="overflow-hidden"><img src="/galaxie-medicale/collage/13.jpg" class="w-full h-full object-cover"></div>
       </div>
-      
       <!-- Background collage for small screens -->
       <div class="absolute inset-0 lg:hidden">
         <div class="w-full h-full opacity-5 bg-[url('/galaxie-medicale/collage.webp')] bg-cover bg-center"></div>
@@ -192,40 +140,4 @@ const patternB = [
   .text-shadow {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-
-.fade {
-  opacity: 1;
-  transition: opacity 2s ease;
-}
-.fade.hidden {
-  opacity: 0;
-}
-
 </style>
-
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    const gridA = document.getElementById('gridA');
-    const gridB = document.getElementById('gridB');
-    let showingA = true;
-  
-    setInterval(() => {
-      if (showingA) {
-        gridA.classList.add('opacity-0', 'pointer-events-none');
-        gridA.classList.remove('opacity-100');
-  
-        gridB.classList.remove('opacity-0', 'pointer-events-none');
-        gridB.classList.add('opacity-100');
-      } else {
-        gridB.classList.add('opacity-0', 'pointer-events-none');
-        gridB.classList.remove('opacity-100');
-  
-        gridA.classList.remove('opacity-0', 'pointer-events-none');
-        gridA.classList.add('opacity-100');
-      }
-      showingA = !showingA;
-    }, 10000);
-  });
-  </script>
-
-
