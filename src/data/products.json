@@ -524,7 +524,15 @@
       "other": []
     },
     "id": 16,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-front.png",
+    "images": [
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-front.png",
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-2.png",
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-back.png",
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-double.jpg",
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-side.png"
+    ]
   },
   {
     "name": "Moniteur multipamétrique YK-8000B",
@@ -547,7 +555,16 @@
       "other": []
     },
     "id": 17,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B.png",
+    "images": [
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B.png",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-2.png",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-back.png",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-full-kit.png",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-full-specs.png",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-side.png"
+    ]
   },
   {
     "name": "Moniteur multipamétrique YK-8000C",
@@ -570,7 +587,15 @@
       "other": []
     },
     "id": 18,
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-front-2.jpg",
+    "images": [
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-front-2.jpg",
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-back.jpg",
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-full-specs.png",
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-screen.png",
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-side.jpg"
+    ]
   },
   {
     "name": "Abaisse langue adulte",
@@ -704,8 +729,20 @@
       ]
     },
     "id": 24,
-    "image": "../assets/products/saikang/A100-4.jpg",
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-1.jpg",
+    "images": [
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-10.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-11.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-2.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-3.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-4.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-7.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-8.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-9.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4.jpg"
+    ]
   },
   {
     "name": "Table de chirurgie A100-4A",
@@ -731,8 +768,22 @@
       ]
     },
     "id": 25,
-    "image": "../assets/products/saikang/A100-4A.jpg",
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-1.jpg",
+    "images": [
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-2.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-5.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-6.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-7.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-8.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-9.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-10.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-11.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-12.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-13.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-14.jpg"
+    ]
   },
   {
     "name": "Table de chirurgie A106-5",
@@ -758,8 +809,20 @@
       ]
     },
     "id": 26,
-    "image": "../assets/products/saikang/A106-5.jpg",
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-1.jpg",
+    "images": [
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-4.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-5.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-6.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-7.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-8.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-9.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-10.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-11.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-12.jpg"
+    ]
   },
   {
     "name": "Table de chirurgie A301",
@@ -786,8 +849,23 @@
       ]
     },
     "id": 27,
-    "image": "../assets/products/saikang/A301.jpg",
-    "availability": "out_of_stock"
+    "availability": "out_of_stock",
+    "image": "../assets/products/surgery/operating-tables/saikang/A301/1.jpg",
+    "images": [
+      "../assets/products/surgery/operating-tables/saikang/A301/1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/2.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-0.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-10.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-2.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-3.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-4.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-5.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-7.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-8.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-9.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A301/f3bbd53d.jpg"
+    ]
   },
   {
     "name": "Table de chirurgie A302",
@@ -814,7 +892,27 @@
     },
     "id": 28,
     "image": "../assets/products/saikang/A302.jpg",
-    "availability": "on_order"
+    "availability": "on_order",
+    "image": "../assets/products/surgery/operating-tables/saikang/A302/A302-0.jpg",
+    "images": [
+      "../assets/products/surgery/operating-tables/saikang/A302/8f4cae98.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-0.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-10.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-11.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-12.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-13.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-14.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-2.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-3.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-4.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-5.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-6.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-7.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-8.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-9.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A302/f2cc9816.jpg"
+    ]
   },
   {
     "name": "Table de chirurgie A307",
@@ -841,8 +939,23 @@
       ]
     },
     "id": 29,
-    "image": "../assets/products/saikang/A307.png",
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/surgery/operating-tables/saikang/A307/A307_1.jpg",
+    "images": [
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_2.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_3.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_4.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_5.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_6.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_7.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_8.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_9.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_10.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_11.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_12.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_13.jpg"
+    ]
   },
   {
     "name": "Table de chirurgie A501",
@@ -867,8 +980,16 @@
       ]
     },
     "id": 30,
-    "image": "../assets/products/saikang/A501.jpg",
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/surgery/operating-tables/saikang/A501/A501-1.jpg",
+    "images": [
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-2.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-3.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-4.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-5.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-6.jpg"
+    ]
   },
   {
     "name": "Table de chirurgie A2000",
@@ -893,7 +1014,24 @@
     },
     "id": 31,
     "image": "../assets/products/saikang/A2000.jpg",
-    "availability": "in_stock"
+    "availability": "in_stock",
+    "image": "../assets/products/surgery/operating-tables/saikang/A2000/A2000-0.jpg",
+    "images": [
+      "",
+      "../assets/products/surgery/operating-tables/saikang/A2000/1481f2bd.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/38dacfa1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-0.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-10.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-1.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-2.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-3.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-4.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-5.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-6.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-7.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-8.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-9.jpg"      
+    ]
   },
   {
     "name": "Table de chirurgie A100",
