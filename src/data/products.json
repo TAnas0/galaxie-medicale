@@ -654,7 +654,6 @@
       "other": []
     },
     "id": 22,
-    "image": "../assets/products/saikang/A100-4.jpg",
     "availability": "in_stock"
   },
   {
@@ -680,7 +679,6 @@
       "other": []
     },
     "id": 23,
-    "image": "../assets/products/saikang/A100-4A.jpg",
     "availability": "in_stock"
   },
   {
@@ -706,7 +704,7 @@
       ]
     },
     "id": 24,
-    "image": "../assets/products/saikang/A106-5.jpg",
+    "image": "../assets/products/saikang/A100-4.jpg",
     "availability": "in_stock"
   },
   {
@@ -733,7 +731,7 @@
       ]
     },
     "id": 25,
-    "image": "../assets/products/saikang/A301.jpg",
+    "image": "../assets/products/saikang/A100-4A.jpg",
     "availability": "in_stock"
   },
   {
@@ -760,7 +758,7 @@
       ]
     },
     "id": 26,
-    "image": "../assets/products/saikang/A302.jpg",
+    "image": "../assets/products/saikang/A106-5.jpg",
     "availability": "in_stock"
   },
   {
@@ -788,7 +786,7 @@
       ]
     },
     "id": 27,
-    "image": "../assets/products/saikang/A307.png",
+    "image": "../assets/products/saikang/A301.jpg",
     "availability": "out_of_stock"
   },
   {
@@ -815,7 +813,7 @@
       ]
     },
     "id": 28,
-    "image": "../assets/products/saikang/A501.jpg",
+    "image": "../assets/products/saikang/A302.jpg",
     "availability": "on_order"
   },
   {
@@ -843,7 +841,7 @@
       ]
     },
     "id": 29,
-    "image": "../assets/products/saikang/A2000.jpg",
+    "image": "../assets/products/saikang/A307.png",
     "availability": "in_stock"
   },
   {
@@ -869,6 +867,7 @@
       ]
     },
     "id": 30,
+    "image": "../assets/products/saikang/A501.jpg",
     "availability": "in_stock"
   },
   {
@@ -893,7 +892,7 @@
       ]
     },
     "id": 31,
-    "image": "../assets/products/saikang/patient_trolley/SKB037(A).jpg",
+    "image": "../assets/products/saikang/A2000.jpg",
     "availability": "in_stock"
   },
   {
@@ -919,7 +918,6 @@
       ]
     },
     "id": 32,
-    "image": "../assets/products/saikang/patient_trolley/SKB037(B).jpg",
     "availability": "on_order"
   },
   {
@@ -943,7 +941,7 @@
       ]
     },
     "id": 33,
-    "image": "../assets/products/saikang/patient_trolley/SKB037(C).jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB037(A).jpg",
     "availability": "in_stock"
   },
   {
@@ -967,7 +965,7 @@
       ]
     },
     "id": 34,
-    "image": "../assets/products/saikang/patient_trolley/SKB038-2.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB037(B).jpg",
     "availability": "in_stock"
   },
   {
@@ -992,7 +990,7 @@
       ]
     },
     "id": 35,
-    "image": "../assets/products/saikang/patient_trolley/SKB041-2.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB037(C).jpg",
     "availability": "in_stock"
   },
   {
@@ -1016,7 +1014,7 @@
       ]
     },
     "id": 36,
-    "image": "../assets/products/saikang/patient_trolley/SKB041-3S.png",
+    "image": "../assets/products/saikang/patient_trolley/SKB038-2.jpg",
     "availability": "out_of_stock"
   },
   {
@@ -1042,7 +1040,7 @@
       ]
     },
     "id": 37,
-    "image": "../assets/products/saikang/patient_trolley/SKB041-6.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-2.jpg",
     "availability": "in_stock"
   },
   {
@@ -1068,7 +1066,7 @@
       ]
     },
     "id": 38,
-    "image": "../assets/products/saikang/patient_trolley/SKB041-7.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-3S.png",
     "availability": "in_stock"
   },
   {
@@ -1093,7 +1091,7 @@
       ]
     },
     "id": 39,
-    "image": "../assets/products/saikang/patient_trolley/SKB041-10.jpg",
+    "image": "../assets/products/saikang/patient_trolley/SKB041-6.jpg",
     "availability": "in_stock"
   },
   {
@@ -1121,6 +1119,7 @@
       ]
     },
     "id": 40,
+    "image": "../assets/products/saikang/patient_trolley/SKB041-7.jpg",
     "availability": "in_stock"
   },
   {
@@ -1147,6 +1146,7 @@
       ]
     },
     "id": 41,
+    "image": "../assets/products/saikang/patient_trolley/SKB041-10.jpg",
     "availability": "in_stock"
   },
   {
