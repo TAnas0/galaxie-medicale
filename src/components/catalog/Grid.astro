@@ -18,10 +18,10 @@ let products = await getCollection('products');
         <a href={`/galaxie-medicale/products/${product.id}`} class="block group transition-all duration-300 hover:scale-[1.015] h-full">
           <Card class="group flex flex-col rounded-md border border-gray-300 shadow-xl hover:shadow-3xl transition-all duration-300 ease-in-out overflow-hidden hover:scale-[1.01]">
             {/* Product Image */}
-            <div class="relative w-full aspect-[4/3] bg-muted-100 dark:bg-muted-800 h-full flex-3">
+            <div class="relative w-full aspect-[4/3] h-full flex-3 bg-white/75">
               {/* Loading indicator */}
               <div
-                class="absolute inset-0 flex items-center justify-center animate-pulse bg-muted-300 dark:bg-muted-700"
+                class="absolute inset-0 flex items-center justify-center animate-pulse"
               >
                 <div class="loader absolute top-0 left-0"></div>
                 {/* Optional Spinner */}

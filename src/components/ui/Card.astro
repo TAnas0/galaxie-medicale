@@ -3,7 +3,7 @@ const { class: className, style } = Astro.props;
 ---
 
 <div
-  class={`relative h-full rounded-lg dark:bg-muted-900 transition-all duration-300 ${className ?? ''}`}
+  class={`relative h-full rounded-lg transition-all duration-300 ${className ?? ''}`}
   style={style}
 >
   <slot />

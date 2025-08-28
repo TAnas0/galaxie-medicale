@@ -13,9 +13,9 @@ export default function ProductGrid({ products }) {
                             <Card className="group flex flex-col rounded-md border border-gray-300 shadow-xl overflow-hidden transition-all duration-300 ease-in-out hover:scale-[1.01]">
                                 
                                 {/* Product Image */}
-                                <div className="relative w-full aspect-[4/3] bg-muted-100 dark:bg-muted-800">
+                                <div className="relative w-full aspect-[4/3] bg-white/80">
                                     {/* Loading Indicator */}
-                                    <div className="absolute inset-0 flex items-center justify-center bg-muted-300 dark:bg-muted-700">
+                                    <div className="absolute inset-0 flex items-center justify-center">
                                         <div className="w-12 h-12 border-4 border-t-primary border-gray-200 rounded-full animate-spin"></div>
                                     </div>
 
