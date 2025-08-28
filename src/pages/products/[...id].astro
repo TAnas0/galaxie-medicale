@@ -93,14 +93,14 @@ const relatedProducts = products
     {/* Main Content */}
     <main class="container mx-auto px-4 py-6">
       {/* Product Hero Section */}
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-6 lg:mb-12">
         {/* Product Information */}
         <div class="space-y-6 flex flex-col">
           <div class="h-full">
-            <h1 class="text-3xl font-bold text-gray-900 underline mb-3">
+            <h1 class="text-center lg:text-left text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 underline mb-3">
               {product.data.name}
             </h1>
-            <div class="flex flex-cols gap-2 mb-6 justify-end -translate-y-1 mb-3">
+            <div class="flex flex-cols gap-2 mb-6 justify-center lg:justify-end -translate-y-1 mb-3">
               {(product.data.availability == "out_of_stock") && (
                 <div class="w-fit bg-red-600/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
                   Rupture de stock
@@ -117,10 +117,12 @@ const relatedProducts = products
                 </div>
               )}
             </div>
+            <div class="lg:hidden">
+              {product.data.images?.length ? <Carousel images={product.data.images} client:load /> : null}
+            </div>
+
             <p class="text-lg text-gray-700 whitespace-pre-line leading-[25px] bg-white/50 p-3 h-full">
               {product.data.full_description}
-              <br />
-              <br />
               {
                 product.data.technical_specs["other"]
                   ? product.data.technical_specs["other"].join("\n")
@@ -136,7 +138,9 @@ const relatedProducts = products
           </div>
         </div>
         {/* Image Carousel */}
-        {product.data.images?.length ? <Carousel images={product.data.images} client:load /> : null}
+        <div class="hidden lg:block">
+          {product.data.images?.length ? <Carousel images={product.data.images} client:load /> : null}
+        </div>
       </div>
 
       {/* Specifications */}
@@ -334,7 +338,7 @@ const relatedProducts = products
       </Card> -->
 
       {/* Related Products */}
-      <div>
+      <!-- <div>
         <h2 class="text-2xl font-bold text-gray-900 mb-6">
           Related Products & Accessories
         </h2>
@@ -367,7 +371,7 @@ const relatedProducts = products
             ))
           }
         </div>
-      </div>
+      </div> -->
     </main>
   </div>
 
