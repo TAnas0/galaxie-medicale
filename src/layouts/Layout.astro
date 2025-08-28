@@ -4,6 +4,7 @@ import '@fontsource-variable/manrope';
 import '@fontsource/ibm-plex-sans';
 import '@fontsource/plus-jakarta-sans';
 import { AstroFont } from "astro-font";
+import Logo from "../components/logo/logo.svg";
 ---
 
 <!doctype html>
@@ -11,19 +12,9 @@ import { AstroFont } from "astro-font";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/galaxie-medicale/favicon.svg" /> -->
-    <!-- <AstroFont
+    <link rel="icon" type="image/svg+xml" href={Logo.src} />
+    <AstroFont
       config={[
-        {
-          src: [],
-          name: "Manrope",
-          googleFontsURL:
-            "https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,400;0,600;1,400;1,700&display=swap",
-          preload: true,
-          display: "swap",
-        //   selector: "body",
-          fallback: "sans-serif",
-        },
 		    {
           src: [],
           name: "Inter",
@@ -33,29 +24,9 @@ import { AstroFont } from "astro-font";
           display: "swap",
         //   selector: "body",
           fallback: "sans-serif",
-        },
-		    {
-          src: [],
-          name: "IBM Plex Sans",
-          googleFontsURL:
-            "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,700&display=swap",
-          preload: true,
-          display: "swap",
-        //   selector: "body",
-          fallback: "sans-serif",
-        },
-		    {
-          src: [],
-          name: "Plus Jakarta Sans",
-          googleFontsURL:
-            "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;1,400;1,700&display=swap",
-          preload: true,
-          display: "swap",
-        //   selector: "body",
-          fallback: "sans-serif",
-        },
+        }
       ]}
-    /> -->
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;700&display=swap"
       rel="stylesheet"
@@ -69,9 +40,13 @@ import { AstroFont } from "astro-font";
     <meta name="google-site-verification" content="Oadv58J_LLtPTwp4JkTBuxKKHzTaRfg_PeHF8N3WoGg" />
     <title>Galaxie Medicale</title>
   </head>
-  <body class="">
+  <body class="relative">
     <div class="gradient-layer" data-aos="fade" data-aos-duration="1500" data-aos-delay="2000"></div>
     <div class="gradient-layer-2" data-aos="fade" data-aos-duration="1500" data-aos-delay="2000"></div>
+    <div
+      class="pattern-layer"
+      data-aos="fade" data-aos-duration="300"
+    ></div>
     <slot />
     <script src="../js/main.js"></script>
     <script src="../js/countup.js"></script>
@@ -83,8 +58,9 @@ import { AstroFont } from "astro-font";
   body {
     margin: 0;
     width: 100%;
-    height: 100%;
-    font-family: "Inter";
+    height: auto;
+    font-family: "Inter", "Arial", sans-serif;
+    font-display: swap;
   }
 
   .gradient-layer {
@@ -100,13 +76,29 @@ import { AstroFont } from "astro-font";
   }
 
   .gradient-layer-2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 100vh;
-  background: linear-gradient(to right, oklch(54.6% 0.245 262.881 / 0.15), transparent 100%);
-  z-index: -1;
-  pointer-events: none;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100vh;
+    background: linear-gradient(to right, oklch(54.6% 0.245 262.881 / 0.15), transparent 100%);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .pattern-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml;utf8,\ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25">\ <rect x="0" y="0" width="25" height="25" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="1"/>\ <line x1="12.5" y1="0" x2="12.5" y2="25" stroke="rgba(0,0,0,0.02)" stroke-width="0.5"/>\ <line x1="0" y1="12.5" x2="25" y2="12.5" stroke="rgba(0,0,0,0.02)" stroke-width="0.5"/>\ </svg>');
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25'%3E%3Crect x='0' y='0' width='25' height='25' fill='none' stroke='rgba(0,0,0,0.06)' stroke-width='1'/%3E%3Cline x1='12.5' y1='0' x2='12.5' y2='25' stroke='rgba(0,0,0,0.06)' stroke-width='1'/%3E%3Cline x1='0' y1='12.5' x2='25' y2='12.5' stroke='rgba(0,0,0,0.06)' stroke-width='1'/%3E%3C/svg%3E");    background-size: 25px 25px; */
+    background-repeat: repeat;
+    z-index: -1;
+    pointer-events: none;
+    /* Fade out effect */
+    -webkit-mask-image: linear-gradient(to bottom, black 95%, transparent);
+    mask-image: linear-gradient(to bottom, black 95%, transparent);
+  }
 </style>

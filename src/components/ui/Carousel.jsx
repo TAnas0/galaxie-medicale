@@ -6,7 +6,7 @@ export default function ProductCarousel({ images }) {
 
   return (
     <div>
-      <div className="relative aspect-[4/3]">
+      <div className="relative aspect-[4/3] bg-gray-50/80">
         <div className="absolute inset-0 flex items-center justify-center rounded-lg shadow-xl border border-gray-300 p-2">
           <img
             src={images[index].src}

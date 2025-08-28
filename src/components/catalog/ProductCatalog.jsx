@@ -23,7 +23,7 @@ export default function Catalog({ products }) {
 
     return (
         <div>
-            <div id="catalog">
+            <div id="catalog" class="bg-gray-50">
                 <div id="categories-toolbar" className="mt-27 sticky top-27 w-full z-50 transition-transform duration-300 ease-in-out translate-y-0 bg-white border-1 border-gray-300 rounded-lg p-1">
                     <ProductToolbar
                         filters={filters}

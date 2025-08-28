@@ -91,22 +91,16 @@ const relatedProducts = products
 
   <div class="min-h-screen pt-30">
     {/* Main Content */}
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-6">
       {/* Product Hero Section */}
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
         {/* Product Information */}
         <div class="space-y-6 flex flex-col">
-          <div>
-            <!-- <div class="flex items-center space-x-2 mb-2">
-              <Badge class="bg-medical-gray text-gray-700"
-                >Professional Grade</Badge
-              >
-              <Badge class="bg-green-100 text-green-700">In Stock</Badge>
-            </div> -->
-            <h1 class="text-3xl font-bold text-gray-900 mb-2">
+          <div class="h-full">
+            <h1 class="text-3xl font-bold text-gray-900 underline mb-3">
               {product.data.name}
             </h1>
-            <div class="flex flex-cols gap-2">
+            <div class="flex flex-cols gap-2 mb-6 justify-end -translate-y-1 mb-3">
               {(product.data.availability == "out_of_stock") && (
                 <div class="w-fit bg-red-600/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
                   Rupture de stock
@@ -123,7 +117,7 @@ const relatedProducts = products
                 </div>
               )}
             </div>
-            <p class="text-xl text-gray-600 whitespace-pre-line">
+            <p class="text-lg text-gray-700 whitespace-pre-line leading-[25px] bg-white/50 p-3 h-full">
               {product.data.full_description}
               <br />
               <br />
@@ -136,25 +130,10 @@ const relatedProducts = products
           </div>
 
           {/* Brand Info */}
-          <Card class="bg-white !h-auto border-1 border-gray-500 mt-auto">
-            <CardContent className="!p-2">
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-18 h-12 bg-white rounded-lg flex items-center justify-center"
-                >
-                  <span class="font-bold">{product.data.brand.name}</span>
-                </div>
-                <div>
-                  <!-- <h3 class="font-semibold text-gray-900">
-                    {product.data.brand.name}
-                  </h3> -->
-                  <p class="text-sm text-gray-600">
-                    {product.data.brand.description}
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+
+          <div class="flex items-center justify-center border border-gray-300 w-fit px-3 py-1 rounded-md shadow-md self-end">
+            Made by:  <span class="font-bold">{product.data.brand.name}</span>
+          </div>
         </div>
         {/* Image Carousel */}
         {product.data.images?.length ? <Carousel images={product.data.images} client:load /> : null}
