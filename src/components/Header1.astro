@@ -19,19 +19,19 @@ import Logo from "./logo/Logo.astro"
     <div class="container mx-auto px-4 w-full text-xs font-semibold">
       <div class="flex items-center justify-center lg:justify-between h-10">
         <div
-          class="hidden lg:flex items-center !border-1 border-white/25 py-1 px-2 gap-x-1 rounded-3xl space-x-2 text-gray-100"
+          class="hidden lg:flex items-center !border-1 border-white/90 py-1 px-2 gap-x-1 rounded-3xl space-x-2 text-gray-50"
         >
           <Icon name="heroicons:map-pin" class="text-lg" />
           <span class="">
             207, Boulevard de la Résistance, 7ᵉ étage, N°14 (C/O C.A.R), Casablanca, Maroc
           </span>
         </div>
-        <div class="flex space-x-2 text-gray-100">
+        <div class="flex space-x-2 text-gray-50">
           <div class="flex gap-x-2">
             {/* Phone Number */}
             <a
               href="tel:+212522456789"
-              class="flex items-center hover:opacity-90 transition-opacity !border-1 border-white/25 py-1 px-2 gap-x-1 rounded-3xl"
+              class="flex items-center hover:opacity-90 transition-opacity !border-1 border-white/90 py-1 px-2 gap-x-1 rounded-3xl"
               aria-label="Appelez-nous au +212 5 22 45 67 89"
             >
               <!-- <Phone size={16} /> -->
@@ -41,7 +41,7 @@ import Logo from "./logo/Logo.astro"
             {/* Email */}
             <a
               href="mail:contact@galaxiemedicale.ma"
-              class="flex items-center hover:opacity-90 transition-opacity !border-1 border-white/25 py-1 px-2 gap-x-1 rounded-3xl"
+              class="flex items-center hover:opacity-90 transition-opacity !border-1 border-white/90 py-1 px-2 gap-x-1 rounded-3xl"
               aria-label="Email contact@galaxiemedicale.ma"
             >
               <!-- <Phone size={16} /> -->
@@ -57,9 +57,16 @@ import Logo from "./logo/Logo.astro"
   {/* Main Navigation */}
   <div
     id="navbar"
-    class="bg-gray-50 transition-all duration-500 ease-in-out text-gray-900 opacity-90"
+    class="bg-gray-50 transition-all duration-500 ease-in-out text-gray-900 opacity-90 flex"
     data-aos="fade" data-aos-duration="300"
   >
+    <div class="flex ml-36 mr-10 !border-r border-primary bg-gray-50">
+      <!-- <div class="absolute inset-y-0 left-0 !border-l-2 border-dashed border-primary"></div> -->
+      <div class="absolute inset-y-0 right-0 !border-r border-primary"></div>
+      <div class="px-4 flex !border-l border-dashed border-primary">
+        <Logo withText={true} variant="inline"/>
+      </div>
+    </div>
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         {/* Desktop Navigation */}
@@ -69,7 +76,7 @@ import Logo from "./logo/Logo.astro"
           aria-label="Navigation principale"
         >
           {/* Logo */}
-          <Logo withText={true} variant="inline"/>
+          <!-- <Logo withText={true} variant="inline"/> -->
           <!-- <img
             src="/galaxie-medicale/logo.png"
             alt="Galaxie Medicale Logo"

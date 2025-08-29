@@ -7,8 +7,8 @@ import CardContent from "./ui/CardContent.astro";
 
 <section class="py-10 bg-background mb-32">
   <div class="container mx-auto px-4"  data-aos="fade-up" data-aos-duration="1500">
-    <h1 class="text-3xl font-bold text-center mb-6">Nos Services</h1>
-    <div class="text-center text-2xl font-medium mb-4">
+    <h1 class="text-3xl font-bold text-center mb-3">Nos Services</h1>
+    <div class="text-center text-2xl font-medium mb-6">
       <div class="flex flex-col lg:flex-row justify-center">
         <div class="flex flex-row justify-center">
           <div>Plus qu’un fournisseur</div>
@@ -22,24 +22,27 @@ import CardContent from "./ui/CardContent.astro";
       </div>
     </div>
     <div class="grid md:grid-cols-3 gap-8">
+
       <div class="flex">
         <Card
           key="1"
-          class="group hover:shadow-xl hover:-translate-y-1 transition-shadow transition-all duration-1000 transform !shadow-md !rounded-md"
+          class="group !shadow-md !rounded-md bg-white/50"
         >
           <CardContent className="justify-between text-left rounded-md !p-0">
-            <div class="text-lg font-semibold mb-6 mt-2 flex items-center rounded-md !p-2 !border border-1 border-gray-300 shadow-sm">
+            <div class="text-lg font-semibold mb-6 flex items-center rounded-md !p-2 shadow-sm bg-gray-50">
               <div class="bg-primary/90 p-4 rounded-full text-white">
-                <Icon name="heroicons:wrench-screwdriver" class="h-8 w-8" />
+                <Icon name="heroicons:user-group" class="h-4 w-4 md:h-6 md:w-6"/>
               </div>
-              <!-- <Icon name="heroicons:wrench-screwdriver" class="min-w-12 min-h-12"/> -->
-              <div class="text-center w-full">Support Technique</div>
+              <div class="text-center w-full">Démonstrations en conditions réelles</div>
             </div>
-            <div class="leading-relaxed text-gray-900 !p-4 !pt-0">
-              <span class="font-semibold">Installation sur site</span> et <span class="font-semibold">configuration complète</span> par notre équipe technique.
+            <div class="leading-relaxed text-gray-900 px-4 !pt-1 pb-4">
+              <span>Évaluez chaque équipement dans un cadre concret et accompagné par nos experts.
+                <br>
+                Vos équipes testent, comparent et <span class="font-bold">choisissent en toute confiance</span> la solution parfaitement adaptée à vos exigences médicales.</span>
+              <!-- <span class="font-semibold">Démonstrations et tests guidés</span> pour découvrir l’équipement en conditions réelles.
               <br>
               <br>
-              Accompagnement fiable pour la <span class="font-semibold">maintenance</span>, et tout <span class="font-semibold">assistance technique</span>.
+              Vos équipes choisissent en toute confiance la solution la mieux <span class="font-semibold">adaptée à vos besoins</span> techniques et opérationnels. -->
             </div>
           </CardContent>
         </Card>
@@ -47,20 +50,20 @@ import CardContent from "./ui/CardContent.astro";
       <div class="flex">
         <Card
           key="2"
-          class="group transition-shadow transition-all duration-300 transform !shadow-md !rounded-md"
+          class="group hover:shadow-xl !shadow-md !rounded-md bg-white/50"
         >
           <CardContent className="justify-between text-left rounded-md !p-0">
-            <div class="text-lg font-semibold mb-6 mt-2 flex items-center rounded-md !p-2 !border border-1 border-gray-300 shadow-sm">
+            <div class="text-lg font-semibold mb-6 flex items-center rounded-md !p-2 shadow-sm bg-gray-50">
               <div class="bg-primary/90 p-4 rounded-full text-white">
-                <Icon name="heroicons:user-group" class="h-8 w-8"/>
+                <Icon name="heroicons:wrench-screwdriver" class="h-4 w-4 md:h-6 md:w-6" />
               </div>
-              <div class="text-center w-full">Démonstrations et tests</div>
+              <!-- <Icon name="heroicons:wrench-screwdriver" class="min-w-12 min-h-12"/> -->
+              <div class="text-center w-full">Installation & configuration complètes</div>
             </div>
-            <div class="leading-relaxed text-gray-900 !p-4 !pt-0">
-              <span class="font-semibold">Démonstrations et tests guidés</span> pour découvrir l’équipement en conditions réelles.
-              <br>
-              <br>
-              Vos équipes choisissent en toute confiance la solution la mieux <span class="font-semibold">adaptée à vos besoins</span> techniques et opérationnels.
+            <div class="leading-relaxed text-gray-900 px-4 !pt-1 pb-4">
+              <span>Mise en place sur site assurée par nos techniciens qualifiés.
+                <br>
+                Bénéficiez d’un suivi continu et d’une <span class="font-bold">assistance technique fiable.</span></span>
             </div>
           </CardContent>
         </Card>
@@ -68,20 +71,21 @@ import CardContent from "./ui/CardContent.astro";
       <div class="flex">
         <Card
           key="3"
-          class="group transition-shadow transition-all duration-300 transform !shadow-md !rounded-md"
+          class="group !shadow-md !rounded-md bg-white/50"
         >
           <CardContent className="justify-between text-left rounded-md !p-0">
-            <div class="text-lg font-semibold mb-6 mt-2 flex items-center rounded-md !p-2 !border border-1 border-gray-300 shadow-sm">
+            <div class="text-lg font-semibold mb-6 flex items-center rounded-md !p-2 shadow-sm bg-gray-50">
               <div class="bg-primary/90 p-4 rounded-full text-white">
-                <Icon name="heroicons:academic-cap" class="h-8 w-8"/>
+                <Icon name="heroicons:academic-cap" class="h-4 w-4 md:h-6 md:w-6"/>
               </div>
-              <div class="text-center w-full">Formations pratiques</div>
+              <div class="text-center w-full">Formations pratiques & ciblées</div>
             </div>
-            <div class="leading-relaxed text-gray-900 !p-4 !pt-0">
-              <span class="font-semibold">Formations pratiques et ciblées</span>, pour maximiser l’efficacité et la maîtrise de vos équipements.
-              <br>
-              <br>
-              Nous accompagnons le transfert des compétences afin d’assurer une <span class="font-semibold">utilisation sécurisée et fluide</span> en contexte clinique.
+            <div class="leading-relaxed text-gray-900 px-4 !pt-1 pb-4">
+              <span>
+                Des sessions adaptées à vos équipes pour <span class="font-bold">maximiser l’efficacité</span> et la maîtrise des équipements.
+                <br>
+                Un transfert de compétences clair pour une <span class="font-bold">utilisation fluide et sécurisée</span> en clinique.
+              </span>
             </div>
           </CardContent>
         </Card>
