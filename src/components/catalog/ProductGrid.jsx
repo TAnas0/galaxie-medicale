@@ -20,8 +20,8 @@ export default function ProductGrid({ products }) {
                                     </div>
 
                                     <img
-                                        src={product.data.image ? product.data.image.src : "https://placehold.co/400x400"}
-                                        alt={product.data.name}
+                                        src={product.data.images.length ? product.data.images[0].src : "https://placehold.co/400x400"}
+                                        alt={product.data.name.fr}
                                         className="absolute w-full h-full object-contain transition-opacity duration-1000 ease-in-out"
                                         loading="lazy"
                                     />
@@ -36,22 +36,22 @@ export default function ProductGrid({ products }) {
 
                                 {/* Product Info */}
                                 <div className="p-2 flex flex-col justify-between h-[150px] text-gray-50 bg-primary/90">
-                                    <h4 className="text-lg font-semibold pb-2 line-clamp-2 underline">{product.data.name}</h4>
+                                    <h4 className="text-lg font-semibold pb-2 line-clamp-2 underline">{product.data.name.fr}</h4>
                                     <p className="text-sm text-muted-600 dark:text-muted-400 line-clamp-3">
-                                        {product.data.short_description}
+                                        {product.data.short_description.fr}
                                     </p>
 
                                     <div className="flex justify-between items-center mt-auto">
                                         <p className="text-xs text-muted-400 italic">{product.data.brand.name}</p>
                                         <div className="flex gap-1">
                                             <span className="inline-block text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-2 py-0.5 rounded-md">
-                                                {product.data.category}
+                                                {product.data.category.display.fr}
                                             </span>
-                                            {product.data.sub_category && (
+                                            {/* {product.data.sub_category && (
                                                 <span className="inline-block text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-2 py-0.5 rounded-md">
                                                     {product.data.sub_category}
                                                 </span>
-                                            )}
+                                            )} */}
                                         </div>
                                     </div>
                                 </div>

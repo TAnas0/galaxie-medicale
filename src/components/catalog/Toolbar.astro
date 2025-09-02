@@ -22,8 +22,8 @@
 
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'diagnostic_equipment' ? 'bg-primary/50 font-semibold' : ''"
-    @click="activeCategory = 'diagnostic_equipment'"
+    :class="activeCategory === 'diagnostic' ? 'bg-primary/50 font-semibold' : ''"
+    @click="activeCategory = 'diagnostic'"
   >
     <span>Diagnostique</span>
   </button>
@@ -46,8 +46,8 @@
 
   <button
     class="group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer"
-    :class="activeCategory === 'sterilization' ? 'bg-primary/50 font-semibold' : ''"
-    @click="activeCategory = 'sterilization'"
+    :class="activeCategory === 'sterilisation' ? 'bg-primary/50 font-semibold' : ''"
+    @click="activeCategory = 'sterilisation'"
   >
     <span>Stérilisation</span>
   </button>

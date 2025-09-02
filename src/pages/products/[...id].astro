@@ -15,75 +15,149 @@ import Header1 from "../../components/Header1.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const products = await getCollection("products");
+  // const products = await getCollection("products");
+  const products = await getCollection("productsFull");
   return products.map((product) => ({
     params: { id: product.id },
   }));
 }
 
 const { params } = Astro;
-const products = await getCollection("products");
+// const products = await getCollection("products");
+const products = await getCollection("productsFull");
 let product = products.find((p) => p.id === params.id);
 
 if (!product) {
   throw new Error(`Product not found: ${params.id}`);
 }
 
-// let specifications = [
-//   { label: "Modèle", value: "Phoenix Blu Plus⁺ 18 L" },
-//   { label: "Classe", value: "Classe B – conforme EN 13060" },
-//   { label: "Volume de la chambre", value: "18 L (Ø 255 × 360 mm)" },
-//   { label: "Dimensions externes", value: "462 × 445 × 600 mm (L × H × P)" },
-//   { label: "Poids net", value: "54 kg" },
-//   { label: "Alimentation", value: "220–230 V AC, 50/60 Hz" },
-//   { label: "Consommation électrique", value: "1800 W" },
-//   { label: "Plage de température de stérilisation", value: "121 °C / 134 °C" },
-//   { label: "Pression max. de service", value: "2.5 bar" },
-//   { label: "Pompe à vide", value: "Double tête, vide fractionné (3 phases)" },
-//   {
-//     label: "Générateur de vapeur",
-//     value: "Externe, ultra-rapide, anti-calcaire",
-//   },
-//   { label: "Réservoir eau distillée", value: "4.6 L" },
-//   { label: "Réservoir eaux usées", value: "5.0 L" },
-//   { label: "Consommation d’eau par cycle", value: "0.3 – 0.6 L" },
-//   { label: "Affichage", value: "Écran LCD graphique multilingue" },
-//   {
-//     label: "Connectivité",
-//     value: "USB (clé incluse), imprimante thermique (option)",
-//   },
-//   {
-//     label: "Cycles",
-//     value: "Universel, Prion, S (non emballé), Test Vide, Bowie-Dick, Helix",
-//   },
-//   { label: "Durée du cycle le plus rapide", value: "18 minutes (Classe B)" },
-//   {
-//     label: "Capacité de charge",
-//     value: "Jusqu'à 5 kg non emballé / 2.5 kg emballé",
-//   },
-//   { label: "Matériau de la chambre", value: "Acier inoxydable" },
-//   {
-//     label: "Système de filtration",
-//     value: "Filtre bactérien + séparateur air/eau",
-//   },
-//   { label: "Mode veille", value: "Chambre maintenue chaude entre les cycles" },
-//   { label: "Capteur de conductivité", value: "Alarme si >15 µS" },
-// ];
+const CATEGORY_HIGHLIGHTS = {
+  "sterilisation": [
+    "chamber_dimensions",
+    "cycle_time",
+    "cycle_time_class_b",
+    "chamber_capacity"
+  ],
+  "surgery": [
+    "intensite_lumineuse",
+    "temperature_couleur",
+    "cri",
+    "diametre_champ",
+    "profondeur_eclairage",
+    // "nombre_led",
+    // "duree_vie",
+    // "consommation",
+    // "controle",
 
-const certifications = [
-  "CE 93/42/EEC (Dispositif médical)",
-  "Directive 97/23/CE (PED – équipements sous pression)",
-  "ISO 13485:2016 – Systèmes qualité dispositifs médicaux",
-  "EN 13060 – Autoclaves à usage médical",
-  "EN 61010-1 / EN 61010-2-040 – Sécurité électrique",
-  "EN 61326 – Compatibilité électromagnétique",
-  "EN 14971 – Gestion des risques",
-];
+    "inclinaison_trendelenburg",
+    "inclinaison_laterale",
+    "glissement_horizontal",
+    "charge_maximale",
+    "freinage",
+  ],
+  "diagnostic": [
+    // "ecran",
+    "parametres_vitals",
+    "autonomie_batterie",
+    // "poids",
+    // "interfaces",
+    "alarmes",
+    // "impression",
+    "memoire",
+    // "alimentation",
+    // "dimensions",
+    "modes_patient",
+    // "capacite_stockage",
+  ],
+  "medical_furniture": [
+    "roulettes",
+    "dimensions",
+  ],
+  "dental/chairs": [
+    "weight",
+    "adjustable_height",
+    "tilt_range"
+  ]
+};
+// Function to decide what is highlighted
+function applyHighlights(product) {
+    const categoryKey = product.data.category?.canonical || "";
+    const alwaysHighlight = CATEGORY_HIGHLIGHTS[categoryKey] || [];
+
+    if (product.data.attributes) {
+      product.data.attributes.forEach(attr => {
+        // Preserve existing manual highlighted flags
+        if (!attr.highlighted && alwaysHighlight.includes(attr.canonical_name)) {
+          attr.highlighted = true;
+        }
+      });
+    }
+
+    return product;
+}
+const highlights = applyHighlights(product).data.attributes.filter(attr => attr.highlighted)
+
+
+
+const electricalSpecs = product.data.attributes?.filter(attr => (attr.category === "Electrical" && attr.type !== "boolean"))
+product.data.attributes = product.data.attributes?.filter(attr => !electricalSpecs?.includes(attr))
+const certifications = product.data.compliance?.certifications
+const standards = product.data.compliance?.standards
 
 // TODO
 const relatedProducts = products
   .filter((p) => p.data.category == product.data.category)
   .slice(0, 3);
+
+function formatAttributeValue(attr) {
+  const { value, type } = attr;
+
+  if (value === null || value === undefined) return "";
+
+  switch (type) {
+    case "number":
+      if (value.qty !== undefined) {
+        return `${value.qty}${value.unit ? " " + value.unit : ""}`;
+      }
+      return String(value);
+
+    case "integer":
+      return `${value}${value.unit ? " " + value.unit : ""}`;
+
+    case "range":
+      if (value.length && value.height && value.depth) {
+        return `${value.length} × ${value.height} × ${value.depth}${value.unit ? " " + value.unit : ""}`;
+      }
+      if (value.min && value.max) {
+        return `${value.min}–${value.max}${value.unit ? " " + value.unit : ""}`;
+      }
+      return JSON.stringify(value);
+
+    case "enum":
+      return Array.isArray(value) ? value.join(", ") : String(value);
+
+    case "string":
+      if (value.l && value.h && value.p) {
+        return `${value.l} × ${value.h} × ${value.p}${value.unit ? " " + value.unit : ""}`;
+      }
+      return typeof value === "object" ? JSON.stringify(value) : String(value);
+
+    case "boolean":
+      return value ? "Oui" : "Non";
+
+    default:
+      return typeof value === "object" ? JSON.stringify(value) : String(value);
+  }
+}
+
+const HIGHLIGHT_CERTS = ["CE", "ISO 13485", "FDA"];
+const HIGHLIGHT_STANDARDS = ["EN 13060", "ISO 14937"];
+const highlightedCerts = product.data.compliance?.certifications?.filter(cert =>
+  HIGHLIGHT_CERTS.includes(cert)
+);
+const highlightedStandards = product.data.compliance?.standards?.filter(std =>
+  HIGHLIGHT_STANDARDS.includes(std)
+);
 ---
 
 <Layout>
@@ -98,7 +172,7 @@ const relatedProducts = products
         <div class="space-y-6 flex flex-col">
           <div class="h-full">
             <h1 class="text-center lg:text-left text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 underline mb-3">
-              {product.data.name}
+              {product.data.name.fr}
             </h1>
             <div class="flex flex-cols gap-2 mb-6 justify-center lg:justify-end -translate-y-1 mb-3">
               {(product.data.availability == "out_of_stock") && (
@@ -106,36 +180,53 @@ const relatedProducts = products
                   Rupture de stock
                 </div>
               )}
-              {(product.data.category) && (
+              {(product.data.category.display.fr) && (
                 <div class="w-fit bg-primary/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
-                  {product.data.category}
+                  {product.data.category.display.fr}
                 </div>
               )}
-              {(product.data.subcategory) && (
+              <!-- {(product.data.subcategory) && (
                 <div class="w-fit bg-primary/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
                   {product.data.subcategory}
                 </div>
-              )}
+              )} -->
             </div>
             <div class="lg:hidden">
               {product.data.images?.length ? <Carousel images={product.data.images} client:load /> : null}
             </div>
 
-            <p class="text-lg text-gray-700 whitespace-pre-line leading-[25px] bg-white/50 p-3 h-full">
-              {product.data.full_description}
-              {
+            <div class="text-lg text-gray-700 whitespace-pre-line leading-[25px] bg-white/50 p-3 h-full">
+              {product.data.full_description.fr}
+              <!-- {
                 product.data.technical_specs["other"]
                   ? product.data.technical_specs["other"].join("\n")
                   : ""
-              }
-            </p>
+              } -->
+              <!-- Highlights -->
+              <div>
+                <ul class="list-disc list-inside space-y-1 ml-3 mt-6 mb-12">
+                  {highlights?.map((highlight, index) => (
+                    <li key={index}>
+                      <span class="font-semibold">{highlight.display_label.fr}</span>: {formatAttributeValue(highlight)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
 
+          <div class="flex justify-end">
+            {[...highlightedCerts, ...highlightedStandards]?.map(cert => (
+              <span key={cert} class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full mr-1">
+                {cert}
+              </span>
+            ))}
+          </div>
           {/* Brand Info */}
-
           <div class="flex items-center justify-center border border-gray-300 w-fit px-3 py-1 rounded-md shadow-md self-end">
             Made by:  <span class="font-bold">{product.data.brand.name}</span>
           </div>
+
         </div>
         {/* Image Carousel */}
         <div class="hidden lg:block">
@@ -157,12 +248,12 @@ const relatedProducts = products
             </CardHeader>
             <CardContent className="space-y-3">
               {
-                Object.entries(product.data.technical_specs).map(
-                  ([label, value], index) => (
+                product.data.attributes?.map(
+                  (attribute, index) => (
                     <div class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0">
-                      <span class="text-sm text-gray-600">{label}</span>
+                      <span class="text-sm text-gray-600">{attribute.display_label.fr}</span>
                       <span class="text-sm font-medium text-gray-900 whitespace-pre-line">
-                        {Array.isArray(value) ? value.join("\n") : value}
+                        {formatAttributeValue(attribute)}
                       </span>
                     </div>
                   )
@@ -195,19 +286,18 @@ const relatedProducts = products
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div>
-                <!-- <h4 class="font-medium text-gray-900 mb-2">
-                  Applications principales
-                </h4> -->
-                <ul
-                  class="list-disc list-inside space-y-1 text-sm text-gray-700"
-                >
-                  <li>1</li>
-                  <li>2</li>
-                  <!-- <li>Centres de chirurgie ambulatoire</li> -->
-                  <!-- <li>Instituts de beauté et studios de tatouage</li> -->
-                </ul>
-              </div>
+              {
+                electricalSpecs?.map(
+                  (attribute, index) => (
+                    <div class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0">
+                      <span class="text-sm text-gray-600">{attribute.display_label.fr}</span>
+                      <span class="text-sm font-medium text-gray-900 whitespace-pre-line">
+                        {formatAttributeValue(attribute)}
+                      </span>
+                    </div>
+                  )
+                )
+              }
             </CardContent>
           </Card>
 
@@ -242,13 +332,19 @@ const relatedProducts = products
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
-              {
-                certifications.map((cert, index) => (
-                  <div key={index} class="flex items-center space-x-3">
-                    <span class="text-sm text-gray-700">{cert}</span>
-                  </div>
-                ))
-              }
+              <div>
+
+                <ul class="list-disc list-inside space-y-1">
+                  {[
+                    ...(certifications ?? []),
+                    ...(standards ?? [])
+                  ].map((cert, index) => (
+                    <li key={index}>
+                      <span class="">{cert}</span>
+                    </li>
+                  ))}
+                </ul>             
+            </div>
             </CardContent>
           </Card>
           <!--   
@@ -377,3 +473,9 @@ const relatedProducts = products
 
   <Footer />
 </Layout>
+
+
+<script is:client>
+
+
+</script>

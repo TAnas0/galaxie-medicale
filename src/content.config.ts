@@ -26,4 +26,56 @@ const products = defineCollection({
 });
 // const brands = defineCollection({ /* ... */ });
 
-export const collections = { products };
+const productsFull = defineCollection({
+  loader: file("src/data/products-full.json"),
+  schema: ({ image }) =>
+    z.object({
+      id: z.string(),
+      name: z.object({
+        en: z.string(),
+        fr: z.string().optional(),
+      }),
+      brand: z.object({
+        name: z.string(),
+        description: z.string().optional(),
+      }),
+      category: z.object({
+        canonical: z.string(),
+        display: z.object({
+          en: z.string(),
+          fr: z.string().optional(),
+        }),
+      }),
+      short_description: z.object({
+        en: z.string(),
+        fr: z.string().optional(),
+      }),
+      full_description: z.object({
+        en: z.string(),
+        fr: z.string().optional(),
+      }),
+      availability: z.string().optional(),
+      images: z.array(image()).optional(),
+      attributes: z.array(
+        z.object({
+          canonical_name: z.string(),
+          display_label: z.object({
+            fr: z.string(),
+            en: z.string()
+          }),
+          category: z.string(),
+          type: z.string(), // simplified from enum
+          value: z.any(),   // catch-all
+          raw: z.any().optional(),
+          highlighted: z.boolean().optional()
+        })
+      ).optional(),
+      compliance: z.object({
+        certifications: z.array(z.string()).optional(),
+        standards: z.array(z.string()).optional(),
+      }).optional(),
+    }),
+});
+
+
+export const collections = { products, productsFull };

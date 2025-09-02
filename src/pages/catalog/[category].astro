@@ -1,0 +1,57 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header1 from "../../components/Header1.astro";
+import Footer from "../../components/ui/Footer.astro";
+import "../../styles/global.css";
+import ProductCatalog from "../../components/catalog/ProductCatalog.jsx";
+import { getCollection } from "astro:content";
+
+let products = await getCollection("productsFull");
+const { category } = Astro.params;
+export async function getStaticPaths() {
+  // derive unique categories from your dataset
+  // const categories = [...new Set(products.map((p) => p.data.category.canonical))];
+  const categories = [
+    "all",
+    "medical_furniture",
+    "diagnostic",
+    "emergency",
+    "surgery",
+    "sterilisation",
+    "accessories_consummables"
+  ]
+
+  return categories.map((cat) => ({
+    params: { category: cat },
+  }));
+}
+---
+
+<Layout>
+  <Header1 />
+  <div class="w-full max-w-7xl mx-auto" data-aos="fade" data-aos-duration="300">
+    <ProductCatalog
+      products={products}
+      initialCategory={category}
+      client:load
+    />
+  </div>
+  <Footer />
+</Layout>
+
+<script is:browser>
+  const toolbar = document.getElementById("categories-toolbar");
+  const filters = document.getElementById("filters");
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 250) {
+      toolbar.classList.add("-translate-y-11");
+      toolbar.classList.remove("translate-y-0");
+    } else {
+      toolbar.classList.remove("-translate-y-11");
+      toolbar.classList.add("translate-y-0");
+    }
+  });
+</script>

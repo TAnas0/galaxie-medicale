@@ -1,20 +1,38 @@
-import { useState } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import ProductToolbar from './ProductToolbar.jsx';
 import ProductGrid from './ProductGrid.jsx';
-import ProductFilters from './ProductFilters.jsx';
 import FiltersDrawer from './FiltersDrawer.jsx';
-import { useMemo } from 'react'
 
-export default function Catalog({ products }) {
+export default function Catalog({ products, initialCategory }) {
+    // Use a sensible default ("all") so the page renders immediately
     const [filters, setFilters] = useState({
-        category: "all",
-        availability: 'all', // 'in_stock', 'on_order', 'out_of_stock'
-        price: 'all',        // '$', '$$', '$$$+'
+        category: initialCategory || 'all',
+        availability: 'all',
+        price: 'all',
     });
+
+    // Update category from URL on client, if present
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const categoryFromUrl = params.get('category');
+
+        if (categoryFromUrl && categoryFromUrl !== filters.category) {
+            setFilters(prev => ({ ...prev, category: categoryFromUrl }));
+        }
+    }, []); // run once on mount // render nothing until filters are ready
+
+    // Read URL parameter on mount
+    // useEffect(() => {
+    //     const params = new URLSearchParams(window.location.search);
+    //     const categoryFromUrl = params.get('category');
+    //     if (categoryFromUrl) {
+    //         setFilters(prev => ({ ...prev, category: categoryFromUrl }));
+    //     }
+    // }, []);
 
     const filteredProducts = useMemo(() => {
         return products.filter((p) => {
-            if (filters.category !== "all" && p.data.category !== filters.category) return false
+            if (filters.category !== "all" && p.data.category.canonical !== filters.category) return false
             if (filters.availability !== 'all' && p.data.availability !== filters.availability) return false
             if (filters.price !== 'all' && p.data.price !== filters.price) return false
             return true
@@ -23,7 +41,7 @@ export default function Catalog({ products }) {
 
     return (
         <div>
-            <div id="catalog" class="bg-gray-50">
+            <div id="catalog" className="bg-gray-50/50 min-h-[95vh]">
                 <div id="categories-toolbar" className="mt-27 sticky top-27 w-full z-50 transition-transform duration-300 ease-in-out translate-y-0 bg-white border-1 border-gray-300 rounded-lg p-1">
                     <ProductToolbar
                         filters={filters}
