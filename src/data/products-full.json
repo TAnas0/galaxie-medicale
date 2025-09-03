@@ -26,13 +26,13 @@
     },
     "availability": "out_of_stock",
     "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-PRINTER-18.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-18.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-AWF-18.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-PRINTER-18.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-PRINTER-18.png"
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-18.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-AWF-18.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LCD-PRINTER-18.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-18.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-AWF-18.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-LED-PRINTER-18.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-18-l/Phoenix-Blu-PRINTER-18.webp"
     ],
     "attributes": [
       {
@@ -256,12 +256,12 @@
     },
     "availability": "out_of_stock",
     "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB (Aperta).jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12 (Aperta).jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12.jpg"
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB (Aperta).webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12 (Aperta).webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12.webp"
     ],
     "attributes": [
       {
@@ -443,15 +443,15 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-24--FRONT.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-24.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-24.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-AWF-24.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-PRINTER-24.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-24.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-AWF-24.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-PRINTER-24-FRONT.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-PRINTER-24.jpg"
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-24--FRONT.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-24.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-24.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-AWF-24.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-PRINTER-24.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-24.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-AWF-24.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-PRINTER-24-FRONT.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-PRINTER-24.webp"
     ],
     "attributes": [
       {
@@ -649,9 +649,9 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/1.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/2.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/3.jpg"
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/1.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/2.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-18-l/3.webp"
     ],
     "attributes": [
       {
@@ -882,10 +882,10 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LED-Plus+-24.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LED-TOP-24.jpg"
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24-FRONT.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LCD-PLUS+-24.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LED-Plus+-24.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-plus-24-l/Phoenix-Blu-LED-TOP-24.webp"
     ],
     "attributes": [
       {
@@ -1116,9 +1116,9 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-1.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-2.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-3.jpg"
+      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-1.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-2.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-3.webp"
     ],
     "attributes": [
       {
@@ -1267,7 +1267,7 @@
     },
     "availability": "on_order",
     "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-as-66/as66-blue.jpg"
+      "../assets/products/sterilization/autoclaves/autoclave-as-66/as66-blue.webp"
     ],
     "attributes": [
       {
@@ -1426,12 +1426,12 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-1.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-2.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-3.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-4.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-5.jpg",
-      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-6.jpg"
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-1.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-2.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-3.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-4.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-5.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-6.webp"
     ],
     "attributes": [
       {
@@ -1569,10 +1569,10 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/surgery/lights/famed-helios-160/helios-160.png",
-      "../assets/products/surgery/lights/famed-helios-160/helios-160-1.png",
-      "../assets/products/surgery/lights/famed-helios-160/helios-160-2.png",
-      "../assets/products/surgery/lights/famed-helios-160/helios-160-3.png"
+      "../assets/products/surgery/lights/famed-helios-160/helios-160.webp",
+      "../assets/products/surgery/lights/famed-helios-160/helios-160-1.webp",
+      "../assets/products/surgery/lights/famed-helios-160/helios-160-2.webp",
+      "../assets/products/surgery/lights/famed-helios-160/helios-160-3.webp"
     ],
     "attributes": [
       {
@@ -1751,10 +1751,10 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-1.png",
-      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-2.png",
-      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-3.png",
-      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-4.png"
+      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-1.webp",
+      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-2.webp",
+      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-3.webp",
+      "../assets/products/surgery/lights/famed-ignis-160/ignis-160-4.webp"
     ],
     "attributes": [
       {
@@ -1934,10 +1934,10 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/surgery/lights/famed-solis-130/solis-130.jpg",
-      "../assets/products/surgery/lights/famed-solis-130/solis-130-2.jpg",
-      "../assets/products/surgery/lights/famed-solis-130/solis-130-3.jpg",
-      "../assets/products/surgery/lights/famed-solis-130/solis-130-4.jpg"
+      "../assets/products/surgery/lights/famed-solis-130/solis-130.webp",
+      "../assets/products/surgery/lights/famed-solis-130/solis-130-2.webp",
+      "../assets/products/surgery/lights/famed-solis-130/solis-130-3.webp",
+      "../assets/products/surgery/lights/famed-solis-130/solis-130-4.webp"
     ],
     "attributes": [
       {
@@ -2117,12 +2117,12 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/diagnostic/monitors/e8/10b125d5611ae8bf0c6c0bcc55d71e4e.jpg",
+      "../assets/products/diagnostic/monitors/e8/10b125d5611ae8bf0c6c0bcc55d71e4e.webp",
       "../assets/products/diagnostic/monitors/e8/6a978aa74ec7010d4e89bb248afcc1fb.webp",
       "../assets/products/diagnostic/monitors/e8/8002.webp",
-      "../assets/products/diagnostic/monitors/e8/8021.jpg",
-      "../assets/products/diagnostic/monitors/e8/E8-accessories-cables.png",
-      "../assets/products/diagnostic/monitors/e8/f2b3f5d603fb36eef59ab7d93a957640.jpg"
+      "../assets/products/diagnostic/monitors/e8/8021.webp",
+      "../assets/products/diagnostic/monitors/e8/E8-accessories-cables.webp",
+      "../assets/products/diagnostic/monitors/e8/f2b3f5d603fb36eef59ab7d93a957640.webp"
     ],
     "attributes": [
       {
@@ -2300,9 +2300,9 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/diagnostic/monitors/e10/E10-2.jpg",
-      "../assets/products/diagnostic/monitors/e10/E10-3.jpg",
-      "../assets/products/diagnostic/monitors/e10/E10-5.jpg"
+      "../assets/products/diagnostic/monitors/e10/E10-2.webp",
+      "../assets/products/diagnostic/monitors/e10/E10-3.webp",
+      "../assets/products/diagnostic/monitors/e10/E10-5.webp"
     ],
     "attributes": [
       {
@@ -2443,12 +2443,12 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/diagnostic/monitors/e12/E12-front.jpg",
-      "../assets/products/diagnostic/monitors/e12/E12-front-2.jpg",
-      "../assets/products/diagnostic/monitors/e12/E12-front-3.jpg",
-      "../assets/products/diagnostic/monitors/e12/E12-back.jpg",
-      "../assets/products/diagnostic/monitors/e12/E12-side-2.jpg",
-      "../assets/products/diagnostic/monitors/e12/E12-side.jpg"
+      "../assets/products/diagnostic/monitors/e12/E12-front.webp",
+      "../assets/products/diagnostic/monitors/e12/E12-front-2.webp",
+      "../assets/products/diagnostic/monitors/e12/E12-front-3.webp",
+      "../assets/products/diagnostic/monitors/e12/E12-back.webp",
+      "../assets/products/diagnostic/monitors/e12/E12-side-2.webp",
+      "../assets/products/diagnostic/monitors/e12/E12-side.webp"
     ],
     "attributes": [
       {
@@ -2587,12 +2587,12 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/diagnostic/monitors/e15/E15.jpg",
-      "../assets/products/diagnostic/monitors/e15/E15-2.jpg",
-      "../assets/products/diagnostic/monitors/e15/E15-side.jpg",
-      "../assets/products/diagnostic/monitors/e15/E15-side-2.jpg",
-      "../assets/products/diagnostic/monitors/e15/E15-back.jpg",
-      "../assets/products/diagnostic/monitors/e15/E15-full-specs.png"
+      "../assets/products/diagnostic/monitors/e15/E15.webp",
+      "../assets/products/diagnostic/monitors/e15/E15-2.webp",
+      "../assets/products/diagnostic/monitors/e15/E15-side.webp",
+      "../assets/products/diagnostic/monitors/e15/E15-side-2.webp",
+      "../assets/products/diagnostic/monitors/e15/E15-back.webp",
+      "../assets/products/diagnostic/monitors/e15/E15-full-specs.webp"
     ],
     "attributes": [
       {
@@ -2720,11 +2720,11 @@
     },
     "availability": "unknown",
     "images": [
-      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-2.png",
-      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-back.png",
-      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-double.jpg",
-      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-front.png",
-      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-side.png"
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-2.webp",
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-back.webp",
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-double.webp",
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-front.webp",
+      "../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-side.webp"
     ],
     "attributes": [
       {
@@ -2845,12 +2845,12 @@
     },
     "availability": "unknown",
     "images": [
-      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B.png",
-      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-2.png",
-      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-back.png",
-      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-full-kit.png",
-      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-full-specs.png",
-      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-side.png"
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B.webp",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-2.webp",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-back.webp",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-full-kit.webp",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-full-specs.webp",
+      "../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-side.webp"
     ],
     "attributes": [
       {
@@ -2971,11 +2971,11 @@
     },
     "availability": "unknown",
     "images": [
-      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-front-2.jpg",
-      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-back.jpg",
-      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-full-specs.png",
-      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-screen.png",
-      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-side.jpg"
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-front-2.webp",
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-back.webp",
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-full-specs.webp",
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-screen.webp",
+      "../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-side.webp"
     ],
     "attributes": [
       {
@@ -3481,16 +3481,16 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-10.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-11.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-2.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-3.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-4.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-7.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-8.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-9.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4.jpg"
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-10.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-11.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-2.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-3.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-4.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-7.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-8.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-9.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4/A100-4.webp"
     ],
     "attributes": [
       {
@@ -3631,18 +3631,18 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-2.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-5.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-6.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-7.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-8.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-9.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-10.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-11.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-12.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-13.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-14.jpg"
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-2.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-5.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-6.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-7.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-8.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-9.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-10.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-11.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-12.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-13.webp",
+      "../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-14.webp"
     ],
     "attributes": [
       {
@@ -3783,16 +3783,16 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-4.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-5.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-6.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-7.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-8.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-9.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-10.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-11.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-12.jpg"
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-4.webp",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-5.webp",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-6.webp",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-7.webp",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-8.webp",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-9.webp",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-10.webp",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-11.webp",
+      "../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-12.webp"
     ],
     "attributes": [
       {
@@ -3956,19 +3956,19 @@
     },
     "availability": "out_of_stock",
     "images": [
-      "../assets/products/surgery/operating-tables/saikang/A301/1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/2.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-0.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-10.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-2.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-3.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-4.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-5.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-7.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-8.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/A301-9.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A301/f3bbd53d.jpg"
+      "../assets/products/surgery/operating-tables/saikang/A301/1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/2.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-0.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-10.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-2.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-3.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-4.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-5.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-7.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-8.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/A301-9.webp",
+      "../assets/products/surgery/operating-tables/saikang/A301/f3bbd53d.webp"
     ],
     "attributes": [
       {
@@ -4117,23 +4117,23 @@
     },
     "availability": "on_order",
     "images": [
-      "../assets/products/surgery/operating-tables/saikang/A302/8f4cae98.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-0.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-10.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-11.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-12.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-13.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-14.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-2.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-3.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-4.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-5.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-6.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-7.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-8.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/A302-9.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A302/f2cc9816.jpg"
+      "../assets/products/surgery/operating-tables/saikang/A302/8f4cae98.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-0.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-10.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-11.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-12.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-13.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-14.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-2.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-3.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-4.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-5.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-6.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-7.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-8.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/A302-9.webp",
+      "../assets/products/surgery/operating-tables/saikang/A302/f2cc9816.webp"
     ],
     "attributes": [
       {
@@ -4258,19 +4258,19 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_2.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_3.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_4.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_5.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_6.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_7.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_8.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_9.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_10.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_11.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_12.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A307/A307_13.jpg"
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_2.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_3.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_4.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_5.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_6.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_7.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_8.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_9.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_10.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_11.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_12.webp",
+      "../assets/products/surgery/operating-tables/saikang/A307/A307_13.webp"
     ],
     "attributes": [
       {
@@ -4363,12 +4363,12 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/surgery/operating-tables/saikang/A501/A501-1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A501/A501-2.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A501/A501-3.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A501/A501-4.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A501/A501-5.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A501/A501-6.jpg"
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-2.webp",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-3.webp",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-4.webp",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-5.webp",
+      "../assets/products/surgery/operating-tables/saikang/A501/A501-6.webp"
     ],
     "attributes": [
       {
@@ -4496,18 +4496,18 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-0.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/38dacfa1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-10.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-1.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-2.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-3.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-4.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-5.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-6.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-7.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-8.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-9.jpg"
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-0.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/38dacfa1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-10.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-1.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-2.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-3.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-4.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-5.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-6.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-7.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-8.webp",
+      "../assets/products/surgery/operating-tables/saikang/A2000/A2000-9.webp"
     ],
     "attributes": [
       {
@@ -4669,7 +4669,7 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/medical_furniture/trolleys/saikang/SKB037-A/SKB037-A.jpg"
+      "../assets/products/medical_furniture/trolleys/saikang/SKB037-A/SKB037-A.webp"
     ],
     "attributes": [
       {
@@ -4740,9 +4740,9 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/medical_furniture/trolleys/saikang/SKB037-B/SKB037-B.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB037-B/SKB037-B-2.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB037-B/SKB037-B-3.jpg"
+      "../assets/products/medical_furniture/trolleys/saikang/SKB037-B/SKB037-B.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB037-B/SKB037-B-2.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB037-B/SKB037-B-3.webp"
     ],
     "attributes": [
       {
@@ -4835,9 +4835,9 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/medical_furniture/trolleys/saikang/SKB037-C/SKB037-C.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB037-C/SKB037-C-2.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB037-C/SKB037-C-3.jpg"
+      "../assets/products/medical_furniture/trolleys/saikang/SKB037-C/SKB037-C.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB037-C/SKB037-C-2.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB037-C/SKB037-C-3.webp"
     ],
     "attributes": [
       {
@@ -4919,9 +4919,9 @@
     },
     "availability": "out_of_stock",
     "images": [
-      "../assets/products/medical_furniture/trolleys/saikang/SKB038-2/SKB038-2.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB038-2/SKB038-2-2.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB038-2/SKB038-2-3.jpg"
+      "../assets/products/medical_furniture/trolleys/saikang/SKB038-2/SKB038-2.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB038-2/SKB038-2-2.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB038-2/SKB038-2-3.webp"
     ],
     "attributes": [
       {
@@ -4992,11 +4992,11 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-sitting.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-inclined.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-declined.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-lifted.jpg"
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-sitting.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-inclined.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-declined.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-lifted.webp"
     ],
     "attributes": [
       {
@@ -5082,11 +5082,11 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-1.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-2.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-3.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-4.jpg"
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-1.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-2.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-3.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-4.webp"
     ],
     "attributes": [
       {
@@ -5168,10 +5168,10 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6-lifted.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6-open.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6-sitting.jpg"
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6-lifted.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6-open.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6-sitting.webp"
     ],
     "attributes": [
       {
@@ -5253,12 +5253,12 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-chair.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-declined.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-inclined.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-lifted.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-lowered.jpg"
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-chair.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-declined.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-inclined.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-lifted.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-lowered.webp"
     ],
     "attributes": [
       {
@@ -5353,8 +5353,8 @@
     },
     "availability": "in_stock",
     "images": [
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10.jpg",
-      "../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10-2.jpg",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10.webp",
+      "../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10-2.webp",
       "../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10-declined.avif",
       "../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10-inclined.avif",
       "../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10-lifted.webp"
