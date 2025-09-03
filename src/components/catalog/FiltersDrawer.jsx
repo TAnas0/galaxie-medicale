@@ -93,13 +93,13 @@ export default function FiltersAndSort({ filters, setFilters, totalProducts }) {
                                     <div className="relative flex h-full flex-col overflow-y-auto bg-white py-6 shadow-xl pt-32">
                                         <div className="px-4 sm:px-6">
                                             <DialogTitle className="text-base font-semibold text-black">
-                                                <div className="flex flex-cols items-center gap-1 pb-1">
+                                                <div className="flex flex-cols items-center gap-1 pb-1 text-lg underline mb-3">
                                                     {/* <Icon name="heroicons:bars-4" /> */}
-                                                    <FunnelIcon className="w-2 h-2 lg:w-4 lg:h-4" />
+                                                    <FunnelIcon className="w-4 h-4 lg:w-5 lg:h-5" />
                                                     Filtres
                                                 </div>
                                             </DialogTitle>
-                                            <div className="basis-1/5 p-4 pt-2 bg-white border-1 border-gray-300 rounded-lg">
+                                            <div className="basis-1/5 p-4 pt-2 bg-white border-1 border-gray-300 rounded-lg mb-3">
                                                 <h3 className="font-sans text-lg mb-2 text-muted-800">
                                                     Disponibilité
                                                 </h3>

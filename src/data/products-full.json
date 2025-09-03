@@ -57,7 +57,7 @@
           "fr": "Dimensions externes"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "length": 462,
           "height": 445,
@@ -73,7 +73,7 @@
           "fr": "Dimensions chambre"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "diameter": 255,
           "depth": 360,
@@ -89,7 +89,7 @@
           "fr": "Dimensions plateau"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "length": 285,
           "width": 190,
@@ -146,7 +146,7 @@
           "fr": "Poids"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "net": 54,
           "gross": 56,
@@ -285,7 +285,7 @@
           "fr": "Dimensions externes"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "length": 407,
           "height": 410,
@@ -301,7 +301,7 @@
           "fr": "Dimensions chambre"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "diameter": 210,
           "depth": 360,
@@ -316,7 +316,7 @@
           "fr": "Dimensions plateau"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "length": 310,
           "width": 160,
@@ -373,7 +373,7 @@
           "fr": "Poids"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "net": 42,
           "gross": 44,
@@ -476,7 +476,7 @@
           "fr": "Dimensions externes"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "length": 462,
           "height": 445,
@@ -492,7 +492,7 @@
           "fr": "Dimensions chambre"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "diameter": 255,
           "depth": 460,
@@ -508,7 +508,7 @@
           "fr": "Dimensions plateau"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "length": 385,
           "width": 190,
@@ -566,7 +566,7 @@
           "fr": "Poids"
         },
         "category": "Physical",
-        "type": "range",
+        "type": "composite",
         "value": {
           "net": 56,
           "gross": 59,
@@ -679,9 +679,9 @@
         "category": "Physical",
         "type": "string",
         "value": {
-          "l": 462,
-          "h": 445,
-          "p": 600,
+          "length": 462,
+          "height": 445,
+          "depth": 600,
           "unit": "mm"
         },
         "raw": {
@@ -695,7 +695,7 @@
           "fr": "Dimensions chambre"
         },
         "category": "Physical",
-        "type": "string",
+        "type": "composite",
         "value": {
           "diameter": 255,
           "depth": 360,
@@ -714,8 +714,8 @@
         "category": "Physical",
         "type": "string",
         "value": {
-          "l": 285,
-          "w": 190,
+          "length": 285,
+          "width": 190,
           "unit": "mm"
         },
         "raw": {
@@ -805,10 +805,11 @@
           "fr": "Temps de cycle (Classe B)"
         },
         "category": "Performance",
-        "type": "string",
+        "type": "number",
         "value": {
-          "approx": 15,
-          "unit": "min"
+          "qty": 15,
+          "unit": "min",
+          "approx": true
         },
         "raw": "Temps de cycle classe B: 15 minutes (approx.)"
       },
@@ -912,9 +913,9 @@
         "category": "Physical",
         "type": "string",
         "value": {
-          "l": 462,
-          "h": 445,
-          "p": 600,
+          "length": 462,
+          "height": 445,
+          "depth": 600,
           "unit": "mm"
         },
         "raw": {
@@ -928,7 +929,7 @@
           "fr": "Dimensions chambre"
         },
         "category": "Physical",
-        "type": "string",
+        "type": "composite",
         "value": {
           "diameter": 255,
           "depth": 460,
@@ -945,10 +946,10 @@
           "fr": "Dimensions plateau"
         },
         "category": "Physical",
-        "type": "string",
+        "type": "composite",
         "value": {
-          "l": 285,
-          "w": 190,
+          "length": 285,
+          "width": 190,
           "unit": "mm"
         },
         "raw": {
@@ -1038,10 +1039,11 @@
           "fr": "Temps de cycle (Classe B)"
         },
         "category": "Performance",
-        "type": "string",
+        "type": "number",
         "value": {
-          "approx": 15,
-          "unit": "min"
+          "qty": 15,
+          "unit": "min",
+          "approx": true
         },
         "raw": "Temps de cycle classe B: 15 minutes (approx.)"
       },
@@ -1332,18 +1334,20 @@
         "raw": "Écran tactile couleur LCD 7”"
       },
       {
-        "canonical_name": "programs",
+        "canonical_name": "sterilisation_programs_count",
         "display_label": {
           "en": "Sterilization Programs",
           "fr": "Programmes de stérilisation"
         },
         "category": "Functional",
-        "type": "range",
+        "type": "number",
         "value": {
-          "min": 19,
+          "qty": 19,
           "unit": "programs"
         },
-        "raw": "19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)"
+        "display_value": {
+          "fr": "19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)"
+        }
       },
       {
         "canonical_name": "construction_material",
@@ -1622,10 +1626,9 @@
           "fr": "Diamètre du champ lumineux (d10)"
         },
         "category": "Lighting",
-        "type": "range",
+        "type": "number",
         "value": {
-          "qty": 200,
-          "tolerance": 60,
+          "qty": 210,
           "unit": "mm"
         },
         "raw": "Diamètre champ lumineux (d10): 200 mm ± 60 mm"
@@ -1682,7 +1685,7 @@
         "category": "Electrical",
         "type": "number",
         "value": {
-          "qty": 80,
+          "qty": 55,
           "unit": "W"
         },
         "raw": {
@@ -4493,10 +4496,8 @@
     },
     "availability": "in_stock",
     "images": [
-      "",
-      "../assets/products/surgery/operating-tables/saikang/A2000/1481f2bd.jpg",
-      "../assets/products/surgery/operating-tables/saikang/A2000/38dacfa1.jpg",
       "../assets/products/surgery/operating-tables/saikang/A2000/A2000-0.jpg",
+      "../assets/products/surgery/operating-tables/saikang/A2000/38dacfa1.jpg",
       "../assets/products/surgery/operating-tables/saikang/A2000/A2000-10.jpg",
       "../assets/products/surgery/operating-tables/saikang/A2000/A2000-1.jpg",
       "../assets/products/surgery/operating-tables/saikang/A2000/A2000-2.jpg",
@@ -4914,7 +4915,7 @@
     },
     "full_description": {
       "en": "Chariot patient avec système de manivelle, dossier à ressort pneumatique réglable, barrières latérales en plastique et roulettes 5\" avec frein. Hauteur ajustable entre 620 et 900 mm pour un confort ergonomique lors du transport.",
-      "fr": "Chariot patient avec système de manivelle, dossier à ressort pneumatique réglable, barrières latérales en plastique et roulettes 5\\ avec frein.\nHauteur ajustable entre 620 et 900 mm pour un confort ergonomique lors du transport."
+      "fr": "Chariot patient avec système de manivelle, dossier à ressort pneumatique réglable, barrières latérales en plastique et roulettes 5\" avec frein.\nHauteur ajustable entre 620 et 900 mm pour un confort ergonomique lors du transport."
     },
     "availability": "out_of_stock",
     "images": [
@@ -4987,7 +4988,7 @@
     },
     "full_description": {
       "en": "Chariot de transport patient hydraulique avec double pompe pour réglage de la hauteur et inclinaison, dossier ajustable à 75° et barre latérale en ABS. Equipé de roulettes 8\" avec frein centralisé et directionnel.",
-      "fr": "Chariot de transport patient hydraulique avec double pompe pour réglage de la hauteur et inclinaison, dossier ajustable à 75° et barre latérale en ABS.\nEquipé de roulettes 8\\ avec frein centralisé et directionnel"
+      "fr": "Chariot de transport patient hydraulique avec double pompe pour réglage de la hauteur et inclinaison, dossier ajustable à 75° et barre latérale en ABS.\nEquipé de roulettes 8\" avec frein centralisé et directionnel"
     },
     "availability": "in_stock",
     "images": [
@@ -5163,7 +5164,7 @@
     },
     "full_description": {
       "en": "Chariot patient avec système de manivelle, dossier à ressort pneumatique, barrières latérales plastiques et roulettes 6\" avec verrouillage central et directionnel. Hauteur ajustable entre 510 et 850 mm pour un usage polyvalent.",
-      "fr": "Chariot patient avec système de manivelle, dossier à ressort pneumatique, barrières latérales plastiques, roulettes 6\\ avec verrouillage central et directionnel.\nHauteur ajustable entre 510 et 850 mm pour un usage polyvalent."
+      "fr": "Chariot patient avec système de manivelle, dossier à ressort pneumatique, barrières latérales plastiques, roulettes 6\" avec verrouillage central et directionnel.\nHauteur ajustable entre 510 et 850 mm pour un usage polyvalent."
     },
     "availability": "in_stock",
     "images": [
@@ -5248,7 +5249,7 @@
     },
     "full_description": {
       "en": "Chariot multi-fonctions ergonomique adapté au transport et imagerie corps entier avec support cassette rayons X intégré. Dossier réglable à 85°, repose-jambes à 50° et inclinaisons Trendelenburg et reverse jusqu’à 15°. Roulettes 8\" avec frein central et verrouillage directionnel.",
-      "fr": "Chariot multi-fonctions ergonomique adapté au transport et imagerie corps entier avec support cassette rayons X intégré.\nDossier réglable à 85°, repose-jambes à 50° et inclinaisons Trendelenburg et reverse jusqu’à 15°.\nRoulettes 8\\ avec frein central et verrouillage directionnel."
+      "fr": "Chariot multi-fonctions ergonomique adapté au transport et imagerie corps entier avec support cassette rayons X intégré.\nDossier réglable à 85°, repose-jambes à 50° et inclinaisons Trendelenburg et reverse jusqu’à 15°.\nRoulettes 8\" avec frein central et verrouillage directionnel."
     },
     "availability": "in_stock",
     "images": [
@@ -5348,7 +5349,7 @@
     },
     "full_description": {
       "en": "Chariot de transport patient avec système de manivelle, dossier réglable à 75°, repose-genoux à 40° et inclinaisons Trendelenburg jusqu’à 18°. Roulettes 8\" avec verrouillage central, matelas imperméable et barrières latérales plastiques.",
-      "fr": "Chariot de transport patient avec système de manivelle, dossier réglable à 75°, repose-genoux à 40° et inclinaisons Trendelenburg jusqu’à 18°.\nRoulettes 8\\ avec verrouillage central"
+      "fr": "Chariot de transport patient avec système de manivelle, dossier réglable à 75°, repose-genoux à 40° et inclinaisons Trendelenburg jusqu’à 18°.\nRoulettes 8\" avec verrouillage central"
     },
     "availability": "in_stock",
     "images": [

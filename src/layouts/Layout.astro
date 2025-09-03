@@ -5,6 +5,12 @@ import '@fontsource/ibm-plex-sans';
 import '@fontsource/plus-jakarta-sans';
 import { AstroFont } from "astro-font";
 import Logo from "../components/logo/logo.svg";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -38,7 +44,9 @@ import Logo from "../components/logo/logo.svg";
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="noindex, nofollow" /> <!-- TODO Remove in production -->
     <meta name="google-site-verification" content="Oadv58J_LLtPTwp4JkTBuxKKHzTaRfg_PeHF8N3WoGg" />
-    <title>Galaxie Medicale</title>
+
+    <title>{title ? `${title} – Galaxie Médicale` : "Galaxie Médicale"}</title>
+    {description && <meta name="description" content={description} />}
   </head>
   <body class="relative">
     <div class="gradient-layer" data-aos="fade" data-aos-duration="1500" data-aos-delay="2000"></div>
