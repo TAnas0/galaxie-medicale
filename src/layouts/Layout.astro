@@ -47,6 +47,12 @@ const { title, description } = Astro.props;
 
     <title>{title ? `${title} – Galaxie Médicale` : "Galaxie Médicale"}</title>
     {description && <meta name="description" content={description} />}
+
+    <meta property="og:title" content={title ? `${title} – Galaxie Médicale` : "Galaxie Médicale"} />
+    <meta property="og:description" content={description ? description : "Galaxie Médicale"} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content="/galaxie-medicale/logo.svg" />
+    <meta property="og:type" content="website" />
   </head>
   <body class="relative">
     <div
