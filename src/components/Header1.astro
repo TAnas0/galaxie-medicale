@@ -1,319 +1,147 @@
 ---
 import { Icon } from "astro-icon/components";
-import Logo from "./logo/Logo.astro"
+import Logo from "./logo/Logo.astro";
 ---
 
-<header class="w-full fixed top-0 z-50 bg-white shadow-md" data-aos="fade" data-aos-duration="100">
+<header
+  class="w-full fixed top-0 z-50 bg-white shadow-md"
+  data-aos="fade"
+  data-aos-duration="100"
+>
+  <!-- Gradient Divider -->
   <div
     id="gradient-divider"
     class="fixed top-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-900 to-primary opacity-50 z-40 hidden"
-  >
-  </div>
+  ></div>
 
-  {/* Top Bar */}
+  <!-- Top Info Bar -->
   <div
     id="infobar"
     class="transition-all duration-500 ease-in-out overflow-hidden bg-primary/95 text-primary-foreground backdrop-blur-sm shadow-md"
-    data-aos="fade" data-aos-duration="300"
+    data-aos="fade"
+    data-aos-duration="300"
   >
     <div class="container mx-auto px-4 w-full text-xs font-semibold">
       <div class="flex items-center justify-center lg:justify-between h-10">
         <div
-          class="hidden lg:flex items-center !border-1 border-white/90 py-1 px-2 gap-x-1 rounded-3xl space-x-2 text-gray-50"
+          class="hidden lg:flex items-center !border border-white/90 py-1 px-2 gap-x-1 rounded-3xl space-x-2 text-gray-50"
         >
           <Icon name="heroicons:map-pin" class="text-lg" />
-          <span class="">
+          <span>
             207, Boulevard de la Résistance, 7ᵉ étage, N°14 (C/O C.A.R), Casablanca, Maroc
           </span>
         </div>
         <div class="flex space-x-2 text-gray-50">
-          <div class="flex gap-x-2">
-            {/* Phone Number */}
-            <a
-              href="tel:+212522456789"
-              class="flex items-center hover:opacity-90 transition-opacity !border-1 border-white/90 py-1 px-2 gap-x-1 rounded-3xl"
-              aria-label="Appelez-nous au +212 5 22 45 67 89"
-            >
-              <!-- <Phone size={16} /> -->
-              <Icon name="heroicons:phone" class="text-lg" />
-              <span class="">+212 5 22 45 67 89</span>
-            </a>
-            {/* Email */}
-            <a
-              href="mail:contact@galaxiemedicale.ma"
-              class="flex items-center hover:opacity-90 transition-opacity !border-1 border-white/90 py-1 px-2 gap-x-1 rounded-3xl"
-              aria-label="Email contact@galaxiemedicale.ma"
-            >
-              <!-- <Phone size={16} /> -->
-              <Icon name="heroicons:envelope" class="text-lg" />
-              <span class="pb-[2px]">contact@galaxiemedicale.ma</span>
-            </a>
-          </div>
+          <a
+            href="tel:+212522456789"
+            class="flex items-center hover:opacity-90 transition-opacity !border border-white/90 py-1 px-2 gap-x-1 rounded-3xl"
+            aria-label="Appelez-nous au +212 5 22 45 67 89"
+          >
+            <Icon name="heroicons:phone" class="text-lg" />
+            <span>+212 5 22 45 67 89</span>
+          </a>
+          <a
+            href="mailto:contact@galaxiemedicale.ma"
+            class="flex items-center hover:opacity-90 transition-opacity !border border-white/90 py-1 px-2 gap-x-1 rounded-3xl"
+            aria-label="Email contact@galaxiemedicale.ma"
+          >
+            <Icon name="heroicons:envelope" class="text-lg" />
+            <span class="pb-[2px]">contact@galaxiemedicale.ma</span>
+          </a>
         </div>
       </div>
     </div>
   </div>
 
-  {/* Main Navigation */}
+  <!-- Main Navigation -->
   <div
     id="navbar"
     class="bg-gray-50 transition-all duration-500 ease-in-out text-gray-900 opacity-90 flex"
-    data-aos="fade" data-aos-duration="300"
+    data-aos="fade"
+    data-aos-duration="300"
   >
-    <div class="flex ml-36 mr-10 !border-r border-primary bg-gray-50">
-      <!-- <div class="absolute inset-y-0 left-0 !border-l-2 border-dashed border-primary"></div> -->
-      <div class="absolute inset-y-0 right-0 !border-r border-primary"></div>
-      <div class="px-4 flex !border-l border-dashed border-primary">
-        <a href="/galaxie-medicale" class="flex">
-          <Logo withText={true} variant="inline"/>
-        </a>
-      </div>
-    </div>
     <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between h-16">
-        {/* Desktop Navigation */}
+      <div class="flex items-center space-x-12 h-16">
+        <!-- Logo -->
+        <div
+          class="relative flex items-center !border-l border-dashed border-primary h-full px-3 bg-gray-50 shadow-sm"
+        >
+          <div class="absolute inset-y-0 right-0 !border-r border-primary"></div>
+          <a href="/galaxie-medicale" class="flex">
+            <Logo withText={true} variant="inline" />
+          </a>
+        </div>
+
+        <!-- Desktop Nav -->
         <nav
           class="hidden lg:flex items-center space-x-8"
           role="navigation"
           aria-label="Navigation principale"
         >
-          {/* Logo */}
-          <!-- <Logo withText={true} variant="inline"/> -->
-          <!-- <img
-            src="/galaxie-medicale/logo.png"
-            alt="Galaxie Medicale Logo"
-            class="h-14"
-          /> -->
-          {/* Accueil */}
-          <a
-            href="/galaxie-medicale"
-            class="hover:text-gray-900 hover:underline transition-colors text-lg"
-          >
-            Accueil
-          </a>
-
-          {/* Nos Categories */}
-          <a
-            href="/galaxie-medicale#categories"
-            class="hover:text-gray-900 hover:underline transition-colors text-lg"
-          >
+          <a href="/galaxie-medicale" class="hover:underline text-lg">Accueil</a>
+          <a href="/galaxie-medicale#categories" class="hover:underline text-lg">
             Nos Catégories
           </a>
-
-          {/* Catalog */}
-          <div class="relative group">
-            <a
-              class="hover:text-gray-900 hover:underline transition-colors text-lg"
-              href="/galaxie-medicale/catalog"
-            >
-              Notre Catalogue
-            </a>
-          </div>
-
-          {/* Nos Services */}
-          <!-- <a
-            href="/galaxie-medicale#services"
-            class="hover:text-gray-900 hover:underline transition-colors text-lg"
-          >
-            Nos Services
-          </a> -->
-
-
-
-          {/* Qui sommes nous */}
-          <!-- <a
-            href="/galaxie-medicale/about"
-            class="text-foreground hover:text-primary transition-colors font-medium"
-          >
-            Qui sommes nous
-          </a> -->
+          <a href="/galaxie-medicale/catalog" class="hover:underline text-lg">
+            Notre Catalogue
+          </a>
         </nav>
 
-        {/* Search Bar */}
-        <!-- <div class="flex-1 max-w-md mx-8 hidden md:block">
-          <div class="relative">
-            <input
-              type="search"
-              placeholder="Quel produit recherchez-vous?"
-              class="w-full px-4 py-2 border border-input rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
-              aria-label="Rechercher un produit"
-            />
-            <div class="absolute right-3 top-1/2 transform -translate-y-1/2">
-              <svg
-                class="w-4 h-4 text-muted-foreground"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-              </svg>
-            </div>
-          </div>
-        </div> -->
-
-        {/* Mobile Menu Button */}
-        <button
-          class="lg:hidden p-2 hover:bg-accent rounded-lg transition-colors"
-          aria-label="Ouvrir le menu de navigation"
-          aria-expanded="false"
-        >
-          <Icon name="heroicons:bars-4" />
-          <!-- <Menu size={24} /> -->
-        </button>
-      </div>
-
-      {/* Mobile Search Bar */}
-      <!-- <div class="md:hidden pb-4">
-        <div class="relative">
-          <input
-            type="search"
-            placeholder="Quel produit recherchez-vous ?"
-            class="w-full px-4 py-2 border border-input rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
-            aria-label="Rechercher un produit"
-          />
-          <div class="absolute right-3 top-1/2 transform -translate-y-1/2">
-            <svg
-              class="w-4 h-4 text-muted-foreground"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-          </div>
-        </div>
-      </div> -->
-    </div>
-  </div>
-
-  {/* Mobile Slide-in Menu (Static Layout) */}
-  <div
-    class="lg:hidden fixed inset-y-0 left-0 w-80 bg-card border-r border-border shadow-lg transform -translate-x-full transition-transform duration-300 z-50 opacity-0 invisible"
-  >
-    <div class="p-6">
-      <div class="flex items-center justify-between mb-8">
-        <h2 class="text-lg font-bold text-card-foreground">Menu</h2>
-        <button
-          class="p-2 hover:bg-accent rounded-lg transition-colors"
-          aria-label="Fermer le menu"
-        >
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        <!-- Mobile Hamburger -->
+        <div class="lg:hidden flex items-center absolute right-8">
+          <button
+            id="mobile-menu-button"
+            class="p-3 hover:bg-accent rounded-lg transition-colors"
+            aria-label="Ouvrir le menu de navigation"
+            aria-expanded="false"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width={2}
-              d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-
-      <nav class="space-y-6" role="navigation" aria-label="Navigation mobile">
-        <a
-          href="/galaxie-medicale"
-          class="block text-card-foreground hover:text-primary transition-colors font-medium text-lg"
-        >
-          Accueil
-        </a>
-
-        <div>
-          <div class="text-card-foreground font-medium text-lg mb-3">
-            Catalogue
-          </div>
-          <div class="ml-4 space-y-3">
-            <div>
-              <div class="font-medium text-card-foreground mb-2">
-                Catégorie 1
-              </div>
-              <div class="ml-4 space-y-1">
-                <a
-                  href="#"
-                  class="block text-muted-foreground hover:text-primary transition-colors"
-                  >Produit A</a
-                >
-                <a
-                  href="#"
-                  class="block text-muted-foreground hover:text-primary transition-colors"
-                  >Produit B</a
-                >
-                <a
-                  href="#"
-                  class="block text-muted-foreground hover:text-primary transition-colors"
-                  >Produit C</a
-                >
-              </div>
-            </div>
-            <div>
-              <div class="font-medium text-card-foreground mb-2">
-                Catégorie 2
-              </div>
-              <div class="ml-4 space-y-1">
-                <a
-                  href="#"
-                  class="block text-muted-foreground hover:text-primary transition-colors"
-                  >Produit D</a
-                >
-                <a
-                  href="#"
-                  class="block text-muted-foreground hover:text-primary transition-colors"
-                  >Produit E</a
-                >
-                <a
-                  href="#"
-                  class="block text-muted-foreground hover:text-primary transition-colors"
-                  >Produit F</a
-                >
-              </div>
-            </div>
-          </div>
+            <Icon name="heroicons:bars-4" class="min-w-6 min-h-6 stroke-[3] text-3xl" />
+          </button>
         </div>
-
-        <!-- <a
-          href="/galaxie-medicale/about"
-          class="block text-card-foreground hover:text-primary transition-colors font-medium text-lg"
-        >
-          Qui sommes nous
-        </a> -->
-      </nav>
+      </div>
     </div>
   </div>
 
-  {/* Mobile Menu Overlay */}
+  <!-- Mobile Menu -->
   <div
-    class="lg:hidden fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-opacity duration-300 z-40"
+    id="mobile-menu"
+    class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out lg:hidden flex flex-col bg-gray-50 px-4 space-y-3 border-t border-gray-300"
   >
+    <a href="/galaxie-medicale" class="block text-gray-900 hover:text-blue-600 mx-auto pt-3"
+    >
+      Accueil
+    </a
+    >
+    <a
+      href="/galaxie-medicale#categories"
+      class="block text-gray-900 hover:text-blue-600 mx-auto"
+    >
+      Nos Catégories
+    </a>
+    <a
+      href="/galaxie-medicale/catalog"
+      class="block text-gray-900 hover:text-blue-600 mx-auto pb-3"
+    >
+      Notre Catalogue
+    </a>
   </div>
 </header>
 
 <script is:browser>
+  // Scroll behavior
   const infobar = document.getElementById("infobar");
   const navbar = document.getElementById("navbar");
   const gradientDivider = document.getElementById("gradient-divider");
 
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
-
     if (currentScrollY > 250) {
-      // Scrolling down
       infobar.classList.add("max-h-0", "opacity-0");
       infobar.classList.remove("max-h-20", "opacity-100");
       navbar.classList.add("bg-primary/95", "text-white");
       navbar.classList.remove("bg-gray-50", "text-gray-900");
       gradientDivider.classList.remove("hidden");
     } else {
-      // Scrolling up
       infobar.classList.remove("max-h-0", "opacity-0");
       infobar.classList.add("max-h-20", "opacity-100");
       navbar.classList.remove("bg-primary/95", "text-white");
@@ -321,4 +149,48 @@ import Logo from "./logo/Logo.astro"
       gradientDivider.classList.add("hidden");
     }
   });
+
+  // Mobile menu toggle
+  const mobileBtn = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  const overlay = document.getElementById("mobile-menu-overlay");
+
+  function openMenu() {
+    mobileMenu.classList.remove("max-h-0", "opacity-0");
+    mobileMenu.classList.add("max-h-96", "opacity-100");
+    mobileBtn.setAttribute("aria-expanded", "true");
+    overlay.classList.remove("opacity-0", "pointer-events-none");
+    overlay.classList.add("opacity-100");
+    document.addEventListener("click", outsideClickHandler);
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.add("max-h-0", "opacity-0");
+    mobileMenu.classList.remove("max-h-96", "opacity-100");
+    mobileBtn.setAttribute("aria-expanded", "false");
+    overlay.classList.add("opacity-0", "pointer-events-none");
+    overlay.classList.remove("opacity-100");
+    document.removeEventListener("click", outsideClickHandler);
+  }
+
+  function outsideClickHandler(e) {
+    if (!mobileMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+      closeMenu();
+    }
+  }
+
+  mobileBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const expanded = mobileBtn.getAttribute("aria-expanded") === "true";
+    expanded ? closeMenu() : openMenu();
+  });
+
+  // Close menu when a nav link is clicked
+const menuLinks = mobileMenu.querySelectorAll("a");
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMenu();
+  });
+});
 </script>
