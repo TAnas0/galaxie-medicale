@@ -88,11 +88,11 @@ export default function ProductToolbar({ filters, setFilters }) {
                 </button>
 
                 <button
-                    className={`group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer ${filters.category === "accessories_consummables" ? "bg-primary/50 font-semibold" : ""
+                    className={`group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer ${filters.category === "accessories_consumables" ? "bg-primary/50 font-semibold" : ""
                         }`}
                     onClick={() => {
-                        setFilters((prev) => ({ ...prev, category: 'accessories_consummables' }))
-                        handleChange("accessories_consummables")
+                        setFilters((prev) => ({ ...prev, category: 'accessories_consumables' }))
+                        handleChange("accessories_consumables")
                     }}
                 >
                     Accessoires/Consommables
