@@ -21,7 +21,10 @@ export default defineConfig({
   },
   integrations: [
     icon(),
-    sentry(),
+    sentry({
+      telemetry: false,
+    }
+    ),
     react(),
     // spotlightjs(),
     // Sonda({server: true})
