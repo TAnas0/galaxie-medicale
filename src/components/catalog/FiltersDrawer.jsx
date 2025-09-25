@@ -2,12 +2,11 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
-import { FunnelIcon } from '@heroicons/react/24/outline'
+import { FunnelIcon, ArrowPathIcon } from '@heroicons/react/24/outline'
 
-export default function FiltersAndSort({ filters, setFilters, totalProducts }) {
+export default function FiltersAndSort({ filters, setFilters, sortOption, setSortOption, totalProducts }) {
     const [open, setOpen] = useState(false)
 
-    const [sortOption, setSortOption] = useState('price-ascending')
     const [sortOpen, setSortOpen] = useState(false)
     const sortingOptions = [
         { value: 'price-ascending', label: 'Par prix (Croissant)' },
@@ -15,6 +14,29 @@ export default function FiltersAndSort({ filters, setFilters, totalProducts }) {
         { value: 'alphabetical-ascending', label: 'Alphabétique (Croissant)' },
         { value: 'alphabetical-descending', label: 'Alphabétique (Décroissant)' },
     ]
+
+    const defaultFilters = {
+        category: 'all',
+        availability: 'all',
+        price: 'all',
+    }
+
+    const clearFilters = () => {
+        setFilters(defaultFilters)
+    }
+
+    function shallowEqual(obj1, obj2) {
+        const keys1 = Object.keys(obj1);
+        const keys2 = Object.keys(obj2);
+        if (keys1.length !== keys2.length) return false;
+        return keys1.every(k => obj1[k] === obj2[k]);
+    }
+    function areFiltersClear() {
+        console.log(filters)
+        console.log(defaultFilters)
+        console.log(shallowEqual(defaultFilters, filters))
+        return shallowEqual(defaultFilters, filters)
+    }
 
     const dropdownRef = useRef(null)
 
@@ -35,14 +57,27 @@ export default function FiltersAndSort({ filters, setFilters, totalProducts }) {
 
     return (
         <div className="flex items-center gap-2 " ref={dropdownRef}>
-            <div className="pl-2">{totalProducts} produits</div>
-            <div className="flex items-center-gap-2 ml-auto">
+            <div className="pl-2 min-w-fit">{totalProducts} produits</div>
+            <div className="flex items-center gap-2 ml-auto">
+                <button
+                    onClick={clearFilters}
+                    disabled={areFiltersClear()}
+                    className={`rounded-md px-2 py-1 text-sm font-semibold mt-1 border 
+                        ${areFiltersClear()
+                            ? "bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed"
+                            : "bg-white border-gray-300 text-gray-900 hover:bg-primary/50 cursor-pointer"}`}
+                >
+                    <div className="flex flex-cols items-center gap-1">
+                        <ArrowPathIcon className="w-2 h-2 lg:w-4 lg:h-4" />
+                        Réinitialiser les filtres
+                    </div>
+                </button>
 
                 <button
                     onClick={() => setOpen(true)}
-                    className="rounded-md bg-white border border-gray-300 px-6 py-1 text-sm font-semibold text-gray-900 hover:bg-primary/50 text-black mt-1"
+                    className="rounded-md bg-white border border-gray-300 px-6 py-1 text-sm font-semibold text-gray-900 hover:bg-primary/50 mt-1"
                 >
-                    <div className="flex flex-cols items-center gap-1">
+                    <div className="flex flex-cols items-center gap-1 cursor-pointer">
                         {/* <Icon name="heroicons:bars-4" /> */}
                         <FunnelIcon className="w-2 h-2 lg:w-4 lg:h-4" />
                         Filtres
@@ -53,7 +88,7 @@ export default function FiltersAndSort({ filters, setFilters, totalProducts }) {
                 <div className="relative">
                     <button
                         onClick={() => setSortOpen(!sortOpen)}
-                        className="rounded-md bg-white border border-gray-300 px-6 py-1 text-sm font-semibold text-gray-900 hover:bg-primary/50 text-black mt-1 flex items-center gap-1 min-w-62 justify-center"
+                        className="rounded-md bg-white border border-gray-300 px-6 py-1 text-sm font-semibold text-gray-900 hover:bg-primary/50 mt-1 flex items-center gap-1 min-w-48 justify-center cursor-pointer"
                     >
                         Trier: {sortingOptions.find(o => o.value === sortOption).label}
                     </button>

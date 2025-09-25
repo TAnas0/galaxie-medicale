@@ -39,6 +39,27 @@ export default function Catalog({ products, initialCategory }) {
         })
     }, [products, filters])
 
+    // Sorting products
+    const [sortOption, setSortOption] = useState('price-ascending')
+    const sortedProducts = useMemo(() => {
+        const handleSort = (data, sortOption) => {
+            console.log(sortOption)
+            switch(sortOption){
+                case "price-ascending":
+                    return [...data].sort((a, b) => a.price - b.price)
+                case "price-descending":
+                    return [...data].sort((a, b) => b.price - a.price)
+                case "alphabetical-ascending":
+                    return [...data].sort((a, b) => a.data.name.fr.localeCompare(b.data.name.fr))
+                case "alphabetical-descending":
+                    return [...data].sort((a, b) => b.data.name.fr.localeCompare(a.data.name.fr))
+                default:
+                    return data
+            }
+        }
+        return handleSort(filteredProducts, sortOption)
+    }, [filteredProducts, sortOption])
+
     return (
         <div>
             <div id="catalog" className="bg-gray-50/50 min-h-[95vh]">
@@ -52,6 +73,8 @@ export default function Catalog({ products, initialCategory }) {
                         <FiltersDrawer
                             filters={filters}
                             setFilters={setFilters}
+                            sortOption={sortOption}
+                            setSortOption={setSortOption}
                             totalProducts={filteredProducts.length}
                         />
                     </div>
@@ -61,7 +84,7 @@ export default function Catalog({ products, initialCategory }) {
                     <div className="grid grid-cols-12 md:gap-12 pb-20">
                         <div className="col-span-10 col-start-2 xl:col-span-12">
                             <ProductGrid
-                                products={filteredProducts}
+                                products={sortedProducts}
                             />
                         </div>
                     </div>
