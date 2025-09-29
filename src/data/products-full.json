@@ -1,5 +1,192 @@
 [
   {
+    "id": "guarisco-phoenix-blu-12-autoclave",
+    "name": {
+      "en": "Autoclave Phoenix Blu 12",
+      "fr": "Autoclave Phoenix Blu 12"
+    },
+    "brand": {
+      "name": "Guarisco Medical Sterilizer ",
+      "description": ""
+    },
+    "category": {
+      "canonical": "sterilisation",
+      "display": {
+        "en": "tabletop_autoclaves",
+        "fr": "Autoclave de table"
+      }
+    },
+    "short_description": {
+      "en": "Compact 12L Class B tabletop autoclave with LCD/LED display for medical and dental sterilization.",
+      "fr": "Autoclave de table compact 12L, classe B, affichage LCD/LED, conçu pour une stérilisation efficace en milieu médical et dentaire."
+    },
+    "full_description": {
+      "en": "The Phoenix Blu 12 is a Class B tabletop autoclave designed for dental clinics, medical practices, and small laboratories. With a 12-liter chamber, dual vacuum system, and adjustable drying, it ensures reliable sterilization of surgical, dental, and laboratory instruments. Available with LCD/LED display, USB data export, and optional printer configurations, it delivers fast Class B cycles in a compact design.",
+      "fr": "L'autoclave Phoenix Blu 12 est un stérilisateur de table de classe B destiné aux cliniques, cabinets dentaires et petits laboratoires. Il assure une stérilisation fiable des instruments chirurgicaux, dentaires et de laboratoire grâce à des cycles avancés de vapeur et de vide. Il dispose d'un design compact, d'un affichage LCD ou LED, d'une exportation de données via USB, d'un séchage ajustable et d'un système à double vide pour un retrait complet de l'air."
+    },
+    "availability": "out_of_stock",
+    "images": [
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB (Aperta).webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12 (Aperta).webp",
+      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12.webp"
+    ],
+    "attributes": [
+      {
+        "canonical_name": "chamber_capacity",
+        "display_label": {
+          "en": "Chamber Capacity",
+          "fr": "Capacité de la chambre"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 12,
+          "unit": "L"
+        },
+        "raw": "Capacité de la chambre: 12 litres"
+      },
+      {
+        "canonical_name": "external_dimensions",
+        "display_label": {
+          "en": "External Dimensions",
+          "fr": "Dimensions externes"
+        },
+        "category": "Physical",
+        "type": "composite",
+        "value": {
+          "length": 407,
+          "height": 410,
+          "depth": 570,
+          "unit": "mm"
+        },
+        "raw": "Dimensions externes: 407 x 410 x 570 mm (L x H x P)"
+      },
+      {
+        "canonical_name": "chamber_dimensions",
+        "display_label": {
+          "en": "Chamber Dimensions",
+          "fr": "Dimensions chambre"
+        },
+        "category": "Physical",
+        "type": "composite",
+        "value": {
+          "diameter": 210,
+          "depth": 360,
+          "unit": "mm"
+        },
+        "raw": "Dimensions chambre: Ø 210 x 360 mm"
+      },
+      {
+        "canonical_name": "tray_dimensions",
+        "display_label": {
+          "en": "Tray Dimensions",
+          "fr": "Dimensions plateau"
+        },
+        "category": "Physical",
+        "type": "composite",
+        "value": {
+          "length": 310,
+          "width": 160,
+          "unit": "mm"
+        },
+        "raw": "Dimensions plateau: 310 x 160 mm"
+      },
+      {
+        "canonical_name": "power_consumption",
+        "display_label": {
+          "en": "Power Consumption",
+          "fr": "Consommation électrique"
+        },
+        "category": "Electrical",
+        "type": "number",
+        "value": {
+          "qty": 1800,
+          "unit": "W"
+        },
+        "raw": "Consommation électrique: 1800 W"
+      },
+      {
+        "canonical_name": "water_tank_capacity",
+        "display_label": {
+          "en": "Distilled Water Tank",
+          "fr": "Réservoir d’eau distillée"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 3,
+          "unit": "L"
+        },
+        "raw": "Réservoir d’eau distillée: 3 litres"
+      },
+      {
+        "canonical_name": "waste_tank_capacity",
+        "display_label": {
+          "en": "Waste Water Tank",
+          "fr": "Réservoir eaux usées"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 4,
+          "unit": "L"
+        },
+        "raw": "Réservoir eaux usées: 4 litres"
+      },
+      {
+        "canonical_name": "weight",
+        "display_label": {
+          "en": "Weight",
+          "fr": "Poids"
+        },
+        "category": "Physical",
+        "type": "composite",
+        "value": {
+          "net": 42,
+          "gross": 44,
+          "unit": "kg"
+        },
+        "raw": "Poids net / brut: 42 kg / 44 kg"
+      },
+      {
+        "canonical_name": "cycle_time",
+        "display_label": {
+          "en": "Cycle Time (Class B)",
+          "fr": "Temps de cycle (Classe B)"
+        },
+        "category": "Motion",
+        "type": "number",
+        "value": {
+          "qty": 15,
+          "unit": "minutes"
+        },
+        "raw": "Temps de cycle classe B: 15 minutes"
+      },
+      {
+        "canonical_name": "display_type",
+        "display_label": {
+          "en": "Display Options",
+          "fr": "Options Affichage"
+        },
+        "category": "Controls",
+        "type": "enum",
+        "value": [
+          "Standard",
+          "USB",
+          "USB + Imprimante"
+        ],
+        "raw": "Versions disponibles: Standard / USB / USB + Imprimante"
+      }
+    ],
+    "compliance": {
+      "certifications": [],
+      "standards": []
+    }
+  },
+  {
     "id": "guarisco-phoenix-blu-18-autoclave",
     "name": {
       "en": "Autoclave Phoenix Blu 18",
@@ -227,193 +414,6 @@
         "ISO 14937",
         "IEC 61010"
       ]
-    }
-  },
-  {
-    "id": "guarisco-phoenix-blu-12-autoclave",
-    "name": {
-      "en": "Autoclave Phoenix Blu 12",
-      "fr": "Autoclave Phoenix Blu 12"
-    },
-    "brand": {
-      "name": "Guarisco Medical Sterilizer ",
-      "description": ""
-    },
-    "category": {
-      "canonical": "sterilisation",
-      "display": {
-        "en": "tabletop_autoclaves",
-        "fr": "Autoclave de table"
-      }
-    },
-    "short_description": {
-      "en": "Compact 12L Class B tabletop autoclave with LCD/LED display for medical and dental sterilization.",
-      "fr": "Autoclave de table compact 12L, classe B, affichage LCD/LED, conçu pour une stérilisation efficace en milieu médical et dentaire."
-    },
-    "full_description": {
-      "en": "The Phoenix Blu 12 is a Class B tabletop autoclave designed for dental clinics, medical practices, and small laboratories. With a 12-liter chamber, dual vacuum system, and adjustable drying, it ensures reliable sterilization of surgical, dental, and laboratory instruments. Available with LCD/LED display, USB data export, and optional printer configurations, it delivers fast Class B cycles in a compact design.",
-      "fr": "L'autoclave Phoenix Blu 12 est un stérilisateur de table de classe B destiné aux cliniques, cabinets dentaires et petits laboratoires. Il assure une stérilisation fiable des instruments chirurgicaux, dentaires et de laboratoire grâce à des cycles avancés de vapeur et de vide. Il dispose d'un design compact, d'un affichage LCD ou LED, d'une exportation de données via USB, d'un séchage ajustable et d'un système à double vide pour un retrait complet de l'air."
-    },
-    "availability": "out_of_stock",
-    "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).webp",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12.webp",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB (Aperta).webp",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB.webp",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12 (Aperta).webp",
-      "../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12.webp"
-    ],
-    "attributes": [
-      {
-        "canonical_name": "chamber_capacity",
-        "display_label": {
-          "en": "Chamber Capacity",
-          "fr": "Capacité de la chambre"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 12,
-          "unit": "L"
-        },
-        "raw": "Capacité de la chambre: 12 litres"
-      },
-      {
-        "canonical_name": "external_dimensions",
-        "display_label": {
-          "en": "External Dimensions",
-          "fr": "Dimensions externes"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "length": 407,
-          "height": 410,
-          "depth": 570,
-          "unit": "mm"
-        },
-        "raw": "Dimensions externes: 407 x 410 x 570 mm (L x H x P)"
-      },
-      {
-        "canonical_name": "chamber_dimensions",
-        "display_label": {
-          "en": "Chamber Dimensions",
-          "fr": "Dimensions chambre"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "diameter": 210,
-          "depth": 360,
-          "unit": "mm"
-        },
-        "raw": "Dimensions chambre: Ø 210 x 360 mm"
-      },
-      {
-        "canonical_name": "tray_dimensions",
-        "display_label": {
-          "en": "Tray Dimensions",
-          "fr": "Dimensions plateau"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "length": 310,
-          "width": 160,
-          "unit": "mm"
-        },
-        "raw": "Dimensions plateau: 310 x 160 mm"
-      },
-      {
-        "canonical_name": "power_consumption",
-        "display_label": {
-          "en": "Power Consumption",
-          "fr": "Consommation électrique"
-        },
-        "category": "Electrical",
-        "type": "number",
-        "value": {
-          "qty": 1800,
-          "unit": "W"
-        },
-        "raw": "Consommation électrique: 1800 W"
-      },
-      {
-        "canonical_name": "water_tank_capacity",
-        "display_label": {
-          "en": "Distilled Water Tank",
-          "fr": "Réservoir d’eau distillée"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 3,
-          "unit": "L"
-        },
-        "raw": "Réservoir d’eau distillée: 3 litres"
-      },
-      {
-        "canonical_name": "waste_tank_capacity",
-        "display_label": {
-          "en": "Waste Water Tank",
-          "fr": "Réservoir eaux usées"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 4,
-          "unit": "L"
-        },
-        "raw": "Réservoir eaux usées: 4 litres"
-      },
-      {
-        "canonical_name": "weight",
-        "display_label": {
-          "en": "Weight",
-          "fr": "Poids"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "net": 42,
-          "gross": 44,
-          "unit": "kg"
-        },
-        "raw": "Poids net / brut: 42 kg / 44 kg"
-      },
-      {
-        "canonical_name": "cycle_time",
-        "display_label": {
-          "en": "Cycle Time (Class B)",
-          "fr": "Temps de cycle (Classe B)"
-        },
-        "category": "Motion",
-        "type": "number",
-        "value": {
-          "qty": 15,
-          "unit": "minutes"
-        },
-        "raw": "Temps de cycle classe B: 15 minutes"
-      },
-      {
-        "canonical_name": "display_type",
-        "display_label": {
-          "en": "Display Options",
-          "fr": "Options Affichage"
-        },
-        "category": "Controls",
-        "type": "enum",
-        "value": [
-          "Standard",
-          "USB",
-          "USB + Imprimante"
-        ],
-        "raw": "Versions disponibles: Standard / USB / USB + Imprimante"
-      }
-    ],
-    "compliance": {
-      "certifications": [],
-      "standards": []
     }
   },
   {
