@@ -17,7 +17,7 @@ import Logo from "./logo/Logo.astro";
   <!-- Top Info Bar -->
   <div
     id="infobar"
-    class="transition-all duration-500 ease-in-out overflow-hidden bg-primary/95 text-primary-foreground backdrop-blur-sm shadow-md"
+    class="infobar-expanded transition-all duration-1000 ease-in-out overflow-hidden bg-primary/95 text-primary-foreground backdrop-blur-sm shadow-md"
     data-aos="fade"
     data-aos-duration="300"
   >
@@ -56,7 +56,7 @@ import Logo from "./logo/Logo.astro";
   <!-- Main Navigation -->
   <div
     id="navbar"
-    class="bg-gray-50 transition-all duration-500 ease-in-out text-gray-900 opacity-90 flex"
+    class="bg-gray-50 transition-colors duration-1000 ease-in-out text-gray-900 flex"
     data-aos="fade"
     data-aos-duration="300"
   >
@@ -136,17 +136,21 @@ import Logo from "./logo/Logo.astro";
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY > 250) {
-      infobar.classList.add("max-h-0", "opacity-0");
-      infobar.classList.remove("max-h-20", "opacity-100");
+      infobar.classList.remove("infobar-expanded");
+      infobar.classList.add("infobar-collapsed");
+      // infobar.classList.add("max-h-0", "opacity-0");
+      // infobar.classList.remove("max-h-20", "opacity-100");
       navbar.classList.add("bg-primary/95", "text-white");
       navbar.classList.remove("bg-gray-50", "text-gray-900");
-      gradientDivider.classList.remove("hidden");
+      // gradientDivider.classList.remove("hidden");
     } else {
-      infobar.classList.remove("max-h-0", "opacity-0");
-      infobar.classList.add("max-h-20", "opacity-100");
+      infobar.classList.add("infobar-collapsed");
+      infobar.classList.remove("infobar-collapsed");
+      // infobar.classList.remove("max-h-0", "opacity-0");
+      // infobar.classList.add("max-h-20", "opacity-100");
       navbar.classList.remove("bg-primary/95", "text-white");
       navbar.classList.add("bg-gray-50", "text-gray-900");
-      gradientDivider.classList.add("hidden");
+      // gradientDivider.classList.add("hidden");
     }
   });
 
@@ -187,10 +191,22 @@ import Logo from "./logo/Logo.astro";
   });
 
   // Close menu when a nav link is clicked
-const menuLinks = mobileMenu.querySelectorAll("a");
-menuLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    closeMenu();
+  const menuLinks = mobileMenu.querySelectorAll("a");
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      closeMenu();
+    });
   });
-});
 </script>
+
+
+<style>
+  .infobar-collapsed {
+    max-height: 0;
+    opacity: 0;
+  }
+  .infobar-expanded {
+    max-height: 6rem;
+    opacity: 1;
+  }
+</style>

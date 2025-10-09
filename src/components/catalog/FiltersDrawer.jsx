@@ -99,10 +99,17 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
                                 <div
                                     key={option.value}
                                     onClick={() => {
-                                        setSortOption(option.value)
-                                        setSortOpen(false)
+                                        if (!option.value.includes("price-")) {
+                                            setSortOption(option.value)
+                                            setSortOpen(false)
+                                        }
                                     }}
-                                    className="cursor-pointer px-4 py-2 hover:bg-primary/10 w-full"
+                                    disabled={option.value.includes("price-")}
+                                    className={`cursor-pointer px-4 py-2 w-full ${
+                                        option.value.includes("price-")
+                                            ? "opacity-50 pointer-events-none"
+                                            : "hover:bg-primary/10"
+                                    }`}
                                 >
                                     {option.label}
                                 </div>
