@@ -57,7 +57,7 @@ const patternB = [
 
 <section class="relative pt-25">
   <div id="hero-content" class="mx-auto z-10 relative shadow-md shadow-primary/10 h-full"  data-aos="fade" data-aos-duration="2000" data-aos-delay="300">
-    <div class="grid grid-cols-1 lg:grid-cols-2 items-center items-stretch h-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
       <!-- Left side -->
       <div class="pt-4 lg:pt-16 pb-10 md:px-4 px-6 leading-[25px] flex flex-col h-full !border-r border-1 border-primary">
         <div class="text-center text-gray-900 font-semibold">
@@ -138,22 +138,22 @@ const patternB = [
           </div>
         </div>
         <div class="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-transparent via-primary/10 via-[99%] to-primary/75 animate-scan animate-pulseBright z-10 pointer-events-none"></div>
-        <div class="absolute inset-y-0 left-0 w-full from-transparent via-primary to-transparent animate-scan shadow-[0_0_15px_theme(colors.primary/60)] animate-scan animate-pulseBright pointer-events-none"></div>
+        <div class="absolute inset-y-0 left-0 w-full from-transparent via-primary to-transparent shadow-[0_0_15px_theme(colors.primary/60)] animate-scan animate-pulseBright pointer-events-none"></div>
         <!-- Grid A -->
         <div id="gridA"
           class="absolute inset-0 grid grid-cols-4 gap-0 w-full h-full transition-opacity duration-1000 opacity-100"
         >
           {patternA.map((item) => (
-            <div class="overflow-hidden h-[175px]">{!item.empty && <img src={item.src} class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110" />}</div>
+            <div class="overflow-hidden h-[175px]">{!item.empty && <img src={item.src} class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110" loading="lazy" />}</div>
           ))}
         </div>
       
         <!-- Grid B -->
         <div id="gridB"
-          class="absolute inset-0 inset-0 grid grid-cols-4 gap-0 w-full h-full transition-opacity duration-1000 opacity-0 pointer-events-none"
+          class="absolute inset-0 grid grid-cols-4 gap-0 w-full h-full transition-opacity duration-1000 opacity-0 pointer-events-none"
         >
           {patternB.map((item) => (
-            <div class="overflow-hidden h-[175px]">{!item.empty && <img src={item.src} class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110" />}</div>
+            <div class="overflow-hidden h-[175px]">{!item.empty && <img src={item.src} class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110" loading="lazy" />}</div>
           ))}
         </div>
       </div>
