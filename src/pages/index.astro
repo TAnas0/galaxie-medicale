@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header1 from "../components/Header1.astro";
-import Hero2 from "../components/Hero2.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
 import PopularCategories from "../components/PopularCategories.astro";
 import Footer from "../components/ui/Footer.astro";
 import Services from "../components/Services.astro";
@@ -10,8 +10,8 @@ import "../styles/global.css";
 ---
 
 <Layout image={Astro.url + "/galaxie-medicale.png"}>
-  <Header1 />
-  <Hero2 />
+  <Header />
+  <Hero />
   <PopularCategories />
   <Services />
   <CTASection />

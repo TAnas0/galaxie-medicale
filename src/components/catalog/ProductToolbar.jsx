@@ -1,105 +1,65 @@
 import { useState, useEffect } from 'react';
 
 export default function ProductToolbar({ filters, setFilters }) {
-    // const [activeCategory, setActiveCategory] = useState("all");
-    useEffect(() => {
-        const params = new URLSearchParams(window.location.search);
-        const categoryFromUrl = params.get('category');
-        console.log(categoryFromUrl)
-        if (categoryFromUrl) {
-            setFilters(prev => ({ ...prev, category: categoryFromUrl }));
-        }
-    }, []);
-
-    function handleChange(newCategory) {
-        // Update URL without full reload
-        window.history.pushState({}, "", `/galaxie-medicale/catalog/${newCategory}`);    
-        // window.location.reload();
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const categoryFromUrl = params.get("category");
+    if (categoryFromUrl) {
+      setFilters((prev) => ({ ...prev, category: categoryFromUrl }));
     }
+  }, []);
 
-    if (!filters) return null;
-    return (
+  const handleChange = (category) => {
+    setFilters((prev) => ({ ...prev, category }));
+    window.history.pushState({}, "", `/galaxie-medicale/catalog/${category}`);
+  };
+
+  const categories = [
+    { value: "all", label: "Tous" },
+    { value: "medical_furniture", label: "Mobilier Médical" },
+    { value: "diagnostic", label: "Diagnostique" },
+    { value: "emergency", label: "Urgences" },
+    { value: "surgery", label: "Chirurgie" },
+    { value: "sterilisation", label: "Stérilisation" },
+    { value: "accessories_consumables", label: "Accessoires/Consommables" },
+  ];
+
+  return (
+    <div className="w-full">
+      {/* Desktop: button row */}
+      <div className="hidden md:flex bg-white border border-gray-500 rounded divide-x divide-gray-500 shadow-md shadow-primary/10 overflow-x-auto">
+        {categories.map((cat) => (
+          <button
+            key={cat.value}
+            onClick={() => handleChange(cat.value)}
+            className={`flex-1 px-4 py-3 whitespace-nowrap transition-colors duration-300 cursor-pointer ${
+              filters.category === cat.value
+                ? "bg-primary/50 font-semibold"
+                : "hover:bg-muted-50"
+            }`}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Mobile: dropdown */}
+      <div className="md:hidden flex items-center gap-4 border-b border-gray-200 pb-1 px-2">
         <div>
-            <div className="flex bg-white border border-gray-500 rounded divide-x divide-gray-500 shadow-md shadow-primary/10 overflow-x-auto">
-                <button
-                    className={`group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer ${filters.category === "all" ? "bg-primary/50 font-semibold" : ""
-                        }`}
-                    onClick={() => {
-                        setFilters((prev) => ({ ...prev, category: 'all' }));
-                        handleChange("all")
-                    }}
-                >
-                    Tous
-                </button>
-
-                <button
-                    className={`group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer ${filters.category === "medical_furniture" ? "bg-primary/50 font-semibold" : ""
-                        }`}
-                    onClick={() => {
-                        setFilters((prev) => ({ ...prev, category: 'medical_furniture' }));
-                        handleChange("medical_furniture")
-                    }}
-                >
-                    Mobilier Médical
-                </button>
-
-                <button
-                    className={`group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer ${filters.category === "diagnostic" ? "bg-primary/50 font-semibold" : ""
-                        }`}
-                    onClick={() => {
-                        setFilters((prev) => ({ ...prev, category: 'diagnostic' }))
-                        handleChange("diagnostic")
-                    }}
-                >
-                    Diagnostique
-                </button>
-
-                <button
-                    className={`group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer ${filters.category === "emergency" ? "bg-primary/50 font-semibold" : ""
-                        }`}
-                    onClick={() => {
-                        setFilters((prev) => ({ ...prev, category: 'emergency' }))
-                        handleChange("emergency")
-                    }}
-                >
-                    Urgences
-                </button>
-
-                <button
-                    className={`group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer ${filters.category === "surgery" ? "bg-primary/50 font-semibold" : ""
-                        }`}
-                    onClick={() => {
-                        setFilters((prev) => ({ ...prev, category: 'surgery' }))
-                        handleChange("surgery")
-                    }}
-                >
-                    Chirurgie
-                </button>
-
-                <button
-                    className={`group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer ${filters.category === "sterilisation" ? "bg-primary/50 font-semibold" : ""
-                        }`}
-                    onClick={() => {
-                        setFilters((prev) => ({ ...prev, category: 'sterilisation' }))
-                        handleChange("sterilisation")
-                    }}
-                >
-                    Stérilisation
-                </button>
-
-                <button
-                    className={`group flex-1 flex items-center justify-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300 cursor-pointer ${filters.category === "accessories_consumables" ? "bg-primary/50 font-semibold" : ""
-                        }`}
-                    onClick={() => {
-                        setFilters((prev) => ({ ...prev, category: 'accessories_consumables' }))
-                        handleChange("accessories_consumables")
-                    }}
-                >
-                    Accessoires/Consommables
-                </button>
-            </div>
-
-
+          Catégorie:
         </div>
-    );
+        <select
+          value={filters.category || "all"}
+          onChange={(e) => handleChange(e.target.value)}
+          className="w-fit border border-gray-500 rounded px-3 py-2 shadow-sm focus:ring-primary focus:border-primary"
+        >
+          {categories.map((cat) => (
+            <option key={cat.value} value={cat.value}>
+              {cat.label}
+            </option>
+          ))}
+        </select>
+      </div>
+    </div>
+  );
 }
