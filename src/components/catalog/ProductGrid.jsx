@@ -9,6 +9,7 @@ export default function ProductGrid({ products }) {
                         <a
                             href={`/galaxie-medicale/products/${product.id}`}
                             className="block group transition-all duration-300 hover:scale-[1.015]"
+                            target="_blank"
                         >
                             <Card className="group flex flex-col rounded-md border border-gray-300 shadow-xl overflow-hidden transition-all duration-300 ease-in-out hover:scale-[1.01]">
                                 
