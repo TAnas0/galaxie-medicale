@@ -16,6 +16,9 @@ console.log(category2)
 
 <Layout>
   <Header />
+    <div class="w-full max-w-7xl mx-auto" data-aos="fade" data-aos-duration="300">
+      <ProductCatalog products={products} initialCategory={category} client:load />
+    </div>
   <Footer />
 </Layout>
 
