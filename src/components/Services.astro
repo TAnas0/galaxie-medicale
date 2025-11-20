@@ -1,94 +1,154 @@
 ---
 import { Icon } from "astro-icon/components";
-import Card from "./ui/Card.astro";
-import TypingDots from "./ui/TypingDots.astro";
-import CardContent from "./ui/CardContent.astro";
 ---
 
-<section class="py-10 bg-background shadow-md shadow-primary/10">
-  <div class="container mx-auto px-4"  data-aos="fade-up" data-aos-duration="1500">
-    <h1 class="text-3xl font-bold text-center mb-3 underline">Nos Services</h1>
-    <div class="text-center text-2xl font-medium mb-6">
-      <div class="flex flex-col lg:flex-row justify-center">
-        <div class="flex flex-row justify-center">
-          <div>Plus qu’un fournisseur</div>
-          <div class="px-2 mt-4">
-            <TypingDots />
-          </div>
-        </div>
-        <div class="" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="2500">
-          un partenaire technique et opérationnel de confiance
-        </div>
-      </div>
-    </div>
-    <div class="grid md:grid-cols-3 gap-8">
+<section class="py-20 bg-slate-50 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div
+    class="absolute inset-0 z-0 opacity-[0.03]"
+    style="background-image: radial-gradient(#2563eb 1px, transparent 1px); background-size: 24px 24px;"
+  >
+  </div>
 
-      <div class="flex">
-        <Card
-          key="1"
-          class="group !shadow-md !rounded-md bg-white/50"
-        >
-          <CardContent className="justify-between text-left rounded-md !p-0">
-            <div class="text-lg font-semibold mb-6 flex items-center rounded-md !p-2 shadow-sm bg-gray-50">
-              <div class="bg-primary/90 p-4 rounded-full text-white">
-                <Icon name="heroicons:user-group" class="h-4 w-4 md:h-6 md:w-6"/>
-              </div>
-              <div class="text-center w-full">Démonstrations en conditions réelles</div>
-            </div>
-            <div class="leading-relaxed text-gray-900 px-4 !pt-1 pb-4">
-              <span>Évaluez chaque équipement dans un cadre concret et accompagné par nos experts.
-                <br>
-                Vos équipes testent, comparent et <span class="font-bold">choisissent en toute confiance</span> la solution parfaitement adaptée à vos exigences médicales.</span>
-              <!-- <span class="font-semibold">Démonstrations et tests guidés</span> pour découvrir l’équipement en conditions réelles.
-              <br>
-              <br>
-              Vos équipes choisissent en toute confiance la solution la mieux <span class="font-semibold">adaptée à vos besoins</span> techniques et opérationnels. -->
-            </div>
-          </CardContent>
-        </Card>
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Section Header -->
+    <div
+      class="text-center max-w-3xl mx-auto mb-16"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-primary text-sm font-medium mb-4"
+      >
+        <span class="w-2 h-2 rounded-full bg-primary"></span>
+        Notre Expertise
       </div>
-      <div class="flex">
-        <Card
-          key="2"
-          class="group hover:shadow-xl !shadow-md !rounded-md bg-white/50"
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Plus qu’un fournisseur, <br />
+        <span class="text-primary">un partenaire de confiance</span>
+      </h2>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Nous ne nous contentons pas de livrer du matériel. Nous vous
+        accompagnons à chaque étape pour garantir la performance et la sécurité
+        de votre établissement.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div
+        class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div
+          class="w-14 h-14 rounded-xl bg-blue-50 group-hover:bg-primary/10 flex items-center justify-center text-primary mb-6 transition-colors duration-300"
         >
-          <CardContent className="justify-between text-left rounded-md !p-0">
-            <div class="text-lg font-semibold mb-6 flex items-center rounded-md !p-2 shadow-sm bg-gray-50">
-              <div class="bg-primary/90 p-4 rounded-full text-white">
-                <Icon name="heroicons:wrench-screwdriver" class="h-4 w-4 md:h-6 md:w-6" />
-              </div>
-              <!-- <Icon name="heroicons:wrench-screwdriver" class="min-w-12 min-h-12"/> -->
-              <div class="text-center w-full">Installation & configuration complètes</div>
-            </div>
-            <div class="leading-relaxed text-gray-900 px-4 !pt-1 pb-4">
-              <span>Mise en place sur site assurée par nos techniciens qualifiés.
-                <br>
-                Bénéficiez d’un suivi continu et d’une <span class="font-bold">assistance technique fiable.</span></span>
-            </div>
-          </CardContent>
-        </Card>
+          <Icon name="heroicons:user-group" class="w-8 h-8" />
+        </div>
+        <h3
+          class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors"
+        >
+          Démonstrations & Conseils
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Évaluez chaque équipement en conditions réelles. Nos experts vous
+          guident pour choisir la solution parfaitement adaptée à vos exigences
+          cliniques.
+        </p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2 text-sm text-gray-500">
+            <Icon
+              name="heroicons:check-circle"
+              class="w-4 h-4 text-green-500"
+            />
+            <span>Tests en showroom</span>
+          </li>
+          <li class="flex items-center gap-2 text-sm text-gray-500">
+            <Icon
+              name="heroicons:check-circle"
+              class="w-4 h-4 text-green-500"
+            />
+            <span>Comparatifs techniques</span>
+          </li>
+        </ul>
       </div>
-      <div class="flex">
-        <Card
-          key="3"
-          class="group !shadow-md !rounded-md bg-white/50"
+
+      <!-- Service 2 -->
+      <div
+        class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div
+          class="w-14 h-14 rounded-xl bg-blue-50 group-hover:bg-primary/10 flex items-center justify-center text-primary mb-6 transition-colors duration-300"
         >
-          <CardContent className="justify-between text-left rounded-md !p-0">
-            <div class="text-lg font-semibold mb-6 flex items-center rounded-md !p-2 shadow-sm bg-gray-50">
-              <div class="bg-primary/90 p-4 rounded-full text-white">
-                <Icon name="heroicons:academic-cap" class="h-4 w-4 md:h-6 md:w-6"/>
-              </div>
-              <div class="text-center w-full">Formations pratiques & ciblées</div>
-            </div>
-            <div class="leading-relaxed text-gray-900 px-4 !pt-1 pb-4">
-              <span>
-                Des sessions adaptées à vos équipes pour <span class="font-bold">maximiser l’efficacité</span> et la maîtrise des équipements.
-                <br>
-                Un transfert de compétences clair pour une <span class="font-bold">utilisation fluide et sécurisée</span> en clinique.
-              </span>
-            </div>
-          </CardContent>
-        </Card>
+          <Icon name="heroicons:wrench-screwdriver" class="w-8 h-8" />
+        </div>
+        <h3
+          class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors"
+        >
+          Installation & Configuration
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Une mise en service clé en main assurée par nos techniciens certifiés.
+          Nous garantissons une intégration parfaite dans votre bloc opératoire.
+        </p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2 text-sm text-gray-500">
+            <Icon
+              name="heroicons:check-circle"
+              class="w-4 h-4 text-green-500"
+            />
+            <span>Installation sur site</span>
+          </li>
+          <li class="flex items-center gap-2 text-sm text-gray-500">
+            <Icon
+              name="heroicons:check-circle"
+              class="w-4 h-4 text-green-500"
+            />
+            <span>Paramétrage personnalisé</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Service 3 -->
+      <div
+        class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div
+          class="w-14 h-14 rounded-xl bg-blue-50 group-hover:bg-primary/10 flex items-center justify-center text-primary mb-6 transition-colors duration-300"
+        >
+          <Icon name="heroicons:academic-cap" class="w-8 h-8" />
+        </div>
+        <h3
+          class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors"
+        >
+          Formation & Suivi
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Maximisez l'efficacité de vos équipes grâce à nos formations dédiées.
+          Un transfert de compétences complet pour une utilisation sécurisée.
+        </p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2 text-sm text-gray-500">
+            <Icon
+              name="heroicons:check-circle"
+              class="w-4 h-4 text-green-500"
+            />
+            <span>Formation équipe médicale</span>
+          </li>
+          <li class="flex items-center gap-2 text-sm text-gray-500">
+            <Icon
+              name="heroicons:check-circle"
+              class="w-4 h-4 text-green-500"
+            />
+            <span>Support continu</span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
