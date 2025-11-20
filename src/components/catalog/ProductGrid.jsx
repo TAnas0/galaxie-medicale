@@ -1,65 +1,60 @@
-import Card from "../ui/Card.jsx";
+import React from 'react';
 
 export default function ProductGrid({ products }) {
     return (
         <div>
-            <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-x-4 gap-y-6 p-2">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 p-2">
                 {products.map((product) => (
-                    <div key={product.id} className="border-1 border-gray-300 rounded-lg shadow-lg overflow-hidden">
-                        <a
-                            href={`/galaxie-medicale/products/${product.id}`}
-                            className="block group transition-all duration-300 hover:scale-[1.015]"
-                            target="_blank"
-                        >
-                            <Card className="group flex flex-col rounded-md border border-gray-300 shadow-xl overflow-hidden transition-all duration-300 ease-in-out hover:scale-[1.01]">
-                                
-                                {/* Product Image */}
-                                <div className="relative w-full aspect-[4/3]">
-                                    {/* Loading Indicator */}
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <div className="w-12 h-12 border-4 border-t-primary border-gray-200 rounded-full animate-spin"></div>
-                                    </div>
+                    <a
+                        key={product.id}
+                        href={`/galaxie-medicale/products/${product.id}`}
+                        className="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1"
+                    >
+                        {/* Image Container */}
+                        <div className="relative w-full aspect-[4/3] bg-white overflow-hidden border-b border-gray-50">
+                            {/* Loading Placeholder */}
+                            <div className="absolute inset-0 flex items-center justify-center text-gray-300">
+                                <svg className="w-8 h-8 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </div>
 
-                                    <img
-                                        src={product.data.images.length ? product.data.images[0].src : "https://placehold.co/400x400"}
-                                        alt={product.data.name.fr}
-                                        className="absolute w-full h-full object-contain transition-opacity duration-1000 ease-in-out"
-                                        loading="lazy"
-                                    />
+                            <img
+                                src={product.data.images?.length ? product.data.images[0].src : "https://placehold.co/400x400"}
+                                alt={product.data.name.fr || product.data.name.en}
+                                className="absolute w-full h-full object-contain p-4 transition-transform duration-500 ease-out group-hover:scale-105"
+                                loading="lazy"
+                            />
 
-                                    {/* Out of Stock Badge */}
-                                    {product.data.availability === "out_of_stock" && (
-                                        <div className="absolute top-2 right-2 bg-red-600/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
-                                            Rupture de stock
-                                        </div>
-                                    )}
+                            {/* Out of Stock Badge */}
+                            {product.data.availability === "out_of_stock" && (
+                                <div className="absolute top-3 right-3 bg-red-50 text-red-600 text-xs font-bold px-2 py-1 rounded-full border border-red-100">
+                                    Rupture
                                 </div>
+                            )}
+                        </div>
 
-                                {/* Product Info */}
-                                <div className="p-2 flex flex-col justify-between h-[150px] text-gray-50 bg-primary/90">
-                                    <h4 className="text-lg font-semibold pb-2 line-clamp-2 underline">{product.data.name.fr}</h4>
-                                    <p className="text-sm text-muted-600 dark:text-muted-400 line-clamp-3">
-                                        {product.data.short_description.fr}
-                                    </p>
+                        {/* Content */}
+                        <div className="p-5">
+                            <h4 className="text-base font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+                                {product.data.name.fr || product.data.name.en}
+                            </h4>
 
-                                    <div className="flex justify-between items-center mt-auto">
-                                        <p className="text-xs text-muted-400 italic">{product.data.brand.name}</p>
-                                        <div className="flex gap-1">
-                                            <span className="inline-block text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-2 py-0.5 rounded-md">
-                                                {product.data.category.display.fr}
-                                            </span>
-                                            {/* {product.data.sub_category && (
-                                                <span className="inline-block text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-2 py-0.5 rounded-md">
-                                                    {product.data.sub_category}
-                                                </span>
-                                            )} */}
-                                        </div>
-                                    </div>
-                                </div>
+                            <p className="text-sm text-gray-500 line-clamp-2 mb-4 h-10">
+                                {product.data.short_description?.fr || product.data.short_description?.en}
+                            </p>
 
-                            </Card>
-                        </a>
-                    </div>
+                            <div className="flex items-center justify-between pt-4 border-t border-gray-50">
+                                <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">
+                                    {product.data.brand?.name}
+                                </p>
+                                <span className="inline-block px-2 py-1 rounded-full bg-blue-50 text-primary text-[10px] font-bold uppercase tracking-wider">
+                                    {product.data.category?.display.fr || product.data.category?.display.en}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
                 ))}
             </div>
         </div>
