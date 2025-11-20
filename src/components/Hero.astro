@@ -6,14 +6,17 @@ import surgicalTable from "../assets/hero/surgical-table.png";
 import surgicalLamp from "../assets/hero/surgical-lamp.webp";
 import trolley from "../assets/hero/trolley.webp";
 import monitor from "../assets/hero/monitor.webp";
+import autoclaveLarge from "../assets/hero/autoclave-large.webp";
+import gueridon from "../assets/hero/gueridon.webp";
+import paravent from "../assets/hero/paravent.webp";
 ---
 
-<section class="relative pt-20 lg:pt-32 pb-20 overflow-hidden">
-  <div class="container mx-auto px-6 relative z-10">
+<section class="relative pt-20 pb-20 overflow-hidden">
+  <div class="mx-auto relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
       <!-- Left Content -->
       <div
-        class="flex flex-col gap-8 z-10"
+        class="flex flex-col gap-8 z-10 ml-24"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
@@ -104,12 +107,9 @@ import monitor from "../assets/hero/monitor.webp";
         data-aos-delay="200"
       >
         <!-- Scene Container -->
-        <div
-          class="relative w-full max-w-[650px] aspect-square md:aspect-[4/3] flex items-center justify-center"
-        >
-          <!-- 1. Surgical Lamp (Top Center - Overhead) -->
+        <div class="relative w-full h-full flex items-center justify-center">
           <div
-            class="absolute -top-10 left-1/2 -translate-x-1/2 w-[200px] md:w-[280px] z-30 animate-float-delayed origin-top"
+            class="absolute top-0 right-0 -translate-x-1/2 w-[150px] md:w-[220px] z-30 origin-top"
           >
             <Image
               src={surgicalLamp}
@@ -118,10 +118,7 @@ import monitor from "../assets/hero/monitor.webp";
             />
           </div>
 
-          <!-- 2. Surgical Table (Center Bottom - Anchor) -->
-          <div
-            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[280px] md:w-[400px] z-20 animate-float"
-          >
+          <div class="absolute bottom-0 left-6 w-3/4 z-20 animate-float">
             <Image
               src={surgicalTable}
               alt="Table chirurgicale électrique"
@@ -129,9 +126,8 @@ import monitor from "../assets/hero/monitor.webp";
             />
           </div>
 
-          <!-- 3. Monitor (Right Flank) -->
           <div
-            class="absolute top-20 -right-4 md:right-0 w-[140px] md:w-[180px] z-10 animate-float-reverse opacity-90 hover:opacity-100 transition-opacity duration-300"
+            class="absolute top-20 -left-4 md:left-0 w-[140px] md:w-[180px] z-10 animate-float-reverse opacity-90 hover:opacity-100 transition-opacity duration-300"
           >
             <Image
               src={monitor}
@@ -140,7 +136,6 @@ import monitor from "../assets/hero/monitor.webp";
             />
           </div>
 
-          <!-- 4. Trolley (Left Flank) -->
           <div
             class="absolute bottom-10 -left-4 md:left-0 w-[130px] md:w-[160px] z-10 animate-float-delayed opacity-90 hover:opacity-100 transition-opacity duration-300"
           >
@@ -151,9 +146,39 @@ import monitor from "../assets/hero/monitor.webp";
             />
           </div>
 
+          <div
+            class="absolute bottom-10 right-4 opacity-90 hover:opacity-100 transition-opacity duration-300 z-20"
+          >
+            <Image
+              src={autoclaveLarge}
+              alt="Grand Autoclave"
+              class="w-full h-auto object-contain drop-shadow-xl"
+            />
+          </div>
+
+          <div
+            class="absolute bottom-10 -left-4 md:left-0 w-[130px] md:w-[160px] z-10 animate-float-delayed opacity-90 hover:opacity-100 transition-opacity duration-300"
+          >
+            <Image
+              src={gueridon}
+              alt="Gueridon"
+              class="w-full h-auto object-contain drop-shadow-xl"
+            />
+          </div>
+
+          <div
+            class="absolute bottom-0 -right-12 z-0 md:-right-12 opacity-90 hover:opacity-100 transition-opacity duration-300 z-0 h-full w-full"
+          >
+            <Image
+              src={paravent}
+              alt="Paravent"
+              class="w-full h-auto object-contain drop-shadow-xl"
+            />
+          </div>
+
           <!-- Glass Card Stats (Floating) -->
           <div
-            class="absolute bottom-0 right-0 md:-right-24 bg-white/80 backdrop-blur-xl border border-white/60 p-5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] max-w-[340px] z-40 hidden md:block"
+            class="absolute bottom-0 right-2 bg-white/80 backdrop-blur-xl border border-white/60 p-5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] max-w-[340px] z-40 hidden md:block"
           >
             <div class="flex flex-col gap-4">
               <!-- Stat 1 -->
