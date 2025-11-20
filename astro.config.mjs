@@ -23,8 +23,7 @@ export default defineConfig({
     icon(),
     sentry({
       telemetry: false,
-    }
-    ),
+    }),
     react(),
     // spotlightjs(),
     // Sonda({server: true})

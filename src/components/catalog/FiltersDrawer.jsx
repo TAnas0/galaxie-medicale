@@ -32,9 +32,6 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
         return keys1.every(k => obj1[k] === obj2[k]);
     }
     function areFiltersClear() {
-        console.log(filters)
-        console.log(defaultFilters)
-        console.log(shallowEqual(defaultFilters, filters))
         return shallowEqual(defaultFilters, filters)
     }
 
@@ -43,7 +40,6 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
     // Close when clicking outside of dropdown
     useEffect(() => {
         function handleClickOutside(event) {
-            console.log(event)
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
                 setSortOpen(false)
             }
