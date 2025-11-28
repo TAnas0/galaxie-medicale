@@ -26,38 +26,20 @@ export default function ProductToolbar({ filters, setFilters }) {
 
   return (
     <div className="w-full">
-      {/* Desktop: button row */}
-      <div className="hidden md:flex bg-white border border-gray-500 rounded divide-x divide-gray-500 shadow-md shadow-primary/10 overflow-x-auto">
+      {/* Unified Pill Navigation (Scrollable on mobile, flex-wrap or scroll on desktop depending on preference, here scrollable for consistency) */}
+      <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
         {categories.map((cat) => (
           <button
             key={cat.value}
             onClick={() => handleChange(cat.value)}
-            className={`flex-1 px-4 py-3 whitespace-nowrap transition-colors duration-300 cursor-pointer ${filters.category === cat.value
-                ? "bg-primary/50 font-semibold"
-                : "hover:bg-muted-50"
+            className={`flex-shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 ease-in-out whitespace-nowrap ${filters.category === cat.value
+                ? "bg-primary text-white shadow-md shadow-primary/20"
+                : "bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900"
               }`}
           >
             {cat.label}
           </button>
         ))}
-      </div>
-
-      {/* Mobile: dropdown */}
-      <div className="md:hidden flex items-center gap-4 border-b border-gray-200 pb-1 px-2">
-        <div>
-          Catégorie:
-        </div>
-        <select
-          value={filters.category || "all"}
-          onChange={(e) => handleChange(e.target.value)}
-          className="w-fit border border-gray-500 rounded px-3 py-2 shadow-sm focus:ring-primary focus:border-primary"
-        >
-          {categories.map((cat) => (
-            <option key={cat.value} value={cat.value}>
-              {cat.label}
-            </option>
-          ))}
-        </select>
       </div>
     </div>
   );

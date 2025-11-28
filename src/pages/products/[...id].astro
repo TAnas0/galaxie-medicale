@@ -138,10 +138,10 @@ function formatAttributeValue(attr) {
 
     default:
       if (value.l && value.h && value.p) {
-        return `${value.l} × ${value.h} × ${value.p}${value.unit ? " " + value.unit : ""}`;
+        return `${value.l} × ${value.h} × ${value.p}${value.unit ? " " + value.unit + " (L x H x D)" : ""}`;
       }
       if (value.length && value.height && value.depth) {
-        return `${value.length} x ${value.height} x ${value.depth}${value.unit ? " " + value.unit : ""}`;
+        return `${value.length} x ${value.height} x ${value.depth}${value.unit ? " " + value.unit + " (L x H x D)": ""}`;
       }
       if (value.net && value.gross && value.unit) { // Net/Gross weight
         return `Net: ${value.net} ${value.unit} - Brut: ${value.gross} ${value.unit}`;
@@ -152,7 +152,6 @@ function formatAttributeValue(attr) {
       if (value.length && value.width && value.unit) {
         return `${value.length} x ${value.width} mm (L x l)`
       }
-      console.log(value)
       return typeof value === "object" ? JSON.stringify(value) : String(value);
 
     case "boolean":
@@ -188,7 +187,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
             <h1
               class="text-center lg:text-left text-2xl lg:text-3xl font-bold text-gray-900 underline mb-3"
             >
-              {product.data.name.fr}
+              {product.data.name.fr || product.data.name.en}
             </h1>
             <div
               class="flex flex-cols gap-2 mb-6 justify-center lg:justify-end -translate-y-1 mb-3"
@@ -203,7 +202,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
               {
                 product.data.category.display.fr && (
                   <div class="w-fit bg-primary/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
-                    {product.data.category.display.fr}
+                    {product.data.category.display.fr || product.data.category.display.en}
                   </div>
                 )
               }
@@ -224,7 +223,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
             <div
               class="text-lg text-gray-700 whitespace-pre-line leading-[25px] bg-white/50 p-3 h-full"
             >
-              {product.data.full_description.fr}
+              {product.data.full_description.fr || product.data.full_description.en}
               <!-- {
                 product.data.technical_specs["other"]
                   ? product.data.technical_specs["other"].join("\n")
@@ -236,7 +235,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
                   {
                     highlights?.map((highlight, index) => (
                       <li key={index}>
-                        <span class="font-semibold">{highlight.display_label.fr}</span>: {formatAttributeValue(highlight)}
+                        <span class="font-semibold">{highlight.display_label.fr || highlight.display_label.en}</span>: {formatAttributeValue(highlight)}
                       </li>
                     ))
                   }
@@ -291,7 +290,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
                 product.data.attributes?.map((attribute, index) => (
                   <div class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0">
                     <span class="text-sm text-gray-600">
-                      {attribute.display_label.fr}
+                      {attribute.display_label.fr || attribute.display_label.en}
                     </span>
                     <span class="text-sm font-medium text-gray-900 whitespace-pre-line">
                       {formatAttributeValue(attribute)}
@@ -332,7 +331,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
                   {electricalSpecs?.map((attribute, index) => (
                     <div class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0">
                       <span class="text-sm text-gray-600">
-                        {attribute.display_label.fr}
+                        {attribute.display_label.fr || attribute.display_label.en}
                       </span>
                       <span class="text-sm font-medium text-gray-900 whitespace-pre-line">
                         {formatAttributeValue(attribute)}

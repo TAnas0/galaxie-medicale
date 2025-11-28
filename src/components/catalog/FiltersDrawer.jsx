@@ -52,21 +52,25 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
     }, [dropdownRef])
 
     return (
-        <div className="flex items-center gap-2 justify-between" ref={dropdownRef}>
-            <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-4" ref={dropdownRef}>
+            <div className="flex items-center gap-3">
                 {/* Sort Dropdown */}
                 <div className="relative">
                     <button
                         onClick={() => setSortOpen(!sortOpen)}
-                        className="rounded-md bg-white border border-gray-300 px-2 md:px-4 py-1 text-xs md:text-sm font-semibold text-gray-900 hover:bg-primary/50 mt-1 flex items-center gap-1 min-w-48 justify-center cursor-pointer"
+                        className="group flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-all hover:border-primary/30 hover:bg-gray-50 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
                     >
-                        Trier: {sortingOptions.find(o => o.value === sortOption).label}
+                        <span className="text-gray-400 group-hover:text-primary/70">Trier:</span>
+                        <span className="text-gray-900 group-hover:text-primary">{sortingOptions.find(o => o.value === sortOption)?.label}</span>
+                        <svg className={`h-4 w-4 text-gray-400 transition-transform duration-200 group-hover:text-primary/70 ${sortOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
                     </button>
 
                     {sortOpen && (
-                        <div className="absolute right-0 mt-1 min-w-60 w-full bg-white border border-gray-300 rounded shadow-lg z-50">
+                        <div className="absolute left-0 z-50 mt-2 w-64 origin-top-left rounded-xl bg-white p-1 shadow-xl ring-1 ring-black/5 focus:outline-none transform opacity-100 scale-100 transition-all">
                             {sortingOptions.map(option => (
-                                <div
+                                <button
                                     key={option.value}
                                     onClick={() => {
                                         if (!option.value.includes("price-")) {
@@ -75,14 +79,20 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
                                         }
                                     }}
                                     disabled={option.value.includes("price-")}
-                                    className={`cursor-pointer px-4 py-2 w-full ${
-                                        option.value.includes("price-")
-                                            ? "opacity-50 pointer-events-none"
-                                            : "hover:bg-primary/10"
-                                    }`}
+                                    className={`flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-sm transition-colors ${option.value.includes("price-")
+                                            ? "cursor-not-allowed opacity-50 text-gray-400"
+                                            : option.value === sortOption
+                                                ? "bg-primary/5 text-primary font-medium"
+                                                : "text-gray-700 hover:bg-gray-50"
+                                        }`}
                                 >
                                     {option.label}
-                                </div>
+                                    {option.value === sortOption && (
+                                        <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    )}
+                                </button>
                             ))}
                         </div>
                     )}
@@ -90,33 +100,33 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
 
                 <button
                     onClick={() => setOpen(true)}
-                    className="rounded-md bg-white border border-gray-300 px-2 md:px-4 py-1 text-xs md:text-sm font-semibold text-gray-900 hover:bg-primary/50 mt-1"
+                    className="group flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-all hover:border-primary/30 hover:bg-gray-50 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
                 >
-                    <div className="flex flex-cols items-center gap-1 cursor-pointer">
-                        {/* <Icon name="heroicons:bars-4" /> */}
-                        <FunnelIcon className="w-4 h-4 lg:w-5 lg:h-5" />
-                        Filtres
-                    </div>
+                    <FunnelIcon className="h-4 w-4 text-gray-400 transition-colors group-hover:text-primary" />
+                    <span>Filtres</span>
+                    {!areFiltersClear() && (
+                        <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white">
+                            !
+                        </span>
+                    )}
                 </button>
 
                 <button
                     onClick={clearFilters}
                     disabled={areFiltersClear()}
-                    className={`hidden md:block rounded-md px-2 py-1 text-xs md:text-sm font-semibold mt-1 border 
-                        ${areFiltersClear()
-                            ? "bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed"
-                            : "bg-white border-gray-300 text-gray-900 hover:bg-primary/50 cursor-pointer"}`}
+                    className={`hidden md:flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-all ${areFiltersClear()
+                            ? "text-gray-300 cursor-not-allowed"
+                            : "text-gray-500 hover:bg-red-50 hover:text-red-600"
+                        }`}
                 >
-                    <div className="flex flex-cols items-center gap-1">
-                        <ArrowPathIcon className="w-2 h-2 lg:w-4 lg:h-4" />
-                        Réinitialiser les filtres
-                    </div>
+                    <ArrowPathIcon className={`h-4 w-4 ${!areFiltersClear() && "group-hover:animate-spin"}`} />
+                    <span>Réinitialiser</span>
                 </button>
 
-                <Dialog open={open} onClose={setOpen} className="relative z-10">
+                <Dialog open={open} onClose={setOpen} className="relative z-50">
                     <DialogBackdrop
                         transition
-                        className="fixed inset-0 bg-gray-500/75 transition-opacity duration-500 ease-in-out data-closed:opacity-0"
+                        className="fixed inset-0 bg-gray-900/20 backdrop-blur-sm transition-opacity duration-500 ease-in-out data-closed:opacity-0"
                     />
 
                     <div className="fixed inset-0 overflow-hidden">
@@ -126,208 +136,123 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
                                     transition
                                     className="pointer-events-auto relative w-screen max-w-md transform transition duration-500 ease-in-out data-closed:translate-x-full sm:duration-700"
                                 >
-                                    <div className="relative flex h-full flex-col overflow-y-auto bg-white py-6 shadow-xl pt-24">
-                                        <div className="px-4 sm:px-6">
-                                            <div className="flex justify-end mb-3">
-                                                <button
-                                                    onClick={() => setOpen(false)}
-                                                    className="rounded-full p-2 pl-8 pb-0 cursor-pointer"
-                                                >
-                                                    <div className="flex flex-cols items-center gap-1 border border-gray-300 rounded-full p-2 bg-gray-50 hover:bg-primary/50">
-                                                        <XMarkIcon className="w-5 h-5" />
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div className="flex justify-between items-center mb-3">
-                                                <DialogTitle className="text-base font-semibold text-black">
-                                                    <div className="flex flex-cols items-center gap-1 pb-1 text-lg underline">
-                                                        {/* <Icon name="heroicons:bars-4" /> */}
-                                                        <FunnelIcon className="w-4 h-4 lg:w-5 lg:h-5" />
-                                                        Filtres
-                                                    </div>
-                                                </DialogTitle>
+                                    <div className="flex h-full flex-col overflow-y-auto bg-white shadow-2xl">
+                                        {/* Header */}
+                                        <div className="flex items-center justify-between border-b border-gray-100 px-6 py-6">
+                                            <DialogTitle className="text-xl font-semibold text-gray-900 flex items-center gap-2">
+                                                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">
+                                                    <FunnelIcon className="h-5 w-5" />
+                                                </span>
+                                                Filtres
+                                            </DialogTitle>
+                                            <button
+                                                onClick={() => setOpen(false)}
+                                                className="rounded-full p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 transition-colors focus:outline-none"
+                                            >
+                                                <XMarkIcon className="h-6 w-6" />
+                                            </button>
+                                        </div>
 
-                                                <button
-                                                    onClick={clearFilters}
-                                                    disabled={areFiltersClear()}
-                                                    className={`hidden md:block rounded-md px-2 py-1 text-xs md:text-sm font-semibold mt-1 border 
-                                                        ${areFiltersClear()
-                                                            ? "bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed"
-                                                            : "bg-white border-gray-300 text-gray-900 hover:bg-primary/50 cursor-pointer"}`}
-                                                >
-                                                    <div className="flex flex-cols items-center gap-1">
-                                                        <ArrowPathIcon className="w-2 h-2 lg:w-4 lg:h-4" />
-                                                        Réinitialiser les filtres
-                                                    </div>
-                                                </button>
-                                            </div>
-                
-                                            <div className="basis-1/5 p-4 pt-2 bg-white border-1 border-gray-300 rounded-lg mb-3">
-                                                <h3 className="font-sans text-lg mb-2 text-muted-800">
+                                        {/* Content */}
+                                        <div className="flex-1 px-6 py-6 space-y-8">
+                                            {/* Availability Section */}
+                                            <div>
+                                                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-4">
                                                     Disponibilité
                                                 </h3>
-                                                <div className="space-y-4">
-                                                    <div className="flex items-center gap-3 cursor-pointer">
-                                                        <div className="bg-white rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                                                            <input
-                                                                type="radio"
-                                                                name="availability"
-                                                                value="all"
-                                                                className="peer appearance-none ring-offset-white rounded-full absolute cursor-pointer w-full h-full"
-                                                                checked={filters.availability === 'all'}
-                                                                onChange={() =>
-                                                                    setFilters((prev) => ({ ...prev, availability: 'all' }))
-                                                                }
-                                                            />
-                                                            <div className="border-2 border-gray-700 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none" />
-                                                        </div>
-                                                        <label htmlFor="radio-6" className="ml-2 text-sm leading-4">
-                                                            Tous
+                                                <div className="space-y-3">
+                                                    {[
+                                                        { value: 'all', label: 'Tous' },
+                                                        { value: 'in_stock', label: 'En stock immédiat' },
+                                                        { value: 'on_order', label: 'Sur commande' },
+                                                        { value: 'out_of_stock', label: 'Rupture de Stock' }
+                                                    ].map((option) => (
+                                                        <label
+                                                            key={option.value}
+                                                            className={`flex items-center justify-between p-3 rounded-xl border cursor-pointer transition-all ${filters.availability === option.value
+                                                                    ? "border-primary bg-primary/5 shadow-sm"
+                                                                    : "border-gray-200 hover:border-gray-300 hover:bg-gray-50"
+                                                                }`}
+                                                        >
+                                                            <span className={`text-sm font-medium ${filters.availability === option.value ? "text-primary" : "text-gray-700"
+                                                                }`}>
+                                                                {option.label}
+                                                            </span>
+                                                            <div className="relative flex items-center">
+                                                                <input
+                                                                    type="radio"
+                                                                    name="availability"
+                                                                    value={option.value}
+                                                                    checked={filters.availability === option.value}
+                                                                    onChange={() => setFilters(prev => ({ ...prev, availability: option.value }))}
+                                                                    className="peer sr-only"
+                                                                />
+                                                                <div className={`h-5 w-5 rounded-full border flex items-center justify-center transition-colors ${filters.availability === option.value
+                                                                        ? "border-primary bg-primary"
+                                                                        : "border-gray-300 bg-white"
+                                                                    }`}>
+                                                                    {filters.availability === option.value && (
+                                                                        <div className="h-2 w-2 rounded-full bg-white" />
+                                                                    )}
+                                                                </div>
+                                                            </div>
                                                         </label>
-                                                    </div>
-
-                                                    <div className="flex items-center gap-3 cursor-pointer">
-                                                        <div className="bg-white rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                                                            <input
-                                                                type="radio"
-                                                                name="availability"
-                                                                value="in_stock"
-                                                                className="peer appearance-none ring-offset-white rounded-full absolute cursor-pointer w-full h-full"
-                                                                checked={filters.availability === 'in_stock'}
-                                                                onChange={() =>
-                                                                    setFilters((prev) => ({ ...prev, availability: 'in_stock' }))
-                                                                }
-                                                            />
-                                                            <div className="border-2 border-gray-700 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none" />
-                                                        </div>
-                                                        <label htmlFor="radio-6" className="ml-2 text-sm leading-4">
-                                                            En stock immédiat
-                                                        </label>
-                                                    </div>
-
-                                                    <div className="flex items-center gap-3 cursor-pointer">
-                                                        <div className="bg-white rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                                                            <input
-                                                                type="radio"
-                                                                name="availability"
-                                                                value="on_order"
-                                                                className="peer appearance-none ring-offset-white rounded-full absolute cursor-pointer w-full h-full"
-                                                                checked={filters.availability === 'on_order'}
-                                                                onChange={() =>
-                                                                    setFilters((prev) => ({ ...prev, availability: 'on_order' }))
-                                                                }
-                                                            />
-                                                            <div className="border-2 border-gray-700 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none" />
-                                                        </div>
-                                                        <label htmlFor="radio-7" className="ml-2 text-sm leading-4">
-                                                            Sur commande
-                                                        </label>
-                                                    </div>
-
-                                                    <div className="flex items-center gap-3 cursor-pointer">
-                                                        <div className="bg-white rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                                                            <input
-                                                                type="radio"
-                                                                name="radio_availability"
-                                                                value="out_of_stock"
-                                                                className="peer appearance-none ring-offset-white rounded-full absolute cursor-pointer w-full h-full"
-                                                                checked={filters.availability === 'out_of_stock'}
-                                                                onChange={() =>
-                                                                    setFilters((prev) => ({ ...prev, availability: 'out_of_stock' }))
-                                                                }
-                                                            />
-                                                            <div className="border-2 border-gray-700 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none" />
-                                                        </div>
-                                                        <label htmlFor="radio-8" className="ml-2 text-sm leading-4">
-                                                            Rupture de Stock
-                                                        </label>
-                                                    </div>
+                                                    ))}
                                                 </div>
                                             </div>
-                                            <div className="basis-1/5 p-4 pt-2 bg-white border-1 border-gray-300 rounded-lg">
-                                                <h3 className="font-sans text-lg mb-2 text-muted-800">
+
+                                            <div className="h-px bg-gray-100" />
+
+                                            {/* Price Section */}
+                                            <div>
+                                                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-4">
                                                     Prix
                                                 </h3>
-                                                <div className="space-y-4">
-                                                    <div className="flex items-center gap-3 cursor-pointer">
-                                                        <div className="bg-white rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
+                                                <div className="grid grid-cols-2 gap-3">
+                                                    {[
+                                                        { value: 'all', label: 'Tous' },
+                                                        { value: 1, label: '$' },
+                                                        { value: 2, label: '$$' },
+                                                        { value: 3, label: '$$$+' }
+                                                    ].map((option) => (
+                                                        <label
+                                                            key={option.value}
+                                                            className={`flex items-center justify-center p-3 rounded-xl border cursor-pointer transition-all ${filters.price === option.value
+                                                                    ? "border-primary bg-primary/5 shadow-sm"
+                                                                    : "border-gray-200 hover:border-gray-300 hover:bg-gray-50"
+                                                                }`}
+                                                        >
                                                             <input
                                                                 type="radio"
                                                                 name="price"
-                                                                className="peer appearance-none ring-offset-white rounded-full absolute cursor-pointer w-full h-full"
-                                                                value="1"
-                                                                checked={filters.price === "all"}
-                                                                onChange={() =>
-                                                                    setFilters((prev) => ({ ...prev, price: "all" }))
-                                                                }
+                                                                value={option.value}
+                                                                checked={filters.price === option.value}
+                                                                onChange={() => setFilters(prev => ({ ...prev, price: option.value }))}
+                                                                className="sr-only"
                                                             />
-                                                            <div className="border-2 border-gray-700 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none" />
-                                                        </div>
-                                                        <label htmlFor="radio-0" className="ml-2 text-sm leading-4">
-                                                            Tous
+                                                            <span className={`text-sm font-medium ${filters.price === option.value ? "text-primary" : "text-gray-700"
+                                                                }`}>
+                                                                {option.label}
+                                                            </span>
                                                         </label>
-                                                    </div>
-
-                                                    <div className="flex items-center gap-3 cursor-pointer">
-                                                        <div className="bg-white rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                                                            <input
-                                                                type="radio"
-                                                                name="price"
-                                                                className="peer appearance-none ring-offset-white rounded-full absolute cursor-pointer w-full h-full"
-                                                                value="1"
-                                                                checked={filters.price === 1}
-                                                                onChange={() =>
-                                                                    setFilters((prev) => ({ ...prev, price: 1 }))
-                                                                }
-                                                            />
-                                                            <div className="border-2 border-gray-700 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none" />
-                                                        </div>
-                                                        <label htmlFor="radio-0" className="ml-2 text-sm leading-4">
-                                                            $
-                                                        </label>
-                                                    </div>
-
-                                                    <div className="flex items-center gap-3 cursor-pointer">
-                                                        <div className="bg-white rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                                                            <input
-                                                                type="radio"
-                                                                name="price"
-                                                                className="peer appearance-none ring-offset-white rounded-full absolute cursor-pointer w-full h-full"
-                                                                value="2"
-                                                                checked={filters.price === 2}
-                                                                onChange={() =>
-                                                                    setFilters((prev) => ({ ...prev, price: 2 }))
-                                                                }
-                                                            />
-                                                            <div className="border-2 border-gray-700 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none" />
-                                                        </div>
-                                                        <label htmlFor="radio-1" className="ml-2 text-sm leading-4">
-                                                            $$
-                                                        </label>
-                                                    </div>
-
-                                                    <div className="flex items-center gap-3 cursor-pointer">
-                                                        <div className="bg-white rounded-full w-4 h-4 flex flex-shrink-0 justify-center items-center relative">
-                                                            <input
-                                                                type="radio"
-                                                                name="price"
-                                                                className="peer appearance-none ring-offset-white rounded-full absolute cursor-pointer w-full h-full"
-                                                                value="3"
-                                                                checked={filters.price === 3}
-                                                                onChange={() =>
-                                                                    setFilters((prev) => ({ ...prev, price: 3 }))
-                                                                }
-                                                            />
-                                                            <div className="border-2 border-gray-700 rounded-full w-full h-full peer-checked:bg-primary peer-checked:border-none" />
-                                                        </div>
-                                                        <label htmlFor="radio-2" className="ml-2 text-sm leading-4">
-                                                            $$$+
-                                                        </label>
-                                                    </div>
+                                                    ))}
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="relative mt-6 flex-1 px-4 sm:px-6">{/* Your content */}</div>
+
+                                        {/* Footer */}
+                                        <div className="border-t border-gray-100 px-6 py-6 bg-gray-50">
+                                            <button
+                                                onClick={clearFilters}
+                                                disabled={areFiltersClear()}
+                                                className={`w-full rounded-xl py-3 text-sm font-semibold transition-all ${areFiltersClear()
+                                                        ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                                                        : "bg-white border border-gray-200 text-gray-900 shadow-sm hover:bg-red-50 hover:text-red-600 hover:border-red-200"
+                                                    }`}
+                                            >
+                                                Réinitialiser tous les filtres
+                                            </button>
+                                        </div>
                                     </div>
                                 </DialogPanel>
                             </div>
@@ -335,7 +260,9 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
                     </div>
                 </Dialog>
             </div>
-            <div className="pl-2 min-w-fit">Total produits: {totalProducts}</div>
+            <div className="text-sm text-gray-500 font-medium">
+                <span className="text-gray-900 font-bold">{totalProducts}</span> produits trouvés
+            </div>
         </div>
     )
 }

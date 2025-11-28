@@ -61,7 +61,7 @@ export default function Catalog({ products, initialCategory }) {
 
     return (
         <div id="catalog" className="bg-gray-50/50 min-h-[95vh]">
-            <div id="categories-toolbar" className="mt-27 sticky top-27 w-full z-50 transition-transform duration-300 ease-in-out translate-y-0 bg-white border-1 border-gray-300 rounded-lg p-1">
+            <div id="categories-toolbar" className="mt-27 sticky top-27 w-full z-50 transition-transform duration-300 ease-in-out translate-y-0 bg-white border-1 border-gray-300 rounded-lg py-1 px-2">
                 <ProductToolbar
                     filters={filters}
                     setFilters={setFilters}
