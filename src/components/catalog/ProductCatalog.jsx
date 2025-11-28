@@ -43,7 +43,6 @@ export default function Catalog({ products, initialCategory }) {
     const [sortOption, setSortOption] = useState('price-ascending')
     const sortedProducts = useMemo(() => {
         const handleSort = (data, sortOption) => {
-            console.log(sortOption)
             switch (sortOption) {
                 case "price-ascending":
                     return [...data].sort((a, b) => a.price - b.price)

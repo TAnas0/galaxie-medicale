@@ -32,11 +32,10 @@ export default function ProductToolbar({ filters, setFilters }) {
           <button
             key={cat.value}
             onClick={() => handleChange(cat.value)}
-            className={`flex-1 px-4 py-3 whitespace-nowrap transition-colors duration-300 cursor-pointer ${
-              filters.category === cat.value
+            className={`flex-1 px-4 py-3 whitespace-nowrap transition-colors duration-300 cursor-pointer ${filters.category === cat.value
                 ? "bg-primary/50 font-semibold"
                 : "hover:bg-muted-50"
-            }`}
+              }`}
           >
             {cat.label}
           </button>

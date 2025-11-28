@@ -52,34 +52,8 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
     }, [dropdownRef])
 
     return (
-        <div className="flex items-center gap-2 " ref={dropdownRef}>
-            <div className="pl-2 min-w-fit">{totalProducts} produits</div>
-            <div className="flex items-center gap-2 ml-auto">
-                <button
-                    onClick={clearFilters}
-                    disabled={areFiltersClear()}
-                    className={`hidden md:block rounded-md px-2 py-1 text-xs md:text-sm font-semibold mt-1 border 
-                        ${areFiltersClear()
-                            ? "bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed"
-                            : "bg-white border-gray-300 text-gray-900 hover:bg-primary/50 cursor-pointer"}`}
-                >
-                    <div className="flex flex-cols items-center gap-1">
-                        <ArrowPathIcon className="w-2 h-2 lg:w-4 lg:h-4" />
-                        Réinitialiser les filtres
-                    </div>
-                </button>
-
-                <button
-                    onClick={() => setOpen(true)}
-                    className="rounded-md bg-white border border-gray-300 px-2 md:px-4 py-1 text-xs md:text-sm font-semibold text-gray-900 hover:bg-primary/50 mt-1"
-                >
-                    <div className="flex flex-cols items-center gap-1 cursor-pointer">
-                        {/* <Icon name="heroicons:bars-4" /> */}
-                        <FunnelIcon className="w-4 h-4 lg:w-5 lg:h-5" />
-                        Filtres
-                    </div>
-                </button>
-
+        <div className="flex items-center gap-2 justify-between" ref={dropdownRef}>
+            <div className="flex items-center gap-2">
                 {/* Sort Dropdown */}
                 <div className="relative">
                     <button
@@ -114,6 +88,30 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
                     )}
                 </div>
 
+                <button
+                    onClick={() => setOpen(true)}
+                    className="rounded-md bg-white border border-gray-300 px-2 md:px-4 py-1 text-xs md:text-sm font-semibold text-gray-900 hover:bg-primary/50 mt-1"
+                >
+                    <div className="flex flex-cols items-center gap-1 cursor-pointer">
+                        {/* <Icon name="heroicons:bars-4" /> */}
+                        <FunnelIcon className="w-4 h-4 lg:w-5 lg:h-5" />
+                        Filtres
+                    </div>
+                </button>
+
+                <button
+                    onClick={clearFilters}
+                    disabled={areFiltersClear()}
+                    className={`hidden md:block rounded-md px-2 py-1 text-xs md:text-sm font-semibold mt-1 border 
+                        ${areFiltersClear()
+                            ? "bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed"
+                            : "bg-white border-gray-300 text-gray-900 hover:bg-primary/50 cursor-pointer"}`}
+                >
+                    <div className="flex flex-cols items-center gap-1">
+                        <ArrowPathIcon className="w-2 h-2 lg:w-4 lg:h-4" />
+                        Réinitialiser les filtres
+                    </div>
+                </button>
 
                 <Dialog open={open} onClose={setOpen} className="relative z-10">
                     <DialogBackdrop
@@ -337,7 +335,7 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
                     </div>
                 </Dialog>
             </div>
-
+            <div className="pl-2 min-w-fit">Total produits: {totalProducts}</div>
         </div>
     )
 }
