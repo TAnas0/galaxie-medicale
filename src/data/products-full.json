@@ -35,6 +35,23 @@
     ],
     "attributes": [
       {
+        "canonical_name": "device_class",
+        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
+        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "highlighted": true
+      },
+      {
+        "canonical_name": "vacuum_system",
+        "display_label": {
+          "en": "Vacuum System",
+          "fr": "Système de vide"
+        },
+        "category": "Functional",
+        "type": "string",
+        "value": "Fractionated vacuum (3 phases)",
+        "raw": "Système de vide fractionné (3 phases)"
+      },
+      {
         "canonical_name": "chamber_capacity",
         "display_label": {
           "en": "Chamber Capacity",
@@ -45,8 +62,75 @@
         "value": {
           "qty": 12,
           "unit": "L"
+        }
+      },
+      {
+        "canonical_name": "cycle_time",
+        "display_label": {
+          "en": "Cycle Time (Class B)",
+          "fr": "Temps de cycle (Classe B)"
         },
-        "raw": "Capacité de la chambre: 12 litres"
+        "category": "Motion",
+        "type": "number",
+        "value": {
+          "qty": 15,
+          "unit": "minutes"
+        },
+        "raw": "Temps de cycle classe B: 15 minutes"
+      },
+      {
+        "canonical_name": "chamber_material",
+        "display_label": {
+          "en": "Chamber Material",
+          "fr": "Matériau de la chambre"
+        },
+        "category": "Physical",
+        "type": "string",
+        "value": "AISI 316 stainless steel",
+        "raw": "Chambre de stérilisation en acier inoxydable AISI 316"
+      },
+      {
+        "canonical_name": "sterilization_temperatures",
+        "display_label": {
+          "en": "Sterilization Temperatures",
+          "fr": "Températures de stérilisation"
+        },
+        "category": "Thermal",
+        "type": "enum",
+        "value": ["121°C", "134°C"],
+        "raw": "Températures de stérilisation : 121°C / 134°C"
+      },
+      {
+        "canonical_name": "pressure_cycle_121c",
+        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+      },
+      {
+        "canonical_name": "pressure_cycle_134c",
+        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+      },
+      {
+        "canonical_name": "integrated_tests",
+        "display_label": {
+          "en": "Integrated Tests",
+          "fr": "Tests intégrés"
+        },
+        "category": "Functional",
+        "type": "enum",
+        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
+        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
+      },
+      {
+        "canonical_name": "drying_time_settings",
+        "display_label": {
+          "en": "Drying Time Settings",
+          "fr": "Réglage du temps de séchage"
+        },
+        "category": "Controls",
+        "type": "enum",
+        "value": ["1 min", "5 min", "10 min"],
+        "raw": "Réglage du temps de séchage (1/5/10 min)"
       },
       {
         "canonical_name": "external_dimensions",
@@ -95,18 +179,9 @@
         "raw": "Dimensions plateau: 310 x 160 mm"
       },
       {
-        "canonical_name": "power_consumption",
-        "display_label": {
-          "en": "Power Consumption",
-          "fr": "Consommation électrique"
-        },
-        "category": "Electrical",
-        "type": "number",
-        "value": {
-          "qty": 1800,
-          "unit": "W"
-        },
-        "raw": "Consommation électrique: 1800 W"
+        "canonical_name": "trays_included",
+        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
+        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
       },
       {
         "canonical_name": "water_tank_capacity",
@@ -137,53 +212,112 @@
         "raw": "Réservoir eaux usées: 4 litres"
       },
       {
-        "canonical_name": "weight",
+        "canonical_name": "noise_level_maximum",
         "display_label": {
-          "en": "Weight",
-          "fr": "Poids"
+          "en": "Maximum Noise Level",
+          "fr": "Niveau sonore maximal"
         },
         "category": "Physical",
-        "type": "composite",
-        "value": {
-          "net": 42,
-          "gross": 44,
-          "unit": "kg"
-        },
-        "raw": "Poids net / brut: 42 kg / 44 kg"
-      },
-      {
-        "canonical_name": "cycle_time",
-        "display_label": {
-          "en": "Cycle Time (Class B)",
-          "fr": "Temps de cycle (Classe B)"
-        },
-        "category": "Motion",
         "type": "number",
         "value": {
-          "qty": 15,
-          "unit": "minutes"
+          "qty": 60,
+          "unit": "dB",
+          "relation": "<"
         },
-        "raw": "Temps de cycle classe B: 15 minutes"
+        "raw": "Niveau sonore : < 60 dB"
       },
       {
-        "canonical_name": "display_type",
+        "canonical_name": "weight_net",
         "display_label": {
-          "en": "Display Options",
-          "fr": "Options Affichage"
+          "en": "Net Weight",
+          "fr": "Poids Net"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 42,
+          "unit": "kg"
+        },
+        "raw": "Poids net : 42 kg"
+      },
+      {
+        "canonical_name": "weight_gross",
+        "display_label": { "en": "Gross Weight", "fr": "Poids Brut" },
+        "category": "Physical", "type": "number", "value": { "qty": 44, "unit": "kg" }
+      },
+      {
+        "canonical_name": "power_supply",
+        "display_label": {
+          "en": "Power Supply",
+          "fr": "Alimentation"
+        },
+        "category": "Electrical",
+        "type": "string",
+        "value": "230 V – 50/60 Hz",
+        "raw": "Alimentation : 230 V – 50/60 Hz"
+      },
+      {
+        "canonical_name": "power_consumption",
+        "display_label": {
+          "en": "Power Consumption",
+          "fr": "Consommation électrique"
+        },
+        "category": "Electrical",
+        "type": "number",
+        "value": {
+          "qty": 1800,
+          "unit": "W"
+        },
+        "raw": "Consommation électrique: 1800 W"
+      },
+      {
+        "canonical_name": "standby_mode",
+        "display_label": {
+          "en": "Stand-by Mode",
+          "fr": "Mode Stand-by"
         },
         "category": "Controls",
+        "type": "string",
+        "value": "Temperature maintenance",
+        "raw": "Mode Stand-by pour maintien en température"
+      },
+      {
+        "canonical_name": "data_output_ports",
+        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "category": "Interface",
         "type": "enum",
-        "value": [
-          "Standard",
-          "USB",
-          "USB + Imprimante"
-        ],
-        "raw": "Versions disponibles: Standard / USB / USB + Imprimante"
+        "value": ["USB output (Optional)", "RS232 output"]
+      },
+      {
+        "canonical_name": "display_options",
+        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "category": "Interface",
+        "type": "enum",
+        "value": ["LCD (Default)", "LED (Optional)"]
+      },
+      {
+        "canonical_name": "integrated_printer_availability",
+        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "category": "Interface",
+        "type": "string",
+        "value": "Available as a variant/upgrade (Standard on PRINTER models)",
+        "highlighted": true
       }
     ],
     "compliance": {
-      "certifications": [],
-      "standards": []
+      "certifications": [
+        "Directive 93/42-ECC",
+        "PED 97/23/ECC"
+      ],
+      "standards": [
+        "EN 13060",
+        "EN ISO 14971",
+        "EN 61010-1",
+        "EN 61010-2-040",
+        "EN 61326",
+        "EN 13445",
+        "UNI EN ISO 134885"
+      ]
     }
   },
   {
@@ -223,306 +357,224 @@
     ],
     "attributes": [
       {
-        "canonical_name": "chamber_capacity",
+        "canonical_name": "device_class",
+        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
+        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "highlighted": true
+      },
+      {
+        "canonical_name": "vacuum_system",
         "display_label": {
-          "en": "Chamber Capacity",
-          "fr": "Capacité de la chambre"
+          "en": "Vacuum System",
+          "fr": "Système de vide"
         },
+        "category": "Functional",
+        "type": "string",
+        "value": "Fractionated vacuum (3 phases)",
+        "raw": "Système de vide fractionné (3 phases)"
+      },
+      {
+        "canonical_name": "chamber_capacity",
+        "display_label": { "en": "Chamber Capacity", "fr": "Capacité de la chambre" },
         "category": "Physical",
         "type": "number",
-        "value": {
-          "qty": 18,
-          "unit": "L"
-        },
+        "value": { "qty": 18, "unit": "L" },
         "highlighted": true,
         "raw": "Capacité de la chambre: 18 litres"
       },
       {
-        "canonical_name": "external_dimensions",
+        "canonical_name": "power_supply",
         "display_label": {
-          "en": "External Dimensions",
-          "fr": "Dimensions externes"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "length": 462,
-          "height": 445,
-          "depth": 600,
-          "unit": "mm"
-        },
-        "raw": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
-      },
-      {
-        "canonical_name": "chamber_dimensions",
-        "display_label": {
-          "en": "Chamber Dimensions",
-          "fr": "Dimensions chambre"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "diameter": 255,
-          "depth": 360,
-          "unit": "mm"
-        },
-        "highlighted": true,
-        "raw": "Dimensions chambre: Ø 255 x 360 mm"
-      },
-      {
-        "canonical_name": "tray_dimensions",
-        "display_label": {
-          "en": "Tray Dimensions (3 included)",
-          "fr": "Dimensions plateau (3 inclus)"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "length": 285,
-          "width": 190,
-          "unit": "mm"
-        },
-        "raw": "Dimensions plateau: 285 x 190 mm"
-      },
-      {
-        "canonical_name": "power_consumption",
-        "display_label": {
-          "en": "Power Consumption",
-          "fr": "Consommation électrique"
+          "en": "Power Supply",
+          "fr": "Alimentation"
         },
         "category": "Electrical",
-        "type": "number",
-        "value": {
-          "qty": 1800,
-          "unit": "W"
-        },
-        "raw": "Consommation électrique: 1800 W"
-      },
-      {
-        "canonical_name": "water_tank_capacity",
-        "display_label": {
-          "en": "Distilled Water Tank",
-          "fr": "Réservoir d’eau distillée"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 4.6,
-          "unit": "L"
-        },
-        "raw": "Réservoir d’eau distillée: 4,6 litres"
-      },
-      {
-        "canonical_name": "waste_tank_capacity",
-        "display_label": {
-          "en": "Waste Water Tank",
-          "fr": "Réservoir eaux usées"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 5,
-          "unit": "L"
-        },
-        "raw": "Réservoir eaux usées: 5 litres"
-      },
-      {
-        "canonical_name": "weight",
-        "display_label": {
-          "en": "Weight",
-          "fr": "Poids"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "net": 54,
-          "gross": 56,
-          "unit": "kg"
-        },
-        "raw": "Poids net / brut: 54 kg / 56 kg"
-      },
-      {
-        "canonical_name": "cycle_time",
-        "display_label": {
-          "en": "Cycle Time (Class B)",
-          "fr": "Temps de cycle (Classe B)"
-        },
-        "category": "Motion",
-        "type": "range",
-        "value": {
-          "min": 19,
-          "max": 38,
-          "unit": "minutes"
-        },
-        "raw": "Temps de cycle classe B: Entre 19 minutes et 38 minutes"
-      },
-      {
-        "canonical_name": "display_type",
-        "display_label": {
-          "en": "Display Options",
-          "fr": "Options Affichage"
-        },
-        "category": "Controls",
-        "type": "enum",
-        "value": [
-          "Standard LCD",
-          "Standard LED",
-          "LCD imprimante",
-          "LED imprimante",
-          "LCD AWF",
-          "LED AWF"
-        ],
-        "raw": "Versions disponibles: Standard LCD / Standard LED / LCD imprimante / LED imprimante / LCD AWF / LED AWF"
-      },
-      {
-        "canonical_name": "input_voltage",
-        "display_label": {
-          "en": "Input Voltage",
-          "fr": "Input Voltage"
-        },
-        "category": "Electrical",
-        "type": "range",
-        "value": {
-          "min": 220,
-          "max": 240,
-          "unit": "V AC"
-        },
-        "raw": "Input voltage: 220–240 V AC"
-      },
-      {
-        "canonical_name": "frequency",
-        "display_label": {
-          "en": "Frequency",
-          "fr": "Fréquence"
-        },
-        "category": "Electrical",
-        "type": "enum",
-        "value": [
-          "50 Hz",
-          "60 Hz"
-        ],
-        "raw": "Frequency: 50/60 Hz"
-      },
-      {
-        "canonical_name": "mdr_class",
-        "display_label": {
-          "en": "MDR Class",
-          "fr": "Classe MDR"
-        },
-        "category": "",
         "type": "string",
-        "value": "llb"
-      },
-      {
-        "canonical_name": "uni_en_13060_class",
-        "display_label": {
-          "en": "Class (UNI EN 13060)",
-          "fr": "Classe (UNI EN 13060)"
-        },
-        "category": "",
-        "type": "string",
-        "value": "Class B"
+        "value": "230 V – 50/60 Hz",
+        "raw": "Alimentation : 230 V – 50/60 Hz"
       },
       {
         "canonical_name": "material",
-        "display_label": {
-          "en": "Material",
-          "fr": "Matériau"
-        },
-        "category": "",
+        "display_label": { "en": "Material", "fr": "Matériau" },
+        "category": "Physical",
         "type": "string",
-        "value": "STAINLESS STEEL - AISI 316"
+        "value": "AISI 316 Stainless Steel"
       },
       {
         "canonical_name": "temperature_sterilization",
-        "display_label": {
-          "en": "Sterilization temperature",
-          "fr": "Temperature de stérilisation"
-        },
-        "category": "",
+        "display_label": { "en": "Sterilization temperature", "fr": "Température de stérilisation" },
+        "category": "Thermal",
         "type": "string",
         "value": "121°C - 134°C"
       },
       {
         "canonical_name": "temperature_sterilization_max",
-        "display_label": {
-          "en": "Maximum sterilization temperature",
-          "fr": "Temperature de stérilisation maximum"
-        },
-        "category": "",
+        "display_label": { "en": "Maximum sterilization temperature", "fr": "Température max stérilisation" },
+        "category": "Thermal",
         "type": "string",
         "value": "138°C"
       },
       {
-        "canonical_name": "working_pressure",
+        "canonical_name": "pressure_cycle_121c",
+        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+      },
+      {
+        "canonical_name": "pressure_cycle_134c",
+        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+      },
+      {
+        "canonical_name": "integrated_tests",
         "display_label": {
-          "en": "Working pressure",
-          "fr": "Pression de fonctionnement"
+          "en": "Integrated Tests",
+          "fr": "Tests intégrés"
         },
-        "category": "",
-        "type": "string",
-        "value": "Cycle 121°C: 1,0 - 1,3 bar (STP); Cycle 134°C: 2,0 - 2,4 bar (STP)"
+        "category": "Functional",
+        "type": "enum",
+        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
+        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
       },
       {
         "canonical_name": "max_pressure",
-        "display_label": {
-          "en": "Max pressure",
-          "fr": "Pression maximum"
-        },
-        "category": "",
+        "display_label": { "en": "Max pressure", "fr": "Pression maximum" },
+        "category": "Pressure",
         "type": "string",
         "value": "2,5 bar"
       },
       {
-        "canonical_name": "distilled_water_tank_volume",
-        "display_label": {
-          "en": "Distilled water tank volume",
-          "fr": "Volume réservoir d'eau distillée"
-        },
-        "category": "",
-        "type": "string",
-        "value": "4,6 L"
-      },
-      {
-        "canonical_name": "used_water_tank_volume",
-        "display_label": {
-          "en": "Used water tank volume",
-          "fr": "Volume réservoir d'eau usée"
-        },
-        "category": "",
-        "type": "string",
-        "value": "5,0 L"
-      },
-      {
         "canonical_name": "water_consumption_per_cycle",
-        "display_label": {
-          "en": "Water consumption per cycle",
-          "fr": "Consommation d'eau par cycle"
-        },
-        "category": "",
+        "display_label": { "en": "Water consumption per cycle", "fr": "Consommation d'eau par cycle" },
+        "category": "Physical",
         "type": "string",
-        "value": "0,30 / 0,55 l - 15 cycles"
+        "value": "0,30 / 0,55 L – 15 cycles"
       },
       {
-        "canonical_name": "air_filter",
+        "canonical_name": "bacteriological_filter_capacity",
+        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
+        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+      },
+      {
+        "canonical_name": "bacteriological_filter_diameter",
+        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
+        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+      },
+      {
+        "canonical_name": "external_dimensions",
+        "display_label": { "en": "External Dimensions", "fr": "Dimensions externes" },
+        "category": "Physical",
+        "type": "composite",
+        "value": { "length": 462, "height": 445, "depth": 600, "unit": "mm" },
+        "raw": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
+      },
+      {
+        "canonical_name": "chamber_dimensions",
+        "display_label": { "en": "Chamber Dimensions", "fr": "Dimensions chambre" },
+        "category": "Physical",
+        "type": "composite",
+        "value": { "diameter": 255, "depth": 360, "unit": "mm" },
+        "highlighted": true,
+        "raw": "Dimensions chambre: Ø 250 x 360 mm"
+      },
+      {
+        "canonical_name": "tray_dimensions",
+        "display_label": { "en": "Tray Dimensions (3 included)", "fr": "Dimensions plateau" },
+        "category": "Physical",
+        "type": "composite",
+        "value": { "length": 285, "width": 190, "unit": "mm" },
+        "raw": "Dimensions plateau: 285 x 190 mm"
+      },
+      {
+        "canonical_name": "trays_included",
+        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
+        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
+      },
+      {
+        "canonical_name": "power_consumption",
+        "display_label": { "en": "Power Consumption", "fr": "Consommation électrique" },
+        "category": "Electrical",
+        "type": "number",
+        "value": { "qty": 1800, "unit": "W" },
+        "raw": "Consommation: 180 W"
+      },
+      {
+        "canonical_name": "water_tank_capacity",
+        "display_label": { "en": "Distilled Water Tank", "fr": "Réservoir d’eau distillée" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 4.6, "unit": "L" },
+        "raw": "Réservoir eau distillée : 4,6 L"
+      },
+      {
+        "canonical_name": "waste_tank_capacity",
+        "display_label": { "en": "Waste Water Tank", "fr": "Réservoir eaux usées" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 5, "unit": "L" },
+        "raw": "Réservoir eaux usées : 5 L"
+      },
+      {
+        "canonical_name": "max_noise_level",
+        "display_label": { "en": "Maximum Noise Level", "fr": "Niveau Sonore Maximal" },
+        "category": "Performance", "type": "number", "value": { "qty": 50, "unit": "dB" }
+      },
+      {
+        "canonical_name": "net_weight",
+        "display_label": { "en": "Net Weight", "fr": "Poids Net" },
+        "category": "Physical", "type": "number", "value": { "qty": 54, "unit": "kg" }
+      },
+      {
+        "canonical_name": "gross_weight",
+        "display_label": { "en": "Gross Weight (Packaging)", "fr": "Poids Brut (Emballage)" },
+        "category": "Physical", "type": "number", "value": { "qty": 56, "unit": "kg" }
+      },
+      {
+        "canonical_name": "standby_mode",
         "display_label": {
-          "en": "Bacteriological air filter",
-          "fr": "Filtre à air bactériologique"
+          "en": "Stand-by Mode",
+          "fr": "Mode Stand-by"
         },
-        "category": "",
+        "category": "Controls",
         "type": "string",
-        "value": "Diameter: ø 56 mm, Filtering capacity: 0.3 μm"
+        "value": "Temperature maintenance",
+        "raw": "Mode Stand-by pour maintien en température"
+      },
+      {
+        "canonical_name": "data_output_ports",
+        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "category": "Interface",
+        "type": "enum",
+        "value": ["USB output (Optional)", "RS232 output"]
+      },
+      {
+        "canonical_name": "display_options",
+        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "category": "Interface",
+        "type": "enum",
+        "value": ["LCD (Default)", "LED (Optional)"]
+      },
+      {
+        "canonical_name": "integrated_printer_availability",
+        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "category": "Interface",
+        "type": "string",
+        "value": "Available as a variant/upgrade (Standard on PRINTER models)",
+        "highlighted": true
       }
     ],
     "compliance": {
       "certifications": [
-        "CE",
-        "ISO 13485"
+        "Directive 93/42-ECC",
+        "PED 97/23/ECC"
       ],
       "standards": [
         "EN 13060",
-        "ISO 14937",
-        "IEC 61010"
+        "EN ISO 14971",
+        "EN 61010-1",
+        "EN 61010-2-040",
+        "EN 61326",
+        "EN 13445",
+        "UNI EN ISO 134885"
       ]
     },
     "links": [
@@ -568,6 +620,23 @@
     ],
     "attributes": [
       {
+        "canonical_name": "device_class",
+        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
+        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "highlighted": true
+      },
+      {
+        "canonical_name": "vacuum_system",
+        "display_label": {
+          "en": "Vacuum System",
+          "fr": "Système de vide"
+        },
+        "category": "Functional",
+        "type": "string",
+        "value": "Fractionated vacuum (3 phases)",
+        "raw": "Système de vide fractionné (3 phases)"
+      },
+      {
         "canonical_name": "chamber_capacity",
         "display_label": {
           "en": "Chamber Capacity",
@@ -582,6 +651,49 @@
         "highlighted": true,
         "raw": "Capacité de la chambre: 24 litres"
       },
+      {
+        "canonical_name": "temperature_sterilization",
+        "display_label": { "en": "Sterilization temperature", "fr": "Température de stérilisation" },
+        "category": "Thermal",
+        "type": "string",
+        "value": "121°C - 134°C"
+      },
+      {
+        "canonical_name": "temperature_sterilization_max",
+        "display_label": { "en": "Maximum sterilization temperature", "fr": "Température max stérilisation" },
+        "category": "Thermal",
+        "type": "string",
+        "value": "138°C"
+      },
+      {
+        "canonical_name": "pressure_cycle_121c",
+        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+      },
+      {
+        "canonical_name": "pressure_cycle_134c",
+        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+      },
+      {
+        "canonical_name": "integrated_tests",
+        "display_label": {
+          "en": "Integrated Tests",
+          "fr": "Tests intégrés"
+        },
+        "category": "Functional",
+        "type": "enum",
+        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
+        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
+      },
+      {
+        "canonical_name": "max_pressure",
+        "display_label": { "en": "Max pressure", "fr": "Pression maximum" },
+        "category": "Pressure",
+        "type": "string",
+        "value": "2,5 bar"
+      },
+
       {
         "canonical_name": "external_dimensions",
         "display_label": {
@@ -631,166 +743,9 @@
         "raw": "Dimensions plateau: 385 x 190 mm"
       },
       {
-        "canonical_name": "power_consumption",
-        "display_label": {
-          "en": "Power Consumption",
-          "fr": "Consommation électrique"
-        },
-        "category": "Electrical",
-        "type": "number",
-        "value": {
-          "qty": 1800,
-          "unit": "W"
-        },
-        "raw": "Consommation électrique: 1800 W"
-      },
-      {
-        "canonical_name": "water_tank_capacity",
-        "display_label": {
-          "en": "Distilled Water Tank",
-          "fr": "Réservoir d’eau distillée"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 4.6,
-          "unit": "L"
-        },
-        "raw": "Réservoir d’eau distillée: 4,6 litres"
-      },
-      {
-        "canonical_name": "waste_tank_capacity",
-        "display_label": {
-          "en": "Waste Water Tank",
-          "fr": "Réservoir eaux usées"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 5,
-          "unit": "L"
-        },
-        "raw": "Réservoir eaux usées: 5 litres"
-      },
-      {
-        "canonical_name": "weight",
-        "display_label": {
-          "en": "Weight",
-          "fr": "Poids"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "net": 56,
-          "gross": 59,
-          "unit": "kg"
-        },
-        "raw": "Poids net / brut: 56 kg / 59 kg"
-      },
-      {
-        "canonical_name": "cycle_time",
-        "display_label": {
-          "en": "Cycle Time (Class B)",
-          "fr": "Temps de cycle (Classe B)"
-        },
-        "category": "Motion",
-        "type": "range",
-        "value": {
-          "min": 19,
-          "max": 38,
-          "unit": "minutes"
-        },
-        "highlighted": true,
-        "raw": "Temps de cycle classe B: Entre 19 minutes et 38 minutes"
-      },
-      {
-        "canonical_name": "display_type",
-        "display_label": {
-          "en": "Display Options",
-          "fr": "Options Affichage"
-        },
-        "category": "Controls",
-        "type": "enum",
-        "value": [
-          "Standard LCD",
-          "Standard LED",
-          "LCD imprimante",
-          "LED imprimante",
-          "LCD AWF",
-          "LED AWF"
-        ],
-        "highlighted": true,
-        "raw": "Versions disponibles: Standard LCD / Standard LED/ LCD imprimante / LED imprimante / LCD AWF / LED AWF"
-      },
-      {
-        "canonical_name": "mdr_class",
-        "display_label": {
-          "en": "MDR Class",
-          "fr": "Classe MDR"
-        },
-        "category": "",
-        "type": "string",
-        "value": "llb"
-      },
-      {
-        "canonical_name": "uni_en_13060_class",
-        "display_label": {
-          "en": "Class (UNI EN 13060)",
-          "fr": "Classe (UNI EN 13060)"
-        },
-        "category": "",
-        "type": "string",
-        "value": "Class B"
-      },
-      {
-        "canonical_name": "material",
-        "display_label": {
-          "en": "Material",
-          "fr": "Matériau"
-        },
-        "category": "",
-        "type": "string",
-        "value": "STAINLESS STEEL - AISI 316"
-      },
-      {
-        "canonical_name": "temperature_sterilization",
-        "display_label": {
-          "en": "Sterilization temperature",
-          "fr": "Temperature de stérilisation"
-        },
-        "category": "",
-        "type": "string",
-        "value": "121°C - 134°C"
-      },
-      {
-        "canonical_name": "temperature_sterilization_max",
-        "display_label": {
-          "en": "Maximum sterilization temperature",
-          "fr": "Temperature de stérilisation maximum"
-        },
-        "category": "",
-        "type": "string",
-        "value": "138°C"
-      },
-      {
-        "canonical_name": "working_pressure",
-        "display_label": {
-          "en": "Working pressure",
-          "fr": "Pression de fonctionnement"
-        },
-        "category": "",
-        "type": "string",
-        "value": "Cycle 121°C: 1,0 - 1,3 bar (STP); Cycle 134°C: 2,0 - 2,4 bar (STP)"
-      },
-      {
-        "canonical_name": "max_pressure",
-        "display_label": {
-          "en": "Max pressure",
-          "fr": "Pression maximum"
-        },
-        "category": "",
-        "type": "string",
-        "value": "2,5 bar"
+        "canonical_name": "trays_included",
+        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
+        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
       },
       {
         "canonical_name": "distilled_water_tank_volume",
@@ -823,25 +778,121 @@
         "value": "0,40 / 0,60 l - 11 cycles"
       },
       {
-        "canonical_name": "air_filter",
+        "canonical_name": "power_supply",
         "display_label": {
-          "en": "Bacteriological air filter",
-          "fr": "Filtre à air bactériologique"
+          "en": "Power Supply",
+          "fr": "Alimentation"
         },
-        "category": "",
+        "category": "Electrical",
         "type": "string",
-        "value": "Diameter: ø 56 mm, Filtering capacity: 0.3 μm"
+        "value": "230 V – 50/60 Hz",
+        "raw": "Alimentation : 230 V – 50/60 Hz"
+      },
+      {
+        "canonical_name": "material",
+        "display_label": { "en": "Material", "fr": "Matériau" },
+        "category": "Physical",
+        "type": "string",
+        "value": "AISI 316 Stainless Steel"
+      },
+
+      {
+        "canonical_name": "bacteriological_filter_capacity",
+        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
+        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+      },
+      {
+        "canonical_name": "bacteriological_filter_diameter",
+        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
+        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+      },
+
+      {
+        "canonical_name": "power_consumption",
+        "display_label": { "en": "Power Consumption", "fr": "Consommation électrique" },
+        "category": "Electrical",
+        "type": "number",
+        "value": { "qty": 1800, "unit": "W" },
+        "raw": "Consommation: 1800 W"
+      },
+      {
+        "canonical_name": "water_tank_capacity",
+        "display_label": { "en": "Distilled Water Tank", "fr": "Réservoir d’eau distillée" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 4.6, "unit": "L" },
+        "raw": "Réservoir eau distillée : 4,6 L"
+      },
+      {
+        "canonical_name": "waste_tank_capacity",
+        "display_label": { "en": "Waste Water Tank", "fr": "Réservoir eaux usées" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 5, "unit": "L" },
+        "raw": "Réservoir eaux usées : 5 L"
+      },
+      {
+        "canonical_name": "max_noise_level",
+        "display_label": { "en": "Maximum Noise Level", "fr": "Niveau Sonore Maximal" },
+        "category": "Performance", "type": "number", "value": { "qty": 50, "unit": "dB" }
+      },
+      {
+        "canonical_name": "net_weight",
+        "display_label": { "en": "Net Weight", "fr": "Poids Net" },
+        "category": "Physical", "type": "number", "value": { "qty": 56, "unit": "kg" }
+      },
+      {
+        "canonical_name": "gross_weight",
+        "display_label": { "en": "Gross Weight (Packaging)", "fr": "Poids Brut (Emballage)" },
+        "category": "Physical", "type": "number", "value": { "qty": 59, "unit": "kg" }
+      },
+      {
+        "canonical_name": "standby_mode",
+        "display_label": {
+          "en": "Stand-by Mode",
+          "fr": "Mode Stand-by"
+        },
+        "category": "Controls",
+        "type": "string",
+        "value": "Temperature maintenance",
+        "raw": "Mode Stand-by pour maintien en température"
+      },
+      {
+        "canonical_name": "data_output_ports",
+        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "category": "Interface",
+        "type": "enum",
+        "value": ["USB output (Optional)", "RS232 output"]
+      },
+      {
+        "canonical_name": "display_options",
+        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "category": "Interface",
+        "type": "enum",
+        "value": ["LCD (Default)", "LED (Optional)"]
+      },
+      {
+        "canonical_name": "integrated_printer_availability",
+        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "category": "Interface",
+        "type": "string",
+        "value": "Available as a variant/upgrade (Standard on PRINTER models)",
+        "highlighted": true
       }
     ],
     "compliance": {
       "certifications": [
-        "CE",
-        "ISO 13485"
+        "Directive 93/42-ECC",
+        "PED 97/23/ECC"
       ],
       "standards": [
         "EN 13060",
-        "ISO 14937",
-        "IEC 61010"
+        "EN ISO 14971",
+        "EN 61010-1",
+        "EN 61010-2-040",
+        "EN 61326",
+        "EN 13445",
+        "UNI EN ISO 134885"
       ]
     }
   },
@@ -878,313 +929,232 @@
     ],
     "attributes": [
       {
-        "canonical_name": "chamber_capacity",
+        "canonical_name": "water_purification_system",
+        "display_label": { "en": "Water Purification System", "fr": "Système de Purification d'Eau" },
+        "category": "Functional",
+        "type": "string",
+        "value": "Système Vertical de Purification par Osmose Inverse à 3 Étapes",
+        "highlighted": true
+      },
+      {
+        "canonical_name": "device_class",
+        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
+        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "highlighted": true
+      },
+      {
+        "canonical_name": "vacuum_system",
         "display_label": {
-          "en": "Capacité de la chambre",
-          "fr": "Capacité de la chambre"
+          "en": "Vacuum System",
+          "fr": "Système de vide"
         },
+        "category": "Functional",
+        "type": "string",
+        "value": "Fractionated vacuum (3 phases)",
+        "raw": "Système de vide fractionné (3 phases)"
+      },
+      {
+        "canonical_name": "chamber_capacity",
+        "display_label": { "en": "Chamber Capacity", "fr": "Capacité de la chambre" },
         "category": "Physical",
         "type": "number",
-        "value": {
-          "qty": 18,
-          "unit": "L"
-        },
-        "raw": {
-          "fr": "Capacité de la chambre: 18 litres"
-        }
+        "value": { "qty": 18, "unit": "L" },
+        "highlighted": true,
+        "raw": "Capacité de la chambre: 18 litres"
       },
       {
-        "canonical_name": "external_dimensions",
+        "canonical_name": "power_supply",
         "display_label": {
-          "en": "Dimensions externes",
-          "fr": "Dimensions externes"
-        },
-        "category": "Physical",
-        "type": "string",
-        "value": {
-          "length": 462,
-          "height": 445,
-          "depth": 600,
-          "unit": "mm"
-        },
-        "raw": {
-          "fr": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
-        }
-      },
-      {
-        "canonical_name": "chamber_dimensions",
-        "display_label": {
-          "en": "Dimensions chambre",
-          "fr": "Dimensions chambre"
-        },
-        "category": "Physical",
-        "type": "composite",
-        "value": {
-          "diameter": 255,
-          "depth": 360,
-          "unit": "mm"
-        },
-        "raw": {
-          "fr": "Dimensions chambre: Ø 255 x 360 mm"
-        }
-      },
-      {
-        "canonical_name": "tray_dimensions",
-        "display_label": {
-          "en": "Dimensions plateau",
-          "fr": "Dimensions plateau"
-        },
-        "category": "Physical",
-        "type": "string",
-        "value": {
-          "length": 285,
-          "width": 190,
-          "unit": "mm"
-        },
-        "raw": {
-          "fr": "Dimensions plateau: 285 x 190 mm"
-        }
-      },
-      {
-        "canonical_name": "power_consumption",
-        "display_label": {
-          "en": "Consommation électrique",
-          "fr": "Consommation électrique"
+          "en": "Power Supply",
+          "fr": "Alimentation"
         },
         "category": "Electrical",
-        "type": "number",
-        "value": {
-          "qty": 1800,
-          "unit": "W"
-        },
-        "raw": {
-          "fr": "Consommation électrique: 1800 W"
-        }
-      },
-      {
-        "canonical_name": "water_tank_capacity",
-        "display_label": {
-          "en": "Réservoir d’eau distillée",
-          "fr": "Réservoir d’eau distillée"
-        },
-        "category": "Capacity",
-        "type": "number",
-        "value": {
-          "qty": 4.6,
-          "unit": "L"
-        },
-        "raw": {
-          "fr": "Réservoir d’eau distillée: 4,6 litres"
-        }
-      },
-      {
-        "canonical_name": "waste_tank_capacity",
-        "display_label": {
-          "en": "Réservoir eaux usées",
-          "fr": "Réservoir eaux usées"
-        },
-        "category": "Capacity",
-        "type": "number",
-        "value": {
-          "qty": 5,
-          "unit": "L"
-        },
-        "raw": {
-          "fr": "Réservoir eaux usées: 5 litres"
-        }
-      },
-      {
-        "canonical_name": "weight_net",
-        "display_label": {
-          "en": "Poids net",
-          "fr": "Poids net"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 54,
-          "unit": "kg"
-        },
-        "raw": "Poids net / brut: 54 kg / 56 kg"
-      },
-      {
-        "canonical_name": "weight_gross",
-        "display_label": {
-          "en": "Poids brut",
-          "fr": "Poids brut"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 56,
-          "unit": "kg"
-        },
-        "raw": "Poids net / brut: 54 kg / 56 kg"
-      },
-      {
-        "canonical_name": "cycle_time_class_b",
-        "display_label": {
-          "en": "Temps de cycle (Classe B)",
-          "fr": "Temps de cycle (Classe B)"
-        },
-        "category": "Performance",
-        "type": "number",
-        "value": {
-          "qty": 15,
-          "unit": "min",
-          "approx": true
-        },
-        "raw": "Temps de cycle classe B: 15 minutes (approx.)"
-      },
-      {
-        "canonical_name": "osmosis_system",
-        "display_label": {
-          "en": "Système d’osmose",
-          "fr": "Système d’osmose"
-        },
-        "category": "Accessories",
         "type": "string",
-        "value": "Intégré – raccordement direct au robinet",
-        "raw": {
-          "fr": "Système d’osmose: Intégré – raccordement direct au robinet"
-        }
-      },
-      {
-        "canonical_name": "versions_available",
-        "display_label": {
-          "en": "Versions disponibles",
-          "fr": "Versions disponibles"
-        },
-        "category": "Variants",
-        "type": "string",
-        "value": [
-          "Plus+ (latéral)",
-          "TOP (au-dessus)"
-        ],
-        "raw": {
-          "fr": "Versions disponibles: Plus+ (latéral) / TOP (au-dessus)"
-        }
-      },
-      {
-        "canonical_name": "mdr_class",
-        "display_label": {
-          "en": "MDR Class",
-          "fr": "Classe MDR"
-        },
-        "category": "",
-        "type": "string",
-        "value": "llb"
-      },
-      {
-        "canonical_name": "uni_en_13060_class",
-        "display_label": {
-          "en": "Class (UNI EN 13060)",
-          "fr": "Classe (UNI EN 13060)"
-        },
-        "category": "",
-        "type": "string",
-        "value": "Class B"
+        "value": "230 V – 50/60 Hz",
+        "raw": "Alimentation : 230 V – 50/60 Hz"
       },
       {
         "canonical_name": "material",
-        "display_label": {
-          "en": "Material",
-          "fr": "Matériau"
-        },
-        "category": "",
+        "display_label": { "en": "Material", "fr": "Matériau" },
+        "category": "Physical",
         "type": "string",
-        "value": "STAINLESS STEEL - AISI 316"
+        "value": "AISI 316 Stainless Steel"
       },
       {
         "canonical_name": "temperature_sterilization",
-        "display_label": {
-          "en": "Sterilization temperature",
-          "fr": "Temperature de stérilisation"
-        },
-        "category": "",
+        "display_label": { "en": "Sterilization temperature", "fr": "Température de stérilisation" },
+        "category": "Thermal",
         "type": "string",
         "value": "121°C - 134°C"
       },
       {
         "canonical_name": "temperature_sterilization_max",
-        "display_label": {
-          "en": "Maximum sterilization temperature",
-          "fr": "Temperature de stérilisation maximum"
-        },
-        "category": "",
+        "display_label": { "en": "Maximum sterilization temperature", "fr": "Température max stérilisation" },
+        "category": "Thermal",
         "type": "string",
         "value": "138°C"
       },
       {
-        "canonical_name": "working_pressure",
+        "canonical_name": "pressure_cycle_121c",
+        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+      },
+      {
+        "canonical_name": "pressure_cycle_134c",
+        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+      },
+      {
+        "canonical_name": "integrated_tests",
         "display_label": {
-          "en": "Working pressure",
-          "fr": "Pression de fonctionnement"
+          "en": "Integrated Tests",
+          "fr": "Tests intégrés"
         },
-        "category": "",
-        "type": "string",
-        "value": "Cycle 121°C: 1,0 - 1,3 bar (STP); Cycle 134°C: 2,0 - 2,4 bar (STP)"
+        "category": "Functional",
+        "type": "enum",
+        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
+        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
       },
       {
         "canonical_name": "max_pressure",
-        "display_label": {
-          "en": "Max pressure",
-          "fr": "Pression maximum"
-        },
-        "category": "",
+        "display_label": { "en": "Max pressure", "fr": "Pression maximum" },
+        "category": "Pressure",
         "type": "string",
         "value": "2,5 bar"
       },
       {
-        "canonical_name": "distilled_water_tank_volume",
-        "display_label": {
-          "en": "Distilled water tank volume",
-          "fr": "Volume réservoir d'eau distillée"
-        },
-        "category": "",
-        "type": "string",
-        "value": "4,6 L"
-      },
-      {
-        "canonical_name": "used_water_tank_volume",
-        "display_label": {
-          "en": "Used water tank volume",
-          "fr": "Volume réservoir d'eau usée"
-        },
-        "category": "",
-        "type": "string",
-        "value": "5,0 L"
-      },
-      {
         "canonical_name": "water_consumption_per_cycle",
-        "display_label": {
-          "en": "Water consumption per cycle",
-          "fr": "Consommation d'eau par cycle"
-        },
-        "category": "",
+        "display_label": { "en": "Water consumption per cycle", "fr": "Consommation d'eau par cycle" },
+        "category": "Physical",
         "type": "string",
-        "value": "0,30 / 0,55 l - 15 cycles"
+        "value": "0,30 / 0,55 L – 15 cycles"
       },
       {
-        "canonical_name": "air_filter",
+        "canonical_name": "bacteriological_filter_capacity",
+        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
+        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+      },
+      {
+        "canonical_name": "bacteriological_filter_diameter",
+        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
+        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+      },
+      {
+        "canonical_name": "external_dimensions",
+        "display_label": { "en": "External Dimensions", "fr": "Dimensions externes" },
+        "category": "Physical",
+        "type": "composite",
+        "value": { "length": 462, "height": 445, "depth": 600, "unit": "mm" },
+        "raw": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
+      },
+      {
+        "canonical_name": "chamber_dimensions",
+        "display_label": { "en": "Chamber Dimensions", "fr": "Dimensions chambre" },
+        "category": "Physical",
+        "type": "composite",
+        "value": { "diameter": 255, "depth": 360, "unit": "mm" },
+        "highlighted": true,
+        "raw": "Dimensions chambre: Ø 250 x 360 mm"
+      },
+      {
+        "canonical_name": "tray_dimensions",
+        "display_label": { "en": "Tray Dimensions (3 included)", "fr": "Dimensions plateau" },
+        "category": "Physical",
+        "type": "composite",
+        "value": { "length": 285, "width": 190, "unit": "mm" },
+        "raw": "Dimensions plateau: 285 x 190 mm"
+      },
+      {
+        "canonical_name": "trays_included",
+        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
+        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
+      },
+      {
+        "canonical_name": "power_consumption",
+        "display_label": { "en": "Power Consumption", "fr": "Consommation électrique" },
+        "category": "Electrical",
+        "type": "number",
+        "value": { "qty": 1800, "unit": "W" },
+        "raw": "Consommation: 180 W"
+      },
+      {
+        "canonical_name": "water_tank_capacity",
+        "display_label": { "en": "Distilled Water Tank", "fr": "Réservoir d’eau distillée" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 4.6, "unit": "L" },
+        "raw": "Réservoir eau distillée : 4,6 L"
+      },
+      {
+        "canonical_name": "waste_tank_capacity",
+        "display_label": { "en": "Waste Water Tank", "fr": "Réservoir eaux usées" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 5, "unit": "L" },
+        "raw": "Réservoir eaux usées : 5 L"
+      },
+      {
+        "canonical_name": "max_noise_level",
+        "display_label": { "en": "Maximum Noise Level", "fr": "Niveau Sonore Maximal" },
+        "category": "Performance", "type": "number", "value": { "qty": 50, "unit": "dB" }
+      },
+      {
+        "canonical_name": "net_weight",
+        "display_label": { "en": "Net Weight", "fr": "Poids Net" },
+        "category": "Physical", "type": "number", "value": { "qty": 54, "unit": "kg" }
+      },
+      {
+        "canonical_name": "gross_weight",
+        "display_label": { "en": "Gross Weight (Packaging)", "fr": "Poids Brut (Emballage)" },
+        "category": "Physical", "type": "number", "value": { "qty": 56, "unit": "kg" }
+      },
+      {
+        "canonical_name": "standby_mode",
         "display_label": {
-          "en": "Bacteriological air filter",
-          "fr": "Filtre à air bactériologique"
+          "en": "Stand-by Mode",
+          "fr": "Mode Stand-by"
         },
-        "category": "",
+        "category": "Controls",
         "type": "string",
-        "value": "Diameter: ø 56 mm, Filtering capacity: 0.3 μm"
+        "value": "Temperature maintenance",
+        "raw": "Mode Stand-by pour maintien en température"
+      },
+      {
+        "canonical_name": "data_output_ports",
+        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "category": "Interface",
+        "type": "enum",
+        "value": ["USB output (Optional)", "RS232 output"]
+      },
+      {
+        "canonical_name": "display_options",
+        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "category": "Interface",
+        "type": "enum",
+        "value": ["LCD (Default)", "LED (Optional)"]
+      },
+      {
+        "canonical_name": "integrated_printer_availability",
+        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "category": "Interface",
+        "type": "string",
+        "value": "Available as a variant/upgrade (Standard on PRINTER models)",
+        "highlighted": true
       }
     ],
     "compliance": {
       "certifications": [
-        "CE",
-        "ISO 13485"
+        "Directive 93/42-ECC",
+        "PED 97/23/ECC"
       ],
       "standards": [
         "EN 13060",
-        "ISO 14937",
-        "IEC 61010"
+        "EN ISO 14971",
+        "EN 61010-1",
+        "EN 61010-2-040",
+        "EN 61326",
+        "EN 13445",
+        "UNI EN ISO 134885"
       ]
     }
   },
@@ -1222,9 +1192,34 @@
     ],
     "attributes": [
       {
+        "canonical_name": "water_purification_system",
+        "display_label": { "en": "Water Purification System", "fr": "Système de Purification d'Eau" },
+        "category": "Functional",
+        "type": "string",
+        "value": "Système Vertical de Purification par Osmose Inverse à 3 Étapes",
+        "highlighted": true
+      },
+      {
+        "canonical_name": "device_class",
+        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
+        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "highlighted": true
+      },
+      {
+        "canonical_name": "vacuum_system",
+        "display_label": {
+          "en": "Vacuum System",
+          "fr": "Système de vide"
+        },
+        "category": "Functional",
+        "type": "string",
+        "value": "Fractionated vacuum (3 phases)",
+        "raw": "Système de vide fractionné (3 phases)"
+      },
+      {
         "canonical_name": "chamber_capacity",
         "display_label": {
-          "en": "Capacité de la chambre",
+          "en": "Chamber Capacity",
           "fr": "Capacité de la chambre"
         },
         "category": "Physical",
@@ -1233,32 +1228,72 @@
           "qty": 24,
           "unit": "L"
         },
-        "raw": {
-          "fr": "Capacité de la chambre: 24 litres"
-        }
+        "highlighted": true,
+        "raw": "Capacité de la chambre: 24 litres"
       },
+      {
+        "canonical_name": "temperature_sterilization",
+        "display_label": { "en": "Sterilization temperature", "fr": "Température de stérilisation" },
+        "category": "Thermal",
+        "type": "string",
+        "value": "121°C - 134°C"
+      },
+      {
+        "canonical_name": "temperature_sterilization_max",
+        "display_label": { "en": "Maximum sterilization temperature", "fr": "Température max stérilisation" },
+        "category": "Thermal",
+        "type": "string",
+        "value": "138°C"
+      },
+      {
+        "canonical_name": "pressure_cycle_121c",
+        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+      },
+      {
+        "canonical_name": "pressure_cycle_134c",
+        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
+        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+      },
+      {
+        "canonical_name": "integrated_tests",
+        "display_label": {
+          "en": "Integrated Tests",
+          "fr": "Tests intégrés"
+        },
+        "category": "Functional",
+        "type": "enum",
+        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
+        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
+      },
+      {
+        "canonical_name": "max_pressure",
+        "display_label": { "en": "Max pressure", "fr": "Pression maximum" },
+        "category": "Pressure",
+        "type": "string",
+        "value": "2,5 bar"
+      },
+
       {
         "canonical_name": "external_dimensions",
         "display_label": {
-          "en": "Dimensions externes",
+          "en": "External Dimensions",
           "fr": "Dimensions externes"
         },
         "category": "Physical",
-        "type": "string",
+        "type": "composite",
         "value": {
           "length": 462,
           "height": 445,
           "depth": 600,
           "unit": "mm"
         },
-        "raw": {
-          "fr": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
-        }
+        "raw": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
       },
       {
         "canonical_name": "chamber_dimensions",
         "display_label": {
-          "en": "Dimensions chambre",
+          "en": "Chamber Dimensions",
           "fr": "Dimensions chambre"
         },
         "category": "Physical",
@@ -1268,216 +1303,29 @@
           "depth": 460,
           "unit": "mm"
         },
-        "raw": {
-          "fr": "Dimensions chambre: Ø 255 x 460 mm"
-        }
+        "highlighted": true,
+        "raw": "Dimensions chambre: Ø 255 x 460 mm"
       },
       {
         "canonical_name": "tray_dimensions",
         "display_label": {
-          "en": "Dimensions plateau",
+          "en": "Tray Dimensions",
           "fr": "Dimensions plateau"
         },
         "category": "Physical",
         "type": "composite",
         "value": {
-          "length": 285,
+          "length": 385,
           "width": 190,
           "unit": "mm"
         },
-        "raw": {
-          "fr": "Dimensions plateau: 285 x 190 mm"
-        }
+        "highlighted": true,
+        "raw": "Dimensions plateau: 385 x 190 mm"
       },
       {
-        "canonical_name": "power_consumption",
-        "display_label": {
-          "en": "Consommation électrique",
-          "fr": "Consommation électrique"
-        },
-        "category": "Electrical",
-        "type": "number",
-        "value": {
-          "qty": 1800,
-          "unit": "W"
-        },
-        "raw": {
-          "fr": "Consommation électrique: 1800 W"
-        }
-      },
-      {
-        "canonical_name": "water_tank_capacity",
-        "display_label": {
-          "en": "Réservoir d’eau distillée",
-          "fr": "Réservoir d’eau distillée"
-        },
-        "category": "Capacity",
-        "type": "number",
-        "value": {
-          "qty": 4.6,
-          "unit": "L"
-        },
-        "raw": {
-          "fr": "Réservoir d’eau distillée: 4,6 litres"
-        }
-      },
-      {
-        "canonical_name": "waste_tank_capacity",
-        "display_label": {
-          "en": "Réservoir eaux usées",
-          "fr": "Réservoir eaux usées"
-        },
-        "category": "Capacity",
-        "type": "number",
-        "value": {
-          "qty": 5,
-          "unit": "L"
-        },
-        "raw": {
-          "fr": "Réservoir eaux usées: 5 litres"
-        }
-      },
-      {
-        "canonical_name": "weight_net",
-        "display_label": {
-          "en": "Poids net",
-          "fr": "Poids net"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 56,
-          "unit": "kg"
-        },
-        "raw": "Poids net / brut: 56 kg / 59 kg"
-      },
-      {
-        "canonical_name": "weight_gross",
-        "display_label": {
-          "en": "Poids brut",
-          "fr": "Poids brut"
-        },
-        "category": "Physical",
-        "type": "number",
-        "value": {
-          "qty": 59,
-          "unit": "kg"
-        },
-        "raw": "Poids net / brut: 56 kg / 59 kg"
-      },
-      {
-        "canonical_name": "cycle_time_class_b",
-        "display_label": {
-          "en": "Temps de cycle (Classe B)",
-          "fr": "Temps de cycle (Classe B)"
-        },
-        "category": "Performance",
-        "type": "number",
-        "value": {
-          "qty": 15,
-          "unit": "min",
-          "approx": true
-        },
-        "raw": "Temps de cycle classe B: 15 minutes (approx.)"
-      },
-      {
-        "canonical_name": "osmosis_system",
-        "display_label": {
-          "en": "Système d’osmose",
-          "fr": "Système d’osmose"
-        },
-        "category": "Accessories",
-        "type": "string",
-        "value": "Intégré – raccordement direct au robinet",
-        "raw": {
-          "fr": "Système d’osmose: Intégré – raccordement direct au robinet"
-        }
-      },
-      {
-        "canonical_name": "versions_available",
-        "display_label": {
-          "en": "Versions disponibles",
-          "fr": "Versions disponibles"
-        },
-        "category": "Variants",
-        "type": "string",
-        "value": [
-          "Plus+ (latéral)",
-          "TOP (au-dessus)"
-        ],
-        "raw": {
-          "fr": "Versions disponibles: Plus+ (latéral) / TOP (au-dessus)"
-        }
-      },
-      {
-        "canonical_name": "mdr_class",
-        "display_label": {
-          "en": "MDR Class",
-          "fr": "Classe MDR"
-        },
-        "category": "",
-        "type": "string",
-        "value": "llb"
-      },
-      {
-        "canonical_name": "uni_en_13060_class",
-        "display_label": {
-          "en": "Class (UNI EN 13060)",
-          "fr": "Classe (UNI EN 13060)"
-        },
-        "category": "",
-        "type": "string",
-        "value": "Class B"
-      },
-      {
-        "canonical_name": "material",
-        "display_label": {
-          "en": "Material",
-          "fr": "Matériau"
-        },
-        "category": "",
-        "type": "string",
-        "value": "STAINLESS STEEL - AISI 316"
-      },
-      {
-        "canonical_name": "temperature_sterilization",
-        "display_label": {
-          "en": "Sterilization temperature",
-          "fr": "Temperature de stérilisation"
-        },
-        "category": "",
-        "type": "string",
-        "value": "121°C - 134°C"
-      },
-      {
-        "canonical_name": "temperature_sterilization_max",
-        "display_label": {
-          "en": "Maximum sterilization temperature",
-          "fr": "Temperature de stérilisation maximum"
-        },
-        "category": "",
-        "type": "string",
-        "value": "138°C"
-      },
-      {
-        "canonical_name": "working_pressure",
-        "display_label": {
-          "en": "Working pressure",
-          "fr": "Pression de fonctionnement"
-        },
-        "category": "",
-        "type": "string",
-        "value": "Cycle 121°C: 1,0 - 1,3 bar (STP); Cycle 134°C: 2,0 - 2,4 bar (STP)"
-      },
-      {
-        "canonical_name": "max_pressure",
-        "display_label": {
-          "en": "Max pressure",
-          "fr": "Pression maximum"
-        },
-        "category": "",
-        "type": "string",
-        "value": "2,5 bar"
+        "canonical_name": "trays_included",
+        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
+        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
       },
       {
         "canonical_name": "distilled_water_tank_volume",
@@ -1510,25 +1358,121 @@
         "value": "0,40 / 0,60 l - 11 cycles"
       },
       {
-        "canonical_name": "air_filter",
+        "canonical_name": "power_supply",
         "display_label": {
-          "en": "Bacteriological air filter",
-          "fr": "Filtre à air bactériologique"
+          "en": "Power Supply",
+          "fr": "Alimentation"
         },
-        "category": "",
+        "category": "Electrical",
         "type": "string",
-        "value": "Diameter: ø 56 mm, Filtering capacity: 0.3 μm"
+        "value": "230 V – 50/60 Hz",
+        "raw": "Alimentation : 230 V – 50/60 Hz"
+      },
+      {
+        "canonical_name": "material",
+        "display_label": { "en": "Material", "fr": "Matériau" },
+        "category": "Physical",
+        "type": "string",
+        "value": "AISI 316 Stainless Steel"
+      },
+
+      {
+        "canonical_name": "bacteriological_filter_capacity",
+        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
+        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+      },
+      {
+        "canonical_name": "bacteriological_filter_diameter",
+        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
+        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+      },
+
+      {
+        "canonical_name": "power_consumption",
+        "display_label": { "en": "Power Consumption", "fr": "Consommation électrique" },
+        "category": "Electrical",
+        "type": "number",
+        "value": { "qty": 1800, "unit": "W" },
+        "raw": "Consommation: 1800 W"
+      },
+      {
+        "canonical_name": "water_tank_capacity",
+        "display_label": { "en": "Distilled Water Tank", "fr": "Réservoir d’eau distillée" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 4.6, "unit": "L" },
+        "raw": "Réservoir eau distillée : 4,6 L"
+      },
+      {
+        "canonical_name": "waste_tank_capacity",
+        "display_label": { "en": "Waste Water Tank", "fr": "Réservoir eaux usées" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 5, "unit": "L" },
+        "raw": "Réservoir eaux usées : 5 L"
+      },
+      {
+        "canonical_name": "max_noise_level",
+        "display_label": { "en": "Maximum Noise Level", "fr": "Niveau Sonore Maximal" },
+        "category": "Performance", "type": "number", "value": { "qty": 50, "unit": "dB" }
+      },
+      {
+        "canonical_name": "net_weight",
+        "display_label": { "en": "Net Weight", "fr": "Poids Net" },
+        "category": "Physical", "type": "number", "value": { "qty": 56, "unit": "kg" }
+      },
+      {
+        "canonical_name": "gross_weight",
+        "display_label": { "en": "Gross Weight (Packaging)", "fr": "Poids Brut (Emballage)" },
+        "category": "Physical", "type": "number", "value": { "qty": 59, "unit": "kg" }
+      },
+      {
+        "canonical_name": "standby_mode",
+        "display_label": {
+          "en": "Stand-by Mode",
+          "fr": "Mode Stand-by"
+        },
+        "category": "Controls",
+        "type": "string",
+        "value": "Temperature maintenance",
+        "raw": "Mode Stand-by pour maintien en température"
+      },
+      {
+        "canonical_name": "data_output_ports",
+        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "category": "Interface",
+        "type": "enum",
+        "value": ["USB output (Optional)", "RS232 output"]
+      },
+      {
+        "canonical_name": "display_options",
+        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "category": "Interface",
+        "type": "enum",
+        "value": ["LCD (Default)", "LED (Optional)"]
+      },
+      {
+        "canonical_name": "integrated_printer_availability",
+        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "category": "Interface",
+        "type": "string",
+        "value": "Available as a variant/upgrade (Standard on PRINTER models)",
+        "highlighted": true
       }
     ],
     "compliance": {
       "certifications": [
-        "CE",
-        "ISO 13485"
+        "Directive 93/42-ECC",
+        "PED 97/23/ECC"
       ],
       "standards": [
         "EN 13060",
-        "ISO 14937",
-        "IEC 61010"
+        "EN ISO 14971",
+        "EN 61010-1",
+        "EN 61010-2-040",
+        "EN 61326",
+        "EN 13445",
+        "UNI EN ISO 134885"
       ]
     }
   },
