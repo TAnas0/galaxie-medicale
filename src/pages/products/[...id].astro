@@ -11,6 +11,10 @@ import CardTitle from "../../components/ui/CardTitle.astro";
 import CardContent from "../../components/ui/CardContent.astro";
 import Footer from "../../components/ui/Footer.astro";
 import Header from "../../components/Header.astro";
+import Button from "../../components/ui/Button.astro";
+
+import { formatAttributeValue } from "../../utils/formatters";
+import { CATEGORY_HIGHLIGHTS } from "../../config/productHighlights";
 
 import { getCollection } from "astro:content";
 
@@ -31,47 +35,7 @@ if (!product) {
   throw new Error(`Product not found: ${params.id}`);
 }
 
-const CATEGORY_HIGHLIGHTS = {
-  sterilisation: [
-    "chamber_dimensions",
-    "cycle_time",
-    "cycle_time_class_b",
-    "chamber_capacity",
-  ],
-  surgery: [
-    "intensite_lumineuse",
-    "temperature_couleur",
-    "cri",
-    "diametre_champ",
-    "profondeur_eclairage",
-    // "nombre_led",
-    // "duree_vie",
-    // "consommation",
-    // "controle",
-
-    "inclinaison_trendelenburg",
-    "inclinaison_laterale",
-    "glissement_horizontal",
-    "charge_maximale",
-    "freinage",
-  ],
-  diagnostic: [
-    // "ecran",
-    "parametres_vitals",
-    "autonomie_batterie",
-    // "poids",
-    // "interfaces",
-    "alarmes",
-    // "impression",
-    "memoire",
-    // "alimentation",
-    // "dimensions",
-    "modes_patient",
-    // "capacite_stockage",
-  ],
-  medical_furniture: ["roulettes", "dimensions"],
-  "dental/chairs": ["weight", "adjustable_height", "tilt_range"],
-};
+// Highlights logic moved to config/productHighlights.js
 // Function to decide what is highlighted
 function applyHighlights(product) {
   const categoryKey = product.data.category?.canonical || "";
@@ -89,14 +53,14 @@ function applyHighlights(product) {
   return product;
 }
 const highlights = applyHighlights(product).data.attributes.filter(
-  (attr) => attr.highlighted
+  (attr) => attr.highlighted,
 );
 
 const electricalSpecs = product.data.attributes?.filter(
-  (attr) => attr.category === "Electrical" && attr.type !== "boolean"
+  (attr) => attr.category === "Electrical" && attr.type !== "boolean",
 );
 product.data.attributes = product.data.attributes?.filter(
-  (attr) => !electricalSpecs?.includes(attr)
+  (attr) => !electricalSpecs?.includes(attr),
 );
 const certifications = product.data.compliance?.certifications;
 const standards = product.data.compliance?.standards;
@@ -107,73 +71,25 @@ const relatedProducts = products
   .slice(0, 3);
 
 // Returns a printable value for a product attribute
-function formatAttributeValue(attr) {
-  const { value, type } = attr;
-
-  if (value === null || value === undefined) return "";
-  if (value.display_value) return value.display_value;
-
-  switch (type) {
-    case "number":
-      if (value.qty !== undefined) {
-        let str = `${value.qty}${value.unit ? " " + value.unit : ""}`;
-        if (value.approx) {
-          str = str + " (approx.)"
-        }
-        return str
-      }
-      return String(value);
-
-    case "integer":
-      return `${value}${value.unit ? " " + value.unit : ""}`;
-
-    case "range":
-      if (value.min && value.max) {
-        return `${value.min}-${value.max}${value.unit ? " " + value.unit : ""}`;
-      }
-      return JSON.stringify(value);
-
-    case "enum":
-      return Array.isArray(value) ? value.join(", ") : String(value);
-
-    default:
-      if (value.l && value.h && value.p) {
-        return `${value.l} × ${value.h} × ${value.p}${value.unit ? " " + value.unit + " (L x H x D)" : ""}`;
-      }
-      if (value.length && value.height && value.depth) {
-        return `${value.length} x ${value.height} x ${value.depth}${value.unit ? " " + value.unit + " (L x H x D)": ""}`;
-      }
-      if (value.net && value.gross && value.unit) { // Net/Gross weight
-        return `Net: ${value.net} ${value.unit} - Brut: ${value.gross} ${value.unit}`;
-      }
-      if (value.diameter && value.depth && value.unit) {
-        return `Ø ${value.diameter} x ${value.depth} ${value.unit} (P)`;
-      }
-      if (value.length && value.width && value.unit) {
-        return `${value.length} x ${value.width} mm (L x l)`
-      }
-      return typeof value === "object" ? JSON.stringify(value) : String(value);
-
-    case "boolean":
-      return value ? "Oui" : "Non";
-
-    // default:
-    //   return typeof value === "object" ? JSON.stringify(value) : String(value);
-  }
-}
+// formatAttributeValue moved to utils/formatters.js
 
 const HIGHLIGHT_CERTS = ["CE", "ISO 13485", "FDA"];
 const HIGHLIGHT_STANDARDS = ["EN 13060", "ISO 14937"];
 const highlightedCerts = product.data.compliance?.certifications?.filter(
-  (cert) => HIGHLIGHT_CERTS.includes(cert)
+  (cert) => HIGHLIGHT_CERTS.includes(cert),
 );
 const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
-  HIGHLIGHT_STANDARDS.includes(std)
+  HIGHLIGHT_STANDARDS.includes(std),
 );
 ---
 
-
-<Layout title={product.data.name.fr} description={product.data.short_description.fr} image={product.data.images[0] ? product.data.images[0].src : Astro.url + "/galaxie-medicale.png"}>
+<Layout
+  title={product.data.name.fr}
+  description={product.data.short_description.fr}
+  image={product.data.images[0]
+    ? product.data.images[0].src
+    : Astro.url + "/galaxie-medicale.png"}
+>
   <Header />
 
   <div class="min-h-screen pt-26">
@@ -185,32 +101,28 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
         <div class="space-y-6 flex flex-col">
           <div class="h-full">
             <h1
-              class="text-center lg:text-left text-2xl lg:text-3xl font-bold text-gray-900 underline mb-3"
+              class="text-center lg:text-left text-3xl lg:text-4xl font-extrabold text-gray-900 tracking-tight mb-4"
             >
               {product.data.name.fr || product.data.name.en}
             </h1>
             <div
-              class="flex flex-cols gap-2 mb-6 justify-center lg:justify-end -translate-y-1 mb-3"
+              class="flex flex-wrap gap-2 mb-6 justify-center lg:justify-start"
             >
               {
                 product.data.availability == "out_of_stock" && (
-                  <div class="w-fit bg-red-600/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
+                  <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 border border-red-200">
                     Rupture de stock
-                  </div>
+                  </span>
                 )
               }
               {
                 product.data.category.display.fr && (
-                  <div class="w-fit bg-primary/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
-                    {product.data.category.display.fr || product.data.category.display.en}
-                  </div>
+                  <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">
+                    {product.data.category.display.fr ||
+                      product.data.category.display.en}
+                  </span>
                 )
               }
-              <!-- {(product.data.subcategory) && (
-                <div class="w-fit bg-primary/60 text-white text-xs font-semibold px-2 py-1 rounded shadow">
-                  {product.data.subcategory}
-                </div>
-              )} -->
             </div>
             <div class="lg:hidden mb-6">
               {
@@ -221,38 +133,73 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
             </div>
 
             <div
-              class="text-lg text-gray-700 whitespace-pre-line leading-[25px] bg-white/50 p-3 h-full"
+              class="text-lg text-gray-700 whitespace-pre-line leading-relaxed mb-8"
             >
-              {product.data.full_description.fr || product.data.full_description.en}
-              <!-- {
-                product.data.technical_specs["other"]
-                  ? product.data.technical_specs["other"].join("\n")
-                  : ""
-              } -->
-              <!-- Highlights -->
-              <div>
-                <ul class="list-disc list-inside space-y-1 ml-3 mt-6">
-                  {
-                    highlights?.map((highlight, index) => (
-                      <li key={index}>
-                        <span class="font-semibold">{highlight.display_label.fr || highlight.display_label.en}</span>: {formatAttributeValue(highlight)}
-                      </li>
-                    ))
-                  }
-                </ul>
+              {
+                product.data.full_description.fr ||
+                  product.data.full_description.en
+              }
+
+              <!-- Highlights Grid -->
+              <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {
+                  highlights?.map((highlight, index) => (
+                    <div class="flex items-start p-3 bg-gray-50 rounded-lg border border-gray-100">
+                      <div class="flex-shrink-0 mr-3 text-primary">
+                        <Icon name="heroicons:check-circle" class="w-5 h-5" />
+                      </div>
+                      <div>
+                        <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">
+                          {highlight.display_label.fr ||
+                            highlight.display_label.en}
+                        </p>
+                        <p class="text-sm font-semibold text-gray-900">
+                          {formatAttributeValue(highlight)}
+                        </p>
+                      </div>
+                    </div>
+                  ))
+                }
               </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-gray-100"
+            >
+              <Button
+                href="#contact"
+                class="w-full sm:w-auto flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all"
+              >
+                <Icon
+                  name="heroicons:chat-bubble-left-ellipsis"
+                  class="w-5 h-5"
+                />
+                Demander un devis
+              </Button>
+              <Button
+                variant="outline"
+                class="w-full sm:w-auto flex items-center justify-center gap-2"
+              >
+                <Icon name="heroicons:arrow-down-tray" class="w-5 h-5" />
+                Fiche technique
+              </Button>
             </div>
           </div>
 
-          <div class="flex justify-end">
+          <div class="flex flex-wrap gap-2 justify-end mt-4">
             {
               [...highlightedCerts, ...highlightedStandards]?.map((cert) => (
-                <span
+                <div
                   key={cert}
-                  class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full mr-1"
+                  class="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-gray-200 rounded-lg shadow-sm"
                 >
-                  {cert}
-                </span>
+                  <Icon
+                    name="heroicons:shield-check"
+                    class="w-4 h-4 text-green-600"
+                  />
+                  <span class="text-xs font-bold text-gray-700">{cert}</span>
+                </div>
               ))
             }
           </div>
@@ -331,7 +278,8 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
                   {electricalSpecs?.map((attribute, index) => (
                     <div class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0">
                       <span class="text-sm text-gray-600">
-                        {attribute.display_label.fr || attribute.display_label.en}
+                        {attribute.display_label.fr ||
+                          attribute.display_label.en}
                       </span>
                       <span class="text-sm font-medium text-gray-900 whitespace-pre-line">
                         {formatAttributeValue(attribute)}
@@ -361,7 +309,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
                           <li key={index}>
                             <span class="">{cert}</span>
                           </li>
-                        )
+                        ),
                       )}
                     </ul>
                   </div>
@@ -411,50 +359,63 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
       </div>
 
       {/* Downloads Section */}
-      <!-- <Card class="mb-12">
-        <CardHeader>
-          <CardTitle className="flex items-center text-gray-900">
-            <Icon name="heroicons:arrow-down-tray" />
+      {/* Downloads Section */}
+      <Card class="mb-12 border border-gray-200 shadow-sm overflow-hidden">
+        <CardHeader class="bg-gray-50/50 border-b border-gray-100">
+          <CardTitle className="flex items-center text-gray-900 text-lg">
+            <div class="p-2 bg-blue-50 rounded-lg mr-3 text-primary">
+              <Icon name="heroicons:arrow-down-tray" class="w-5 h-5" />
+            </div>
             Documentation & Resources
           </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="p-6">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Button
-              variant="outline"
-              class="h-auto p-4 flex flex-col items-center space-y-2 hover:bg-medical-gray"
+            <a
+              href="#"
+              class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
             >
-              <Icon name="heroicons:document" />
-              <span class="font-medium">Product Datasheet</span>
-              <span class="text-xs text-gray-500">PDF • 2.4 MB</span>
-            </Button>
-            <Button
-              variant="outline"
-              class="h-auto p-4 flex flex-col items-center space-y-2 hover:bg-medical-gray"
+              <div class="flex items-center justify-between mb-3">
+                <div
+                  class="p-2 bg-gray-100 rounded-lg group-hover:bg-primary/10 transition-colors"
+                >
+                  <Icon
+                    name="heroicons:document-text"
+                    class="w-6 h-6 text-gray-500 group-hover:text-primary"
+                  />
+                </div>
+                <span class="text-xs font-medium text-gray-400">PDF</span>
+              </div>
+              <span
+                class="font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors"
+                >Fiche Technique</span
+              >
+              <span class="text-xs text-gray-500">2.4 MB</span>
+            </a>
+            <a
+              href="#"
+              class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
             >
-              <Icon name="heroicons:document" />
-              <span class="font-medium">User Manual</span>
-              <span class="text-xs text-gray-500">PDF • 8.1 MB</span>
-            </Button>
-            <Button
-              variant="outline"
-              class="h-auto p-4 flex flex-col items-center space-y-2 hover:bg-medical-gray"
-            >
-              <Icon name="heroicons:document" />
-              <span class="font-medium">Service Manual</span>
-              <span class="text-xs text-gray-500">PDF • 5.7 MB</span>
-            </Button>
-            <Button
-              variant="outline"
-              class="h-auto p-4 flex flex-col items-center space-y-2 hover:bg-medical-gray"
-            >
-              <Icon name="heroicons:document" />
-              <span class="font-medium">Online Training</span>
-              <span class="text-xs text-gray-500">External Link</span>
-            </Button>
+              <div class="flex items-center justify-between mb-3">
+                <div
+                  class="p-2 bg-gray-100 rounded-lg group-hover:bg-primary/10 transition-colors"
+                >
+                  <Icon
+                    name="heroicons:book-open"
+                    class="w-6 h-6 text-gray-500 group-hover:text-primary"
+                  />
+                </div>
+                <span class="text-xs font-medium text-gray-400">PDF</span>
+              </div>
+              <span
+                class="font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors"
+                >Manuel d'utilisation</span
+              >
+              <span class="text-xs text-gray-500">8.1 MB</span>
+            </a>
           </div>
         </CardContent>
-      </Card> -->
+      </Card>
 
       {/* Related Products */}
       <!-- <div>

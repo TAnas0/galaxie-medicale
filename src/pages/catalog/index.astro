@@ -8,10 +8,8 @@ import { getCollection } from 'astro:content';
 
 let products = await getCollection('productsFull');
 const category = Astro.url.searchParams.get('category') || 'all';
-console.log(Astro.url)
 const url = new URL(Astro.request.url);
 const category2 = url.searchParams.get('category') || null;
-console.log(category2)
 ---
 
 <Layout>
