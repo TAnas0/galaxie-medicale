@@ -66,7 +66,6 @@ const productsFull = defineCollection({
           category: z.string(),
           type: z.string(), // simplified from enum
           value: z.any(),   // catch-all
-          raw: z.any().optional(),
           highlighted: z.boolean().optional()
         })
       ).optional(),

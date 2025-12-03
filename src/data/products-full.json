@@ -36,8 +36,15 @@
     "attributes": [
       {
         "canonical_name": "device_class",
-        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
-        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "display_label": {
+          "en": "Medical Device Class",
+          "fr": "Classe Dispositif Médical"
+        },
+        "category": "Regulatory",
+        "type": "string",
+        "value": {
+          "text": "IIb"
+        },
         "highlighted": true
       },
       {
@@ -48,8 +55,7 @@
         },
         "category": "Functional",
         "type": "string",
-        "value": "Fractionated vacuum (3 phases)",
-        "raw": "Système de vide fractionné (3 phases)"
+        "value": "Fractionated vacuum (3 phases)"
       },
       {
         "canonical_name": "chamber_capacity",
@@ -75,8 +81,7 @@
         "value": {
           "qty": 15,
           "unit": "minutes"
-        },
-        "raw": "Temps de cycle classe B: 15 minutes"
+        }
       },
       {
         "canonical_name": "chamber_material",
@@ -86,8 +91,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "AISI 316 stainless steel",
-        "raw": "Chambre de stérilisation en acier inoxydable AISI 316"
+        "value": "AISI 316 stainless steel"
       },
       {
         "canonical_name": "sterilization_temperatures",
@@ -97,18 +101,34 @@
         },
         "category": "Thermal",
         "type": "enum",
-        "value": ["121°C", "134°C"],
-        "raw": "Températures de stérilisation : 121°C / 134°C"
+        "value": [
+          "121°C",
+          "134°C"
+        ]
       },
       {
         "canonical_name": "pressure_cycle_121c",
-        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 121°C (STP)",
+          "fr": "Pression Cycle 121°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "1.0 - 1.3 bar"
+        }
       },
       {
         "canonical_name": "pressure_cycle_134c",
-        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 134°C (STP)",
+          "fr": "Pression Cycle 134°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "2.0 - 2.4 bar"
+        }
       },
       {
         "canonical_name": "integrated_tests",
@@ -118,8 +138,11 @@
         },
         "category": "Functional",
         "type": "enum",
-        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
-        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
+        "value": [
+          "Helix",
+          "Bowie & Dick",
+          "Vacuum test"
+        ]
       },
       {
         "canonical_name": "drying_time_settings",
@@ -129,8 +152,11 @@
         },
         "category": "Controls",
         "type": "enum",
-        "value": ["1 min", "5 min", "10 min"],
-        "raw": "Réglage du temps de séchage (1/5/10 min)"
+        "value": [
+          "1 min",
+          "5 min",
+          "10 min"
+        ]
       },
       {
         "canonical_name": "external_dimensions",
@@ -145,8 +171,7 @@
           "height": 410,
           "depth": 570,
           "unit": "mm"
-        },
-        "raw": "Dimensions externes: 407 x 410 x 570 mm (L x H x P)"
+        }
       },
       {
         "canonical_name": "chamber_dimensions",
@@ -160,8 +185,7 @@
           "diameter": 210,
           "depth": 360,
           "unit": "mm"
-        },
-        "raw": "Dimensions chambre: Ø 210 x 360 mm"
+        }
       },
       {
         "canonical_name": "tray_dimensions",
@@ -175,13 +199,20 @@
           "length": 310,
           "width": 160,
           "unit": "mm"
-        },
-        "raw": "Dimensions plateau: 310 x 160 mm"
+        }
       },
       {
         "canonical_name": "trays_included",
-        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
-        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
+        "display_label": {
+          "en": "Trays Included",
+          "fr": "Plateaux Inclus"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 3,
+          "unit": "units"
+        }
       },
       {
         "canonical_name": "water_tank_capacity",
@@ -194,8 +225,7 @@
         "value": {
           "qty": 3,
           "unit": "L"
-        },
-        "raw": "Réservoir d’eau distillée: 3 litres"
+        }
       },
       {
         "canonical_name": "waste_tank_capacity",
@@ -208,8 +238,7 @@
         "value": {
           "qty": 4,
           "unit": "L"
-        },
-        "raw": "Réservoir eaux usées: 4 litres"
+        }
       },
       {
         "canonical_name": "noise_level_maximum",
@@ -223,8 +252,7 @@
           "qty": 60,
           "unit": "dB",
           "relation": "<"
-        },
-        "raw": "Niveau sonore : < 60 dB"
+        }
       },
       {
         "canonical_name": "weight_net",
@@ -237,13 +265,20 @@
         "value": {
           "qty": 42,
           "unit": "kg"
-        },
-        "raw": "Poids net : 42 kg"
+        }
       },
       {
         "canonical_name": "weight_gross",
-        "display_label": { "en": "Gross Weight", "fr": "Poids Brut" },
-        "category": "Physical", "type": "number", "value": { "qty": 44, "unit": "kg" }
+        "display_label": {
+          "en": "Gross Weight",
+          "fr": "Poids Brut"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 44,
+          "unit": "kg"
+        }
       },
       {
         "canonical_name": "power_supply",
@@ -253,8 +288,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "230 V – 50/60 Hz",
-        "raw": "Alimentation : 230 V – 50/60 Hz"
+        "value": "230 V – 50/60 Hz"
       },
       {
         "canonical_name": "power_consumption",
@@ -267,8 +301,7 @@
         "value": {
           "qty": 1800,
           "unit": "W"
-        },
-        "raw": "Consommation électrique: 1800 W"
+        }
       },
       {
         "canonical_name": "standby_mode",
@@ -278,26 +311,40 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Temperature maintenance",
-        "raw": "Mode Stand-by pour maintien en température"
+        "value": "Temperature maintenance"
       },
       {
         "canonical_name": "data_output_ports",
-        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "display_label": {
+          "en": "Data Output Ports",
+          "fr": "Ports de sortie de données"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["USB output (Optional)", "RS232 output"]
+        "value": [
+          "USB output (Optional)",
+          "RS232 output"
+        ]
       },
       {
         "canonical_name": "display_options",
-        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "display_label": {
+          "en": "Display Type Options",
+          "fr": "Options de type d'affichage"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["LCD (Default)", "LED (Optional)"]
+        "value": [
+          "LCD (Default)",
+          "LED (Optional)"
+        ]
       },
       {
         "canonical_name": "integrated_printer_availability",
-        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "display_label": {
+          "en": "Integrated Printer Option",
+          "fr": "Option Imprimante Intégrée"
+        },
         "category": "Interface",
         "type": "string",
         "value": "Available as a variant/upgrade (Standard on PRINTER models)",
@@ -358,8 +405,15 @@
     "attributes": [
       {
         "canonical_name": "device_class",
-        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
-        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "display_label": {
+          "en": "Medical Device Class",
+          "fr": "Classe Dispositif Médical"
+        },
+        "category": "Regulatory",
+        "type": "string",
+        "value": {
+          "text": "IIb"
+        },
         "highlighted": true
       },
       {
@@ -370,17 +424,21 @@
         },
         "category": "Functional",
         "type": "string",
-        "value": "Fractionated vacuum (3 phases)",
-        "raw": "Système de vide fractionné (3 phases)"
+        "value": "Fractionated vacuum (3 phases)"
       },
       {
         "canonical_name": "chamber_capacity",
-        "display_label": { "en": "Chamber Capacity", "fr": "Capacité de la chambre" },
+        "display_label": {
+          "en": "Chamber Capacity",
+          "fr": "Capacité de la chambre"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 18, "unit": "L" },
-        "highlighted": true,
-        "raw": "Capacité de la chambre: 18 litres"
+        "value": {
+          "qty": 18,
+          "unit": "L"
+        },
+        "highlighted": true
       },
       {
         "canonical_name": "power_supply",
@@ -390,39 +448,61 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "230 V – 50/60 Hz",
-        "raw": "Alimentation : 230 V – 50/60 Hz"
+        "value": "230 V – 50/60 Hz"
       },
       {
         "canonical_name": "material",
-        "display_label": { "en": "Material", "fr": "Matériau" },
+        "display_label": {
+          "en": "Material",
+          "fr": "Matériau"
+        },
         "category": "Physical",
         "type": "string",
         "value": "AISI 316 Stainless Steel"
       },
       {
         "canonical_name": "temperature_sterilization",
-        "display_label": { "en": "Sterilization temperature", "fr": "Température de stérilisation" },
+        "display_label": {
+          "en": "Sterilization temperature",
+          "fr": "Température de stérilisation"
+        },
         "category": "Thermal",
         "type": "string",
         "value": "121°C - 134°C"
       },
       {
         "canonical_name": "temperature_sterilization_max",
-        "display_label": { "en": "Maximum sterilization temperature", "fr": "Température max stérilisation" },
+        "display_label": {
+          "en": "Maximum sterilization temperature",
+          "fr": "Température max stérilisation"
+        },
         "category": "Thermal",
         "type": "string",
         "value": "138°C"
       },
       {
         "canonical_name": "pressure_cycle_121c",
-        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 121°C (STP)",
+          "fr": "Pression Cycle 121°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "1.0 - 1.3 bar"
+        }
       },
       {
         "canonical_name": "pressure_cycle_134c",
-        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 134°C (STP)",
+          "fr": "Pression Cycle 134°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "2.0 - 2.4 bar"
+        }
       },
       {
         "canonical_name": "integrated_tests",
@@ -432,101 +512,191 @@
         },
         "category": "Functional",
         "type": "enum",
-        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
-        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
+        "value": [
+          "Helix",
+          "Bowie & Dick",
+          "Vacuum test"
+        ]
       },
       {
         "canonical_name": "max_pressure",
-        "display_label": { "en": "Max pressure", "fr": "Pression maximum" },
+        "display_label": {
+          "en": "Max pressure",
+          "fr": "Pression maximum"
+        },
         "category": "Pressure",
         "type": "string",
         "value": "2,5 bar"
       },
       {
         "canonical_name": "water_consumption_per_cycle",
-        "display_label": { "en": "Water consumption per cycle", "fr": "Consommation d'eau par cycle" },
+        "display_label": {
+          "en": "Water consumption per cycle",
+          "fr": "Consommation d'eau par cycle"
+        },
         "category": "Physical",
         "type": "string",
         "value": "0,30 / 0,55 L – 15 cycles"
       },
       {
         "canonical_name": "bacteriological_filter_capacity",
-        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
-        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+        "display_label": {
+          "en": "Bacteriological Filtering Capacity",
+          "fr": "Capacité de Filtration Bactériologique"
+        },
+        "category": "Technical",
+        "type": "string",
+        "value": {
+          "text": "0.3 µm"
+        }
       },
       {
         "canonical_name": "bacteriological_filter_diameter",
-        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
-        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+        "display_label": {
+          "en": "Bacteriological Filter Diameter",
+          "fr": "Diamètre du Filtre Bactériologique"
+        },
+        "category": "Technical",
+        "type": "number",
+        "value": {
+          "qty": 56,
+          "unit": "mm"
+        }
       },
       {
         "canonical_name": "external_dimensions",
-        "display_label": { "en": "External Dimensions", "fr": "Dimensions externes" },
+        "display_label": {
+          "en": "External Dimensions",
+          "fr": "Dimensions externes"
+        },
         "category": "Physical",
         "type": "composite",
-        "value": { "length": 462, "height": 445, "depth": 600, "unit": "mm" },
-        "raw": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
+        "value": {
+          "length": 462,
+          "height": 445,
+          "depth": 600,
+          "unit": "mm"
+        }
       },
       {
         "canonical_name": "chamber_dimensions",
-        "display_label": { "en": "Chamber Dimensions", "fr": "Dimensions chambre" },
+        "display_label": {
+          "en": "Chamber Dimensions",
+          "fr": "Dimensions chambre"
+        },
         "category": "Physical",
         "type": "composite",
-        "value": { "diameter": 255, "depth": 360, "unit": "mm" },
-        "highlighted": true,
-        "raw": "Dimensions chambre: Ø 250 x 360 mm"
+        "value": {
+          "diameter": 255,
+          "depth": 360,
+          "unit": "mm"
+        },
+        "highlighted": true
       },
       {
         "canonical_name": "tray_dimensions",
-        "display_label": { "en": "Tray Dimensions (3 included)", "fr": "Dimensions plateau" },
+        "display_label": {
+          "en": "Tray Dimensions (3 included)",
+          "fr": "Dimensions plateau"
+        },
         "category": "Physical",
         "type": "composite",
-        "value": { "length": 285, "width": 190, "unit": "mm" },
-        "raw": "Dimensions plateau: 285 x 190 mm"
+        "value": {
+          "length": 285,
+          "width": 190,
+          "unit": "mm"
+        }
       },
       {
         "canonical_name": "trays_included",
-        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
-        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
+        "display_label": {
+          "en": "Trays Included",
+          "fr": "Plateaux Inclus"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 3,
+          "unit": "units"
+        }
       },
       {
         "canonical_name": "power_consumption",
-        "display_label": { "en": "Power Consumption", "fr": "Consommation électrique" },
+        "display_label": {
+          "en": "Power Consumption",
+          "fr": "Consommation électrique"
+        },
         "category": "Electrical",
         "type": "number",
-        "value": { "qty": 1800, "unit": "W" },
-        "raw": "Consommation: 180 W"
+        "value": {
+          "qty": 1800,
+          "unit": "W"
+        }
       },
       {
         "canonical_name": "water_tank_capacity",
-        "display_label": { "en": "Distilled Water Tank", "fr": "Réservoir d’eau distillée" },
+        "display_label": {
+          "en": "Distilled Water Tank",
+          "fr": "Réservoir d’eau distillée"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 4.6, "unit": "L" },
-        "raw": "Réservoir eau distillée : 4,6 L"
+        "value": {
+          "qty": 4.6,
+          "unit": "L"
+        }
       },
       {
         "canonical_name": "waste_tank_capacity",
-        "display_label": { "en": "Waste Water Tank", "fr": "Réservoir eaux usées" },
+        "display_label": {
+          "en": "Waste Water Tank",
+          "fr": "Réservoir eaux usées"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 5, "unit": "L" },
-        "raw": "Réservoir eaux usées : 5 L"
+        "value": {
+          "qty": 5,
+          "unit": "L"
+        }
       },
       {
         "canonical_name": "max_noise_level",
-        "display_label": { "en": "Maximum Noise Level", "fr": "Niveau Sonore Maximal" },
-        "category": "Performance", "type": "number", "value": { "qty": 50, "unit": "dB" }
+        "display_label": {
+          "en": "Maximum Noise Level",
+          "fr": "Niveau Sonore Maximal"
+        },
+        "category": "Performance",
+        "type": "number",
+        "value": {
+          "qty": 50,
+          "unit": "dB"
+        }
       },
       {
         "canonical_name": "net_weight",
-        "display_label": { "en": "Net Weight", "fr": "Poids Net" },
-        "category": "Physical", "type": "number", "value": { "qty": 54, "unit": "kg" }
+        "display_label": {
+          "en": "Net Weight",
+          "fr": "Poids Net"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 54,
+          "unit": "kg"
+        }
       },
       {
         "canonical_name": "gross_weight",
-        "display_label": { "en": "Gross Weight (Packaging)", "fr": "Poids Brut (Emballage)" },
-        "category": "Physical", "type": "number", "value": { "qty": 56, "unit": "kg" }
+        "display_label": {
+          "en": "Gross Weight (Packaging)",
+          "fr": "Poids Brut (Emballage)"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 56,
+          "unit": "kg"
+        }
       },
       {
         "canonical_name": "standby_mode",
@@ -536,19 +706,32 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Temperature maintenance",
-        "raw": "Mode Stand-by pour maintien en température"
+        "value": "Temperature maintenance"
       },
-
       {
         "canonical_name": "bacteriological_filter_capacity",
-        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
-        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+        "display_label": {
+          "en": "Bacteriological Filtering Capacity",
+          "fr": "Capacité de Filtration Bactériologique"
+        },
+        "category": "Technical",
+        "type": "string",
+        "value": {
+          "text": "0.3 µm"
+        }
       },
       {
         "canonical_name": "bacteriological_filter_diameter",
-        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
-        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+        "display_label": {
+          "en": "Bacteriological Filter Diameter",
+          "fr": "Diamètre du Filtre Bactériologique"
+        },
+        "category": "Technical",
+        "type": "number",
+        "value": {
+          "qty": 56,
+          "unit": "mm"
+        }
       },
       {
         "canonical_name": "water_consumption_per_cycle",
@@ -562,21 +745,36 @@
       },
       {
         "canonical_name": "data_output_ports",
-        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "display_label": {
+          "en": "Data Output Ports",
+          "fr": "Ports de sortie de données"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["USB output (Optional)", "RS232 output"]
+        "value": [
+          "USB output (Optional)",
+          "RS232 output"
+        ]
       },
       {
         "canonical_name": "display_options",
-        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "display_label": {
+          "en": "Display Type Options",
+          "fr": "Options de type d'affichage"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["LCD (Default)", "LED (Optional)"]
+        "value": [
+          "LCD (Default)",
+          "LED (Optional)"
+        ]
       },
       {
         "canonical_name": "integrated_printer_availability",
-        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "display_label": {
+          "en": "Integrated Printer Option",
+          "fr": "Option Imprimante Intégrée"
+        },
         "category": "Interface",
         "type": "string",
         "value": "Available as a variant/upgrade (Standard on PRINTER models)",
@@ -642,8 +840,15 @@
     "attributes": [
       {
         "canonical_name": "device_class",
-        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
-        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "display_label": {
+          "en": "Medical Device Class",
+          "fr": "Classe Dispositif Médical"
+        },
+        "category": "Regulatory",
+        "type": "string",
+        "value": {
+          "text": "IIb"
+        },
         "highlighted": true
       },
       {
@@ -654,8 +859,7 @@
         },
         "category": "Functional",
         "type": "string",
-        "value": "Fractionated vacuum (3 phases)",
-        "raw": "Système de vide fractionné (3 phases)"
+        "value": "Fractionated vacuum (3 phases)"
       },
       {
         "canonical_name": "chamber_capacity",
@@ -669,32 +873,51 @@
           "qty": 24,
           "unit": "L"
         },
-        "highlighted": true,
-        "raw": "Capacité de la chambre: 24 litres"
+        "highlighted": true
       },
       {
         "canonical_name": "temperature_sterilization",
-        "display_label": { "en": "Sterilization temperature", "fr": "Température de stérilisation" },
+        "display_label": {
+          "en": "Sterilization temperature",
+          "fr": "Température de stérilisation"
+        },
         "category": "Thermal",
         "type": "string",
         "value": "121°C - 134°C"
       },
       {
         "canonical_name": "temperature_sterilization_max",
-        "display_label": { "en": "Maximum sterilization temperature", "fr": "Température max stérilisation" },
+        "display_label": {
+          "en": "Maximum sterilization temperature",
+          "fr": "Température max stérilisation"
+        },
         "category": "Thermal",
         "type": "string",
         "value": "138°C"
       },
       {
         "canonical_name": "pressure_cycle_121c",
-        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 121°C (STP)",
+          "fr": "Pression Cycle 121°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "1.0 - 1.3 bar"
+        }
       },
       {
         "canonical_name": "pressure_cycle_134c",
-        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 134°C (STP)",
+          "fr": "Pression Cycle 134°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "2.0 - 2.4 bar"
+        }
       },
       {
         "canonical_name": "integrated_tests",
@@ -704,17 +927,22 @@
         },
         "category": "Functional",
         "type": "enum",
-        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
-        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
+        "value": [
+          "Helix",
+          "Bowie & Dick",
+          "Vacuum test"
+        ]
       },
       {
         "canonical_name": "max_pressure",
-        "display_label": { "en": "Max pressure", "fr": "Pression maximum" },
+        "display_label": {
+          "en": "Max pressure",
+          "fr": "Pression maximum"
+        },
         "category": "Pressure",
         "type": "string",
         "value": "2,5 bar"
       },
-
       {
         "canonical_name": "external_dimensions",
         "display_label": {
@@ -728,8 +956,7 @@
           "height": 445,
           "depth": 600,
           "unit": "mm"
-        },
-        "raw": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
+        }
       },
       {
         "canonical_name": "chamber_dimensions",
@@ -744,8 +971,7 @@
           "depth": 460,
           "unit": "mm"
         },
-        "highlighted": true,
-        "raw": "Dimensions chambre: Ø 255 x 460 mm"
+        "highlighted": true
       },
       {
         "canonical_name": "tray_dimensions",
@@ -760,13 +986,20 @@
           "width": 190,
           "unit": "mm"
         },
-        "highlighted": true,
-        "raw": "Dimensions plateau: 385 x 190 mm"
+        "highlighted": true
       },
       {
         "canonical_name": "trays_included",
-        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
-        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
+        "display_label": {
+          "en": "Trays Included",
+          "fr": "Plateaux Inclus"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 3,
+          "unit": "units"
+        }
       },
       {
         "canonical_name": "distilled_water_tank_volume",
@@ -806,66 +1039,120 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "230 V – 50/60 Hz",
-        "raw": "Alimentation : 230 V – 50/60 Hz"
+        "value": "230 V – 50/60 Hz"
       },
       {
         "canonical_name": "material",
-        "display_label": { "en": "Material", "fr": "Matériau" },
+        "display_label": {
+          "en": "Material",
+          "fr": "Matériau"
+        },
         "category": "Physical",
         "type": "string",
         "value": "AISI 316 Stainless Steel"
       },
-
       {
         "canonical_name": "bacteriological_filter_capacity",
-        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
-        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+        "display_label": {
+          "en": "Bacteriological Filtering Capacity",
+          "fr": "Capacité de Filtration Bactériologique"
+        },
+        "category": "Technical",
+        "type": "string",
+        "value": {
+          "text": "0.3 µm"
+        }
       },
       {
         "canonical_name": "bacteriological_filter_diameter",
-        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
-        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+        "display_label": {
+          "en": "Bacteriological Filter Diameter",
+          "fr": "Diamètre du Filtre Bactériologique"
+        },
+        "category": "Technical",
+        "type": "number",
+        "value": {
+          "qty": 56,
+          "unit": "mm"
+        }
       },
-
       {
         "canonical_name": "power_consumption",
-        "display_label": { "en": "Power Consumption", "fr": "Consommation électrique" },
+        "display_label": {
+          "en": "Power Consumption",
+          "fr": "Consommation électrique"
+        },
         "category": "Electrical",
         "type": "number",
-        "value": { "qty": 1800, "unit": "W" },
-        "raw": "Consommation: 1800 W"
+        "value": {
+          "qty": 1800,
+          "unit": "W"
+        }
       },
       {
         "canonical_name": "water_tank_capacity",
-        "display_label": { "en": "Distilled Water Tank", "fr": "Réservoir d’eau distillée" },
+        "display_label": {
+          "en": "Distilled Water Tank",
+          "fr": "Réservoir d’eau distillée"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 4.6, "unit": "L" },
-        "raw": "Réservoir eau distillée : 4,6 L"
+        "value": {
+          "qty": 4.6,
+          "unit": "L"
+        }
       },
       {
         "canonical_name": "waste_tank_capacity",
-        "display_label": { "en": "Waste Water Tank", "fr": "Réservoir eaux usées" },
+        "display_label": {
+          "en": "Waste Water Tank",
+          "fr": "Réservoir eaux usées"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 5, "unit": "L" },
-        "raw": "Réservoir eaux usées : 5 L"
+        "value": {
+          "qty": 5,
+          "unit": "L"
+        }
       },
       {
         "canonical_name": "max_noise_level",
-        "display_label": { "en": "Maximum Noise Level", "fr": "Niveau Sonore Maximal" },
-        "category": "Performance", "type": "number", "value": { "qty": 50, "unit": "dB" }
+        "display_label": {
+          "en": "Maximum Noise Level",
+          "fr": "Niveau Sonore Maximal"
+        },
+        "category": "Performance",
+        "type": "number",
+        "value": {
+          "qty": 50,
+          "unit": "dB"
+        }
       },
       {
         "canonical_name": "net_weight",
-        "display_label": { "en": "Net Weight", "fr": "Poids Net" },
-        "category": "Physical", "type": "number", "value": { "qty": 56, "unit": "kg" }
+        "display_label": {
+          "en": "Net Weight",
+          "fr": "Poids Net"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 56,
+          "unit": "kg"
+        }
       },
       {
         "canonical_name": "gross_weight",
-        "display_label": { "en": "Gross Weight (Packaging)", "fr": "Poids Brut (Emballage)" },
-        "category": "Physical", "type": "number", "value": { "qty": 59, "unit": "kg" }
+        "display_label": {
+          "en": "Gross Weight (Packaging)",
+          "fr": "Poids Brut (Emballage)"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 59,
+          "unit": "kg"
+        }
       },
       {
         "canonical_name": "standby_mode",
@@ -875,26 +1162,40 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Temperature maintenance",
-        "raw": "Mode Stand-by pour maintien en température"
+        "value": "Temperature maintenance"
       },
       {
         "canonical_name": "data_output_ports",
-        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "display_label": {
+          "en": "Data Output Ports",
+          "fr": "Ports de sortie de données"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["USB output (Optional)", "RS232 output"]
+        "value": [
+          "USB output (Optional)",
+          "RS232 output"
+        ]
       },
       {
         "canonical_name": "display_options",
-        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "display_label": {
+          "en": "Display Type Options",
+          "fr": "Options de type d'affichage"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["LCD (Default)", "LED (Optional)"]
+        "value": [
+          "LCD (Default)",
+          "LED (Optional)"
+        ]
       },
       {
         "canonical_name": "integrated_printer_availability",
-        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "display_label": {
+          "en": "Integrated Printer Option",
+          "fr": "Option Imprimante Intégrée"
+        },
         "category": "Interface",
         "type": "string",
         "value": "Available as a variant/upgrade (Standard on PRINTER models)",
@@ -951,7 +1252,10 @@
     "attributes": [
       {
         "canonical_name": "water_purification_system",
-        "display_label": { "en": "Water Purification System", "fr": "Système de Purification d'Eau" },
+        "display_label": {
+          "en": "Water Purification System",
+          "fr": "Système de Purification d'Eau"
+        },
         "category": "Functional",
         "type": "string",
         "value": "Système Vertical de Purification par Osmose Inverse à 3 Étapes",
@@ -959,8 +1263,15 @@
       },
       {
         "canonical_name": "device_class",
-        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
-        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "display_label": {
+          "en": "Medical Device Class",
+          "fr": "Classe Dispositif Médical"
+        },
+        "category": "Regulatory",
+        "type": "string",
+        "value": {
+          "text": "IIb"
+        },
         "highlighted": true
       },
       {
@@ -971,17 +1282,21 @@
         },
         "category": "Functional",
         "type": "string",
-        "value": "Fractionated vacuum (3 phases)",
-        "raw": "Système de vide fractionné (3 phases)"
+        "value": "Fractionated vacuum (3 phases)"
       },
       {
         "canonical_name": "chamber_capacity",
-        "display_label": { "en": "Chamber Capacity", "fr": "Capacité de la chambre" },
+        "display_label": {
+          "en": "Chamber Capacity",
+          "fr": "Capacité de la chambre"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 18, "unit": "L" },
-        "highlighted": true,
-        "raw": "Capacité de la chambre: 18 litres"
+        "value": {
+          "qty": 18,
+          "unit": "L"
+        },
+        "highlighted": true
       },
       {
         "canonical_name": "power_supply",
@@ -991,39 +1306,61 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "230 V – 50/60 Hz",
-        "raw": "Alimentation : 230 V – 50/60 Hz"
+        "value": "230 V – 50/60 Hz"
       },
       {
         "canonical_name": "material",
-        "display_label": { "en": "Material", "fr": "Matériau" },
+        "display_label": {
+          "en": "Material",
+          "fr": "Matériau"
+        },
         "category": "Physical",
         "type": "string",
         "value": "AISI 316 Stainless Steel"
       },
       {
         "canonical_name": "temperature_sterilization",
-        "display_label": { "en": "Sterilization temperature", "fr": "Température de stérilisation" },
+        "display_label": {
+          "en": "Sterilization temperature",
+          "fr": "Température de stérilisation"
+        },
         "category": "Thermal",
         "type": "string",
         "value": "121°C - 134°C"
       },
       {
         "canonical_name": "temperature_sterilization_max",
-        "display_label": { "en": "Maximum sterilization temperature", "fr": "Température max stérilisation" },
+        "display_label": {
+          "en": "Maximum sterilization temperature",
+          "fr": "Température max stérilisation"
+        },
         "category": "Thermal",
         "type": "string",
         "value": "138°C"
       },
       {
         "canonical_name": "pressure_cycle_121c",
-        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 121°C (STP)",
+          "fr": "Pression Cycle 121°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "1.0 - 1.3 bar"
+        }
       },
       {
         "canonical_name": "pressure_cycle_134c",
-        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 134°C (STP)",
+          "fr": "Pression Cycle 134°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "2.0 - 2.4 bar"
+        }
       },
       {
         "canonical_name": "integrated_tests",
@@ -1033,101 +1370,191 @@
         },
         "category": "Functional",
         "type": "enum",
-        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
-        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
+        "value": [
+          "Helix",
+          "Bowie & Dick",
+          "Vacuum test"
+        ]
       },
       {
         "canonical_name": "max_pressure",
-        "display_label": { "en": "Max pressure", "fr": "Pression maximum" },
+        "display_label": {
+          "en": "Max pressure",
+          "fr": "Pression maximum"
+        },
         "category": "Pressure",
         "type": "string",
         "value": "2,5 bar"
       },
       {
         "canonical_name": "water_consumption_per_cycle",
-        "display_label": { "en": "Water consumption per cycle", "fr": "Consommation d'eau par cycle" },
+        "display_label": {
+          "en": "Water consumption per cycle",
+          "fr": "Consommation d'eau par cycle"
+        },
         "category": "Physical",
         "type": "string",
         "value": "0,30 / 0,55 L – 15 cycles"
       },
       {
         "canonical_name": "bacteriological_filter_capacity",
-        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
-        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+        "display_label": {
+          "en": "Bacteriological Filtering Capacity",
+          "fr": "Capacité de Filtration Bactériologique"
+        },
+        "category": "Technical",
+        "type": "string",
+        "value": {
+          "text": "0.3 µm"
+        }
       },
       {
         "canonical_name": "bacteriological_filter_diameter",
-        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
-        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+        "display_label": {
+          "en": "Bacteriological Filter Diameter",
+          "fr": "Diamètre du Filtre Bactériologique"
+        },
+        "category": "Technical",
+        "type": "number",
+        "value": {
+          "qty": 56,
+          "unit": "mm"
+        }
       },
       {
         "canonical_name": "external_dimensions",
-        "display_label": { "en": "External Dimensions", "fr": "Dimensions externes" },
+        "display_label": {
+          "en": "External Dimensions",
+          "fr": "Dimensions externes"
+        },
         "category": "Physical",
         "type": "composite",
-        "value": { "length": 462, "height": 445, "depth": 600, "unit": "mm" },
-        "raw": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
+        "value": {
+          "length": 462,
+          "height": 445,
+          "depth": 600,
+          "unit": "mm"
+        }
       },
       {
         "canonical_name": "chamber_dimensions",
-        "display_label": { "en": "Chamber Dimensions", "fr": "Dimensions chambre" },
+        "display_label": {
+          "en": "Chamber Dimensions",
+          "fr": "Dimensions chambre"
+        },
         "category": "Physical",
         "type": "composite",
-        "value": { "diameter": 255, "depth": 360, "unit": "mm" },
-        "highlighted": true,
-        "raw": "Dimensions chambre: Ø 250 x 360 mm"
+        "value": {
+          "diameter": 255,
+          "depth": 360,
+          "unit": "mm"
+        },
+        "highlighted": true
       },
       {
         "canonical_name": "tray_dimensions",
-        "display_label": { "en": "Tray Dimensions (3 included)", "fr": "Dimensions plateau" },
+        "display_label": {
+          "en": "Tray Dimensions (3 included)",
+          "fr": "Dimensions plateau"
+        },
         "category": "Physical",
         "type": "composite",
-        "value": { "length": 285, "width": 190, "unit": "mm" },
-        "raw": "Dimensions plateau: 285 x 190 mm"
+        "value": {
+          "length": 285,
+          "width": 190,
+          "unit": "mm"
+        }
       },
       {
         "canonical_name": "trays_included",
-        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
-        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
+        "display_label": {
+          "en": "Trays Included",
+          "fr": "Plateaux Inclus"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 3,
+          "unit": "units"
+        }
       },
       {
         "canonical_name": "power_consumption",
-        "display_label": { "en": "Power Consumption", "fr": "Consommation électrique" },
+        "display_label": {
+          "en": "Power Consumption",
+          "fr": "Consommation électrique"
+        },
         "category": "Electrical",
         "type": "number",
-        "value": { "qty": 1800, "unit": "W" },
-        "raw": "Consommation: 180 W"
+        "value": {
+          "qty": 1800,
+          "unit": "W"
+        }
       },
       {
         "canonical_name": "water_tank_capacity",
-        "display_label": { "en": "Distilled Water Tank", "fr": "Réservoir d’eau distillée" },
+        "display_label": {
+          "en": "Distilled Water Tank",
+          "fr": "Réservoir d’eau distillée"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 4.6, "unit": "L" },
-        "raw": "Réservoir eau distillée : 4,6 L"
+        "value": {
+          "qty": 4.6,
+          "unit": "L"
+        }
       },
       {
         "canonical_name": "waste_tank_capacity",
-        "display_label": { "en": "Waste Water Tank", "fr": "Réservoir eaux usées" },
+        "display_label": {
+          "en": "Waste Water Tank",
+          "fr": "Réservoir eaux usées"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 5, "unit": "L" },
-        "raw": "Réservoir eaux usées : 5 L"
+        "value": {
+          "qty": 5,
+          "unit": "L"
+        }
       },
       {
         "canonical_name": "max_noise_level",
-        "display_label": { "en": "Maximum Noise Level", "fr": "Niveau Sonore Maximal" },
-        "category": "Performance", "type": "number", "value": { "qty": 50, "unit": "dB" }
+        "display_label": {
+          "en": "Maximum Noise Level",
+          "fr": "Niveau Sonore Maximal"
+        },
+        "category": "Performance",
+        "type": "number",
+        "value": {
+          "qty": 50,
+          "unit": "dB"
+        }
       },
       {
         "canonical_name": "net_weight",
-        "display_label": { "en": "Net Weight", "fr": "Poids Net" },
-        "category": "Physical", "type": "number", "value": { "qty": 54, "unit": "kg" }
+        "display_label": {
+          "en": "Net Weight",
+          "fr": "Poids Net"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 54,
+          "unit": "kg"
+        }
       },
       {
         "canonical_name": "gross_weight",
-        "display_label": { "en": "Gross Weight (Packaging)", "fr": "Poids Brut (Emballage)" },
-        "category": "Physical", "type": "number", "value": { "qty": 56, "unit": "kg" }
+        "display_label": {
+          "en": "Gross Weight (Packaging)",
+          "fr": "Poids Brut (Emballage)"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 56,
+          "unit": "kg"
+        }
       },
       {
         "canonical_name": "standby_mode",
@@ -1137,26 +1564,40 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Temperature maintenance",
-        "raw": "Mode Stand-by pour maintien en température"
+        "value": "Temperature maintenance"
       },
       {
         "canonical_name": "data_output_ports",
-        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "display_label": {
+          "en": "Data Output Ports",
+          "fr": "Ports de sortie de données"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["USB output (Optional)", "RS232 output"]
+        "value": [
+          "USB output (Optional)",
+          "RS232 output"
+        ]
       },
       {
         "canonical_name": "display_options",
-        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "display_label": {
+          "en": "Display Type Options",
+          "fr": "Options de type d'affichage"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["LCD (Default)", "LED (Optional)"]
+        "value": [
+          "LCD (Default)",
+          "LED (Optional)"
+        ]
       },
       {
         "canonical_name": "integrated_printer_availability",
-        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "display_label": {
+          "en": "Integrated Printer Option",
+          "fr": "Option Imprimante Intégrée"
+        },
         "category": "Interface",
         "type": "string",
         "value": "Available as a variant/upgrade (Standard on PRINTER models)",
@@ -1214,7 +1655,10 @@
     "attributes": [
       {
         "canonical_name": "water_purification_system",
-        "display_label": { "en": "Water Purification System", "fr": "Système de Purification d'Eau" },
+        "display_label": {
+          "en": "Water Purification System",
+          "fr": "Système de Purification d'Eau"
+        },
         "category": "Functional",
         "type": "string",
         "value": "Système Vertical de Purification par Osmose Inverse à 3 Étapes",
@@ -1222,8 +1666,15 @@
       },
       {
         "canonical_name": "device_class",
-        "display_label": { "en": "Medical Device Class", "fr": "Classe Dispositif Médical" },
-        "category": "Regulatory", "type": "string", "value": { "text": "IIb" },
+        "display_label": {
+          "en": "Medical Device Class",
+          "fr": "Classe Dispositif Médical"
+        },
+        "category": "Regulatory",
+        "type": "string",
+        "value": {
+          "text": "IIb"
+        },
         "highlighted": true
       },
       {
@@ -1234,8 +1685,7 @@
         },
         "category": "Functional",
         "type": "string",
-        "value": "Fractionated vacuum (3 phases)",
-        "raw": "Système de vide fractionné (3 phases)"
+        "value": "Fractionated vacuum (3 phases)"
       },
       {
         "canonical_name": "chamber_capacity",
@@ -1249,32 +1699,51 @@
           "qty": 24,
           "unit": "L"
         },
-        "highlighted": true,
-        "raw": "Capacité de la chambre: 24 litres"
+        "highlighted": true
       },
       {
         "canonical_name": "temperature_sterilization",
-        "display_label": { "en": "Sterilization temperature", "fr": "Température de stérilisation" },
+        "display_label": {
+          "en": "Sterilization temperature",
+          "fr": "Température de stérilisation"
+        },
         "category": "Thermal",
         "type": "string",
         "value": "121°C - 134°C"
       },
       {
         "canonical_name": "temperature_sterilization_max",
-        "display_label": { "en": "Maximum sterilization temperature", "fr": "Température max stérilisation" },
+        "display_label": {
+          "en": "Maximum sterilization temperature",
+          "fr": "Température max stérilisation"
+        },
         "category": "Thermal",
         "type": "string",
         "value": "138°C"
       },
       {
         "canonical_name": "pressure_cycle_121c",
-        "display_label": { "en": "Pressure Cycle 121°C (STP)", "fr": "Pression Cycle 121°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "1.0 - 1.3 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 121°C (STP)",
+          "fr": "Pression Cycle 121°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "1.0 - 1.3 bar"
+        }
       },
       {
         "canonical_name": "pressure_cycle_134c",
-        "display_label": { "en": "Pressure Cycle 134°C (STP)", "fr": "Pression Cycle 134°C (STP)" },
-        "category": "Performance", "type": "string", "value": { "text": "2.0 - 2.4 bar" }
+        "display_label": {
+          "en": "Pressure Cycle 134°C (STP)",
+          "fr": "Pression Cycle 134°C (STP)"
+        },
+        "category": "Performance",
+        "type": "string",
+        "value": {
+          "text": "2.0 - 2.4 bar"
+        }
       },
       {
         "canonical_name": "integrated_tests",
@@ -1284,17 +1753,22 @@
         },
         "category": "Functional",
         "type": "enum",
-        "value": ["Helix", "Bowie & Dick", "Vacuum test"],
-        "raw": "Tests intégrés : Helix, Bowie & Dick, Test de vide"
+        "value": [
+          "Helix",
+          "Bowie & Dick",
+          "Vacuum test"
+        ]
       },
       {
         "canonical_name": "max_pressure",
-        "display_label": { "en": "Max pressure", "fr": "Pression maximum" },
+        "display_label": {
+          "en": "Max pressure",
+          "fr": "Pression maximum"
+        },
         "category": "Pressure",
         "type": "string",
         "value": "2,5 bar"
       },
-
       {
         "canonical_name": "external_dimensions",
         "display_label": {
@@ -1308,8 +1782,7 @@
           "height": 445,
           "depth": 600,
           "unit": "mm"
-        },
-        "raw": "Dimensions externes: 462 x 445 x 600 mm (L x H x P)"
+        }
       },
       {
         "canonical_name": "chamber_dimensions",
@@ -1324,8 +1797,7 @@
           "depth": 460,
           "unit": "mm"
         },
-        "highlighted": true,
-        "raw": "Dimensions chambre: Ø 255 x 460 mm"
+        "highlighted": true
       },
       {
         "canonical_name": "tray_dimensions",
@@ -1340,13 +1812,20 @@
           "width": 190,
           "unit": "mm"
         },
-        "highlighted": true,
-        "raw": "Dimensions plateau: 385 x 190 mm"
+        "highlighted": true
       },
       {
         "canonical_name": "trays_included",
-        "display_label": { "en": "Trays Included", "fr": "Plateaux Inclus" },
-        "category": "Physical", "type": "number", "value": { "qty": 3, "unit": "units" }
+        "display_label": {
+          "en": "Trays Included",
+          "fr": "Plateaux Inclus"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 3,
+          "unit": "units"
+        }
       },
       {
         "canonical_name": "distilled_water_tank_volume",
@@ -1386,66 +1865,120 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "230 V – 50/60 Hz",
-        "raw": "Alimentation : 230 V – 50/60 Hz"
+        "value": "230 V – 50/60 Hz"
       },
       {
         "canonical_name": "material",
-        "display_label": { "en": "Material", "fr": "Matériau" },
+        "display_label": {
+          "en": "Material",
+          "fr": "Matériau"
+        },
         "category": "Physical",
         "type": "string",
         "value": "AISI 316 Stainless Steel"
       },
-
       {
         "canonical_name": "bacteriological_filter_capacity",
-        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
-        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+        "display_label": {
+          "en": "Bacteriological Filtering Capacity",
+          "fr": "Capacité de Filtration Bactériologique"
+        },
+        "category": "Technical",
+        "type": "string",
+        "value": {
+          "text": "0.3 µm"
+        }
       },
       {
         "canonical_name": "bacteriological_filter_diameter",
-        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
-        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+        "display_label": {
+          "en": "Bacteriological Filter Diameter",
+          "fr": "Diamètre du Filtre Bactériologique"
+        },
+        "category": "Technical",
+        "type": "number",
+        "value": {
+          "qty": 56,
+          "unit": "mm"
+        }
       },
-
       {
         "canonical_name": "power_consumption",
-        "display_label": { "en": "Power Consumption", "fr": "Consommation électrique" },
+        "display_label": {
+          "en": "Power Consumption",
+          "fr": "Consommation électrique"
+        },
         "category": "Electrical",
         "type": "number",
-        "value": { "qty": 1800, "unit": "W" },
-        "raw": "Consommation: 1800 W"
+        "value": {
+          "qty": 1800,
+          "unit": "W"
+        }
       },
       {
         "canonical_name": "water_tank_capacity",
-        "display_label": { "en": "Distilled Water Tank", "fr": "Réservoir d’eau distillée" },
+        "display_label": {
+          "en": "Distilled Water Tank",
+          "fr": "Réservoir d’eau distillée"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 4.6, "unit": "L" },
-        "raw": "Réservoir eau distillée : 4,6 L"
+        "value": {
+          "qty": 4.6,
+          "unit": "L"
+        }
       },
       {
         "canonical_name": "waste_tank_capacity",
-        "display_label": { "en": "Waste Water Tank", "fr": "Réservoir eaux usées" },
+        "display_label": {
+          "en": "Waste Water Tank",
+          "fr": "Réservoir eaux usées"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 5, "unit": "L" },
-        "raw": "Réservoir eaux usées : 5 L"
+        "value": {
+          "qty": 5,
+          "unit": "L"
+        }
       },
       {
         "canonical_name": "max_noise_level",
-        "display_label": { "en": "Maximum Noise Level", "fr": "Niveau Sonore Maximal" },
-        "category": "Performance", "type": "number", "value": { "qty": 50, "unit": "dB" }
+        "display_label": {
+          "en": "Maximum Noise Level",
+          "fr": "Niveau Sonore Maximal"
+        },
+        "category": "Performance",
+        "type": "number",
+        "value": {
+          "qty": 50,
+          "unit": "dB"
+        }
       },
       {
         "canonical_name": "net_weight",
-        "display_label": { "en": "Net Weight", "fr": "Poids Net" },
-        "category": "Physical", "type": "number", "value": { "qty": 56, "unit": "kg" }
+        "display_label": {
+          "en": "Net Weight",
+          "fr": "Poids Net"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 56,
+          "unit": "kg"
+        }
       },
       {
         "canonical_name": "gross_weight",
-        "display_label": { "en": "Gross Weight (Packaging)", "fr": "Poids Brut (Emballage)" },
-        "category": "Physical", "type": "number", "value": { "qty": 59, "unit": "kg" }
+        "display_label": {
+          "en": "Gross Weight (Packaging)",
+          "fr": "Poids Brut (Emballage)"
+        },
+        "category": "Physical",
+        "type": "number",
+        "value": {
+          "qty": 59,
+          "unit": "kg"
+        }
       },
       {
         "canonical_name": "standby_mode",
@@ -1455,26 +1988,40 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Temperature maintenance",
-        "raw": "Mode Stand-by pour maintien en température"
+        "value": "Temperature maintenance"
       },
       {
         "canonical_name": "data_output_ports",
-        "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
+        "display_label": {
+          "en": "Data Output Ports",
+          "fr": "Ports de sortie de données"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["USB output (Optional)", "RS232 output"]
+        "value": [
+          "USB output (Optional)",
+          "RS232 output"
+        ]
       },
       {
         "canonical_name": "display_options",
-        "display_label": { "en": "Display Type Options", "fr": "Options de type d'affichage" },
+        "display_label": {
+          "en": "Display Type Options",
+          "fr": "Options de type d'affichage"
+        },
         "category": "Interface",
         "type": "enum",
-        "value": ["LCD (Default)", "LED (Optional)"]
+        "value": [
+          "LCD (Default)",
+          "LED (Optional)"
+        ]
       },
       {
         "canonical_name": "integrated_printer_availability",
-        "display_label": { "en": "Integrated Printer Option", "fr": "Option Imprimante Intégrée" },
+        "display_label": {
+          "en": "Integrated Printer Option",
+          "fr": "Option Imprimante Intégrée"
+        },
         "category": "Interface",
         "type": "string",
         "value": "Available as a variant/upgrade (Standard on PRINTER models)",
@@ -1531,31 +2078,49 @@
     "attributes": [
       {
         "canonical_name": "chamber_capacity_single_door",
-        "display_label": { "en": "Chamber Capacity (Single Door)", "fr": "Capacité de la Chambre (Porte Simple)" },
+        "display_label": {
+          "en": "Chamber Capacity (Single Door)",
+          "fr": "Capacité de la Chambre (Porte Simple)"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 109, "unit": "L" },
+        "value": {
+          "qty": 109,
+          "unit": "L"
+        },
         "highlighted": true
       },
       {
         "canonical_name": "chamber_capacity_double_door",
-        "display_label": { "en": "Chamber Capacity (Double Door)", "fr": "Capacité de la Chambre (Double Porte)" },
+        "display_label": {
+          "en": "Chamber Capacity (Double Door)",
+          "fr": "Capacité de la Chambre (Double Porte)"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 103, "unit": "L" },
+        "value": {
+          "qty": 103,
+          "unit": "L"
+        },
         "note": "Capacity is 6 liters less for the double door version due to structural modifications.",
         "highlighted": true
       },
       {
         "canonical_name": "door_type",
-        "display_label": { "en": "Door Type", "fr": "Type de Porte" },
+        "display_label": {
+          "en": "Door Type",
+          "fr": "Type de Porte"
+        },
         "category": "Functional",
         "type": "string",
         "value": "Automatic Vertical Sliding Door"
       },
       {
         "canonical_name": "material_chamber",
-        "display_label": { "en": "Chamber/Jacket Material", "fr": "Matériau Chambre/Chemise" },
+        "display_label": {
+          "en": "Chamber/Jacket Material",
+          "fr": "Matériau Chambre/Chemise"
+        },
         "category": "Physical",
         "type": "string",
         "value": "AISI 316L Stainless Steel (Hand polished chamber)",
@@ -1563,22 +2128,30 @@
       },
       {
         "canonical_name": "material_housing",
-        "display_label": { "en": "Housing Material", "fr": "Matériau Habillage" },
+        "display_label": {
+          "en": "Housing Material",
+          "fr": "Matériau Habillage"
+        },
         "category": "Physical",
         "type": "string",
         "value": "AISI 304 Stainless Steel"
       },
       {
         "canonical_name": "external_dimensions",
-        "display_label": { "en": "External Dimensions (W x H x D)", "fr": "Dimensions Externes (L x H x P)" },
+        "display_label": {
+          "en": "External Dimensions (W x H x D)",
+          "fr": "Dimensions Externes (L x H x P)"
+        },
         "category": "Physical",
         "type": "string",
-        "value": "800 mm x 1615 mm x 900 mm",
-        "raw": "Width: 800 mm, Height: 1615 mm, Depth: 900 mm"
+        "value": "800 mm x 1615 mm x 900 mm"
       },
       {
         "canonical_name": "control_system",
-        "display_label": { "en": "Control System", "fr": "Système de Contrôle" },
+        "display_label": {
+          "en": "Control System",
+          "fr": "Système de Contrôle"
+        },
         "category": "Control",
         "type": "string",
         "value": "7” LCD Color Touch Screen",
@@ -1586,22 +2159,30 @@
       },
       {
         "canonical_name": "programs",
-        "display_label": { "en": "Programs", "fr": "Programmes" },
+        "display_label": {
+          "en": "Programs",
+          "fr": "Programmes"
+        },
         "category": "Control",
         "type": "string",
-        "value": "19 Sterilization Programs & 2 Test Programs",
-        "raw": "19 Sterilization programs, 2 Test programs (Vacuum Test, Bowie & Dick Test)"
+        "value": "19 Sterilization Programs & 2 Test Programs"
       },
       {
         "canonical_name": "steam_source",
-        "display_label": { "en": "Steam Source", "fr": "Source de Vapeur" },
+        "display_label": {
+          "en": "Steam Source",
+          "fr": "Source de Vapeur"
+        },
         "category": "Functional",
         "type": "string",
         "value": "Integrated Steam Generator or External Steam Source Capability"
       },
       {
         "canonical_name": "sterilization_basket_size",
-        "display_label": { "en": "Sterilization Basket Size", "fr": "Taille du Panier de Stérilisation" },
+        "display_label": {
+          "en": "Sterilization Basket Size",
+          "fr": "Taille du Panier de Stérilisation"
+        },
         "category": "Physical",
         "type": "string",
         "value": "585 x 365 x 170 mm",
@@ -1609,7 +2190,10 @@
       },
       {
         "canonical_name": "cooling_system",
-        "display_label": { "en": "Cooling System Standard", "fr": "Système de Refroidissement Standard" },
+        "display_label": {
+          "en": "Cooling System Standard",
+          "fr": "Système de Refroidissement Standard"
+        },
         "category": "Functional",
         "type": "string",
         "value": "Cooling water saving system",
@@ -1659,31 +2243,49 @@
     "attributes": [
       {
         "canonical_name": "chamber_capacity_single_door",
-        "display_label": { "en": "Chamber Capacity (Single Door)", "fr": "Capacité de la Chambre (Porte Simple)" },
+        "display_label": {
+          "en": "Chamber Capacity (Single Door)",
+          "fr": "Capacité de la Chambre (Porte Simple)"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 156, "unit": "L" },
+        "value": {
+          "qty": 156,
+          "unit": "L"
+        },
         "highlighted": true
       },
       {
         "canonical_name": "chamber_capacity_double_door",
-        "display_label": { "en": "Chamber Capacity (Double Door)", "fr": "Capacité de la Chambre (Double Porte)" },
+        "display_label": {
+          "en": "Chamber Capacity (Double Door)",
+          "fr": "Capacité de la Chambre (Double Porte)"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 150, "unit": "L" },
+        "value": {
+          "qty": 150,
+          "unit": "L"
+        },
         "note": "Capacity is 6 liters less for the double door version due to structural modifications.",
         "highlighted": true
       },
       {
         "canonical_name": "door_type",
-        "display_label": { "en": "Door Type", "fr": "Type de Porte" },
+        "display_label": {
+          "en": "Door Type",
+          "fr": "Type de Porte"
+        },
         "category": "Functional",
         "type": "string",
         "value": "Automatic Vertical Sliding Door"
       },
       {
         "canonical_name": "material_chamber",
-        "display_label": { "en": "Chamber/Jacket Material", "fr": "Matériau Chambre/Chemise" },
+        "display_label": {
+          "en": "Chamber/Jacket Material",
+          "fr": "Matériau Chambre/Chemise"
+        },
         "category": "Physical",
         "type": "string",
         "value": "AISI 316L Stainless Steel (Hand polished chamber)",
@@ -1691,22 +2293,30 @@
       },
       {
         "canonical_name": "material_housing",
-        "display_label": { "en": "Housing Material", "fr": "Matériau Habillage" },
+        "display_label": {
+          "en": "Housing Material",
+          "fr": "Matériau Habillage"
+        },
         "category": "Physical",
         "type": "string",
         "value": "AISI 304 Stainless Steel"
       },
       {
         "canonical_name": "external_dimensions",
-        "display_label": { "en": "External Dimensions (W x H x D)", "fr": "Dimensions Externes (L x H x P)" },
+        "display_label": {
+          "en": "External Dimensions (W x H x D)",
+          "fr": "Dimensions Externes (L x H x P)"
+        },
         "category": "Physical",
         "type": "string",
-        "value": "800 mm x 1615 mm x 1200 mm",
-        "raw": "Width: 800 mm, Height: 1615 mm, Depth: 1200 mm"
+        "value": "800 mm x 1615 mm x 1200 mm"
       },
       {
         "canonical_name": "control_system",
-        "display_label": { "en": "Control System", "fr": "Système de Contrôle" },
+        "display_label": {
+          "en": "Control System",
+          "fr": "Système de Contrôle"
+        },
         "category": "Control",
         "type": "string",
         "value": "7” LCD Color Touch Screen",
@@ -1714,22 +2324,30 @@
       },
       {
         "canonical_name": "programs",
-        "display_label": { "en": "Programs", "fr": "Programmes" },
+        "display_label": {
+          "en": "Programs",
+          "fr": "Programmes"
+        },
         "category": "Control",
         "type": "string",
-        "value": "19 Sterilization Programs & 2 Test Programs",
-        "raw": "19 Sterilization programs, 2 Test programs (Vacuum Test, Bowie & Dick Test)"
+        "value": "19 Sterilization Programs & 2 Test Programs"
       },
       {
         "canonical_name": "steam_source",
-        "display_label": { "en": "Steam Source", "fr": "Source de Vapeur" },
+        "display_label": {
+          "en": "Steam Source",
+          "fr": "Source de Vapeur"
+        },
         "category": "Functional",
         "type": "string",
         "value": "Integrated Steam Generator or External Steam Source Capability"
       },
       {
         "canonical_name": "sterilization_basket_size",
-        "display_label": { "en": "Sterilization Basket Size", "fr": "Taille du Panier de Stérilisation" },
+        "display_label": {
+          "en": "Sterilization Basket Size",
+          "fr": "Taille du Panier de Stérilisation"
+        },
         "category": "Physical",
         "type": "string",
         "value": "436 x 365 x 170 mm",
@@ -1737,7 +2355,10 @@
       },
       {
         "canonical_name": "cooling_system",
-        "display_label": { "en": "Cooling System Standard", "fr": "Système de Refroidissement Standard" },
+        "display_label": {
+          "en": "Cooling System Standard",
+          "fr": "Système de Refroidissement Standard"
+        },
         "category": "Functional",
         "type": "string",
         "value": "Cooling water saving system",
@@ -1786,7 +2407,10 @@
     "attributes": [
       {
         "canonical_name": "available_variants",
-        "display_label": { "en": "Available Variants", "fr": "Variantes Disponibles" },
+        "display_label": {
+          "en": "Available Variants",
+          "fr": "Variantes Disponibles"
+        },
         "category": "Physical",
         "type": "string",
         "value": "AS 666, AS 669, AS 6612, AS 6615, AS 6618",
@@ -1820,8 +2444,11 @@
         },
         "category": "Physical",
         "type": "enum",
-        "value": ["Single door", "Double door", "Automatic vertical sliding"],
-        "raw": "Versions à porte simple ou double, portes coulissantes verticales automatiques"
+        "value": [
+          "Single door",
+          "Double door",
+          "Automatic vertical sliding"
+        ]
       },
       {
         "canonical_name": "sterilisation_programs_count",
@@ -1847,95 +2474,170 @@
         },
         "category": "Physical",
         "type": "enum",
-        "value": ["Stainless steel AISI 316L"],
-        "raw": "Chambre et portes en acier inoxydable AISI 316L"
+        "value": [
+          "Stainless steel AISI 316L"
+        ]
       },
       {
         "canonical_name": "overall_width",
-        "display_label": { "en": "Overall Width (All Models)", "fr": "Largeur Totale (Tous Modèles)" },
+        "display_label": {
+          "en": "Overall Width (All Models)",
+          "fr": "Largeur Totale (Tous Modèles)"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 1170, "unit": "mm" },
-        "raw": "1170 mm"
+        "value": {
+          "qty": 1170,
+          "unit": "mm"
+        }
       },
       {
         "canonical_name": "overall_height",
-        "display_label": { "en": "Overall Height (All Models)", "fr": "Hauteur Totale (Tous Modèles)" },
+        "display_label": {
+          "en": "Overall Height (All Models)",
+          "fr": "Hauteur Totale (Tous Modèles)"
+        },
         "category": "Physical",
         "type": "number",
-        "value": { "qty": 1900, "unit": "mm" },
-        "raw": "1900 mm"
+        "value": {
+          "qty": 1900,
+          "unit": "mm"
+        }
       },
       {
         "canonical_name": "overall_depth_double_door",
-        "display_label": { "en": "Overall Depth (Double Door Range)", "fr": "Profondeur Totale (Gamme Double Porte)" },
+        "display_label": {
+          "en": "Overall Depth (Double Door Range)",
+          "fr": "Profondeur Totale (Gamme Double Porte)"
+        },
         "category": "Physical",
         "type": "string",
         "value": "970 mm, 1225 mm, 1525 mm, 1835 mm, 2125 mm"
       },
       {
         "canonical_name": "overall_depth_single_door",
-        "display_label": { "en": "Overall Depth (Single Door Range)", "fr": "Profondeur Totale (Gamme Simple Porte)" },
+        "display_label": {
+          "en": "Overall Depth (Single Door Range)",
+          "fr": "Profondeur Totale (Gamme Simple Porte)"
+        },
         "category": "Physical",
         "type": "string",
         "value": "1060 mm, 1315 mm, 1615 mm (for models 4-8 STU)"
       },
       {
         "canonical_name": "control_panel_type",
-        "display_label": { "en": "Control Panel Type", "fr": "Type de Panneau de Contrôle" },
-        "category": "Interface", "type": "string", "value": "9.7” LCD Color Touch Screen",
-        "raw": "9,7” LCD color touch screen control panel"
+        "display_label": {
+          "en": "Control Panel Type",
+          "fr": "Type de Panneau de Contrôle"
+        },
+        "category": "Interface",
+        "type": "string",
+        "value": "9.7” LCD Color Touch Screen"
       },
       {
         "canonical_name": "steam_source",
-        "display_label": { "en": "Steam Source", "fr": "Source de Vapeur" },
-        "category": "Functional", "type": "enum", "value": ["Integrated steam generator", "External steam source"],
-        "raw": "integrated steam generator or the means to use steam from an external source"
+        "display_label": {
+          "en": "Steam Source",
+          "fr": "Source de Vapeur"
+        },
+        "category": "Functional",
+        "type": "enum",
+        "value": [
+          "Integrated steam generator",
+          "External steam source"
+        ]
       },
       {
         "canonical_name": "door_type",
-        "display_label": { "en": "Door Type", "fr": "Type de Porte" },
-        "category": "Physical", "type": "enum", "value": ["Automatic vertical sliding door", "Single door", "Double door"],
-        "raw": "automatic vertical sliding door, single and double door versions"
+        "display_label": {
+          "en": "Door Type",
+          "fr": "Type de Porte"
+        },
+        "category": "Physical",
+        "type": "enum",
+        "value": [
+          "Automatic vertical sliding door",
+          "Single door",
+          "Double door"
+        ]
       },
       {
         "canonical_name": "sterilization_programs",
-        "display_label": { "en": "Sterilization Programs", "fr": "Programmes de Stérilisation" },
-        "category": "Functional", "type": "number", "value": { "qty": 19, "unit": "programs" }
+        "display_label": {
+          "en": "Sterilization Programs",
+          "fr": "Programmes de Stérilisation"
+        },
+        "category": "Functional",
+        "type": "number",
+        "value": {
+          "qty": 19,
+          "unit": "programs"
+        }
       },
       {
         "canonical_name": "test_programs",
-        "display_label": { "en": "Test Programs", "fr": "Programmes de Test" },
-        "category": "Functional", "type": "enum", "value": ["Vacuum test", "Bowie & Dick test"],
-        "raw": "2 test programs (vacuum test, Bowie & Dick test)"
+        "display_label": {
+          "en": "Test Programs",
+          "fr": "Programmes de Test"
+        },
+        "category": "Functional",
+        "type": "enum",
+        "value": [
+          "Vacuum test",
+          "Bowie & Dick test"
+        ]
       },
       {
         "canonical_name": "chamber_material",
-        "display_label": { "en": "Sterilization Chamber Material", "fr": "Matériau de la Chambre de Stérilisation" },
-        "category": "Physical", "type": "string", "value": "AISI 316L stainless steel (hand polished)",
-        "raw": "hand polished sterilization chamber, the chamber, heating jacket and doors are made of AISI 316L stainless steel"
+        "display_label": {
+          "en": "Sterilization Chamber Material",
+          "fr": "Matériau de la Chambre de Stérilisation"
+        },
+        "category": "Physical",
+        "type": "string",
+        "value": "AISI 316L stainless steel (hand polished)"
       },
       {
         "canonical_name": "housing_material",
-        "display_label": { "en": "Housing Material", "fr": "Matériau du Boîtier" },
-        "category": "Physical", "type": "string", "value": "AISI 304 stainless steel",
-        "raw": "the housing is made of AISI 304 stainless steel"
+        "display_label": {
+          "en": "Housing Material",
+          "fr": "Matériau du Boîtier"
+        },
+        "category": "Physical",
+        "type": "string",
+        "value": "AISI 304 stainless steel"
       },
       {
         "canonical_name": "data_logging",
-        "display_label": { "en": "Data Logging", "fr": "Enregistrement des Données" },
-        "category": "Interface", "type": "enum", "value": ["Built-in dot matrix printer", "Validation ports"],
-        "raw": "built-in dot matrix printer, validation ports"
+        "display_label": {
+          "en": "Data Logging",
+          "fr": "Enregistrement des Données"
+        },
+        "category": "Interface",
+        "type": "enum",
+        "value": [
+          "Built-in dot matrix printer",
+          "Validation ports"
+        ]
       },
       {
         "canonical_name": "security_levels",
-        "display_label": { "en": "Access Security Levels", "fr": "Niveaux de Sécurité d'Accès" },
-        "category": "Interface", "type": "number", "value": { "qty": 4, "unit": "levels" },
-        "raw": "4 access levels with password protection"
+        "display_label": {
+          "en": "Access Security Levels",
+          "fr": "Niveaux de Sécurité d'Accès"
+        },
+        "category": "Interface",
+        "type": "number",
+        "value": {
+          "qty": 4,
+          "unit": "levels"
+        }
       }
     ],
     "compliance": {
-      "certifications": ["CE"],
+      "certifications": [
+        "CE"
+      ],
       "standards": []
     }
   },
@@ -1985,8 +2687,7 @@
         "value": {
           "qty": 100,
           "unit": "L"
-        },
-        "raw": "Capacité: 100 Litre / 1 STU"
+        }
       },
       {
         "canonical_name": "porte",
@@ -1996,8 +2697,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "Ouverture manuelle",
-        "raw": "Porte à ouverture manuelle"
+        "value": "Ouverture manuelle"
       },
       {
         "canonical_name": "generateur_vapeur",
@@ -2007,8 +2707,7 @@
         },
         "category": "Electrical",
         "type": "boolean",
-        "value": true,
-        "raw": "Générateur de vapeur intégré"
+        "value": true
       },
       {
         "canonical_name": "materiaux_chambre",
@@ -2018,8 +2717,7 @@
         },
         "category": "Materials",
         "type": "string",
-        "value": "Acier inoxydable AISI 316L",
-        "raw": "Chambre et porte en acier inoxydable AISI 316L"
+        "value": "Acier inoxydable AISI 316L"
       },
       {
         "canonical_name": "ecran",
@@ -2029,8 +2727,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "LCD couleur 7\"",
-        "raw": "Écran tactile couleur LCD 7”"
+        "value": "LCD couleur 7\""
       },
       {
         "canonical_name": "programmes",
@@ -2040,8 +2737,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "15 programmes + 2 tests (vide, Bowie & Dick)",
-        "raw": "15 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)"
+        "value": "15 programmes + 2 tests (vide, Bowie & Dick)"
       },
       {
         "canonical_name": "station_eau_compresseur",
@@ -2051,8 +2747,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Armoire mobile en acier inox pour station d’eau et compresseur (option)"
+        "value": true
       },
       {
         "canonical_name": "imprimante",
@@ -2062,8 +2757,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Imprimante intégrée"
+        "value": true
       },
       {
         "canonical_name": "controle_acces",
@@ -2073,8 +2767,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Mot de passe",
-        "raw": "Contrôle d'accès par mot de passe"
+        "value": "Mot de passe"
       }
     ],
     "compliance": {
@@ -2126,9 +2819,6 @@
         "value": {
           "qty": 160000,
           "unit": "lux"
-        },
-        "raw": {
-          "fr": "Intensité lumineuse: jusqu’à 160 000 lux"
         }
       },
       {
@@ -2143,9 +2833,6 @@
           "min": 3800,
           "max": 4800,
           "unit": "K"
-        },
-        "raw": {
-          "fr": "Température de couleur: 3 800 – 4 800 K (réglable)"
         }
       },
       {
@@ -2156,8 +2843,7 @@
         },
         "category": "Lighting",
         "type": "string",
-        "value": "≥ 96 / R9 ≥ 96",
-        "raw": "CRI ≥ 96 / R9 ≥ 96"
+        "value": "≥ 96 / R9 ≥ 96"
       },
       {
         "canonical_name": "diametre_champ",
@@ -2170,8 +2856,7 @@
         "value": {
           "qty": 210,
           "unit": "mm"
-        },
-        "raw": "Diamètre champ lumineux (d10): 200 mm ± 60 mm"
+        }
       },
       {
         "canonical_name": "profondeur_eclairage",
@@ -2184,8 +2869,7 @@
         "value": {
           "qty": 1200,
           "unit": "mm"
-        },
-        "raw": "Profondeur d’éclairage: 1 200 mm"
+        }
       },
       {
         "canonical_name": "nombre_led",
@@ -2195,10 +2879,7 @@
         },
         "category": "Lighting",
         "type": "number",
-        "value": 70,
-        "raw": {
-          "fr": "Nombre de LED: 70"
-        }
+        "value": 70
       },
       {
         "canonical_name": "duree_vie",
@@ -2211,9 +2892,6 @@
         "value": {
           "qty": 60000,
           "unit": "h"
-        },
-        "raw": {
-          "fr": "Durée de vie: 60 000 h"
         }
       },
       {
@@ -2227,9 +2905,6 @@
         "value": {
           "qty": 55,
           "unit": "W"
-        },
-        "raw": {
-          "fr": "Consommation: 80 W"
         }
       },
       {
@@ -2240,10 +2915,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Poignée stérile, mur tactile, bras",
-        "raw": {
-          "fr": "Contrôle: poignée stérile, mur tactile, bras"
-        }
+        "value": "Poignée stérile, mur tactile, bras"
       },
       {
         "canonical_name": "options",
@@ -2253,10 +2925,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Caméra intégrée, écran mural, double coupole",
-        "raw": {
-          "fr": "Options: caméra intégrée, écran mural, double coupole"
-        }
+        "value": "Caméra intégrée, écran mural, double coupole"
       }
     ],
     "compliance": {
@@ -2308,9 +2977,6 @@
         "value": {
           "qty": 160000,
           "unit": "lux"
-        },
-        "raw": {
-          "fr": "Intensité lumineuse: jusqu’à 160 000 lux"
         }
       },
       {
@@ -2325,9 +2991,6 @@
           "min": 3800,
           "max": 4800,
           "unit": "K"
-        },
-        "raw": {
-          "fr": "Température de couleur: 3 800 – 4 800 K (réglable)"
         }
       },
       {
@@ -2338,8 +3001,7 @@
         },
         "category": "Lighting",
         "type": "string",
-        "value": "≥ 96 / R9 ≥ 96",
-        "raw": "CRI ≥ 96 / R9 ≥ 96"
+        "value": "≥ 96 / R9 ≥ 96"
       },
       {
         "canonical_name": "diametre_champ",
@@ -2353,8 +3015,7 @@
           "qty": 200,
           "tolerance": 60,
           "unit": "mm"
-        },
-        "raw": "Diamètre champ lumineux (d10): 200 mm ± 60 mm"
+        }
       },
       {
         "canonical_name": "profondeur_eclairage",
@@ -2367,8 +3028,7 @@
         "value": {
           "qty": 1200,
           "unit": "mm"
-        },
-        "raw": "Profondeur d’éclairage: 1 200 mm"
+        }
       },
       {
         "canonical_name": "nombre_led",
@@ -2378,10 +3038,7 @@
         },
         "category": "Lighting",
         "type": "number",
-        "value": 70,
-        "raw": {
-          "fr": "Nombre de LED: 70"
-        }
+        "value": 70
       },
       {
         "canonical_name": "duree_vie",
@@ -2394,9 +3051,6 @@
         "value": {
           "qty": 60000,
           "unit": "h"
-        },
-        "raw": {
-          "fr": "Durée de vie: 60 000 h"
         }
       },
       {
@@ -2410,9 +3064,6 @@
         "value": {
           "qty": 80,
           "unit": "W"
-        },
-        "raw": {
-          "fr": "Consommation: 80 W"
         }
       },
       {
@@ -2423,10 +3074,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Poignée stérile, mur tactile, bras",
-        "raw": {
-          "fr": "Commandes: poignée stérile, mur tactile, bras"
-        }
+        "value": "Poignée stérile, mur tactile, bras"
       },
       {
         "canonical_name": "options",
@@ -2436,10 +3084,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Double coupole, caméra, écran mural",
-        "raw": {
-          "fr": "Options: double coupole, caméra, écran mural"
-        }
+        "value": "Double coupole, caméra, écran mural"
       }
     ],
     "compliance": {
@@ -2491,9 +3136,6 @@
         "value": {
           "qty": 130000,
           "unit": "lux"
-        },
-        "raw": {
-          "fr": "Intensité lumineuse: jusqu’à 130 000 lux"
         }
       },
       {
@@ -2508,9 +3150,6 @@
           "min": 3800,
           "max": 4800,
           "unit": "K"
-        },
-        "raw": {
-          "fr": "Température de couleur: 3 800 – 4 800 K (réglable)"
         }
       },
       {
@@ -2521,8 +3160,7 @@
         },
         "category": "Lighting",
         "type": "string",
-        "value": "≥ 96 / R9 ≥ 96",
-        "raw": "CRI ≥ 96 / R9 ≥ 96"
+        "value": "≥ 96 / R9 ≥ 96"
       },
       {
         "canonical_name": "diametre_champ",
@@ -2536,8 +3174,7 @@
           "qty": 200,
           "tolerance": 60,
           "unit": "mm"
-        },
-        "raw": "Diamètre champ lumineux (d10): 200 mm ± 60 mm"
+        }
       },
       {
         "canonical_name": "profondeur_eclairage",
@@ -2550,8 +3187,7 @@
         "value": {
           "qty": 1200,
           "unit": "mm"
-        },
-        "raw": "Profondeur d’éclairage: 1 200 mm"
+        }
       },
       {
         "canonical_name": "nombre_led",
@@ -2561,10 +3197,7 @@
         },
         "category": "Lighting",
         "type": "number",
-        "value": 66,
-        "raw": {
-          "fr": "Nombre de LED: 66"
-        }
+        "value": 66
       },
       {
         "canonical_name": "duree_vie",
@@ -2577,9 +3210,6 @@
         "value": {
           "qty": 60000,
           "unit": "h"
-        },
-        "raw": {
-          "fr": "Durée de vie: 60 000 h"
         }
       },
       {
@@ -2593,9 +3223,6 @@
         "value": {
           "qty": 70,
           "unit": "W"
-        },
-        "raw": {
-          "fr": "Consommation: 70 W"
         }
       },
       {
@@ -2606,10 +3233,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Poignée stérile, panneau mural, bras",
-        "raw": {
-          "fr": "Contrôle: poignée stérile, panneau mural, bras"
-        }
+        "value": "Poignée stérile, panneau mural, bras"
       },
       {
         "canonical_name": "options",
@@ -2619,10 +3243,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Double coupole, caméra, écran",
-        "raw": {
-          "fr": "Options: double coupole, caméra, écran"
-        }
+        "value": "Double coupole, caméra, écran"
       }
     ],
     "compliance": {
@@ -2676,9 +3297,6 @@
         "value": {
           "qty": 8.4,
           "unit": "pouces"
-        },
-        "raw": {
-          "fr": "Taille de l'écran: 8,4 pouces TFT couleur"
         }
       },
       {
@@ -2689,10 +3307,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "ECG, SpO₂, NIBP, TEMP, RESP, PR",
-        "raw": {
-          "fr": "Paramètres surveillés: ECG, SpO₂, NIBP, TEMP, RESP, PR"
-        }
+        "value": "ECG, SpO₂, NIBP, TEMP, RESP, PR"
       },
       {
         "canonical_name": "alarmes",
@@ -2702,10 +3317,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Sonores et visuelles réglables",
-        "raw": {
-          "fr": "Alarmes: Sonores et visuelles réglables"
-        }
+        "value": "Sonores et visuelles réglables"
       },
       {
         "canonical_name": "autonomie_batterie",
@@ -2718,8 +3330,7 @@
         "value": {
           "qty": 2,
           "unit": "h"
-        },
-        "raw": "Autonomie sur batterie: Environ 2 heures"
+        }
       },
       {
         "canonical_name": "poids",
@@ -2732,9 +3343,6 @@
         "value": {
           "qty": 2.5,
           "unit": "kg"
-        },
-        "raw": {
-          "fr": "Poids: 2,5 kg"
         }
       },
       {
@@ -2745,8 +3353,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "USB, port LAN",
-        "raw": "Interface: USB, port LAN"
+        "value": "USB, port LAN"
       },
       {
         "canonical_name": "affichage_courbes",
@@ -2756,10 +3363,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Jusqu’à 4 tracés simultanés",
-        "raw": {
-          "fr": "Affichage des courbes: Jusqu’à 4 tracés simultanés"
-        }
+        "value": "Jusqu’à 4 tracés simultanés"
       },
       {
         "canonical_name": "alimentation",
@@ -2769,8 +3373,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "100–240 V AC, 50/60 Hz",
-        "raw": "Input voltage: 100–240 V AC; Frequency: 50/60 Hz"
+        "value": "100–240 V AC, 50/60 Hz"
       },
       {
         "canonical_name": "consommation",
@@ -2784,8 +3387,7 @@
           "min": 20,
           "max": 30,
           "unit": "W"
-        },
-        "raw": "Power consumption: approx. 20–30 W"
+        }
       },
       {
         "canonical_name": "batterie_type",
@@ -2795,8 +3397,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "Lithium-ion",
-        "raw": "Battery type: Lithium-ion"
+        "value": "Lithium-ion"
       }
     ],
     "compliance": {
@@ -2856,9 +3457,6 @@
         "value": {
           "qty": 10.4,
           "unit": "pouces"
-        },
-        "raw": {
-          "fr": "Taille de l'écran: 10,4 pouces LCD"
         }
       },
       {
@@ -2869,10 +3467,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "ECG (3/5 dérivations), SpO₂, NIBP, TEMP, RESP",
-        "raw": {
-          "fr": "Paramètres surveillés: ECG (3/5 dérivations), SpO₂, NIBP, TEMP, RESP"
-        }
+        "value": "ECG (3/5 dérivations), SpO₂, NIBP, TEMP, RESP"
       },
       {
         "canonical_name": "autonomie_batterie",
@@ -2885,8 +3480,7 @@
         "value": {
           "qty": 3,
           "unit": "h"
-        },
-        "raw": "Batterie: Lithium-ion intégrée (autonomie 3 heures)"
+        }
       },
       {
         "canonical_name": "poids",
@@ -2899,9 +3493,6 @@
         "value": {
           "qty": 3.5,
           "unit": "kg"
-        },
-        "raw": {
-          "fr": "Poids: 3,5 kg"
         }
       },
       {
@@ -2912,8 +3503,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "USB, port série, LAN",
-        "raw": "Connectivité: USB, port série, LAN"
+        "value": "USB, port série, LAN"
       },
       {
         "canonical_name": "alarmes",
@@ -2923,10 +3513,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "3 niveaux: technique, physiologique, critique",
-        "raw": {
-          "fr": "Alarmes: 3 niveaux (technique, physiologique, critique)"
-        }
+        "value": "3 niveaux: technique, physiologique, critique"
       },
       {
         "canonical_name": "impression",
@@ -2936,10 +3523,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Option imprimante thermique intégrée",
-        "raw": {
-          "fr": "Impression des données: Option imprimante thermique intégrée"
-        }
+        "value": "Option imprimante thermique intégrée"
       }
     ],
     "compliance": {
@@ -3002,9 +3586,6 @@
         "value": {
           "qty": 12.1,
           "unit": "pouces"
-        },
-        "raw": {
-          "fr": "Taille de l'écran: 12,1 pouces TFT haute résolution"
         }
       },
       {
@@ -3015,10 +3596,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "ECG, SpO₂, NIBP, TEMP, RESP, PR",
-        "raw": {
-          "fr": "Paramètres surveillés: ECG, SpO₂, NIBP, TEMP, RESP, PR"
-        }
+        "value": "ECG, SpO₂, NIBP, TEMP, RESP, PR"
       },
       {
         "canonical_name": "memoire",
@@ -3028,10 +3606,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "96 h",
-        "raw": {
-          "fr": "Mémoire interne: Jusqu’à 96 heures de tendance graphique"
-        }
+        "value": "96 h"
       },
       {
         "canonical_name": "interfaces",
@@ -3041,10 +3616,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "LAN, USB, HDMI",
-        "raw": {
-          "fr": "Interfaces: LAN, USB, HDMI (sur certaines versions)"
-        }
+        "value": "LAN, USB, HDMI"
       },
       {
         "canonical_name": "alimentation",
@@ -3054,10 +3626,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "AC 100–240 V, 50/60 Hz",
-        "raw": {
-          "fr": "Alimentation: AC 100–240 V, 50/60 Hz"
-        }
+        "value": "AC 100–240 V, 50/60 Hz"
       },
       {
         "canonical_name": "dimensions",
@@ -3067,10 +3636,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "300 × 220 × 260 mm",
-        "raw": {
-          "fr": "Dimensions: 300 × 220 × 260 mm"
-        }
+        "value": "300 × 220 × 260 mm"
       },
       {
         "canonical_name": "modes_patient",
@@ -3080,10 +3646,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Adulte / Pédiatrique / Néonatal",
-        "raw": {
-          "fr": "Modes patient: Adulte / Pédiatrique / Néonatal"
-        }
+        "value": "Adulte / Pédiatrique / Néonatal"
       }
     ],
     "compliance": {
@@ -3146,9 +3709,6 @@
         "value": {
           "qty": 15,
           "unit": "pouces"
-        },
-        "raw": {
-          "fr": "Taille de l'écran: 15 pouces tactile couleur"
         }
       },
       {
@@ -3159,8 +3719,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "ECG, SpO₂, NIBP, TEMP, RESP, PR, CO₂, IBP",
-        "raw": "Paramètres standards: ECG, SpO₂, NIBP, TEMP, RESP, PR; Modules optionnels: IBP, EtCO₂, 2 TEMP supplémentaires"
+        "value": "ECG, SpO₂, NIBP, TEMP, RESP, PR, CO₂, IBP"
       },
       {
         "canonical_name": "capacite_stockage",
@@ -3170,10 +3729,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "240 h",
-        "raw": {
-          "fr": "Capacité de stockage: Revue de tendances sur 240 heures"
-        }
+        "value": "240 h"
       },
       {
         "canonical_name": "interfaces",
@@ -3183,10 +3739,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "USB, LAN, VGA, HDMI",
-        "raw": {
-          "fr": "Interfaces: USB, LAN, VGA, HDMI"
-        }
+        "value": "USB, LAN, VGA, HDMI"
       },
       {
         "canonical_name": "poids",
@@ -3199,9 +3752,6 @@
         "value": {
           "qty": 6.8,
           "unit": "kg"
-        },
-        "raw": {
-          "fr": "Poids: 6,8 kg"
         }
       },
       {
@@ -3215,8 +3765,7 @@
         "value": {
           "qty": 4,
           "unit": "h"
-        },
-        "raw": "Batterie: Autonomie de 4 heures (Li-ion remplaçable)"
+        }
       }
     ],
     "compliance": {
@@ -3278,8 +3827,7 @@
         "value": {
           "qty": 7,
           "unit": "pouces"
-        },
-        "raw": "Taille de l'écran: 7 pouces LCD couleur"
+        }
       },
       {
         "canonical_name": "parametres_vitals",
@@ -3289,8 +3837,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "SpO₂, NIBP, TEMP",
-        "raw": "Paramètres surveillés: SpO₂, NIBP, TEMP"
+        "value": "SpO₂, NIBP, TEMP"
       },
       {
         "canonical_name": "batterie",
@@ -3300,8 +3847,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "2200 mAh",
-        "raw": "Batterie: 2200 mAh (autonomie 2 à 3 heures)"
+        "value": "2200 mAh"
       },
       {
         "canonical_name": "alarmes",
@@ -3311,8 +3857,7 @@
         },
         "category": "Controls",
         "type": "boolean",
-        "value": true,
-        "raw": "Alarmes: Oui, visuelle et sonore"
+        "value": true
       },
       {
         "canonical_name": "interfaces",
@@ -3322,8 +3867,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "USB",
-        "raw": "Interface: USB pour transfert des données"
+        "value": "USB"
       },
       {
         "canonical_name": "dimensions",
@@ -3333,8 +3877,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "200 × 140 × 180 mm",
-        "raw": "Dimensions: 200 × 140 × 180 mm"
+        "value": "200 × 140 × 180 mm"
       },
       {
         "canonical_name": "poids",
@@ -3347,8 +3890,7 @@
         "value": {
           "qty": 1.8,
           "unit": "kg"
-        },
-        "raw": "Poids: 1,8 kg"
+        }
       }
     ],
     "compliance": {
@@ -3404,8 +3946,7 @@
         "value": {
           "qty": 8.4,
           "unit": "pouces"
-        },
-        "raw": "Taille de l'écran: 8,4 pouces TFT couleur"
+        }
       },
       {
         "canonical_name": "parametres_vitals",
@@ -3415,8 +3956,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "ECG, SpO₂, NIBP, TEMP, RESP",
-        "raw": "Paramètres surveillés: ECG, SpO₂, NIBP, TEMP, RESP"
+        "value": "ECG, SpO₂, NIBP, TEMP, RESP"
       },
       {
         "canonical_name": "batterie",
@@ -3426,8 +3966,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "Rechargeable",
-        "raw": "Alimentation: 100–240 V / batterie rechargeable"
+        "value": "Rechargeable"
       },
       {
         "canonical_name": "alarmes",
@@ -3437,8 +3976,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Personnalisables par patient",
-        "raw": "Modes d’alarme: Personnalisables par patient"
+        "value": "Personnalisables par patient"
       },
       {
         "canonical_name": "interfaces",
@@ -3448,8 +3986,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "RS232, USB, LAN",
-        "raw": "Interface: RS232, USB, LAN"
+        "value": "RS232, USB, LAN"
       },
       {
         "canonical_name": "poids",
@@ -3462,8 +3999,7 @@
         "value": {
           "qty": 2.9,
           "unit": "kg"
-        },
-        "raw": "Poids: 2,9 kg"
+        }
       },
       {
         "canonical_name": "memoire",
@@ -3473,8 +4009,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "120 h",
-        "raw": "Mémoire: 120 heures de tendance graphique"
+        "value": "120 h"
       }
     ],
     "compliance": {
@@ -3529,8 +4064,7 @@
         "value": {
           "qty": 12.1,
           "unit": "pouces"
-        },
-        "raw": "Taille de l'écran: 12,1 pouces couleur haute résolution"
+        }
       },
       {
         "canonical_name": "parametres_vitals",
@@ -3540,8 +4074,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "ECG, SpO₂, NIBP, TEMP, RESP, EtCO₂",
-        "raw": "Paramètres: ECG, SpO₂, NIBP, TEMP, RESP, EtCO₂"
+        "value": "ECG, SpO₂, NIBP, TEMP, RESP, EtCO₂"
       },
       {
         "canonical_name": "memoire",
@@ -3551,8 +4084,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "240 h",
-        "raw": "Mémoire: 240 heures de stockage de données patients"
+        "value": "240 h"
       },
       {
         "canonical_name": "interfaces",
@@ -3562,8 +4094,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "LAN, USB, HDMI",
-        "raw": "Connectivité: LAN, USB, HDMI"
+        "value": "LAN, USB, HDMI"
       },
       {
         "canonical_name": "poids",
@@ -3576,8 +4107,7 @@
         "value": {
           "qty": 5.9,
           "unit": "kg"
-        },
-        "raw": "Poids: 5,9 kg"
+        }
       },
       {
         "canonical_name": "batterie",
@@ -3591,8 +4121,7 @@
           "min": 4,
           "max": 6,
           "unit": "h"
-        },
-        "raw": "Batterie: Autonomie de 4 à 6 heures"
+        }
       }
     ],
     "compliance": {
@@ -3638,10 +4167,7 @@
         },
         "category": "Materials",
         "type": "string",
-        "value": "Acier inoxydable peint ou anodisé",
-        "raw": {
-          "fr": "Structure: Acier inoxydable peint ou anodisé"
-        }
+        "value": "Acier inoxydable peint ou anodisé"
       },
       {
         "canonical_name": "dimensions",
@@ -3651,10 +4177,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "870 × 510 × 880 mm",
-        "raw": {
-          "fr": "Dimensions extérieures: 870 × 510 × 880 mm (L × P × H)"
-        }
+        "value": "870 × 510 × 880 mm"
       },
       {
         "canonical_name": "bassin",
@@ -3664,10 +4187,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "Transparent, inclinable manuellement jusqu’à 12°",
-        "raw": {
-          "fr": "Bassin: Transparent, inclinable manuellement (jusqu’à 12°)"
-        }
+        "value": "Transparent, inclinable manuellement jusqu’à 12°"
       },
       {
         "canonical_name": "roulettes",
@@ -3677,10 +4197,7 @@
         },
         "category": "Mobility",
         "type": "string",
-        "value": "4 pivotantes Ø 75 mm avec frein",
-        "raw": {
-          "fr": "Type de roulettes: 4 roulettes pivotantes Ø 75 mm avec frein"
-        }
+        "value": "4 pivotantes Ø 75 mm avec frein"
       },
       {
         "canonical_name": "matelas",
@@ -3690,10 +4207,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Mousse polyuréthane, housse imperméable",
-        "raw": {
-          "fr": "Matelas: Mousse polyuréthane, housse imperméable"
-        }
+        "value": "Mousse polyuréthane, housse imperméable"
       },
       {
         "canonical_name": "poids",
@@ -3706,9 +4220,6 @@
         "value": {
           "qty": 15,
           "unit": "kg"
-        },
-        "raw": {
-          "fr": "Poids net: 15 kg"
         }
       }
     ],
@@ -3753,10 +4264,7 @@
         },
         "category": "Materials",
         "type": "string",
-        "value": "Châssis en acier epoxy, finition antibactérienne",
-        "raw": {
-          "fr": "Structure: Châssis en acier epoxy, finition antibactérienne"
-        }
+        "value": "Châssis en acier epoxy, finition antibactérienne"
       },
       {
         "canonical_name": "dimensions",
@@ -3766,10 +4274,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "900 × 520 × 930 mm",
-        "raw": {
-          "fr": "Dimensions: 900 × 520 × 930 mm (max. hauteur)"
-        }
+        "value": "900 × 520 × 930 mm"
       },
       {
         "canonical_name": "hauteur",
@@ -3783,9 +4288,6 @@
           "min": 690,
           "max": 930,
           "unit": "mm"
-        },
-        "raw": {
-          "fr": "Réglage en hauteur: Manuel (690 à 930 mm)"
         }
       },
       {
@@ -3796,10 +4298,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "Polycarbonate transparent, inclinable",
-        "raw": {
-          "fr": "Bassin: Polycarbonate transparent, inclinable"
-        }
+        "value": "Polycarbonate transparent, inclinable"
       },
       {
         "canonical_name": "roulettes",
@@ -3809,10 +4308,7 @@
         },
         "category": "Mobility",
         "type": "string",
-        "value": "4 Ø 100 mm dont 2 avec frein",
-        "raw": {
-          "fr": "Type de roulettes: 4 roulettes Ø 100 mm dont 2 avec frein"
-        }
+        "value": "4 Ø 100 mm dont 2 avec frein"
       },
       {
         "canonical_name": "matelas",
@@ -3822,10 +4318,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Densité 25 kg/m³, housse PU soudée",
-        "raw": {
-          "fr": "Matelas: Densité 25 kg/m³, housse PU soudée"
-        }
+        "value": "Densité 25 kg/m³, housse PU soudée"
       },
       {
         "canonical_name": "poids",
@@ -3838,9 +4331,6 @@
         "value": {
           "qty": 18,
           "unit": "kg"
-        },
-        "raw": {
-          "fr": "Poids net: 18 kg"
         }
       }
     ],
@@ -3885,10 +4375,7 @@
         },
         "category": "Materials",
         "type": "string",
-        "value": "Acier inox avec finition peinture époxy",
-        "raw": {
-          "fr": "Structure: Acier inox avec finition peinture époxy"
-        }
+        "value": "Acier inox avec finition peinture époxy"
       },
       {
         "canonical_name": "dimensions",
@@ -3898,10 +4385,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "930 × 550 × 950 mm",
-        "raw": {
-          "fr": "Dimensions: 930 × 550 × 950 mm (L × P × H max.)"
-        }
+        "value": "930 × 550 × 950 mm"
       },
       {
         "canonical_name": "hauteur",
@@ -3915,9 +4399,6 @@
           "min": 710,
           "max": 950,
           "unit": "mm"
-        },
-        "raw": {
-          "fr": "Réglage en hauteur: Système hydraulique (710 à 950 mm)"
         }
       },
       {
@@ -3928,10 +4409,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "Transparent, amovible, inclinaison ajustable",
-        "raw": {
-          "fr": "Bassin: Transparent, amovible, avec inclinaison ajustable"
-        }
+        "value": "Transparent, amovible, inclinaison ajustable"
       },
       {
         "canonical_name": "panier_rangement",
@@ -3941,10 +4419,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": {
-          "fr": "Panier de rangement: Oui, en ABS renforcé"
-        }
+        "value": true
       },
       {
         "canonical_name": "roulettes",
@@ -3954,10 +4429,7 @@
         },
         "category": "Mobility",
         "type": "string",
-        "value": "4 Ø 125 mm à frein centralisé",
-        "raw": {
-          "fr": "Roulettes: 4 roulettes Ø 125 mm à frein centralisé"
-        }
+        "value": "4 Ø 125 mm à frein centralisé"
       },
       {
         "canonical_name": "matelas",
@@ -3967,10 +4439,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Respirant, housse imperméable, épaisseur 40 mm",
-        "raw": {
-          "fr": "Matelas: Respirant, housse imperméable, épaisseur 40 mm"
-        }
+        "value": "Respirant, housse imperméable, épaisseur 40 mm"
       },
       {
         "canonical_name": "poids",
@@ -3983,9 +4452,6 @@
         "value": {
           "qty": 22,
           "unit": "kg"
-        },
-        "raw": {
-          "fr": "Poids net: 22 kg"
         }
       }
     ],
@@ -4041,10 +4507,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2070 x 550 x 700-1000 mm",
-        "raw": {
-          "fr": "Dimensions: 2070 x 550 x 700-1000 mm"
-        }
+        "value": "2070 x 550 x 700-1000 mm"
       },
       {
         "canonical_name": "reglages",
@@ -4054,10 +4517,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "hauteur, plaques dos, tête, jambes",
-        "raw": {
-          "fr": "Réglages électriques: hauteur, plaques dos, tête, jambes"
-        }
+        "value": "hauteur, plaques dos, tête, jambes"
       },
       {
         "canonical_name": "inclinaison_trendelenburg",
@@ -4071,8 +4531,7 @@
           "min": -25,
           "max": 25,
           "unit": "°"
-        },
-        "raw": "Inclinaison Trendelenburg / Reverse: 25°/25°"
+        }
       },
       {
         "canonical_name": "inclinaison_laterale",
@@ -4086,8 +4545,7 @@
           "min": -15,
           "max": 15,
           "unit": "°"
-        },
-        "raw": "Inclinaison latérale gauche/droite: 15°/15°"
+        }
       },
       {
         "canonical_name": "glissement_horizontal",
@@ -4100,9 +4558,6 @@
         "value": {
           "qty": 300,
           "unit": "mm"
-        },
-        "raw": {
-          "fr": "Glissement horizontal: 300 mm, compatible C-arm"
         }
       },
       {
@@ -4113,8 +4568,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "50-80 opérations",
-        "raw": "Batterie interne pour 50-80 opérations"
+        "value": "50-80 opérations"
       },
       {
         "canonical_name": "matelas",
@@ -4124,8 +4578,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Mousse polyuréthane, démontable",
-        "raw": "Matelas en mousse polyuréthane, démontable"
+        "value": "Mousse polyuréthane, démontable"
       },
       {
         "canonical_name": "accessoires",
@@ -4135,8 +4588,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Écran anesthésie, supports coussinés pour bras, jambes, épaules, corps, pieds",
-        "raw": "Accessoires: écran anesthésie, supports coussinés pour bras, jambes, épaules, corps, pieds"
+        "value": "Écran anesthésie, supports coussinés pour bras, jambes, épaules, corps, pieds"
       }
     ],
     "compliance": {
@@ -4193,10 +4645,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2100 x 550 x 710-1010 mm",
-        "raw": {
-          "fr": "Dimensions: 2100 x 550 x 710-1010 mm"
-        }
+        "value": "2100 x 550 x 710-1010 mm"
       },
       {
         "canonical_name": "reglages",
@@ -4206,10 +4655,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "hauteur, plaques dos, tête, jambes",
-        "raw": {
-          "fr": "Réglages électriques: hauteur, plaques dos, tête, jambes"
-        }
+        "value": "hauteur, plaques dos, tête, jambes"
       },
       {
         "canonical_name": "inclinaison_trendelenburg",
@@ -4223,8 +4669,7 @@
           "min": -25,
           "max": 25,
           "unit": "°"
-        },
-        "raw": "Inclinaison Trendelenburg / Reverse: 25°/25°"
+        }
       },
       {
         "canonical_name": "inclinaison_laterale",
@@ -4238,8 +4683,7 @@
           "min": -15,
           "max": 15,
           "unit": "°"
-        },
-        "raw": "Inclinaison latérale gauche/droite: 15°/15°"
+        }
       },
       {
         "canonical_name": "glissement_horizontal",
@@ -4252,9 +4696,6 @@
         "value": {
           "qty": 350,
           "unit": "mm"
-        },
-        "raw": {
-          "fr": "Glissement horizontal: 350 mm, compatible C-arm"
         }
       },
       {
@@ -4265,8 +4706,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "Standby 80h",
-        "raw": "Batterie standby: 80h"
+        "value": "Standby 80h"
       },
       {
         "canonical_name": "freinage",
@@ -4276,8 +4716,7 @@
         },
         "category": "Safety",
         "type": "boolean",
-        "value": true,
-        "raw": "Frein à pédale, roulettes 6\" silencieuses"
+        "value": true
       },
       {
         "canonical_name": "matelas",
@@ -4287,8 +4726,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Inclus",
-        "raw": "Matelas, écran anesthésie, supports coussinés inclus"
+        "value": "Inclus"
       }
     ],
     "compliance": {
@@ -4343,10 +4781,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2160 x 550 x 600-1150 mm",
-        "raw": {
-          "fr": "Dimensions: 2160 x 550 x 600-1150 mm"
-        }
+        "value": "2160 x 550 x 600-1150 mm"
       },
       {
         "canonical_name": "reglages",
@@ -4356,8 +4791,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "tête, dos, jambes, mollets",
-        "raw": "Réglages plaque tête, dos, jambes, mollets"
+        "value": "tête, dos, jambes, mollets"
       },
       {
         "canonical_name": "inclinaison_trendelenburg",
@@ -4371,8 +4805,7 @@
           "min": -36,
           "max": 36,
           "unit": "°"
-        },
-        "raw": "Inclinaisons: Trendelenburg / Reverse 36°"
+        }
       },
       {
         "canonical_name": "inclinaison_laterale",
@@ -4386,8 +4819,7 @@
           "min": -22,
           "max": 22,
           "unit": "°"
-        },
-        "raw": "Inclinaisons: latérales 22°"
+        }
       },
       {
         "canonical_name": "glissement_horizontal",
@@ -4400,9 +4832,6 @@
         "value": {
           "qty": 300,
           "unit": "mm"
-        },
-        "raw": {
-          "fr": "Glissement horizontal: 300 mm"
         }
       },
       {
@@ -4416,8 +4845,7 @@
         "value": {
           "qty": 360,
           "unit": "kg"
-        },
-        "raw": "Poids supporté: 360 kg"
+        }
       },
       {
         "canonical_name": "controle",
@@ -4427,8 +4855,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Écran LCD, filaire et Bluetooth optionnel",
-        "raw": "Contrôle via écran LCD, modes filaire et Bluetooth (optionnel)"
+        "value": "Écran LCD, filaire et Bluetooth optionnel"
       },
       {
         "canonical_name": "batterie",
@@ -4438,8 +4865,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "Intégrée, autonomie longue durée",
-        "raw": "Batterie intégrée, autonomie longue durée"
+        "value": "Intégrée, autonomie longue durée"
       },
       {
         "canonical_name": "matelas",
@@ -4449,8 +4875,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Mousse mémoire de forme, étanche",
-        "raw": "Matelas mousse mémoire de forme, étanche"
+        "value": "Mousse mémoire de forme, étanche"
       },
       {
         "canonical_name": "accessoires",
@@ -4460,8 +4885,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Supports bras, épaules, jambes, écran anesthésie, fixateurs",
-        "raw": "Accessoires: supports bras, épaules, jambes, écran anesthésie, fixateurs"
+        "value": "Supports bras, épaules, jambes, écran anesthésie, fixateurs"
       }
     ],
     "compliance": {
@@ -4519,10 +4943,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2150 x 555 x 750-1000 mm",
-        "raw": {
-          "fr": "Dimensions: 2150 x 555 x 750-1000 mm"
-        }
+        "value": "2150 x 555 x 750-1000 mm"
       },
       {
         "canonical_name": "reglages",
@@ -4532,8 +4953,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "dos (70°/15°), tête (30°/90°), jambes",
-        "raw": "Réglages plaques dos (70°/15°), tête (30°/90°), jambes"
+        "value": "dos (70°/15°), tête (30°/90°), jambes"
       },
       {
         "canonical_name": "inclinaison_trendelenburg",
@@ -4544,8 +4964,7 @@
         "category": "Motion",
         "type": "number",
         "value": 25,
-        "unit": "°",
-        "raw": "Inclinaisons Trendelenburg / Reverse: 25°"
+        "unit": "°"
       },
       {
         "canonical_name": "inclinaison_laterale",
@@ -4556,8 +4975,7 @@
         "category": "Motion",
         "type": "number",
         "value": 15,
-        "unit": "°",
-        "raw": "Inclinaisons latérales: 15°"
+        "unit": "°"
       },
       {
         "canonical_name": "glissement_horizontal",
@@ -4570,9 +4988,6 @@
         "value": {
           "qty": 350,
           "unit": "mm"
-        },
-        "raw": {
-          "fr": "Glissement horizontal: 350 mm, compatible C-arm"
         }
       },
       {
@@ -4586,9 +5001,6 @@
         "value": {
           "qty": 275,
           "unit": "kg"
-        },
-        "raw": {
-          "fr": "Charge maximale: 275 kg"
         }
       },
       {
@@ -4599,8 +5011,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "Intégrée, 80-120 opérations",
-        "raw": "Batterie intégrée, autonomie 80-120 opérations"
+        "value": "Intégrée, 80-120 opérations"
       },
       {
         "canonical_name": "controle",
@@ -4610,8 +5021,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Double contrôle manuel et sur colonne",
-        "raw": "Contrôle double (manette et panneau colonne)"
+        "value": "Double contrôle manuel et sur colonne"
       },
       {
         "canonical_name": "accessoires",
@@ -4621,8 +5031,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Matelas et accessoires complets",
-        "raw": "Accessoires complets et matelas"
+        "value": "Matelas et accessoires complets"
       }
     ],
     "compliance": {
@@ -4684,10 +5093,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2150 x 555 x 700-1000 mm",
-        "raw": {
-          "fr": "Dimensions: 2150 x 555 x 700-1000 mm"
-        }
+        "value": "2150 x 555 x 700-1000 mm"
       },
       {
         "canonical_name": "reglages",
@@ -4697,8 +5103,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "dos, tête (réglage hauteur 70 mm), jambes",
-        "raw": "Réglages plaques dos, tête (avec réglage hauteur 70mm), jambes"
+        "value": "dos, tête (réglage hauteur 70 mm), jambes"
       },
       {
         "canonical_name": "glissement_horizontal",
@@ -4711,9 +5116,6 @@
         "value": {
           "qty": 350,
           "unit": "mm"
-        },
-        "raw": {
-          "fr": "Glissement horizontal: 350 mm"
         }
       },
       {
@@ -4727,9 +5129,6 @@
         "value": {
           "qty": 275,
           "unit": "kg"
-        },
-        "raw": {
-          "fr": "Charge maximale: 275 kg"
         }
       },
       {
@@ -4740,8 +5139,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Mousse polyuréthane, étanche",
-        "raw": "Matelas mousse polyuréthane, étanche"
+        "value": "Mousse polyuréthane, étanche"
       },
       {
         "canonical_name": "roulettes",
@@ -4751,8 +5149,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "Silencieuses avec frein pédale",
-        "raw": "Roulettes silencieuses, frein pédale"
+        "value": "Silencieuses avec frein pédale"
       },
       {
         "canonical_name": "controle",
@@ -4762,8 +5159,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Double manette et panneau",
-        "raw": "Contrôle double manette et panneau"
+        "value": "Double manette et panneau"
       }
     ],
     "compliance": {
@@ -4821,10 +5217,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2140 x 550 x 550-1050 mm",
-        "raw": {
-          "fr": "Dimensions: 2140 x 550 x 550-1050 mm"
-        }
+        "value": "2140 x 550 x 550-1050 mm"
       },
       {
         "canonical_name": "reglages",
@@ -4834,8 +5227,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "tête, dos, jambes multi-positions",
-        "raw": "Réglages plaques tête, dos, jambes multi-positions"
+        "value": "tête, dos, jambes multi-positions"
       },
       {
         "canonical_name": "matelas",
@@ -4845,8 +5237,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Mousse mémoire 75 mm, étanche et anti-statique",
-        "raw": "Matelas mousse mémoire 75 mm, étanche et anti-statique"
+        "value": "Mousse mémoire 75 mm, étanche et anti-statique"
       },
       {
         "canonical_name": "controle",
@@ -4856,8 +5247,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Filaire avec bouton d’arrêt d’urgence",
-        "raw": "Contrôle filaire avec bouton d’arrêt d’urgence"
+        "value": "Filaire avec bouton d’arrêt d’urgence"
       },
       {
         "canonical_name": "accessoires",
@@ -4867,8 +5257,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Supports bras, épaules, jambes, écran anesthésie",
-        "raw": "Accessoires: supports bras, épaules, jambes, écran anesthésie"
+        "value": "Supports bras, épaules, jambes, écran anesthésie"
       }
     ],
     "compliance": {
@@ -4919,10 +5308,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2125 x 550 x 600-950 mm",
-        "raw": {
-          "fr": "Dimensions: 2125 x 550 x 600-950 mm"
-        }
+        "value": "2125 x 550 x 600-950 mm"
       },
       {
         "canonical_name": "reglages",
@@ -4932,8 +5318,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "dos (89°/35°), tête (55°/90°), jambes",
-        "raw": "Réglages plaques dos (89°/35°), tête (55°/90°), jambes"
+        "value": "dos (89°/35°), tête (55°/90°), jambes"
       },
       {
         "canonical_name": "inclinaison_trendelenburg",
@@ -4947,8 +5332,7 @@
           "min": -20,
           "max": 15,
           "unit": "°"
-        },
-        "raw": "Inclinaisons Trendelenburg / Reverse: 15-20°"
+        }
       },
       {
         "canonical_name": "inclinaison_laterale",
@@ -4959,8 +5343,7 @@
         "category": "Motion",
         "type": "number",
         "value": 15,
-        "unit": "°",
-        "raw": "Inclinaisons latérales: 15°"
+        "unit": "°"
       },
       {
         "canonical_name": "glissement_horizontal",
@@ -4973,9 +5356,6 @@
         "value": {
           "qty": 320,
           "unit": "mm"
-        },
-        "raw": {
-          "fr": "Glissement horizontal: 320 mm"
         }
       },
       {
@@ -4987,10 +5367,7 @@
         "category": "Motion",
         "type": "number",
         "value": 180,
-        "unit": "°",
-        "raw": {
-          "fr": "Rotation horizontale: 180°"
-        }
+        "unit": "°"
       },
       {
         "canonical_name": "accessoires",
@@ -5000,8 +5377,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Accessoires complets et matelas",
-        "raw": "Accessoires complets, matelas"
+        "value": "Accessoires complets et matelas"
       }
     ],
     "compliance": {
@@ -5058,10 +5434,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2000 x 480 x 680-930 mm",
-        "raw": {
-          "fr": "Dimensions: 2000 x 480 x 680-930 mm"
-        }
+        "value": "2000 x 480 x 680-930 mm"
       },
       {
         "canonical_name": "reglages",
@@ -5071,8 +5444,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "dos (45°/15°), tête (45°/90°), jambes",
-        "raw": "Réglages plaques dos (45°/15°), tête (45°/90°), jambes"
+        "value": "dos (45°/15°), tête (45°/90°), jambes"
       },
       {
         "canonical_name": "batterie",
@@ -5082,8 +5454,7 @@
         },
         "category": "Electrical",
         "type": "string",
-        "value": "50-80 cycles",
-        "raw": "Batterie intégrée pour 50-80 cycles"
+        "value": "50-80 cycles"
       },
       {
         "canonical_name": "matelas",
@@ -5093,8 +5464,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Amovible",
-        "raw": "Matelas amovible"
+        "value": "Amovible"
       }
     ],
     "compliance": {
@@ -5138,10 +5508,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2070 x 550 x 700-1000 mm",
-        "raw": {
-          "fr": "Dimensions: 2070 x 550 x 700-1000 mm"
-        }
+        "value": "2070 x 550 x 700-1000 mm"
       },
       {
         "canonical_name": "reglages",
@@ -5151,8 +5518,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "dos (70°/15°), tête (30°/90°), jambes",
-        "raw": "Réglages plaque dos (70°/15°), tête (30°/90°), jambes"
+        "value": "dos (70°/15°), tête (30°/90°), jambes"
       },
       {
         "canonical_name": "matelas",
@@ -5162,8 +5528,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "Mousse polyuréthane démontable",
-        "raw": "Matelas mousse polyuréthane démontable"
+        "value": "Mousse polyuréthane démontable"
       },
       {
         "canonical_name": "cadre",
@@ -5173,8 +5538,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "Acier inox 304",
-        "raw": "Cadre inox 304"
+        "value": "Acier inox 304"
       }
     ],
     "compliance": {
@@ -5220,10 +5584,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1960 x 600 x 810 mm",
-        "raw": {
-          "fr": "Dimensions: 1960 x 600 x 810 mm"
-        }
+        "value": "1960 x 600 x 810 mm"
       },
       {
         "canonical_name": "dossier",
@@ -5233,8 +5594,7 @@
         },
         "category": "Controls",
         "type": "string",
-        "value": "Oui",
-        "raw": "Dossier réglable (détails selon version)"
+        "value": "Oui"
       },
       {
         "canonical_name": "porte_bouteille",
@@ -5244,8 +5604,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Porte-bouteille oxygène"
+        "value": true
       }
     ],
     "compliance": {
@@ -5293,10 +5652,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1960 x 600 x 750 mm",
-        "raw": {
-          "fr": "Dimensions: 1960 x 600 x 750 mm"
-        }
+        "value": "1960 x 600 x 750 mm"
       },
       {
         "canonical_name": "roulettes",
@@ -5306,8 +5662,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "5\" silencieuses avec frein",
-        "raw": "Roulettes 5\" silencieuses avec frein"
+        "value": "5\" silencieuses avec frein"
       },
       {
         "canonical_name": "porte_bouteille",
@@ -5317,8 +5672,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Porte-bouteille d’oxygène"
+        "value": true
       },
       {
         "canonical_name": "porte_seringues",
@@ -5328,8 +5682,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Porte-seringues réglable"
+        "value": true
       },
       {
         "canonical_name": "panier_dechets",
@@ -5339,8 +5692,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Panier à déchets inclus"
+        "value": true
       }
     ],
     "compliance": {
@@ -5388,10 +5740,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1970 x 760 x 620-900 mm",
-        "raw": {
-          "fr": "Dimensions: 1970 x 760 x 620-900 mm"
-        }
+        "value": "1970 x 760 x 620-900 mm"
       },
       {
         "canonical_name": "roulettes",
@@ -5401,8 +5750,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "5\" silencieuses avec frein central",
-        "raw": "Roulettes 5\" silencieuses avec frein central"
+        "value": "5\" silencieuses avec frein central"
       },
       {
         "canonical_name": "barrieres_laterales",
@@ -5412,8 +5760,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Barrières latérales en alliage d’aluminium rabattables"
+        "value": true
       },
       {
         "canonical_name": "porte_bouteille",
@@ -5423,8 +5770,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Porte-bouteille oxygène"
+        "value": true
       }
     ],
     "compliance": {
@@ -5472,10 +5818,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1900 x 700 mm",
-        "raw": {
-          "fr": "Dimensions: 1900 x 700 mm"
-        }
+        "value": "1900 x 700 mm"
       },
       {
         "canonical_name": "roulettes",
@@ -5485,8 +5828,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "5\" avec frein",
-        "raw": "Roulettes 5\" avec frein"
+        "value": "5\" avec frein"
       },
       {
         "canonical_name": "matelas",
@@ -5496,8 +5838,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Matelas inclus"
+        "value": true
       }
     ],
     "compliance": {
@@ -5547,10 +5888,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1910 x 640 mm",
-        "raw": {
-          "fr": "Dimensions: 1910 x 640 mm"
-        }
+        "value": "1910 x 640 mm"
       },
       {
         "canonical_name": "roulettes",
@@ -5560,8 +5898,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "8\" avec frein central et directionnel",
-        "raw": "Roulettes 8\" avec frein central et directionnel"
+        "value": "8\" avec frein central et directionnel"
       },
       {
         "canonical_name": "barres_latérales",
@@ -5571,8 +5908,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Barres latérales ABS rabattables"
+        "value": true
       },
       {
         "canonical_name": "portes_accessoires",
@@ -5582,8 +5918,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Porte-seringues, porte-bouteille oxygène inclus"
+        "value": true
       }
     ],
     "compliance": {
@@ -5637,10 +5972,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2150 x 790 mm",
-        "raw": {
-          "fr": "Dimensions: 2150 x 790 mm"
-        }
+        "value": "2150 x 790 mm"
       },
       {
         "canonical_name": "roulettes",
@@ -5650,8 +5982,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "5\" avec frein",
-        "raw": "Roulettes 5\" avec frein"
+        "value": "5\" avec frein"
       },
       {
         "canonical_name": "barrieres_latérales",
@@ -5661,8 +5992,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Barrières inox rabattables"
+        "value": true
       },
       {
         "canonical_name": "portes_accessoires",
@@ -5672,8 +6002,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Pompe hydraulique, porte-bouteille oxygène, bassine inox"
+        "value": true
       }
     ],
     "compliance": {
@@ -5722,10 +6051,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1930 x 660 mm",
-        "raw": {
-          "fr": "Dimensions: 1930 x 660 mm"
-        }
+        "value": "1930 x 660 mm"
       },
       {
         "canonical_name": "roulettes",
@@ -5735,8 +6061,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "6\" avec frein central",
-        "raw": "Roulettes 6\" avec frein central"
+        "value": "6\" avec frein central"
       },
       {
         "canonical_name": "barrieres_laterales",
@@ -5746,8 +6071,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Barrières latérales plastiques"
+        "value": true
       },
       {
         "canonical_name": "portes_accessoires",
@@ -5757,8 +6081,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Porte-seringues, porte-bouteille oxygène"
+        "value": true
       }
     ],
     "compliance": {
@@ -5809,10 +6132,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2200 x 770 mm",
-        "raw": {
-          "fr": "Dimensions: 2200 x 770 mm"
-        }
+        "value": "2200 x 770 mm"
       },
       {
         "canonical_name": "hauteur_ajustable",
@@ -5822,10 +6142,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "600-910 mm",
-        "raw": {
-          "fr": "Hauteur ajustable: 600-910 mm"
-        }
+        "value": "600-910 mm"
       },
       {
         "canonical_name": "roulettes",
@@ -5835,8 +6152,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "8\" avec frein central et verrouillage directionnel",
-        "raw": "Roulettes 8\" avec frein central et verrouillage directionnel"
+        "value": "8\" avec frein central et verrouillage directionnel"
       },
       {
         "canonical_name": "matelas",
@@ -5846,8 +6162,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "PU 80 mm imperméable",
-        "raw": "Matelas PU 80 mm imperméable"
+        "value": "PU 80 mm imperméable"
       },
       {
         "canonical_name": "support_rayons_x",
@@ -5857,8 +6172,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Support cassette rayons X"
+        "value": true
       }
     ],
     "compliance": {
@@ -5908,10 +6222,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2150 x 830 mm",
-        "raw": {
-          "fr": "Dimensions: 2150 x 830 mm"
-        }
+        "value": "2150 x 830 mm"
       },
       {
         "canonical_name": "hauteur_ajustable",
@@ -5921,10 +6232,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "560-890 mm",
-        "raw": {
-          "fr": "Hauteur ajustable: 560-890 mm"
-        }
+        "value": "560-890 mm"
       },
       {
         "canonical_name": "roulettes",
@@ -5934,8 +6242,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "8\" avec frein central",
-        "raw": "Roulettes 8\" avec verrouillage central"
+        "value": "8\" avec frein central"
       },
       {
         "canonical_name": "barrieres_laterales",
@@ -5945,8 +6252,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "barrières latérales plastiques"
+        "value": true
       },
       {
         "canonical_name": "matelas",
@@ -5956,8 +6262,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Matelas imperméable"
+        "value": true
       },
       {
         "canonical_name": "pompe_hydraulique",
@@ -5967,8 +6272,7 @@
         },
         "category": "Accessories",
         "type": "boolean",
-        "value": true,
-        "raw": "Pompe hydraulique double, porte-oxygène"
+        "value": true
       }
     ],
     "compliance": {
@@ -6012,10 +6316,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "2110 x 960 x 500 mm",
-        "raw": {
-          "fr": "Dimensions extérieures: 2110 x 960 x 500 mm"
-        }
+        "value": "2110 x 960 x 500 mm"
       },
       {
         "canonical_name": "plateforme_matelas",
@@ -6025,10 +6326,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1890 x 830 mm",
-        "raw": {
-          "fr": "Plateforme matelas: 1890 x 830 mm"
-        }
+        "value": "1890 x 830 mm"
       },
       {
         "canonical_name": "charge_maximale",
@@ -6038,10 +6336,7 @@
         },
         "category": "Physical",
         "type": "integer",
-        "value": 200,
-        "raw": {
-          "fr": "Charge maximale: 200 kg"
-        }
+        "value": 200
       },
       {
         "canonical_name": "accessoires",
@@ -6051,10 +6346,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "manivelle manuelle, porte-perfusion, crochets drainage",
-        "raw": {
-          "fr": "Accessoires: manivelle manuelle, barrières latérales aluminium pliables, porte-perfusion, crochets drainage"
-        }
+        "value": "manivelle manuelle, porte-perfusion, crochets drainage"
       }
     ],
     "compliance": {
@@ -6098,10 +6390,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1950 x 660 mm",
-        "raw": {
-          "fr": "Dimensions: 1950 x 660 mm"
-        }
+        "value": "1950 x 660 mm"
       },
       {
         "canonical_name": "reglages_siege",
@@ -6111,10 +6400,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "0-20° (haut), 0-9° (bas)",
-        "raw": {
-          "fr": "Réglages siège: 0-20° (haut), 0-9° (bas)"
-        }
+        "value": "0-20° (haut), 0-9° (bas)"
       },
       {
         "canonical_name": "charge_maximale",
@@ -6124,10 +6410,7 @@
         },
         "category": "Physical",
         "type": "integer",
-        "value": 300,
-        "raw": {
-          "fr": "Charge maximale: ≤300 kg"
-        }
+        "value": 300
       },
       {
         "canonical_name": "accessoires",
@@ -6137,10 +6420,7 @@
         },
         "category": "Accessories",
         "type": "string",
-        "value": "supports bras, étriers, table auxiliaire, bassin inox",
-        "raw": {
-          "fr": "Accessoires: supports bras, étriers, table auxiliaire, bassin inox"
-        }
+        "value": "supports bras, étriers, table auxiliaire, bassin inox"
       }
     ],
     "compliance": {
@@ -6184,8 +6464,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "Acier inoxydable",
-        "raw": "Structure acier inoxydable"
+        "value": "Acier inoxydable"
       },
       {
         "canonical_name": "roulettes",
@@ -6195,8 +6474,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "Multidirectionnelles silencieuses",
-        "raw": "Roulettes multidirectionnelles silencieuses"
+        "value": "Multidirectionnelles silencieuses"
       }
     ],
     "compliance": {
@@ -6240,10 +6518,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1000 x 1870 mm",
-        "raw": {
-          "fr": "Dimensions: 1000 x 1870 mm"
-        }
+        "value": "1000 x 1870 mm"
       },
       {
         "canonical_name": "cadre",
@@ -6253,8 +6528,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "Acier inoxydable",
-        "raw": "Cadre en acier inoxydable"
+        "value": "Acier inoxydable"
       }
     ],
     "compliance": {
@@ -6298,10 +6572,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1925 x 900 mm",
-        "raw": {
-          "fr": "Dimensions: 1925 x 900 mm"
-        }
+        "value": "1925 x 900 mm"
       },
       {
         "canonical_name": "densite",
@@ -6311,8 +6582,7 @@
         },
         "category": "Physical",
         "type": "integer",
-        "value": 28,
-        "raw": "Mousse polyuréthane densité 28 kg/m³"
+        "value": 28
       },
       {
         "canonical_name": "sections",
@@ -6322,8 +6592,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1, 2 ou 4",
-        "raw": "Disponible en 1, 2 ou 4 sections"
+        "value": "1, 2 ou 4"
       }
     ],
     "compliance": {
@@ -6367,10 +6636,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "730 x 480 x 900 mm",
-        "raw": {
-          "fr": "Dimensions: 730 x 480 x 900 mm"
-        }
+        "value": "730 x 480 x 900 mm"
       },
       {
         "canonical_name": "roulettes",
@@ -6380,8 +6646,7 @@
         },
         "category": "Motion",
         "type": "string",
-        "value": "3” avec frein (4 pcs)",
-        "raw": "Roulettes 3” avec frein (4 pcs)"
+        "value": "3” avec frein (4 pcs)"
       },
       {
         "canonical_name": "tiroirs",
@@ -6391,8 +6656,7 @@
         },
         "category": "Storage",
         "type": "string",
-        "value": "Tiroir avec séparateurs plastique",
-        "raw": "Tiroir avec séparateurs plastique"
+        "value": "Tiroir avec séparateurs plastique"
       },
       {
         "canonical_name": "plateau",
@@ -6402,8 +6666,7 @@
         },
         "category": "Storage",
         "type": "string",
-        "value": "Plateau ABS avec rebords inox",
-        "raw": "Plateau ABS avec rebords inox"
+        "value": "Plateau ABS avec rebords inox"
       }
     ],
     "compliance": {
@@ -6447,10 +6710,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "1900 x 600 x 680 mm",
-        "raw": {
-          "fr": "Dimensions: 1900 x 600 x 680 mm"
-        }
+        "value": "1900 x 600 x 680 mm"
       },
       {
         "canonical_name": "charge_maximale",
@@ -6460,10 +6720,7 @@
         },
         "category": "Physical",
         "type": "integer",
-        "value": 175,
-        "raw": {
-          "fr": "Capacité de charge: 175 kg"
-        }
+        "value": 175
       },
       {
         "canonical_name": "densite_mousse",
@@ -6473,8 +6730,7 @@
         },
         "category": "Physical",
         "type": "integer",
-        "value": 30,
-        "raw": "Mousse anti-feu 6 cm, densité 30 kg/m³"
+        "value": 30
       },
       {
         "canonical_name": "cadre",
@@ -6484,8 +6740,7 @@
         },
         "category": "Physical",
         "type": "string",
-        "value": "Acier peint",
-        "raw": "Cadre acier peint, résistant et durable"
+        "value": "Acier peint"
       }
     ],
     "compliance": {
@@ -6529,8 +6784,9 @@
         },
         "category": "Physical",
         "type": "enum",
-        "value": ["Wood"],
-        "raw": "Wooden construction"
+        "value": [
+          "Wood"
+        ]
       },
       {
         "canonical_name": "disposability",
@@ -6540,8 +6796,9 @@
         },
         "category": "Usage",
         "type": "enum",
-        "value": ["Disposable"],
-        "raw": "Single-use"
+        "value": [
+          "Disposable"
+        ]
       },
       {
         "canonical_name": "intended_use",
@@ -6551,12 +6808,15 @@
         },
         "category": "Usage",
         "type": "enum",
-        "value": ["Adult"],
-        "raw": "For adult examinations"
+        "value": [
+          "Adult"
+        ]
       }
     ],
     "compliance": {
-      "certifications": ["CE"],
+      "certifications": [
+        "CE"
+      ],
       "standards": []
     }
   },
@@ -6596,8 +6856,9 @@
         },
         "category": "Physical",
         "type": "enum",
-        "value": ["Wood"],
-        "raw": "Wooden construction"
+        "value": [
+          "Wood"
+        ]
       },
       {
         "canonical_name": "disposability",
@@ -6607,8 +6868,9 @@
         },
         "category": "Usage",
         "type": "enum",
-        "value": ["Disposable"],
-        "raw": "Single-use"
+        "value": [
+          "Disposable"
+        ]
       },
       {
         "canonical_name": "intended_use",
@@ -6618,13 +6880,16 @@
         },
         "category": "Usage",
         "type": "enum",
-        "value": ["Child"],
-        "raw": "For pediatric examinations"
+        "value": [
+          "Child"
+        ]
       }
     ],
     "compliance": {
-      "certifications": ["CE"],
+      "certifications": [
+        "CE"
+      ],
       "standards": []
     }
-  }  
+  }
 ]
