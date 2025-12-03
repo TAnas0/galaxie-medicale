@@ -539,6 +539,27 @@
         "value": "Temperature maintenance",
         "raw": "Mode Stand-by pour maintien en température"
       },
+
+      {
+        "canonical_name": "bacteriological_filter_capacity",
+        "display_label": { "en": "Bacteriological Filtering Capacity", "fr": "Capacité de Filtration Bactériologique" },
+        "category": "Technical", "type": "string", "value": { "text": "0.3 µm" }
+      },
+      {
+        "canonical_name": "bacteriological_filter_diameter",
+        "display_label": { "en": "Bacteriological Filter Diameter", "fr": "Diamètre du Filtre Bactériologique" },
+        "category": "Technical", "type": "number", "value": { "qty": 56, "unit": "mm" }
+      },
+      {
+        "canonical_name": "water_consumption_per_cycle",
+        "display_label": {
+          "en": "Water consumption per cycle",
+          "fr": "Consommation d'eau par cycle"
+        },
+        "category": "",
+        "type": "string",
+        "value": "0,30 / 0,45 l - 14 cycles"
+      },
       {
         "canonical_name": "data_output_ports",
         "display_label": { "en": "Data Output Ports", "fr": "Ports de sortie de données" },
@@ -1477,10 +1498,10 @@
     }
   },
   {
-    "id": "sms-as44-autoclave",
+    "id": "sms-as446-autoclave",
     "name": {
-      "en": "Autoclave à vapeur AS44",
-      "fr": "Autoclave à vapeur AS44"
+      "en": "Autoclave à vapeur AS446",
+      "fr": "Autoclave à vapeur AS446"
     },
     "brand": {
       "name": "SMS ",
@@ -1494,8 +1515,8 @@
       }
     },
     "short_description": {
-      "en": "Autoclave vertical compact de 100L ou 150L pour petites salles de stérilisation et blocs opératoires.",
-      "fr": "Autoclave vertical compact 100L ou 150L, conçu pour petites salles de stérilisation et blocs opératoires."
+      "en": "",
+      "fr": ""
     },
     "full_description": {
       "en": "L'autoclave à vapeur AS44 est un stérilisateur vertical destiné aux petites salles de stérilisation et blocs opératoires. Il offre des capacités de 103L ou 150L, un générateur de vapeur intégré et des portes coulissantes verticales automatiques pour une stérilisation fiable des instruments chirurgicaux et médicaux. Équipé d'un écran tactile couleur LCD 7'', de 19 programmes de stérilisation et de contrôle à distance, il combine compacité, efficacité et facilité d'utilisation.",
@@ -1509,117 +1530,90 @@
     ],
     "attributes": [
       {
-        "canonical_name": "chamber_capacity",
-        "display_label": {
-          "en": "Capacité de la chambre",
-          "fr": "Capacité de la chambre"
-        },
+        "canonical_name": "chamber_capacity_single_door",
+        "display_label": { "en": "Chamber Capacity (Single Door)", "fr": "Capacité de la Chambre (Porte Simple)" },
         "category": "Physical",
-        "type": "enum",
-        "value": [
-          "103 L",
-          "150 L"
-        ],
-        "raw": "Capacité: 103L ou 150L"
+        "type": "number",
+        "value": { "qty": 109, "unit": "L" },
+        "highlighted": true
       },
       {
-        "canonical_name": "porte",
-        "display_label": {
-          "en": "Portes",
-          "fr": "Portes"
-        },
+        "canonical_name": "chamber_capacity_double_door",
+        "display_label": { "en": "Chamber Capacity (Double Door)", "fr": "Capacité de la Chambre (Double Porte)" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 103, "unit": "L" },
+        "note": "Capacity is 6 liters less for the double door version due to structural modifications.",
+        "highlighted": true
+      },
+      {
+        "canonical_name": "door_type",
+        "display_label": { "en": "Door Type", "fr": "Type de Porte" },
+        "category": "Functional",
+        "type": "string",
+        "value": "Automatic Vertical Sliding Door"
+      },
+      {
+        "canonical_name": "material_chamber",
+        "display_label": { "en": "Chamber/Jacket Material", "fr": "Matériau Chambre/Chemise" },
         "category": "Physical",
         "type": "string",
-        "value": "Simple ou double, coulissantes verticales automatiques",
-        "raw": "Porte simple ou double; Portes coulissantes verticales automatiques"
+        "value": "AISI 316L Stainless Steel (Hand polished chamber)",
+        "highlighted": true
       },
       {
-        "canonical_name": "generateur_vapeur",
-        "display_label": {
-          "en": "Générateur de vapeur",
-          "fr": "Générateur de vapeur"
-        },
-        "category": "Electrical",
-        "type": "boolean",
-        "value": true,
-        "raw": "Générateur de vapeur intégré"
-      },
-      {
-        "canonical_name": "economie_eau",
-        "display_label": {
-          "en": "Système d’économie d’eau",
-          "fr": "Système d’économie d’eau"
-        },
+        "canonical_name": "material_housing",
+        "display_label": { "en": "Housing Material", "fr": "Matériau Habillage" },
         "category": "Physical",
-        "type": "boolean",
-        "value": true,
-        "raw": "Système d’économie d’eau de refroidissement"
-      },
-      {
-        "canonical_name": "ecran",
-        "display_label": {
-          "en": "Écran tactile",
-          "fr": "Écran tactile"
-        },
-        "category": "Controls",
         "type": "string",
-        "value": "LCD couleur 7\"",
-        "raw": "Écran tactile couleur LCD 7”"
+        "value": "AISI 304 Stainless Steel"
       },
       {
-        "canonical_name": "programmes",
-        "display_label": {
-          "en": "Programmes de stérilisation",
-          "fr": "Programmes de stérilisation"
-        },
-        "category": "Controls",
+        "canonical_name": "external_dimensions",
+        "display_label": { "en": "External Dimensions (W x H x D)", "fr": "Dimensions Externes (L x H x P)" },
+        "category": "Physical",
         "type": "string",
-        "value": "19 programmes + 2 tests (vide, Bowie & Dick)",
-        "raw": "19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)"
+        "value": "800 mm x 1615 mm x 900 mm",
+        "raw": "Width: 800 mm, Height: 1615 mm, Depth: 900 mm"
       },
       {
-        "canonical_name": "materiaux_chambre",
-        "display_label": {
-          "en": "Matériaux chambre et portes",
-          "fr": "Matériaux chambre et portes"
-        },
-        "category": "Materials",
+        "canonical_name": "control_system",
+        "display_label": { "en": "Control System", "fr": "Système de Contrôle" },
+        "category": "Control",
         "type": "string",
-        "value": "Acier inoxydable AISI 316L",
-        "raw": "Chambre et portes en acier inoxydable AISI 316L"
+        "value": "7” LCD Color Touch Screen",
+        "highlighted": true
       },
       {
-        "canonical_name": "imprimante",
-        "display_label": {
-          "en": "Imprimante intégrée",
-          "fr": "Imprimante intégrée"
-        },
-        "category": "Accessories",
-        "type": "boolean",
-        "value": true,
-        "raw": "Imprimante intégrée"
-      },
-      {
-        "canonical_name": "controle_acces",
-        "display_label": {
-          "en": "Contrôle d'accès",
-          "fr": "Contrôle d'accès"
-        },
-        "category": "Controls",
+        "canonical_name": "programs",
+        "display_label": { "en": "Programs", "fr": "Programmes" },
+        "category": "Control",
         "type": "string",
-        "value": "Mot de passe",
-        "raw": "Contrôle d'accès par mot de passe"
+        "value": "19 Sterilization Programs & 2 Test Programs",
+        "raw": "19 Sterilization programs, 2 Test programs (Vacuum Test, Bowie & Dick Test)"
       },
       {
-        "canonical_name": "controle_distance",
-        "display_label": {
-          "en": "Contrôle et surveillance à distance",
-          "fr": "Contrôle et surveillance à distance"
-        },
-        "category": "Controls",
-        "type": "boolean",
-        "value": true,
-        "raw": "Contrôle et surveillance à distance"
+        "canonical_name": "steam_source",
+        "display_label": { "en": "Steam Source", "fr": "Source de Vapeur" },
+        "category": "Functional",
+        "type": "string",
+        "value": "Integrated Steam Generator or External Steam Source Capability"
+      },
+      {
+        "canonical_name": "sterilization_basket_size",
+        "display_label": { "en": "Sterilization Basket Size", "fr": "Taille du Panier de Stérilisation" },
+        "category": "Physical",
+        "type": "string",
+        "value": "585 x 365 x 170 mm",
+        "highlighted": true
+      },
+      {
+        "canonical_name": "cooling_system",
+        "display_label": { "en": "Cooling System Standard", "fr": "Système de Refroidissement Standard" },
+        "category": "Functional",
+        "type": "string",
+        "value": "Cooling water saving system",
+        "highlighted": false
       }
     ],
     "compliance": {
@@ -1629,7 +1623,135 @@
     "links": [
       "https://sms.com.pl/en/steam-sterilizers/as-44/"
     ],
-    "manual": ""
+    "manual": "https://sms.com.pl/wp-content/uploads/2025/01/SMS_Product-catalogue_A5_design-2.pdf"
+  },
+  {
+    "id": "sms-as449-autoclave",
+    "name": {
+      "en": "Autoclave à vapeur AS449",
+      "fr": "Autoclave à vapeur AS449"
+    },
+    "brand": {
+      "name": "SMS ",
+      "description": ""
+    },
+    "category": {
+      "canonical": "sterilisation",
+      "display": {
+        "en": "autoclave-vertical",
+        "fr": "Autoclave vertical"
+      }
+    },
+    "short_description": {
+      "en": "",
+      "fr": ""
+    },
+    "full_description": {
+      "en": "L'autoclave à vapeur AS44 est un stérilisateur vertical destiné aux petites salles de stérilisation et blocs opératoires. Il offre des capacités de 103L ou 150L, un générateur de vapeur intégré et des portes coulissantes verticales automatiques pour une stérilisation fiable des instruments chirurgicaux et médicaux. Équipé d'un écran tactile couleur LCD 7'', de 19 programmes de stérilisation et de contrôle à distance, il combine compacité, efficacité et facilité d'utilisation.",
+      "fr": "L'autoclave à vapeur AS44 est un stérilisateur vertical destiné aux petites salles de stérilisation et blocs opératoires.  \nIl permet une stérilisation fiable des instruments chirurgicaux et médicaux grâce à ses cycles de vapeur à haute température.  \nDisponible en capacité 100L ou 150L, il combine compacité, facilité d'utilisation et efficacité pour les environnements cliniques restreints."
+    },
+    "availability": "in_stock",
+    "images": [
+      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-1.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-2.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-3.webp"
+    ],
+    "attributes": [
+      {
+        "canonical_name": "chamber_capacity_single_door",
+        "display_label": { "en": "Chamber Capacity (Single Door)", "fr": "Capacité de la Chambre (Porte Simple)" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 156, "unit": "L" },
+        "highlighted": true
+      },
+      {
+        "canonical_name": "chamber_capacity_double_door",
+        "display_label": { "en": "Chamber Capacity (Double Door)", "fr": "Capacité de la Chambre (Double Porte)" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 150, "unit": "L" },
+        "note": "Capacity is 6 liters less for the double door version due to structural modifications.",
+        "highlighted": true
+      },
+      {
+        "canonical_name": "door_type",
+        "display_label": { "en": "Door Type", "fr": "Type de Porte" },
+        "category": "Functional",
+        "type": "string",
+        "value": "Automatic Vertical Sliding Door"
+      },
+      {
+        "canonical_name": "material_chamber",
+        "display_label": { "en": "Chamber/Jacket Material", "fr": "Matériau Chambre/Chemise" },
+        "category": "Physical",
+        "type": "string",
+        "value": "AISI 316L Stainless Steel (Hand polished chamber)",
+        "highlighted": true
+      },
+      {
+        "canonical_name": "material_housing",
+        "display_label": { "en": "Housing Material", "fr": "Matériau Habillage" },
+        "category": "Physical",
+        "type": "string",
+        "value": "AISI 304 Stainless Steel"
+      },
+      {
+        "canonical_name": "external_dimensions",
+        "display_label": { "en": "External Dimensions (W x H x D)", "fr": "Dimensions Externes (L x H x P)" },
+        "category": "Physical",
+        "type": "string",
+        "value": "800 mm x 1615 mm x 1200 mm",
+        "raw": "Width: 800 mm, Height: 1615 mm, Depth: 1200 mm"
+      },
+      {
+        "canonical_name": "control_system",
+        "display_label": { "en": "Control System", "fr": "Système de Contrôle" },
+        "category": "Control",
+        "type": "string",
+        "value": "7” LCD Color Touch Screen",
+        "highlighted": true
+      },
+      {
+        "canonical_name": "programs",
+        "display_label": { "en": "Programs", "fr": "Programmes" },
+        "category": "Control",
+        "type": "string",
+        "value": "19 Sterilization Programs & 2 Test Programs",
+        "raw": "19 Sterilization programs, 2 Test programs (Vacuum Test, Bowie & Dick Test)"
+      },
+      {
+        "canonical_name": "steam_source",
+        "display_label": { "en": "Steam Source", "fr": "Source de Vapeur" },
+        "category": "Functional",
+        "type": "string",
+        "value": "Integrated Steam Generator or External Steam Source Capability"
+      },
+      {
+        "canonical_name": "sterilization_basket_size",
+        "display_label": { "en": "Sterilization Basket Size", "fr": "Taille du Panier de Stérilisation" },
+        "category": "Physical",
+        "type": "string",
+        "value": "436 x 365 x 170 mm",
+        "highlighted": true
+      },
+      {
+        "canonical_name": "cooling_system",
+        "display_label": { "en": "Cooling System Standard", "fr": "Système de Refroidissement Standard" },
+        "category": "Functional",
+        "type": "string",
+        "value": "Cooling water saving system",
+        "highlighted": false
+      }
+    ],
+    "compliance": {
+      "certifications": [],
+      "standards": []
+    },
+    "links": [
+      "https://sms.com.pl/en/steam-sterilizers/as-44/"
+    ],
+    "manual": "https://sms.com.pl/wp-content/uploads/2025/01/SMS_Product-catalogue_A5_design-2.pdf"
   },
   {
     "id": "sms-as66-autoclave",
@@ -1658,9 +1780,18 @@
     },
     "availability": "on_order",
     "images": [
-      "../assets/products/sterilization/autoclaves/autoclave-as-66/as66-blue.webp"
+      "../assets/products/sterilization/autoclaves/autoclave-as-66/as66-blue.webp",
+      "../assets/products/sterilization/autoclaves/autoclave-as-66/as66-2.webp"
     ],
     "attributes": [
+      {
+        "canonical_name": "available_variants",
+        "display_label": { "en": "Available Variants", "fr": "Variantes Disponibles" },
+        "category": "Physical",
+        "type": "string",
+        "value": "AS 666, AS 669, AS 6612, AS 6615, AS 6618",
+        "highlighted": true
+      },
       {
         "canonical_name": "chamber_capacity",
         "display_label": {
@@ -1668,13 +1799,8 @@
           "fr": "Capacité de la chambre"
         },
         "category": "Physical",
-        "type": "range",
-        "value": {
-          "min": 334,
-          "max": 897,
-          "unit": "L"
-        },
-        "raw": "de 334L à 897L (4 à 12 STU)"
+        "type": "string",
+        "value": "334 L, 459 L, 605 L, 756 L, 897 L"
       },
       {
         "canonical_name": "stu_capacity",
@@ -1683,13 +1809,8 @@
           "fr": "Capacité STU"
         },
         "category": "Physical",
-        "type": "range",
-        "value": {
-          "min": 4,
-          "max": 12,
-          "unit": "STU"
-        },
-        "raw": "4 à 12 STU"
+        "type": "string",
+        "value": "4 STU, 6 STU, 8 STU, 10 STU, 12 STU"
       },
       {
         "canonical_name": "door_type",
@@ -1701,28 +1822,6 @@
         "type": "enum",
         "value": ["Single door", "Double door", "Automatic vertical sliding"],
         "raw": "Versions à porte simple ou double, portes coulissantes verticales automatiques"
-      },
-      {
-        "canonical_name": "steam_generator",
-        "display_label": {
-          "en": "Steam Generator",
-          "fr": "Générateur de vapeur"
-        },
-        "category": "Functional",
-        "type": "enum",
-        "value": ["Integrated"],
-        "raw": "Générateur de vapeur intégré"
-      },
-      {
-        "canonical_name": "display_type",
-        "display_label": {
-          "en": "Display",
-          "fr": "Affichage"
-        },
-        "category": "Controls",
-        "type": "enum",
-        "value": ["7” color LCD touchscreen"],
-        "raw": "Écran tactile couleur LCD 7”"
       },
       {
         "canonical_name": "sterilisation_programs_count",
@@ -1752,37 +1851,87 @@
         "raw": "Chambre et portes en acier inoxydable AISI 316L"
       },
       {
-        "canonical_name": "printing",
-        "display_label": {
-          "en": "Integrated Printer",
-          "fr": "Imprimante intégrée"
-        },
-        "category": "Controls",
-        "type": "enum",
-        "value": ["Yes"],
-        "raw": "Imprimante intégrée"
+        "canonical_name": "overall_width",
+        "display_label": { "en": "Overall Width (All Models)", "fr": "Largeur Totale (Tous Modèles)" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 1170, "unit": "mm" },
+        "raw": "1170 mm"
       },
       {
-        "canonical_name": "access_control",
-        "display_label": {
-          "en": "Access Control",
-          "fr": "Contrôle d'accès"
-        },
-        "category": "Controls",
-        "type": "enum",
-        "value": ["Password protected"],
-        "raw": "Contrôle d'accès par mot de passe"
+        "canonical_name": "overall_height",
+        "display_label": { "en": "Overall Height (All Models)", "fr": "Hauteur Totale (Tous Modèles)" },
+        "category": "Physical",
+        "type": "number",
+        "value": { "qty": 1900, "unit": "mm" },
+        "raw": "1900 mm"
       },
       {
-        "canonical_name": "remote_monitoring",
-        "display_label": {
-          "en": "Remote Monitoring",
-          "fr": "Surveillance à distance"
-        },
-        "category": "Functional",
-        "type": "enum",
-        "value": ["Yes"],
-        "raw": "Contrôle et surveillance à distance"
+        "canonical_name": "overall_depth_double_door",
+        "display_label": { "en": "Overall Depth (Double Door Range)", "fr": "Profondeur Totale (Gamme Double Porte)" },
+        "category": "Physical",
+        "type": "string",
+        "value": "970 mm, 1225 mm, 1525 mm, 1835 mm, 2125 mm"
+      },
+      {
+        "canonical_name": "overall_depth_single_door",
+        "display_label": { "en": "Overall Depth (Single Door Range)", "fr": "Profondeur Totale (Gamme Simple Porte)" },
+        "category": "Physical",
+        "type": "string",
+        "value": "1060 mm, 1315 mm, 1615 mm (for models 4-8 STU)"
+      },
+      {
+        "canonical_name": "control_panel_type",
+        "display_label": { "en": "Control Panel Type", "fr": "Type de Panneau de Contrôle" },
+        "category": "Interface", "type": "string", "value": "9.7” LCD Color Touch Screen",
+        "raw": "9,7” LCD color touch screen control panel"
+      },
+      {
+        "canonical_name": "steam_source",
+        "display_label": { "en": "Steam Source", "fr": "Source de Vapeur" },
+        "category": "Functional", "type": "enum", "value": ["Integrated steam generator", "External steam source"],
+        "raw": "integrated steam generator or the means to use steam from an external source"
+      },
+      {
+        "canonical_name": "door_type",
+        "display_label": { "en": "Door Type", "fr": "Type de Porte" },
+        "category": "Physical", "type": "enum", "value": ["Automatic vertical sliding door", "Single door", "Double door"],
+        "raw": "automatic vertical sliding door, single and double door versions"
+      },
+      {
+        "canonical_name": "sterilization_programs",
+        "display_label": { "en": "Sterilization Programs", "fr": "Programmes de Stérilisation" },
+        "category": "Functional", "type": "number", "value": { "qty": 19, "unit": "programs" }
+      },
+      {
+        "canonical_name": "test_programs",
+        "display_label": { "en": "Test Programs", "fr": "Programmes de Test" },
+        "category": "Functional", "type": "enum", "value": ["Vacuum test", "Bowie & Dick test"],
+        "raw": "2 test programs (vacuum test, Bowie & Dick test)"
+      },
+      {
+        "canonical_name": "chamber_material",
+        "display_label": { "en": "Sterilization Chamber Material", "fr": "Matériau de la Chambre de Stérilisation" },
+        "category": "Physical", "type": "string", "value": "AISI 316L stainless steel (hand polished)",
+        "raw": "hand polished sterilization chamber, the chamber, heating jacket and doors are made of AISI 316L stainless steel"
+      },
+      {
+        "canonical_name": "housing_material",
+        "display_label": { "en": "Housing Material", "fr": "Matériau du Boîtier" },
+        "category": "Physical", "type": "string", "value": "AISI 304 stainless steel",
+        "raw": "the housing is made of AISI 304 stainless steel"
+      },
+      {
+        "canonical_name": "data_logging",
+        "display_label": { "en": "Data Logging", "fr": "Enregistrement des Données" },
+        "category": "Interface", "type": "enum", "value": ["Built-in dot matrix printer", "Validation ports"],
+        "raw": "built-in dot matrix printer, validation ports"
+      },
+      {
+        "canonical_name": "security_levels",
+        "display_label": { "en": "Access Security Levels", "fr": "Niveaux de Sécurité d'Accès" },
+        "category": "Interface", "type": "number", "value": { "qty": 4, "unit": "levels" },
+        "raw": "4 access levels with password protection"
       }
     ],
     "compliance": {
