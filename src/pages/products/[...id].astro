@@ -12,6 +12,7 @@ import CardContent from "../../components/ui/CardContent.astro";
 import Footer from "../../components/ui/Footer.astro";
 import Header from "../../components/Header.astro";
 import Button from "../../components/ui/Button.astro";
+import ProductCard from "../../components/catalog/ProductCard.astro";
 
 import { formatAttributeValue } from "../../utils/formatters";
 import { CATEGORY_HIGHLIGHTS } from "../../config/productHighlights";
@@ -65,10 +66,13 @@ product.data.attributes = product.data.attributes?.filter(
 const certifications = product.data.compliance?.certifications;
 const standards = product.data.compliance?.standards;
 
-// TODO
 const relatedProducts = products
-  .filter((p) => p.data.category == product.data.category)
-  .slice(0, 3);
+  .filter(
+    (p) =>
+      p.data.category.canonical == product.data.category.canonical &&
+      p.id !== product.id,
+  )
+  .slice(0, 4);
 
 // Returns a printable value for a product attribute
 // formatAttributeValue moved to utils/formatters.js
@@ -418,40 +422,20 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
       </Card>
 
       {/* Related Products */}
-      <!-- <div>
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">
-          Related Products & Accessories
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {
-            relatedProducts.map((product, index) => (
-              <Card key={index} class="hover:shadow-lg transition-shadow">
-                <div class="aspect-[3/2] bg-gray-100 rounded-t-lg overflow-hidden">
-                  {/* <img
-                    src={Astro.site + product.data.image}
-                    alt={product.data.name}
-                    class="w-full h-full object-cover"
-                  /> */}
-                </div>
-                <CardContent className="p-4">
-                  <h3 class="font-semibold text-gray-900 mb-2">
-                    {product.data.name}
-                  </h3>
-                  {/* <div class="flex items-center justify-between">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      class="text-medical-red border-medical-red hover:bg-medical-red hover:text-white"
-                    >
-                      View Details
-                    </Button>
-                  </div> */}
-                </CardContent>
-              </Card>
-            ))
-          }
-        </div>
-      </div> -->
+      {
+        relatedProducts.length > 0 && (
+          <div class="mt-16 pt-8 border-t border-gray-100">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Produits recommandés
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {relatedProducts.map((product) => (
+                <ProductCard product={product} />
+              ))}
+            </div>
+          </div>
+        )
+      }
     </main>
   </div>
 
