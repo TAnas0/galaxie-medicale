@@ -22,6 +22,7 @@
     "aos": "^2.3.4",
     "astro": "^5.8.2",
     "free-astro-components": "^1.2.0",
+    "fuse.js": "^7.1.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import Logo from "./logo/Logo.astro";
+import Search from "./search/Search.jsx";
 ---
 
 <header
@@ -12,7 +13,8 @@ import Logo from "./logo/Logo.astro";
   <div
     id="gradient-divider"
     class="hidden fixed top-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-900 to-primary opacity-50 z-40"
-  ></div>
+  >
+  </div>
 
   <!-- Top Info Bar -->
   <div
@@ -28,7 +30,8 @@ import Logo from "./logo/Logo.astro";
         >
           <Icon name="heroicons:map-pin" class="text-lg" />
           <span>
-            207, Boulevard de la Résistance, 7ᵉ étage, N°14 (C/O C.A.R), Casablanca, Maroc
+            207, Boulevard de la Résistance, 7ᵉ étage, N°14 (C/O C.A.R),
+            Casablanca, Maroc
           </span>
         </div>
         <div class="flex space-x-1 md:space-x-2 text-gray-50">
@@ -61,28 +64,43 @@ import Logo from "./logo/Logo.astro";
     data-aos-duration="300"
   >
     <div class="container mx-auto px-4">
-      <div class="flex items-center space-x-12 h-16">
+      <div class="flex items-center justify-between h-16 gap-4">
         <!-- Logo -->
         <div
-          class="relative flex items-center !border-l border-dashed border-primary h-full px-3 bg-gray-50 shadow-sm"
+          class="relative flex items-center !border-l border-dashed border-primary h-full px-3 bg-gray-50 shadow-sm shrink-0"
         >
-          <div class="absolute inset-y-0 right-0 !border-r border-primary"></div>
+          <div class="absolute inset-y-0 right-0 !border-r border-primary">
+          </div>
           <a href="/galaxie-medicale" class="flex">
             <Logo withText={true} variant="inline" />
           </a>
         </div>
 
+        <!-- Search Bar (Desktop) -->
+        <div class="hidden lg:block flex-1 max-w-xl mx-auto">
+          <Search client:idle />
+        </div>
+
         <!-- Desktop Nav -->
         <nav
-          class="hidden lg:flex items-center space-x-8"
+          class="hidden lg:flex items-center space-x-6 shrink-0"
           role="navigation"
           aria-label="Navigation principale"
         >
-          <a href="/galaxie-medicale" class="hover:underline text-lg">Accueil</a>
-          <a href="/galaxie-medicale#categories" class="hover:underline text-lg">
+          <a
+            href="/galaxie-medicale"
+            class="hover:underline text-lg whitespace-nowrap">Accueil</a
+          >
+          <a
+            href="/galaxie-medicale#categories"
+            class="hover:underline text-lg whitespace-nowrap"
+          >
             Nos Catégories
           </a>
-          <a href="/galaxie-medicale/catalog" class="hover:underline text-lg">
+          <a
+            href="/galaxie-medicale/catalog"
+            class="hover:underline text-lg whitespace-nowrap"
+          >
             Notre Catalogue
           </a>
         </nav>
@@ -95,7 +113,10 @@ import Logo from "./logo/Logo.astro";
             aria-label="Ouvrir le menu de navigation"
             aria-expanded="false"
           >
-            <Icon name="heroicons:bars-4" class="min-w-6 min-h-6 stroke-[3] text-3xl" />
+            <Icon
+              name="heroicons:bars-4"
+              class="min-w-6 min-h-6 stroke-[3] text-3xl"
+            />
           </button>
         </div>
       </div>
@@ -107,11 +128,12 @@ import Logo from "./logo/Logo.astro";
     id="mobile-menu"
     class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out lg:hidden flex flex-col bg-gray-50 px-4 space-y-3 border-t border-gray-300"
   >
-    <a href="/galaxie-medicale" class="block text-gray-900 hover:text-blue-600 mx-auto pt-3"
+    <a
+      href="/galaxie-medicale"
+      class="block text-gray-900 hover:text-blue-600 mx-auto pt-3"
     >
       Accueil
-    </a
-    >
+    </a>
     <a
       href="/galaxie-medicale#categories"
       class="block text-gray-900 hover:text-blue-600 mx-auto"
@@ -137,34 +159,39 @@ import Logo from "./logo/Logo.astro";
     infobar.animate(
       [
         { maxHeight: infobar.scrollHeight + "px", opacity: 1 },
-        { maxHeight: "0px", opacity: 0 }
+        { maxHeight: "0px", opacity: 0 },
       ],
-      { duration: 500, easing: "ease-in-out", fill: "forwards" }
+      { duration: 500, easing: "ease-in-out", fill: "forwards" },
     );
   };
-
 
   const showInfobar = () => {
     infobar.animate(
       [
         { maxHeight: "0px", opacity: 0 },
-        { maxHeight: infobar.scrollHeight + "px", opacity: 1 }
+        { maxHeight: infobar.scrollHeight + "px", opacity: 1 },
       ],
-      { duration: 500, easing: "ease-in-out", fill: "forwards" }
+      { duration: 500, easing: "ease-in-out", fill: "forwards" },
     );
   };
 
-  const primary = getComputedStyle(document.documentElement).getPropertyValue('--color-primary').trim();
-  const grayBg = getComputedStyle(document.documentElement).getPropertyValue('--color-gray-50').trim();
-  const grayText = getComputedStyle(document.documentElement).getPropertyValue('--color-gray-900').trim();
+  const primary = getComputedStyle(document.documentElement)
+    .getPropertyValue("--color-primary")
+    .trim();
+  const grayBg = getComputedStyle(document.documentElement)
+    .getPropertyValue("--color-gray-50")
+    .trim();
+  const grayText = getComputedStyle(document.documentElement)
+    .getPropertyValue("--color-gray-900")
+    .trim();
 
   const showDarkNavbar = () => {
     navbar.animate(
       [
         { backgroundColor: grayBg, color: grayText }, // gray-50, gray-900
-        { backgroundColor: primary, color: "white" }  // primary/95
+        { backgroundColor: primary, color: "white" }, // primary/95
       ],
-      { duration: 500, easing: "ease-in-out", fill: "forwards" }
+      { duration: 500, easing: "ease-in-out", fill: "forwards" },
     );
   };
 
@@ -172,9 +199,9 @@ import Logo from "./logo/Logo.astro";
     navbar.animate(
       [
         { backgroundColor: primary, color: "white" },
-        { backgroundColor: grayBg, color: grayText }
+        { backgroundColor: grayBg, color: grayText },
       ],
-      { duration: 500, easing: "ease-in-out", fill: "forwards" }
+      { duration: 500, easing: "ease-in-out", fill: "forwards" },
     );
   };
 
@@ -185,31 +212,31 @@ import Logo from "./logo/Logo.astro";
     if (y > 250 && infobarVisible) {
       hideInfobar();
       showDarkNavbar();
-      gradientDivider.classList.remove("hidden")
+      gradientDivider.classList.remove("hidden");
       infobarVisible = false;
     } else if (y <= 250 && !infobarVisible) {
       showInfobar();
       showLightNavbar();
-      gradientDivider.classList.add("hidden")
+      gradientDivider.classList.add("hidden");
       infobarVisible = true;
     }
   });
   window.addEventListener("scroll", () => {
-    return
+    return;
     const currentScrollY = window.scrollY;
-    let infobarHidden = false
+    let infobarHidden = false;
     if (currentScrollY > 250 && !infobarHidden) {
-      hideInfobar()
-      infobarHidden = true
-    //   navbar.classList.add("bg-primary/95", "text-white");
-    //   navbar.classList.remove("bg-gray-50", "text-gray-900");
-    //   // gradientDivider.classList.remove("hidden");
+      hideInfobar();
+      infobarHidden = true;
+      //   navbar.classList.add("bg-primary/95", "text-white");
+      //   navbar.classList.remove("bg-gray-50", "text-gray-900");
+      //   // gradientDivider.classList.remove("hidden");
     } else if (currentScrollY >= 250 && infobarHidden) {
-      showInfobar()
-      infobarHidden = false
-    //   navbar.classList.remove("bg-primary/95", "text-white");
-    //   navbar.classList.add("bg-gray-50", "text-gray-900");
-    //   // gradientDivider.classList.add("hidden");
+      showInfobar();
+      infobarHidden = false;
+      //   navbar.classList.remove("bg-primary/95", "text-white");
+      //   navbar.classList.add("bg-gray-50", "text-gray-900");
+      //   // gradientDivider.classList.add("hidden");
     }
   });
 
@@ -256,13 +283,13 @@ import Logo from "./logo/Logo.astro";
       closeMenu();
     });
   });
-
 </script>
 
-
 <style>
-#infobar {
-  transition: max-height 0.6s ease, opacity 0.6s ease;
-  overflow: hidden;
-}
+  #infobar {
+    transition:
+      max-height 0.6s ease,
+      opacity 0.6s ease;
+    overflow: hidden;
+  }
 </style>

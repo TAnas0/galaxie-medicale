@@ -194,10 +194,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
           <div class="flex flex-wrap gap-2 justify-end mt-4">
             {
               [...highlightedCerts, ...highlightedStandards]?.map((cert) => (
-                <div
-                  key={cert}
-                  class="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-gray-200 rounded-lg shadow-sm"
-                >
+                <div class="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-gray-200 rounded-lg shadow-sm">
                   <Icon
                     name="heroicons:shield-check"
                     class="w-4 h-4 text-green-600"
@@ -249,19 +246,6 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
                   </div>
                 ))
               }
-              <!-- {
-                specifications.map((spec, index) => (
-                  <div
-                    key={index}
-                    class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0"
-                  >
-                    <span class="text-sm text-gray-600">{spec.label}</span>
-                    <span class="text-sm font-medium text-gray-900 whitespace-pre-line">
-                      {spec.value}
-                    </span>
-                  </div>
-                ))
-              } -->
             </CardContent>
           </Card>
         </div>
@@ -321,51 +305,11 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
               </Card>
             ) : null
           }
-
-          <!--   
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-gray-900">
-                Utilisation prévue & Applications
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div>
-                <h4 class="font-medium text-gray-900 mb-2">
-                  Applications principales
-                </h4>
-                <ul class="space-y-1 text-sm text-gray-700">
-                  <li>• Cabinets dentaires et médicaux</li>
-                  <li>• Laboratoires et cliniques vétérinaires</li>
-                  <li>• Centres de chirurgie ambulatoire</li>
-                  <li>• Instituts de beauté et studios de tatouage</li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="font-medium text-gray-900 mb-2">
-                  Fonctionnalités clés
-                </h4>
-                <ul class="space-y-1 text-sm text-gray-700">
-                  <li>• Cycles de stérilisation classe B (conformes EN 13060)</li>
-                  <li>• Système de vide fractionné haute performance</li>
-                  <li>
-                    • Générateur de vapeur externe rapide avec anti-calcaire
-                  </li>
-                  <li>• Écran LCD multilingue avec suivi des cycles</li>
-                  <li>• Connectivité USB et imprimante en option</li>
-                  <li>• Tests automatiques : Bowie-Dick, Helix, Test Vide</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-   -->
         </div>
       </div>
 
-      {/* Downloads Section */}
-      {/* Downloads Section */}
       <Card class="mb-12 border border-gray-200 shadow-sm overflow-hidden">
-        <CardHeader class="bg-gray-50/50 border-b border-gray-100">
+        <CardHeader className="bg-gray-50/50 border-b border-gray-100">
           <CardTitle className="flex items-center text-gray-900 text-lg">
             <div class="p-2 bg-blue-50 rounded-lg mr-3 text-primary">
               <Icon name="heroicons:arrow-down-tray" class="w-5 h-5" />
@@ -421,10 +365,9 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
         </CardContent>
       </Card>
 
-      {/* Related Products */}
       {
         relatedProducts.length > 0 && (
-          <div class="mt-16 pt-8 border-t border-gray-100">
+          <div class="mt-16 pt-8 border border-gray-100">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">
               Produits recommandés
             </h2>
