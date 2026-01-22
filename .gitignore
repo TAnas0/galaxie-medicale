@@ -25,3 +25,30 @@ pnpm-debug.log*
 
 
 TODO
+
+
+original
+optimized
+output2
+output
+.sonda
+
+
+original-images
+src/assets/products/**/**/otherimages
+src/assets/products/**/**/documents
+# src/assets/products/
+public/catalog/products/**/**/otherimages
+public/catalog/products/**/**/documents
+
+data/
+!src/data
+
+*.pdf
+*.py
+scripts/
+
+
+src/assets/products-backup
+src/assets/products-*
+public/collage/originals

@@ -74,16 +74,19 @@ const relatedProducts = products
   )
   .slice(0, 4);
 
-// Returns a printable value for a product attribute
-// formatAttributeValue moved to utils/formatters.js
 
-const HIGHLIGHT_CERTS = ["CE", "ISO 13485", "FDA"];
-const HIGHLIGHT_STANDARDS = ["EN 13060", "ISO 14937"];
+// Highlight and prioritize certifications and standards
+// TODO Order is important
+const HIGHLIGHT_CERTS_STANDARDS = [
+  "CE", "ISO 13485", "FDA", "EN 13060", "ISO 14937", "ISO 14971", "IEC 60601", "ISO 10993",
+
+
+];
 const highlightedCerts = product.data.compliance?.certifications?.filter(
-  (cert) => HIGHLIGHT_CERTS.includes(cert),
+  (cert) => HIGHLIGHT_CERTS_STANDARDS.includes(cert),
 );
 const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
-  HIGHLIGHT_STANDARDS.includes(std),
+  HIGHLIGHT_CERTS_STANDARDS.includes(std),
 );
 ---
 
@@ -137,7 +140,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
             </div>
 
             <div
-              class="text-lg text-gray-700 whitespace-pre-line leading-relaxed mb-8"
+              class="text-lg text-gray-700 whitespace-pre-line leading-relaxed mb-2"
             >
               {
                 product.data.full_description.fr ||
@@ -167,48 +170,26 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
               </div>
             </div>
 
-            <!-- CTA Section -->
-            <div
-              class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-gray-100"
-            >
-              <Button
-                href="#contact"
-                class="w-full sm:w-auto flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all"
-              >
-                <Icon
-                  name="heroicons:chat-bubble-left-ellipsis"
-                  class="w-5 h-5"
-                />
-                Demander un devis
-              </Button>
-              <Button
-                variant="outline"
-                class="w-full sm:w-auto flex items-center justify-center gap-2"
-              >
-                <Icon name="heroicons:arrow-down-tray" class="w-5 h-5" />
-                Fiche technique
-              </Button>
-            </div>
           </div>
 
-          <div class="flex flex-wrap gap-2 justify-end mt-4">
+          <div class="flex flex-wrap gap-2 justify-start">
             {
               [...highlightedCerts, ...highlightedStandards]?.map((cert) => (
-                <div class="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-gray-200 rounded-lg shadow-sm">
+                <div class="flex items-center gap-1 px-2 py-1 bg-white border border-gray-200 rounded-lg shadow-sm">
                   <Icon
                     name="heroicons:shield-check"
-                    class="w-4 h-4 text-green-600"
+                    class="text-2xl text-green-600"
                   />
-                  <span class="text-xs font-bold text-gray-700">{cert}</span>
+                  <span class="text-lg font-bold text-gray-700">{cert}</span>
                 </div>
               ))
             }
           </div>
           {/* Brand Info */}
           <div
-            class="flex items-center justify-center border border-gray-300 w-fit px-3 py-1 rounded-md shadow-md self-end"
+            class="flex items-center justify-center bg-white border border-gray-200 w-fit px-3 py-1 rounded-lg shadow-sm self-start"
           >
-            Made by: <span class="font-bold">{product.data.brand.name}</span>
+            Fabriquant / Distributeur: <span class="font-bold ml-1">{product.data.brand.name}</span>
           </div>
         </div>
         {/* Image Carousel */}
@@ -226,7 +207,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
         <div class="border border-gray-300 rounded-lg bg-white">
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center text-gray-900">
+              <CardTitle className="flex items-center text-gray-900 pt-2">
                 <div class="pr-1 pl-2">
                   <Icon name="heroicons:document" />
                 </div>
@@ -255,7 +236,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
             electricalSpecs?.length ? (
               <Card class="border border-gray-300 rounded-lg bg-white">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-gray-900">
+                  <CardTitle className="flex items-center text-gray-900 pt-2">
                     <div class="pr-1 pl-2">
                       <Icon name="heroicons:bolt" />
                     </div>
@@ -282,7 +263,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
             [...(certifications ?? []), ...(standards ?? [])].length ? (
               <Card class="border border-gray-300 rounded-lg bg-white">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-gray-900">
+                  <CardTitle className="flex items-center text-gray-900 pt-2">
                     <div class="pr-1 pl-2">
                       <Icon name="heroicons:shield-check" />
                     </div>
@@ -308,62 +289,83 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
         </div>
       </div>
 
-      <Card class="mb-12 border border-gray-200 shadow-sm overflow-hidden">
-        <CardHeader className="bg-gray-50/50 border-b border-gray-100">
-          <CardTitle className="flex items-center text-gray-900 text-lg">
-            <div class="p-2 bg-blue-50 rounded-lg mr-3 text-primary">
-              <Icon name="heroicons:arrow-down-tray" class="w-5 h-5" />
-            </div>
-            Documentation & Resources
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="p-6">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <a
-              href="#"
-              class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
-            >
-              <div class="flex items-center justify-between mb-3">
-                <div
-                  class="p-2 bg-gray-100 rounded-lg group-hover:bg-primary/10 transition-colors"
-                >
-                  <Icon
-                    name="heroicons:document-text"
-                    class="w-6 h-6 text-gray-500 group-hover:text-primary"
-                  />
+      {
+        (product.data.documents?.manual ||
+          product.data.documents?.specs ||
+          product.data.documents?.installation_guide) && (
+          <Card class="mb-12 border border-gray-200 shadow-sm overflow-hidden">
+            <CardHeader className="bg-gray-50/50 border-b border-gray-100">
+              <CardTitle className="flex items-center text-gray-900 text-lg pl-2">
+                <div class="p-2 rounded-lg mr-1">
+                  <Icon name="heroicons:arrow-down-tray" class="w-5 h-5" />
                 </div>
-                <span class="text-xs font-medium text-gray-400">PDF</span>
+                Documentation et Resources
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="pt-2">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                {product.data.documents?.specs && (
+                  <a
+                    href={product.data.documents.specs}
+                    target="_blank"
+                    class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div class="p-2 bg-gray-100 rounded-lg group-hover:bg-primary/10 transition-colors">
+                        <Icon
+                          name="heroicons:document-text"
+                          class="w-6 h-6 text-gray-500 group-hover:text-primary"
+                        />
+                      </div>
+                      <span class="font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors">
+                        Fiche Technique
+                      </span>
+                    </div>
+                  </a>
+                )}
+                {product.data.documents?.manual && (
+                  <a
+                    href={product.data.documents.manual}
+                    target="_blank"
+                    class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div class="p-2 bg-gray-100 rounded-lg group-hover:bg-primary/10 transition-colors">
+                        <Icon
+                          name="heroicons:book-open"
+                          class="w-6 h-6 text-gray-500 group-hover:text-primary"
+                        />
+                      </div>
+                      <span class="font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors">
+                        Manuel d'utilisation
+                      </span>
+                    </div>
+                  </a>
+                )}
+                {product.data.documents?.installation_guide && (
+                  <a
+                    href={product.data.documents.installation_guide}
+                    target="_blank"
+                    class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div class="p-2 bg-gray-100 rounded-lg group-hover:bg-primary/10 transition-colors">
+                        <Icon
+                          name="heroicons:wrench-screwdriver"
+                          class="w-6 h-6 text-gray-500 group-hover:text-primary"
+                        />
+                      </div>
+                      <span class="font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors">
+                        Guide d'installation
+                      </span>
+                    </div>
+                  </a>
+                )}
               </div>
-              <span
-                class="font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors"
-                >Fiche Technique</span
-              >
-              <span class="text-xs text-gray-500">2.4 MB</span>
-            </a>
-            <a
-              href="#"
-              class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
-            >
-              <div class="flex items-center justify-between mb-3">
-                <div
-                  class="p-2 bg-gray-100 rounded-lg group-hover:bg-primary/10 transition-colors"
-                >
-                  <Icon
-                    name="heroicons:book-open"
-                    class="w-6 h-6 text-gray-500 group-hover:text-primary"
-                  />
-                </div>
-                <span class="text-xs font-medium text-gray-400">PDF</span>
-              </div>
-              <span
-                class="font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors"
-                >Manuel d'utilisation</span
-              >
-              <span class="text-xs text-gray-500">8.1 MB</span>
-            </a>
-          </div>
-        </CardContent>
-      </Card>
+            </CardContent>
+          </Card>
+        )
+      }
 
       {
         relatedProducts.length > 0 && (

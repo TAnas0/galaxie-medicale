@@ -73,6 +73,11 @@ const productsFull = defineCollection({
         certifications: z.array(z.string()).optional(),
         standards: z.array(z.string()).optional(),
       }).optional(),
+      documents: z.object({
+        specs: z.string().optional(),
+        manual: z.string().optional(),
+        installation_guide: z.string().optional(),
+      }).optional(),
     }),
 });
 
