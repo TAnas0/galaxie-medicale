@@ -1,5 +1,5 @@
 ---
-import { Button } from "free-astro-components";
+import { Icon } from "astro-icon/components";
 import GalaxieSVG from "./logo/logo.svg";
 import { Image } from "astro:assets";
 import surgicalTable from "../assets/hero/surgical-table.png";
@@ -84,18 +84,17 @@ import paravent from "../assets/hero/paravent.webp";
           </li>
         </ul>
 
-        <div class="flex flex-wrap gap-4 pt-4 justify-end mb-auto">
-          <Button
+        <div class="flex flex-wrap gap-4 pt-4 justify-center mb-auto">
+          <a
             href="/galaxie-medicale/catalog"
-            size="lg"
-            label="Consultez notre catalogue"
-            icon="arrow-right"
-            iconPosition="right"
-            class="text-white px-6 py-3 text-md md:text-lg font-semibold rounded-lg transition-all duration-500 transform hover:scale-105 bg-primary hover:shadow-2xl shadow-primary/50 shadow-lg"
+            class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-1"
             data-aos="fade-right"
             data-aos-delay="1400"
             data-aos-duration="2500"
-          />
+          >
+            Consultez notre catalogue
+            <Icon name="heroicons:arrow-right" class="w-5 h-5" />
+          </a>
         </div>
       </div>
 
