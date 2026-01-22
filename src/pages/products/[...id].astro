@@ -369,16 +369,23 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
 
       {
         relatedProducts.length > 0 && (
-          <div class="mt-16 pt-8 border border-gray-100">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">
-              Produits recommandés
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {relatedProducts.map((product) => (
-                <ProductCard product={product} />
-              ))}
-            </div>
-          </div>
+          <Card class="mt-16 border border-gray-200 shadow-sm overflow-hidden">
+            <CardHeader className="bg-gray-50/50 border-b border-gray-100">
+              <CardTitle className="flex items-center text-gray-900 text-lg pl-2">
+                <div class="p-2 rounded-lg mr-1">
+                  <Icon name="heroicons:squares-plus" class="w-5 h-5" />
+                </div>
+                Produits recommandés
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {relatedProducts.map((product) => (
+                  <ProductCard product={product} />
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         )
       }
     </main>
