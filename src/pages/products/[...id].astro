@@ -206,12 +206,12 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mb-12">
         <div class="border border-gray-300 rounded-lg bg-white">
           <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center text-gray-900 pt-2">
+            <CardHeader className="bg-gray-50/50 border-b border-gray-100 mb-2">
+              <CardTitle className="flex items-center text-gray-900">
                 <div class="pr-1 pl-2">
                   <Icon name="heroicons:document" />
                 </div>
-                Specifications techniques
+                Spécifications techniques
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -235,12 +235,12 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
           {
             electricalSpecs?.length ? (
               <Card class="border border-gray-300 rounded-lg bg-white">
-                <CardHeader>
-                  <CardTitle className="flex items-center text-gray-900 pt-2">
+                <CardHeader className="bg-gray-50/50 border-b border-gray-100 mb-2">
+                  <CardTitle className="flex items-center text-gray-900">
                     <div class="pr-1 pl-2">
                       <Icon name="heroicons:bolt" />
                     </div>
-                    Specifications Electriques
+                    Spécifications électriques
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -262,12 +262,12 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
           {
             [...(certifications ?? []), ...(standards ?? [])].length ? (
               <Card class="border border-gray-300 rounded-lg bg-white">
-                <CardHeader>
-                  <CardTitle className="flex items-center text-gray-900 pt-2">
+                <CardHeader className="bg-gray-50/50 border-b border-gray-100 mb-2">
+                  <CardTitle className="flex items-center text-gray-900">
                     <div class="pr-1 pl-2">
                       <Icon name="heroicons:shield-check" />
                     </div>
-                    Certifications & Standards
+                    Certifications et standards
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
@@ -299,7 +299,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
                 <div class="p-2 rounded-lg mr-1">
                   <Icon name="heroicons:arrow-down-tray" class="w-5 h-5" />
                 </div>
-                Documentation et Resources
+                Documentation et resources
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-2">
@@ -318,7 +318,7 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
                         />
                       </div>
                       <span class="font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors">
-                        Fiche Technique
+                        Fiche technique
                       </span>
                     </div>
                   </a>
