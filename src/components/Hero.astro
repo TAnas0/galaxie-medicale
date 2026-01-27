@@ -16,7 +16,7 @@ import paravent from "../assets/hero/paravent.webp";
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
       <!-- Left Content -->
       <div
-        class="flex flex-col gap-8 z-10 ml-24"
+        class="flex flex-col gap-8 z-20 px-6 lg:ml-24 lg:px-0 text-center lg:text-left items-center lg:items-start col-start-1 row-start-1 lg:col-auto lg:row-auto"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
@@ -84,7 +84,7 @@ import paravent from "../assets/hero/paravent.webp";
           </li>
         </ul>
 
-        <div class="flex flex-wrap gap-4 pt-4 justify-center mb-auto">
+        <div class="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start mb-auto">
           <a
             href="/galaxie-medicale/catalog"
             class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-1"
@@ -100,7 +100,7 @@ import paravent from "../assets/hero/paravent.webp";
 
       <!-- Right Content (Hero Scene) -->
       <div
-        class="relative lg:h-[600px] flex items-center justify-center perspective-1000"
+        class="relative h-full lg:h-[600px] flex items-center justify-center perspective-1000 col-start-1 row-start-1 opacity-15 lg:opacity-100 pointer-events-none lg:pointer-events-auto lg:col-auto lg:row-auto"
       >
         <!-- Scene Container -->
         <div class="relative w-full h-full flex items-center justify-center">
@@ -123,7 +123,7 @@ import paravent from "../assets/hero/paravent.webp";
           </div>
 
           <div
-            class="absolute top-20 left-0 md:left-4 w-[100px] md:w-[140px] z-10"
+            class="absolute top-20 left-0 md:left-4 w-[100px] md:w-[140px] z-10 hidden md:block"
           >
             <Image
               src={monitor}
@@ -143,7 +143,7 @@ import paravent from "../assets/hero/paravent.webp";
           </div> -->
 
           <div
-            class="absolute bottom-10 right-4 z-20"
+            class="absolute bottom-10 right-4 z-20 hidden md:block"
           >
             <Image
               src={autoclaveLarge}
@@ -163,7 +163,7 @@ import paravent from "../assets/hero/paravent.webp";
           </div> -->
 
           <div
-            class="absolute bottom-0 -right-12 z-0 md:-right-12 h-full w-full"
+            class="absolute bottom-0 -right-12 z-0 md:-right-12 h-full w-full hidden md:block"
           >
             <Image
               src={paravent}
