@@ -18,7 +18,7 @@ const SEARCH_OPTIONS = {
     minMatchCharLength: 2,
 };
 
-export default function Search() {
+export default function Search({ className = "" }) {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
@@ -62,11 +62,11 @@ export default function Search() {
     };
 
     return (
-        <div ref={wrapperRef} className="relative w-full max-w-xs lg:max-w-md mx-4">
+        <div ref={wrapperRef} className={`relative w-full ${className} `}>
             <div className="relative">
                 <input
                     type="text"
-                    className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700 placeholder-gray-400 bg-gray-50/50"
+                    className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700 placeholder-gray-400 bg-gray-50"
                     placeholder="Rechercher..."
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
@@ -90,8 +90,7 @@ export default function Search() {
                             >
                                 <div className="w-12 h-12 flex-shrink-0 bg-white rounded-lg border border-gray-100 p-1">
                                     <img
-                                        src={item.images?.[0]?.src || "https://placehold.co/100x100"}
-                                        alt={item.name.fr || item.name.en}
+                                        src={item.images?.[0] || "https://placehold.co/100x100"}
                                         className="w-full h-full object-contain"
                                     />
                                 </div>

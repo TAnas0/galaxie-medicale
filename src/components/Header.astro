@@ -76,9 +76,9 @@ import Search from "./search/Search.jsx";
           </a>
         </div>
 
-        <!-- Search Bar (Desktop) -->
-        <div class="hidden lg:block flex-1 max-w-xl mx-auto">
-          <Search client:idle />
+        <!-- Search Bar -->
+        <div class="flex-1 max-w-xl mx-2 lg:mx-auto">
+          <Search client:idle className="w-full" />
         </div>
 
         <!-- Desktop Nav -->
@@ -106,7 +106,7 @@ import Search from "./search/Search.jsx";
         </nav>
 
         <!-- Mobile Hamburger -->
-        <div class="lg:hidden flex items-center absolute right-8">
+        <div class="lg:hidden flex items-center shrink-0">
           <button
             id="mobile-menu-button"
             class="p-3 hover:bg-accent rounded-lg transition-colors cursor-pointer"
