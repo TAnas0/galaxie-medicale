@@ -101,9 +101,6 @@ import paravent from "../assets/hero/paravent.webp";
       <!-- Right Content (Hero Scene) -->
       <div
         class="relative lg:h-[600px] flex items-center justify-center perspective-1000"
-        data-aos="fade-left"
-        data-aos-duration="1200"
-        data-aos-delay="200"
       >
         <!-- Scene Container -->
         <div class="relative w-full h-full flex items-center justify-center">
@@ -117,7 +114,7 @@ import paravent from "../assets/hero/paravent.webp";
             />
           </div>
 
-          <div class="absolute bottom-0 left-6 w-[420px] md:w-[550px] z-20 animate-float">
+          <div class="absolute bottom-0 left-6 w-[420px] md:w-[550px] z-20">
             <Image
               src={surgicalTable}
               alt="Table chirurgicale électrique"
@@ -126,7 +123,7 @@ import paravent from "../assets/hero/paravent.webp";
           </div>
 
           <div
-            class="absolute top-20 left-0 md:left-4 w-[100px] md:w-[140px] z-10 animate-float-reverse opacity-90 hover:opacity-100 transition-opacity duration-300"
+            class="absolute top-20 left-0 md:left-4 w-[100px] md:w-[140px] z-10"
           >
             <Image
               src={monitor}
@@ -146,7 +143,7 @@ import paravent from "../assets/hero/paravent.webp";
           </div> -->
 
           <div
-            class="absolute bottom-10 right-4 opacity-90 hover:opacity-100 transition-opacity duration-300 z-20"
+            class="absolute bottom-10 right-4 z-20"
           >
             <Image
               src={autoclaveLarge}
@@ -166,7 +163,7 @@ import paravent from "../assets/hero/paravent.webp";
           </div> -->
 
           <div
-            class="absolute bottom-0 -right-12 z-0 md:-right-12 opacity-90 hover:opacity-100 transition-opacity duration-300 z-0 h-full w-full"
+            class="absolute bottom-0 -right-12 z-0 md:-right-12 h-full w-full"
           >
             <Image
               src={paravent}
@@ -254,48 +251,6 @@ import paravent from "../assets/hero/paravent.webp";
 </section>
 
 <style>
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-15px);
-    }
-  }
-
-  @keyframes float-delayed {
-    0%,
-    100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-  @keyframes float-reverse {
-    0%,
-    100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(10px);
-    }
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-float-delayed {
-    animation: float-delayed 7s ease-in-out infinite 1s;
-  }
-
-  .animate-float-reverse {
-    animation: float-reverse 8s ease-in-out infinite 0.5s;
-  }
-
   .perspective-1000 {
     perspective: 1000px;
   }
