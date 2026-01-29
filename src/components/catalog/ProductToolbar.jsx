@@ -1,12 +1,28 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function ProductToolbar({ filters, setFilters }) {
+  const scrollRef = useRef(null);
+  const [showRightFade, setShowRightFade] = useState(false);
+  const [showLeftFade, setShowLeftFade] = useState(false);
+
+  const checkScroll = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      setShowLeftFade(scrollLeft > 10);
+      setShowRightFade(scrollLeft + clientWidth < scrollWidth - 10);
+    }
+  };
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const categoryFromUrl = params.get("category");
     if (categoryFromUrl) {
       setFilters((prev) => ({ ...prev, category: categoryFromUrl }));
     }
+
+    checkScroll();
+    window.addEventListener('resize', checkScroll);
+    return () => window.removeEventListener('resize', checkScroll);
   }, []);
 
   const handleChange = (category) => {
@@ -25,9 +41,17 @@ export default function ProductToolbar({ filters, setFilters }) {
   ];
 
   return (
-    <div className="w-full">
-      {/* Unified Pill Navigation (Scrollable on mobile, flex-wrap or scroll on desktop depending on preference, here scrollable for consistency) */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+    <div className="w-full relative group overflow-hidden">
+      {/* Left Fade */}
+      <div 
+        className={`absolute left-0 top-0 bottom-2 w-32 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showLeftFade ? 'opacity-100' : 'opacity-0'}`}
+      />
+      
+      <div 
+        ref={scrollRef}
+        onScroll={checkScroll}
+        className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0"
+      >
         {categories.map((cat) => (
           <button
             key={cat.value}
@@ -41,6 +65,11 @@ export default function ProductToolbar({ filters, setFilters }) {
           </button>
         ))}
       </div>
+
+      {/* Right Fade */}
+      <div 
+        className={`absolute right-0 top-0 bottom-2 w-48 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showRightFade ? 'opacity-100' : 'opacity-0'}`}
+      />
     </div>
   );
 }
