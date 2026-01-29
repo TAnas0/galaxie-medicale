@@ -67,12 +67,12 @@ import Search from "./search/Search.jsx";
       <div class="flex items-center justify-between h-16 gap-4">
         <!-- Logo -->
         <div
-          class="relative flex items-center !border-l border-dashed border-primary h-full px-3 bg-gray-50 shadow-sm shrink-0"
+          class="relative flex items-center !border-x border-dashed border-primary h-full px-3 bg-gray-50 shadow-sm shrink-0"
         >
-          <div class="absolute inset-y-0 right-0 !border-r border-primary">
+          <div class="absolute inset-y-0 right-0">
           </div>
           <a href="/galaxie-medicale" class="flex">
-            <Logo withText={true} variant="inline" />
+            <Logo withText={true} variant="inline" hideTextOnMobile={true} />
           </a>
         </div>
 
@@ -221,25 +221,6 @@ import Search from "./search/Search.jsx";
       infobarVisible = true;
     }
   });
-  window.addEventListener("scroll", () => {
-    return;
-    const currentScrollY = window.scrollY;
-    let infobarHidden = false;
-    if (currentScrollY > 250 && !infobarHidden) {
-      hideInfobar();
-      infobarHidden = true;
-      //   navbar.classList.add("bg-primary/95", "text-white");
-      //   navbar.classList.remove("bg-gray-50", "text-gray-900");
-      //   // gradientDivider.classList.remove("hidden");
-    } else if (currentScrollY >= 250 && infobarHidden) {
-      showInfobar();
-      infobarHidden = false;
-      //   navbar.classList.remove("bg-primary/95", "text-white");
-      //   navbar.classList.add("bg-gray-50", "text-gray-900");
-      //   // gradientDivider.classList.add("hidden");
-    }
-  });
-
   // Mobile menu toggle
   const mobileBtn = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");

@@ -1,5 +1,5 @@
 ---
-const { size = 40, withText = false, variant = "primary" } = Astro.props;
+const { size = 40, withText = false, variant = "primary", hideTextOnMobile = false } = Astro.props;
 ---
 
 <div
@@ -51,6 +51,7 @@ const { size = 40, withText = false, variant = "primary" } = Astro.props;
         class:list={[
           "font-sans leading-tight",
           variant === "primary" ? "" : "text-center",
+          hideTextOnMobile ? "hidden lg:block" : "",
         ]}
       >
         {variant != "inline" ? (
