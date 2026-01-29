@@ -114,13 +114,13 @@ export default function FiltersAndSort({ filters, setFilters, sortOption, setSor
                 <button
                     onClick={clearFilters}
                     disabled={areFiltersClear()}
-                    className={`hidden md:flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-all ${areFiltersClear()
+                    className={`flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-all ${areFiltersClear()
                             ? "text-gray-300 cursor-not-allowed"
-                            : "text-gray-500 hover:bg-red-50 hover:text-red-600"
+                            : "text-gray-700 hover:bg-red-50 hover:text-red-600"
                         }`}
                 >
                     <ArrowPathIcon className={`h-4 w-4 ${!areFiltersClear() && "group-hover:animate-spin"}`} />
-                    <span>Réinitialiser</span>
+                    <span class="hidden md:block">Réinitialiser</span>
                 </button>
 
                 <Dialog open={open} onClose={setOpen} className="relative z-50">
