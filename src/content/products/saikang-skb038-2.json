@@ -1,0 +1,68 @@
+{
+  "id": "saikang-skb038-2",
+  "name": {
+    "en": "Chariot brancard SKB038-2",
+    "fr": "Chariot brancard SKB038-2"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "brancardage",
+      "fr": "Brancardage"
+    }
+  },
+  "short_description": {
+    "en": "Chariot patient avec dossier pneumatique et barrières latérales.",
+    "fr": "Chariot patient avec dossier pneumatique et barrières latérales"
+  },
+  "full_description": {
+    "en": "Chariot patient avec système de manivelle, dossier à ressort pneumatique réglable, barrières latérales en plastique et roulettes 5\" avec frein. Hauteur ajustable entre 620 et 900 mm pour un confort ergonomique lors du transport.",
+    "fr": "Chariot patient avec système de manivelle, dossier à ressort pneumatique réglable, barrières latérales en plastique et roulettes 5\" avec frein.\nHauteur ajustable entre 620 et 900 mm pour un confort ergonomique lors du transport."
+  },
+  "availability": "out_of_stock",
+  "images": [
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB038-2/SKB038-2.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB038-2/SKB038-2-2.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB038-2/SKB038-2-3.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1900 x 700 mm"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "5\" avec frein"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

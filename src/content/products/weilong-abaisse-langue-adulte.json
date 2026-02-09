@@ -1,0 +1,72 @@
+{
+  "id": "weilong-abaisse-langue-adulte",
+  "name": {
+    "en": "Tongue Depressor Adult",
+    "fr": "Abaisse-langue adulte"
+  },
+  "brand": {
+    "name": "WEILONG",
+    "description": ""
+  },
+  "category": {
+    "canonical": "accessories_consumables",
+    "display": {
+      "en": "Medical Accessories & Consumables",
+      "fr": "Accessoires et consommables médicaux"
+    }
+  },
+  "short_description": {
+    "en": "Disposable wooden tongue depressor for adult medical examinations.",
+    "fr": "Abaisse-langue jetable en bois pour examens médicaux adultes."
+  },
+  "full_description": {
+    "en": "The WEILONG adult tongue depressor is a smooth, splinter-free wooden tool designed for medical use. Ideal for routine examinations, it provides safe and hygienic depression of the tongue to allow clear visibility of the throat and oral cavity. Suitable for use in hospitals, clinics, and general practices.",
+    "fr": "L’abaisse-langue adulte WEILONG est un outil en bois lisse et sans échardes, conçu pour un usage médical. Idéal pour les examens de routine, il permet une dépression sûre et hygiénique de la langue afin d’assurer une visibilité claire de la gorge et de la cavité buccale. Convient aux hôpitaux, cliniques et cabinets médicaux."
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "material",
+      "display_label": {
+        "en": "Material",
+        "fr": "Matériau"
+      },
+      "category": "Physical",
+      "type": "enum",
+      "value": [
+        "Wood"
+      ]
+    },
+    {
+      "canonical_name": "disposability",
+      "display_label": {
+        "en": "Disposability",
+        "fr": "Jetable"
+      },
+      "category": "Usage",
+      "type": "enum",
+      "value": [
+        "Disposable"
+      ]
+    },
+    {
+      "canonical_name": "intended_use",
+      "display_label": {
+        "en": "Intended Use",
+        "fr": "Utilisation prévue"
+      },
+      "category": "Usage",
+      "type": "enum",
+      "value": [
+        "Adult"
+      ]
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE"
+    ],
+    "standards": []
+  }
+}

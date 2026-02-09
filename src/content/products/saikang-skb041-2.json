@@ -1,0 +1,84 @@
+{
+  "id": "saikang-skb041-2",
+  "name": {
+    "en": "Chariot brancard SKB041-2",
+    "fr": "Chariot brancard SKB041-2"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "brancardage",
+      "fr": "Brancardage"
+    }
+  },
+  "short_description": {
+    "en": "Chariot hydraulique avec double pompe pour réglage de hauteur.",
+    "fr": "Chariot hydraulique avec double pompe pour réglage de hauteur"
+  },
+  "full_description": {
+    "en": "Chariot de transport patient hydraulique avec double pompe pour réglage de la hauteur et inclinaison, dossier ajustable à 75° et barre latérale en ABS. Equipé de roulettes 8\" avec frein centralisé et directionnel.",
+    "fr": "Chariot de transport patient hydraulique avec double pompe pour réglage de la hauteur et inclinaison, dossier ajustable à 75° et barre latérale en ABS.\nEquipé de roulettes 8\" avec frein centralisé et directionnel"
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-sitting.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-inclined.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-declined.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-2/SKB041-2-lifted.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1910 x 640 mm"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "8\" avec frein central et directionnel"
+    },
+    {
+      "canonical_name": "barres_latérales",
+      "display_label": {
+        "en": "Barres latérales",
+        "fr": "Barres latérales"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "portes_accessoires",
+      "display_label": {
+        "en": "Porte-seringues et porte-bouteille",
+        "fr": "Porte-seringues et porte-bouteille"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE",
+      "FDA",
+      "ISO 13485"
+    ],
+    "standards": []
+  }
+}

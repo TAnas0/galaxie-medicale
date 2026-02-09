@@ -1,0 +1,74 @@
+{
+  "id": "saikang-a100",
+  "name": {
+    "en": "Table de chirurgie A100",
+    "fr": "Table de chirurgie A100"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "table-de-chirurgie",
+      "fr": "table de chirurgie"
+    }
+  },
+  "short_description": {
+    "en": "Table de chirurgie électrique avec réglages manuels et électriques basiques.",
+    "fr": "Table de chirurgie électrique avec réglages manuels et électriques basiques"
+  },
+  "full_description": {
+    "en": "Cette table A100 offre les fonctionnalités essentielles d’une table de chirurgie électrique avec réglages manuels et électriques basiques. Adaptée aux besoins généraux en bloc opératoire.",
+    "fr": "Cette table A100 offre les fonctionnalités essentielles d’une table de chirurgie électrique avec réglages manuels et électriques basiques.\nAdaptée aux besoins généraux en bloc opératoire."
+  },
+  "availability": "on_order",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2070 x 550 x 700-1000 mm"
+    },
+    {
+      "canonical_name": "reglages",
+      "display_label": {
+        "en": "Réglages plaques",
+        "fr": "Réglages plaques"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "dos (70°/15°), tête (30°/90°), jambes"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Mousse polyuréthane démontable"
+    },
+    {
+      "canonical_name": "cadre",
+      "display_label": {
+        "en": "Cadre",
+        "fr": "Cadre"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "Acier inox 304"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

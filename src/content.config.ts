@@ -27,7 +27,7 @@ import { glob, file } from 'astro/loaders';
 // const brands = defineCollection({ /* ... */ });
 
 const productsFull = defineCollection({
-  loader: file("src/data/products-full.json"),
+  loader: glob({ pattern: "**/*.json", base: "./src/content/products" }),
   schema: ({ image }) =>
     z.object({
       id: z.string(),

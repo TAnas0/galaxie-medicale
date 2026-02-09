@@ -1,0 +1,98 @@
+{
+  "id": "saikang-a307",
+  "name": {
+    "en": "Table de chirurgie A307",
+    "fr": "Table de chirurgie A307"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "table-de-chirurgie",
+      "fr": "table de chirurgie"
+    }
+  },
+  "short_description": {
+    "en": "Table électrique hydraulique polyvalente avec surface modulaire compatible rayons X et batterie rechargeable.",
+    "fr": "Table électrique hydraulique polyvalente avec surface modulaire compatible rayons X et batterie rechargeable."
+  },
+  "full_description": {
+    "en": "La table A307 est conçue pour une large gamme de chirurgies, avec contrôle flexible et surface modulaire compatible rayons X. Équipée d’une batterie rechargeable et d’un cadre robuste en acier inoxydable, elle offre durabilité, facilité d’entretien et sécurité pour le personnel et le patient.",
+    "fr": "La table A307 est conçue pour une large gamme de chirurgies, avec contrôle flexible et surface modulaire compatible rayons X.  \nÉquipée d’une batterie rechargeable et d’un cadre robuste en acier inoxydable, elle offre durabilité, facilité d’entretien et sécurité pour le personnel et le patient."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_2.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_3.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_4.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_5.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_6.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_7.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_8.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_9.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_10.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_11.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_12.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A307/A307_13.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2140 x 550 x 550-1050 mm"
+    },
+    {
+      "canonical_name": "reglages",
+      "display_label": {
+        "en": "Réglages plaques",
+        "fr": "Réglages plaques"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "tête, dos, jambes multi-positions"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Mousse mémoire 75 mm, étanche et anti-statique"
+    },
+    {
+      "canonical_name": "controle",
+      "display_label": {
+        "en": "Contrôle",
+        "fr": "Contrôle"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Filaire avec bouton d’arrêt d’urgence"
+    },
+    {
+      "canonical_name": "accessoires",
+      "display_label": {
+        "en": "Accessoires inclus",
+        "fr": "Accessoires inclus"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Supports bras, épaules, jambes, écran anesthésie"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

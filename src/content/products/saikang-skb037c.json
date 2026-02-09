@@ -1,0 +1,78 @@
+{
+  "id": "saikang-skb037c",
+  "name": {
+    "en": "Chariot brancard SKB037(C)",
+    "fr": "Chariot brancard SKB037(C)"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "brancardage",
+      "fr": "Brancardage"
+    }
+  },
+  "short_description": {
+    "en": "Brancard patient avec réglages manuels multiples.",
+    "fr": "Brancard patient avec réglages manuels multiples"
+  },
+  "full_description": {
+    "en": "Brancard patient avec trois manivelles, dossier réglable à 75° et repose-genoux à 35°. Equipé de roulettes silencieuses avec frein central, barrières latérales rabattables et matelas confortable. Structure en acier inoxydable haute qualité.",
+    "fr": "Brancard patient avec trois manivelles, dossier réglable à 75° et repose-genoux à 35°.\nEquipé de roulettes silencieuses avec frein central, barrières latérales rabattables et matelas confortable.\nStructure en acier inoxydable haute qualité."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB037-C/SKB037-C.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB037-C/SKB037-C-2.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB037-C/SKB037-C-3.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1970 x 760 x 620-900 mm"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "5\" silencieuses avec frein central"
+    },
+    {
+      "canonical_name": "barrieres_laterales",
+      "display_label": {
+        "en": "Barrières latérales",
+        "fr": "Barrières latérales"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "porte_bouteille",
+      "display_label": {
+        "en": "Porte-bouteille oxygène",
+        "fr": "Porte-bouteille oxygène"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

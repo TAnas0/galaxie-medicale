@@ -1,0 +1,80 @@
+{
+  "id": "saikang-skb041-3s",
+  "name": {
+    "en": "Chariot brancard SKB041-3S",
+    "fr": "Chariot brancard SKB041-3S"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "brancardage",
+      "fr": "Brancardage"
+    }
+  },
+  "short_description": {
+    "en": "Chariot hydraulique avec matelas épais et accessoires complets.",
+    "fr": "Chariot hydraulique avec matelas épais et accessoires complets"
+  },
+  "full_description": {
+    "en": "Chariot hydraulique avec pompe américaine pour réglage de hauteur, dossier à ressort pneumatique, barrières latérales en acier inoxydable et matelas imperméable de 60 mm. Equipé d’accessoires complets pour un transport patient sûr.",
+    "fr": "Chariot hydraulique avec pompe américaine pour réglage de hauteur, dossier à ressort pneumatique, barrières latérales en acier inoxydable et matelas imperméable de 60 mm.\nEquipé d’accessoires complets pour un transport patient sûr."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-1.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-2.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-3.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-3S/SKB041-3S-4.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2150 x 790 mm"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "5\" avec frein"
+    },
+    {
+      "canonical_name": "barrieres_latérales",
+      "display_label": {
+        "en": "Barrières latérales",
+        "fr": "Barrières latérales"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "portes_accessoires",
+      "display_label": {
+        "en": "Porte-seringues et porte-bouteille",
+        "fr": "Porte-seringues et porte-bouteille"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "saikang-skb037b",
+  "name": {
+    "en": "Chariot brancard SKB037(B)",
+    "fr": "Chariot brancard SKB037(B)"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "brancardage",
+      "fr": "Brancardage"
+    }
+  },
+  "short_description": {
+    "en": "Chariot brancard robuste avec matelas épais et dossier réglable.",
+    "fr": "Chariot brancard robuste avec matelas épais et dossier réglable"
+  },
+  "full_description": {
+    "en": "Chariot brancard robuste avec structure en acier inoxydable poli miroir, matelas épais ignifugé et dossier réglable jusqu’à 75°. Équipé de roulettes silencieuses, porte-bouteille d’oxygène, porte-seringues réglable et panier à déchets. Conçu pour un transport patient sûr et confortable.",
+    "fr": "Chariot brancard robuste avec structure en acier inoxydable poli miroir, matelas épais ignifugé et dossier réglable jusqu’à 75°.\nÉquipé de roulettes silencieuses, porte-bouteille d’oxygène, porte-seringues réglable et panier à déchets.\nConçu pour un transport patient sûr et confortable."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB037-B/SKB037-B.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB037-B/SKB037-B-2.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB037-B/SKB037-B-3.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1960 x 600 x 750 mm"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "5\" silencieuses avec frein"
+    },
+    {
+      "canonical_name": "porte_bouteille",
+      "display_label": {
+        "en": "Porte-bouteille oxygène",
+        "fr": "Porte-bouteille oxygène"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "porte_seringues",
+      "display_label": {
+        "en": "Porte-seringues",
+        "fr": "Porte-seringues"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "panier_dechets",
+      "display_label": {
+        "en": "Panier à déchets",
+        "fr": "Panier à déchets"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

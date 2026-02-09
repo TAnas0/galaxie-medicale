@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Fuse from 'fuse.js';
-import productsData from '../../data/products-full.json';
+
 
 const SEARCH_OPTIONS = {
     keys: [
@@ -25,11 +25,28 @@ export default function Search({ className = "" }) {
     const [fuse, setFuse] = useState(null);
     const wrapperRef = useRef(null);
 
+    const [products, setProducts] = useState([]);
+
     useEffect(() => {
-        // Initialize Fuse lazily
-        const fuseInstance = new Fuse(productsData, SEARCH_OPTIONS);
-        setFuse(fuseInstance);
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch('/galaxie-medicale/api/products.json');
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.error("Failed to fetch products for search:", error);
+            }
+        };
+
+        fetchProducts();
     }, []);
+
+    useEffect(() => {
+        if (products.length > 0) {
+            const fuseInstance = new Fuse(products, SEARCH_OPTIONS);
+            setFuse(fuseInstance);
+        }
+    }, [products]);
 
     useEffect(() => {
         if (!query || !fuse) {

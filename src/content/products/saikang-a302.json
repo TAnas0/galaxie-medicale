@@ -1,0 +1,128 @@
+{
+  "id": "saikang-a302",
+  "name": {
+    "en": "Table de chirurgie A302",
+    "fr": "Table de chirurgie A302"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "table-de-chirurgie",
+      "fr": "table de chirurgie"
+    }
+  },
+  "short_description": {
+    "en": "Table avancée avec ajustement tête, glissement horizontal étendu et surface résine phénolique compatible imagerie.",
+    "fr": "Table avancée avec ajustement tête, glissement horizontal étendu et surface résine phénolique compatible imagerie."
+  },
+  "full_description": {
+    "en": "La table A302 permet un réglage précis en hauteur de la plaque tête et un glissement horizontal étendu. Sa surface en résine phénolique est compatible avec l’imagerie médicale. Sa structure robuste garantit stabilité et facilité d’utilisation pour divers types d’interventions chirurgicales.",
+    "fr": "La table A302 permet un réglage précis en hauteur de la plaque tête et un glissement horizontal étendu.  \nSa surface en résine phénolique est compatible avec l’imagerie médicale.  \nSa structure robuste garantit stabilité et facilité d’utilisation pour divers types d’interventions chirurgicales."
+  },
+  "availability": "on_order",
+  "images": [
+    "../../assets/products/surgery/operating-tables/saikang/A302/8f4cae98.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-0.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-10.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-11.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-12.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-13.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-14.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-2.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-3.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-4.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-5.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-6.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-7.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-8.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/A302-9.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A302/f2cc9816.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2150 x 555 x 700-1000 mm"
+    },
+    {
+      "canonical_name": "reglages",
+      "display_label": {
+        "en": "Réglages plaques",
+        "fr": "Réglages plaques"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "dos, tête (réglage hauteur 70 mm), jambes"
+    },
+    {
+      "canonical_name": "glissement_horizontal",
+      "display_label": {
+        "en": "Glissement horizontal",
+        "fr": "Glissement horizontal"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": {
+        "qty": 350,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "charge_maximale",
+      "display_label": {
+        "en": "Charge maximale",
+        "fr": "Charge maximale"
+      },
+      "category": "Capacity",
+      "type": "number",
+      "value": {
+        "qty": 275,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Mousse polyuréthane, étanche"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "Silencieuses avec frein pédale"
+    },
+    {
+      "canonical_name": "controle",
+      "display_label": {
+        "en": "Contrôle",
+        "fr": "Contrôle"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Double manette et panneau"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

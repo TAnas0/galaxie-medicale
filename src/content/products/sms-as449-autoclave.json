@@ -1,0 +1,165 @@
+{
+  "id": "sms-as449-autoclave",
+  "name": {
+    "en": "Autoclave à vapeur AS449",
+    "fr": "Autoclave à vapeur AS449"
+  },
+  "brand": {
+    "name": "SMS ",
+    "description": ""
+  },
+  "category": {
+    "canonical": "sterilisation",
+    "display": {
+      "en": "autoclave-vertical",
+      "fr": "Autoclave vertical"
+    }
+  },
+  "short_description": {
+    "en": "",
+    "fr": ""
+  },
+  "full_description": {
+    "en": "L'autoclave à vapeur AS44 est un stérilisateur vertical destiné aux petites salles de stérilisation et blocs opératoires. Il offre des capacités de 103L ou 150L, un générateur de vapeur intégré et des portes coulissantes verticales automatiques pour une stérilisation fiable des instruments chirurgicaux et médicaux. Équipé d'un écran tactile couleur LCD 7'', de 19 programmes de stérilisation et de contrôle à distance, il combine compacité, efficacité et facilité d'utilisation.",
+    "fr": "L'autoclave à vapeur AS44 est un stérilisateur vertical destiné aux petites salles de stérilisation et blocs opératoires.  \nIl permet une stérilisation fiable des instruments chirurgicaux et médicaux grâce à ses cycles de vapeur à haute température.  \nDisponible en capacité 100L ou 150L, il combine compacité, facilité d'utilisation et efficacité pour les environnements cliniques restreints."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-1.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-2.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-as-44/sms-as-44-3.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "chamber_capacity_single_door",
+      "display_label": {
+        "en": "Chamber Capacity (Single Door)",
+        "fr": "Capacité de la Chambre (Porte Simple)"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 156,
+        "unit": "L"
+      },
+      "highlighted": true
+    },
+    {
+      "canonical_name": "chamber_capacity_double_door",
+      "display_label": {
+        "en": "Chamber Capacity (Double Door)",
+        "fr": "Capacité de la Chambre (Double Porte)"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 150,
+        "unit": "L"
+      },
+      "note": "Capacity is 6 liters less for the double door version due to structural modifications.",
+      "highlighted": true
+    },
+    {
+      "canonical_name": "door_type",
+      "display_label": {
+        "en": "Door Type",
+        "fr": "Type de Porte"
+      },
+      "category": "Functional",
+      "type": "string",
+      "value": "Automatic Vertical Sliding Door"
+    },
+    {
+      "canonical_name": "material_chamber",
+      "display_label": {
+        "en": "Chamber/Jacket Material",
+        "fr": "Matériau Chambre/Chemise"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "AISI 316L Stainless Steel (Hand polished chamber)",
+      "highlighted": true
+    },
+    {
+      "canonical_name": "material_housing",
+      "display_label": {
+        "en": "Housing Material",
+        "fr": "Matériau Habillage"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "AISI 304 Stainless Steel"
+    },
+    {
+      "canonical_name": "external_dimensions",
+      "display_label": {
+        "en": "External Dimensions (W x H x D)",
+        "fr": "Dimensions Externes (L x H x P)"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "800 mm x 1615 mm x 1200 mm"
+    },
+    {
+      "canonical_name": "control_system",
+      "display_label": {
+        "en": "Control System",
+        "fr": "Système de Contrôle"
+      },
+      "category": "Control",
+      "type": "string",
+      "value": "7” LCD Color Touch Screen",
+      "highlighted": true
+    },
+    {
+      "canonical_name": "programs",
+      "display_label": {
+        "en": "Programs",
+        "fr": "Programmes"
+      },
+      "category": "Control",
+      "type": "string",
+      "value": "19 Sterilization Programs & 2 Test Programs"
+    },
+    {
+      "canonical_name": "steam_source",
+      "display_label": {
+        "en": "Steam Source",
+        "fr": "Source de Vapeur"
+      },
+      "category": "Functional",
+      "type": "string",
+      "value": "Integrated Steam Generator or External Steam Source Capability"
+    },
+    {
+      "canonical_name": "sterilization_basket_size",
+      "display_label": {
+        "en": "Sterilization Basket Size",
+        "fr": "Taille du Panier de Stérilisation"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "436 x 365 x 170 mm",
+      "highlighted": true
+    },
+    {
+      "canonical_name": "cooling_system",
+      "display_label": {
+        "en": "Cooling System Standard",
+        "fr": "Système de Refroidissement Standard"
+      },
+      "category": "Functional",
+      "type": "string",
+      "value": "Cooling water saving system",
+      "highlighted": false
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  },
+  "links": [
+    "https://sms.com.pl/en/steam-sterilizers/as-44/"
+  ],
+  "manual": "https://sms.com.pl/wp-content/uploads/2025/01/SMS_Product-catalogue_A5_design-2.pdf"
+}

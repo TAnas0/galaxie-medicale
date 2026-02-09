@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "id": "stérilisation",
+      "name": "Stérilisation",
+      "description": "Équipements pour stérilisation médicale et dentaire",
+      "sub_categories": [
+        { "id": "autoclave-de-table", "name": "Autoclave de table" },
+        { "id": "autoclave-vertical", "name": "Autoclave vertical" }
+      ]
+    },
+    {
+      "id": "salle-d-operation",
+      "name": "Salle d’opération",
+      "description": "Équipements pour blocs opératoires et interventions chirurgicales",
+      "sub_categories": [
+        { "id": "table-de-chirurgie", "name": "Table de chirurgie" },
+        { "id": "eclairage-operatoire", "name": "Éclairage opératoire" }
+      ]
+    },
+    {
+      "id": "diagnostic",
+      "name": "Diagnostic",
+      "description": "Équipements de surveillance et diagnostic médical",
+      "sub_categories": [
+        { "id": "monitorage", "name": "Monitorage" },
+        { "id": "imagerie", "name": "Imagerie médicale" }
+      ]
+    },
+    {
+      "id": "mobilier-medical",
+      "name": "Mobilier médical",
+      "description": "Mobilier et accessoires pour hôpitaux et cliniques",
+      "sub_categories": [
+        { "id": "berceau-neonatal", "name": "Berceau néonatal" },
+        { "id": "chariot", "name": "Chariot" },
+        { "id": "literie", "name": "Literie" },
+        { "id": "salle-d-examen", "name": "Salle d’examen" },
+        { "id": "brancardage", "name": "Brancardage" }
+      ]
+    }
+  ]
+}

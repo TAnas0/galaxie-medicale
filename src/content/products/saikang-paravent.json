@@ -1,0 +1,54 @@
+{
+  "id": "saikang-paravent",
+  "name": {
+    "en": "Paravent",
+    "fr": "Paravent"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "salle-d-examen",
+      "fr": "salle d'examen"
+    }
+  },
+  "short_description": {
+    "en": "Paravent médical mobile sur roulettes silencieuses.",
+    "fr": "Paravent médical mobile sur roulettes silencieuses"
+  },
+  "full_description": {
+    "en": "Paravent médical en acier inoxydable avec cadre robuste, monté sur roulettes silencieuses de 2 pouces pour un déplacement aisé et sans bruit.",
+    "fr": "Paravent médical en acier inoxydable avec cadre robuste, monté sur roulettes silencieuses de 2 pouces pour un déplacement aisé et sans bruit."
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1000 x 1870 mm"
+    },
+    {
+      "canonical_name": "cadre",
+      "display_label": {
+        "en": "Cadre",
+        "fr": "Cadre"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "Acier inoxydable"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

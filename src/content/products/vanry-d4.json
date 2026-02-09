@@ -1,0 +1,121 @@
+{
+  "id": "vanry-d4",
+  "name": {
+    "en": "Berceau D-4",
+    "fr": "Berceau D-4"
+  },
+  "brand": {
+    "name": "VANRY",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "berceau-neonatal",
+      "fr": "Berceau néonatal"
+    }
+  },
+  "short_description": {
+    "en": "Berceau haut de gamme pour soins intensifs néonatals, avec réglages complets et espace de rangement inférieur.",
+    "fr": "Berceau haut de gamme pour soins intensifs néonatals, avec réglages complets et espace de rangement inférieur."
+  },
+  "full_description": {
+    "en": "Le berceau D-4 est destiné aux soins intensifs néonatals ou suites de naissance VIP. Il offre un réglage complet de la hauteur et de l’inclinaison pour un confort optimal du personnel et du nouveau-né. Équipé d’un espace de rangement inférieur, il combine praticité, sécurité et ergonomie pour les soins spécialisés.",
+    "fr": "Le berceau D-4 est destiné aux soins intensifs néonatals ou suites de naissance VIP.  \nIl offre un réglage complet de la hauteur et de l’inclinaison pour un confort optimal du personnel et du nouveau-né.  \nÉquipé d’un espace de rangement inférieur, il combine praticité, sécurité et ergonomie pour les soins spécialisés.\n"
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "structure",
+      "display_label": {
+        "en": "Structure",
+        "fr": "Structure"
+      },
+      "category": "Materials",
+      "type": "string",
+      "value": "Acier inox avec finition peinture époxy"
+    },
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "930 × 550 × 950 mm"
+    },
+    {
+      "canonical_name": "hauteur",
+      "display_label": {
+        "en": "Réglage en hauteur",
+        "fr": "Réglage en hauteur"
+      },
+      "category": "Motion",
+      "type": "range",
+      "value": {
+        "min": 710,
+        "max": 950,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "bassin",
+      "display_label": {
+        "en": "Bassin",
+        "fr": "Bassin"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "Transparent, amovible, inclinaison ajustable"
+    },
+    {
+      "canonical_name": "panier_rangement",
+      "display_label": {
+        "en": "Panier de rangement",
+        "fr": "Panier de rangement"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Mobility",
+      "type": "string",
+      "value": "4 Ø 125 mm à frein centralisé"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Respirant, housse imperméable, épaisseur 40 mm"
+    },
+    {
+      "canonical_name": "poids",
+      "display_label": {
+        "en": "Poids net",
+        "fr": "Poids net"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 22,
+        "unit": "kg"
+      }
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

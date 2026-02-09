@@ -1,0 +1,119 @@
+{
+  "id": "yonker-e15",
+  "name": {
+    "en": "Moniteur multiparamétrique E15",
+    "fr": "Moniteur multiparamétrique E15"
+  },
+  "brand": {
+    "name": "YONKER",
+    "description": ""
+  },
+  "category": {
+    "canonical": "diagnostic",
+    "display": {
+      "en": "monitorage",
+      "fr": "Monitorage"
+    }
+  },
+  "short_description": {
+    "en": "Moniteur haut de gamme 15 pouces pour surveillance avancée incluant CO₂ et pression artérielle invasive.",
+    "fr": "Moniteur haut de gamme 15 pouces pour surveillance avancée incluant CO₂ et pression artérielle invasive (IBP)."
+  },
+  "full_description": {
+    "en": "Le moniteur E15 est conçu pour les services de réanimation et les blocs opératoires. Il offre un écran couleur tactile de 15 pouces et prend en charge la surveillance avancée incluant CO₂ et pression artérielle invasive (IBP). Il permet une revue de tendances sur 240 heures et intègre USB, LAN, VGA et HDMI pour la connectivité.",
+    "fr": "Le moniteur E15 est conçu pour les services de réanimation et les blocs opératoires.  \nIl offre un grand écran couleur de 15 pouces et prend en charge la surveillance avancée incluant CO₂ et pression artérielle invasive.  \nIl est idéal pour les environnements critiques nécessitant une précision maximale et un suivi complet des patients."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/diagnostic/monitors/e15/E15.webp",
+    "../../assets/products/diagnostic/monitors/e15/E15-2.webp",
+    "../../assets/products/diagnostic/monitors/e15/E15-side.webp",
+    "../../assets/products/diagnostic/monitors/e15/E15-side-2.webp",
+    "../../assets/products/diagnostic/monitors/e15/E15-back.webp",
+    "../../assets/products/diagnostic/monitors/e15/E15-full-specs.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "ecran",
+      "display_label": {
+        "en": "Taille de l'écran",
+        "fr": "Taille de l'écran"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 15,
+        "unit": "pouces"
+      }
+    },
+    {
+      "canonical_name": "parametres_vitals",
+      "display_label": {
+        "en": "Paramètres surveillés",
+        "fr": "Paramètres surveillés"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "ECG, SpO₂, NIBP, TEMP, RESP, PR, CO₂, IBP"
+    },
+    {
+      "canonical_name": "capacite_stockage",
+      "display_label": {
+        "en": "Capacité de stockage",
+        "fr": "Capacité de stockage"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "240 h"
+    },
+    {
+      "canonical_name": "interfaces",
+      "display_label": {
+        "en": "Interfaces",
+        "fr": "Interfaces"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "USB, LAN, VGA, HDMI"
+    },
+    {
+      "canonical_name": "poids",
+      "display_label": {
+        "en": "Poids",
+        "fr": "Poids"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 6.8,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "autonomie_batterie",
+      "display_label": {
+        "en": "Autonomie batterie",
+        "fr": "Autonomie batterie"
+      },
+      "category": "Electrical",
+      "type": "number",
+      "value": {
+        "qty": 4,
+        "unit": "h"
+      }
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE",
+      "ISO 13485",
+      "RoHS"
+    ],
+    "standards": [
+      "IEC 60601-1",
+      "IEC 60601-1-2",
+      "IEC 60601-2-27",
+      "IEC 60601-2-49"
+    ]
+  }
+}

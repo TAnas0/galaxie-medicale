@@ -1,0 +1,163 @@
+{
+  "id": "yonker-e8",
+  "name": {
+    "en": "Moniteur multiparamétrique E8",
+    "fr": "Moniteur multiparamétrique E8"
+  },
+  "brand": {
+    "name": "YONKER",
+    "description": ""
+  },
+  "category": {
+    "canonical": "diagnostic",
+    "display": {
+      "en": "monitorage",
+      "fr": "Monitorage"
+    }
+  },
+  "short_description": {
+    "en": "Moniteur compact pour surveillance continue des signes vitaux, adapté aux soins ambulatoires et hospitaliers légers à modérés.",
+    "fr": "Moniteur compact pour surveillance continue des signes vitaux, adapté aux soins ambulatoires et hospitaliers légers à modérés."
+  },
+  "full_description": {
+    "en": "Le moniteur multiparamétrique E8 permet de surveiller en continu ECG, SpO₂, NIBP, température, respiration et pouls. Compact et facile à utiliser, il convient aux soins ambulatoires, cliniques ou unités hospitalières de faible à moyenne complexité. Il inclut un écran 8,4 pouces TFT couleur, affichage simultané jusqu’à 4 tracés et interface USB/LAN.",
+    "fr": "Le moniteur multiparamétrique E8 permet de surveiller en continu les paramètres vitaux essentiels : ECG, SpO2, NIBP, température et respiration.  \nCompact et facile à utiliser, il convient aux soins ambulatoires, cliniques ou unités hospitalières de faible à moyenne complexité.\n"
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/diagnostic/monitors/e8/10b125d5611ae8bf0c6c0bcc55d71e4e.webp",
+    "../../assets/products/diagnostic/monitors/e8/6a978aa74ec7010d4e89bb248afcc1fb.webp",
+    "../../assets/products/diagnostic/monitors/e8/8002.webp",
+    "../../assets/products/diagnostic/monitors/e8/8021.webp",
+    "../../assets/products/diagnostic/monitors/e8/E8-accessories-cables.webp",
+    "../../assets/products/diagnostic/monitors/e8/f2b3f5d603fb36eef59ab7d93a957640.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "ecran",
+      "display_label": {
+        "en": "Taille de l'écran",
+        "fr": "Taille de l'écran"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 8.4,
+        "unit": "pouces"
+      }
+    },
+    {
+      "canonical_name": "parametres_vitals",
+      "display_label": {
+        "en": "Paramètres surveillés",
+        "fr": "Paramètres surveillés"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "ECG, SpO₂, NIBP, TEMP, RESP, PR"
+    },
+    {
+      "canonical_name": "alarmes",
+      "display_label": {
+        "en": "Alarmes",
+        "fr": "Alarmes"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Sonores et visuelles réglables"
+    },
+    {
+      "canonical_name": "autonomie_batterie",
+      "display_label": {
+        "en": "Autonomie batterie",
+        "fr": "Autonomie batterie"
+      },
+      "category": "Electrical",
+      "type": "number",
+      "value": {
+        "qty": 2,
+        "unit": "h"
+      }
+    },
+    {
+      "canonical_name": "poids",
+      "display_label": {
+        "en": "Poids",
+        "fr": "Poids"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 2.5,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "interfaces",
+      "display_label": {
+        "en": "Interfaces",
+        "fr": "Interfaces"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "USB, port LAN"
+    },
+    {
+      "canonical_name": "affichage_courbes",
+      "display_label": {
+        "en": "Affichage des courbes",
+        "fr": "Affichage des courbes"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Jusqu’à 4 tracés simultanés"
+    },
+    {
+      "canonical_name": "alimentation",
+      "display_label": {
+        "en": "Alimentation",
+        "fr": "Alimentation"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "100–240 V AC, 50/60 Hz"
+    },
+    {
+      "canonical_name": "consommation",
+      "display_label": {
+        "en": "Consommation",
+        "fr": "Consommation"
+      },
+      "category": "Electrical",
+      "type": "range",
+      "value": {
+        "min": 20,
+        "max": 30,
+        "unit": "W"
+      }
+    },
+    {
+      "canonical_name": "batterie_type",
+      "display_label": {
+        "en": "Type de batterie",
+        "fr": "Type de batterie"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "Lithium-ion"
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE",
+      "ISO 13485",
+      "RoHS"
+    ],
+    "standards": [
+      "IEC 60601-1",
+      "IEC 60601-1-2",
+      "IEC 60601-2-27",
+      "IEC 60601-2-49"
+    ]
+  }
+}

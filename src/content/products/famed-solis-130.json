@@ -1,0 +1,159 @@
+{
+  "id": "famed-solis-130",
+  "name": {
+    "en": "Lampe chirurgicale SOLIS 130",
+    "fr": "Lampe chirurgicale SOLIS 130"
+  },
+  "brand": {
+    "name": "FAMED",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "eclairage-operatoire",
+      "fr": "Éclairage opératoire"
+    }
+  },
+  "short_description": {
+    "en": "Lampe chirurgicale LED fiable avec coupole simple ou double offrant forte intensité lumineuse et excellente profondeur d’éclairage.",
+    "fr": "Lampe chirurgicale LED fiable avec coupole simple ou double, offrant forte intensité lumineuse et excellente profondeur d’éclairage."
+  },
+  "full_description": {
+    "en": "La lampe chirurgicale SOLIS 130 est adaptée aux blocs opératoires polyvalents. Elle combine une forte intensité lumineuse à un rendu des couleurs précis et assure une grande profondeur d’éclairage. Disponible en version simple ou double coupole, elle garantit un confort optimal pour les équipes médicales durant les interventions.",
+    "fr": "La lampe chirurgicale SOLIS 130 est adaptée aux blocs opératoires polyvalents.  \nElle combine une forte intensité lumineuse à un rendu des couleurs précis et assure une grande profondeur d’éclairage.  \nDisponible en version simple ou double coupole, elle garantit un confort optimal pour les équipes médicales durant les interventions."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/surgery/lights/famed-solis-130/solis-130.webp",
+    "../../assets/products/surgery/lights/famed-solis-130/solis-130-2.webp",
+    "../../assets/products/surgery/lights/famed-solis-130/solis-130-3.webp",
+    "../../assets/products/surgery/lights/famed-solis-130/solis-130-4.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "intensite_lumineuse",
+      "display_label": {
+        "en": "Intensité lumineuse",
+        "fr": "Intensité lumineuse"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 130000,
+        "unit": "lux"
+      }
+    },
+    {
+      "canonical_name": "temperature_couleur",
+      "display_label": {
+        "en": "Température de couleur",
+        "fr": "Température de couleur"
+      },
+      "category": "Lighting",
+      "type": "range",
+      "value": {
+        "min": 3800,
+        "max": 4800,
+        "unit": "K"
+      }
+    },
+    {
+      "canonical_name": "cri",
+      "display_label": {
+        "en": "Indice de rendu des couleurs (CRI)",
+        "fr": "Indice de rendu des couleurs (CRI)"
+      },
+      "category": "Lighting",
+      "type": "string",
+      "value": "≥ 96 / R9 ≥ 96"
+    },
+    {
+      "canonical_name": "diametre_champ",
+      "display_label": {
+        "en": "Diamètre du champ lumineux (d10)",
+        "fr": "Diamètre du champ lumineux (d10)"
+      },
+      "category": "Lighting",
+      "type": "range",
+      "value": {
+        "qty": 200,
+        "tolerance": 60,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "profondeur_eclairage",
+      "display_label": {
+        "en": "Profondeur d'éclairage",
+        "fr": "Profondeur d'éclairage"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 1200,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "nombre_led",
+      "display_label": {
+        "en": "Nombre de LED",
+        "fr": "Nombre de LED"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": 66
+    },
+    {
+      "canonical_name": "duree_vie",
+      "display_label": {
+        "en": "Durée de vie",
+        "fr": "Durée de vie"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 60000,
+        "unit": "h"
+      }
+    },
+    {
+      "canonical_name": "consommation",
+      "display_label": {
+        "en": "Consommation",
+        "fr": "Consommation"
+      },
+      "category": "Electrical",
+      "type": "number",
+      "value": {
+        "qty": 70,
+        "unit": "W"
+      }
+    },
+    {
+      "canonical_name": "controle",
+      "display_label": {
+        "en": "Contrôle",
+        "fr": "Contrôle"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Poignée stérile, panneau mural, bras"
+    },
+    {
+      "canonical_name": "options",
+      "display_label": {
+        "en": "Options",
+        "fr": "Options"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Double coupole, caméra, écran"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

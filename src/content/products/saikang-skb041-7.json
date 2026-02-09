@@ -1,0 +1,91 @@
+{
+  "id": "saikang-skb041-7",
+  "name": {
+    "en": "Chariot brancard SKB041-7",
+    "fr": "Chariot brancard SKB041-7"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "brancardage",
+      "fr": "Brancardage"
+    }
+  },
+  "short_description": {
+    "en": "Chariot multi-fonctions ergonomique pour transport et imagerie.",
+    "fr": "Chariot multi-fonctions ergonomique pour transport et imagerie"
+  },
+  "full_description": {
+    "en": "Chariot multi-fonctions ergonomique adapté au transport et imagerie corps entier avec support cassette rayons X intégré. Dossier réglable à 85°, repose-jambes à 50° et inclinaisons Trendelenburg et reverse jusqu’à 15°. Roulettes 8\" avec frein central et verrouillage directionnel.",
+    "fr": "Chariot multi-fonctions ergonomique adapté au transport et imagerie corps entier avec support cassette rayons X intégré.\nDossier réglable à 85°, repose-jambes à 50° et inclinaisons Trendelenburg et reverse jusqu’à 15°.\nRoulettes 8\" avec frein central et verrouillage directionnel."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-chair.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-declined.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-inclined.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-lifted.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-7/SKB041-7-lowered.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2200 x 770 mm"
+    },
+    {
+      "canonical_name": "hauteur_ajustable",
+      "display_label": {
+        "en": "Hauteur ajustable",
+        "fr": "Hauteur ajustable"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "600-910 mm"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "8\" avec frein central et verrouillage directionnel"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "PU 80 mm imperméable"
+    },
+    {
+      "canonical_name": "support_rayons_x",
+      "display_label": {
+        "en": "Support cassette rayons X",
+        "fr": "Support cassette rayons X"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

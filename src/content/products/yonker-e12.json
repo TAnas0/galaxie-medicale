@@ -1,0 +1,123 @@
+{
+  "id": "yonker-e12",
+  "name": {
+    "en": "Moniteur multiparamétrique E12",
+    "fr": "Moniteur multiparamétrique E12"
+  },
+  "brand": {
+    "name": "YONKER",
+    "description": ""
+  },
+  "category": {
+    "canonical": "diagnostic",
+    "display": {
+      "en": "monitorage",
+      "fr": "Monitorage"
+    }
+  },
+  "short_description": {
+    "en": "Moniteur avancé 12,1 pouces pour unité de soins intensifs avec surveillance complète des paramètres vitaux.",
+    "fr": "Moniteur avancé 12,1 pouces pour unité de soins intensifs, surveillance complète des paramètres vitaux."
+  },
+  "full_description": {
+    "en": "Le moniteur E12 dispose d’un écran 12,1 pouces pour une visualisation claire des paramètres vitaux. Il inclut la surveillance ECG 5 dérivations, SpO₂, NIBP, TEMP et RESP, ainsi qu’une mémoire interne jusqu’à 96 heures pour les tendances graphiques. Il convient aux unités de soins intensifs et post-opératoires nécessitant une surveillance précise et continue.",
+    "fr": "Le moniteur E12 dispose d’un écran 12,1 pouces offrant une visualisation claire des paramètres vitaux.  \nIl inclut la surveillance ECG 5 dérivations, SpO2, NIBP, TEMP et RESP.  \nConvient aux unités de soins intensifs et post-opératoires nécessitant une surveillance précise et continue.\n"
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/diagnostic/monitors/e12/E12-front.webp",
+    "../../assets/products/diagnostic/monitors/e12/E12-front-2.webp",
+    "../../assets/products/diagnostic/monitors/e12/E12-front-3.webp",
+    "../../assets/products/diagnostic/monitors/e12/E12-back.webp",
+    "../../assets/products/diagnostic/monitors/e12/E12-side-2.webp",
+    "../../assets/products/diagnostic/monitors/e12/E12-side.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "ecran",
+      "display_label": {
+        "en": "Taille de l'écran",
+        "fr": "Taille de l'écran"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 12.1,
+        "unit": "pouces"
+      }
+    },
+    {
+      "canonical_name": "parametres_vitals",
+      "display_label": {
+        "en": "Paramètres surveillés",
+        "fr": "Paramètres surveillés"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "ECG, SpO₂, NIBP, TEMP, RESP, PR"
+    },
+    {
+      "canonical_name": "memoire",
+      "display_label": {
+        "en": "Mémoire interne",
+        "fr": "Mémoire interne"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "96 h"
+    },
+    {
+      "canonical_name": "interfaces",
+      "display_label": {
+        "en": "Interfaces",
+        "fr": "Interfaces"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "LAN, USB, HDMI"
+    },
+    {
+      "canonical_name": "alimentation",
+      "display_label": {
+        "en": "Alimentation",
+        "fr": "Alimentation"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "AC 100–240 V, 50/60 Hz"
+    },
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "300 × 220 × 260 mm"
+    },
+    {
+      "canonical_name": "modes_patient",
+      "display_label": {
+        "en": "Modes patient",
+        "fr": "Modes patient"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Adulte / Pédiatrique / Néonatal"
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE",
+      "ISO 13485",
+      "RoHS"
+    ],
+    "standards": [
+      "IEC 60601-1",
+      "IEC 60601-1-2",
+      "IEC 60601-2-27",
+      "IEC 60601-2-49"
+    ]
+  }
+}

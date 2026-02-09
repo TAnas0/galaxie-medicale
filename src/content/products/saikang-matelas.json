@@ -1,0 +1,64 @@
+{
+  "id": "saikang-matelas",
+  "name": {
+    "en": "Matelas",
+    "fr": "Matelas"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "literie",
+      "fr": "Literie"
+    }
+  },
+  "short_description": {
+    "en": "Matelas hospitalier en mousse haute densité avec housse imperméable.",
+    "fr": "Matelas hospitalier en mousse haute densité avec housse imperméable"
+  },
+  "full_description": {
+    "en": "Matelas hospitalier en mousse polyuréthane haute densité avec housse en TPU imperméable et respirante, facile à retirer et nettoyer. Disponible en plusieurs épaisseurs et sections.",
+    "fr": "Matelas hospitalier en mousse polyuréthane haute densité avec housse en TPU imperméable et respirante, facile à retirer et nettoyer.\nDisponible en plusieurs épaisseurs et sections."
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1925 x 900 mm"
+    },
+    {
+      "canonical_name": "densite",
+      "display_label": {
+        "en": "Densité mousse",
+        "fr": "Densité mousse"
+      },
+      "category": "Physical",
+      "type": "integer",
+      "value": 28
+    },
+    {
+      "canonical_name": "sections",
+      "display_label": {
+        "en": "Sections",
+        "fr": "Sections"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1, 2 ou 4"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "saikang-skb041-10",
+  "name": {
+    "en": "Chariot brancard SKB041-10",
+    "fr": "Chariot brancard SKB041-10"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "brancardage",
+      "fr": "Brancardage"
+    }
+  },
+  "short_description": {
+    "en": "Chariot patient avec système de manivelle et inclinaisons Trendelenburg.",
+    "fr": "Chariot patient avec système de manivelle et inclinaisons Trendelenburg"
+  },
+  "full_description": {
+    "en": "Chariot de transport patient avec système de manivelle, dossier réglable à 75°, repose-genoux à 40° et inclinaisons Trendelenburg jusqu’à 18°. Roulettes 8\" avec verrouillage central, matelas imperméable et barrières latérales plastiques.",
+    "fr": "Chariot de transport patient avec système de manivelle, dossier réglable à 75°, repose-genoux à 40° et inclinaisons Trendelenburg jusqu’à 18°.\nRoulettes 8\" avec verrouillage central"
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10-2.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10-declined.avif",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10-inclined.avif",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-10/SKB041-10-lifted.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2150 x 830 mm"
+    },
+    {
+      "canonical_name": "hauteur_ajustable",
+      "display_label": {
+        "en": "Hauteur ajustable",
+        "fr": "Hauteur ajustable"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "560-890 mm"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "8\" avec frein central"
+    },
+    {
+      "canonical_name": "barrieres_laterales",
+      "display_label": {
+        "en": "Barrières latérales",
+        "fr": "Barrières latérales"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "pompe_hydraulique",
+      "display_label": {
+        "en": "Pompe hydraulique",
+        "fr": "Pompe hydraulique"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

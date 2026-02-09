@@ -1,0 +1,120 @@
+{
+  "id": "saikang-a501",
+  "name": {
+    "en": "Table de chirurgie A501",
+    "fr": "Table de chirurgie A501"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "table-de-chirurgie",
+      "fr": "table de chirurgie"
+    }
+  },
+  "short_description": {
+    "en": "Table hydraulique avec rotation 180° et commande double pour interventions exigeantes.",
+    "fr": "Table hydraulique avec rotation 180° et commande double"
+  },
+  "full_description": {
+    "en": "La table A501 propose un système hydraulique performant avec rotation horizontale 180°, commande double, batterie de secours intégrée et surface résistante. Adaptée aux interventions exigeantes, elle assure confort et sécurité grâce à son cadre en acier inoxydable et ses multiples réglages.",
+    "fr": "Cette table A501 propose un système hydraulique performant avec rotation horizontale 180°, commande double, batterie de secours intégrée et surface résistante.\nAdaptée aux interventions exigeantes, elle assure confort et sécurité grâce à son cadre en acier inoxydable et ses multiples réglages."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/surgery/operating-tables/saikang/A501/A501-1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A501/A501-2.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A501/A501-3.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A501/A501-4.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A501/A501-5.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A501/A501-6.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2125 x 550 x 600-950 mm"
+    },
+    {
+      "canonical_name": "reglages",
+      "display_label": {
+        "en": "Réglages plaques",
+        "fr": "Réglages plaques"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "dos (89°/35°), tête (55°/90°), jambes"
+    },
+    {
+      "canonical_name": "inclinaison_trendelenburg",
+      "display_label": {
+        "en": "Inclinaison Trendelenburg/Reverse",
+        "fr": "Inclinaison Trendelenburg/Reverse"
+      },
+      "category": "Motion",
+      "type": "range",
+      "value": {
+        "min": -20,
+        "max": 15,
+        "unit": "°"
+      }
+    },
+    {
+      "canonical_name": "inclinaison_laterale",
+      "display_label": {
+        "en": "Inclinaison latérale",
+        "fr": "Inclinaison latérale"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": 15,
+      "unit": "°"
+    },
+    {
+      "canonical_name": "glissement_horizontal",
+      "display_label": {
+        "en": "Glissement horizontal",
+        "fr": "Glissement horizontal"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": {
+        "qty": 320,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "rotation_horizontale",
+      "display_label": {
+        "en": "Rotation horizontale",
+        "fr": "Rotation horizontale"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": 180,
+      "unit": "°"
+    },
+    {
+      "canonical_name": "accessoires",
+      "display_label": {
+        "en": "Accessoires inclus",
+        "fr": "Accessoires inclus"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Accessoires complets et matelas"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

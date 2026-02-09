@@ -1,0 +1,126 @@
+{
+  "id": "yonker-e10",
+  "name": {
+    "en": "Moniteur multiparamétrique E10",
+    "fr": "Moniteur multiparamétrique E10"
+  },
+  "brand": {
+    "name": "YONKER",
+    "description": ""
+  },
+  "category": {
+    "canonical": "diagnostic",
+    "display": {
+      "en": "monitorage",
+      "fr": "Monitorage"
+    }
+  },
+  "short_description": {
+    "en": "Moniteur multiparamétrique avec écran 10,4 pouces pour usage hospitalier général.",
+    "fr": "Moniteur multiparamétrique avec écran 10,4 pouces pour usage hospitalier général, intégrant alarme auditive et visuelle."
+  },
+  "full_description": {
+    "en": "Le moniteur E10 permet la surveillance simultanée de l’ECG, SpO₂, NIBP, TEMP, RESP et PR. Son écran 10,4 pouces offre une lecture claire et précise, avec alarmes sonores et visuelles pour la sécurité des patients. Il inclut USB, port série et LAN pour connectivité, ainsi qu'une batterie lithium-ion offrant environ 3 heures d'autonomie.",
+    "fr": "Le moniteur E10 offre la surveillance simultanée de l’ECG, SpO2, pression non invasive, température, respiration et pouls.  \nIl dispose d’un écran 10,4 pouces pour une lecture claire et d’alarmes visuelles et sonores pour la sécurité des patients.  \nIdéal pour les services hospitaliers généraux."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/diagnostic/monitors/e10/E10-2.webp",
+    "../../assets/products/diagnostic/monitors/e10/E10-3.webp",
+    "../../assets/products/diagnostic/monitors/e10/E10-5.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "ecran",
+      "display_label": {
+        "en": "Taille de l'écran",
+        "fr": "Taille de l'écran"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 10.4,
+        "unit": "pouces"
+      }
+    },
+    {
+      "canonical_name": "parametres_vitals",
+      "display_label": {
+        "en": "Paramètres surveillés",
+        "fr": "Paramètres surveillés"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "ECG (3/5 dérivations), SpO₂, NIBP, TEMP, RESP"
+    },
+    {
+      "canonical_name": "autonomie_batterie",
+      "display_label": {
+        "en": "Autonomie batterie",
+        "fr": "Autonomie batterie"
+      },
+      "category": "Electrical",
+      "type": "number",
+      "value": {
+        "qty": 3,
+        "unit": "h"
+      }
+    },
+    {
+      "canonical_name": "poids",
+      "display_label": {
+        "en": "Poids",
+        "fr": "Poids"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 3.5,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "interfaces",
+      "display_label": {
+        "en": "Interfaces",
+        "fr": "Interfaces"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "USB, port série, LAN"
+    },
+    {
+      "canonical_name": "alarmes",
+      "display_label": {
+        "en": "Alarmes",
+        "fr": "Alarmes"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "3 niveaux: technique, physiologique, critique"
+    },
+    {
+      "canonical_name": "impression",
+      "display_label": {
+        "en": "Impression des données",
+        "fr": "Impression des données"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Option imprimante thermique intégrée"
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE",
+      "ISO 13485",
+      "RoHS"
+    ],
+    "standards": [
+      "IEC 60601-1",
+      "IEC 60601-1-2",
+      "IEC 60601-2-27",
+      "IEC 60601-2-49"
+    ]
+  }
+}

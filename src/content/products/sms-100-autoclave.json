@@ -1,0 +1,134 @@
+{
+  "id": "sms-100-autoclave",
+  "name": {
+    "en": "Autoclave à vapeur SMS 100",
+    "fr": "Autoclave à vapeur SMS 100"
+  },
+  "brand": {
+    "name": "SMS ",
+    "description": ""
+  },
+  "category": {
+    "canonical": "sterilisation",
+    "display": {
+      "en": "autoclave-vertical",
+      "fr": "Autoclave vertical"
+    }
+  },
+  "short_description": {
+    "en": "Autoclave vertical compact 100L avec station de traitement d'eau et compresseur intégrés pour petites cliniques et laboratoires.",
+    "fr": "Autoclave vertical compact pour petites cliniques et laboratoires, avec station de traitement d'eau et compresseur intégrés."
+  },
+  "full_description": {
+    "en": "L'autoclave à vapeur SMS 100 est un stérilisateur vertical compact idéal pour les petites cliniques et laboratoires. Il intègre une station de traitement de l'eau et un compresseur pour garantir une stérilisation fiable des instruments médicaux et chirurgicaux. Avec 15 programmes de stérilisation, un écran tactile LCD 7'' et contrôle par mot de passe, il offre compacité, sécurité et facilité d'utilisation.",
+    "fr": "L'autoclave à vapeur SMS 100 est un stérilisateur vertical compact, idéal pour les petites cliniques et laboratoires.  \nIl intègre une station de traitement de l'eau et un compresseur pour garantir une stérilisation efficace et sécurisée des instruments médicaux et chirurgicaux.  \nSa conception compacte et ses fonctions intégrées facilitent l'utilisation et l'entretien dans les environnements cliniques restreints.\n"
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-1.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-2.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-3.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-4.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-5.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-sms-100/sms-100-6.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "chamber_capacity",
+      "display_label": {
+        "en": "Capacité de la chambre",
+        "fr": "Capacité de la chambre"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 100,
+        "unit": "L"
+      }
+    },
+    {
+      "canonical_name": "porte",
+      "display_label": {
+        "en": "Porte",
+        "fr": "Porte"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "Ouverture manuelle"
+    },
+    {
+      "canonical_name": "generateur_vapeur",
+      "display_label": {
+        "en": "Générateur de vapeur",
+        "fr": "Générateur de vapeur"
+      },
+      "category": "Electrical",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "materiaux_chambre",
+      "display_label": {
+        "en": "Matériaux chambre et portes",
+        "fr": "Matériaux chambre et portes"
+      },
+      "category": "Materials",
+      "type": "string",
+      "value": "Acier inoxydable AISI 316L"
+    },
+    {
+      "canonical_name": "ecran",
+      "display_label": {
+        "en": "Écran tactile",
+        "fr": "Écran tactile"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "LCD couleur 7\""
+    },
+    {
+      "canonical_name": "programmes",
+      "display_label": {
+        "en": "Programmes de stérilisation",
+        "fr": "Programmes de stérilisation"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "15 programmes + 2 tests (vide, Bowie & Dick)"
+    },
+    {
+      "canonical_name": "station_eau_compresseur",
+      "display_label": {
+        "en": "Station eau et compresseur",
+        "fr": "Station eau et compresseur"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "imprimante",
+      "display_label": {
+        "en": "Imprimante intégrée",
+        "fr": "Imprimante intégrée"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "controle_acces",
+      "display_label": {
+        "en": "Contrôle d'accès",
+        "fr": "Contrôle d'accès"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Mot de passe"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

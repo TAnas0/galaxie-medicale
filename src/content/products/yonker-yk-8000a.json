@@ -1,0 +1,118 @@
+{
+  "id": "yonker-yk-8000a",
+  "name": {
+    "en": "Moniteur multiparamétrique YK-8000A",
+    "fr": "Moniteur multiparamétrique YK-8000A"
+  },
+  "brand": {
+    "name": "YONKER",
+    "description": ""
+  },
+  "category": {
+    "canonical": "diagnostic",
+    "display": {
+      "en": "monitorage",
+      "fr": ""
+    }
+  },
+  "short_description": {
+    "en": "Moniteur portable léger pour surveillance de base, adapté aux ambulances et consultations externes.",
+    "fr": ""
+  },
+  "full_description": {
+    "en": "Le YK-8000A permet de mesurer la saturation en oxygène, la pression artérielle non invasive et la température corporelle. Sa portabilité et sa simplicité en font un outil idéal pour les ambulances, cliniques mobiles et consultations externes. Il dispose d’un écran LCD couleur 7 pouces, interface USB et alarmes visuelles et sonores pour la sécurité du patient.",
+    "fr": ""
+  },
+  "availability": "unknown",
+  "images": [
+    "../../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-2.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-back.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-double.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-front.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000A/YK-8000A-side.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "ecran",
+      "display_label": {
+        "en": "Taille de l'écran",
+        "fr": "Taille de l'écran"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 7,
+        "unit": "pouces"
+      }
+    },
+    {
+      "canonical_name": "parametres_vitals",
+      "display_label": {
+        "en": "Paramètres surveillés",
+        "fr": "Paramètres surveillés"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "SpO₂, NIBP, TEMP"
+    },
+    {
+      "canonical_name": "batterie",
+      "display_label": {
+        "en": "Batterie",
+        "fr": "Batterie"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "2200 mAh"
+    },
+    {
+      "canonical_name": "alarmes",
+      "display_label": {
+        "en": "Alarmes",
+        "fr": "Alarmes"
+      },
+      "category": "Controls",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "interfaces",
+      "display_label": {
+        "en": "Interfaces",
+        "fr": "Interfaces"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "USB"
+    },
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "200 × 140 × 180 mm"
+    },
+    {
+      "canonical_name": "poids",
+      "display_label": {
+        "en": "Poids",
+        "fr": "Poids"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 1.8,
+        "unit": "kg"
+      }
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE"
+    ],
+    "standards": []
+  }
+}

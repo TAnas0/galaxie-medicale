@@ -1,0 +1,72 @@
+{
+  "id": "weilong-abaisse-langue-enfant",
+  "name": {
+    "en": "Tongue Depressor Child",
+    "fr": "Abaisse-langue enfant"
+  },
+  "brand": {
+    "name": "WEILONG",
+    "description": ""
+  },
+  "category": {
+    "canonical": "accessories_consumables",
+    "display": {
+      "en": "Medical Accessories & Consumables",
+      "fr": "Accessoires et consommables médicaux"
+    }
+  },
+  "short_description": {
+    "en": "Disposable wooden tongue depressor for pediatric medical examinations.",
+    "fr": "Abaisse-langue jetable en bois pour examens médicaux pédiatriques."
+  },
+  "full_description": {
+    "en": "The WEILONG child tongue depressor is a smooth, splinter-free wooden tool designed for pediatric examinations. With an appropriate size for children, it allows safe and hygienic depression of the tongue to facilitate oral and throat inspections. Widely used in pediatric clinics, hospitals, and general practice.",
+    "fr": "L’abaisse-langue enfant WEILONG est un outil en bois lisse et sans échardes, conçu pour les examens pédiatriques. Sa taille adaptée aux enfants permet une dépression sûre et hygiénique de la langue afin de faciliter l’inspection de la cavité buccale et de la gorge. Couramment utilisé dans les cliniques pédiatriques, hôpitaux et cabinets médicaux."
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "material",
+      "display_label": {
+        "en": "Material",
+        "fr": "Matériau"
+      },
+      "category": "Physical",
+      "type": "enum",
+      "value": [
+        "Wood"
+      ]
+    },
+    {
+      "canonical_name": "disposability",
+      "display_label": {
+        "en": "Disposability",
+        "fr": "Jetable"
+      },
+      "category": "Usage",
+      "type": "enum",
+      "value": [
+        "Disposable"
+      ]
+    },
+    {
+      "canonical_name": "intended_use",
+      "display_label": {
+        "en": "Intended Use",
+        "fr": "Utilisation prévue"
+      },
+      "category": "Usage",
+      "type": "enum",
+      "value": [
+        "Child"
+      ]
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE"
+    ],
+    "standards": []
+  }
+}

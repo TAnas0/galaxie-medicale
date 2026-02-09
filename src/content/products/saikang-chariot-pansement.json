@@ -1,0 +1,74 @@
+{
+  "id": "saikang-chariot-pansement",
+  "name": {
+    "en": "Chariot à pansement",
+    "fr": "Chariot à pansement"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "chariot",
+      "fr": "Chariot"
+    }
+  },
+  "short_description": {
+    "en": "Chariot médical multifonction compact avec tiroirs.",
+    "fr": "Chariot médical multifonction compact avec tiroirs"
+  },
+  "full_description": {
+    "en": "Chariot médical multifonction en ABS et acier inoxydable, compact avec tiroir à rails silencieux, plateau avec rebords inox et roulettes médicales à frein.",
+    "fr": "Chariot médical multifonction en ABS et acier inoxydable, compact avec tiroir à rails silencieux, plateau avec rebords inox et roulettes médicales à frein."
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "730 x 480 x 900 mm"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "3” avec frein (4 pcs)"
+    },
+    {
+      "canonical_name": "tiroirs",
+      "display_label": {
+        "en": "Tiroirs",
+        "fr": "Tiroirs"
+      },
+      "category": "Storage",
+      "type": "string",
+      "value": "Tiroir avec séparateurs plastique"
+    },
+    {
+      "canonical_name": "plateau",
+      "display_label": {
+        "en": "Plateau",
+        "fr": "Plateau"
+      },
+      "category": "Storage",
+      "type": "string",
+      "value": "Plateau ABS avec rebords inox"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

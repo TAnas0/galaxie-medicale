@@ -1,0 +1,97 @@
+{
+  "id": "vanry-d2",
+  "name": {
+    "en": "Berceau D-2",
+    "fr": "Berceau D-2"
+  },
+  "brand": {
+    "name": "VANRY",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "berceau-neonatal",
+      "fr": "Berceau néonatal"
+    }
+  },
+  "short_description": {
+    "en": "Berceau hospitalier mobile pour soins néonataux, léger et stable, idéal pour chambres post-partum.",
+    "fr": "Berceau hospitalier mobile pour soins néonataux, léger et stable, idéal pour chambres post-partum."
+  },
+  "full_description": {
+    "en": "Le berceau D-2 est conçu pour les soins néonataux en maternité. Sa structure légère et stable permet un accès facile au nouveau-né pour le personnel soignant. Il est utilisé principalement dans les chambres post-partum, facilitant la manipulation sécurisée et confortable des nouveau-nés.",
+    "fr": "Le berceau D-2 est conçu pour les soins néonataux en maternité.  \nSa structure légère et stable permet un accès facile au nouveau-né pour le personnel soignant.  \nUtilisé principalement dans les chambres post-partum, il facilite la manipulation sécurisée et confortable des nouveau-nés.\n"
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "structure",
+      "display_label": {
+        "en": "Structure",
+        "fr": "Structure"
+      },
+      "category": "Materials",
+      "type": "string",
+      "value": "Acier inoxydable peint ou anodisé"
+    },
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions extérieures",
+        "fr": "Dimensions extérieures"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "870 × 510 × 880 mm"
+    },
+    {
+      "canonical_name": "bassin",
+      "display_label": {
+        "en": "Bassin",
+        "fr": "Bassin"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "Transparent, inclinable manuellement jusqu’à 12°"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Type de roulettes",
+        "fr": "Type de roulettes"
+      },
+      "category": "Mobility",
+      "type": "string",
+      "value": "4 pivotantes Ø 75 mm avec frein"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Mousse polyuréthane, housse imperméable"
+    },
+    {
+      "canonical_name": "poids",
+      "display_label": {
+        "en": "Poids net",
+        "fr": "Poids net"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 15,
+        "unit": "kg"
+      }
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

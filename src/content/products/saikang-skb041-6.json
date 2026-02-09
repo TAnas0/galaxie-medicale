@@ -1,0 +1,79 @@
+{
+  "id": "saikang-skb041-6",
+  "name": {
+    "en": "Chariot brancard SKB041-6",
+    "fr": "Chariot brancard SKB041-6"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "brancardage",
+      "fr": "Brancardage"
+    }
+  },
+  "short_description": {
+    "en": "Chariot patient polyvalent avec barrières et roulettes verrouillables.",
+    "fr": "Chariot patient polyvalent avec barrières et roulettes verrouillables"
+  },
+  "full_description": {
+    "en": "Chariot patient avec système de manivelle, dossier à ressort pneumatique, barrières latérales plastiques et roulettes 6\" avec verrouillage central et directionnel. Hauteur ajustable entre 510 et 850 mm pour un usage polyvalent.",
+    "fr": "Chariot patient avec système de manivelle, dossier à ressort pneumatique, barrières latérales plastiques, roulettes 6\" avec verrouillage central et directionnel.\nHauteur ajustable entre 510 et 850 mm pour un usage polyvalent."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6-lifted.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6-open.webp",
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB041-6/SKB041-6-sitting.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1930 x 660 mm"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "6\" avec frein central"
+    },
+    {
+      "canonical_name": "barrieres_laterales",
+      "display_label": {
+        "en": "Barrières latérales",
+        "fr": "Barrières latérales"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "portes_accessoires",
+      "display_label": {
+        "en": "Porte-seringues et porte-bouteille",
+        "fr": "Porte-seringues et porte-bouteille"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

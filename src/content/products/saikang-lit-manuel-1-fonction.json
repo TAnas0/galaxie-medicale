@@ -1,0 +1,74 @@
+{
+  "id": "saikang-lit-manuel-1-fonction",
+  "name": {
+    "en": "Lit manuel 1 fonction",
+    "fr": "Lit manuel 1 fonction"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "literie",
+      "fr": "Literie"
+    }
+  },
+  "short_description": {
+    "en": "Lit manuel avec dossier réglable et barrières pliables.",
+    "fr": "Lit manuel avec dossier réglable et barrières pliables"
+  },
+  "full_description": {
+    "en": "Lit manuel robuste avec structure en acier inoxydable, dossier réglable jusqu’à 75°, matelas confortable et roulettes 5” silencieuses. Équipé de barrières latérales pliables, porte-perfusion et crochets de drainage pour usage polyvalent en milieu hospitalier.",
+    "fr": "Lit manuel robuste avec structure en acier inoxydable, dossier réglable jusqu’à 75°, matelas confortable et roulettes 5” silencieuses.\nEquipé de barrières latérales pliables, porte-perfusion et crochets de drainage pour usage polyvalent en milieu hospitalier."
+  },
+  "availability": "on_order",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions extérieures",
+        "fr": "Dimensions extérieures"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2110 x 960 x 500 mm"
+    },
+    {
+      "canonical_name": "plateforme_matelas",
+      "display_label": {
+        "en": "Plateforme matelas",
+        "fr": "Plateforme matelas"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1890 x 830 mm"
+    },
+    {
+      "canonical_name": "charge_maximale",
+      "display_label": {
+        "en": "Charge maximale",
+        "fr": "Charge maximale"
+      },
+      "category": "Physical",
+      "type": "integer",
+      "value": 200
+    },
+    {
+      "canonical_name": "accessoires",
+      "display_label": {
+        "en": "Accessoires",
+        "fr": "Accessoires"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "manivelle manuelle, porte-perfusion, crochets drainage"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

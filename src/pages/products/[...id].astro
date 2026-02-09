@@ -80,7 +80,21 @@ const relatedProducts = products
 const HIGHLIGHT_CERTS_STANDARDS = [
   "CE", "ISO 13485", "FDA", "EN 13060", "ISO 14937", "ISO 14971", "IEC 60601", "ISO 10993",
 
-
+  // To be removed
+  "Directive 93/42-ECC",
+  "EN 13060",
+  "EN 13445",
+  "EN 61010-1",
+  "EN 61010-2-040",
+  "EN 61326",
+  "EN ISO 14971",
+  "FDA",
+  "IEC 60601-1",
+  "IEC 60601-1-2",
+  "IEC 60601-2-27",
+  "IEC 60601-2-49",
+  "ISO 13485",
+  "PED 97/23/ECC",
 ];
 const highlightedCerts = product.data.compliance?.certifications?.filter(
   (cert) => HIGHLIGHT_CERTS_STANDARDS.includes(cert),
@@ -103,10 +117,10 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
     {/* Main Content */}
     <main class="container mx-auto px-4 py-6">
       {/* Product Hero Section */}
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-6 lg:mb-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
         {/* Product Information */}
         <div class="space-y-6 flex flex-col">
-          <div class="h-full">
+          <div class="">
             <h1
               class="text-center lg:text-left text-3xl lg:text-4xl font-extrabold text-gray-900 tracking-tight mb-4"
             >

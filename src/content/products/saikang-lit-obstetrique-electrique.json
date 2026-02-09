@@ -1,0 +1,74 @@
+{
+  "id": "saikang-lit-obstetrique-electrique",
+  "name": {
+    "en": "Lit obstétrique électrique",
+    "fr": "Lit obstétrique électrique"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "neonatologie",
+      "fr": "Neonatolgie"
+    }
+  },
+  "short_description": {
+    "en": "Lit obstétrique électrique avec réglages multiples et accessoires.",
+    "fr": "Lit obstétrique électrique avec réglages multiples et accessoires"
+  },
+  "full_description": {
+    "en": "Lit obstétrique électrique avec réglages multiples incluant hauteur, dossier, siège et repose-jambes. Équipé d’un système de contrôle à pédale et main, matelas étanche et accessoires spécifiques pour accouchement.",
+    "fr": "Lit obstétrique électrique avec réglages multiples incluant hauteur, dossier, siège et repose-jambes.\nEquipé d’un système de contrôle à pédale et main, matelas étanche et accessoires spécifiques pour accouchement."
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1950 x 660 mm"
+    },
+    {
+      "canonical_name": "reglages_siege",
+      "display_label": {
+        "en": "Réglages siège",
+        "fr": "Réglages siège"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "0-20° (haut), 0-9° (bas)"
+    },
+    {
+      "canonical_name": "charge_maximale",
+      "display_label": {
+        "en": "Charge maximale",
+        "fr": "Charge maximale"
+      },
+      "category": "Physical",
+      "type": "integer",
+      "value": 300
+    },
+    {
+      "canonical_name": "accessoires",
+      "display_label": {
+        "en": "Accessoires",
+        "fr": "Accessoires"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "supports bras, étriers, table auxiliaire, bassin inox"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

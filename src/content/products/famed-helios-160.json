@@ -1,0 +1,158 @@
+{
+  "id": "famed-helios-160",
+  "name": {
+    "en": "Lampe opératoire HELIOS 160",
+    "fr": "Lampe opératoire HELIOS 160"
+  },
+  "brand": {
+    "name": "FAMED",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "eclairage-operatoire",
+      "fr": "Éclairage opératoire"
+    }
+  },
+  "short_description": {
+    "en": "Lampe opératoire LED haut de gamme avec coupole simple ou double offrant un éclairage optimal pour interventions chirurgicales.",
+    "fr": "Lampe opératoire LED haut de gamme avec coupole simple ou double, offrant un éclairage optimal pour interventions chirurgicales."
+  },
+  "full_description": {
+    "en": "La lampe opératoire HELIOS 160 est conçue pour fournir un éclairage chirurgical précis lors d'interventions complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité et un confort visuel maximal. Son intensité lumineuse réglable et son rendu des couleurs précis assurent une précision accrue pour les procédures médicales et chirurgicales.",
+    "fr": "La lampe opératoire HELIOS 160 est une lampe LED chirurgicale conçue pour fournir un éclairage optimal lors d'interventions complexes.  \nDisponible en version simple ou double coupole, elle garantit une excellente visibilité et un confort visuel maximal.  \nSon intensité lumineuse réglable et son rendu des couleurs précis assurent une précision accrue lors des procédures médicales et chirurgicales."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/surgery/lights/famed-helios-160/helios-160.webp",
+    "../../assets/products/surgery/lights/famed-helios-160/helios-160-1.webp",
+    "../../assets/products/surgery/lights/famed-helios-160/helios-160-2.webp",
+    "../../assets/products/surgery/lights/famed-helios-160/helios-160-3.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "intensite_lumineuse",
+      "display_label": {
+        "en": "Intensité lumineuse",
+        "fr": "Intensité lumineuse"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 160000,
+        "unit": "lux"
+      }
+    },
+    {
+      "canonical_name": "temperature_couleur",
+      "display_label": {
+        "en": "Température de couleur",
+        "fr": "Température de couleur"
+      },
+      "category": "Lighting",
+      "type": "range",
+      "value": {
+        "min": 3800,
+        "max": 4800,
+        "unit": "K"
+      }
+    },
+    {
+      "canonical_name": "cri",
+      "display_label": {
+        "en": "Indice de rendu des couleurs (CRI)",
+        "fr": "Indice de rendu des couleurs (CRI)"
+      },
+      "category": "Lighting",
+      "type": "string",
+      "value": "≥ 96 / R9 ≥ 96"
+    },
+    {
+      "canonical_name": "diametre_champ",
+      "display_label": {
+        "en": "Diamètre du champ lumineux (d10)",
+        "fr": "Diamètre du champ lumineux (d10)"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 210,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "profondeur_eclairage",
+      "display_label": {
+        "en": "Profondeur d'éclairage",
+        "fr": "Profondeur d'éclairage"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 1200,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "nombre_led",
+      "display_label": {
+        "en": "Nombre de LED",
+        "fr": "Nombre de LED"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": 70
+    },
+    {
+      "canonical_name": "duree_vie",
+      "display_label": {
+        "en": "Durée de vie",
+        "fr": "Durée de vie"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 60000,
+        "unit": "h"
+      }
+    },
+    {
+      "canonical_name": "consommation",
+      "display_label": {
+        "en": "Consommation",
+        "fr": "Consommation"
+      },
+      "category": "Electrical",
+      "type": "number",
+      "value": {
+        "qty": 55,
+        "unit": "W"
+      }
+    },
+    {
+      "canonical_name": "controle",
+      "display_label": {
+        "en": "Contrôle",
+        "fr": "Contrôle"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Poignée stérile, mur tactile, bras"
+    },
+    {
+      "canonical_name": "options",
+      "display_label": {
+        "en": "Options",
+        "fr": "Options"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Caméra intégrée, écran mural, double coupole"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

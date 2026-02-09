@@ -1,0 +1,373 @@
+{
+  "id": "guarisco-phoenix-blu-12-autoclave",
+  "name": {
+    "en": "Autoclave Phoenix Blu 12",
+    "fr": "Autoclave Phoenix Blu 12"
+  },
+  "brand": {
+    "name": "Guarisco Medical Sterilizer ",
+    "description": ""
+  },
+  "category": {
+    "canonical": "sterilisation",
+    "display": {
+      "en": "tabletop_autoclaves",
+      "fr": "Autoclave de table"
+    }
+  },
+  "short_description": {
+    "en": "Compact 12L Class B tabletop autoclave with LCD/LED display for medical and dental sterilization.",
+    "fr": "Autoclave de table compact 12L, classe B, affichage LCD/LED, conçu pour une stérilisation efficace en milieu médical et dentaire."
+  },
+  "full_description": {
+    "en": "The Phoenix Blu 12 is a Class B tabletop autoclave designed for dental clinics, medical practices, and small laboratories. With a 12-liter chamber, dual vacuum system, and adjustable drying, it ensures reliable sterilization of surgical, dental, and laboratory instruments. Available with LCD/LED display, USB data export, and optional printer configurations, it delivers fast Class B cycles in a compact design.",
+    "fr": "L'autoclave Phoenix Blu 12 est un stérilisateur de table de classe B destiné aux cliniques, cabinets dentaires et petits laboratoires. Il assure une stérilisation fiable des instruments chirurgicaux, dentaires et de laboratoire grâce à des cycles avancés de vapeur et de vide. Il dispose d'un design compact, d'un affichage LCD ou LED, d'une exportation de données via USB, d'un séchage ajustable et d'un système à double vide pour un retrait complet de l'air."
+  },
+  "availability": "out_of_stock",
+  "images": [
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 (Aperta).webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB (Aperta).webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu 12 USB.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12 (Aperta).webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-12/Phoenix Blu PRINTER 12.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "device_class",
+      "display_label": {
+        "en": "Medical Device Class",
+        "fr": "Classe Dispositif Médical"
+      },
+      "category": "Regulatory",
+      "type": "string",
+      "value": {
+        "text": "IIb"
+      },
+      "highlighted": true
+    },
+    {
+      "canonical_name": "vacuum_system",
+      "display_label": {
+        "en": "Vacuum System",
+        "fr": "Système de vide"
+      },
+      "category": "Functional",
+      "type": "string",
+      "value": "Fractionated vacuum (3 phases)"
+    },
+    {
+      "canonical_name": "chamber_capacity",
+      "display_label": {
+        "en": "Chamber Capacity",
+        "fr": "Capacité de la chambre"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 12,
+        "unit": "L"
+      }
+    },
+    {
+      "canonical_name": "cycle_time",
+      "display_label": {
+        "en": "Cycle Time (Class B)",
+        "fr": "Temps de cycle (Classe B)"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": {
+        "qty": 15,
+        "unit": "minutes"
+      }
+    },
+    {
+      "canonical_name": "chamber_material",
+      "display_label": {
+        "en": "Chamber Material",
+        "fr": "Matériau de la chambre"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "AISI 316 stainless steel"
+    },
+    {
+      "canonical_name": "sterilization_temperatures",
+      "display_label": {
+        "en": "Sterilization Temperatures",
+        "fr": "Températures de stérilisation"
+      },
+      "category": "Thermal",
+      "type": "enum",
+      "value": [
+        "121°C",
+        "134°C"
+      ]
+    },
+    {
+      "canonical_name": "pressure_cycle_121c",
+      "display_label": {
+        "en": "Pressure Cycle 121°C (STP)",
+        "fr": "Pression Cycle 121°C (STP)"
+      },
+      "category": "Performance",
+      "type": "string",
+      "value": {
+        "text": "1.0 - 1.3 bar"
+      }
+    },
+    {
+      "canonical_name": "pressure_cycle_134c",
+      "display_label": {
+        "en": "Pressure Cycle 134°C (STP)",
+        "fr": "Pression Cycle 134°C (STP)"
+      },
+      "category": "Performance",
+      "type": "string",
+      "value": {
+        "text": "2.0 - 2.4 bar"
+      }
+    },
+    {
+      "canonical_name": "integrated_tests",
+      "display_label": {
+        "en": "Integrated Tests",
+        "fr": "Tests intégrés"
+      },
+      "category": "Functional",
+      "type": "enum",
+      "value": [
+        "Helix",
+        "Bowie & Dick",
+        "Vacuum test"
+      ]
+    },
+    {
+      "canonical_name": "drying_time_settings",
+      "display_label": {
+        "en": "Drying Time Settings",
+        "fr": "Réglage du temps de séchage"
+      },
+      "category": "Controls",
+      "type": "enum",
+      "value": [
+        "1 min",
+        "5 min",
+        "10 min"
+      ]
+    },
+    {
+      "canonical_name": "external_dimensions",
+      "display_label": {
+        "en": "External Dimensions",
+        "fr": "Dimensions externes"
+      },
+      "category": "Physical",
+      "type": "composite",
+      "value": {
+        "length": 407,
+        "height": 410,
+        "depth": 570,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "chamber_dimensions",
+      "display_label": {
+        "en": "Chamber Dimensions",
+        "fr": "Dimensions chambre"
+      },
+      "category": "Physical",
+      "type": "composite",
+      "value": {
+        "diameter": 210,
+        "depth": 360,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "tray_dimensions",
+      "display_label": {
+        "en": "Tray Dimensions",
+        "fr": "Dimensions plateau"
+      },
+      "category": "Physical",
+      "type": "composite",
+      "value": {
+        "length": 310,
+        "width": 160,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "trays_included",
+      "display_label": {
+        "en": "Trays Included",
+        "fr": "Plateaux Inclus"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 3,
+        "unit": "units"
+      }
+    },
+    {
+      "canonical_name": "water_tank_capacity",
+      "display_label": {
+        "en": "Distilled Water Tank",
+        "fr": "Réservoir d’eau distillée"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 3,
+        "unit": "L"
+      }
+    },
+    {
+      "canonical_name": "waste_tank_capacity",
+      "display_label": {
+        "en": "Waste Water Tank",
+        "fr": "Réservoir eaux usées"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 4,
+        "unit": "L"
+      }
+    },
+    {
+      "canonical_name": "noise_level_maximum",
+      "display_label": {
+        "en": "Maximum Noise Level",
+        "fr": "Niveau sonore maximal"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 60,
+        "unit": "dB",
+        "relation": "<"
+      }
+    },
+    {
+      "canonical_name": "weight_net",
+      "display_label": {
+        "en": "Net Weight",
+        "fr": "Poids Net"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 42,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "weight_gross",
+      "display_label": {
+        "en": "Gross Weight",
+        "fr": "Poids Brut"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 44,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "power_supply",
+      "display_label": {
+        "en": "Power Supply",
+        "fr": "Alimentation"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "230 V – 50/60 Hz"
+    },
+    {
+      "canonical_name": "power_consumption",
+      "display_label": {
+        "en": "Power Consumption",
+        "fr": "Consommation électrique"
+      },
+      "category": "Electrical",
+      "type": "number",
+      "value": {
+        "qty": 1800,
+        "unit": "W"
+      }
+    },
+    {
+      "canonical_name": "standby_mode",
+      "display_label": {
+        "en": "Stand-by Mode",
+        "fr": "Mode Stand-by"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Temperature maintenance"
+    },
+    {
+      "canonical_name": "data_output_ports",
+      "display_label": {
+        "en": "Data Output Ports",
+        "fr": "Ports de sortie de données"
+      },
+      "category": "Interface",
+      "type": "enum",
+      "value": [
+        "USB output (Optional)",
+        "RS232 output"
+      ]
+    },
+    {
+      "canonical_name": "display_options",
+      "display_label": {
+        "en": "Display Type Options",
+        "fr": "Options de type d'affichage"
+      },
+      "category": "Interface",
+      "type": "enum",
+      "value": [
+        "LCD (Default)",
+        "LED (Optional)"
+      ]
+    },
+    {
+      "canonical_name": "integrated_printer_availability",
+      "display_label": {
+        "en": "Integrated Printer Option",
+        "fr": "Option Imprimante Intégrée"
+      },
+      "category": "Interface",
+      "type": "string",
+      "value": "Available as a variant/upgrade (Standard on PRINTER models)",
+      "highlighted": true
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "Directive 93/42-ECC",
+      "PED 97/23/ECC"
+    ],
+    "standards": [
+      "EN 13060",
+      "EN ISO 14971",
+      "EN 61010-1",
+      "EN 61010-2-040",
+      "EN 61326",
+      "EN 13445",
+      "UNI EN ISO 134885"
+    ]
+  },
+  "documents": {
+    "specs": "https://google.com",
+    "manual": "https://google.com",
+    "installation_guide": "https://google.com"
+  }
+}

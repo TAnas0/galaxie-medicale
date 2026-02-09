@@ -1,0 +1,136 @@
+{
+  "id": "saikang-a100-4",
+  "name": {
+    "en": "Table de chirurgie A100-4",
+    "fr": "Table de chirurgie A100-4"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "table-de-chirurgie",
+      "fr": "table de chirurgie"
+    }
+  },
+  "short_description": {
+    "en": "Table de chirurgie électrique en acier inoxydable 304 avec réglages complets et compatibilité C-arm.",
+    "fr": "Table de chirurgie électrique en acier inoxydable 304, réglages complets et compatibilité C-arm."
+  },
+  "full_description": {
+    "en": "La table de chirurgie A100-4 offre un réglage électrique de la hauteur, des plaques dorsale, tête et jambes, ainsi qu’un déplacement horizontal pour faciliter l’imagerie C-arm. Sa construction en acier inoxydable 304 résistant à la corrosion assure sécurité et durabilité. Adaptée à une large gamme d’interventions chirurgicales, elle offre confort et stabilité pour le patient et le personnel.",
+    "fr": "La table de chirurgie A100-4 offre un réglage électrique de la hauteur, des plaques dorsale, tête et jambes, ainsi qu’un déplacement horizontal pour faciliter l’imagerie C-arm.  \nSa construction en acier inoxydable 304 résistant à la corrosion assure sécurité et durabilité.  \nElle est adaptée à une large gamme d’interventions chirurgicales, offrant confort et stabilité pour le patient et le personnel."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-10.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-11.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-2.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-3.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-4.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-7.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-8.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4-9.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4/A100-4.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2070 x 550 x 700-1000 mm"
+    },
+    {
+      "canonical_name": "reglages",
+      "display_label": {
+        "en": "Réglages électriques",
+        "fr": "Réglages électriques"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "hauteur, plaques dos, tête, jambes"
+    },
+    {
+      "canonical_name": "inclinaison_trendelenburg",
+      "display_label": {
+        "en": "Inclinaison Trendelenburg/Reverse",
+        "fr": "Inclinaison Trendelenburg/Reverse"
+      },
+      "category": "Motion",
+      "type": "range",
+      "value": {
+        "min": -25,
+        "max": 25,
+        "unit": "°"
+      }
+    },
+    {
+      "canonical_name": "inclinaison_laterale",
+      "display_label": {
+        "en": "Inclinaison latérale",
+        "fr": "Inclinaison latérale"
+      },
+      "category": "Motion",
+      "type": "range",
+      "value": {
+        "min": -15,
+        "max": 15,
+        "unit": "°"
+      }
+    },
+    {
+      "canonical_name": "glissement_horizontal",
+      "display_label": {
+        "en": "Glissement horizontal",
+        "fr": "Glissement horizontal"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": {
+        "qty": 300,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "batterie",
+      "display_label": {
+        "en": "Batterie interne",
+        "fr": "Batterie interne"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "50-80 opérations"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Mousse polyuréthane, démontable"
+    },
+    {
+      "canonical_name": "accessoires",
+      "display_label": {
+        "en": "Accessoires inclus",
+        "fr": "Accessoires inclus"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Écran anesthésie, supports coussinés pour bras, jambes, épaules, corps, pieds"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

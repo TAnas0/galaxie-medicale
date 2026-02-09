@@ -1,0 +1,119 @@
+{
+  "id": "yonker-yk-8000b",
+  "name": {
+    "en": "Moniteur multiparamétrique YK-8000B",
+    "fr": "Moniteur multiparamétrique YK-8000B"
+  },
+  "brand": {
+    "name": "YONKER",
+    "description": ""
+  },
+  "category": {
+    "canonical": "diagnostic",
+    "display": {
+      "en": "monitorage",
+      "fr": ""
+    }
+  },
+  "short_description": {
+    "en": "Moniteur compact 8,4 pouces pour environnements hospitaliers, avec surveillance de plusieurs paramètres et alarmes intégrées.",
+    "fr": ""
+  },
+  "full_description": {
+    "en": "Le YK-8000B offre la surveillance simultanée de ECG, SpO₂, NIBP, TEMP et RESP sur un écran clair de 8,4 pouces. Il dispose d’alarmes visuelles et sonores personnalisables et convient aux services hospitaliers standards ou intermédiaires. Interfaces RS232, USB et LAN pour export et connectivité avec systèmes hospitaliers.",
+    "fr": ""
+  },
+  "availability": "unknown",
+  "images": [
+    "../../assets/products/diagnostic/monitors/YK-8000B/YK-8000B.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-2.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-back.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-full-kit.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-full-specs.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000B/YK-8000B-side.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "ecran",
+      "display_label": {
+        "en": "Taille de l'écran",
+        "fr": "Taille de l'écran"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 8.4,
+        "unit": "pouces"
+      }
+    },
+    {
+      "canonical_name": "parametres_vitals",
+      "display_label": {
+        "en": "Paramètres surveillés",
+        "fr": "Paramètres surveillés"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "ECG, SpO₂, NIBP, TEMP, RESP"
+    },
+    {
+      "canonical_name": "batterie",
+      "display_label": {
+        "en": "Batterie",
+        "fr": "Batterie"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "Rechargeable"
+    },
+    {
+      "canonical_name": "alarmes",
+      "display_label": {
+        "en": "Alarmes",
+        "fr": "Alarmes"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Personnalisables par patient"
+    },
+    {
+      "canonical_name": "interfaces",
+      "display_label": {
+        "en": "Interfaces",
+        "fr": "Interfaces"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "RS232, USB, LAN"
+    },
+    {
+      "canonical_name": "poids",
+      "display_label": {
+        "en": "Poids",
+        "fr": "Poids"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 2.9,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "memoire",
+      "display_label": {
+        "en": "Mémoire",
+        "fr": "Mémoire"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "120 h"
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE"
+    ],
+    "standards": []
+  }
+}

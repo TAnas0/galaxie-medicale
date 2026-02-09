@@ -1,0 +1,418 @@
+{
+  "id": "guarisco-phoenix-blu-24-autoclave",
+  "name": {
+    "en": "Autoclave Phoenix Blu 24",
+    "fr": "Autoclave Phoenix Blu 24"
+  },
+  "brand": {
+    "name": "Guarisco Medical Sterilizer ",
+    "description": ""
+  },
+  "category": {
+    "canonical": "sterilisation",
+    "display": {
+      "en": "tabletop_autoclaves",
+      "fr": "Autoclave de table"
+    }
+  },
+  "short_description": {
+    "en": "Compact 24L Class B tabletop autoclave with LCD/LED display for medical and dental sterilization.",
+    "fr": "Autoclave de table 24L, classe B, affichage LCD/LED, pour stérilisation fiable des instruments médicaux et dentaires."
+  },
+  "full_description": {
+    "en": "The Phoenix Blu 24 is a Class B tabletop autoclave designed for dental clinics, medical practices, and small laboratories. With a 24-liter chamber, dual vacuum system, and adjustable drying, it provides reliable sterilization of surgical, dental, and laboratory instruments. Available with LCD or LED display options, USB data export, and multiple printer configurations, it delivers 19–38 minute Class B cycles in a compact form factor.",
+    "fr": "L'autoclave Phoenix Blu 24 est un stérilisateur de table de classe B destiné aux cliniques, cabinets dentaires et petits laboratoires. Il offre une capacité de 24L pour des instruments chirurgicaux, dentaires et de laboratoire, avec des cycles avancés de vapeur et de vide. Il comprend un design compact, affichage LCD ou LED, exportation de données USB, séchage ajustable et système à double vide pour un retrait complet de l'air."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-24--FRONT.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-24.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-24.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-AWF-24.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LCD-PRINTER-24.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-24.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-AWF-24.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-PRINTER-24-FRONT.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-phoenix-blu-24-l/Phoenix-Blu-LED-PRINTER-24.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "device_class",
+      "display_label": {
+        "en": "Medical Device Class",
+        "fr": "Classe Dispositif Médical"
+      },
+      "category": "Regulatory",
+      "type": "string",
+      "value": {
+        "text": "IIb"
+      },
+      "highlighted": true
+    },
+    {
+      "canonical_name": "vacuum_system",
+      "display_label": {
+        "en": "Vacuum System",
+        "fr": "Système de vide"
+      },
+      "category": "Functional",
+      "type": "string",
+      "value": "Fractionated vacuum (3 phases)"
+    },
+    {
+      "canonical_name": "chamber_capacity",
+      "display_label": {
+        "en": "Chamber Capacity",
+        "fr": "Capacité de la chambre"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 24,
+        "unit": "L"
+      },
+      "highlighted": true
+    },
+    {
+      "canonical_name": "temperature_sterilization",
+      "display_label": {
+        "en": "Sterilization temperature",
+        "fr": "Température de stérilisation"
+      },
+      "category": "Thermal",
+      "type": "string",
+      "value": "121°C - 134°C"
+    },
+    {
+      "canonical_name": "temperature_sterilization_max",
+      "display_label": {
+        "en": "Maximum sterilization temperature",
+        "fr": "Température max stérilisation"
+      },
+      "category": "Thermal",
+      "type": "string",
+      "value": "138°C"
+    },
+    {
+      "canonical_name": "pressure_cycle_121c",
+      "display_label": {
+        "en": "Pressure Cycle 121°C (STP)",
+        "fr": "Pression Cycle 121°C (STP)"
+      },
+      "category": "Performance",
+      "type": "string",
+      "value": {
+        "text": "1.0 - 1.3 bar"
+      }
+    },
+    {
+      "canonical_name": "pressure_cycle_134c",
+      "display_label": {
+        "en": "Pressure Cycle 134°C (STP)",
+        "fr": "Pression Cycle 134°C (STP)"
+      },
+      "category": "Performance",
+      "type": "string",
+      "value": {
+        "text": "2.0 - 2.4 bar"
+      }
+    },
+    {
+      "canonical_name": "integrated_tests",
+      "display_label": {
+        "en": "Integrated Tests",
+        "fr": "Tests intégrés"
+      },
+      "category": "Functional",
+      "type": "enum",
+      "value": [
+        "Helix",
+        "Bowie & Dick",
+        "Vacuum test"
+      ]
+    },
+    {
+      "canonical_name": "max_pressure",
+      "display_label": {
+        "en": "Max pressure",
+        "fr": "Pression maximum"
+      },
+      "category": "Pressure",
+      "type": "string",
+      "value": "2,5 bar"
+    },
+    {
+      "canonical_name": "external_dimensions",
+      "display_label": {
+        "en": "External Dimensions",
+        "fr": "Dimensions externes"
+      },
+      "category": "Physical",
+      "type": "composite",
+      "value": {
+        "length": 462,
+        "height": 445,
+        "depth": 600,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "chamber_dimensions",
+      "display_label": {
+        "en": "Chamber Dimensions",
+        "fr": "Dimensions chambre"
+      },
+      "category": "Physical",
+      "type": "composite",
+      "value": {
+        "diameter": 255,
+        "depth": 460,
+        "unit": "mm"
+      },
+      "highlighted": true
+    },
+    {
+      "canonical_name": "tray_dimensions",
+      "display_label": {
+        "en": "Tray Dimensions",
+        "fr": "Dimensions plateau"
+      },
+      "category": "Physical",
+      "type": "composite",
+      "value": {
+        "length": 385,
+        "width": 190,
+        "unit": "mm"
+      },
+      "highlighted": true
+    },
+    {
+      "canonical_name": "trays_included",
+      "display_label": {
+        "en": "Trays Included",
+        "fr": "Plateaux Inclus"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 3,
+        "unit": "units"
+      }
+    },
+    {
+      "canonical_name": "distilled_water_tank_volume",
+      "display_label": {
+        "en": "Distilled water tank volume",
+        "fr": "Volume réservoir d'eau distillée"
+      },
+      "category": "",
+      "type": "string",
+      "value": "4,6 L"
+    },
+    {
+      "canonical_name": "used_water_tank_volume",
+      "display_label": {
+        "en": "Used water tank volume",
+        "fr": "Volume réservoir d'eau usée"
+      },
+      "category": "",
+      "type": "string",
+      "value": "5,0 L"
+    },
+    {
+      "canonical_name": "water_consumption_per_cycle",
+      "display_label": {
+        "en": "Water consumption per cycle",
+        "fr": "Consommation d'eau par cycle"
+      },
+      "category": "",
+      "type": "string",
+      "value": "0,40 / 0,60 l - 11 cycles"
+    },
+    {
+      "canonical_name": "power_supply",
+      "display_label": {
+        "en": "Power Supply",
+        "fr": "Alimentation"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "230 V – 50/60 Hz"
+    },
+    {
+      "canonical_name": "material",
+      "display_label": {
+        "en": "Material",
+        "fr": "Matériau"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "AISI 316 Stainless Steel"
+    },
+    {
+      "canonical_name": "bacteriological_filter_capacity",
+      "display_label": {
+        "en": "Bacteriological Filtering Capacity",
+        "fr": "Capacité de Filtration Bactériologique"
+      },
+      "category": "Technical",
+      "type": "string",
+      "value": {
+        "text": "0.3 µm"
+      }
+    },
+    {
+      "canonical_name": "bacteriological_filter_diameter",
+      "display_label": {
+        "en": "Bacteriological Filter Diameter",
+        "fr": "Diamètre du Filtre Bactériologique"
+      },
+      "category": "Technical",
+      "type": "number",
+      "value": {
+        "qty": 56,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "power_consumption",
+      "display_label": {
+        "en": "Power Consumption",
+        "fr": "Consommation électrique"
+      },
+      "category": "Electrical",
+      "type": "number",
+      "value": {
+        "qty": 1800,
+        "unit": "W"
+      }
+    },
+    {
+      "canonical_name": "water_tank_capacity",
+      "display_label": {
+        "en": "Distilled Water Tank",
+        "fr": "Réservoir d’eau distillée"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 4.6,
+        "unit": "L"
+      }
+    },
+    {
+      "canonical_name": "waste_tank_capacity",
+      "display_label": {
+        "en": "Waste Water Tank",
+        "fr": "Réservoir eaux usées"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 5,
+        "unit": "L"
+      }
+    },
+    {
+      "canonical_name": "max_noise_level",
+      "display_label": {
+        "en": "Maximum Noise Level",
+        "fr": "Niveau Sonore Maximal"
+      },
+      "category": "Performance",
+      "type": "number",
+      "value": {
+        "qty": 50,
+        "unit": "dB"
+      }
+    },
+    {
+      "canonical_name": "net_weight",
+      "display_label": {
+        "en": "Net Weight",
+        "fr": "Poids Net"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 56,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "gross_weight",
+      "display_label": {
+        "en": "Gross Weight (Packaging)",
+        "fr": "Poids Brut (Emballage)"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 59,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "standby_mode",
+      "display_label": {
+        "en": "Stand-by Mode",
+        "fr": "Mode Stand-by"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Temperature maintenance"
+    },
+    {
+      "canonical_name": "data_output_ports",
+      "display_label": {
+        "en": "Data Output Ports",
+        "fr": "Ports de sortie de données"
+      },
+      "category": "Interface",
+      "type": "enum",
+      "value": [
+        "USB output (Optional)",
+        "RS232 output"
+      ]
+    },
+    {
+      "canonical_name": "display_options",
+      "display_label": {
+        "en": "Display Type Options",
+        "fr": "Options de type d'affichage"
+      },
+      "category": "Interface",
+      "type": "enum",
+      "value": [
+        "LCD (Default)",
+        "LED (Optional)"
+      ]
+    },
+    {
+      "canonical_name": "integrated_printer_availability",
+      "display_label": {
+        "en": "Integrated Printer Option",
+        "fr": "Option Imprimante Intégrée"
+      },
+      "category": "Interface",
+      "type": "string",
+      "value": "Available as a variant/upgrade (Standard on PRINTER models)",
+      "highlighted": true
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "Directive 93/42-ECC",
+      "PED 97/23/ECC"
+    ],
+    "standards": [
+      "EN 13060",
+      "EN ISO 14971",
+      "EN 61010-1",
+      "EN 61010-2-040",
+      "EN 61326",
+      "EN 13445",
+      "UNI EN ISO 134885"
+    ]
+  }
+}

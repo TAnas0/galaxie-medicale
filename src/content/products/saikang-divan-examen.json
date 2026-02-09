@@ -1,0 +1,74 @@
+{
+  "id": "saikang-divan-examen",
+  "name": {
+    "en": "Divan d'examen",
+    "fr": "Divan d'examen"
+  },
+  "brand": {
+    "name": "saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "salle-d-examen",
+      "fr": "salle d'examen"
+    }
+  },
+  "short_description": {
+    "en": "Table d’examen robuste avec réglage du dossier.",
+    "fr": "Table d’examen robuste avec réglage du dossier"
+  },
+  "full_description": {
+    "en": "Table d’examen robuste avec réglage du dossier jusqu’à 65°, matelas anti-feu épais et cadre en acier peint résistant. Conçue pour un usage polyvalent en consultation et diagnostic.",
+    "fr": "Table d’examen robuste avec réglage du dossier jusqu’à 65°, matelas anti-feu épais et cadre en acier peint résistant.\nConçue pour un usage polyvalent en consultation et diagnostic."
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1900 x 600 x 680 mm"
+    },
+    {
+      "canonical_name": "charge_maximale",
+      "display_label": {
+        "en": "Capacité de charge",
+        "fr": "Capacité de charge"
+      },
+      "category": "Physical",
+      "type": "integer",
+      "value": 175
+    },
+    {
+      "canonical_name": "densite_mousse",
+      "display_label": {
+        "en": "Densité mousse",
+        "fr": "Densité mousse"
+      },
+      "category": "Physical",
+      "type": "integer",
+      "value": 30
+    },
+    {
+      "canonical_name": "cadre",
+      "display_label": {
+        "en": "Cadre",
+        "fr": "Cadre"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "Acier peint"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

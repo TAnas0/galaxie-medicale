@@ -1,0 +1,138 @@
+{
+  "id": "saikang-a100-4a",
+  "name": {
+    "en": "Table de chirurgie A100-4A",
+    "fr": "Table de chirurgie A100-4A"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "table-de-chirurgie",
+      "fr": "table de chirurgie"
+    }
+  },
+  "short_description": {
+    "en": "Table de chirurgie électrique améliorée avec cadre anti-corrosion, freinage à pédale et batterie longue durée.",
+    "fr": "Évolution de la A100-4 avec cadre anti-corrosion, freinage à pédale et batterie longue durée."
+  },
+  "full_description": {
+    "en": "La table A100-4A combine un cadre en acier inoxydable anti-corrosion et un système de freinage à pédale pour une sécurité optimale. Elle dispose d’une batterie longue durée et d’un contrôleur manuel garantissant un fonctionnement fiable. Adaptée aux interventions orthopédiques et multi-spécialités, elle offre confort, stabilité et flexibilité d’utilisation.",
+    "fr": "La table A100-4A combine un cadre en acier inoxydable anti-corrosion et un système de freinage à pédale pour une sécurité optimale.  \nElle dispose d’une batterie longue durée et d’un contrôleur manuel garantissant un fonctionnement fiable.  \nAdaptée aux interventions orthopédiques et multi-spécialités, elle offre confort, stabilité et flexibilité d’utilisation.\n"
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-2.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-5.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-6.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-7.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-8.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-9.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-10.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-11.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-12.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-13.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A100-4A/A100-4A-14.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2100 x 550 x 710-1010 mm"
+    },
+    {
+      "canonical_name": "reglages",
+      "display_label": {
+        "en": "Réglages électriques",
+        "fr": "Réglages électriques"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "hauteur, plaques dos, tête, jambes"
+    },
+    {
+      "canonical_name": "inclinaison_trendelenburg",
+      "display_label": {
+        "en": "Inclinaison Trendelenburg/Reverse",
+        "fr": "Inclinaison Trendelenburg/Reverse"
+      },
+      "category": "Motion",
+      "type": "range",
+      "value": {
+        "min": -25,
+        "max": 25,
+        "unit": "°"
+      }
+    },
+    {
+      "canonical_name": "inclinaison_laterale",
+      "display_label": {
+        "en": "Inclinaison latérale",
+        "fr": "Inclinaison latérale"
+      },
+      "category": "Motion",
+      "type": "range",
+      "value": {
+        "min": -15,
+        "max": 15,
+        "unit": "°"
+      }
+    },
+    {
+      "canonical_name": "glissement_horizontal",
+      "display_label": {
+        "en": "Glissement horizontal",
+        "fr": "Glissement horizontal"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": {
+        "qty": 350,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "batterie",
+      "display_label": {
+        "en": "Batterie",
+        "fr": "Batterie"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "Standby 80h"
+    },
+    {
+      "canonical_name": "freinage",
+      "display_label": {
+        "en": "Freinage à pédale",
+        "fr": "Freinage à pédale"
+      },
+      "category": "Safety",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Inclus"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

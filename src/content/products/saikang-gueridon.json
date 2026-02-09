@@ -1,0 +1,54 @@
+{
+  "id": "saikang-gueridon",
+  "name": {
+    "en": "Guéridon",
+    "fr": "Guéridon"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "chariot",
+      "fr": "Chariot"
+    }
+  },
+  "short_description": {
+    "en": "Chariot médical en acier inoxydable avec plateaux de rangement.",
+    "fr": "Chariot médical en acier inoxydable avec plateaux de rangement"
+  },
+  "full_description": {
+    "en": "Chariot médical en acier inoxydable robuste avec surfaces faciles à nettoyer, roulettes multidirectionnelles silencieuses et plusieurs plateaux pour rangement d’instruments.",
+    "fr": "Chariot médical en acier inoxydable robuste avec surfaces faciles à nettoyer, roulettes multidirectionnelles silencieuses et plusieurs plateaux pour rangement d’instruments."
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "structure",
+      "display_label": {
+        "en": "Structure",
+        "fr": "Structure"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "Acier inoxydable"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Roulettes",
+        "fr": "Roulettes"
+      },
+      "category": "Motion",
+      "type": "string",
+      "value": "Multidirectionnelles silencieuses"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

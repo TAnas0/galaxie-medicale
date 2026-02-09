@@ -1,0 +1,111 @@
+{
+  "id": "vanry-d3",
+  "name": {
+    "en": "Berceau D-3",
+    "fr": "Berceau D-3"
+  },
+  "brand": {
+    "name": "VANRY",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "berceau-neonatal",
+      "fr": "Berceau néonatal"
+    }
+  },
+  "short_description": {
+    "en": "Berceau néonatal avec réglage de la hauteur pour optimiser le contact mère-enfant en toute sécurité.",
+    "fr": "Berceau néonatal avec réglage de la hauteur pour optimiser le contact mère-enfant en toute sécurité."
+  },
+  "full_description": {
+    "en": "Le berceau D-3 permet un réglage précis de la hauteur pour s’adapter au lit de la mère. Il favorise le co-sommeil supervisé tout en assurant la sécurité du nourrisson. Conçu pour les établissements promouvant un contact étroit et sécurisé entre la mère et l’enfant.",
+    "fr": "Le berceau D-3 permet un réglage précis de la hauteur pour s’adapter au lit de la mère.  \nIl est conçu pour favoriser le co-sommeil supervisé tout en assurant la sécurité du nourrisson.  \nConvient aux établissements promouvant un contact étroit et sécurisé entre la mère et l’enfant."
+  },
+  "availability": "in_stock",
+  "images": [],
+  "attributes": [
+    {
+      "canonical_name": "structure",
+      "display_label": {
+        "en": "Structure",
+        "fr": "Structure"
+      },
+      "category": "Materials",
+      "type": "string",
+      "value": "Châssis en acier epoxy, finition antibactérienne"
+    },
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "900 × 520 × 930 mm"
+    },
+    {
+      "canonical_name": "hauteur",
+      "display_label": {
+        "en": "Réglage en hauteur",
+        "fr": "Réglage en hauteur"
+      },
+      "category": "Motion",
+      "type": "range",
+      "value": {
+        "min": 690,
+        "max": 930,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "bassin",
+      "display_label": {
+        "en": "Bassin",
+        "fr": "Bassin"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "Polycarbonate transparent, inclinable"
+    },
+    {
+      "canonical_name": "roulettes",
+      "display_label": {
+        "en": "Type de roulettes",
+        "fr": "Type de roulettes"
+      },
+      "category": "Mobility",
+      "type": "string",
+      "value": "4 Ø 100 mm dont 2 avec frein"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Densité 25 kg/m³, housse PU soudée"
+    },
+    {
+      "canonical_name": "poids",
+      "display_label": {
+        "en": "Poids net",
+        "fr": "Poids net"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 18,
+        "unit": "kg"
+      }
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

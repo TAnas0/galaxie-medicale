@@ -1,23 +1,30 @@
 [
-    {
-        "id": 1,
-        "name": "Guarisco Medical Sterilizer",
-        "display_name": "GSM",
-        "description": "GSM, formerly known as MEDICAL TRADING, boasts a 60-year history as a premier manufacturer of medical sterilization devices",
-        "logo": ""
-    },
-    {
-        "id": 2,
-        "name": "SMS",
-        "display_name": "SMS",
-        "description": "",
-        "logo": ""
-    },
-    {
-        "id": 3,
-        "name": "Yonker",
-        "display_name": "Yonker",
-        "description": "",
-        "logo": ""
-    }
+  {
+    "id": "guarisco",
+    "name": "Guarisco",
+    "country": "Italie",
+    "description": "Fabricant d'autoclaves et stérilisateurs médicaux.",
+    "website": "https://www.guarisco.it"
+  },
+  {
+    "id": "sms",
+    "name": "SMS",
+    "country": "Pologne",
+    "description": "Spécialiste des autoclaves verticaux et équipements de stérilisation pour hôpitaux.",
+    "website": "https://sms.com.pl"
+  },
+  {
+    "id": "famed",
+    "name": "FAMED",
+    "country": "Pologne",
+    "description": "Fabricant de lampes opératoires et solutions d’éclairage chirurgical.",
+    "website": "https://famed.pl"
+  },
+  {
+    "id": "saikang",
+    "name": "Saikang",
+    "country": "Chine",
+    "description": "Fournisseur de tables de chirurgie, lits, brancards et mobilier médical.",
+    "website": "https://www.chinasaikang.com"
+  }
 ]

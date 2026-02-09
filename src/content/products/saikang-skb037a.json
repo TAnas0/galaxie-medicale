@@ -1,0 +1,66 @@
+{
+  "id": "saikang-skb037a",
+  "name": {
+    "en": "Chariot brancard SKB037(A)",
+    "fr": "Chariot brancard SKB037(A)"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "medical_furniture",
+    "display": {
+      "en": "brancardage",
+      "fr": "Brancardage"
+    }
+  },
+  "short_description": {
+    "en": "Brancard patient robuste avec matelas ignifugé.",
+    "fr": "Brancard patient robuste avec matelas ignifugé"
+  },
+  "full_description": {
+    "en": "Brancard patient robuste avec structure en acier inoxydable poli, matelas ignifugé de 4 cm, dossier réglable, roulettes silencieuses avec frein universel et porte-bouteille d’oxygène.",
+    "fr": "Brancard patient robuste avec structure en acier inoxydable poli, matelas ignifugé de 4 cm, dossier réglable, roulettes silencieuses avec frein universel et porte-bouteille d’oxygène."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/medical_furniture/trolleys/saikang/SKB037-A/SKB037-A.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1960 x 600 x 810 mm"
+    },
+    {
+      "canonical_name": "dossier",
+      "display_label": {
+        "en": "Dossier réglable",
+        "fr": "Dossier réglable"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Oui"
+    },
+    {
+      "canonical_name": "porte_bouteille",
+      "display_label": {
+        "en": "Porte-bouteille oxygène",
+        "fr": "Porte-bouteille oxygène"
+      },
+      "category": "Accessories",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "id": "sms-as66-autoclave",
+  "name": {
+    "en": "AS66 Steam Autoclave",
+    "fr": "Autoclave à vapeur AS66"
+  },
+  "brand": {
+    "name": "SMS",
+    "description": ""
+  },
+  "category": {
+    "canonical": "sterilisation",
+    "display": {
+      "en": "vertical_autoclaves",
+      "fr": "Autoclave vertical"
+    }
+  },
+  "short_description": {
+    "en": "Large-capacity vertical autoclave (300–900L) with STU standard compatibility, designed for hospital sterilization units.",
+    "fr": "Autoclave vertical grande capacité 300–900L, compatible standard STU pour grandes unités de stérilisation."
+  },
+  "full_description": {
+    "en": "The AS66 steam autoclave is a vertical sterilizer designed for large central sterilization units (CSSD). With a chamber capacity ranging from 300 to 900 liters (4–12 STU), it provides efficient sterilization of large volumes of surgical and medical instruments. Built with stainless steel AISI 316L chamber and doors, it integrates an automatic vertical sliding door system, touchscreen LCD control, and advanced monitoring features. The AS66 supports 19 sterilization programs plus Bowie & Dick and vacuum test cycles, ensuring compliance with hospital-grade sterilization standards.",
+    "fr": "L'autoclave à vapeur AS66 est un stérilisateur vertical conçu pour les grandes unités de stérilisation (CSSD) et compatible avec le standard STU. Avec une capacité de 300 à 900L (4 à 12 STU), il permet la stérilisation d’un volume important d’instruments chirurgicaux et médicaux. Construit en acier inoxydable AISI 316L, il dispose d’un système de portes coulissantes automatiques, d’un écran tactile couleur LCD et de fonctionnalités avancées de contrôle et de surveillance. L’AS66 propose 19 programmes de stérilisation ainsi que des cycles de test Bowie & Dick et vide, garantissant une conformité aux normes hospitalières."
+  },
+  "availability": "on_order",
+  "images": [
+    "../../assets/products/sterilization/autoclaves/autoclave-as-66/as66-blue.webp",
+    "../../assets/products/sterilization/autoclaves/autoclave-as-66/as66-2.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "available_variants",
+      "display_label": {
+        "en": "Available Variants",
+        "fr": "Variantes Disponibles"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "AS 666, AS 669, AS 6612, AS 6615, AS 6618",
+      "highlighted": true
+    },
+    {
+      "canonical_name": "chamber_capacity",
+      "display_label": {
+        "en": "Chamber Capacity",
+        "fr": "Capacité de la chambre"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "334 L, 459 L, 605 L, 756 L, 897 L"
+    },
+    {
+      "canonical_name": "stu_capacity",
+      "display_label": {
+        "en": "STU Capacity",
+        "fr": "Capacité STU"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "4 STU, 6 STU, 8 STU, 10 STU, 12 STU"
+    },
+    {
+      "canonical_name": "door_type",
+      "display_label": {
+        "en": "Door Type",
+        "fr": "Type de porte"
+      },
+      "category": "Physical",
+      "type": "enum",
+      "value": [
+        "Single door",
+        "Double door",
+        "Automatic vertical sliding"
+      ]
+    },
+    {
+      "canonical_name": "sterilisation_programs_count",
+      "display_label": {
+        "en": "Sterilization Programs",
+        "fr": "Programmes de stérilisation"
+      },
+      "category": "Functional",
+      "type": "number",
+      "value": {
+        "qty": 19,
+        "unit": "programs"
+      },
+      "display_value": {
+        "fr": "19 programmes de stérilisation + 2 programmes de test (vide, Bowie & Dick)"
+      }
+    },
+    {
+      "canonical_name": "construction_material",
+      "display_label": {
+        "en": "Construction Material",
+        "fr": "Matériau"
+      },
+      "category": "Physical",
+      "type": "enum",
+      "value": [
+        "Stainless steel AISI 316L"
+      ]
+    },
+    {
+      "canonical_name": "overall_width",
+      "display_label": {
+        "en": "Overall Width (All Models)",
+        "fr": "Largeur Totale (Tous Modèles)"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 1170,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "overall_height",
+      "display_label": {
+        "en": "Overall Height (All Models)",
+        "fr": "Hauteur Totale (Tous Modèles)"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 1900,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "overall_depth_double_door",
+      "display_label": {
+        "en": "Overall Depth (Double Door Range)",
+        "fr": "Profondeur Totale (Gamme Double Porte)"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "970 mm, 1225 mm, 1525 mm, 1835 mm, 2125 mm"
+    },
+    {
+      "canonical_name": "overall_depth_single_door",
+      "display_label": {
+        "en": "Overall Depth (Single Door Range)",
+        "fr": "Profondeur Totale (Gamme Simple Porte)"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "1060 mm, 1315 mm, 1615 mm (for models 4-8 STU)"
+    },
+    {
+      "canonical_name": "control_panel_type",
+      "display_label": {
+        "en": "Control Panel Type",
+        "fr": "Type de Panneau de Contrôle"
+      },
+      "category": "Interface",
+      "type": "string",
+      "value": "9.7” LCD Color Touch Screen"
+    },
+    {
+      "canonical_name": "steam_source",
+      "display_label": {
+        "en": "Steam Source",
+        "fr": "Source de Vapeur"
+      },
+      "category": "Functional",
+      "type": "enum",
+      "value": [
+        "Integrated steam generator",
+        "External steam source"
+      ]
+    },
+    {
+      "canonical_name": "door_type",
+      "display_label": {
+        "en": "Door Type",
+        "fr": "Type de Porte"
+      },
+      "category": "Physical",
+      "type": "enum",
+      "value": [
+        "Automatic vertical sliding door",
+        "Single door",
+        "Double door"
+      ]
+    },
+    {
+      "canonical_name": "sterilization_programs",
+      "display_label": {
+        "en": "Sterilization Programs",
+        "fr": "Programmes de Stérilisation"
+      },
+      "category": "Functional",
+      "type": "number",
+      "value": {
+        "qty": 19,
+        "unit": "programs"
+      }
+    },
+    {
+      "canonical_name": "test_programs",
+      "display_label": {
+        "en": "Test Programs",
+        "fr": "Programmes de Test"
+      },
+      "category": "Functional",
+      "type": "enum",
+      "value": [
+        "Vacuum test",
+        "Bowie & Dick test"
+      ]
+    },
+    {
+      "canonical_name": "chamber_material",
+      "display_label": {
+        "en": "Sterilization Chamber Material",
+        "fr": "Matériau de la Chambre de Stérilisation"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "AISI 316L stainless steel (hand polished)"
+    },
+    {
+      "canonical_name": "housing_material",
+      "display_label": {
+        "en": "Housing Material",
+        "fr": "Matériau du Boîtier"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "AISI 304 stainless steel"
+    },
+    {
+      "canonical_name": "data_logging",
+      "display_label": {
+        "en": "Data Logging",
+        "fr": "Enregistrement des Données"
+      },
+      "category": "Interface",
+      "type": "enum",
+      "value": [
+        "Built-in dot matrix printer",
+        "Validation ports"
+      ]
+    },
+    {
+      "canonical_name": "security_levels",
+      "display_label": {
+        "en": "Access Security Levels",
+        "fr": "Niveaux de Sécurité d'Accès"
+      },
+      "category": "Interface",
+      "type": "number",
+      "value": {
+        "qty": 4,
+        "unit": "levels"
+      }
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE"
+    ],
+    "standards": []
+  }
+}

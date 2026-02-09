@@ -1,0 +1,112 @@
+{
+  "id": "yonker-yk-8000c",
+  "name": {
+    "en": "Moniteur multiparamétrique YK-8000C",
+    "fr": "Moniteur multiparamétrique YK-8000C"
+  },
+  "brand": {
+    "name": "YONKER",
+    "description": ""
+  },
+  "category": {
+    "canonical": "diagnostic",
+    "display": {
+      "en": "monitorage",
+      "fr": ""
+    }
+  },
+  "short_description": {
+    "en": "Moniteur avancé 12,1 pouces avec mesure de CO₂ et connectivité réseau pour supervision centralisée en unités critiques.",
+    "fr": ""
+  },
+  "full_description": {
+    "en": "Le YK-8000C est un dispositif de surveillance avancé pour unités de soins critiques. Il dispose d’un écran couleur haute résolution de 12,1 pouces et mesure CO₂ en plus des paramètres vitaux classiques. Il supporte les connexions réseau LAN, USB et HDMI pour supervision centralisée et stockage jusqu’à 240 heures.",
+    "fr": ""
+  },
+  "availability": "unknown",
+  "images": [
+    "../../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-front-2.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-back.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-full-specs.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-screen.webp",
+    "../../assets/products/diagnostic/monitors/YK-8000C/YK-8000C-side.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "ecran",
+      "display_label": {
+        "en": "Taille de l'écran",
+        "fr": "Taille de l'écran"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 12.1,
+        "unit": "pouces"
+      }
+    },
+    {
+      "canonical_name": "parametres_vitals",
+      "display_label": {
+        "en": "Paramètres surveillés",
+        "fr": "Paramètres surveillés"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "ECG, SpO₂, NIBP, TEMP, RESP, EtCO₂"
+    },
+    {
+      "canonical_name": "memoire",
+      "display_label": {
+        "en": "Mémoire",
+        "fr": "Mémoire"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "240 h"
+    },
+    {
+      "canonical_name": "interfaces",
+      "display_label": {
+        "en": "Interfaces",
+        "fr": "Interfaces"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "LAN, USB, HDMI"
+    },
+    {
+      "canonical_name": "poids",
+      "display_label": {
+        "en": "Poids",
+        "fr": "Poids"
+      },
+      "category": "Physical",
+      "type": "number",
+      "value": {
+        "qty": 5.9,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "batterie",
+      "display_label": {
+        "en": "Batterie",
+        "fr": "Batterie"
+      },
+      "category": "Electrical",
+      "type": "range",
+      "value": {
+        "min": 4,
+        "max": 6,
+        "unit": "h"
+      }
+    }
+  ],
+  "compliance": {
+    "certifications": [
+      "CE"
+    ],
+    "standards": []
+  }
+}

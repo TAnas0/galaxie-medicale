@@ -1,0 +1,159 @@
+{
+  "id": "saikang-a106-5",
+  "name": {
+    "en": "Table de chirurgie A106-5",
+    "fr": "Table de chirurgie A106-5"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "table-de-chirurgie",
+      "fr": "table de chirurgie"
+    }
+  },
+  "short_description": {
+    "en": "Table hydraulique et électronique modulable avec plateau translucide compatible rayons X et charge 360 kg.",
+    "fr": "Table hydraulique et électronique modulable avec plateau translucide compatible rayons X, charge 360 kg."
+  },
+  "full_description": {
+    "en": "La table A106-5 combine puissance hydraulique et électronique pour des réglages précis et fluides. Sa conception modulaire avec plateau translucide compatible rayons X et système intelligent avec contrôle LCD permet un usage polyvalent. Capacité de charge élevée (360 kg), idéale pour divers actes chirurgicaux nécessitant stabilité et flexibilité.",
+    "fr": "La table A106-5 combine puissance hydraulique et électronique pour des réglages précis et fluides.  \nSa conception modulaire avec plateau translucide compatible rayons X et système intelligent avec contrôle LCD permet un usage polyvalent.  \nCapacité de charge élevée (360 kg), idéale pour divers actes chirurgicaux nécessitant stabilité et flexibilité."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-4.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-5.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-6.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-7.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-8.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-9.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-10.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-11.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A106-5/A106-5-12.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2160 x 550 x 600-1150 mm"
+    },
+    {
+      "canonical_name": "reglages",
+      "display_label": {
+        "en": "Réglages plaques",
+        "fr": "Réglages plaques"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "tête, dos, jambes, mollets"
+    },
+    {
+      "canonical_name": "inclinaison_trendelenburg",
+      "display_label": {
+        "en": "Inclinaison Trendelenburg/Reverse",
+        "fr": "Inclinaison Trendelenburg/Reverse"
+      },
+      "category": "Motion",
+      "type": "range",
+      "value": {
+        "min": -36,
+        "max": 36,
+        "unit": "°"
+      }
+    },
+    {
+      "canonical_name": "inclinaison_laterale",
+      "display_label": {
+        "en": "Inclinaison latérale",
+        "fr": "Inclinaison latérale"
+      },
+      "category": "Motion",
+      "type": "range",
+      "value": {
+        "min": -22,
+        "max": 22,
+        "unit": "°"
+      }
+    },
+    {
+      "canonical_name": "glissement_horizontal",
+      "display_label": {
+        "en": "Glissement horizontal",
+        "fr": "Glissement horizontal"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": {
+        "qty": 300,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "charge_maximale",
+      "display_label": {
+        "en": "Charge maximale",
+        "fr": "Charge maximale"
+      },
+      "category": "Capacity",
+      "type": "number",
+      "value": {
+        "qty": 360,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "controle",
+      "display_label": {
+        "en": "Contrôle",
+        "fr": "Contrôle"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Écran LCD, filaire et Bluetooth optionnel"
+    },
+    {
+      "canonical_name": "batterie",
+      "display_label": {
+        "en": "Batterie",
+        "fr": "Batterie"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "Intégrée, autonomie longue durée"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Mousse mémoire de forme, étanche"
+    },
+    {
+      "canonical_name": "accessoires",
+      "display_label": {
+        "en": "Accessoires inclus",
+        "fr": "Accessoires inclus"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Supports bras, épaules, jambes, écran anesthésie, fixateurs"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "saikang-a301",
+  "name": {
+    "en": "Table de chirurgie A301",
+    "fr": "Table de chirurgie A301"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "table-de-chirurgie",
+      "fr": "table de chirurgie"
+    }
+  },
+  "short_description": {
+    "en": "Table robuste en acier inoxydable 304 avec réglages électriques précis et surface compatible rayons X.",
+    "fr": "Table robuste en acier inoxydable 304 avec réglages électriques précis et surface compatible rayons X."
+  },
+  "full_description": {
+    "en": "La table A301 propose un cadre solide en acier inoxydable 304 et une surface résistante compatible rayons X. Elle offre des réglages électriques précis avec double contrôle manuel et sur colonne. Convient à la chirurgie générale et orthopédique, alliant durabilité et facilité d’entretien.",
+    "fr": "La table A301 propose un cadre solide en acier inoxydable 304 et une surface résistante compatible rayons X.  \nElle offre des réglages électriques précis avec double contrôle manuel et sur colonne.  \nConvient à la chirurgie générale et orthopédique, alliant durabilité et facilité d’entretien.\n"
+  },
+  "availability": "out_of_stock",
+  "images": [
+    "../../assets/products/surgery/operating-tables/saikang/A301/1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/2.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-0.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-10.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-2.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-3.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-4.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-5.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-7.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-8.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/A301-9.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A301/f3bbd53d.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2150 x 555 x 750-1000 mm"
+    },
+    {
+      "canonical_name": "reglages",
+      "display_label": {
+        "en": "Réglages plaques",
+        "fr": "Réglages plaques"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "dos (70°/15°), tête (30°/90°), jambes"
+    },
+    {
+      "canonical_name": "inclinaison_trendelenburg",
+      "display_label": {
+        "en": "Inclinaison Trendelenburg/Reverse",
+        "fr": "Inclinaison Trendelenburg/Reverse"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": 25,
+      "unit": "°"
+    },
+    {
+      "canonical_name": "inclinaison_laterale",
+      "display_label": {
+        "en": "Inclinaison latérale",
+        "fr": "Inclinaison latérale"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": 15,
+      "unit": "°"
+    },
+    {
+      "canonical_name": "glissement_horizontal",
+      "display_label": {
+        "en": "Glissement horizontal",
+        "fr": "Glissement horizontal"
+      },
+      "category": "Motion",
+      "type": "number",
+      "value": {
+        "qty": 350,
+        "unit": "mm"
+      }
+    },
+    {
+      "canonical_name": "charge_maximale",
+      "display_label": {
+        "en": "Charge maximale",
+        "fr": "Charge maximale"
+      },
+      "category": "Capacity",
+      "type": "number",
+      "value": {
+        "qty": 275,
+        "unit": "kg"
+      }
+    },
+    {
+      "canonical_name": "batterie",
+      "display_label": {
+        "en": "Batterie",
+        "fr": "Batterie"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "Intégrée, 80-120 opérations"
+    },
+    {
+      "canonical_name": "controle",
+      "display_label": {
+        "en": "Contrôle",
+        "fr": "Contrôle"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Double contrôle manuel et sur colonne"
+    },
+    {
+      "canonical_name": "accessoires",
+      "display_label": {
+        "en": "Accessoires inclus",
+        "fr": "Accessoires inclus"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Matelas et accessoires complets"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}

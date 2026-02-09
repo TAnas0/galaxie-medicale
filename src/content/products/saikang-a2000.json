@@ -1,0 +1,87 @@
+{
+  "id": "saikang-a2000",
+  "name": {
+    "en": "Table de chirurgie A2000",
+    "fr": "Table de chirurgie A2000"
+  },
+  "brand": {
+    "name": "Saikang",
+    "description": ""
+  },
+  "category": {
+    "canonical": "surgery",
+    "display": {
+      "en": "table-de-chirurgie",
+      "fr": "table de chirurgie"
+    }
+  },
+  "short_description": {
+    "en": "Table électrique compacte pour usage polyvalent.",
+    "fr": "Table électrique compacte pour usage polyvalent"
+  },
+  "full_description": {
+    "en": "Cette table A2000 est conçue pour une utilisation polyvalente avec un cadre solide en acier inoxydable, charge maximale de 150 kg et matelas amovible. Idéale pour les interventions ne nécessitant pas de compatibilité C-arm.",
+    "fr": "Cette table A2000 est conçue pour une utilisation polyvalente avec un cadre solide en acier inoxydable, charge maximale de 150 kg et matelas amovible.\nIdéale pour les interventions ne nécessitant pas de compatibilité C-arm."
+  },
+  "availability": "in_stock",
+  "images": [
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-0.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/38dacfa1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-10.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-1.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-2.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-3.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-4.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-5.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-6.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-7.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-8.webp",
+    "../../assets/products/surgery/operating-tables/saikang/A2000/A2000-9.webp"
+  ],
+  "attributes": [
+    {
+      "canonical_name": "dimensions",
+      "display_label": {
+        "en": "Dimensions",
+        "fr": "Dimensions"
+      },
+      "category": "Physical",
+      "type": "string",
+      "value": "2000 x 480 x 680-930 mm"
+    },
+    {
+      "canonical_name": "reglages",
+      "display_label": {
+        "en": "Réglages plaques",
+        "fr": "Réglages plaques"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "dos (45°/15°), tête (45°/90°), jambes"
+    },
+    {
+      "canonical_name": "batterie",
+      "display_label": {
+        "en": "Batterie intégrée",
+        "fr": "Batterie intégrée"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "50-80 cycles"
+    },
+    {
+      "canonical_name": "matelas",
+      "display_label": {
+        "en": "Matelas",
+        "fr": "Matelas"
+      },
+      "category": "Accessories",
+      "type": "string",
+      "value": "Amovible"
+    }
+  ],
+  "compliance": {
+    "certifications": [],
+    "standards": []
+  }
+}
