@@ -32,10 +32,56 @@
   ],
   "attributes": [
     {
+      "canonical_name": "source_lumineuse",
+      "display_label": {
+        "fr": "Source lumineuse"
+      },
+      "category": "Lighting",
+      "type": "string",
+      "value": "LED"
+    },
+    {
+      "canonical_name": "systeme_commande",
+      "display_label": {
+        "fr": "Système de commande"
+      },
+      "category": "Controls",
+      "type": "string",
+      "value": "Panneau de commande sur bras avec marche/arrêt et variation d’intensité"
+    },
+    {
+      "canonical_name": "versions_disponibles",
+      "display_label": {
+        "fr": "Versions disponibles"
+      },
+      "category": "Variants",
+      "type": "string",
+      "value": "Plafonnier, mural, mobile (option batterie)"
+    },
+    {
+      "canonical_name": "nombre_panneaux_lumineux",
+      "display_label": {
+        "fr": "Nombre de panneaux lumineux"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": 3
+    },
+    {
+      "canonical_name": "alimentation",
+      "display_label": {
+        "fr": "Tension d’alimentation",
+        "en": "Power supply"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "24 V DC"
+    },
+    {
       "canonical_name": "intensite_lumineuse",
       "display_label": {
         "en": "Intensité lumineuse",
-        "fr": "Intensité lumineuse"
+        "fr": "Intensité lumineuse à 1 mètre"
       },
       "category": "Lighting",
       "type": "number",
@@ -51,28 +97,41 @@
         "fr": "Température de couleur"
       },
       "category": "Lighting",
-      "type": "range",
+      "type": "number",
       "value": {
-        "min": 3800,
-        "max": 4800,
+        "qty": 4400,
         "unit": "K"
       }
     },
     {
-      "canonical_name": "cri",
+      "canonical_name": "variation_intensite",
       "display_label": {
-        "en": "Indice de rendu des couleurs (CRI)",
-        "fr": "Indice de rendu des couleurs (CRI)"
+        "en": "",
+        "fr": "Variation de l’intensité lumineuse"
       },
       "category": "Lighting",
-      "type": "string",
-      "value": "≥ 96 / R9 ≥ 96"
+      "type": "range",
+      "value": {
+        "min": 25,
+        "max": 100,
+        "unit": "%"
+      }
+    },
+    {
+      "canonical_name": "indice_rendu_couleurs",
+      "display_label": {
+        "en": "",
+        "fr": "Indice de rendu des couleurs (Ra)"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": 96
     },
     {
       "canonical_name": "diametre_champ",
       "display_label": {
-        "en": "Diamètre du champ lumineux (d10)",
-        "fr": "Diamètre du champ lumineux (d10)"
+        "en": "Diamètre du champ opératoire (d10)",
+        "fr": "Diamètre du champ opératoire (d10)"
       },
       "category": "Lighting",
       "type": "number",
@@ -82,17 +141,71 @@
       }
     },
     {
-      "canonical_name": "profondeur_eclairage",
+      "canonical_name": "diametre_spot_d50",
       "display_label": {
-        "en": "Profondeur d'éclairage",
-        "fr": "Profondeur d'éclairage"
+        "en": "Diamètre du spot lumineux (d50)",
+        "fr": "Diamètre du spot lumineux (d50)"
       },
       "category": "Lighting",
       "type": "number",
       "value": {
-        "qty": 1200,
+        "qty": 105,
         "unit": "mm"
       }
+    },
+    {
+      "canonical_name": "profondeur_eclairage_l1_l2_20",
+      "display_label": {
+        "en": "",
+        "fr": "Profondeur d’éclairage L1+L2 (20 %)"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 68,
+        "unit": "cm"
+      }
+    },
+    {
+      "canonical_name": "profondeur_eclairage_l1_l2_60",
+      "display_label": {
+        "en": "",
+        "fr": "Profondeur d’éclairage L1+L2 (60 %)"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 47,
+        "unit": "cm"
+      }
+    },
+    {
+      "canonical_name": "elevation_temperature",
+      "display_label": {
+        "en": "",
+        "fr": "Élévation de température au niveau de la tête du chirurgien"
+      },
+      "category": "Safety",
+      "type": "string",
+      "value": "< 1 °C"
+    },
+    {
+      "canonical_name": "classe_isolation",
+      "display_label": {
+        "fr": "Classe d’isolation"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "Classe I"
+    },
+    {
+      "canonical_name": "indice_protection",
+      "display_label": {
+        "fr": "Indice de protection du boîtier"
+      },
+      "category": "Mechanical",
+      "type": "string",
+      "value": "IP43"
     },
     {
       "canonical_name": "nombre_led",
@@ -102,20 +215,7 @@
       },
       "category": "Lighting",
       "type": "number",
-      "value": 70
-    },
-    {
-      "canonical_name": "duree_vie",
-      "display_label": {
-        "en": "Durée de vie",
-        "fr": "Durée de vie"
-      },
-      "category": "Lighting",
-      "type": "number",
-      "value": {
-        "qty": 60000,
-        "unit": "h"
-      }
+      "value": 54
     },
     {
       "canonical_name": "consommation",
@@ -129,16 +229,6 @@
         "qty": 55,
         "unit": "W"
       }
-    },
-    {
-      "canonical_name": "controle",
-      "display_label": {
-        "en": "Contrôle",
-        "fr": "Contrôle"
-      },
-      "category": "Controls",
-      "type": "string",
-      "value": "Poignée stérile, mur tactile, bras"
     },
     {
       "canonical_name": "options",

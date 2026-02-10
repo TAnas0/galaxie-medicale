@@ -1,8 +1,8 @@
 {
-  "id": "famed-solis-130",
+  "id": "famed-ignis-160",
   "name": {
-    "en": "Lampe chirurgicale SOLIS 130",
-    "fr": "Lampe chirurgicale SOLIS 130"
+    "en": "Lampe opératoire IGNIS 160",
+    "fr": "Lampe opératoire IGNIS 160"
   },
   "brand": {
     "name": "FAMED",
@@ -16,19 +16,19 @@
     }
   },
   "short_description": {
-    "en": "Lampe chirurgicale LED fiable avec coupole simple ou double offrant forte intensité lumineuse et excellente profondeur d’éclairage.",
-    "fr": "Lampe chirurgicale LED fiable avec coupole simple ou double, offrant forte intensité lumineuse et excellente profondeur d’éclairage."
+    "en": "Lampe opératoire LED haut de gamme avec coupole simple ou double offrant un éclairage chirurgical précis.",
+    "fr": "Lampe opératoire LED haut de gamme avec coupole simple ou double, offrant un éclairage optimal pour interventions chirurgicales complexes."
   },
   "full_description": {
-    "en": "La lampe chirurgicale SOLIS 130 est adaptée aux blocs opératoires polyvalents. Elle combine une forte intensité lumineuse à un rendu des couleurs précis et assure une grande profondeur d’éclairage. Disponible en version simple ou double coupole, elle garantit un confort optimal pour les équipes médicales durant les interventions.",
-    "fr": "La lampe chirurgicale SOLIS 130 est adaptée aux blocs opératoires polyvalents.  \nElle combine une forte intensité lumineuse à un rendu des couleurs précis et assure une grande profondeur d’éclairage.  \nDisponible en version simple ou double coupole, elle garantit un confort optimal pour les équipes médicales durant les interventions."
+    "en": "La lampe opératoire IGNIS 160 est conçue pour fournir un éclairage chirurgical de haute précision. Disponible en version simple ou double coupole, elle assure une excellente visibilité et un confort visuel maximal. Son intensité lumineuse réglable et son rendu des couleurs précis permettent une précision accrue lors des interventions médicales et chirurgicales.",
+    "fr": "La lampe opératoire IGNIS 160 est conçue pour fournir un éclairage chirurgical de haute précision.  \nDisponible en version simple ou double coupole, elle assure une excellente visibilité et un confort visuel maximal.  \nSon intensité lumineuse réglable et son rendu des couleurs précis permettent une précision accrue lors des procédures médicales et chirurgicales.\n"
   },
   "availability": "in_stock",
   "images": [
-    "../../assets/products/surgery/lights/famed-solis-130/solis-130.webp",
-    "../../assets/products/surgery/lights/famed-solis-130/solis-130-2.webp",
-    "../../assets/products/surgery/lights/famed-solis-130/solis-130-3.webp",
-    "../../assets/products/surgery/lights/famed-solis-130/solis-130-4.webp"
+    "../../assets/products/surgery/lights/famed-ignis-160/ignis-160-1.webp",
+    "../../assets/products/surgery/lights/famed-ignis-160/ignis-160-2.webp",
+    "../../assets/products/surgery/lights/famed-ignis-160/ignis-160-3.webp",
+    "../../assets/products/surgery/lights/famed-ignis-160/ignis-160-4.webp"
   ],
   "attributes": [
     {
@@ -48,7 +48,7 @@
       "category": "Lighting",
       "type": "number",
       "value": {
-        "qty": 130000,
+        "qty": 160000,
         "unit": "lux"
       }
     },
@@ -68,11 +68,11 @@
     {
       "canonical_name": "indice_rendu_couleurs",
       "display_label": {
-        "fr": "Indice de rendu des couleurs (CRI)"
+        "fr": "Indice de rendu des couleurs (Ra)"
       },
       "category": "Lighting",
       "type": "number",
-      "value": 97
+      "value": 96
     },
     {
       "canonical_name": "temperature_couleur",
@@ -94,8 +94,8 @@
       "category": "Lighting",
       "type": "number",
       "value": {
-        "qty": 24,
-        "unit": "cm"
+        "qty": 240,
+        "unit": "mm"
       }
     },
     {
@@ -106,19 +106,40 @@
       "category": "Lighting",
       "type": "number",
       "value": {
-        "qty": 13,
-        "unit": "cm"
+        "qty": 120,
+        "unit": "mm"
       }
     },
     {
-      "canonical_name": "profondeur_eclairage_l1_l2",
+      "canonical_name": "champ_reglable",
       "display_label": {
-        "fr": "Profondeur d’éclairage l1+l2"
+        "fr": "Diamètre du champ opératoire réglable"
+      },
+      "category": "Lighting",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "canonical_name": "profondeur_eclairage_l1_l2_20",
+      "display_label": {
+        "fr": "Profondeur d’éclairage L1+L2 (20 %)"
       },
       "category": "Lighting",
       "type": "number",
       "value": {
-        "qty": 125.5,
+        "qty": 140,
+        "unit": "cm"
+      }
+    },
+    {
+      "canonical_name": "profondeur_eclairage_l1_l2_60",
+      "display_label": {
+        "fr": "Profondeur d’éclairage L1+L2 (60 %)"
+      },
+      "category": "Lighting",
+      "type": "number",
+      "value": {
+        "qty": 85,
         "unit": "cm"
       }
     },
@@ -134,12 +155,12 @@
     {
       "canonical_name": "consommation",
       "display_label": {
-        "fr": "Consommation électrique"
+        "fr": "Consommation électrique de la coupole"
       },
       "category": "Electrical",
       "type": "number",
       "value": {
-        "qty": 47,
+        "qty": 80,
         "unit": "W"
       }
     },
@@ -151,10 +172,26 @@
       "category": "Electrical",
       "type": "string",
       "value": "Classe I"
+    },
+    {
+      "canonical_name": "indice_protection",
+      "display_label": {
+        "fr": "Indice de protection"
+      },
+      "category": "Mechanical",
+      "type": "string",
+      "value": "IP54"
     }
-  ],  
+  ],
   "compliance": {
-    "certifications": [],
-    "standards": []
+    "certifications": [
+      "CE",
+      "Règlement (UE) 2017/745 (MDR)"
+    ],
+    "standards": [
+      "IEC 60601-1:2011",
+      "IEC 60601-2-41:2022",
+      "IEC 60601-1-2:2015"
+    ]
   }
 }
