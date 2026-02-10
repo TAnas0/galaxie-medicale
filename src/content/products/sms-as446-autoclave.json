@@ -158,8 +158,8 @@
     "certifications": [],
     "standards": []
   },
-  "links": [
-    "https://sms.com.pl/en/steam-sterilizers/as-44/"
-  ],
-  "manual": "https://sms.com.pl/wp-content/uploads/2025/01/SMS_Product-catalogue_A5_design-2.pdf"
+  "links": {
+    "official_page": "https://sms.com.pl/en/steam-sterilizers/as-44/",
+    "manual": "https://sms.com.pl/wp-content/uploads/2025/01/SMS_Product-catalogue_A5_design-2.pdf"
+  }
 }

@@ -32,7 +32,7 @@ const productsFull = defineCollection({
     z.object({
       id: z.string(),
       name: z.object({
-        en: z.string(),
+        en: z.string().optional(),
         fr: z.string().optional(),
       }),
       brand: z.object({
@@ -60,8 +60,8 @@ const productsFull = defineCollection({
         z.object({
           canonical_name: z.string(),
           display_label: z.object({
-            fr: z.string(),
-            en: z.string()
+            fr: z.string().optional(),
+            en: z.string().optional()
           }),
           category: z.string(),
           type: z.string(), // simplified from enum
@@ -73,7 +73,8 @@ const productsFull = defineCollection({
         certifications: z.array(z.string()).optional(),
         standards: z.array(z.string()).optional(),
       }).optional(),
-      documents: z.object({
+      links: z.object({
+        official_page: z.string().optional(),
         specs: z.string().optional(),
         manual: z.string().optional(),
         installation_guide: z.string().optional(),
