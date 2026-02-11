@@ -4,10 +4,7 @@
     "en": "Moniteur multiparamétrique E15",
     "fr": "Moniteur multiparamétrique E15"
   },
-  "brand": {
-    "name": "YONKER",
-    "description": ""
-  },
+  "brand": "yonker",
   "category": {
     "canonical": "diagnostic",
     "display": {
@@ -105,13 +102,13 @@
   ],
   "compliance": {
     "certifications": [
-      "CE",
-      "ISO 13485",
-      "RoHS"
+      "ce",
+      "iec-60601-1",
+      "iec-60601-1-2",
+      "iso-13485",
+      "rohs"
     ],
     "standards": [
-      "IEC 60601-1",
-      "IEC 60601-1-2",
       "IEC 60601-2-27",
       "IEC 60601-2-49"
     ]

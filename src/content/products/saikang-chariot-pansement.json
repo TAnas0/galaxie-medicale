@@ -4,10 +4,7 @@
     "en": "Chariot à pansement",
     "fr": "Chariot à pansement"
   },
-  "brand": {
-    "name": "Saikang",
-    "description": ""
-  },
+  "brand": "saikang",
   "category": {
     "canonical": "medical_furniture",
     "display": {

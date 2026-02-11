@@ -4,10 +4,7 @@
     "en": "Lampe chirurgicale SOLIS 130",
     "fr": "Lampe chirurgicale SOLIS 130"
   },
-  "brand": {
-    "name": "FAMED",
-    "description": ""
-  },
+  "brand": "famed",
   "category": {
     "canonical": "surgery",
     "display": {
@@ -82,7 +79,11 @@
       "category": "Lighting",
       "type": "enum",
       "value": {
-        "values": [4000, 4400, 4800],
+        "values": [
+          4000,
+          4400,
+          4800
+        ],
         "unit": "K"
       }
     },
@@ -152,7 +153,7 @@
       "type": "string",
       "value": "Classe I"
     }
-  ],  
+  ],
   "compliance": {
     "certifications": [],
     "standards": []

@@ -4,10 +4,7 @@
     "en": "Lampe opératoire HELIOS 160",
     "fr": "Lampe opératoire HELIOS 160"
   },
-  "brand": {
-    "name": "FAMED",
-    "description": ""
-  },
+  "brand": "famed",
   "category": {
     "canonical": "surgery",
     "display": {

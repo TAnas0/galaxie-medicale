@@ -4,10 +4,7 @@
     "en": "Moniteur multiparamétrique YK-8000B",
     "fr": "Moniteur multiparamétrique YK-8000B"
   },
-  "brand": {
-    "name": "YONKER",
-    "description": ""
-  },
+  "brand": "yonker",
   "category": {
     "canonical": "diagnostic",
     "display": {
@@ -112,7 +109,7 @@
   ],
   "compliance": {
     "certifications": [
-      "CE"
+      "ce"
     ],
     "standards": []
   }

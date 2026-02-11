@@ -4,10 +4,7 @@
     "en": "Tongue Depressor Child",
     "fr": "Abaisse-langue enfant"
   },
-  "brand": {
-    "name": "WEILONG",
-    "description": ""
-  },
+  "brand": "weilong",
   "category": {
     "canonical": "accessories_consumables",
     "display": {
@@ -65,7 +62,7 @@
   ],
   "compliance": {
     "certifications": [
-      "CE"
+      "ce"
     ],
     "standards": []
   }

@@ -4,10 +4,7 @@
     "en": "Table de chirurgie A307",
     "fr": "Table de chirurgie A307"
   },
-  "brand": {
-    "name": "Saikang",
-    "description": ""
-  },
+  "brand": "saikang",
   "category": {
     "canonical": "surgery",
     "display": {

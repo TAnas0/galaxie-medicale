@@ -4,10 +4,7 @@
     "en": "Tongue Depressor Adult",
     "fr": "Abaisse-langue adulte"
   },
-  "brand": {
-    "name": "WEILONG",
-    "description": ""
-  },
+  "brand": "weilong",
   "category": {
     "canonical": "accessories_consumables",
     "display": {
@@ -65,7 +62,7 @@
   ],
   "compliance": {
     "certifications": [
-      "CE"
+      "ce"
     ],
     "standards": []
   }

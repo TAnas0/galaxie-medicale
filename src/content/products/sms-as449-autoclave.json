@@ -4,10 +4,7 @@
     "en": "Autoclave à vapeur AS449",
     "fr": "Autoclave à vapeur AS449"
   },
-  "brand": {
-    "name": "SMS ",
-    "description": ""
-  },
+  "brand": "sms",
   "category": {
     "canonical": "sterilisation",
     "display": {

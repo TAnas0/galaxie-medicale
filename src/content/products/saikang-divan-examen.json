@@ -4,10 +4,7 @@
     "en": "Divan d'examen",
     "fr": "Divan d'examen"
   },
-  "brand": {
-    "name": "saikang",
-    "description": ""
-  },
+  "brand": "saikang",
   "category": {
     "canonical": "medical_furniture",
     "display": {

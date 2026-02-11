@@ -4,10 +4,7 @@
     "en": "AS66 Steam Autoclave",
     "fr": "Autoclave à vapeur AS66"
   },
-  "brand": {
-    "name": "SMS",
-    "description": ""
-  },
+  "brand": "sms",
   "category": {
     "canonical": "sterilisation",
     "display": {
@@ -260,7 +257,7 @@
   ],
   "compliance": {
     "certifications": [
-      "CE"
+      "ce"
     ],
     "standards": []
   }

@@ -4,10 +4,7 @@
     "en": "Chariot brancard SKB041-10",
     "fr": "Chariot brancard SKB041-10"
   },
-  "brand": {
-    "name": "Saikang",
-    "description": ""
-  },
+  "brand": "saikang",
   "category": {
     "canonical": "medical_furniture",
     "display": {

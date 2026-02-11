@@ -4,10 +4,7 @@
     "en": "Moniteur multiparamétrique YK-8000A",
     "fr": "Moniteur multiparamétrique YK-8000A"
   },
-  "brand": {
-    "name": "YONKER",
-    "description": ""
-  },
+  "brand": "yonker",
   "category": {
     "canonical": "diagnostic",
     "display": {
@@ -111,7 +108,7 @@
   ],
   "compliance": {
     "certifications": [
-      "CE"
+      "ce"
     ],
     "standards": []
   }

@@ -1,4 +1,4 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, reference, z } from 'astro:content';
 import { glob, file } from 'astro/loaders';
 
 // const products = defineCollection({
@@ -35,10 +35,7 @@ const productsFull = defineCollection({
         en: z.string().optional(),
         fr: z.string().optional(),
       }),
-      brand: z.object({
-        name: z.string(),
-        description: z.string().optional(),
-      }),
+      brand: reference('brands'),
       category: z.object({
         canonical: z.string(),
         display: z.object({
@@ -47,11 +44,11 @@ const productsFull = defineCollection({
         }),
       }),
       short_description: z.object({
-        en: z.string(),
+        en: z.string().optional(),
         fr: z.string().optional(),
       }),
       full_description: z.object({
-        en: z.string(),
+        en: z.string().optional(),
         fr: z.string().optional(),
       }),
       availability: z.string().optional(),
@@ -66,11 +63,12 @@ const productsFull = defineCollection({
           category: z.string(),
           type: z.string(), // simplified from enum
           value: z.any(),   // catch-all
-          highlighted: z.boolean().optional()
+          highlighted: z.boolean().optional(),
+          note: z.string().optional(),
         })
       ).optional(),
       compliance: z.object({
-        certifications: z.array(z.string()).optional(),
+        certifications: z.array(reference('certifications')).optional(),
         standards: z.array(z.string()).optional(),
       }).optional(),
       links: z.object({

@@ -4,10 +4,7 @@
     "en": "Table de chirurgie A100",
     "fr": "Table de chirurgie A100"
   },
-  "brand": {
-    "name": "Saikang",
-    "description": ""
-  },
+  "brand": "saikang",
   "category": {
     "canonical": "surgery",
     "display": {

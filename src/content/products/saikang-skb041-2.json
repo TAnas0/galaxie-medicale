@@ -4,10 +4,7 @@
     "en": "Chariot brancard SKB041-2",
     "fr": "Chariot brancard SKB041-2"
   },
-  "brand": {
-    "name": "Saikang",
-    "description": ""
-  },
+  "brand": "saikang",
   "category": {
     "canonical": "medical_furniture",
     "display": {
@@ -75,9 +72,9 @@
   ],
   "compliance": {
     "certifications": [
-      "CE",
-      "FDA",
-      "ISO 13485"
+      "ce",
+      "fda",
+      "iso-13485"
     ],
     "standards": []
   }

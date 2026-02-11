@@ -4,10 +4,7 @@
     "en": "Table de chirurgie A106-5",
     "fr": "Table de chirurgie A106-5"
   },
-  "brand": {
-    "name": "Saikang",
-    "description": ""
-  },
+  "brand": "saikang",
   "category": {
     "canonical": "surgery",
     "display": {

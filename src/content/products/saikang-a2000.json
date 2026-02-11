@@ -4,10 +4,7 @@
     "en": "Table de chirurgie A2000",
     "fr": "Table de chirurgie A2000"
   },
-  "brand": {
-    "name": "Saikang",
-    "description": ""
-  },
+  "brand": "saikang",
   "category": {
     "canonical": "surgery",
     "display": {

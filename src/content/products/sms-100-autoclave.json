@@ -4,10 +4,7 @@
     "en": "Autoclave à vapeur SMS 100",
     "fr": "Autoclave à vapeur SMS 100"
   },
-  "brand": {
-    "name": "SMS ",
-    "description": ""
-  },
+  "brand": "sms",
   "category": {
     "canonical": "sterilisation",
     "display": {

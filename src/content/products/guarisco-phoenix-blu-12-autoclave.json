@@ -4,10 +4,7 @@
     "en": "Autoclave Phoenix Blu 12",
     "fr": "Autoclave Phoenix Blu 12"
   },
-  "brand": {
-    "name": "Guarisco Medical Sterilizer ",
-    "description": ""
-  },
+  "brand": "guarisco-medical",
   "category": {
     "canonical": "sterilisation",
     "display": {
@@ -352,11 +349,11 @@
   ],
   "compliance": {
     "certifications": [
-      "Directive 93/42-ECC",
-      "PED 97/23/ECC"
+      "en-13060",
+      "mdd-93-42-eec",
+      "ped-97-23-ec"
     ],
     "standards": [
-      "EN 13060",
       "EN ISO 14971",
       "EN 61010-1",
       "EN 61010-2-040",

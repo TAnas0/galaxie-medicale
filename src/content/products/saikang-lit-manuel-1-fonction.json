@@ -4,10 +4,7 @@
     "en": "Lit manuel 1 fonction",
     "fr": "Lit manuel 1 fonction"
   },
-  "brand": {
-    "name": "Saikang",
-    "description": ""
-  },
+  "brand": "saikang",
   "category": {
     "canonical": "medical_furniture",
     "display": {

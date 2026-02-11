@@ -4,10 +4,7 @@
     "en": "Lampe opératoire IGNIS 160",
     "fr": "Lampe opératoire IGNIS 160"
   },
-  "brand": {
-    "name": "FAMED",
-    "description": ""
-  },
+  "brand": "famed",
   "category": {
     "canonical": "surgery",
     "display": {
@@ -82,7 +79,11 @@
       "category": "Lighting",
       "type": "enum",
       "value": {
-        "values": [4000, 4400, 4800],
+        "values": [
+          4000,
+          4400,
+          4800
+        ],
         "unit": "K"
       }
     },
@@ -185,8 +186,7 @@
   ],
   "compliance": {
     "certifications": [
-      "CE",
-      "Règlement (UE) 2017/745 (MDR)"
+      "ce"
     ],
     "standards": [
       "IEC 60601-1:2011",

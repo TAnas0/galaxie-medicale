@@ -4,10 +4,7 @@
     "en": "Berceau D-3",
     "fr": "Berceau D-3"
   },
-  "brand": {
-    "name": "VANRY",
-    "description": ""
-  },
+  "brand": "vanry",
   "category": {
     "canonical": "medical_furniture",
     "display": {
