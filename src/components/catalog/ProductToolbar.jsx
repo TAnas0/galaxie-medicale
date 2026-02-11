@@ -33,7 +33,7 @@ export default function ProductToolbar({ filters, setFilters }) {
   const categories = [
     { value: "all", label: "Tous" },
     { value: "medical_furniture", label: "Mobilier Médical" },
-    { value: "diagnostic", label: "Diagnostique" },
+    { value: "diagnostic", label: "Diagnostic" },
     { value: "emergency", label: "Urgences" },
     { value: "surgery", label: "Chirurgie" },
     { value: "sterilisation", label: "Stérilisation" },
