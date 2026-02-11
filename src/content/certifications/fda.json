@@ -1,0 +1,7 @@
+{
+  "id": "fda",
+  "name": "FDA Approved",
+  "type": "regulatory",
+  "issuer": "U.S. Food and Drug Administration",
+  "short_description": "Approved by the FDA for sale in the United States."
+}

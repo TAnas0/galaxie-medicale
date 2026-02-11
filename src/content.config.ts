@@ -83,4 +83,45 @@ const productsFull = defineCollection({
 });
 
 
-export const collections = { productsFull };
+const brands = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/brands" }),
+  schema: ({ image }) =>
+    z.object({
+      id: z.string(),
+      name: z.string(),
+      legal_name: z.string().optional(),
+      website: z.string().url().optional(),
+      logo: image().optional(),
+      status: z.enum(['active', 'inactive', 'legacy']).default('active'),
+      description: z.object({
+        short: z.string().max(160).optional(),
+        full: z.string().optional(),
+      }).optional(),
+      social_links: z.object({
+        linkedin: z.string().url().optional(),
+        facebook: z.string().url().optional(),
+        twitter: z.string().url().optional(),
+      }).optional(),
+      country_of_origin: z.string().length(2).optional(),
+    }),
+});
+
+const certifications = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/certifications" }),
+  schema: ({ image }) =>
+    z.object({
+      id: z.string(),
+      name: z.string(),
+      code: z.string().optional(),
+      type: z.enum(['regulatory', 'quality', 'environmental', 'safety', 'other']),
+      issuer: z.string().optional(),
+      link: z.string().url().optional(),
+      badge: image().optional(),
+      short_description: z.string().optional(),
+      full_description: z.string().optional(),
+      version: z.string().optional(),
+    }),
+});
+
+
+export const collections = { productsFull, brands, certifications };

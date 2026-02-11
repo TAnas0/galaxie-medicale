@@ -1,0 +1,11 @@
+{
+  "id": "famed",
+  "name": "Famed Żywiec",
+  "legal_name": "Famed Żywiec Sp. z o.o.",
+  "website": "https://famed.pl",
+  "status": "active",
+  "country_of_origin": "PL",
+  "description": {
+    "short": "Leading European manufacturer of high-end medical equipment including operating tables, hospital beds, and surgical lights."
+  }
+}

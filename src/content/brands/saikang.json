@@ -1,0 +1,11 @@
+{
+  "id": "saikang",
+  "name": "Saikang Medical",
+  "legal_name": "Jiangsu Saikang Medical Equipment Co., Ltd.",
+  "website": "https://www.saikangmedical.com",
+  "status": "active",
+  "country_of_origin": "CN",
+  "description": {
+    "short": "Global provider of hospital furniture and medical solutions."
+  }
+}

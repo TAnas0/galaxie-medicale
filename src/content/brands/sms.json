@@ -1,0 +1,11 @@
+{
+  "id": "sms",
+  "name": "SMS",
+  "legal_name": "SMS Sp. z o.o.",
+  "website": "https://sms.com.pl",
+  "status": "active",
+  "country_of_origin": "PL",
+  "description": {
+    "short": "Specialist in steam sterilization and washing disinfection technology."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "yonker",
+  "name": "Yonker",
+  "legal_name": "Xuzhou Yonker Electronic Science Technology Co., Ltd.",
+  "website": "https://www.yonker.cn",
+  "status": "active",
+  "country_of_origin": "CN",
+  "description": {
+      "short": "Professional manufacturer of medical equipment including patient monitors, oximeters, and nebulizers."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "id": "rohs",
+  "name": "RoHS Compliant",
+  "type": "environmental",
+  "short_description": "Restriction of Hazardous Substances Directive."
+}
