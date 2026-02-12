@@ -38,9 +38,7 @@
       },
       "category": "Regulatory",
       "type": "string",
-      "value": {
-        "text": "IIb"
-      },
+      "value": "IIb",
       "highlighted": true
     },
     {
@@ -110,9 +108,7 @@
       },
       "category": "Performance",
       "type": "string",
-      "value": {
-        "text": "1.0 - 1.3 bar"
-      }
+      "value": "1.0 - 1.3 bar"
     },
     {
       "canonical_name": "pressure_cycle_134c",
@@ -122,9 +118,7 @@
       },
       "category": "Performance",
       "type": "string",
-      "value": {
-        "text": "2.0 - 2.4 bar"
-      }
+      "value": "2.0 - 2.4 bar"
     },
     {
       "canonical_name": "integrated_tests",
