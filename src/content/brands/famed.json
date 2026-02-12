@@ -7,5 +7,6 @@
   "country_of_origin": "PL",
   "description": {
     "short": "Leading European manufacturer of high-end medical equipment including operating tables, hospital beds, and surgical lights."
-  }
+  },
+  "logo": "../../assets/brands/placeholder.png"
 }

@@ -3,5 +3,6 @@
   "name": "ISO 13485",
   "type": "quality",
   "code": "ISO 13485:2016",
-  "short_description": "Medical devices — Quality management systems — Requirements for regulatory purposes."
+  "short_description": "Medical devices — Quality management systems — Requirements for regulatory purposes.",
+  "badge": "../../assets/certifications/placeholder.png"
 }

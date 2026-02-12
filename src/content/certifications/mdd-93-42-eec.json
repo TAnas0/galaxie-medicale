@@ -2,5 +2,6 @@
   "id": "mdd-93-42-eec",
   "name": "Directive 93/42/EEC",
   "type": "regulatory",
-  "short_description": "Medical Device Directive (MDD)."
+  "short_description": "Medical Device Directive (MDD).",
+  "badge": "../../assets/certifications/placeholder.png"
 }

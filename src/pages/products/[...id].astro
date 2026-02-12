@@ -2,6 +2,9 @@
 import Layout from "../../layouts/Layout.astro";
 import "../../styles/global.css";
 
+import "../../styles/global.css";
+import { Image } from "astro:assets";
+
 import { Icon } from "astro-icon/components";
 
 import Card from "../../components/ui/Card.astro";
@@ -89,7 +92,7 @@ const HIGHLIGHT_CERTS_STANDARDS = [
 
 const highlightedCerts = certifications.filter(
   (cert) => HIGHLIGHT_CERTS_STANDARDS.includes(cert.data.name) || HIGHLIGHT_CERTS_STANDARDS.includes(cert.id)
-).map(c => c.data.name);
+);
 
 const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
   HIGHLIGHT_CERTS_STANDARDS.includes(std),
@@ -180,22 +183,51 @@ const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
 
           <div class="flex flex-wrap gap-2 justify-start">
             {
-              [...highlightedCerts, ...highlightedStandards]?.map((cert) => (
-                <div class="flex items-center gap-1 px-2 py-1 bg-white border border-gray-200 rounded-lg shadow-sm">
-                  <Icon
-                    name="heroicons:shield-check"
-                    class="text-2xl text-green-600"
+              highlightedCerts?.map((cert) => (
+                <div class="flex items-center gap-2 px-3 py-1.5 bg-white border border-gray-200 rounded-lg shadow-sm">
+                  {cert.data.badge ? (
+                    <Image
+                      src={cert.data.badge}
+                      alt={cert.data.name}
+                      class="h-8 w-auto object-contain"
+                    />
+                  ) : (
+                    <Icon
+                      name="heroicons:shield-check"
+                      class="text-2xl text-green-600"
+                    />
+                  )}
+                  <div class="flex flex-col leading-tight">
+                    <span class="text-xs font-medium text-gray-500 uppercase tracking-wider">Certifié</span>
+                    <span class="text-sm font-bold text-gray-900">{cert.data.name}</span>
+                  </div>
+                </div>
+              ))
+            }
+             {
+              highlightedStandards?.map((std) => (
+                <div class="flex items-center gap-1 px-2 py-1 bg-gray-50 border border-gray-200 rounded-lg shadow-sm opacity-80">
+                   <Icon
+                    name="heroicons:document-text"
+                    class="text-xl text-gray-500"
                   />
-                  <span class="text-lg font-bold text-gray-700">{cert}</span>
+                  <span class="text-sm font-medium text-gray-700">{std}</span>
                 </div>
               ))
             }
           </div>
           {/* Brand Info */}
           <div
-            class="flex items-center justify-center bg-white border border-gray-200 w-fit px-3 py-1 rounded-lg shadow-sm self-start"
+            class="flex items-center gap-3 bg-white border border-gray-200 w-fit px-4 py-2 rounded-xl shadow-sm self-start mt-2"
           >
-            Fabriquant / Distributeur: <span class="font-bold ml-1">{brand.data.name}</span>
+            {brand.data.logo ? (
+              <Image
+                src={brand.data.logo}
+                alt={brand.data.name}
+                class="h-10 w-auto object-contain max-w-[120px]"
+              />
+            ) : null}
+             <span class="font-bold text-gray-900">{brand.data.name}</span>
           </div>
         </div>
         {/* Image Carousel */}

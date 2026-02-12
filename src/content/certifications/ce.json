@@ -2,5 +2,6 @@
   "id": "ce",
   "name": "CE Marking",
   "type": "regulatory",
-  "short_description": "Indicates that a product has been assessed by the manufacturer and deemed to meet EU safety, health and environmental protection requirements."
+  "short_description": "Indicates that a product has been assessed by the manufacturer and deemed to meet EU safety, health and environmental protection requirements.",
+  "badge": "../../assets/certifications/placeholder.png"
 }

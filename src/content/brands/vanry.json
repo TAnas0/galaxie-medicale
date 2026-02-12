@@ -5,5 +5,6 @@
   "description": {
     "short": "Manufacturer of neonatal and pediatric medical furniture."
   },
-  "country_of_origin": "CN"
+  "country_of_origin": "CN",
+  "logo": "../../assets/brands/placeholder.png"
 }

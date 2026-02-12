@@ -2,5 +2,6 @@
   "id": "iec-60601-1-2",
   "name": "IEC 60601-1-2",
   "type": "safety",
-  "short_description": "Medical electrical equipment – Part 1-2: General requirements for basic safety and essential performance – Collateral Standard: Electromagnetic disturbances."
+  "short_description": "Medical electrical equipment – Part 1-2: General requirements for basic safety and essential performance – Collateral Standard: Electromagnetic disturbances.",
+  "badge": "../../assets/certifications/placeholder.png"
 }

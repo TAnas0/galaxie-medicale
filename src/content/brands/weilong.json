@@ -2,5 +2,6 @@
   "id": "weilong",
   "name": "Weilong",
   "status": "active",
-  "country_of_origin": "CN"
+  "country_of_origin": "CN",
+  "logo": "../../assets/brands/placeholder.png"
 }

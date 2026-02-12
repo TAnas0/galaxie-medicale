@@ -6,6 +6,7 @@
   "status": "active",
   "country_of_origin": "CN",
   "description": {
-      "short": "Professional manufacturer of medical equipment including patient monitors, oximeters, and nebulizers."
-  }
+    "short": "Professional manufacturer of medical equipment including patient monitors, oximeters, and nebulizers."
+  },
+  "logo": "../../assets/brands/placeholder.png"
 }

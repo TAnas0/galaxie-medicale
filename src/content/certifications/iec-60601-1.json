@@ -2,5 +2,6 @@
   "id": "iec-60601-1",
   "name": "IEC 60601-1",
   "type": "safety",
-  "short_description": "Medical electrical equipment – Part 1: General requirements for basic safety and essential performance."
+  "short_description": "Medical electrical equipment – Part 1: General requirements for basic safety and essential performance.",
+  "badge": "../../assets/certifications/placeholder.png"
 }

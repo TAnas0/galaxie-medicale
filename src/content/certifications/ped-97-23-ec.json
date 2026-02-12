@@ -2,5 +2,6 @@
   "id": "ped-97-23-ec",
   "name": "PED 97/23/EC",
   "type": "safety",
-  "short_description": "Pressure Equipment Directive."
+  "short_description": "Pressure Equipment Directive.",
+  "badge": "../../assets/certifications/placeholder.png"
 }

@@ -2,5 +2,6 @@
   "id": "rohs",
   "name": "RoHS Compliant",
   "type": "environmental",
-  "short_description": "Restriction of Hazardous Substances Directive."
+  "short_description": "Restriction of Hazardous Substances Directive.",
+  "badge": "../../assets/certifications/placeholder.png"
 }
