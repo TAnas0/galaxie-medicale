@@ -239,8 +239,14 @@
     }
   ],
   "compliance": {
-    "certifications": [],
-    "standards": []
+    "certifications": [
+      "ce"
+    ],
+    "standards": [
+      "MDD 93/42/EEC",
+      "IEC 60601-1:2011",
+      "IEC 60601-1-2:2007"
+    ]
   },
   "links": {
     "official_page": "https://famed.pl/en/products/surgical-lights/helios-160/",

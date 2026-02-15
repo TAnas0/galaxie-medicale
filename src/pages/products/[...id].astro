@@ -19,6 +19,13 @@ import ProductCard from "../../components/catalog/ProductCard.astro";
 
 import { formatAttributeValue } from "../../utils/formatters";
 import { CATEGORY_HIGHLIGHTS } from "../../config/productHighlights";
+import { 
+  sortAttributes, 
+  sortCertifications, 
+  sortStandards,
+  shouldHighlightCertification,
+  shouldHighlightStandard 
+} from "../../utils/priorityUtils";
 
 import { getCollection, getEntry, getEntries } from "astro:content";
 
@@ -59,19 +66,38 @@ function applyHighlights(product) {
 
   return product;
 }
-const highlights = applyHighlights(product).data.attributes.filter(
+// Apply highlights and sort attributes by priority
+const sortedAttributes = sortAttributes(
+  applyHighlights(product).data.attributes,
+  product.data.category?.canonical
+);
+
+const highlights = sortedAttributes.filter(
   (attr) => attr.highlighted,
 );
 
-const electricalSpecs = product.data.attributes?.filter(
+// Separate electrical specs from main attributes
+const electricalSpecs = sortedAttributes?.filter(
   (attr) => attr.category === "Electrical" && attr.type !== "boolean",
 );
-product.data.attributes = product.data.attributes?.filter(
+
+// Update product attributes to exclude electrical specs (already sorted)
+product.data.attributes = sortedAttributes?.filter(
   (attr) => !electricalSpecs?.includes(attr),
 );
+// Get and sort certifications and standards by priority
 const certificationsRefs = product.data.compliance?.certifications ?? [];
-const certifications = await getEntries(certificationsRefs);
-const standards = product.data.compliance?.standards;
+const unsortedCertifications = await getEntries(certificationsRefs);
+const certifications = sortCertifications(
+  unsortedCertifications,
+  product.data.category?.canonical
+);
+
+const unsortedStandards = product.data.compliance?.standards ?? [];
+const standards = sortStandards(
+  unsortedStandards,
+  product.data.category?.canonical
+);
 
 const relatedProducts = products
   .filter(
@@ -82,21 +108,17 @@ const relatedProducts = products
   .slice(0, 4);
 
 
-// Highlight and prioritize certifications and standards
-// TODO Order is important
-const HIGHLIGHT_CERTS_STANDARDS = [
-  "CE", "ISO 13485", "FDA", "EN 13060", "ISO 14937", "ISO 14971", "IEC 60601", "ISO 10993",
-  // IDs or Names
-  "ce", "iso-13485", "fda", "en-13060"
-];
+// Get highlighted certifications and standards based on priority threshold
+// Items with priority <= 5 are considered "highlighted" (most important)
+const productCategory = product.data.category?.canonical;
 
-const highlightedCerts = certifications.filter(
-  (cert) => HIGHLIGHT_CERTS_STANDARDS.includes(cert.data.name) || HIGHLIGHT_CERTS_STANDARDS.includes(cert.id)
+const highlightedCerts = certifications.filter((cert) =>
+  shouldHighlightCertification(cert.id, productCategory, 5)
 );
 
-const highlightedStandards = product.data.compliance?.standards?.filter((std) =>
-  HIGHLIGHT_CERTS_STANDARDS.includes(std),
-) ?? [];
+const highlightedStandards = standards.filter((std) =>
+  shouldHighlightStandard(std, productCategory, 5)
+);
 ---
 
 <Layout

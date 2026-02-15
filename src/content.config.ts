@@ -64,6 +64,7 @@ const productsFull = defineCollection({
           type: z.string(), // simplified from enum
           value: z.any(),   // catch-all
           highlighted: z.boolean().optional(),
+          priority: z.number().optional(), // NEW: allows per-product priority override
           note: z.string().optional(),
         })
       ).optional(),
