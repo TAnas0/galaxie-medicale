@@ -340,12 +340,12 @@ const highlightedStandards = standards.filter((std) =>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <div>
+                  <div class="flex justify-between items-center py-1 border-b border-gray-100 last:border-b-0">
                     <ul class="list-disc list-inside space-y-1">
                       {[...certifications, ...(standards ?? []).map(s => ({ data: { name: s, short_description: null } }))].map(
                         (item, index) => (
                           <li key={index} class="flex items-center gap-2">
-                             <span class="">{item.data.name}</span>
+                             <span class="text-sm font-medium text-gray-900 whitespace-pre-line">{item.data.name}</span>
                              {item.data.short_description && (
                                 <div class="group relative inline-flex items-center">
                                   <Icon name="heroicons:information-circle" class="w-4 h-4 text-gray-400 cursor-help hover:text-blue-500 transition-colors" />
@@ -368,10 +368,10 @@ const highlightedStandards = standards.filter((std) =>
       </div>
 
       {
-        (product.data.documents?.manual ||
-          product.data.documents?.specs ||
-          product.data.documents?.installation_guide) && (
-          <Card class="mb-12 border border-gray-200 shadow-sm overflow-hidden">
+        (product.data.links?.manual ||
+          product.data.links?.specs ||
+          product.data.links?.specs) && (
+          <Card class="mb-12 border border-gray-200 shadow-sm overflow-hidden bg-white">
             <CardHeader className="bg-gray-50/50 border-b border-gray-100">
               <CardTitle className="flex items-center text-gray-900 text-lg pl-2">
                 <div class="p-2 rounded-lg mr-1">
@@ -382,9 +382,9 @@ const highlightedStandards = standards.filter((std) =>
             </CardHeader>
             <CardContent className="pt-2">
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
-                {product.data.documents?.specs && (
+                {product.data.links?.specs && (
                   <a
-                    href={product.data.documents.specs}
+                    href={product.data.links.specs}
                     target="_blank"
                     class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
                   >
@@ -401,9 +401,9 @@ const highlightedStandards = standards.filter((std) =>
                     </div>
                   </a>
                 )}
-                {product.data.documents?.manual && (
+                {product.data.links?.manual && (
                   <a
-                    href={product.data.documents.manual}
+                    href={product.data.links.manual}
                     target="_blank"
                     class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
                   >
@@ -420,25 +420,6 @@ const highlightedStandards = standards.filter((std) =>
                     </div>
                   </a>
                 )}
-                {product.data.documents?.installation_guide && (
-                  <a
-                    href={product.data.documents.installation_guide}
-                    target="_blank"
-                    class="group flex flex-col p-4 bg-white border border-gray-200 rounded-xl hover:border-primary/50 hover:shadow-md transition-all duration-300"
-                  >
-                    <div class="flex items-center gap-2">
-                      <div class="p-2 bg-gray-100 rounded-lg group-hover:bg-primary/10 transition-colors">
-                        <Icon
-                          name="heroicons:wrench-screwdriver"
-                          class="w-6 h-6 text-gray-500 group-hover:text-primary"
-                        />
-                      </div>
-                      <span class="font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors">
-                        Guide d'installation
-                      </span>
-                    </div>
-                  </a>
-                )}
               </div>
             </CardContent>
           </Card>
@@ -447,7 +428,7 @@ const highlightedStandards = standards.filter((std) =>
 
       {
         relatedProducts.length > 0 && (
-          <Card class="mt-16 border border-gray-200 shadow-sm overflow-hidden">
+          <Card class="mt-16 border border-gray-200 shadow-sm overflow-hidden bg-white">
             <CardHeader className="bg-gray-50/50 border-b border-gray-100">
               <CardTitle className="flex items-center text-gray-900 text-lg pl-2">
                 <div class="p-2 rounded-lg mr-1">
