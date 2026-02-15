@@ -72,10 +72,11 @@ const productsFull = defineCollection({
         standards: z.array(z.string()).optional(),
       }).optional(),
       links: z.object({
-        official_page: z.string().optional(),
-        specs: z.string().optional(),
-        manual: z.string().optional(),
-        installation_guide: z.string().optional(),
+        official_page: z.union([z.string(), z.array(z.string())]).optional(),
+        specs: z.union([z.string(), z.array(z.string())]).optional(),
+        manual: z.union([z.string(), z.array(z.string())]).optional(),
+        installation_guide: z.union([z.string(), z.array(z.string())]).optional(),
+        other: z.array(z.string().optional()).optional(),
       }).optional(),
     }),
 });

@@ -127,5 +127,16 @@
   "compliance": {
     "certifications": [],
     "standards": []
+  },
+  "links": {
+    "official_page": "https://sms.com.pl/en/steam-sterilizers/sms-100/",
+    "manual": [
+      "https://mqvet.com.au/products/sms-steam-steriliser-100l",
+      "https://www.mediquip.com.au/product/sms-100l-steriliser-single-door/",
+      "https://www.medicalcorp.ro/en/cumpara/autoclave-sterilization-sms-100-481"
+    ],
+    "others": [
+      "https://sms.com.pl/wp-content/uploads/2021/02/SMS_Catalog_1-0.pdf"
+    ]
   }
 }

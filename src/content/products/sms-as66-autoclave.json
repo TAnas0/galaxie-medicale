@@ -260,5 +260,17 @@
       "ce"
     ],
     "standards": []
+  },
+  "links": {
+    "official_page": "https://sms.com.pl/en/steam-sterilizers/as-66/",
+    "manual": [
+      "https://www.medicalcorp.ro/en/cumpara/autoclave-sterilization-sms-as66-558",
+      "https://www.medicalexpo.fr/prod/sms-spo-ka-z-oo/product-90757-1006436.html",
+      "https://www.steribel.be/fr/products/as-66-wpa-600/"
+    ],
+    "others": [
+      "https://sms.com.pl/wp-content/uploads/2025/01/SMS_Product-catalogue_A5_design-2.pdf",
+      "https://sms.com.pl/wp-content/uploads/2021/02/SMS_Catalog_1-0.pdf"
+    ]
   }
 }

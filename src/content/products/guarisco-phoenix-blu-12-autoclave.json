@@ -356,13 +356,19 @@
       "UNI EN ISO 134885"
     ]
   },
-  "documents": {
+  "links": {
     "specs": "https://google.com",
     "manual": "https://google.com",
     "installation_guide": "https://google.com"
   },
   "links": {
     "official_page": "https://www.medicaltrading.eu/en/estetico-phoenix-blu-12",
-    "specs": "https://globaluserfiles.com/media/8573_e4a7dc8185919d75f864c98f2fa97f01818d65f8.pdf/o/catalog%20medical%20trading%20en-it%202023.pdf#page=8"
+    "specs": "https://globaluserfiles.com/media/8573_e4a7dc8185919d75f864c98f2fa97f01818d65f8.pdf/o/catalog%20medical%20trading%20en-it%202023.pdf#page=8",
+    "others": [
+      "https://www.imaxshop.com/shop/11530-autoclave-phoenix-blu-12l-usb-8426",
+      "https://remma.fr/en/model/autoclave-phoenix-blu-12",
+      "https://www.pharmaqatar.com/?product=phoenix-blu-12",
+      "https://zentra-eu.com/products/guarisco-phoenix-blu-12l-printer-autoclave"
+    ]
   }
 }
