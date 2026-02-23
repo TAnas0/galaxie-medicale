@@ -94,6 +94,8 @@ export const ATTRIBUTE_NAME_PRIORITY: AttributeNamePriority = {
     'freinage': 6,                        // Safety - braking system
     'batterie': 10,                       // Battery backup
     'matelas': 15,                        // Included accessories
+
+    'nombre_led': 1,
   },
 };
 

@@ -77,7 +77,7 @@ const productsFull = defineCollection({
         specs: z.union([z.string(), z.array(z.string())]).optional(),
         manual: z.union([z.string(), z.array(z.string())]).optional(),
         installation_guide: z.union([z.string(), z.array(z.string())]).optional(),
-        other: z.array(z.string().optional()).optional(),
+        others: z.array(z.string().optional()).optional(),
       }).optional(),
     }),
 });
