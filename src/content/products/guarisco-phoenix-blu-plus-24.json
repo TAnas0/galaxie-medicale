@@ -393,6 +393,16 @@
       "type": "string",
       "value": "Available as a variant/upgrade (Standard on PRINTER models)",
       "highlighted": true
+    },
+    {
+      "canonical_name": "fuse",
+      "display_label": {
+        "en": "Fuses",
+        "fr": "Fusibles"
+      },
+      "category": "Electrical",
+      "type": "string",
+      "value": "2 x 12FAL 250V"
     }
   ],
   "compliance": {
