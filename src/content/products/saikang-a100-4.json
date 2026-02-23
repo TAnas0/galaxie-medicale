@@ -131,9 +131,12 @@
     "standards": []
   },
   "links": {
-    "official_page": "www.sksurgitech.com/a100-4-electric-operating-table-product/",
+    "official_page": [
+      "https://www.sksurgitech.com/a100-4-electric-operating-table-product/",
+      "https://saikangmedical.com/en/product/a100-4-electric-operating-table/"
+    ],
     "specs": "https://www.sksurgitech.com/uploads/A100-4_Electric-Operating-Table_SKSurgitech6.pdf",
-    "links": [
+    "others": [
       "https://goltech.net/wp-content/uploads/2024/02/A100-4_Electric-Operating-Table_SaikangMedical.pdf",
       "https://www.medicalexpo.com/prod/jiangsu-saikang-medical-equipment/product-76520-935187.html"
     ]
