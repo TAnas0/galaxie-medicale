@@ -17,8 +17,8 @@
     "fr": "Lampe opératoire LED haut de gamme avec coupole simple ou double, offrant un éclairage optimal pour interventions chirurgicales."
   },
   "full_description": {
-    "en": "La lampe opératoire HELIOS 160 est conçue pour fournir un éclairage chirurgical précis lors d'interventions complexes. Disponible en version simple ou double coupole, elle garantit une excellente visibilité et un confort visuel maximal. Son intensité lumineuse réglable et son rendu des couleurs précis assurent une précision accrue pour les procédures médicales et chirurgicales.",
-    "fr": "La lampe opératoire HELIOS 160 est une lampe LED chirurgicale conçue pour fournir un éclairage optimal lors d'interventions complexes.  \nDisponible en version simple ou double coupole, elle garantit une excellente visibilité et un confort visuel maximal.  \nSon intensité lumineuse réglable et son rendu des couleurs précis assurent une précision accrue lors des procédures médicales et chirurgicales."
+    "en": "HELIOS 160 is a modern surgical operating light designed to provide reliable and uniform illumination in clinical environments. Featuring advanced LED technology and a monolithic dome design, it supports optimal hygiene, ergonomic handling, and effective integration with laminar airflow systems.\nThe intuitive control panel enables easy on/off operation and light intensity adjustment, while the central sterile handle allows precise positioning and focusing of the light field. Designed primarily for operating rooms, HELIOS 160 is also suitable for examination rooms, dental practices, and veterinary clinics.",
+    "fr": "HELIOS 160 est une lampe opératoire moderne conçue pour offrir un éclairage fiable et homogène dans les environnements médicaux. Grâce à sa technologie LED avancée et à son dôme monobloc, elle garantit une hygiène optimale, une manipulation ergonomique et une compatibilité avec les systèmes de flux laminaire.\nSon panneau de commande intuitif permet une utilisation simple avec réglage de l’intensité lumineuse, tandis que la poignée stérile centrale assure un positionnement précis du champ lumineux. Principalement destinée aux blocs opératoires, HELIOS 160 convient également aux salles d’examen, cabinets dentaires et cliniques vétérinaires."
   },
   "availability": "in_stock",
   "images": [
@@ -28,15 +28,6 @@
     "../../assets/products/surgery/lights/famed-helios-160/helios-160-3.webp"
   ],
   "attributes": [
-    {
-      "canonical_name": "source_lumineuse",
-      "display_label": {
-        "fr": "Source lumineuse"
-      },
-      "category": "Lighting",
-      "type": "string",
-      "value": "LED"
-    },
     {
       "canonical_name": "systeme_commande",
       "display_label": {
@@ -244,6 +235,8 @@
     ],
     "standards": [
       "MDD 93/42/EEC",
+      "IEC 60601-2-41:2022",
+      "IEC 60601-1-2-2015",
       "IEC 60601-1:2011",
       "IEC 60601-1-2:2007"
     ]

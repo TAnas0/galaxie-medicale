@@ -17,8 +17,8 @@
     "fr": "Lampe chirurgicale LED fiable avec coupole simple ou double, offrant forte intensité lumineuse et excellente profondeur d’éclairage."
   },
   "full_description": {
-    "en": "La lampe chirurgicale SOLIS 130 est adaptée aux blocs opératoires polyvalents. Elle combine une forte intensité lumineuse à un rendu des couleurs précis et assure une grande profondeur d’éclairage. Disponible en version simple ou double coupole, elle garantit un confort optimal pour les équipes médicales durant les interventions.",
-    "fr": "La lampe chirurgicale SOLIS 130 est adaptée aux blocs opératoires polyvalents.  \nElle combine une forte intensité lumineuse à un rendu des couleurs précis et assure une grande profondeur d’éclairage.  \nDisponible en version simple ou double coupole, elle garantit un confort optimal pour les équipes médicales durant les interventions."
+    "en": "SOLIS 130 is an LED surgical light designed to provide focused, consistent illumination for both complex and routine procedures. Delivering up to 130,000 lux with high colour rendering, it supports accurate visual assessment of tissues throughout surgery. Adjustable colour temperature and four-step light intensity control allow adaptation to different clinical needs. Light intensity can also be regulated directly via the sterile handle, supporting workflow efficiency. The articulated arm system enables precise positioning of the light beam. SOLIS 130 is suitable for operating theatres and procedure rooms.",
+    "fr": "SOLIS 130 est une lampe opératoire à LED conçue pour fournir un éclairage focalisé et constant lors d’interventions chirurgicales complexes ou courantes. Offrant jusqu’à 130 000 lux avec un excellent rendu des couleurs, elle facilite l’évaluation précise des tissus pendant l’intervention. La température de couleur réglable et le contrôle de l’intensité lumineuse en quatre niveaux permettent une adaptation aux différents besoins cliniques. L’intensité peut également être ajustée directement via la poignée stérile, optimisant le flux de travail. Son bras articulé assure un positionnement précis du faisceau lumineux."
   },
   "availability": "in_stock",
   "images": [
@@ -160,7 +160,8 @@
     "specs": "https://famed.pl/media/gaamyacg/solis_130_compressed.pdf",
     "others": [
       "https://medicalonex.com/famed-lodz-1/product/ignis-160-helios-160-solis-160-solis-160-fa",
-      "https://halomedicals.com/product/solis-130-surgical-light/"
+      "https://halomedicals.com/product/solis-130-surgical-light/",
+      "https://www.medicalexpo.com/prod/famed-lodz/product-68469-2779628.html"
     ]
   }
 }

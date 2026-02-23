@@ -17,8 +17,8 @@
     "fr": "Autoclave de table compact 12L, classe B, affichage LCD/LED, conçu pour une stérilisation efficace en milieu médical et dentaire."
   },
   "full_description": {
-    "en": "The Phoenix Blu 12 is a Class B tabletop autoclave designed for dental clinics, medical practices, and small laboratories. With a 12-liter chamber, dual vacuum system, and adjustable drying, it ensures reliable sterilization of surgical, dental, and laboratory instruments. Available with LCD/LED display, USB data export, and optional printer configurations, it delivers fast Class B cycles in a compact design.",
-    "fr": "L'autoclave Phoenix Blu 12 est un stérilisateur de table de classe B destiné aux cliniques, cabinets dentaires et petits laboratoires. Il assure une stérilisation fiable des instruments chirurgicaux, dentaires et de laboratoire grâce à des cycles avancés de vapeur et de vide. Il dispose d'un design compact, d'un affichage LCD ou LED, d'une exportation de données via USB, d'un séchage ajustable et d'un système à double vide pour un retrait complet de l'air."
+    "en": "Phoenix Blu 12L is a compact Class B autoclave designed for the sterilization of medical and dental instruments in clinics with limited space. It operates at standard sterilization temperatures and completes cycles efficiently, supporting routine workflow in medical, dental, veterinary, and aesthetic settings. The unit features a multilingual LCD display with real-time cycle monitoring, adjustable drying time, and dedicated test programs for process control. An integrated vacuum system enables sterilization of solid, hollow, and porous instruments. Available in base, USB, and printer versions, it allows digital or printed documentation of sterilization data for traceability and compliance.",
+    "fr": "Phoenix Blu 12L est un autoclave de classe B compact conçu pour la stérilisation des instruments médicaux et dentaires dans les structures disposant d’un espace limité. Il fonctionne aux températures standards de stérilisation et réalise les cycles de manière efficace, facilitant le travail quotidien en cabinets médicaux, dentaires, vétérinaires ou esthétiques. L’appareil est équipé d’un écran LCD multilingue avec suivi en temps réel du cycle, d’un temps de séchage réglable et de programmes de test dédiés au contrôle des processus. Son système de vide intégré permet la stérilisation d’instruments pleins, creux et poreux. Disponible en versions standard, USB ou avec imprimante pour l’archivage des données."
   },
   "availability": "out_of_stock",
   "images": [
@@ -332,13 +332,12 @@
     {
       "canonical_name": "integrated_printer_availability",
       "display_label": {
-        "en": "Integrated Printer Option",
-        "fr": "Option Imprimante Intégrée"
+        "en": "Integrated Printer",
+        "fr": "Imprimante Intégrée"
       },
       "category": "Interface",
       "type": "string",
-      "value": "Available as a variant/upgrade (Standard on PRINTER models)",
-      "highlighted": true
+      "value": "Disponible comme option"
     }
   ],
   "compliance": {
