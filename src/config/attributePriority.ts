@@ -46,7 +46,7 @@ export const ATTRIBUTE_CATEGORY_PRIORITY: AttributeCategoryPriority = {
 export const ATTRIBUTE_NAME_PRIORITY: AttributeNamePriority = {
   // Sterilization equipment (autoclaves)
   'sterilisation': {
-    'device_class': 1,                    // Regulatory class (IIb, etc.)
+    // 'device_class': 1,                    // Regulatory class (IIb, etc.)
     'chamber_capacity': 2,                // Critical spec - how much can it sterilize
     'chamber_dimensions': 3,              // Physical capacity
     'vacuum_system': 4,                   // Sterilization method

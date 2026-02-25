@@ -47,8 +47,7 @@
       },
       "category": "Regulatory",
       "type": "string",
-      "value": "IIb",
-      "highlighted": true
+      "value": "IIb"
     },
     {
       "canonical_name": "vacuum_system",
@@ -386,13 +385,12 @@
     {
       "canonical_name": "integrated_printer_availability",
       "display_label": {
-        "en": "Integrated Printer Option",
-        "fr": "Option Imprimante Intégrée"
+        "en": "Integrated Printer",
+        "fr": "Option Imprimante"
       },
       "category": "Interface",
       "type": "string",
-      "value": "Available as a variant/upgrade (Standard on PRINTER models)",
-      "highlighted": true
+      "value": "Disponible comme option"
     },
     {
       "canonical_name": "fuse",

@@ -38,8 +38,7 @@
       },
       "category": "Regulatory",
       "type": "string",
-      "value": "IIb",
-      "highlighted": true
+      "value": "IIb"
     },
     {
       "canonical_name": "vacuum_system",

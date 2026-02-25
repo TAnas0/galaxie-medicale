@@ -17,8 +17,8 @@
     "fr": "Autoclave de table compact 18L, classe B, affichage LCD/LED, conçu pour une stérilisation efficace en milieu médical et dentaire."
   },
   "full_description": {
-    "en": "The Phoenix Blu 18 is a Class B tabletop autoclave designed for dental clinics, medical practices, and small laboratories. With an 18-liter chamber, adjustable drying system, and dual vacuum pump for complete air removal, it ensures reliable sterilization of surgical, dental, and laboratory instruments. Available with LCD or LED display options, it offers USB data export, 19–38 minute Class B cycles, and compliance with CE, ISO 13485, and EN/ISO sterilization standards.",
-    "fr": "L'autoclave Phoenix Blu 18 est un stérilisateur de table de classe B destiné aux cliniques, cabinets dentaires et petits laboratoires. Il assure une stérilisation fiable des instruments chirurgicaux, dentaires et de laboratoire grâce à des cycles avancés de vapeur et de vide. Il dispose d'un design compact, d'un affichage LCD ou LED, d'une exportation de données via USB, d'un séchage ajustable et d'un système à double vide pour un retrait complet de l'air."
+    "en": "Phoenix Blu 18L is a Class B steam autoclave designed for the sterilization of medical, dental, veterinary, and laboratory instruments. It features an LED interface for clear cycle monitoring and real-time process visualization, supporting routine sterilization workflows in clinical environments. The integrated standby function maintains chamber readiness between cycles, helping reduce preparation time and moisture formation. Adjustable drying settings allow adaptation to different instrument loads, while the internal vacuum system enables effective sterilization of solid, hollow, and porous items. A built-in USB port supports digital recording and archiving of sterilization cycle data for documentation and traceability.",
+    "fr": "Phoenix Blu 18L est un autoclave à vapeur de classe B conçu pour la stérilisation des instruments médicaux, dentaires, vétérinaires et de laboratoire. Il est équipé d’une interface LED permettant le suivi des cycles et la visualisation en temps réel des processus, facilitant les opérations de stérilisation en milieu clinique. La fonction de veille intégrée maintient la chambre prête entre les cycles, réduisant le temps de préparation et la formation d’humidité. Le temps de séchage réglable s’adapte aux différentes charges d’instruments, tandis que le système de vide interne permet la stérilisation d’instruments pleins, creux et poreux. Le port USB intégré permet l’enregistrement et l’archivage des données."
   },
   "availability": "out_of_stock",
   "images": [
@@ -39,8 +39,7 @@
       },
       "category": "Regulatory",
       "type": "string",
-      "value": "IIb",
-      "highlighted": true
+      "value": "IIb"
     },
     {
       "canonical_name": "vacuum_system",
@@ -390,13 +389,12 @@
     {
       "canonical_name": "integrated_printer_availability",
       "display_label": {
-        "en": "Integrated Printer Option",
-        "fr": "Option Imprimante Intégrée"
+        "en": "Integrated Printer",
+        "fr": "Option Imprimante"
       },
       "category": "Interface",
       "type": "string",
-      "value": "Available as a variant/upgrade (Standard on PRINTER models)",
-      "highlighted": true
+      "value": "Disponible comme option"
     },
     {
       "canonical_name": "fuse",
