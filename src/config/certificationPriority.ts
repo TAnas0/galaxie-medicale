@@ -109,9 +109,9 @@ export const STANDARD_PRIORITY: StandardPriorityConfig = {
     // Sterilization equipment
     'sterilisation': {
       'EN 13060': 1,            // Most important for autoclaves
-      'EN ISO 14971': 2,        // Risk management
-      'EN 61010-1': 3,          // Electrical safety
-      'EN 61010-2-040': 4,      // Specific to sterilizers
+      'EN ISO 14971': 6,        // Risk management
+      'EN 61010-1': 6,          // Electrical safety
+      'EN 61010-2-040': 6,      // Specific to sterilizers
       'EN 13445': 5,            // Pressure vessels
       'EN 61326': 6,            // EMC
       'ISO 14937': 7,           // Sterilization validation

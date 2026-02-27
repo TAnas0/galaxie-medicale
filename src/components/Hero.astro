@@ -11,34 +11,21 @@ import gueridon from "../assets/hero/gueridon.webp";
 import paravent from "../assets/hero/paravent.webp";
 ---
 
-<section class="relative pt-26 lg:pt-20 pb-4 overflow-hidden">
+<section class="relative pt-28 pb-4 overflow-hidden">
   <div class="mx-auto relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 items-center">
       <!-- Left Content -->
       <div
-        class="flex flex-col gap-8 z-20 px-6 lg:ml-24 lg:px-0 text-center lg:text-left items-center lg:items-start col-start-1 row-start-1 lg:col-auto lg:row-auto"
+        class="h-full flex flex-col z-20 lg:ml-24 lg:px-0 text-center lg:text-left items-center lg:items-start col-start-1 row-start-1 lg:col-auto lg:row-auto pt-1"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
-        <div class="space-y-4">
-          <!-- <div
-            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium w-fit"
-          >
-            <span class="relative flex h-2 w-2">
-              <span
-                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
-              ></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"
-              ></span>
-            </span>
-            Leader en équipement médical
-          </div> -->
-
+        <div class="mb-6">
           <h1
-            class="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"
+            class="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900"
           >
             L'excellence médicale. <br />
-            <span class="relative px-2 inline-block">
+            <span class="relative pr-4 inline-block">
               <span
                 class="absolute inset-0 -skew-x-6 bg-blue-50/80 border border-blue-100 rounded-sm -z-10"
               ></span>
@@ -47,47 +34,43 @@ import paravent from "../assets/hero/paravent.webp";
               >
             </span>
           </h1>
-
-          <!-- <p class="text-lg text-gray-600 max-w-xl leading-relaxed">
-            Votre partenaire de confiance pour des équipements de pointe.
-          </p> -->
         </div>
 
-        <ul class="space-y-4">
-          <li class="flex items-start gap-3 text-gray-700">
+        <ul class="flex flex-col gap-7 text-lg">
+          <li class="flex items-center text-gray-700 gap-2">
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-primary"
+              class="flex-shrink-0 rounded-full flex items-center justify-center text-primary"
             >
-              <GalaxieSVG class="w-6 h-6" />
+              <GalaxieSVG class="w-6" />
             </div>
-            <span class="font-medium pt-2 text-left">Conseil d’experts et démonstrations</span>
+            <span class="font-medium text-left">Conseil d’experts et démonstrations</span>
           </li>
-          <li class="flex items-start gap-3 text-gray-700">
+          <li class="flex items-center text-gray-700 gap-2">
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-primary"
+              class="flex-shrink-0 rounded-full flex items-center justify-center text-primary"
             >
-              <GalaxieSVG class="w-6 h-6" />
+              <GalaxieSVG class="w-6" />
             </div>
-            <span class="font-medium pt-2 text-left"
+            <span class="font-medium text-left"
               >Support technique et garantie constructeur</span
             >
           </li>
-          <li class="flex items-start gap-3 text-gray-700">
+          <li class="flex items-center text-gray-700 gap-2">
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-primary"
+              class="flex-shrink-0 rounded-full flex items-center justify-center text-primary"
             >
-              <GalaxieSVG class="w-6 h-6" />
+              <GalaxieSVG class="w-6" />
             </div>
-            <span class="font-medium pt-2 text-left"
+            <span class="font-medium text-left"
               >Installation professionnelle et suivi technique</span
             >
           </li>
         </ul>
 
-        <div class="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start mb-auto">
+        <div class="flex flex-wrap justify-center lg:justify-start pt-26 mx-auto">
           <a
             href="/galaxie-medicale/catalog"
-            class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-1"
+            class="inline-flex items-center bg-primary text-white rounded-full font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-1 py-4 px-4 gap-1"
             data-aos="fade-right"
             data-aos-delay="1400"
             data-aos-duration="2500"
@@ -178,31 +161,13 @@ import paravent from "../assets/hero/paravent.webp";
           >
             <div class="flex flex-col gap-4">
               <!-- Stat 1 -->
-              <div class="flex items-center align-right gap-1">
-                <!-- <div
-                  class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
-                    ></path><circle cx="9" cy="7" r="4"></circle><path
-                      d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path
-                      d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg
-                  >
-                </div> -->
-                <div class="text-xl font-bold text-primary leading-none w-14">
+              <div class="flex items-center align-right">
+                <div class="text-xl font-bold text-primary w-14">
                   <span data-aos="fade" data-aos-duration="3000">+</span>
                   <span data-countup="152" class="countup">152</span>
                 </div>
-                <div class="text-md font-medium text-gray-500 mt-1">
-                  Partenaires médicaux
+                <div data-aos="fade" data-aos-duration="3000" class="text-md font-medium text-gray-500">
+                  partenaires médicaux
                 </div>
               </div>
 
@@ -210,7 +175,7 @@ import paravent from "../assets/hero/paravent.webp";
               <div class="h-px w-full bg-gray-100"></div>
 
               <!-- Stat 2 -->
-              <div class="flex items-center gap-1">
+              <div class="flex items-center">
                 <!-- <div
                   class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary"
                 >
@@ -230,12 +195,12 @@ import paravent from "../assets/hero/paravent.webp";
                     ></line></svg
                   >
                 </div> -->
-                <div class="text-xl font-bold text-primary leading-none w-16">
+                <div class="text-xl font-bold text-primary w-16">
                   <span data-aos="fade" data-aos-duration="3000">+</span>
                   <span data-countup="650" class="countup">650</span>
                 </div>
-                <div class="text-md font-medium text-gray-500 mt-1">
-                  Produits référencés
+                <div data-aos="fade" data-aos-duration="3000" class="text-md font-medium text-gray-500">
+                  produits référencés
                 </div>
               </div>
             </div>
